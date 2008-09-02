@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE map PUBLIC "-//IBM//DTD DITA Map//EN"
+ "../dtd/map.dtd">
+<?Pub Inc?>
+<map title="thisthat">
+<topicref navtitle="four" href="thisthatfour.dita">
+<topicmeta>
+<keywords><indexterm>four</indexterm></keywords>
+</topicmeta>
+</topicref>
+<topicref navtitle="one" href="thisthatone.dita">
+<topicmeta>
+<keywords><indexterm>one</indexterm></keywords>
+</topicmeta>
+</topicref>
+<topicref navtitle="three" href="thisthatthree.dita">
+<topicmeta>
+<keywords><indexterm>three</indexterm></keywords>
+</topicmeta>
+</topicref>
+<topicref navtitle="two" href="thisthattwo.dita"><?Pub Caret?>
+<topicmeta>
+<keywords><indexterm>two</indexterm></keywords>
+</topicmeta>
+</topicref>
+</map>
+<?Pub *0000000755?>

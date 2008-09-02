@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="simplemap_javahelp" default="simplemap2javahelp" basedir=".">
+  
+  <!-- dita.dir should point to the toolkit's root directory -->
+  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <property name="testdata.dir" value="${dita.dir}${file.separator}Testdata"/>
+  
+  <import file="${dita.dir}${file.separator}integrator.xml"/>
+  
+  <target name="simplemap2javahelp" depends="integrate">
+    <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+      <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+      <property name="args.input"
+        value="${testdata.dir}${file.separator}OldcasesTest${file.separator}simplemap${file.separator}simplemap.ditamap"/>
+      <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}OldcasesTest${file.separator}simplemap${file.separator}javahelp"/>
+      <property name="output.dir"
+        value="${dita.dir}${file.separator}testresult${file.separator}OldcasesTest${file.separator}simplemap${file.separator}javahelp"/>
+      <property name="transtype" value="javahelp"/>
+    </ant>
+  </target>
+</project>

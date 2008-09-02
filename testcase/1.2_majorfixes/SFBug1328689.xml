@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="SFBug1328689" default="SFBug13286892xhtml" basedir=".">
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    
+    <import file="${dita.dir}${file.separator}build.xml"/>
+    <target name="SFBug13286892xhtml">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}CSS_issue${file.separator}table-nocolnum.dita"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}CSS_issue${file.separator}table-nocolnum${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}CSS_issue${file.separator}table-nocolnum${file.separator}xhtml"/>
+            <property name="args.css " value="${dita.dir}${file.separator}testdata${file.separator}CSS_issue${file.separator}user.css"/>
+            
+        </ant>   
+    
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}CSS_issue${file.separator}table-nocolnum.dita"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}CSS_issue${file.separator}table-nocolnum${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}CSS_issue${file.separator}table-nocolnum${file.separator}xhtml"/>
+            <property name="args.css" value="${dita.dir}${file.separator}testdata${file.separator}CSS_issue${file.separator}user.css"/>
+            <property name="args.copycss" value="yes"/>
+        </ant>   
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}CSS_issue${file.separator}table-nocolnum.dita"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}CSS_issue${file.separator}table-nocolnum${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}CSS_issue${file.separator}table-nocolnum${file.separator}xhtml"/>
+            
+            <property name="args.csspath" value="/css"/>
+        </ant>   
+        
+        
+    </target>
+    
+</project>
+

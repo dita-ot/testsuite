@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="indexseealso_eclipsehelp" default="indexseealso2eclipsehelp" basedir=".">
+  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+ 
+
+<target name="indexseealso2eclipsehelp">
+  <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+    <property name="args.input"
+        value="${dita.dir}${file.separator}testdata${file.separator}IndexSeeAlso${file.separator}index-see-also_testdata1.dita"/>
+
+    <property name="output.dir"
+        value="${dita.dir}${file.separator}testresult${file.separator}indexseealso${file.separator}eclipsehelp"/>
+    <property name="transtype" value="eclipsehelp"/>
+    <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}indexseealso${file.separator}eclipsehelp"/>  
+  </ant>
+ </target>
+</project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE topic PUBLIC "-//IBM//DTD DITA Topic//EN"
+ "../dtd/topic.dtd">
+<?Pub Inc?>
+<topic id="testq" xml:lang="en-us">
+<title>Test q</title>
+<shortdesc>This tests all of the attributes on a q tag.</shortdesc>
+<body>
+<p>Now I will include an <q>anonymous quote.</q></p>
+<p>Now I will include an <q outputclass="qclass">anonymous quote with outputclass.</q></p>
+<p>Now I will include an <q id="myq">anonymous quote with ID.</q></p>
+<p>Now I will include an <q id="ksdjf" platform="afd" product="fwjo" audience="xlicj"
+otherprops="wlfkrdj" importance="recommended" rev="flkaj" translate="yes"
+xml:lang="qu-ot" outputclass="sljfak">anonymous quote with everything.</q></p>
+<p>Now quote something nonsensical <q id="groucho">Inside of a dog, it's too
+dark to read</q></p>
+<p>Conref the nonsensical quote: <q conref="#testq/groucho">this should not
+appear</q></p>
+<p>Put stuff in a quote: <q><apiname>test apiname</apiname> <b>test bold</b> (test
+boolean -><boolean state="yes"/>) <cite>test cite</cite> <cmdname>test cmdname</cmdname> <codeph>test
+codeph</codeph> <filepath>test filepath</filepath>  <i>test italic</i><keyword>test
+keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> [skipping
+object] <option>test option</option> <parmname>test parmname</parmname> <ph>test
+ph</ph> <q>testing a quote</q> (test state -> <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tm trademark="amazon"
+tmowner="amazon" tmtype="tm" tmclass="special">tm to amazon</tm> <tt>test
+tt</tt> <u>test underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle> <xref
+href="#testq">link to top<?Pub Caret?></xref></q></p>
+</body>
+</topic>
+<?Pub *0000002087?>

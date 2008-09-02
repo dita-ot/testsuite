@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corporation-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+
+<topic id="Zwan" xml:lang="en-us">
+<title>Zwan</title>
+<body>
+	<p>Zwan
+	<indexterm> Zwan
+		<indexterm> sub Zwan 
+			<index-see> Zwan </index-see>
+		</indexterm>
+	</indexterm>
+	<indexterm> Zwan
+		<index-see-also> The Smashing Pumpkins </index-see-also>
+		<index-see-also> sth else </index-see-also>
+	</indexterm>
+	</p>
+</body>
+</topic>

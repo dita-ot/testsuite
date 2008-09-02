@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN"
+ "bookmap.dtd">
+ <bookmap xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <booktitle>
+        <mainbooktitle>abc</mainbooktitle>
+    </booktitle>
+    <chapter href="a.dita"></chapter>
+</bookmap>

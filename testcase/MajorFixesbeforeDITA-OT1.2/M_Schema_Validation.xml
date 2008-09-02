@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="1806081_xhtml" default="18060812xhtml" basedir=".">
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp"/>
+    
+    <target name="18060812xhtml">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}xhtml"/>
+            
+        </ant>  
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}wordrtf"/>
+        </ant>  
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}pdf"/>
+            <property name="transtype" value="pdf"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}pdf"/>
+        </ant>  
+        
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}javahelp"/>
+            <property name="transtype" value="javahelp"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}javahelp"/>
+        </ant>  
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}htmlhelp"/>
+            <property name="transtype" value="htmlhelp"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}htmlhelp"/>
+        </ant>  
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}troff"/>
+            <property name="transtype" value="troff"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}troff"/>
+        </ant>  
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}docbook"/>
+            <property name="transtype" value="docbook"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}docbook"/>
+        </ant>  
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}eclipsehelp"/>
+            <property name="transtype" value="eclipsehelp"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}eclipsehelp"/>
+        </ant>  
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}eclipsecontent"/>
+            <property name="transtype" value="eclipsecontent"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}eclipsecontent"/>
+        </ant>  
+        
+    </target>
+</project>
+

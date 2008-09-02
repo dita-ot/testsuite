@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maptitle_htmlhelp" default="maptitle2htmlhelp" basedir=".">
+
+  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  
+
+  <target name="maptitle2htmlhelp">
+    <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+    <property name="args.input"
+        value="${dita.dir}${file.separator}testdata${file.separator}Translation${file.separator}translation_testdata.ditamap"/>
+    <property name="output.dir"
+        value="${dita.dir}${file.separator}testresult${file.separator}translation_1${file.separator}htmlhelp"/>
+    <property name="dita.temp.dir"
+        value="${dita.dir}${file.separator}temp${file.separator}translation_1${file.separator}htmlhelp"/>
+    <property name="transtype" value="htmlhelp"/>
+  </ant>
+   </target>
+</project>
+

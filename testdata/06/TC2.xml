@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corporation-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+
+<topic id="TC2" xml:lang="en-us">
+<title>image test for jpg</title>
+<prolog>
+</prolog>
+<body>
+	<p><image href="stamp.jpg" alt="stamp"/> default stamp </p>
+	
+	<p><image href="stamp.jpg" height="176" width="226"/> 176*226 stamp </p>
+	<p><image href="stamp.jpg" width="226"/> *226 stamp </p>
+	<p><image href="stamp.jpg" height="176"/> 176* stamp </p>
+	<p><image href="stamp.jpg" height="176px" width="226px"/> 176px*226px stamp </p>
+	<p><image href="stamp.jpg" height="10.56pc" width="13.56pc"/> 10.56pc*13.56pc stamp </p>
+	<p><image href="stamp.jpg" height="133.76pt" width="171.76pt"/> 133.76pt*171.76pt stamp </p>
+	<p><image href="stamp.jpg" height="1.76in" width="2.26in"/> 1.76in*2.26in stamp </p>
+	<p><image href="stamp.jpg" height="4.48cm" width="5.76cm"/> 4.48cm*5.76cm stamp </p>
+	<p><image href="stamp.jpg" height="44.8mm" width="57.4mm"/> 44.8mm*57.4mm stamp </p>
+	<p><image href="stamp.jpg" height="10.56em" width="13.56em"/> 10.56em*13.56em stamp </p>
+	<p><image href="stamp.jpg" height="60ak" width="50ak"/> 60ak*50ak stamp </p>
+	<p><image href="stamp.jpg" height="100ak" width="13.56em"/> 100ak*13.56em stamp </p>
+</body>
+</topic>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="SFBug1398867" default="SFBug1398867" basedir=".">
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp"/>
+    <import file="${dita.dir}${file.separator}build.xml"/>
+    <target name="SFBug1398867">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}ampersands_href.dita"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}ampersands${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}ampersands${file.separator}xhtml"/>
+            
+        </ant>   
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}ampersands_href.dita"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}ampersands_href${file.separator}pdf"/>
+            <property name="transtype" value="pdf"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}ampersands_href${file.separator}pdf"/>
+            
+        </ant>   
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}ampersands_href.dita"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}ampersands${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}ampersands${file.separator}wordrtf"/>
+            
+        </ant>   
+    </target>
+</project>
+

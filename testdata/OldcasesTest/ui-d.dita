@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Arbortext, Inc., 1988-2004, v.4002-->
+<!DOCTYPE topic PUBLIC "-//IBM//DTD DITA Topic//EN"
+ "../dtd/topic.dtd">
+<?Pub Inc?>
+<topic id="ui-d" xml:lang="en-us">
+<title>UI Domain elements</title>
+<shortdesc>These are all of the elements in the UI domain</shortdesc>
+<body>
+<ul>
+<li><uicontrol>uicontrol</uicontrol></li>
+<li><wintitle>wintitle</wintitle></li>
+<li><menucascade><uicontrol>menucascade</uicontrol><uicontrol>with</uicontrol>
+<uicontrol>several</uicontrol><uicontrol>uicontrols</uicontrol><uicontrol>and</uicontrol>
+<uicontrol><shortcut>s</shortcut>hortcut</uicontrol></menucascade></li>
+</ul>
+<screen>This is a screen
+It has stuff in it
+<uicontrol>like uicontrol</uicontrol>
+<wintitle>and wintitle</wintitle>
+<menucascade><uicontrol>and</uicontrol><uicontrol>menucascade</uicontrol>
+</menucascade>
+isn't that lovely<?Pub Caret?></screen>
+</body>
+</topic>
+<?Pub *0000000927?>

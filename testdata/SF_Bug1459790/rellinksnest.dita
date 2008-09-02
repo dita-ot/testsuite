@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Arbortext, Inc., 1988-2005, v.4002-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<?Pub Inc?>
+<topic id="rellinksnest" xml:lang="en-us">
+<title>Test no body in a nested topic<?Pub Caret?></title>
+<shortdesc>This root level topic has a short description but no body. It also
+has nested topics.</shortdesc>
+<body>
+<p>There is content here. The nested topic should have a short description.</p>
+</body>
+
+<topic id="nesting" xml:lang="en-us">
+<title>nesting</title>
+<shortdesc>The nested topic has a shortdesc but no body.</shortdesc>
+
+<related-links>
+<link href="rellinksroot.dita#rellinksroot"/>
+<link href="rellinksrootplus.dita#nesting2"/>
+</related-links>
+</topic>
+
+</topic>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE map PUBLIC "-//IBM//DTD DITA Map//EN"
+ "../dtd/map.dtd">
+<?Pub Inc?>
+<map linking="none" title="infotypes">
+<topicref navtitle="Topic test" href="topic.dita"></topicref>
+<topicref navtitle="Concept test" href="concept.dita"></topicref>
+<topicref navtitle="Top-level task" href="task.dita"></topicref>
+<topicref navtitle="Reference Test" href="reference.dita"></topicref>
+<topicref navtitle="Main Topic" href="dita.dita"></topicref><?Pub Caret?>
+</map>
+<?Pub *0000000545?>

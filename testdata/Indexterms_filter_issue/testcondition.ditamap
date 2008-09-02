@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "C:\DITA-OT1.4.1\dtd\map.dtd">
+<map title="mapfile">
+<topicref navtitle="two" href="testcondition2.dita"/>
+<topicref navtitle="three" href="testcondition3.dita"/>
+<topicref navtitle="four" href="testcondition4.dita"/>
+<topicref navtitle="five" href="testcondition5.dita" otherprops="props1"/>
+<topicref href="testcondition2.ditamap" otherprops="props1"/>
+</map>

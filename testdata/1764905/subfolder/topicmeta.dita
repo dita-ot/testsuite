@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference  PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "../../dtd/reference.dtd">
+
+<reference id="uitlities" xml:lang="en-us">
+  <title>Map group elements</title>
+  <refbody>
+    <section id="1639344" spectitle="this is spectitle for 1639344">
+<p>The mapgroup domain elements represent particular containment strategies within a set of topicrefs in a map.
+<indexterm>Domains elements<indexterm>mapgroup elements</indexterm></indexterm><indexterm>mapgroup elements</indexterm></p>
+</section>
+  </refbody>
+</reference>

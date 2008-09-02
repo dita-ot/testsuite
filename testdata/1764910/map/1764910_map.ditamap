@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map  PUBLIC "-//OASIS//DTD DITA Map//EN" "C:\DITA-OT1.4.1\dtd\map.dtd">
+<map title="17649052xhtml" id="map">
+    <topicref href="../../parent1.dita" type="topic" format="dita" scope="local"></topicref>
+    <topicref href="../parent2.dita" type="reference" format="dita" scope="local"></topicref>
+</map>

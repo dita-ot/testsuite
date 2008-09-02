@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- (c) Copyright IBM Corp.-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+
+<map title="SF1548180_TC1">
+	<topicref href="test1.xml"/>
+	<topicref href="test2.xml"/>
+	<topicref href="test3.xml"/>
+	<topicref href="test4.xml"/>
+</map>

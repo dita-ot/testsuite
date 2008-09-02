@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE topic PUBLIC "-//IBM//DTD DITA Topic//EN"
+ "../dtd/topic.dtd">
+<?Pub Inc?>
+<topic id="testimage" xml:lang="en-us">
+<title>Test image</title>
+<shortdesc>This should test a lot of attribute values on the &lt;image> element.</shortdesc>
+<body>
+<p>NOTE -- removed @spectitle for beta2.</p>
+<p><b>Initial test will all test images with the default of placement=inline</b></p>
+<p>Let's test it in a paragraph, with no extra attrs: <image href="FIRST.GIF"/>.
+Text after image.</p>
+<p>Let's test it in a paragraph, with align=right: <image href="FIRST.GIF"
+align="right"/>. Text after image.</p>
+<p>Let's test it in a paragraph, with align=bottom: <image href="FIRST.GIF"
+align="bottom"/>. Text after image.</p>
+<p>Let's test it in a paragraph, with alt, longdescref, spectitle: <image
+href="FIRST.GIF" alt="My simple test" longdescref="longalt.html"/>. Text after
+image.</p>
+<p>Let's test it in a paragraph, with height/width, align=left: <image href="FIRST.GIF"
+alt="test size" height="100" width="100" align="left"/>. Text after image.</p>
+<p>Let's test it in a paragraph, with keyref, align=top, translate=no: <image
+href="FIRST.GIF" keyref="mykey" align="top" translate="no"/>. Text after image.</p>
+<p>Let's test it in a paragraph, with every attribute but conref: <image href="FIRST.GIF"
+keyref="all" alt="Altogether now" longdescref="longalt.html" height="50" width="75"
+align="bottom" placement="inline" id="testall" platform="hardwood" product="doritos"
+audience="couch potato" otherprops="whatever" importance="high" rev="frequent"
+translate="yes" xml:lang="de-de" outputclass="myimage" class="- topic/image "/>.
+Text after image.</p>
+<p>Let's test it in a paragraph, with align=center: <image href="FIRST.GIF"
+align="center"/>. Text after image.</p>
+<p>Let's test it in a paragraph, with align=current: <image href="FIRST.GIF"
+align="current"/>. Text after image.</p>
+<p>Let's test it in a paragraph, with height/width in inches: <image href="FIRST.GIF"
+alt="inchy" height="1in" width="1in"/>. Text after image.</p>
+<p>Let's test it in a paragraph, with height/width in points: <image href="FIRST.GIF"
+alt="pointy" height="20pt" width="25pt"/>. Text after image.</p>
+<p>Let's test it in a paragraph, with just spectitle:<image href="FIRST.GIF"/>.
+Text after image</p>
+<p><b>Now test the same things with placement=break</b></p>
+<p>Let's test it in a paragraph, with no extra attrs: <image href="FIRST.GIF"
+placement="break"/>. Text after image.</p>
+<p>Let's test it in a paragraph, with align=right: <image href="FIRST.GIF"
+align="right" placement="break"/>. Text after image.</p>
+<p>Let's test it in a paragraph, with align=bottom: <image href="FIRST.GIF"
+align="bottom" placement="break"/>. Text after image.</p>
+<p>Let's test it in a paragraph, with alt, longdescref, spectitle: <image
+href="FIRST.GIF" alt="My simple test" longdescref="longalt.html" placement="break"/>.
+Text after image.</p>
+<p>Let's test it in a paragraph, with height/width, align=left: <image href="FIRST.GIF"
+alt="test size" height="100" width="100" align="left" placement="break"/>.
+Text after image.</p>
+<p>Let's test it in a paragraph, with keyref, align=top, translate=no: <image
+href="FIRST.GIF" keyref="mykey" align="top" placement="break" translate="no"/>.
+Text after image.</p>
+<p>Let's test it in a paragraph, with every attribute but conref: <image href="FIRST.GIF"
+keyref="all" alt="Altogether now" longdescref="longalt.html" height="50" width="75"
+align="bottom" placement="break" id="testallbreak" platform="hardwood" product="doritos"
+audience="couch potato" otherprops="whatever" importance="high" rev="frequent"
+translate="yes" xml:lang="de-de" outputclass="myimage" class="- topic/image "/>.
+Text after image.</p>
+<p>Let's test it in a paragraph, with align=center: <image href="FIRST.GIF"
+align="center" placement="break"/>. Text after image.</p>
+<p>Let's test it in a paragraph, with align=current: <image href="FIRST.GIF"
+align="current" placement="break"/>. Text after image.</p>
+<p>Let's test it in a paragraph, with height/width in inches: <image href="FIRST.GIF"
+alt="inchy" height="1in" width="1in" placement="break"/>. Text after image.</p>
+<p>Let's test it in a paragraph, with height/width in points: <image href="FIRST.GIF"
+alt="pointy" height="20pt" width="25pt" placement="break"/>. Text after image.</p>
+<p>Let's test it in a paragraph, with just spectitle:<image href="FIRST.GIF"
+placement="break"/>. Text after image</p>
+<p><b>Now test the same images with placement=inline, but outside of a paragraph</b></p>
+<p>Let's test it in a paragraph, with no extra attrs: </p>
+<image href="FIRST.GIF"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with align=right: </p>
+<image href="FIRST.GIF" align="right"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with align=bottom: </p>
+<image href="FIRST.GIF" align="bottom"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with alt, longdescref, spectitle: </p>
+<image href="FIRST.GIF" alt="My simple test" longdescref="longalt.html"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with height/width, align=left: <image href="FIRST.GIF"
+alt="test size" height="100" width="100" align="left"/>. Text after image.</p>
+<p>Let's test it in a paragraph, with keyref, align=top, translate=no: </p>
+<image href="FIRST.GIF" keyref="mykey" align="top" translate="no"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with every attribute but conref: </p>
+<image href="FIRST.GIF" keyref="all" alt="Altogether now" longdescref="longalt.html"
+height="50" width="75" align="bottom" placement="inline" id="allout" platform="hardwood"
+product="doritos" audience="couch potato" otherprops="whatever" importance="high"
+rev="frequent" translate="yes" xml:lang="de-de" outputclass="myimage" class="- topic/image "/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with align=center: </p>
+<image href="FIRST.GIF" align="center"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with align=current: </p>
+<image href="FIRST.GIF" align="current"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with height/width in inches: </p>
+<image href="FIRST.GIF" alt="inchy" height="1in" width="1in"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with height/width in points: </p>
+<image href="FIRST.GIF" alt="pointy" height="20pt" width="25pt"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with just spectitle:</p>
+<image href="FIRST.GIF"/>
+<p>Text after image</p>
+<p><b>Test outside of paragraph again, but with placement=break</b></p>
+<p>Let's test it in a paragraph, with no extra attrs: </p>
+<image href="FIRST.GIF" placement="break"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with align=right: </p>
+<image href="FIRST.GIF" align="right" placement="break"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with align=bottom: </p>
+<image href="FIRST.GIF" align="bottom" placement="break"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with alt, longdescref, spectitle: </p>
+<image href="FIRST.GIF" alt="My simple test" longdescref="longalt.html" placement="break"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with height/width, align=left: </p>
+<image href="FIRST.GIF" alt="test size" height="100" width="100" align="left"
+placement="break"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with keyref, align=top, translate=no: </p>
+<image href="FIRST.GIF" keyref="mykey" align="top" placement="break" translate="no"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with every attribute but conref: </p>
+<image href="FIRST.GIF" keyref="all" alt="Altogether now" longdescref="longalt.html"
+height="50" width="75" align="bottom" placement="break" id="alloutbreak" platform="hardwood"
+product="doritos" audience="couch potato" otherprops="whatever" importance="high"
+rev="frequent" translate="yes" xml:lang="de-de" outputclass="myimage" class="- topic/image "/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with align=center: </p>
+<image href="FIRST.GIF" align="center" placement="break"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with align=current: </p>
+<image href="FIRST.GIF" align="current" placement="break"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with height/width in inches: </p>
+<image href="FIRST.GIF" alt="inchy" height="1in" width="1in" placement="break"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with height/width in points: </p>
+<image href="FIRST.GIF" alt="pointy" height="20pt" width="25pt" placement="break"/>
+<p>Text after image.</p>
+<p>Let's test it in a paragraph, with just spectitle:</p>
+<image href="FIRST.GIF" placement="break"/>
+<p>Text after image</p>
+<p><b>Test images and IDs</b></p>
+<p>Let's test it in a paragraph, with just @id:<image href="FIRST.GIF" id="myimage0"/>.
+Text after image</p>
+<p>Let's test it in a paragraph, with id and @alt:<image href="FIRST.GIF"
+alt="alternate text for my image" id="myimage1"/>. Text after image</p>
+<p>Let's test it in a paragraph, with id and @spectitle:<image href="FIRST.GIF"
+id="myimage2"/>. Text after image</p>
+<p>Let's test it in a paragraph, with just @alt:<image href="FIRST.GIF" alt="alternate text for my image"/>.
+Text after image</p>
+<p>Let's test it in a paragraph, with just @spectitle:<image href="FIRST.GIF"/>.
+Text after image</p>
+<p>Let's test it in a paragraph, with @alt and @spectitle: <image href="FIRST.GIF"
+alt="alternate text for my image"/>. Text after image</p>
+<p>Let's test it in a paragraph, with id and @alt and @spectitle:<image href="FIRST.GIF"
+alt="alternate text for my image" id="myimage3"/>. Text after image</p>
+<p>Let's try and conref that image I just used, and override the alternate
+text: <image href="ignorethisvalue" alt="This is the real alternate text"
+conref="#testimage/myimage3"/></p>
+</body>
+<topic id="images" xml:lang="en-us">
+<title>testing images</title>
+<shortdesc>This topic tests several simple cases of embedding images in other
+objects, or placing them standalone. <image href="first.gif"/> Why, there's
+one in my shortdesc!</shortdesc>
+<body><image href="first.gif" alt="1001 words for the graphic" longdescref="longdesc.htm"
+height="75" width="40" align="left" outputclass="picture"/>
+<p>Now let's test an image in a phrase or something. <ph>Understated graphic: <image
+href="first.gif" alt="no alt text" placement="break"/></ph>.</p>
+<p>How about putting an image in a section?</p>
+<section><title>Test an image in a section</title>Image all alone: <image
+href="first.gif" placement="break"/> <ph>Image in a phrase: <image href="first.gif"/></ph><p>Image
+in a paragraph: <image href="first.gif"/></p><p>Image in a phrase <ph>and
+a paragraph: <image href="first.gif"/></ph>.</p></section>
+</body>
+</topic><?Pub Caret?>
+</topic>
+<?Pub *0000010950?>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corporation-->
+ <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+ 
+<topic id="UC23_TC4">
+<title>TC23_TC4</title>
+<body>
+	<fig conref="../ref/test1.xml#test1/useful"/>
+	<p conref="../ref/test2.xml#test2/useful"/>
+	<ul conref="../ref/test3.xml#test3/useful"><li/></ul>
+</body>
+<related-links>
+	<link href="../ref/test2.xml"/>
+</related-links>
+</topic>

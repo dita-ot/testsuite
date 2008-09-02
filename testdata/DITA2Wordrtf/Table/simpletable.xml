@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- (C) Copyright IBM Corporation 2001, 2004. All Rights Reserved.
+ | This file is part of the DITA package on IBM's developerWorks site.
+ | See license.txt for disclaimers and permissions.
+ *-->
+<?xml-stylesheet href="../xsl/dita2html_shell.xsl" type="text/xsl"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "../dtd/reference.dtd" []>
+<reference id="ddhd" xml:lang="en-us">
+   <title>
+      <keyword>ddhd</keyword>
+   </title>
+   <shortdesc>The definition descriptions heading (&lt;ddhd&gt;) element contains 
+an optional heading or title for a column of descriptions or definitions in
+a definition list</shortdesc>
+   <prolog>
+      <metadata>
+         <keywords>
+            <indexterm>ddhd (definition descriptions heading)</indexterm>
+            <indexterm>definition
+descriptions heading (ddhd)</indexterm>
+            <indexterm>Body elements<indexterm>ddhd</indexterm>
+            </indexterm>
+            <indexterm>ddhd</indexterm>
+         </keywords>
+      </metadata>
+   </prolog>
+   <refbody>
+      <section>
+         <title>Attributes</title>
+         <simpletable relcolwidth="2* 3* 1* 1* 1*" id="ddhd_attr">
+            <sthead>
+               <stentry>Name</stentry>
+               <stentry>Description</stentry>
+               <stentry>Data Type</stentry>
+               <stentry>Default Value</stentry>
+               <stentry>Required?</stentry>
+            </sthead>
+            <strow>
+		 <stentry>Bold</stentry>
+		  <stentry>b</stentry>
+		 <stentry>Bold</stentry>
+		  <stentry>b</stentry>
+		  <stentry>Bold</stentry>
+            </strow>
+         </simpletable>
+      </section>
+      <example/>
+   </refbody>
+</reference>

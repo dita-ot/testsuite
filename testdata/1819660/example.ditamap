@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+
+<map id="map1" title="example">
+        <topicref href="row.dita">
+            <topicref href="topicmeta.dita" collection-type="sequence">
+                <anchor id="xyz"/>
+            </topicref>
+            <navref mapref="yetanother.ditamap"/>
+        </topicref>
+</map>
+    
+    
+    
+

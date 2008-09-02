@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--
+ | (C) Copyright IBM Corporation 2005 - 2006. All Rights Reserved.
+ *-->
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
+         prefer="public">
+
+  <public publicId="-//IBM//DTD DITA API Reference Map2//EN"
+          uri="plugins/apiref2/dtd/java2APIMap.dtd"/>
+  <public publicId="-//IBM//DTD DITA API Package Reference Type2//EN"
+          uri="plugins/apiref2/dtd/java2Package.dtd"/>
+  <public publicId="-//IBM//DTD DITA API Class Reference Type2//EN"
+          uri="plugins/apiref2/dtd/java2Class.dtd"/>
+  <public publicId="-//IBM//DTD DITA API Interface Reference Type2//EN"
+          uri="plugins/apiref2/dtd/java2Interface.dtd"/>
+
+  <public publicId="-//IBM//ELEMENTS DITA API Reference Map2//EN"
+          uri="plugins/apiref2/dtd/java2APIMap.mod"/>
+  <public publicId="-//IBM//ELEMENTS DITA API Package2//EN"
+          uri="plugins/apiref2/dtd/java2Package.mod"/>
+  <public publicId="-//IBM//ELEMENTS DITA API Class2//EN"
+          uri="plugins/apiref2/dtd/java2Class.mod"/>
+  <public publicId="-//IBM//ELEMENTS DITA API Interface2//EN"
+          uri="plugins/apiref2/dtd/java2Interface.mod"/>
+  <public publicId="-//IBM//ELEMENTS DITA API Field2//EN"
+          uri="plugins/apiref2/dtd/java2Field.mod"/>
+  <public publicId="-//IBM//ELEMENTS DITA API Method2//EN"
+          uri="plugins/apiref2/dtd/java2Method.mod"/>
+
+  <public publicId="-//IBM//ENTITIES DITA API Domain2//EN"
+          uri="plugins/apiref2/dtd/java2APIDomain.ent"/>
+  <public publicId="-//IBM//ELEMENTS DITA API Domain2//EN"
+          uri="plugins/apiref2/dtd/java2APIDomain.mod"/>
+
+</catalog>

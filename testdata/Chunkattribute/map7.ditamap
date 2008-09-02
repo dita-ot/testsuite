@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.1 Map//EN" "map.dtd">
+<map id="mapseven">
+    <title>map7ofchunck</title>
+    <topichead navtitle="How to do a lots of things" chunk="to-navigation">
+        <topicref href="parent1.dita" navtitle="How to set up a web server">
+            <topicref href="child1.dita" chunk="select-branch"></topicref>
+            <topicref href="parent2.dita" navtitle="How to ensure databae security">
+                <topicref href="child2.dita" chunk="select-branch"></topicref>
+            </topicref>
+            </topicref>
+    </topichead>
+</map>

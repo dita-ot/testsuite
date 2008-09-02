@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corporation-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+
+<concept id="concept1" xml:lang="en-us">
+<title>H1</title>
+<conbody>
+	<section><title>H2</title> This section title is H2.
+	</section>
+	<example><title>H2</title>This example title is H2.
+	<syntaxdiagram frame="none">
+		<title>H3</title>
+		<fragment><title>H3</title>
+ 		<groupchoice><title>H4</title></groupchoice>
+		</fragment>
+	</syntaxdiagram>
+	</example>
+</conbody>
+<concept id="concept2" xml:lang="en-us">
+<title>H2</title>
+<conbody>
+	<section><title>H3</title> This section title is H3.
+	</section>
+	<example><title>H3</title>This example title is H3.
+	<syntaxdiagram frame="none">
+		<title>H4</title>
+		<fragment><title>H4</title>
+ 		<groupchoice><title>H5</title></groupchoice>
+		</fragment>
+	</syntaxdiagram>
+	</example>
+</conbody>
+<concept id="concept3" xml:lang="en-us">
+<title>H3</title>
+<conbody>
+	<section><title>H4</title> This section title is H4.
+	</section>
+	<example><title>H4</title>This example title is H4.
+	<syntaxdiagram frame="none">
+		<title>H5</title>
+		<fragment><title>H5</title>
+ 		<groupchoice><title>H6</title></groupchoice>
+		</fragment>
+	</syntaxdiagram>
+	</example>
+</conbody>
+<concept id="concept4" xml:lang="en-us">
+<title>H4</title>
+<conbody>
+	<section><title>H5</title> This section title is H5.
+	</section>
+	<example><title>H5</title>This example title is H5.
+	</example>
+</conbody>
+<concept id="concept5" xml:lang="en-us">
+<title>H5</title>
+<conbody>
+	<section><title>H6</title> This section title is H6.
+	</section>
+	<example><title>H6</title>This example title is H6.
+	<syntaxdiagram frame="none">
+		<title>H6</title>
+		<fragment><title>H6</title>
+ 		<groupchoice><title>H6</title></groupchoice>
+		</fragment>
+	</syntaxdiagram>
+	</example>
+</conbody>
+<concept id="concept6" xml:lang="en-us">
+<title>H6</title>
+<conbody>
+	<section><title>H6</title> This section title is H6.
+	</section>
+	<example><title>H6</title>This example title is H6.
+	<syntaxdiagram frame="none">
+		<title>H6</title>
+		<fragment><title>H6</title>
+ 		<groupchoice><title>H6</title></groupchoice>
+		</fragment>
+	</syntaxdiagram>
+	</example>
+</conbody>
+<concept id="concept7" xml:lang="en-us">
+<title>H6</title>
+<conbody>
+	<section><title>H6</title> This section title is H6.
+	</section>
+	<example><title>H6</title>This example title is H6.
+	<syntaxdiagram frame="none">
+		<title>H6</title>
+		<fragment><title>H6</title>
+ 		<groupchoice><title>H6</title></groupchoice>
+		</fragment>
+	</syntaxdiagram>
+	</example>
+</conbody>
+</concept>
+</concept>
+</concept>
+</concept>
+</concept>
+</concept>
+</concept>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corporation 2001, 2004. All Rights Reserved.
+ | This file is part of the DITA package on IBM's developerWorks site.
+ | See license.txt for disclaimers and permissions.
+ *-->
+<!DOCTYPE topic PUBLIC "-//IBM//DTD DITA Topic//EN"
+ "../../dtd/topic.dtd">
+<topic id="configuring" xml:lang="en-us">
+<title>Configuring</title>
+<shortdesc>You configure components to set up or refine your solution.
+</shortdesc>
+<body>
+<p>You don't have to get the best configuration the first time.
+Instead, you might start with a simple configuration and then refine
+it gradually as needed. </p>
+</body>
+</topic>

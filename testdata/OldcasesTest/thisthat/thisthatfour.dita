@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE concept PUBLIC "-//IBM//DTD DITA Concept//EN"
+ "../dtd/concept.dtd">
+<?Pub Inc?>
+<concept id="four" xml:lang="en-us"><?Pub Caret?>
+<title>four</title>
+<shortdesc>Put your short description here; used for first paragraph and abstract.</shortdesc>
+<conbody>
+<p>Type <b>your</b> text here.</p>
+<ul>
+<li>an interesting point</li>
+<li>another interesting point</li>
+</ul>
+</conbody>
+</concept>
+<?Pub *0000000500?>

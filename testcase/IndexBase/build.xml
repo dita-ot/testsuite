@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="all" default="all" basedir=".">
+  <!-- Set a property for each environment variable -->
+  <property environment="env"/>
+  <property name="args.logdir" value="log"></property>
+  <property name="dita.extname" value=".xml"/>
+  
+  <import file="indexbase_eclipsehelp.xml"/>
+  <import file="indexbase_htmlhelp.xml"/>
+  <import file="indexbase_javahelp.xml"/>
+  <import file="indexbase_xhtml.xml"/>
+  
+    <target name="all" 
+    depends="indexbase2eclipsehelp, indexbase2htmlhelp, indexbase2javahelp, indexbase2xhtml" 
+    />
+</project>
+

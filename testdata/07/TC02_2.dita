@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corporation-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+
+<topic id="TC02_2" xml:lang="en-us">
+<title>TC02_2</title>
+
+<abstract>
+<shortdesc> This is shortdesc for TC02_2.... </shortdesc>
+what we have here is a meanless list.
+<ul>
+<li>first</li>
+<li>second</li>
+<li>third</li>
+</ul>
+<shortdesc> continue to say sth.</shortdesc>
+<shortdesc/>
+</abstract>
+
+<body>
+	<p>content of TC02_2</p>
+</body>
+</topic>

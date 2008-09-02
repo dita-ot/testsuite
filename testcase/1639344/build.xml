@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="1639344all" default="all" basedir=".">
+    <!-- Set a property for each environment variable -->
+    <property environment="env"/>
+    <property name="args.logdir" value="log"></property>
+    <property name="dita.extname" value=".xml"/>
+    
+    <import file="1639344.xml"/>
+ 
+    <target name="all" 
+        depends="16393442xhtml" 
+        />
+</project>

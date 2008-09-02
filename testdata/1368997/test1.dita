@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corporation-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+
+<topic id="topic1" xml:lang="en-us">
+<title>test1</title>
+<prolog><author>AKEM</author></prolog>
+<body>
+</body>
+<topic id="topic2" xml:lang="en-us">
+<title>test2</title>
+<prolog><author>another AKEM</author></prolog>
+<body>
+</body>
+<topic id="topic3" xml:lang="en-us">
+<title>test3</title>
+<prolog><author>AKEM</author></prolog>
+<body>
+</body>
+<topic id="topic4" xml:lang="en-us">
+<title>test4</title>
+<prolog><author>another AKEM</author></prolog>
+<body>
+</body>
+<topic id="topic5" xml:lang="en-us">
+<title>test5</title>
+<prolog><author>AKEM</author></prolog>
+<body>
+</body>
+</topic>
+</topic>
+</topic>
+</topic>
+</topic>

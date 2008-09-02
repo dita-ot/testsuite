@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foreign class="+ topic/foreign mathml/mathml">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+       <mi>x</mi><mo>+</mo><mn>3</mn>   
+    </math>
+</foreign>

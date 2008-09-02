@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="1764910_2_warn_xhtml" default="17649102_2_warn2xhtml" basedir=".">
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    
+    <property name="generate.copy.outer" value="2"></property>
+    <property name="outer.control" value="warn"></property>
+    
+    
+    <target name="17649102_2_warn2xhtml">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}1764910${file.separator}map${file.separator}1764910_map.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}1764910${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}1764910${file.separator}xhtml"/>
+            
+        </ant>     
+    </target>
+</project>
+

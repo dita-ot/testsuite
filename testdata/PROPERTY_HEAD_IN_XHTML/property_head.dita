@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "../dtd/reference.dtd">
+
+<reference id="ref" xml:lang="en-us">
+<title>Proptable verification</title>
+<shortdesc>Shows what can happen when you skip proptype &amp; propvalue in
+a properties table.</shortdesc>
+<refbody>
+
+<section>
+ <title>property1</title>
+The head info is given in the first property table.
+</section>
+
+<properties>
+<prophead>
+<proptypehd>type1</proptypehd>
+<propvaluehd>value1</propvaluehd>
+<propdeschd>desc1</propdeschd>
+</prophead>
+
+<property>
+     <proptype>type</proptype>
+     <propvalue>value</propvalue>
+     <propdesc>description</propdesc>
+</property>
+
+<property>
+     <proptype></proptype>
+  <propvalue>type</propvalue>
+     <propdesc></propdesc>
+</property>
+
+<property>
+     <proptype></proptype>
+  <propvalue>value</propvalue>
+       <propdesc></propdesc>
+</property>
+</properties>
+
+<section>
+ <title>property2</title>
+The head info is not given in the second property table. So the default head info should be given.
+</section>
+<properties>
+<property>
+     <proptype>type</proptype>
+     <propvalue>value</propvalue>
+     <propdesc>description</propdesc>
+</property>
+
+<property>
+     <proptype></proptype>
+  <propvalue>type</propvalue>
+     <propdesc></propdesc>
+</property>
+
+<property>
+     <proptype></proptype>
+  <propvalue>value</propvalue>
+       <propdesc></propdesc>
+</property>
+</properties>
+
+</refbody>
+</reference>

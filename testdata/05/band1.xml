@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corporation-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+
+<topic id="band1" xml:lang="en-us">
+<title>band 1</title>
+<prolog></prolog>
+<body>
+	<p>band 1
+	<indexterm> band 1
+		<index-see-also> twin bands <indexterm> band 2</indexterm>
+		</index-see-also>
+	</indexterm>
+	<indexterm> twin bands
+		<indexterm> band 1
+	 		<index-see> band 3 </index-see>
+	 	</indexterm>
+	</indexterm>
+	</p>
+</body>
+</topic>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- (c) Copyright IBM Corp.-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+
+<map title="UC19_TC3">
+	<topicref href="topic1.xml">
+		<topicref href="test.xml" navtitle="test in topic2" locktitle="yes">
+			<topicref navtitle="null1"/>
+		</topicref>
+	</topicref>
+	<topicref href="topic2.xml">
+		<topicref navtitle="null2">
+			<topicref href="test.xml" navtitle="test in null2" locktitle="yes"/>
+		</topicref>
+	</topicref>
+	<topicref href="topic3.xml">
+		<topicref navtitle="null5">
+			<topichead navtitle="null6"/>
+		</topicref>
+	</topicref>
+	<topichead navtitle="null3">
+		<topicref href="test.xml" navtitle="test in null3" locktitle="yes">
+			<topicref navtitle="null4"/>
+		</topicref>
+	</topichead>
+	<topicref navtitle="null7">
+		<topichead navtitle="null8">
+			<topicref href="test.xml" navtitle="test in null8" locktitle="yes"/>
+		</topichead>
+	</topicref>
+</map>

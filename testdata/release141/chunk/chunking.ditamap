@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Arbortext, Inc., 1988-2006, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Inc?>
+<map title="Put your title here (Required for Eclipse)">
+<topicref href="a.dita" type="topic">
+<topicref chunk="to-content" href="b.dita"><?Pub Caret?>
+<topicref href="c.dita"></topicref>
+<topicref href="d.dita"></topicref>
+</topicref>
+</topicref>
+</map>
+<?Pub *0000000430?>

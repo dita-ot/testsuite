@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE topic PUBLIC "-//IBM//DTD DITA Topic//EN"
+ "../dtd/topic.dtd">
+<?Pub Inc?>
+<topic id="testsimpletable" xml:lang="en-us">
+<title>Test simpletable</title>
+<shortdesc>This should test a lot of attributes on simpletables and their
+descendents.</shortdesc>
+<body>
+<p>First, just try a plain old simple table:</p>
+<simpletable>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+</simpletable>
+<p>now put a simple one in with an id, then conref it:</p>
+<simpletable id="simplesimple">
+<strow>
+<stentry>one</stentry>
+<stentry>two</stentry>
+</strow>
+<strow>
+<stentry>three</stentry>
+<stentry>four</stentry>
+</strow>
+</simpletable>
+<p>now conref it:</p>
+<simpletable conref="#testsimpletable/simplesimple">
+<strow>
+<stentry>this entry should not appear in the output</stentry>
+</strow>
+</simpletable>
+<p>Simpletable with @outputclass on everything:</p>
+<simpletable outputclass="stableclass">
+<sthead outputclass="stheadclass">
+<stentry outputclass="stentryclass">headclass</stentry>
+<stentry outputclass="stentryclass">headclass</stentry>
+</sthead>
+<strow outputclass="strowclass">
+<stentry outputclass="stentryclass">entryclass</stentry>
+<stentry outputclass="stentryclass">entryclass</stentry>
+</strow>
+</simpletable>
+<p>Now a simpletable with a simple head, and keycol=3:</p>
+<simpletable keycol="3">
+<sthead>
+<stentry>head1</stentry>
+<stentry>head2</stentry>
+<stentry>head3</stentry>
+<stentry>head4</stentry>
+</sthead>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+</simpletable>
+<p>Simple table with head and @spectitle</p>
+<simpletable spectitle="Special SpecTable here">
+<sthead>
+<stentry>head1</stentry>
+<stentry>head2</stentry>
+<stentry>head3</stentry>
+<stentry>head4</stentry>
+</sthead>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+</simpletable>
+<p>Simple table with relcolwidth=1221, and @scale=70; spectitle on first and
+last-col entries</p>
+<simpletable relcolwidth="1* 2* 2* 1*" scale="70">
+<sthead>
+<stentry specentry="spechead"></stentry>
+<stentry>no text</stentry>
+<stentry>in first head</stentry>
+<stentry specentry="endspechead">head4</stentry>
+</sthead>
+<strow>
+<stentry specentry="specentry"></stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry specentry="specentry">entry4</stentry>
+</strow>
+<strow>
+<stentry specentry="specentry">entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry specentry="specentry"></stentry>
+</strow>
+<strow>
+<stentry specentry="specentry"></stentry>
+<stentry outputclass="bubba">entry2</stentry>
+<stentry>entry3</stentry>
+<stentry specentry="specentry">entry4</stentry>
+</strow>
+</simpletable>
+<p>Frame=all, expanse=column, spectitle:</p>
+<simpletable frame="all" expanse="column" spectitle="special framed column table">
+<sthead>
+<stentry>head1</stentry>
+<stentry>head2</stentry>
+<stentry>head3</stentry>
+<stentry>head4</stentry>
+</sthead>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+</simpletable>
+<p>frame=bottom, expanse=page</p>
+<simpletable frame="bottom" expanse="page">
+<sthead>
+<stentry>head1</stentry>
+<stentry>head2</stentry>
+<stentry>head3</stentry>
+<stentry>head4</stentry>
+</sthead>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+</simpletable>
+<p>frame=none, expanse=textline, translate=no</p>
+<simpletable frame="none" expanse="textline" translate="no">
+<sthead>
+<stentry>head1</stentry>
+<stentry>head2</stentry>
+<stentry>head3</stentry>
+<stentry>head4</stentry>
+</sthead>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+</simpletable>
+<p>frame=sides, expanse=textline, relcolwidth=1234, scale=50, keycol=1</p>
+<simpletable relcolwidth="1* 2* 3* 4*" keycol="1" scale="50" frame="sides"
+expanse="textline">
+<sthead>
+<stentry>head1</stentry>
+<stentry>head2</stentry>
+<stentry>head3</stentry>
+<stentry>head4</stentry>
+</sthead>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+</simpletable>
+<p>frame=top, expanse=column</p>
+<simpletable frame="top" expanse="column">
+<sthead>
+<stentry>head1</stentry>
+<stentry>head2</stentry>
+<stentry>head3</stentry>
+<stentry>head4</stentry>
+</sthead>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+</simpletable>
+<p>frame=topbot, expanse=column</p>
+<simpletable frame="topbot" expanse="column">
+<sthead>
+<stentry>head1</stentry>
+<stentry>head2</stentry>
+<stentry>head3</stentry>
+<stentry>head4</stentry>
+</sthead>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+<strow>
+<stentry>entry1</stentry>
+<stentry>entry2</stentry>
+<stentry>entry3</stentry>
+<stentry>entry4</stentry>
+</strow>
+</simpletable>
+<p><b>TEST VARY-ING NUMBERS OF COLUMNS</b></p>
+<simpletable>
+<strow>
+<stentry>one</stentry>
+<stentry>two</stentry>
+</strow>
+<strow>
+<stentry>one</stentry>
+<stentry>two</stentry>
+<stentry>three</stentry>
+<stentry>four</stentry>
+</strow>
+<strow>
+<stentry>one</stentry>
+<stentry>two</stentry>
+<stentry>three</stentry>
+</strow>
+</simpletable>
+<p>Varying numbers, with relcolwidth = the maximum number of columns</p>
+<simpletable relcolwidth="1* 2* 2* 3*">
+<strow>
+<stentry>one</stentry>
+<stentry>two</stentry>
+</strow>
+<strow>
+<stentry>one</stentry>
+<stentry>two</stentry>
+<stentry>three</stentry>
+<stentry>four</stentry>
+</strow>
+<strow>
+<stentry>one</stentry>
+<stentry>two</stentry>
+<stentry>three</stentry>
+</strow>
+</simpletable>
+<p>Varying columns, with relcolwidth = the minimum number of columns</p>
+<simpletable relcolwidth="1* 3*">
+<strow>
+<stentry>one</stentry>
+<stentry>two</stentry>
+</strow>
+<strow>
+<stentry>one</stentry>
+<stentry>two</stentry>
+<stentry>three</stentry>
+<stentry>four</stentry>
+</strow>
+<strow>
+<stentry>one</stentry>
+<stentry>two</stentry>
+<stentry>three</stentry>
+</strow>
+</simpletable>
+<p>varying columns, with relcolwidth in the middle, and keycol at 3 (of 4):</p>
+<simpletable relcolwidth="1* 2* 3*" keycol="3">
+<strow>
+<stentry>one</stentry>
+<stentry>two</stentry>
+</strow>
+<strow>
+<stentry>one</stentry>
+<stentry>two</stentry>
+<stentry>three</stentry>
+<stentry>four</stentry>
+</strow>
+<strow>
+<stentry>one</stentry>
+<stentry>two</stentry>
+<stentry>three</stentry>
+</strow>
+</simpletable>
+<p>Varying columns, with relcolwidth showing more columns than really exist</p>
+<simpletable relcolwidth="3* 2* 2* 1* 1*">
+<strow>
+<stentry>one</stentry>
+<stentry>two</stentry>
+</strow>
+<strow>
+<stentry>one</stentry>
+<stentry>two</stentry>
+<stentry>three</stentry>
+<stentry>four</stentry>
+</strow>
+<strow>
+<stentry>one</stentry>
+<stentry>two</stentry>
+<stentry>three</stentry>
+</strow>
+</simpletable>
+<p>End of testing</p>
+</body>
+<topic id="simpletable" xml:lang="en-us">
+<title>Everything in simpletable</title>
+<body>
+<p>First there is a simple table with no attributes specified, followed by
+the same simpletable with keycol=2 and other attrs</p>
+<simpletable>
+<strow>
+<stentry>stuff here</stentry>
+<stentry>more stuff</stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic.ph:</stentry>
+<stentry><apiname>test apiname</apiname> <b>test bold</b> (test boolean -><boolean
+state="yes"/>) <cmdname>test cmdname</cmdname> <codeph>test codeph</codeph> <filepath>test
+filepath</filepath> <i>test italic</i> <indexterm>index in basicph in stentry</indexterm> <keyword>test
+keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> <option>test
+option</option> <parmname>test parmname</parmname> <ph>test ph</ph> <q>testing
+a quote</q> (test state => <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tt>test tt</tt> <u>test
+underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle> <cite>test
+cite</cite> <xref href="testelements.dita">test xref</xref> <tm trademark="testTM"
+tmowner="microsoft" tmtype="tm" tmclass="other">test tm</tm></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>txt.incl:</stentry>
+<stentry><draft-comment>this is a draft comment</draft-comment><required-cleanup>this is required cleanup</required-cleanup><fn>This
+is a footnote, which is part of txt.incl</fn><indexterm>txt.incl index term</indexterm></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><codeblock>codeblock
+codeblock
+codeblock</codeblock></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><dl>
+<dlhead>
+<dthd>Terms in a simpletable</dthd></dlhead>
+<dlentry>
+<dt>dterm</dt>
+<dd>defn defn defn defn defn defn defn defn defn defn defn defn defn defn
+defn defn defn defn defn defn defn defn defn defn defn defn defn defn defn
+defn defn defn defn</dd>
+</dlentry><dlentry>
+<dt>dterm</dt>
+<dd>defn defn defn defn defn defn defn defn defn defn defn defn defn defn
+defn defn defn defn defn defn defn defn defn defn defn defn defn defn defn
+defn defn defn defn</dd>
+</dlentry></dl></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><fig frame="all" expanse="column"><title>simplefig?</title>
+<p>my figure in a simple table, with frame=all and expanse=column</p>
+</fig></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><image href="first.gif"/></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><lines>these
+are
+lines</lines></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><lq>llllllllllllllooooooooooooooonnnnnnnnnnnnnggggggggggg qqqqqqqqqqquuuuuuuuuuuuuuoooooooooootttttttttttteeeeeeeeeee
+here here here here here here here</lq></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><msgblock>block
+of
+messages</msgblock></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry>these are notes:<note>this is a note</note><note type="attention">this
+is a note</note><note type="caution">this is a note</note><note type="danger">this
+is a note</note></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><ol>
+<li>list</li>
+<li>in</li>
+<li>entry</li>
+</ol></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><p>para in stentry</p><p>para in stentry</p></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><parml><plentry>
+<pt>pt</pt>
+<pd>pd</pd>
+</plentry><plentry>
+<pt>pt</pt>
+<pd>pd</pd>
+</plentry></parml></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>block stuff</stentry>
+<stentry><pre>pre
+formatted
+stufffff</pre></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>block stuff</stentry>
+<stentry><syntaxdiagram><groupcomp><kwd>kkkkkk</kwd><delim>dddddd</delim>
+<sep>ss</sep></groupcomp></syntaxdiagram></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>block stuff</stentry>
+<stentry><ul>
+<li>uuuu</li>
+<li>llll</li>
+<li>stuff</li>
+</ul></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>end stuff</stentry>
+<stentry>end stuff</stentry>
+<stentry>end stuff</stentry>
+</strow>
+</simpletable>
+<p>Now for the other simple table, using relcolwidth="1* 3* 1*", keycol=2,
+frame=sides, expanse=page</p>
+<simpletable relcolwidth="1* 3* 1*" keycol="2" frame="sides" expanse="page">
+<strow>
+<stentry>stuff here</stentry>
+<stentry>more stuff</stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic.ph:</stentry>
+<stentry><apiname>test apiname</apiname> <b>test bold</b> (test boolean -><boolean
+state="yes"/>) <cmdname>test cmdname</cmdname> <codeph>test codeph</codeph> <filepath>test
+filepath</filepath> <i>test italic</i> <indexterm>index in basicph in stentry</indexterm> <keyword>test
+keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> <option>test
+option</option> <parmname>test parmname</parmname> <ph>test ph</ph> <q>testing
+a quote</q> (test state => <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tt>test tt</tt> <u>test
+underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle> <cite>test
+cite</cite> <xref href="testelements.dita">test xref</xref> <tm trademark="testTM"
+tmowner="microsoft" tmtype="tm" tmclass="other">test tm</tm></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>txt.incl:</stentry>
+<stentry><draft-comment>this is a draft comment</draft-comment><required-cleanup>this is required cleanup</required-cleanup><fn>This
+is a footnote, which is part of txt.incl</fn><indexterm>txt.incl index term</indexterm></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><codeblock>codeblock
+codeblock
+codeblock</codeblock></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><dl>
+<dlhead>
+<dthd>Terms in a simpletable</dthd></dlhead>
+<dlentry>
+<dt>dterm</dt>
+<dd>defn defn defn defn defn defn defn defn defn defn defn defn defn defn
+defn defn defn defn defn defn defn defn defn defn defn defn defn defn defn
+defn defn defn defn</dd>
+</dlentry><dlentry>
+<dt>dterm</dt>
+<dd>defn defn defn defn defn defn defn defn defn defn defn defn defn defn
+defn defn defn defn defn defn defn defn defn defn defn defn defn defn defn
+defn defn defn defn</dd>
+</dlentry></dl></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><fig frame="all" expanse="column"><title>simplefig?</title>
+<p>my figure in a simple table, with frame=all and expanse=column</p>
+</fig></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><image href="first.gif"/></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><lines>these
+are
+lines</lines></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><lq>llllllllllllllooooooooooooooonnnnnnnnnnnnnggggggggggg qqqqqqqqqqquuuuuuuuuuuuuuoooooooooootttttttttttteeeeeeeeeee
+here here here here here here here</lq></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><msgblock>block
+of
+messages</msgblock></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry>these are notes:<note>this is a note</note><note type="attention">this
+is a note</note><note type="caution">this is a note</note><note type="danger">this
+is a note</note></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><ol>
+<li>list</li>
+<li>in</li>
+<li>entry</li>
+</ol></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><p>para in stentry</p><p>para in stentry</p></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>basic blocks</stentry>
+<stentry><parml><plentry>
+<pt>pt</pt>
+<pd>pd</pd>
+</plentry><plentry>
+<pt>pt</pt>
+<pd>pd</pd>
+</plentry></parml></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>block stuff</stentry>
+<stentry><pre>pre
+formatted
+stufffff</pre></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>block stuff</stentry>
+<stentry><syntaxdiagram><groupcomp><kwd>kkkkkk</kwd><delim>dddddd</delim>
+<sep>ss</sep></groupcomp></syntaxdiagram></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>block stuff</stentry>
+<stentry><screen>screen
+here
+and
+here<?Pub Caret?></screen></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>block stuff</stentry>
+<stentry><ul>
+<li>uuuu</li>
+<li>llll</li>
+<li>stuff</li>
+</ul></stentry>
+<stentry>end stuff</stentry>
+</strow>
+<strow>
+<stentry>end stuff</stentry>
+<stentry>end stuff</stentry>
+<stentry>end stuff</stentry>
+</strow>
+</simpletable>
+</body>
+</topic>
+</topic>
+<?Pub *0000018223?>

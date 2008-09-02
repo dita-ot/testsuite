@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="langref_htmlhelp" default="langref2htmlhelp" basedir=".">
+  
+  <!-- dita.dir should point to the toolkit's root directory -->
+  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+  
+  <import file="${dita.dir}${file.separator}integrator.xml"/>
+  
+  <target name="langref2htmlhelp" depends="integrate">
+    <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+      <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+      <property name="args.input"
+        value="${testdata.dir}${file.separator}langref${file.separator}ditaref-book.ditamap"/>
+      <property name="output.dir"
+        value="${dita.dir}${file.separator}testresult${file.separator}langref${file.separator}book${file.separator}htmlhelp"/>
+      <property name="transtype" value="htmlhelp"/>
+      <property name="args.ftr" value="${testdata.dir}${file.separator}langref${file.separator}langref-footer.xml"/>
+      <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}langref${file.separator}book${file.separator}htmlhelp"/>
+    </ant>
+  </target>
+</project>

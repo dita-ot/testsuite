@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "../dtd/concept.dtd">
+<concept id="CIHBDHJD"> 
+  <title>Has lt and gt in shortdesc</title> 
+  <shortdesc>The &lt;foo&gt; element is always trouble. 
+  </shortdesc> 
+  <conbody> 
+	 <p>MMMM content. 
+	 </p> 
+  </conbody>
+</concept>

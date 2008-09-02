@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "../dtd/concept.dtd">
+<concept id="CIHBDHJD">
+  <title>Installation Process</title>
+  <shortdesc>It's easy.
+  </shortdesc>
+  <prolog><metadata><keywords><indexterm>test<indexterm>index-marker in
+				division</indexterm></indexterm></keywords></metadata>
+  </prolog>
+  <conbody>
+	 <p><indexterm>test<indexterm>index-marker in division
+			 intro</indexterm></indexterm>This chapter describes the Crinkly Crumbler
+		installation process.
+	 </p>
+  </conbody>
+</concept>

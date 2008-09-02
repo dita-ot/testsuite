@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE dita PUBLIC "-//IBM//DTD DITA Composite//EN"
+ "../dtd/ditabase.dtd">
+<?Pub Inc?>
+<dita><?Pub Caret?>
+<task id="ditatask" xml:lang="en-us">
+<title>The Task that starts a Dita file</title>
+<titlealts>
+<searchtitle>search title for dita</searchtitle>
+</titlealts>
+<shortdesc>This is a dita file, which contains a task and a concept. The task
+comes first.</shortdesc>
+<taskbody>
+<prereq>You need to do this first.</prereq>
+<context>The stage needs to be set just so.</context>
+<steps>
+<step><cmd>Do this</cmd></step>
+<step><cmd>Then this</cmd>
+<substeps>
+<substep><cmd>which is done by doing this</cmd></substep>
+<substep><cmd>and then this.</cmd></substep>
+</substeps>
+</step>
+<step><cmd>And finally, this.</cmd></step>
+</steps>
+<example>Here's an <ph>example</ph>... Insert slot A into tab B.</example>
+<postreq>Now, you too can do this...</postreq>
+</taskbody>
+<related-links>
+<link href="#concept"><linktext>Some little concept</linktext></link>
+</related-links>
+</task>
+<concept id="concept">
+<title>Some little concept</title>
+<titlealts>
+<searchtitle>second search</searchtitle>
+</titlealts>
+<conbody>
+<p>Here's a <b>cute</b>, <i>little</i> concept.</p>
+<ul>
+<li>Some item</li>
+<li>another item </li>
+</ul>
+</conbody>
+<concept id="n" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)">
+<title>nested concept</title>
+<conbody>
+<p>nested stuff</p>
+</conbody>
+</concept>
+</concept>
+</dita>
+<?Pub *0000001512?>

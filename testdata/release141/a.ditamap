@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <topicref format="ditamap" href="b.ditamap"/>
+</map>

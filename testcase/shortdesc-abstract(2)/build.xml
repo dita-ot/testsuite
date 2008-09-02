@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="all" default="all" basedir=".">
+  <!-- Set a property for each environment variable -->
+  <property environment="env"/>
+  <property name="args.logdir" value="log"></property>
+  <property name="dita.extname" value=".xml"/>
+  
+  <import file="shortdesc-abstract(2)_eclipsehelp.xml"/>
+  <import file="shortdesc-abstract(2)_htmlhelp.xml"/>
+  <import file="shortdesc-abstract(2)_javahelp.xml"/>
+  <import file="shortdesc-abstract(2)_xhtml.xml"/>
+  
+    <target name="all" 
+    depends="shortdesc/abstract(2)2eclipsehelp, shortdesc/abstract(2)2htmlhelp, shortdesc/abstract(2)2javahelp, shortdesc/abstract(2)2xhtml" 
+    />
+</project>
+

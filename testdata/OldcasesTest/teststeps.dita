@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE task PUBLIC "-//IBM//DTD DITA Task//EN"
+ "../dtd/task.dtd">
+<?Pub Inc?>
+<task id="teststeps" xml:lang="en-us">
+<title>Test steps</title>
+<shortdesc>This should test steps, step, substeps, and substep.</shortdesc>
+<taskbody>
+<prereq>You need to do this first.</prereq>
+<context>The stage needs to be set just so.</context>
+<steps id="mysteps" platform="skjfdf" product="pasf" audience="iawejo" otherprops="awoi"
+importance="default" rev="skfjij" translate="no" xml:lang="ew-ww" outputclass="stepsclass">
+<step><cmd>No attrs on step</cmd></step>
+<step outputclass="stepclass"><cmd>@outputclass</cmd></step>
+<step importance="optional"><cmd>optional</cmd></step>
+<step importance="required"><cmd>required</cmd></step>
+<step id="stepid" platform="oisfd" product="fwje" audience="is" otherprops="ewrjk"
+rev="iodj" translate="no" xml:lang="po-rk" outputclass="iaowf" class="- topic/li        task/step ">
+<cmd>everything</cmd></step>
+<step><cmd>Test outputclass on substeps</cmd>
+<substeps id="adsij" platform="iofjew" product="soifj" audience="fwelkj" otherprops="xoic"
+rev="fw" translate="yes" xml:lang="io-wa" outputclass="substepsclass">
+<substep><cmd>testing...</cmd></substep>
+</substeps>
+</step>
+<step><cmd>Now substeps, with attributes on children</cmd>
+<substeps>
+<substep><cmd>No attrs</cmd></substep>
+<substep id="mysub" platform="iwfe" product="fi" audience="felkj" otherprops="sodij"
+rev="eoirj" translate="yes" xml:lang="ty-ke" outputclass="substepclass"><cmd>everything
+but importance</cmd></substep>
+<substep importance="optional"><cmd>imp=optional</cmd></substep>
+<substep importance="required"><cmd>imp=required</cmd></substep>
+</substeps>
+</step>
+<step><cmd>And finally, this.</cmd></step>
+</steps>
+<result>Stuff gets tested</result>
+<example>Here's an <ph>example</ph>... Insert slot A into tab B.</example>
+<postreq>Now, you too can do this...</postreq>
+</taskbody>
+<task id="stepstuff">
+<title>Everything in steps</title>
+<taskbody>
+<context>Steps has a pretty limited content model. So, we should test stuff
+that goes in that limited content model (and isn't tested elsewhere, like
+choices and choicetable).</context>
+<steps>
+<step><cmd><apiname>test apiname</apiname> <b>test bold</b> (test boolean
+-><boolean state="yes"/>) <cite>test cite</cite> <cmdname>test cmdname</cmdname> <codeph>test
+codeph</codeph> <filepath>test filepath</filepath> <fn>test footnote</fn> <i>test
+italic</i> test inline image: <image href="first.gif"/> <indexterm>test indexterm</indexterm> <keyword>test
+keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> [skipping
+object] <option>test option</option> <parmname>test parmname</parmname> <ph>test
+ph</ph> <q>testing a quote</q> (test state -> <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tm trademark="amazon"
+tmowner="amazon" tmtype="tm" tmclass="special">tm to amazon</tm> <tt>test
+tt</tt> <u>test underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle> <xref
+href="testexample.dita">test xref to the top</xref></cmd></step>
+<step><cmd><draft-comment>draft comment</draft-comment> and <required-cleanup>required cleanup</required-cleanup>are
+draft elements</cmd></step>
+<step><cmd>now put stuff after cmd</cmd><info>this is info: <apiname>test
+apiname</apiname> <b>test bold</b> (test boolean -><boolean state="yes"/>) <cite>test
+cite</cite> <cmdname>test cmdname</cmdname> <codeph>test codeph</codeph> <filepath>test
+filepath</filepath> <fn>test footnote</fn> <i>test italic</i> test inline
+image: <image href="first.gif"/> <indexterm>test indexterm</indexterm> <keyword>test
+keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> [skipping
+object] <option>test option</option> <parmname>test parmname</parmname> <ph>test
+ph</ph> <q>testing a quote</q> (test state -> <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tm trademark="amazon"
+tmowner="amazon" tmtype="tm" tmclass="special">tm to amazon</tm> <tt>test
+tt</tt> <u>test underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle> <xref
+href="testexample.dita">test xref to the top</xref> <draft-comment>draft-comment</draft-comment> <required-cleanup>req-clean</required-cleanup></info>
+</step>
+<step><cmd>test info with blocks:</cmd><info><dl><dlentry>
+<dt>defn</dt>
+<dd>list</dd>
+</dlentry></dl><fig>
+<p>fig</p>
+</fig><lines>lines
+lines</lines><lq>looooooooooooooooooooooooooong quote</lq><msgblock>msg
+block</msgblock><note>note</note><note type="attention">attention</note><note
+type="caution">caution</note><note type="danger">danger</note><ol>
+<li>ordered</li>
+<li>list</li>
+</ol><p>paragraph</p><parml><plentry>
+<pt>parml</pt>
+<pd>test</pd>
+</plentry></parml><pre>p
+r
+e</pre><screen>screen
+test</screen><simpletable>
+<strow>
+<stentry>si</stentry>
+<stentry>mp</stentry>
+</strow>
+<strow>
+<stentry>le</stentry>
+<stentry>table</stentry>
+</strow>
+</simpletable><sl>
+<sli>simple</sli>
+<sli>list</sli>
+</sl><syntaxdiagram>
+<groupchoice>
+<kwd>a</kwd>
+<kwd>b</kwd>
+</groupchoice>
+</syntaxdiagram><table>
+<tgroup cols="2"><colspec colname="col1"/><colspec colname="col2"/>
+<tbody>
+<row>
+<entry colname="col1">plain</entry>
+<entry colname="col2">old</entry>
+</row>
+<row>
+<entry colname="col1">table</entry>
+<entry colname="col2">here</entry>
+</row>
+</tbody>
+</tgroup>
+</table><ul>
+<li>unordered</li>
+<li>list</li>
+</ul></info></step>
+<step><cmd>now put stuff after cmd</cmd><stepresult>this is stepresult: <apiname>test
+apiname</apiname> <b>test bold</b> (test boolean -><boolean state="yes"/>) <cite>test
+cite</cite> <cmdname>test cmdname</cmdname> <codeph>test codeph</codeph> <filepath>test
+filepath</filepath> <fn>test footnote</fn> <i>test italic</i> test inline
+image: <image href="first.gif"/> <indexterm>test indexterm</indexterm> <keyword>test
+keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> [skipping
+object] <option>test option</option> <parmname>test parmname</parmname> <ph>test
+ph</ph> <q>testing a quote</q> (test state -> <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tm trademark="amazon"
+tmowner="amazon" tmtype="tm" tmclass="special">tm to amazon</tm> <tt>test
+tt</tt> <u>test underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle> <xref
+href="testexample.dita">test xref to the top</xref> <draft-comment>draft-comment</draft-comment> <required-cleanup>req-clean</required-cleanup></stepresult>
+</step>
+<step><cmd>test info with blocks:</cmd><stepresult><dl><dlentry>
+<dt>defn</dt>
+<dd>list</dd>
+</dlentry></dl><fig>
+<p>fig</p>
+</fig><lines>lines
+lines</lines><lq>looooooooooooooooooooooooooong quote</lq><msgblock>msg
+block</msgblock><note>note</note><note type="attention">attention</note><note
+type="caution">caution</note><note type="danger">danger</note><ol>
+<li>ordered</li>
+<li>list</li>
+</ol><p>paragraph</p><parml><plentry>
+<pt>parml</pt>
+<pd>test</pd>
+</plentry></parml><pre>p
+r
+e</pre><screen>screen
+test</screen><simpletable>
+<strow>
+<stentry>si</stentry>
+<stentry>mp</stentry>
+</strow>
+<strow>
+<stentry>le</stentry>
+<stentry>table</stentry>
+</strow>
+</simpletable><sl>
+<sli>simple</sli>
+<sli>list</sli>
+</sl><syntaxdiagram>
+<groupchoice>
+<kwd>a</kwd>
+<kwd>b</kwd>
+</groupchoice>
+</syntaxdiagram><table>
+<tgroup cols="2"><colspec colname="col1"/><colspec colname="col2"/>
+<tbody>
+<row>
+<entry colname="col1">plain</entry>
+<entry colname="col2">old</entry>
+</row>
+<row>
+<entry colname="col1">table</entry>
+<entry colname="col2">here</entry>
+</row>
+</tbody>
+</tgroup>
+</table><ul>
+<li>unordered</li>
+<li>list</li>
+</ul></stepresult></step>
+<step><cmd>now put stuff after cmd</cmd><stepxmp>this is stepxmp: <apiname>test
+apiname</apiname> <b>test bold</b> (test boolean -><boolean state="yes"/>) <cite>test
+cite</cite> <cmdname>test cmdname</cmdname> <codeph>test codeph</codeph> <filepath>test
+filepath</filepath> <fn>test footnote</fn> <i>test italic</i> test inline
+image: <image href="first.gif"/> <indexterm>test indexterm</indexterm> <keyword>test
+keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> [skipping
+object] <option>test option</option> <parmname>test parmname</parmname> <ph>test
+ph</ph> <q>testing a quote</q> (test state -> <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tm trademark="amazon"
+tmowner="amazon" tmtype="tm" tmclass="special">tm to amazon</tm> <tt>test
+tt</tt> <u>test underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle> <xref
+href="testexample.dita">test xref to the top</xref> <draft-comment>draft-comment</draft-comment> <required-cleanup>req-clean</required-cleanup></stepxmp>
+</step>
+<step><cmd>test info with blocks:</cmd><stepxmp><dl><dlentry>
+<dt>defn</dt>
+<dd>list</dd>
+</dlentry></dl><fig>
+<p>fig</p>
+</fig><lines>lines
+lines</lines><lq>looooooooooooooooooooooooooong quote</lq><msgblock>msg
+block</msgblock><note>note</note><note type="attention">attention</note><note
+type="caution">caution</note><note type="danger">danger</note><ol>
+<li>ordered</li>
+<li>list</li>
+</ol><p>paragraph</p><parml><plentry>
+<pt>parml</pt>
+<pd>test</pd>
+</plentry></parml><pre>p
+r
+e</pre><screen>screen
+test</screen><simpletable>
+<strow>
+<stentry>si</stentry>
+<stentry>mp</stentry>
+</strow>
+<strow>
+<stentry>le</stentry>
+<stentry>table</stentry>
+</strow>
+</simpletable><sl>
+<sli>simple</sli>
+<sli>list</sli>
+</sl><syntaxdiagram>
+<groupchoice>
+<kwd>a</kwd>
+<kwd>b</kwd>
+</groupchoice>
+</syntaxdiagram><table>
+<tgroup cols="2"><colspec colname="col1"/><colspec colname="col2"/>
+<tbody>
+<row>
+<entry colname="col1">plain</entry>
+<entry colname="col2">old</entry>
+</row>
+<row>
+<entry colname="col1">table</entry>
+<entry colname="col2">here</entry>
+</row>
+</tbody>
+</tgroup>
+</table><ul>
+<li>unordered</li>
+<li>list</li>
+</ul></stepxmp></step>
+<step><cmd>now put stuff after cmd</cmd><tutorialinfo>this is tutorialinfo: <apiname>test
+apiname</apiname> <b>test bold</b> (test boolean -><boolean state="yes"/>) <cite>test
+cite</cite> <cmdname>test cmdname</cmdname> <codeph>test codeph</codeph> <filepath>test
+filepath</filepath> <fn>test footnote</fn> <i>test italic</i> test inline
+image: <image href="first.gif"/> <indexterm>test indexterm</indexterm> <keyword>test
+keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> [skipping
+object] <option>test option</option> <parmname>test parmname</parmname> <ph>test
+ph</ph> <q>testing a quote</q> (test state -> <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tm trademark="amazon"
+tmowner="amazon" tmtype="tm" tmclass="special">tm to amazon</tm> <tt>test
+tt</tt> <u>test underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle> <xref
+href="testexample.dita">test xref to the top</xref> <draft-comment>draft-comment</draft-comment> <required-cleanup>req-clean</required-cleanup></tutorialinfo>
+</step>
+<step><cmd>test info with blocks:</cmd><tutorialinfo><dl><dlentry>
+<dt>defn</dt>
+<dd>list</dd>
+</dlentry></dl><fig>
+<p>fig</p>
+</fig><lines>lines
+lines</lines><lq>looooooooooooooooooooooooooong quote</lq><msgblock>msg
+block</msgblock><note>note</note><note type="attention">attention</note><note
+type="caution">caution</note><note type="danger">danger</note><ol>
+<li>ordered</li>
+<li>list</li>
+</ol><p>paragraph</p><parml><plentry>
+<pt>parml</pt>
+<pd>test</pd>
+</plentry></parml><pre>p
+r
+e</pre><screen>screen
+test</screen><simpletable>
+<strow>
+<stentry>si</stentry>
+<stentry>mp</stentry>
+</strow>
+<strow>
+<stentry>le</stentry>
+<stentry>table</stentry>
+</strow>
+</simpletable><sl>
+<sli>simple</sli>
+<sli>list</sli>
+</sl><syntaxdiagram>
+<groupchoice>
+<kwd>a</kwd>
+<kwd>b</kwd>
+</groupchoice>
+</syntaxdiagram><table>
+<tgroup cols="2"><colspec colname="col1"/><colspec colname="col2"/>
+<tbody>
+<row>
+<entry colname="col1">plain</entry>
+<entry colname="col2">old</entry>
+</row>
+<row>
+<entry colname="col1">table</entry>
+<entry colname="col2">here</entry>
+</row>
+</tbody>
+</tgroup>
+</table><ul>
+<li>unordered</li>
+<li>list</li>
+</ul></tutorialinfo></step>
+<step><cmd>stop testing now<?Pub Caret?></cmd></step>
+</steps>
+</taskbody>
+</task>
+</task>
+<?Pub *0000013732?>

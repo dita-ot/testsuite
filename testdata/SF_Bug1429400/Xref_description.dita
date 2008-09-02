@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "../dtd/topic.dtd">
+<topic id="one" xml:lang="en-us">
+<title>FO output should allow more external links.</title>
+<shortdesc>FO output should allow more external links.</shortdesc>
+<body><p>external links</p></body>
+
+<related-links>
+<link href="xref_file.dita"><linktext>link to xref_file</linktext></link>
+<link href="www.ibm.com" format="html"><linktext>link to www.ibm.com</linktext></link>
+<link href="test.txt" format="txt"><linktext>link to test.txt</linktext></link>
+<link href="test.pdf" format="pdf"><linktext>link to test.pdf</linktext></link>
+</related-links>
+
+</topic>

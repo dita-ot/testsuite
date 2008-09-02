@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE dita PUBLIC "-//IBM//DTD DITA Composite//EN"
+ "../dtd/ditabase.dtd">
+<?Pub Inc?>
+<dita>
+<reference id="abc" xml:lang="en-us">
+<title>test</title>
+<refbody>
+<properties relcolwidth="1* 2* 4*"><?Pub Caret?>
+<property>
+<proptype>1* a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a </proptype>
+<propvalue>2* a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a </propvalue>
+<propdesc>4* a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a </propdesc>
+</property>
+</properties>
+<properties relcolwidth="1* 5*">
+<property>
+<propvalue>a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a a </propvalue>
+<propdesc>a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a </propdesc>
+</property>
+<property>
+<propvalue>b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+b b b b b b b b b b b b b b b b b b b b b b b b b b </propvalue>
+<propdesc>b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+b b b b b b b b b b </propdesc>
+</property>
+</properties>
+<simpletable relcolwidth="1* 7* 1*">
+<strow>
+<stentry>one one one one one one one one one one one one one one one one one
+one one one one one one one one one one one one one one one one one one one
+one one one one one one one one one one one one one one one one </stentry>
+<stentry>two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two </stentry>
+<stentry>three three three three three three three three three three three
+three three three three three three three three three three three three three
+three three three three three three three three three three three three three
+three three three three three three three three three three three three three
+three three three three three three three three three three three </stentry>
+</strow>
+<strow>
+<stentry>one one one one one one one one one one one one one one one one one
+one one one one one one one one one one one one one one one one one one one
+one one one one one one one one one one one one one one one one </stentry>
+<stentry>two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two </stentry>
+<stentry>three three three three three three three three three three three
+three three three three three three three three three three three three three
+three three three three three three three three three three three three three
+three three three three three three three three three three three three three
+three three three three three three three three three three three </stentry>
+</strow>
+</simpletable>
+<simpletable relcolwidth="4* 1* 2*">
+<sthead>
+<stentry>one one one one one one one one one one one one one one one one one
+one one one one one one one one one one one one one one one one one one one
+one one one one one one one one one one one one one one one one </stentry>
+<stentry>two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two </stentry>
+<stentry>three three three three three three three three three three three
+three three three three three three three three three three three three three
+three three three three three three three three three three three three three
+three three three three three three three three three three three three three
+three three three three three three three three three three three </stentry>
+</sthead>
+<strow>
+<stentry>one one one one one one one one one one one one one one one one one
+one one one one one one one one one one one one one one one one one one one
+one one one one one one one one one one one one one one one one </stentry>
+<stentry>two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two </stentry>
+<stentry>three three three three three three three three three three three
+three three three three three three three three three three three three three
+three three three three three three three three three three three three three
+three three three three three three three three three three three three three
+three three three three three three three three three three three </stentry>
+</strow>
+<strow>
+<stentry>one one one one one one one one one one one one one one one one one
+one one one one one one one one one one one one one one one one one one one
+one one one one one one one one one one one one one one one one </stentry>
+<stentry>two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two two two two two two two
+two two two two two two two two two two two two two </stentry>
+<stentry>three three three three three three three three three three three
+three three three three three three three three three three three three three
+three three three three three three three three three three three three three
+three three three three three three three three three three three three three
+three three three three three three three three three three three </stentry>
+</strow>
+</simpletable>
+</refbody>
+</reference>
+</dita>
+<?Pub *0000007794?>

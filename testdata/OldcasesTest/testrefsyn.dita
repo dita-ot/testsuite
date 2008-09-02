@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE reference PUBLIC "-//IBM//DTD DITA Reference//EN"
+ "../dtd/reference.dtd">
+<?Pub Inc?>
+<reference id="testrefsyn" xml:lang="en-us">
+<title>Test refsyn</title>
+<shortdesc>This should test all of the attributes on a refsyn element.</shortdesc>
+<refbody>
+<refsyn>Plain refsyn</refsyn>
+<refsyn>Plain refsyn, with a title<title>My Refsyn Title</title></refsyn>
+<refsyn>Plain refsyn, with 2 titles<title>My Refsyn Title</title><title>Second
+refsyn title</title></refsyn>
+<refsyn spectitle="my special title">Plain refsyn, with @spectitle</refsyn>
+<refsyn spectitle="my special reftitle">Plain refsyn, with a title and @spectitle<title>My
+Refsyn Title</title></refsyn>
+<refsyn id="refff" platform="osijf" product="fij" audience="sdoifj" otherprops="fw"
+importance="urgent" rev="fdij" translate="yes" xml:lang="am-iq" outputclass="refsynclass">Plain
+refsyn, with a title and lots of other attributes<title>My Refsyn Title</title></refsyn>
+<refsyn spectitle="LotsOfAttrs" id="rufff" platform="osijf" product="fij"
+audience="sdoifj" otherprops="fw" importance="urgent" rev="fdij" translate="yes"
+xml:lang="am-iq" outputclass="refsynclass">Plain refsyn, with a title and
+lots of other attributes and @spectitle<title>My Refsyn Title</title></refsyn>
+<refsyn id="mylittletest">Plain refsyn, but with an id, so I can conref it
+in a second.</refsyn>
+<example>The previous refsyn should appear again after this example.</example>
+<refsyn conref="#testrefsyn/mylittletest">This refsyn uses conref, so it should
+not appear.</refsyn>
+</refbody>
+<reference id="refsyn">
+<title>Put stuff in my refsyn</title>
+<refbody>
+<refsyn><title>My Example</title>Any example should of course start with basic
+text. Followed by other stuff. As for the other stuff, we'll put phrase-level
+stuff first. <apiname>test apiname</apiname> <b>test bold</b> (test boolean
+-><boolean state="yes"/>) <cite>test cite</cite> <cmdname>test cmdname</cmdname> <codeph>test
+codeph</codeph> <filepath>test filepath</filepath> <fn>test footnote</fn> <i>test
+italic</i> test inline image: <image href="first.gif"/> <indexterm>test indexterm</indexterm> <keyword>test
+keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> [skipping
+object] <option>test option</option> <parmname>test parmname</parmname> <ph>test
+ph</ph> <q>testing a quote</q> (test state -> <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tm trademark="amazon"
+tmowner="amazon" tmtype="tm" tmclass="special">tm to amazon</tm> <tt>test
+tt</tt> <u>test underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle> <xref
+href="testexample.dita">test xref to the top</xref><p>Now I will add the block-like
+elements, in reverse order:</p><ul>
+<li>test ul</li>
+<li>test ul again</li>
+<li>test ul again again</li>
+</ul><title>test having a second example title</title><table><title>testing
+a table in an example</title>
+<tgroup cols="2"><colspec colname="col1"/><colspec colname="col2"/>
+<tbody>
+<row>
+<entry colname="col1">testing</entry>
+<entry colname="col2">a</entry>
+</row>
+<row>
+<entry colname="col1">basic</entry>
+<entry colname="col2">table</entry>
+</row>
+</tbody>
+</tgroup>
+</table><syntaxdiagram>
+<groupchoice>
+<kwd>testing</kwd>
+<delim>a</delim>
+<var>syntaxdiagram</var>
+</groupchoice>
+</syntaxdiagram><simpletable>
+<strow>
+<stentry>simple table</stentry>
+<stentry>simpler table</stentry>
+<stentry>end of simple table</stentry>
+</strow>
+<strow>
+<stentry>simple table</stentry>
+<stentry>simpler table</stentry>
+<stentry>end of simple table</stentry>
+</strow>
+</simpletable><screen>this is a screen
+you can look at it
+and it keeps mosquitoes out<?Pub Caret?></screen><required-cleanup>This is required cleanup in my example</required-cleanup><pre>test pre
+test pre
+test pre</pre><parml><plentry>
+<pt>pt</pt>
+<pd>this is a parml test</pd>
+</plentry><plentry>
+<pt>pt</pt>
+<pd>this is a parml test</pd>
+</plentry></parml><p>testing a paragraph. That's a novel idea. well, if it
+is I should put it in &lt;lq>.</p><ol>
+<li>test ol</li>
+<li>test ol again</li>
+<li>test ol a third time</li>
+</ol><note>testing a note, just a plain old note, not a special note</note><msgblock>test msgblock
+test msgblock
+test msgblock</msgblock><lq href="http://sports.yahoo.com/mlb/news/ap/20020429/ap-strawberrysentenced.html"
+reftitle="Yahoo news story about this">LQ: Darryl Strawberry was sentenced
+to 18 months in prison Monday for violating his probation on a 1999 conviction
+on drug and solicitation of prostitution charges.</lq><lines>test lines
+test lines
+test lines</lines><image href="all.gif" placement="break"/>(that was a placement=break
+image)<fig><title>Figure in an example</title>
+<p>Placing a figure in an example</p>
+</fig><draft-comment>placing a draft-comment in the example</draft-comment><dl>
+<dlentry>
+<dt>dl in section</dt>
+<dd>this is what a dl in an example looks like</dd>
+</dlentry><dlentry>
+<dt>dl in section</dt>
+<dd>this is what a dl in an example looks like</dd>
+</dlentry></dl><codeblock>test codeblock
+test codeblock
+test codeblock</codeblock><sl>
+<sli>simple</sli>
+<sli>list</sli>
+<sli>here</sli>
+</sl></refsyn>
+</refbody>
+</reference>
+</reference>
+<?Pub *0000005560?>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.1 Map//EN" "file:/C:/shaoxr/DITA-OT1.3.1/dtd/map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1">
+    <topicref href="shortdesc-abstract(2)_testdata1.dita"></topicref>
+    <topicref href="shortdesc-abstract(2)_testdata2.dita"></topicref>
+    <topicref href="shortdesc-abstract(2)_testdata3.dita"></topicref>
+
+    <topicref href="shortdesc-abstract(2)_testdata4.dita"></topicref>
+    <topicref href="shortdesc-abstract(2)_testdata5.dita"></topicref>
+    <topicref href="shortdesc-abstract(2)_testdata6.dita"></topicref>
+    <topicref href="shortdesc-abstract(2)_testdata7.dita"></topicref>
+    <topicref href="shortdesc-abstract(2)_testdata8.dita"></topicref>
+
+    <reltable>
+       <relrow>
+           <relcell><topicref href="shortdesc-abstract(2)_testdata1.dita"></topicref></relcell>
+           <relcell><topicref href="shortdesc-abstract(2)_testdata2.dita"></topicref></relcell>
+           <relcell><topicref href="shortdesc-abstract(2)_testdata3.dita"></topicref></relcell>
+           <relcell><topicref href="shortdesc-abstract(2)_testdata4.dita"></topicref></relcell>
+	    <relcell><topicref href="shortdesc-abstract(2)_testdata5.dita"></topicref></relcell>
+           <relcell><topicref href="shortdesc-abstract(2)_testdata6.dita"></topicref></relcell>
+           <relcell><topicref href="shortdesc-abstract(2)_testdata7.dita"></topicref></relcell>
+           <relcell><topicref href="shortdesc-abstract(2)_testdata8.dita"></topicref></relcell>
+
+       </relrow>
+    </reltable>
+    
+</map>

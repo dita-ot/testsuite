@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE task PUBLIC "-//IBM//DTD DITA Task//EN"
+ "../dtd/task.dtd">
+<task id="task" xml:lang="en-us">
+<title>Top-level task</title>
+<shortdesc>This is a task test. It should ensure that the task specialization
+is working, and that you can nest tasks.</shortdesc>
+<taskbody>
+<prereq>You need to do this first.</prereq>
+<context>The stage needs to be set just so.</context>
+<steps>
+<step><cmd>Do this</cmd></step>
+<step><cmd>Then this</cmd>
+<substeps>
+<substep><cmd>which is done by doing this</cmd><info>(most people are afraid
+of it.)</info><stepxmp>My good friend Charlie is afraid of it.</stepxmp><tutorialinfo>It's
+easy though, all you have to do is look up.</tutorialinfo></substep>
+<substep><cmd>and then this.</cmd><stepresult>And you are done.</stepresult>
+</substep>
+</substeps>
+</step>
+<step><cmd>And finally, this.</cmd>
+<choices>
+<choice>go home</choice>
+<choice>keep working</choice>
+</choices>
+<stepresult>Either you get in trouble, or everybody likes you</stepresult>
+</step>
+<step><cmd>Once you're done,</cmd>
+<choices>
+<choice>You could do this</choice>
+<choice>Or you could do this.</choice>
+</choices>
+</step>
+</steps>
+<example conref="everythinginsection.dita#gen/example">This text should not
+appear because I'm using conref<?Pub Caret?></example>
+<postreq>Then, go home and have a nice cold sandwich.</postreq>
+</taskbody>
+<related-links>
+<link href="concept.dita" type="concept"></link>
+<link href="topic.dita" type="topic"></link>
+<link href="dita.dita"></link>
+<link href="reference.dita" type="reference"></link>
+</related-links>
+<task id="subtask">
+<title>sub-task</title>
+<taskbody>
+<example>This is an example of a nested task.</example>
+</taskbody>
+<task id="subsubtask">
+<title>sub-sub-task</title>
+<taskbody>
+<example>This is an example of a nested, nested task.</example>
+</taskbody>
+</task>
+</task>
+<task id="subtaskB">
+<title>second sub-task</title>
+<taskbody>
+<context>This is after the first nested task, but is still a nested task.</context>
+</taskbody>
+</task>
+</task>
+<?Pub *0000002110?>

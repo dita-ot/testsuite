@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE concept PUBLIC "-//IBM//DTD DITA Concept//EN"
+ "../dtd/concept.dtd">
+<?Pub Inc?>
+<concept id="concept" xml:lang="en-us">
+<title>Concept test</title>
+<shortdesc>This tests the concept DTD, to ensure it works and that you can
+nest concepts (and only concepts)</shortdesc>
+<conbody>
+<p>Type <b>your</b> text here.</p>
+<section conref="everythinginsection.dita#gen/section">Pull in section content<?Pub Caret?></section>
+</conbody>
+<related-links>
+<link href="topic.dita" type="topic"></link>
+<link href="dita.dita"></link>
+<link href="task.dita" type="task"></link>
+<link href="reference.dita" type="reference"></link>
+</related-links>
+<concept id="subcon">
+<title>Sub-concept</title>
+<conbody>
+<p>this is a nested concept</p>
+</conbody>
+<concept id="subsubcon">
+<title>Sub-sub-concept</title>
+<conbody>
+<p>this is a concept inside of a nested concept</p>
+</conbody>
+</concept>
+</concept>
+<concept id="subconB">
+<title>Sub-concept yet again</title>
+<conbody>
+<p>This is a concept nested inside of the root concept.</p>
+</conbody>
+</concept>
+</concept>
+<?Pub *0000001160?>

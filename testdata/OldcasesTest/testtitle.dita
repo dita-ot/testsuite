@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE topic PUBLIC "-//IBM//DTD DITA Topic//EN"
+ "../dtd/topic.dtd">
+<?Pub Inc?>
+<topic id="testtitle" xml:lang="en-us">
+<title>Test title</title>
+<shortdesc>This should test a lot of attributes on the title element, in various
+contexts.</shortdesc>
+<body>
+<table><title id="tableid">Title on a table, with an ID</title>
+<tgroup cols="2"><colspec colname="col1"/><colspec colname="col2"/>
+<tbody>
+<row>
+<entry colname="col1">testing</entry>
+<entry colname="col2">titles</entry>
+</row>
+<row>
+<entry colname="col1">on</entry>
+<entry colname="col2">table</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<fig><title id="figid">title on a figure, with an ID</title>
+<p>This is a figure test</p>
+<p>not so exciting</p>
+<figgroup><title id="figgroupid">figgroup title</title><b>This is a figgroup
+with a title with an ID</b></figgroup>
+</fig>
+<section><title id="sectionid">Section title with an ID</title><p>This is
+a section</p><p>with a title</p><p>that has an ID</p></section>
+<example><title id="exampleid">Example title with an ID</title>this is an
+example with a title that has an ID</example>
+</body>
+<topic id="topic" xml:lang="en-us">
+<title>Some <image href="FIRST.GIF" alt="[image in title]"/> topic: <apiname>test
+apiname</apiname> <b>test bold</b> (test boolean -><boolean state="yes"/>) <cmdname>test
+cmdname</cmdname> <codeph>test codeph</codeph> <filepath>test filepath</filepath> <i>test
+italic</i> <keyword>test keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> <option>test
+option</option> <parmname>test parmname</parmname> <ph>test ph</ph> <q>testing
+a quote</q> (test state => <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tt>test tt</tt> <u>test
+underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle> </title>
+<shortdesc>This topic tests placing anything and everything in a title, wherever
+a title can be placed.</shortdesc>
+<body>
+<fig><title>Figure title: <image href="FIRST.GIF" alt="[image in title]"/> <apiname>test
+apiname</apiname> <b>test bold</b> (test boolean -><boolean state="yes"/>) <cmdname>test
+cmdname</cmdname> <codeph>test codeph</codeph> <filepath>test filepath</filepath> <i>test
+italic</i> <keyword>test keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> <option>test
+option</option> <parmname>test parmname</parmname> <ph>test ph</ph> <q>testing
+a quote</q> (test state => <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tt>test tt</tt> <u>test
+underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle></title>
+<p>This is a figure with a lot of junk in its title.</p>
+</fig>
+<table><title>Table title: <image href="FIRST.GIF" alt="[image in title]"/> <apiname>test
+apiname</apiname> <b>test bold</b> (test boolean -><boolean state="yes"/>) <cmdname>test
+cmdname</cmdname> <codeph>test codeph</codeph> <filepath>test filepath</filepath> <i>test
+italic</i> <keyword>test keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> <option>test
+option</option> <parmname>test parmname</parmname> <ph>test ph</ph> <q>testing
+a quote</q> (test state => <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tt>test tt</tt> <u>test
+underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle></title>
+<tgroup cols="2"><colspec colname="col1"/><colspec colname="col2"/>
+<tbody>
+<row>
+<entry colname="col1">this is a table</entry>
+<entry colname="col2">with a lot</entry>
+</row>
+<row>
+<entry colname="col1">of junk</entry>
+<entry colname="col2">in the title</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<fig><title>Testing fig/figroup with junk</title>
+<figgroup><title>Figgroup title: <image href="FIRST.GIF" alt="[image in title]"/> <apiname>test
+apiname</apiname> <b>test bold</b> (test boolean -><boolean state="yes"/>) <cmdname>test
+cmdname</cmdname> <codeph>test codeph</codeph> <filepath>test filepath</filepath> <i>test
+italic</i> <keyword>test keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> <option>test
+option</option> <parmname>test parmname</parmname> <ph>test ph</ph> <q>testing
+a quote</q> (test state => <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tt>test tt</tt> <u>test
+underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle></title>
+<u><b>This is a figgroup with junk in its title</b></u></figgroup>
+</fig>
+<syntaxdiagram>
+<title>Syntaxdiagram title: <image href="FIRST.GIF" alt="[image in title]"/> <apiname>test
+apiname</apiname> <b>test bold</b> (test boolean -><boolean state="yes"/>) <cmdname>test
+cmdname</cmdname> <codeph>test codeph</codeph> <filepath>test filepath</filepath> <i>test
+italic</i> <keyword>test keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> <option>test
+option</option> <parmname>test parmname</parmname> <ph>test ph</ph> <q>testing
+a quote</q> (test state => <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tt>test tt</tt> <u>test
+underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle></title>
+<synblk>
+<title>Synblk  title: <image href="FIRST.GIF" alt="[image in title]"/> <apiname>test
+apiname</apiname> <b>test bold</b> (test boolean -><boolean state="yes"/>) <cmdname>test
+cmdname</cmdname> <codeph>test codeph</codeph> <filepath>test filepath</filepath> <i>test
+italic</i> <keyword>test keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> <option>test
+option</option> <parmname>test parmname</parmname> <ph>test ph</ph> <q>testing
+a quote</q> (test state => <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tt>test tt</tt> <u>test
+underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle></title>
+<groupchoice>
+<kwd>a</kwd>
+<kwd>b</kwd>
+</groupchoice>
+</synblk>
+<groupchoice><title>Group  title: <image href="FIRST.GIF" alt="[image in title]"/> <apiname>test
+apiname</apiname> <b>test bold</b> (test boolean -><boolean state="yes"/>) <cmdname>test
+cmdname</cmdname> <codeph>test codeph</codeph> <filepath>test filepath</filepath> <i>test
+italic</i> <keyword>test keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> <option>test
+option</option> <parmname>test parmname</parmname> <ph>test ph</ph> <q>testing
+a quote</q> (test state => <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tt>test tt</tt> <u>test
+underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle></title>
+<var>aorb</var>
+<var>cord</var>
+</groupchoice>
+<fragment>
+<title>Fragment title: <image href="FIRST.GIF" alt="[image in title]"/> <apiname>test
+apiname</apiname> <b>test bold</b> (test boolean -><boolean state="yes"/>) <cmdname>test
+cmdname</cmdname> <codeph>test codeph</codeph> <filepath>test filepath</filepath> <i>test
+italic</i> <keyword>test keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> <option>test
+option</option> <parmname>test parmname</parmname> <ph>test ph</ph> <q>testing
+a quote</q> (test state => <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tt>test tt</tt> <u>test
+underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle></title>
+</fragment>
+</syntaxdiagram>
+<section><title>Section title: <image href="FIRST.GIF" alt="[image in title]"/> <apiname>test
+apiname</apiname> <b>test bold</b> (test boolean -><boolean state="yes"/>) <cmdname>test
+cmdname</cmdname> <codeph>test codeph</codeph> <filepath>test filepath</filepath> <i>test
+italic</i> <keyword>test keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> <option>test
+option</option> <parmname>test parmname</parmname> <ph>test ph</ph> <q>testing
+a quote</q> (test state => <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tt>test tt</tt> <u>test
+underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle></title><p>This
+is a section with a lot of junk in its title.</p></section>
+</body>
+<related-links>
+<linklist><title>Linklist title: <image href="FIRST.GIF" alt="[image in title]"/> <apiname>test
+apiname</apiname> <b>test bold</b> (test boolean -><boolean state="yes"/>) <cmdname>test
+cmdname</cmdname> <codeph>test codeph</codeph> <filepath>test filepath</filepath> <i>test
+italic</i> <keyword>test keyword</keyword> <menucascade><uicontrol>test menucascade/uicontrol</uicontrol>
+</menucascade> <msgnum>test msgnum</msgnum> <msgph>test msgph</msgph> <option>test
+option</option> <parmname>test parmname</parmname> <ph>test ph</ph> <q>testing
+a quote</q> (test state => <state name="lonestar" value="bubba"/>) <sub>test
+sub</sub> <sup>test sup</sup> <synph>test synph</synph> <systemoutput>test
+systemoutput</systemoutput> <term>test term</term> <tt>test tt</tt> <u>test
+underlined</u> <uicontrol>test uicontrol <shortcut>test uicontrol/shortcut</shortcut></uicontrol> <userinput>test
+userinput</userinput> <varname>test varname</varname> <wintitle>test wintitle</wintitle></title>
+<link href="testelements.dita"><?Pub Caret?></link>
+</linklist>
+</related-links>
+</topic>
+</topic>
+<?Pub *0000011981?>

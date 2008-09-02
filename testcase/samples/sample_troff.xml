@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="sample_troff" default="sample2troff" basedir=".">
+  
+  <!-- dita.dir should point to the toolkit's root directory -->
+  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+  
+  <import file="${dita.dir}${file.separator}integrator.xml"/>
+  
+  <target name="sample2troff" depends="integrate">
+    <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+      <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+      <property name="args.input"
+        value="${testdata.dir}${file.separator}samples${file.separator}sequence.ditamap"/>
+      <property name="output.dir"
+        value="${dita.dir}${file.separator}testresult${file.separator}samples${file.separator}sequence${file.separator}troff"/>
+      <property name="transtype" value="troff"/>
+      <property name="dita.temp.dir"
+        value="${dita.dir}${file.separator}temp${file.separator}samples${file.separator}sequence${file.separator}troff"/>
+    </ant>
+  </target>
+</project>

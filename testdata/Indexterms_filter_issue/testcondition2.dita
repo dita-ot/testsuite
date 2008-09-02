@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN"
+ "..\dtd\ditabase.dtd">
+<dita>
+<topic id="testcondition2" xml:lang="en-us" platform="linux">
+<title>Indexterms_filtered-out_issues</title>
+<shortdesc>Indexterms_filtered-out_issue testcase 2</shortdesc>
+<body>
+<p>filter in the first level topics under &lt;dita&gt; element.<indexterm>TC2</indexterm></p>
+</body>
+<task id="testcondition2_1">
+ <title>nested task</title>
+ <taskbody>
+  <context>task context</context>
+  <steps>
+   <step><cmd>task context</cmd></step>
+  </steps>
+ </taskbody>
+</task> 
+</topic>
+<topic id="testcondition2_2" xml:lang="en-us">
+<title>Indexterms_filtered-out_issues</title>
+<shortdesc>Indexterms_filtered-out_issue testcase 2</shortdesc>
+<body>
+<p>filter in the first level topics under &lt;dita&gt; element.<indexterm>TC2</indexterm></p>
+</body>
+</topic>
+</dita>

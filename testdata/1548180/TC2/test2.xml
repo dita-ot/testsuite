@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corporation-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+
+<topic id="topic" xml:lang="en-us">
+<title>test2 topic</title>
+<body>
+	<p>add some spaces</p>
+	<section><title>section1</title>test2&gt;.topic.&gt;section1<indexterm>test	 topic 	section1</indexterm></section>
+	<section><title>section2</title>test2&gt;..&gt;topic&gt;&gt;section2...<indexterm>test	  	topic		section2   </indexterm></section>
+	<section><title>section3</title>&gt;test2&gt;.....topic&gt;&gt;&gt;section3&gt;....&gt;<indexterm>	test	     topic			section3	    	</indexterm></section>
+</body>
+</topic>

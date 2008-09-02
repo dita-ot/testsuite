@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2007, v.4002-->
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "../../../dtd/reference.dtd">
+<?Pub Sty _display FontColor="red"?>
+<reference id="fqm0_r_dircli_params" xml:lang="en-us">
+<title>Common options</title>
+<shortdesc>test things</shortdesc>
+<refbody>
+<section><title>Test flags</title><p audience="all">Flag this with
+something in the same directory</p><p audience="some">Flag this with
+something in the sub directory</p><p audience="few">Flag this with
+something else in a sub-directory</p><?Pub Caret1?></section>
+</refbody>
+</reference>
+<?Pub *0000000637?>

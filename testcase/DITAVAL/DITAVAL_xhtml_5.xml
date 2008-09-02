@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="DITAVAL_xhtml" default="DITAVAL2xhtml_5" basedir=".">
+  
+   <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+   
+  
+  <target name="DITAVAL2xhtml_5">
+    <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+      <property name="args.input"
+        value="${dita.dir}${file.separator}testdata${file.separator}DITAVAL${file.separator}DITAVAL_testdata1.ditamap"/>
+      <property name="output.dir"
+        value="${dita.dir}${file.separator}testresult${file.separator}DITAVAL${file.separator}xhtml_5"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}DITAVAL${file.separator}xhtml_5"/>
+      <property name="dita.input.valfile"
+        value="${dita.dir}${file.separator}testdata${file.separator}DITAVAL${file.separator}DITAVAL_5.ditaval" />
+</ant>
+</target>
+</project>
+

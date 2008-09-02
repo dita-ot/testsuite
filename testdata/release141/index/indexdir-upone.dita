@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2007, v.4002-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="indexdir-upone" xml:lang="en-us">
+<title>Go up a directory</title>
+<shortdesc>outside scope of map</shortdesc>
+<prolog><metadata>
+<keywords><indexterm>This goes up! Must come down!</indexterm>
+</keywords>
+</metadata></prolog>
+<body>
+<p>test!<indexterm>text!</indexterm></p>
+</body>
+</topic>
+<?Pub *0000000514?>

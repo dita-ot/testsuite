@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corporation-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+
+<topic id="TC3" xml:lang="en-us">
+<title>image test for scale</title>
+<prolog>
+</prolog>
+<body>	
+	<p><image href="stamp.gif" alt="stamp"/> default stamp </p>
+	
+	<p><image href="stamp.gif" scale="0.2"/> scale=0.2 stamp </p>
+	<p><image href="stamp.gif" height="178" scale="0.4"/> 178* scale=0.4 stamp </p>
+	<p><image href="stamp.gif" width="166" scale="0.6"/> *166 scale=0.6 stamp </p>
+	<p><image href="stamp.gif" height="178" width="166" scale="0.8"/> 178*166 scale=0.8 stamp </p>
+	<p><image href="stamp.gif" height="178px" width="166px" scale="1.0"/> 178px*166px scale=1.0 stamp </p>
+	<p><image href="stamp.gif" height="10.68pc" width="9.96pc" scale="1.2"/> 10.68pc*9.96pc scale=1.2 stamp </p>
+	<p><image href="stamp.gif" height="128.16pt" width="119.52pt" scale="1.4"/> 128.16pt*119.52pt scale=1.4 stamp </p>
+	<p><image href="stamp.gif" height="1.78in" width="1.66in" scale="1.6"/> 1.78in*1.66in scale=1.6 stamp </p>
+	<p><image href="stamp.gif" height="4.52cm" width="4.22cm" scale="1.8"/> 4.52cm*4.22cm scale=1.8 stamp </p>
+	<p><image href="stamp.gif" height="45.2mm" width="42.2mm" scale="2"/> 45.2mm*42.2mm scale=2 stamp </p>
+	<p><image href="stamp.gif" height="10.68em" width="9.96em" scale="2.2"/> 10.68em*9.96em scale=2.2 stamp </p>
+	<p><image href="stamp.gif" height="60ak" width="50ak" scale="2.4"/> 60ak*50ak scale=2.4 stamp </p>
+	<p><image href="stamp.gif" height="100ak" width="83px" scale="2.6"/> 100ak*83px scale=2.6 stamp </p>
+</body>
+</topic>

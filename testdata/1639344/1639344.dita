@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference  PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "C:\DITA-OT1.4\dtd\reference.dtd">
+<!--             All Rights Reserved.                              -->
+<reference id="NC_name" xml:lang="en-us">
+  <title>Map group elements</title>
+  <refbody>
+    <section>
+ <title>Contained by</title>
+      <xref href="4reference.dita"/>
+    </section>
+  </refbody>
+</reference>

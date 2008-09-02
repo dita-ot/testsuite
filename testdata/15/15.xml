@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corporation-->
+ <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+ 
+<topic id="TC15">
+<title>TC15</title>
+<shortdesc> metadata inherited in xhtml </shortdesc>
+<prolog>
+	<metadata>
+		<audience type="user" job="using" experiencelevel="novice"/>
+		<prodinfo>
+			<prodname>Transcription Assistant</prodname>
+			<vrmlist><vrm version="1" release="3" modification="1"/></vrmlist>
+			<platform>Linux</platform>
+		</prodinfo>
+	</metadata>
+</prolog>
+<body></body>
+
+<topic id="subtopic"><title>subtopic</title>
+<shortdesc> metadata inherited in xhtml </shortdesc>
+<prolog>
+	<metadata>
+		<audience type="user" job="using" experiencelevel="professor"/>
+		<category> test case </category>
+		<keywords><indexterm> index </indexterm></keywords>
+		<othermeta name="ThreadWidthSystem" content="metric"/>
+	</metadata>
+</prolog>
+<body></body>
+</topic>
+
+</topic>

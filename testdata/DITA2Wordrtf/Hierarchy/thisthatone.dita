@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "../dtd/topic.dtd">
+<?Pub Inc?>
+<topic id="one" xml:lang="en-us">
+<title>Topic One Title</title>
+<shortdesc>Put your short description here; used for first paragraph and abstract.</shortdesc>
+
+<topic id="two" xml:lang="en-us">
+<title>Topic Two Title</title>
+
+<topic id="three" xml:lang="en-us">
+<title>Topic Three Title</title>
+
+<body>
+
+<fig expanse="column">
+<title>Fig Title</title>
+<image href="carwash.jpg" alt="Wash the car!"/>
+</fig>
+
+
+</body>
+</topic>
+</topic>
+</topic>

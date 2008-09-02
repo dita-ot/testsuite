@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.1 Topic//EN" "file:/C:/shaoxr/DITA-OT1.3.1/dtd/topic.dtd">
+<topic id="NS1" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1">
+    <title>This is title</title>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>
+                    <index-base>This part should be ignored.</index-base>
+                    <indexterm>This is a subindexterm.</indexterm>
+                </indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+</topic>
+

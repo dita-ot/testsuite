@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "file:\C:\DITA-OT1.4.1\dtd\topic.dtd">
+<topic id="NS2">
+    <title>This title for the second one</title>
+    <abstract>   Three wthite space before and behind this sentense   <shortdesc>More plain text</shortdesc>
+        End plain text
+    </abstract>
+</topic>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "../dtd/map.dtd">
+<map title="The first ditamap">
+<topicref format="ditamap" href="abc1.ditamap" navtitle="abc1 ditamap"/>
+<topicref format="ditamap" href="abc2.ditamap" navtitle="abc2 ditamap"/>
+</map>

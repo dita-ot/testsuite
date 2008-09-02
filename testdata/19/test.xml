@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corporation-->
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+ 
+ <dita>
+<task id="test2" xml:lang="en-us">
+<title> test 2 </title>
+<taskbody>
+	<context> content for test2 </context>
+</taskbody>
+</task>
+</dita>

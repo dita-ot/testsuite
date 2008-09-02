@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Arbortext, Inc., 1988-2005, v.4002-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<?Pub Inc?>
+<topic id="topic" xml:lang="sv-se"><?Pub Caret1?>
+<title>Test index for sv-se</title>
+
+<body>
+<p>
+<indexterm>D</indexterm>
+ <indexterm>đ</indexterm>
+ <indexterm>Đ</indexterm>
+ <indexterm>ð</indexterm>
+ <indexterm>Ð</indexterm>
+<indexterm>t</indexterm>
+ <indexterm>þ/h</indexterm>
+<indexterm>T</indexterm>
+ <indexterm>Þ/H</indexterm>
+<indexterm>v</indexterm>
+ <indexterm>w</indexterm>
+<indexterm>V</indexterm>
+ <indexterm>W</indexterm>
+<indexterm>Y</indexterm>
+ <indexterm>ü</indexterm>
+ <indexterm>Ü</indexterm>
+ <indexterm>ű</indexterm>
+ <indexterm>Ű</indexterm>
+<indexterm>ʒ</indexterm>
+ <indexterm>å</indexterm>
+ <indexterm>Å</indexterm>
+ <indexterm>ä</indexterm>
+ <indexterm>Ä</indexterm>
+ <indexterm>æ</indexterm>
+ <indexterm>Æ</indexterm>
+ <indexterm>ę</indexterm>
+ <indexterm>Ę</indexterm>
+ <indexterm>ö</indexterm>
+ <indexterm>Ö</indexterm>
+ <indexterm>ø</indexterm>
+ <indexterm>Ø</indexterm>
+ <indexterm>ő</indexterm>
+ <indexterm>Ő</indexterm>
+ <indexterm>œ</indexterm>
+ <indexterm>Œ</indexterm>
+ <indexterm>ô</indexterm>
+ <indexterm>Ô</indexterm>
+ <indexterm>bad</indexterm>
+ <indexterm>Bad</indexterm>
+ <indexterm>Bat</indexterm>
+ <indexterm>bat</indexterm>
+ <indexterm>bäd</indexterm>
+ <indexterm>Bäd</indexterm>
+ <indexterm>bät</indexterm>
+ <indexterm>Bät</indexterm>
+ <indexterm>côté</indexterm>
+ <indexterm>coté</indexterm>
+ <indexterm>côte</indexterm>
+ <indexterm>cote</indexterm>
+ <indexterm>black-bird</indexterm>
+ <indexterm>blackbird</indexterm>
+ <indexterm>black-birds</indexterm>
+ <indexterm>blackbirds </indexterm>
+expected output:
+<ul>
+<li>bad </li>
+<li>Bad </li>
+<li>bat </li>
+<li>Bat </li>
+<li>black-bird </li>
+<li>black-birds </li>
+<li>blackbird </li>
+<li>blackbirds </li>
+<li>bäd </li>
+<li>Bäd </li>
+<li>bät </li>
+<li>Bät </li>
+<li>cote </li>
+<li>coté </li>
+<li>côte </li>
+<li>côté </li>
+<li>D </li>
+<li>đ </li>
+<li>Đ </li>
+<li>ð </li>
+<li>Ð </li>
+<li>t </li>
+<li>T </li>
+<li>þ/h </li>
+<li>Þ/H </li>
+<li>v </li>
+<li>w </li>
+<li>V </li>
+<li>W </li>
+<li>Y </li>
+<li>ü </li>
+<li>Ü </li>
+<li>ű </li>
+<li>Ű </li>
+<li>å </li>
+<li>Å </li>
+<li>ä </li>
+<li>Ä </li>
+<li>æ </li>
+<li>Æ </li>
+<li>ę </li>
+<li>Ę </li>
+<li>ö </li>
+<li>Ö </li>
+<li>ø </li>
+<li>Ø </li>
+<li>ő </li>
+<li>Ő </li>
+<li>œ </li>
+<li>Œ </li>
+<li>ô </li>
+<li>Ô </li>
+<li>ʒ </li>
+</ul>
+</p>
+</body>
+</topic>
+<?Pub *0000066322?>

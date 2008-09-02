@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="all" default="all" basedir=".">
+  <!-- Set a property for each environment variable -->
+  <property environment="env"/>
+  <property name="args.logdir" value="log"></property>
+  <property name="dita.extname" value=".xml"/>
+  
+  <import file="translation_eclipsehelp.xml"/>
+  <import file="translation_htmlhelp.xml"/>
+  <import file="translation_javahelp.xml"/>
+  <import file="translation_xhtml.xml"/>
+  
+    <target name="all" 
+    depends="translation2eclipsehelp, maptitle2htmlhelp, maptitle2javahelp, translation2xhtml" 
+    />
+</project>
+

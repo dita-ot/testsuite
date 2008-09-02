@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "file:/C:/shaoxr/DITA-OT1.3.1/dtd/topic.dtd">
+<topic id="namespace3">
+    <title>Shortdesc test data</title>
+    <shortdesc>Test links to topics that  use abstract</shortdesc>
+    <body>
+        <ul>
+            <li>Link to the first case,one shortdesc:<xref href="shortdesc-abstract(1)_testdata1.dita"/></li>
+            <li>Link to the second cases,two shortdescs:<xref href="shortdesc-abstract(1)_testdata2.dita"/></li>
+        </ul>
+        
+    </body>
+    <related-links>
+        <link href="shortdesc-abstract(1)_testdata1.dita"></link>
+        <link href="shortdesc-abstract(1)_testdata2.dita"></link>
+    </related-links>
+</topic>
+

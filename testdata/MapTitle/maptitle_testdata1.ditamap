@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map  PUBLIC "-//OASIS//DTD DITA Map//EN" "file:/C:/shaoxr/DITA-OT1.3.1/dtd/map.dtd">
+<map>
+    <title>
+       CDE
+    </title>
+    <topicref href="a.dita"></topicref>
+</map>
+

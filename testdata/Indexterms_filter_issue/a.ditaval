@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<val>
+  <prop att="audience" val="aud1" action="exclude"/> 
+  <prop att="platform" val="linux" action="exclude"/>
+  <prop att="otherprops" val="props1" action="exclude"/>  
+  <prop att="audience" val="aud2" action="exclude"/>  
+</val>
+
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Arbortext, Inc., 1988-2005, v.4002-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "file:/C:/shaoxr/DITA-OT1.3.1/dtd/topic.dtd">
+<topic id="thistopic" xml:lang="en-us"><?Pub Caret?>
+<title>Simple topic</title>
+<shortdesc>This topic demonstrates some basic elements of DITA content.</shortdesc>
+<body>
+<section><title>Exercises in content markup</title><p>This is a paragraph. <ph>This
+is a phrase with a <keyword>keyword</keyword>.</ph><sl>
+<sli>Simple lists have minimal content.</sli>
+<sli>Each item should be only a single line.</sli>
+</sl></p><ul>
+<li>This is a sentence.</li>
+<li>This is <codeph>fragment of code.</codeph></li>
+<li><p>This is another paragraph.</p></li>
+</ul><ol>
+<li>Item the first</li>
+<li>Item the second</li>
+</ol><dl><dlentry>
+<dt>Term example</dt>
+<dd>definition example</dd>
+</dlentry><dlentry>
+<dt>Term 2</dt>
+<dd>example 2</dd>
+</dlentry></dl></section>
+<table>
+<tgroup cols="3"><colspec colname="col1"/><colspec colname="col2"/><colspec
+colname="col3"/>
+<tbody>
+<row>
+<entry colname="col1">a complex table</entry>
+<entry colname="col2"><menucascade><uicontrol>Table</uicontrol><uicontrol>Insert</uicontrol>
+<uicontrol>Row</uicontrol></menucascade></entry>
+<entry colname="col3" morerows="1">with spanned cells</entry>
+</row>
+<row>
+<entry nameend="col2" namest="col1">with spanned columns</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<simpletable>
+<sthead>
+<stentry>heading 1</stentry>
+<stentry>heading 2</stentry>
+</sthead>
+<strow>
+<stentry>content 1</stentry>
+<stentry>content 2</stentry>
+</strow>
+</simpletable>
+<example><title>Examples of markup</title><userinput>Text for a user to type.</userinput><codeblock>An extended fragment of code
+with multiple lines</codeblock></example>
+</body>
+<related-links>
+<link href="simple.dita" role="next"></link>
+<link href="child1.dita" role="child"></link>
+<link href="child2.dita" role="child"></link>
+<link href="peerref.dita" scope="peer"><linktext>A peer link</linktext>
+<desc>This is a short description.</desc>
+</link>
+<link href="http://www.ibm.com" scope="external"><linktext>IBM's Web site</linktext>
+<desc>This is an external link to IBM's Web site.</desc>
+</link>
+<link format="html" href="readme.htm" scope="peer">
+<desc>The readme file, with late-breaking information</desc>
+</link>
+</related-links>
+</topic>
+<?Pub *0000002341?>

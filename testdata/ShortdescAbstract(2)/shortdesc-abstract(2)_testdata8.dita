@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "file:/C:/shaoxr/DITA-OT1.3.1/dtd/topic.dtd">
+<topic id="NS8">
+    <title>This title</title>
+    <abstract>
+        <b>Bold</b>
+        and text
+        <shortdesc>and shortdesc</shortdesc>
+    </abstract>
+</topic>

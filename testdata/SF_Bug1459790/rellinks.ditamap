@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Arbortext, Inc., 1988-2005, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<map collection-type="sequence" title="No body to speak of">
+<topicref href="rellinksnest.dita#nesting" navtitle="nesting"></topicref>
+<topicref href="rellinksroot.dita" navtitle="Test bodies"></topicref>
+<topicref href="rellinksrootplus.dita#rellinksroot2" navtitle="nesting2"></topicref>
+</map>

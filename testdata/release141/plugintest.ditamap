@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plugin PUBLIC "-//IBM//DTD DITA Eclipse Map Collection//EN" "eclipsemap.dtd">
+<plugin id="com.example.doc" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <pluginmeta>
+        <providerName>IBM</providerName>
+        <plugininfo>
+            <pluginname>My Component system</pluginname>
+            <vrmlist>
+                <vrm version="1.0"/>
+                <vrm version="2.0"/>
+            </vrmlist>
+        </plugininfo>
+    </pluginmeta>
+    <tocref href="a.ditamap"/>
+</plugin>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="shortdesc/abstract(2)_xhtml" default="shortdesc/abstract(2)2xhtml" basedir=".">
+  
+   <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    
+  
+  <target name="shortdesc/abstract(2)2xhtml">
+    <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+    <property name="args.input"
+        value="${dita.dir}${file.separator}testdata${file.separator}ShortdescAbstract(2)${file.separator}shortdesc-abstract(2)_testdata.ditamap"/>
+    <property name="output.dir"
+        value="${dita.dir}${file.separator}testresult${file.separator}shortdescabstract(2)_4${file.separator}xhtml"/>
+    <property name="transtype" value="xhtml"/>
+    <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}shortdescabstract(2)_4${file.separator}xhtml"/>
+  </ant>
+  </target>
+</project>
+

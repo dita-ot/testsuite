@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2007, v.4002-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<?Pub Inc?>
+<?path2project ../../?>
+<?Pub Caret?>
+<topic id="indexdir-main" xml:lang="en-us">
+<title>Concept in the bottom directory</title>
+<shortdesc>This is a CONCEPT.</shortdesc>
+<prolog><metadata>
+<keywords><indexterm>stuff!</indexterm></keywords>
+</metadata></prolog>
+<body>
+<p>stuff<indexterm>stuff</indexterm></p>
+</body>
+</topic>
+<?Pub *0000000508?>

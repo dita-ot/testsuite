@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="1639344_xhtml" default="16393442xhtml" basedir=".">
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+        
+    <target name="16393442xhtml">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}1639344${file.separator}1639344.dita"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}1639344${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}1639344${file.separator}xhtml"/>
+            
+        </ant>   
+    </target>
+</project>
+

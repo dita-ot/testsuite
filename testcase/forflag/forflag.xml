@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="forflag" default="forflag2xhtml" basedir=".">
+  
+<property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+
+  <target name="forflag2xhtml">
+    <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+     <property name="args.input"
+        value="${dita.dir}${file.separator}testdata${file.separator}forflag${file.separator}outcase${file.separator}index.ditamap"/>
+      <property name="dita.input.valfile"
+        value="${dita.dir}${file.separator}testdata${file.separator}forflag${file.separator}filter${file.separator}flag.ditaval"/>
+      <property name="output.dir"
+        value="${dita.dir}${file.separator}testresult${file.separator}forflag${file.separator}outcase${file.separator}xhtml"/>
+
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}forflag${file.separator}outcase${file.separator}xhtml"/>
+
+    </ant>
+  </target>
+</project>

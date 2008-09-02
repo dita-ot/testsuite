@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corporation-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+
+<topic id="topic" xml:lang="en-us">
+<title>topic</title>
+<body>
+ 	<table id="TestTable">
+ 	<tgroup cols="4">
+ 		<colspec colnum="1" colname="colfirst" colwidth="*"/>
+ 		<colspec colnum="2" colname="colsecond" colwidth="*"/>
+ 		<colspec colnum="3" colname="colthird" colwidth="*"/>
+ 		<colspec colnum="4" colname="colforth" colwidth="*"/>
+ 	<tbody>
+ 		<row>
+ 		<entry colname="colfirst">row1, col1-2</entry>
+ 		<entry morerows="1" namest="colsecond" nameend="colthird">row1, col2</entry>
+ 		<entry colname="colforth">morerows, namest, nameend</entry>
+ 		</row>
+ 		<row>
+ 		<entry colname="colfirst">row1, col1</entry>
+ 		<entry colname="colforth">test</entry>
+ 		</row>
+ 	</tbody>
+ 	</tgroup>
+ 	</table>
+</body>
+</topic>

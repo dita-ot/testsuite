@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "../dtd/topic.dtd">
+<?Pub Inc?>
+<topic id="notetypes" xml:lang="en-us"><?Pub Caret?>
+<title>All types of Notes</title>
+<shortdesc>This topic will test each @type of note, without exercising the
+content</shortdesc>
+<body>
+<note>Default note, with no @type. Now some text goes here so that it is longer
+than just a single line and might wrap a little because I'd like to see what
+that looks like in our output as it stands right now because hey that kind
+of thing is fun.</note>
+<note spectitle="HelloNote">Default note, with no @type, and @spectitle="HelloNote".
+Now some text goes here so that it is longer than just a single line and might
+wrap a little because I'd like to see what that looks like in our output as
+it stands right now because hey that kind of thing is fun.</note>
+<note type="attention">Note with @type=attention. Now some text goes here
+so that it is longer than just a single line and might wrap a little because
+I'd like to see what that looks like in our output as it stands right now
+because hey that kind of thing is fun.</note>
+<note type="caution">Note with @type=caution. Now some text goes here so that
+it is longer than just a single line and might wrap a little because I'd like
+to see what that looks like in our output as it stands right now because hey
+that kind of thing is fun.</note>
+<note type="danger">Note with @type=danger. Now some text goes here so that
+it is longer than just a single line and might wrap a little because I'd like
+to see what that looks like in our output as it stands right now because hey
+that kind of thing is fun.</note>
+<note type="fastpath">Note with @type=fastpath. Now some text goes here so
+that it is longer than just a single line and might wrap a little because
+I'd like to see what that looks like in our output as it stands right now
+because hey that kind of thing is fun.</note>
+<note type="important">Note with @type=important. Now some text goes here
+so that it is longer than just a single line and might wrap a little because
+I'd like to see what that looks like in our output as it stands right now
+because hey that kind of thing is fun.</note>
+<note type="note">Note with @type=Note. Now some text goes here so that it
+is longer than just a single line and might wrap a little because I'd like
+to see what that looks like in our output as it stands right now because hey
+that kind of thing is fun.</note>
+<note type="other">Note with @type=other. Now some text goes here so that
+it is longer than just a single line and might wrap a little because I'd like
+to see what that looks like in our output as it stands right now because hey
+that kind of thing is fun.</note>
+<note type="other" othertype="MyLittleNote">Note with @type=other, and @othertype=MyLittleNote.
+Now some text goes here so that it is longer than just a single line and might
+wrap a little because I'd like to see what that looks like in our output as
+it stands right now because hey that kind of thing is fun.</note>
+<note type="remember">Note with @type=remember. Now some text goes here so
+that it is longer than just a single line and might wrap a little because
+I'd like to see what that looks like in our output as it stands right now
+because hey that kind of thing is fun.</note>
+<note type="restriction">Note with @type=restriction. Now some text goes here
+so that it is longer than just a single line and might wrap a little because
+I'd like to see what that looks like in our output as it stands right now
+because hey that kind of thing is fun.</note>
+<note type="tip">Note with @type=tip. Now some text goes here so that it is
+longer than just a single line and might wrap a little because I'd like to
+see what that looks like in our output as it stands right now because hey
+that kind of thing is fun.</note>
+</body>
+</topic>
+<?Pub *0000003941?>

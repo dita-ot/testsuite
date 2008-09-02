@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE task PUBLIC "-//IBM//DTD DITA Task//EN"
+ "../dtd/task.dtd">
+<?Pub Inc?>
+<task id="testchoices" xml:lang="en-us">
+<title>Test choices</title>
+<shortdesc>This topic will test choices.</shortdesc>
+<taskbody>
+<prereq>You need to do this first.</prereq>
+<context>The stage needs to be set just so.</context>
+<steps>
+<step><cmd>Do this</cmd>
+<choices>
+<choice>This is one way to do it.</choice>
+<choice>This is another.</choice>
+</choices>
+</step>
+<step><cmd>Then this</cmd>
+<choices id="choicesid" platform="one" product="two" audience="three" otherprops="four"
+importance="urgent" translate="yes" xml:lang="en-us" outputclass="mychoices">
+<choice>this choices element has an ID.</choice>
+<choice>It also uses selection attributes, translate=yes, and sets the language
+to English.</choice>
+</choices>
+</step>
+<step><cmd>And finally, this.</cmd>
+<choices conref="#testchoices/choicesid">
+<choice>This should not appear, because it uses conref.</choice>
+</choices>
+</step>
+</steps>
+<postreq>Now, you too can do this...</postreq>
+</taskbody>
+<task id="includestuff">
+<title>Include stuff in choice</title>
+<taskbody>
+<steps>
+<step><cmd>Do This!</cmd>
+<choices>
+<choice><apiname>test this and</apiname> <cite>test this and</cite> <b>test
+this and</b> <boolean state="no"/> <cmdname>test this and</cmdname> <codeph>test
+this and</codeph> <filepath> test this and</filepath> <i>test this and</i> <keyword>test
+this and</keyword> <menucascade><uicontrol>test this and</uicontrol></menucascade> <msgnum>test
+this and</msgnum> <msgph>test this and</msgph> <option>test this and</option> <parmname>test
+this and</parmname> <ph>test this and</ph> <q>test this and</q> <state name="art"
+value="ya"/> <sub>test this and</sub> <sup>test this and</sup> <synph>test
+this and</synph> <systemoutput>test this and</systemoutput> <term>test this
+and</term> <tt>test this and</tt> <u>test this and</u> <uicontrol>test this
+and</uicontrol> <userinput>test this and</userinput> <varname>test this and</varname> <wintitle>test
+this and</wintitle> <xref href="#includestuff">test this</xref></choice>
+<choice>That was your only real choice<?Pub Caret?></choice>
+</choices>
+</step>
+</steps>
+</taskbody>
+</task>
+</task>
+<?Pub *0000002299?>

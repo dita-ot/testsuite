@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maptitle_eclipsehelp" default="maptitle2eclipsehelp" basedir=".">
+  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  
+
+<target name="maptitle2eclipsehelp">
+  <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+    <property name="args.input"
+        value="${dita.dir}${file.separator}testdata${file.separator}MapTitle${file.separator}maptitle_testdata1.ditamap"/>
+        
+    <property name="output.dir"
+        value="${dita.dir}${file.separator}testresult${file.separator}maptitle_1${file.separator}eclipsehelp"/>
+    <property name="transtype" value="eclipsehelp"/>
+    <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}maptitle_1${file.separator}eclipsehelp"/>
+</ant>
+<ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+    <property name="args.input"
+        
+        value="${dita.dir}${file.separator}testdata${file.separator}MapTitle${file.separator}maptitle_testdata2.ditamap"/>
+        
+    <property name="output.dir"
+        value="${dita.dir}${file.separator}testresult${file.separator}maptitle_2${file.separator}eclipsehelp"/>
+    <property name="transtype" value="eclipsehelp"/>
+    <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}maptitle_2${file.separator}eclipsehelp"/>
+</ant> 
+<ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+    <property name="args.input"
+        
+        value="${dita.dir}${file.separator}testdata${file.separator}MapTitle${file.separator}maptitle_testdata3.ditamap"/>
+        
+    <property name="output.dir"
+        value="${dita.dir}${file.separator}testresult${file.separator}maptitle_3${file.separator}eclipsehelp"/>
+    <property name="transtype" value="eclipsehelp"/>
+     <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}maptitle_3${file.separator}eclipsehelp"/>
+</ant> 
+<ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+    <property name="args.input"
+        
+        value="${dita.dir}${file.separator}testdata${file.separator}MapTitle${file.separator}maptitle_testdata4.ditamap"/>
+        
+    <property name="output.dir"
+        value="${dita.dir}${file.separator}testresult${file.separator}maptitle_4${file.separator}eclipsehelp"/>
+    <property name="transtype" value="eclipsehelp"/>
+<property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}maptitle_4${file.separator}eclipsehelp"/>
+  </ant> 
+<ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+    <property name="args.input"
+        
+        value="${dita.dir}${file.separator}testdata${file.separator}MapTitle${file.separator}Simplemap${file.separator}simplemap.ditamap"/>
+        
+    <property name="output.dir"
+        value="${dita.dir}${file.separator}testresult${file.separator}maptitle_5${file.separator}eclipsehelp"/>
+    <property name="transtype" value="eclipsehelp"/>
+ <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}maptitle_5${file.separator}eclipsehelp"/>
+</ant> 
+</target>
+</project>

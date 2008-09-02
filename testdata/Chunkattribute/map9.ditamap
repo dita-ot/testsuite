@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.1 Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" chunk="by-document" id="mapnine">
+    <topicref href="X.dita"></topicref>
+    <topicref href="Y.dita" chunk="to-content">
+        <topicref href="Z.dita" chunk="select-document"></topicref>
+    </topicref>
+</map>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE reference PUBLIC "-//IBM//DTD DITA Reference//EN"
+ "../dtd/reference.dtd">
+<?Pub Inc?>
+<reference id="ref" xml:lang="en-us">
+<title>Proptable feechers</title>
+<shortdesc>Shows what can happen when you skip proptype &amp; propvalue in
+a properties table.</shortdesc>
+<refbody>
+<properties>
+<property>
+<proptype>type</proptype>
+</property>
+<property>
+<propvalue>value</propvalue>
+</property>
+<property>
+<propdesc>desc</propdesc>
+</property>
+</properties>
+<properties>
+<property>
+<proptype>proptype</proptype>
+<propvalue>propvalue</propvalue>
+<propdesc>propdesc</propdesc>
+</property>
+</properties>
+<properties relcolwidth="1* 2* 3*">
+<property>
+<proptype>p r o p t y p e 1* a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a</proptype>
+<propvalue>p r o p v a l u e 2* a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a</propvalue>
+<propdesc>propdesc 3* a a a a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a</propdesc>
+</property>
+</properties>
+<properties relcolwidth="1* 2*">
+<property>
+<proptype>p r o p t y p e 1* a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a</proptype>
+<propvalue>p r o p v a l u e 2* a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a</propvalue>
+</property>
+</properties>
+<properties relcolwidth="2* 3*">
+<property>
+<propvalue>p r o p v a l u e 2* a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a</propvalue>
+<propdesc>propdesc 3* a a a a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a</propdesc>
+</property>
+</properties>
+<properties relcolwidth="1* 3*">
+<property>
+<proptype>p r o p t y p e 1* a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a</proptype>
+<propdesc>propdesc 3* a a a a a a a a a a a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a</propdesc>
+</property>
+</properties>
+<properties>
+<property>
+<proptype specentry="type-specentry"></proptype>
+<propvalue specentry="value - specentry"></propvalue>
+<propdesc specentry="desc - specentry"></propdesc>
+</property>
+<property>
+<propvalue>propvalue only - should be preceeded by a blank column</propvalue>
+<propdesc>propdesc</propdesc>
+</property>
+<property>
+<propdesc>propdesc only - should be preceeded by 2 blank columns</propdesc>
+</property>
+<property>
+<proptype>proptype</proptype>
+<propdesc>propdesc with proptype- should be preceeded by 1 blank column in
+between</propdesc>
+</property>
+<property>
+<proptype>proptype</proptype>
+<propvalue>propvalue</propvalue>
+<propdesc>propdesc</propdesc>
+</property>
+<property>
+<proptype>typeonly</proptype>
+</property>
+<property>
+<propvalue>valueonly</propvalue>
+</property>
+<property>
+<propdesc>desconly</propdesc>
+</property>
+</properties>
+<properties>
+<property>
+<proptype>proptype</proptype>
+<propvalue>propvalue - last</propvalue>
+</property>
+<property>
+<propvalue>propvalue only - should be preceeded by a blank column</propvalue>
+</property>
+</properties>
+<properties>
+<property>
+<proptype>type in this row only</proptype>
+</property>
+<property>
+<propdesc>desc in this row only - should be 2x2</propdesc>
+</property>
+</properties>
+<properties>
+<property>
+<propvalue>value</propvalue>
+</property>
+<property>
+<propdesc>descr</propdesc>
+</property>
+</properties>
+<properties>
+<property>
+<propvalue>value</propvalue>
+</property>
+<property>
+<proptype>type</proptype>
+</property>
+</properties>
+</refbody>
+</reference>

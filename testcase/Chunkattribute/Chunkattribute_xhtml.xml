@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="chunkattribute_xhtml" default="chunkattribute2xhtml" basedir=".">
+    
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    
+    <target name="chunkattribute2xhtml">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Chunkattribute${file.separator}map1.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Chunkattribute${file.separator}xhtml1"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Chunkattribute${file.separator}xhtml1"/>
+        </ant>
+        
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Chunkattribute${file.separator}map2.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Chunkattribute${file.separator}xhtml2"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Chunkattribute${file.separator}xhtml2"/>
+        </ant>
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Chunkattribute${file.separator}map3.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Chunkattribute${file.separator}xhtml3"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Chunkattribute${file.separator}xhtml3"/>
+        </ant>
+        
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Chunkattribute${file.separator}map4.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Chunkattribute${file.separator}xhtml4"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Chunkattribute${file.separator}xhtml4"/>
+        </ant>
+        
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Chunkattribute${file.separator}map5.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Chunkattribute${file.separator}xhtml5"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Chunkattribute${file.separator}xhtml5"/>
+        </ant>
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Chunkattribute${file.separator}map6.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Chunkattribute${file.separator}xhtml6"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Chunkattribute${file.separator}xhtml6"/>
+        </ant>
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Chunkattribute${file.separator}map8.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Chunkattribute${file.separator}xhtml8"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Chunkattribute${file.separator}xhtml8"/>
+        </ant>
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Chunkattribute${file.separator}map9.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Chunkattribute${file.separator}xhtml9"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Chunkattribute${file.separator}xhtml9"/>
+        </ant>
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}Chunkattribute${file.separator}map11.ditamap"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}Chunkattribute${file.separator}xhtml11"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Chunkattribute${file.separator}xhtml11"/>
+        </ant>
+        
+    </target>
+    
+  
+</project>
+

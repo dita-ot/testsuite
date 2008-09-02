@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- (c) Copyright IBM Corp.-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+
+<map title="UC19_TC2">
+	<topicref href="19.xml"/>
+	<topicref href="19.xml" navtitle="(ya)19" locktitle="yes">
+		<topicref navtitle="null1"/>
+	</topicref>
+	<topicref navtitle="null2">
+		<topicref href="test.xml" navtitle="test in null2" locktitle="yes"/>
+	</topicref>
+	<topicref navtitle="null3"/>
+	<topicref navtitle="null4">
+		<topichead navtitle="null5"/>
+	</topicref>
+	<topicref navtitle="null6">
+		<topicref href="http://www.ibm.com" format="html" navtitle="IBM" locktitle="yes"/>
+	</topicref>
+</map>

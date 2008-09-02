@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "../dtd/map.dtd">
+<map id="no.hang.in.mm.repro.4" title="Does not hang in move-meta-entries"> 
+<topicref scope="local" format="dita" href="topics/topic_my_little_landing_page.xml" navtitle="My Little Landing Page" id="topicref_CAE7A9EE3FDD485CAA39305B99F754C4"> 
+<topicref href="topics/c_installation_process.xml" type="concept" navtitle="Installation Process" id="topicref_CC4257FA48624A5A9E9E003DD3AE4E05"> 
+<topicmeta> 
+<keywords><indexterm>foo</indexterm><indexterm>bar</indexterm></keywords></topicmeta></topicref> 
+<topicref scope="local" format="dita" href="topics/c_installation_process.xml" navtitle="Installation Process" type="concept" id="topicref_E851B34B8DBC42FD98CF614670B7247C"></topicref> </topicref> </map> 

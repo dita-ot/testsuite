@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="1803190_xhtml" default="18031902xhtml" basedir=".">
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    
+    
+    <target name="18031902xhtml">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}1803190${file.separator}1803190_1.dita"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}1803190_1${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}1803190${file.separator}xhtml"/>
+            
+        </ant>     
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}1803190${file.separator}1803190_2.dita"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}1803190_2${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}1803190_2${file.separator}xhtml"/>
+            
+        </ant>         
+        
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input"
+                value="${dita.dir}${file.separator}testdata${file.separator}1803190${file.separator}1803190_3.dita"/>
+            <property name="output.dir"
+                value="${dita.dir}${file.separator}testresult${file.separator}1803190_3${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}1803190_3${file.separator}xhtml"/>   
+        </ant>         
+    </target>
+</project>
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE concept PUBLIC "-//IBM//DTD DITA Concept//EN"
+ "../dtd/concept.dtd">
+<?Pub Inc?>
+<concept id="conx" xml:lang="en-us"><?Pub Caret?>
+<title>My other file (conx)</title>
+<shortdesc>This file is used with linkto-concept.dita to test XREF and LINK stuff.</shortdesc>
+<conbody>
+<p>Type <b>your</b> text here.</p>
+<ul>
+<li id="xrefli">an interesting point in conx</li>
+<li>another interesting point in conx</li>
+</ul>
+<fig id="testfig"><title>Figure in conx</title>
+<p>This is my test figure</p>
+<p conref="linkto-conb.dita#conb/conbp"></p>
+</fig>
+<section id="sect"><title>Section in conx</title>This is information in my
+section....not terribly exciting.</section>
+</conbody>
+<related-links>
+<linklist><title>Files related to my conref/xref test</title>
+<desc>These are all of the other files used in my conref/xref test.</desc>
+<link href="linking.dita"></link>
+<link href="linkto-conb.dita"></link>
+</linklist>
+</related-links>
+<concept id="nestx">
+<title>nested</title>
+<conbody>
+<p>nested concept</p>
+<table id="table"><title>Table in a nested topic in conx</title>
+<tgroup cols="2"><colspec colname="col1"/><colspec colname="col2"/>
+<tbody>
+<row>
+<entry colname="col1">stuff</entry>
+<entry colname="col2">goes</entry>
+</row>
+<row>
+<entry colname="col1">in</entry>
+<entry colname="col2">here</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</conbody>
+</concept>
+</concept>
+<?Pub *0000001457?>

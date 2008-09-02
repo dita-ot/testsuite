@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corporation-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+
+<topic id="test1" xml:lang="en-us">
+<title>test1</title>
+<shortdesc> en-us sorting </shortdesc>
+<body>
+<p>
+<indexterm>role</indexterm>
+<indexterm>ro le</indexterm>
+<indexterm>(role)</indexterm>
+<indexterm>Role</indexterm>
+<indexterm>rôle</indexterm>
+<indexterm>roles</indexterm>
+<indexterm>rule</indexterm>
+<indexterm>ae</indexterm>
+ <indexterm>æ</indexterm>
+ <indexterm>Æ</indexterm>
+ <indexterm>bad</indexterm>
+<indexterm>Bad</indexterm>
+<indexterm>Bat</indexterm>
+<indexterm>bat</indexterm>
+<indexterm>bäd</indexterm>
+<indexterm>Bäd</indexterm>
+<indexterm>bät</indexterm>
+<indexterm>Bät</indexterm>
+<indexterm>côté</indexterm>
+<indexterm>coté</indexterm>
+<indexterm>côte</indexterm>
+<indexterm>cote</indexterm>
+<indexterm>black-bird</indexterm>
+<indexterm>blackbird</indexterm>
+<indexterm>black-birds</indexterm>
+<indexterm>blackbirds</indexterm>
+expected output:
+<ul>
+<li>(role)</li>
+<li>ae</li>
+<li>æ </li>
+<li>Æ</li>
+<li>bad </li>
+<li>Bad </li>
+<li>bäd </li>
+<li>Bäd </li>
+<li>bat </li>
+<li>Bat </li>
+<li>bät </li>
+<li>Bät </li>
+<li>black-bird </li>
+<li>black-birds </li>
+<li>blackbird </li>
+<li>blackbirds </li>
+<li>cote </li>
+<li>coté </li>
+<li>côte </li>
+<li>côté </li>
+<li>ro le </li>
+<li>role </li>
+<li>Role </li>
+<li>rôle </li>
+<li>roles </li>
+<li>rule </li>
+</ul>
+</p>
+</body>
+</topic>

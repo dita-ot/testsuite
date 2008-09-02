@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE dita PUBLIC "-//IBM//DTD DITA Composite//EN"
+ "../dtd/ditabase.dtd">
+<?Pub Inc?>
+<dita>
+<topic id="top" xml:lang="en-us"><?Pub Caret?>
+<title>Main Topic</title>
+<shortdesc>This is a DITA file which imbeds each type of topic, to make sure
+they all work together. Each type of topic should also test nesting other
+types of topics.</shortdesc>
+<body>
+<p>This is a topic. Now pull in all the garbage inside section:</p>
+<section conref="everythinginsection.dita#gen/section"></section>
+</body>
+<related-links>
+<link href="concept.dita" type="concept"></link>
+<link href="dita.dita"></link>
+<link href="task.dita" type="task"></link>
+<link href="reference.dita" type="reference"></link>
+</related-links>
+<topic id="topintop">
+<title>Topic in a topic</title>
+<body>
+<p>This is a topic, nested in a topic.</p>
+</body>
+</topic>
+<concept id="conintop">
+<title>Concept in a topic</title>
+<conbody>
+<p>This is a concept, nested in a topic</p>
+</conbody>
+</concept>
+<reference id="refintop">
+<title>Reference in topic</title>
+<refbody>
+<section><title>testing reference in topic</title>This is a reference in a
+topic</section>
+</refbody>
+</reference>
+<task id="taskintop">
+<title>Task in topic</title>
+<taskbody>
+<result>Finish testing task in topic.</result>
+</taskbody>
+</task>
+</topic>
+<task id="task">
+<title>Main Task</title>
+<shortdesc>This is a task inside DITA</shortdesc>
+<taskbody>
+<prereq>You need to do this first.</prereq>
+<result>Then you will have tested everything. Pull in all possible content
+into an example:</result>
+<example conref="everythinginsection.dita#gen/example"></example>
+</taskbody>
+<topic id="topintask">
+<title>Topic in a task</title>
+<body>
+<p>This is a topic, nested in a task.</p>
+</body>
+</topic>
+<concept id="conintask">
+<title>Concept in a task</title>
+<conbody>
+<p>This is a concept, nested in a task</p>
+</conbody>
+</concept>
+<reference id="refintask">
+<title>Reference in task</title>
+<refbody>
+<section><title>testing reference in task</title>This is a reference in a
+task</section>
+</refbody>
+</reference>
+<task id="taskintask">
+<title>Task in task</title>
+<taskbody>
+<result>Finish testing task in task.</result>
+</taskbody>
+</task>
+</task>
+<concept id="concept">
+<title>Main Concept</title>
+<shortdesc>This is a concept in DITA, which follows topic and task</shortdesc>
+<conbody>
+<p>Here's a <b>cute</b>, <i>little</i> concept. Now pull everything in to
+a section:</p>
+<section conref="everythinginsection.dita#gen/section"></section>
+</conbody>
+<topic id="topincon">
+<title>Topic in a Concept</title>
+<body>
+<p>This is a topic, nested in a Concept.</p>
+</body>
+</topic>
+<concept id="conincon">
+<title>Concept in a Concept</title>
+<conbody>
+<p>This is a concept, nested in a Concept</p>
+</conbody>
+</concept>
+<reference id="refincon">
+<title>Reference in Concept</title>
+<refbody>
+<section><title>testing reference in Concept</title>This is a reference in
+a Concept</section>
+</refbody>
+</reference>
+<task id="taskincon">
+<title>Task in Concept</title>
+<taskbody>
+<result>Finish testing task in Concept.</result>
+</taskbody>
+</task>
+</concept>
+<reference id="reference">
+<title>Main Reference</title>
+<refbody>
+<section><title>This is a reference, which is a child of DITA</title>It follows
+topic, task, and concept. Next pull all possible content into a section:</section>
+<section conref="everythinginsection.dita#gen/section"></section>
+</refbody>
+<topic id="topinref">
+<title>Topic in a reference</title>
+<body>
+<p>This is a topic, nested in a reference.</p>
+</body>
+</topic>
+<concept id="coninref">
+<title>Concept in a reference</title>
+<conbody>
+<p>This is a concept, nested in a reference</p>
+</conbody>
+</concept>
+<reference id="refinref">
+<title>Reference in reference</title>
+<refbody>
+<section><title>testing reference in reference</title>This is a reference
+in a reference</section>
+</refbody>
+</reference>
+<task id="taskinref">
+<title>Task in reference</title>
+<taskbody>
+<result>Finish testing task in reference.</result>
+</taskbody>
+</task>
+</reference>
+</dita>
+<?Pub *0000004123?>
