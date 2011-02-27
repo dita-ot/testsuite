@@ -2,7 +2,9 @@
 <project name="3178361" default="3178361" basedir=".">
   <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
   <target name="3178361">
-    <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+    <ant antfile="${dita.dir}${file.separator}build.xml">
+      <target name="build-init"/>
+      <target name="preprocess"/>
       <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}3178361${file.separator}conref-push-test.ditamap"/>
       <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}3178361${file.separator}xhtml"/>
       <property name="transtype" value="xhtml"/>
