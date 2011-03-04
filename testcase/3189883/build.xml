@@ -6,7 +6,7 @@
       <target name="build-init"/>
       <target name="preprocess"/>
       <property name="args.input" location="${dita.dir}${file.separator}testdata${file.separator}3189883${file.separator}main.ditamap"/>
-      <property name="output.dir" location="${dita.dir}${file.separator}testresult${file.separator}3189883${file.separator}xhtml"/>
+      <property name="output.dir" location="${dita.dir}${file.separator}testresult${file.separator}3189883${file.separator}preprocess"/>
       <property name="dita.temp.dir" location="${dita.dir}${file.separator}temp${file.separator}3189883${file.separator}preprocess"/>
       <property name="validate" value="false"/>
     </ant>
