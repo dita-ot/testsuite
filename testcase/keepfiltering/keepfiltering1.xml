@@ -1,21 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project name="keepfiltering1_xhtml" default="keepfiltering12xhtml" basedir=".">
-	
-	<property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-	
-	
-	<target name="keepfiltering12xhtml">
-		<ant antfile="${dita.dir}${file.separator}build.xml" target="init">
-			<property name="args.input"
-				value="${dita.dir}${file.separator}testdata${file.separator}keepfiltering${file.separator}hierarchy.ditamap"/>
-			<property name="output.dir"
-				value="${dita.dir}${file.separator}testresult${file.separator}keepfiltering2${file.separator}xhtml2"/>
-			<property name="transtype" value="xhtml"/>
-			<property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}keepfiltering2${file.separator}xhtml2"/>
-			<property name="dita.input.valfile"
-				value="${dita.dir}${file.separator}testdata${file.separator}keepfiltering${file.separator}garage_filtering.ditaval" />
-		</ant>
-		
-	</target>
+  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <target name="keepfiltering12xhtml">
+    <ant antfile="${dita.dir}${file.separator}build.xml">
+      <property name="args.input"
+                location="${dita.dir}${file.separator}testdata${file.separator}keepfiltering${file.separator}hierarchy.ditamap"/>
+      <property name="output.dir"
+                location="${dita.dir}${file.separator}testresult${file.separator}keepfiltering2${file.separator}xhtml2"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}${file.separator}temp${file.separator}keepfiltering2${file.separator}xhtml2"/>
+      <property name="dita.input.valfile"
+                location="${dita.dir}${file.separator}testdata${file.separator}keepfiltering${file.separator}garage_filtering.ditaval"/>
+    </ant>
+  </target>
 </project>
-

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->
 <project name="ditaot_all" default="all" basedir=".">
-  <property name="currentdir" location="${basedir}${file.separator}testcase"></property>
+  <property name="currentdir" location="${basedir}${file.separator}testcase"/>
   <target name="all">
-    <echo message="${currentdir}"></echo>
+    <echo message="${currentdir}"/>
     <sequential>
       <subant>
-        <fileset dir="${currentdir}" includes="*/build.xml"></fileset>
+        <fileset dir="${currentdir}" includes="*/build.xml"/>
       </subant>
     </sequential>
   </target>

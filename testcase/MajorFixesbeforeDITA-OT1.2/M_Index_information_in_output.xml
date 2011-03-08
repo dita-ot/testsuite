@@ -1,26 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<project name="Index_information_in_output" default="Index_information_in_output" basedir=".">
-    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-   
-    
-   <target name="Index_information_in_output">
-       <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
-           <property name="args.input"
-               value="${dita.dir}${file.separator}testdata${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy.ditamap"/>
-           <property name="output.dir"
-               value="${dita.dir}${file.separator}testresult${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy${file.separator}javahelp"/>
-           <property name="transtype" value="javahelp"/>
-           <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy${file.separator}javahelp"/>
-       </ant>   
-       
-       <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
-           <property name="args.input"
-               value="${dita.dir}${file.separator}testdata${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy.ditamap"/>
-           <property name="output.dir"
-               value="${dita.dir}${file.separator}testresult${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy${file.separator}htmlhelp"/>
-           <property name="transtype" value="htmlhelp"/>
-           <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy${file.separator}htmlhelp"/>
-       </ant>   
-   </target>
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Index_information_in_output" default="Index_information_in_output"
+         basedir=".">
+  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <target name="Index_information_in_output">
+    <ant antfile="${dita.dir}${file.separator}build.xml">
+      <property name="args.input"
+                location="${dita.dir}${file.separator}testdata${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy.ditamap"/>
+      <property name="output.dir"
+                location="${dita.dir}${file.separator}testresult${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy${file.separator}javahelp"/>
+      <property name="transtype" value="javahelp"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}${file.separator}temp${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy${file.separator}javahelp"/>
+    </ant>
+    <ant antfile="${dita.dir}${file.separator}build.xml">
+      <property name="args.input"
+                location="${dita.dir}${file.separator}testdata${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy.ditamap"/>
+      <property name="output.dir"
+                location="${dita.dir}${file.separator}testresult${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy${file.separator}htmlhelp"/>
+      <property name="transtype" value="htmlhelp"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}${file.separator}temp${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy${file.separator}htmlhelp"/>
+    </ant>
+  </target>
 </project>
-

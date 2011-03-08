@@ -1,20 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<project name="SFBug1357139_CQdita00000138" default="SFBug1357139_CQdita00000138xhtml" basedir=".">
-    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-    
-    <import file="${dita.dir}${file.separator}build.xml"/>
-    <target name="SFBug1357139_CQdita00000138xhtml">
-        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
-            <property name="args.input"
-                value="${dita.dir}${file.separator}testdata${file.separator}SF1357139${file.separator}testcondition.dita"/>
-            <property name="output.dir"
-                value="${dita.dir}${file.separator}testresult${file.separator}SF1357139${file.separator}testcondition${file.separator}xhtml"/>
-            <property name="transtype" value="xhtml"/>
-            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}SF1357139${file.separator}testcondition${file.separator}xhtml"/>
-            <property name="dita.input.valfile"
-                value="${dita.dir}${file.separator}testdata${file.separator}SF1357139${file.separator}a.ditaval" />
-
-        </ant>   
-    </target>
-    
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SFBug1357139_CQdita00000138" default="SFBug1357139_CQdita00000138xhtml"
+         basedir=".">
+  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <import file="${dita.dir}${file.separator}build.xml"/>
+  <target name="SFBug1357139_CQdita00000138xhtml">
+    <ant antfile="${dita.dir}${file.separator}build.xml">
+      <property name="args.input"
+                location="${dita.dir}${file.separator}testdata${file.separator}SF1357139${file.separator}testcondition.dita"/>
+      <property name="output.dir"
+                location="${dita.dir}${file.separator}testresult${file.separator}SF1357139${file.separator}testcondition${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}${file.separator}temp${file.separator}SF1357139${file.separator}testcondition${file.separator}xhtml"/>
+      <property name="dita.input.valfile"
+                location="${dita.dir}${file.separator}testdata${file.separator}SF1357139${file.separator}a.ditaval"/>
+    </ant>
+  </target>
 </project>

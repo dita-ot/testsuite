@@ -1,23 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project name="1619074_xhtml" default="16190742xhtml" basedir=".">
-    
-    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-    
-    
-    
-    
-    
-    <target name="16190742xhtml">
-        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
-            <property name="args.input"
-                value="${dita.dir}${file.separator}testdata${file.separator}1619074${file.separator}1619704.dita"/>
-            <property name="output.dir"
-                value="${dita.dir}${file.separator}testresult${file.separator}1619074${file.separator}xhtml"/>
-            <property name="transtype" value="xhtml"/>
-            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}1619074${file.separator}xhtml"/>
-        </ant>
-        
-    </target>
-    
-    
+  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <target name="16190742xhtml">
+    <ant antfile="${dita.dir}${file.separator}build.xml">
+      <property name="args.input"
+                location="${dita.dir}${file.separator}testdata${file.separator}1619074${file.separator}1619704.dita"/>
+      <property name="output.dir"
+                location="${dita.dir}${file.separator}testresult${file.separator}1619074${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}${file.separator}temp${file.separator}1619074${file.separator}xhtml"/>
+    </ant>
+  </target>
 </project>

@@ -1,24 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <project name="lang-roro_xhtml" default="lang-roro2xhtml" basedir=".">
-  
-  <!-- dita.dir should point to the toolkit's root directory -->
   <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
   <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
-  
-  <import file="${dita.dir}${file.separator}integrator.xml"/>
-  
-  <target name="lang-roro2xhtml" depends="integrate">
-    <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
-      <!-- please refer to the toolkit's document for supported parameters, and 
-           specify them base on your needs -->
+  <target name="lang-roro2xhtml">
+    <ant antfile="${dita.dir}${file.separator}build.xml">
       <property name="args.input"
-        value="${testdata.dir}${file.separator}OldcasesTest${file.separator}lang${file.separator}lang-roro.dita"/>
-      <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}OldcasesTest${file.separator}lang${file.separator}roro${file.separator}xhtml"/>
+                location="${testdata.dir}${file.separator}OldcasesTest${file.separator}lang${file.separator}lang-roro.dita"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}${file.separator}temp${file.separator}OldcasesTest${file.separator}lang${file.separator}roro${file.separator}xhtml"/>
       <property name="output.dir"
-        value="${dita.dir}${file.separator}testresult${file.separator}OldcasesTest${file.separator}lang${file.separator}roro${file.separator}xhtml"/>
+                location="${dita.dir}${file.separator}testresult${file.separator}OldcasesTest${file.separator}lang${file.separator}roro${file.separator}xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.input.valfile" value="${testdata.dir}${file.separator}OldcasesTest${file.separator}lang${file.separator}lang-ref.ditaval"/>
+      <property name="dita.input.valfile"
+                location="${testdata.dir}${file.separator}OldcasesTest${file.separator}lang${file.separator}lang-ref.ditaval"/>
     </ant>
   </target>
 </project>

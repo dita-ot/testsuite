@@ -1,21 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->
 <project name="121majorfixes" default="all" basedir=".">
-  <property name="currentdir" location="${basedir}"></property>
+  <property name="currentdir" location="${basedir}"/>
   <target name="all">
-    <echo message="${currentdir}"></echo>
+    <echo message="${currentdir}"/>
     <sequential>
       <subant>
-        <fileset dir="${currentdir}" includes="C*.xml"></fileset>
+        <fileset dir="${currentdir}" includes="C*.xml"/>
       </subant>
     </sequential>
-<sequential>
+    <sequential>
       <subant>
-        <fileset dir="${currentdir}" includes="SF*.xml"></fileset>
+        <fileset dir="${currentdir}" includes="SF*.xml"/>
       </subant>
     </sequential>
-  
-
-
-</target>
+  </target>
 </project>

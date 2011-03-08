@@ -1,17 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project name="table-nocolnum_wordrtf" default="table-nocolnum2wordrtf" basedir=".">
-    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-    
-   
-    <target name="table-nocolnum2wordrtf">
-        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
-            <property name="args.input"
-                value="${dita.dir}${file.separator}testdata${file.separator}DITA2Wordrtf${file.separator}Table${file.separator}choicetable.dita"/>
-            <property name="output.dir"
-                value="${dita.dir}${file.separator}testresult${file.separator}Table${file.separator}choicetable${file.separator}Wordrtf"/>
-            <property name="transtype" value="wordrtf"/>
-            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}Table${file.separator}choicetable${file.separator}Wordrtf"/>
-            
-        </ant>         
-    </target>
+  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <target name="table-nocolnum2wordrtf">
+    <ant antfile="${dita.dir}${file.separator}build.xml">
+      <property name="args.input"
+                location="${dita.dir}${file.separator}testdata${file.separator}DITA2Wordrtf${file.separator}Table${file.separator}choicetable.dita"/>
+      <property name="output.dir"
+                location="${dita.dir}${file.separator}testresult${file.separator}Table${file.separator}choicetable${file.separator}Wordrtf"/>
+      <property name="transtype" value="wordrtf"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}${file.separator}temp${file.separator}Table${file.separator}choicetable${file.separator}Wordrtf"/>
+    </ant>
+  </target>
 </project>
