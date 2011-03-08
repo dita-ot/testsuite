@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="CR_eclipsehelp" default="CR2eclipsehelp" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="testdata.dir" location="${dita.dir}/testdata"/>
   <target name="CR2eclipsehelp">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${testdata.dir}${file.separator}OldcasesTest${file.separator}CR.ditamap"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}OldcasesTest${file.separator}CR${file.separator}eclipsehelp"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}OldcasesTest${file.separator}CR${file.separator}eclipsehelp"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${testdata.dir}/OldcasesTest/CR.ditamap"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/CR/eclipsehelp"/>
+      <property name="output.dir" location="${dita.dir}/testresult/OldcasesTest/CR/eclipsehelp"/>
       <property name="transtype" value="eclipsehelp"/>
     </ant>
   </target>

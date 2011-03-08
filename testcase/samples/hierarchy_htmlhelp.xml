@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="sample_htmlhelp" default="sample2htmlhelp" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="testdata.dir" location="${dita.dir}/testdata"/>
   <target name="sample2htmlhelp">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${testdata.dir}${file.separator}samples${file.separator}hierarchy.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}samples${file.separator}hierarchy${file.separator}htmlhelp"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${testdata.dir}/samples/hierarchy.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/samples/hierarchy/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}samples${file.separator}hierarchy${file.separator}htmlhelp"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/samples/hierarchy/htmlhelp"/>
     </ant>
   </target>
 </project>

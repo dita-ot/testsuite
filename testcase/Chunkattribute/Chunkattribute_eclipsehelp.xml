@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Chunkattribute_eclipsehelp" default="Chunkattribute2eclipsehelp"
          basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <property name="dita.dir" location="${basedir}/../.."/>
   <target name="Chunkattribute2eclipsehelp">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Chunkattribute${file.separator}map7.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Chunkattribute${file.separator}eclipsehelp"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/Chunkattribute/map7.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/Chunkattribute/eclipsehelp"/>
       <property name="transtype" value="eclipsehelp"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}Chunkattribute${file.separator}eclipsehelp"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/Chunkattribute/eclipsehelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Chunkattribute${file.separator}map10.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Chunkattribute${file.separator}eclipsehelp"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/Chunkattribute/map10.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/Chunkattribute/eclipsehelp"/>
       <property name="transtype" value="eclipsehelp"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}Chunkattribute${file.separator}eclipsehelp"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/Chunkattribute/eclipsehelp"/>
     </ant>
   </target>
 </project>

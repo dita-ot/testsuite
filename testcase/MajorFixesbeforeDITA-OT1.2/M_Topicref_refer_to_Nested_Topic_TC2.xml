@@ -1,88 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="1563093_xhtml" default="15630932xhtml" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="dita.temp.dir" location="${dita.dir}${file.separator}temp"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.temp.dir" location="${dita.dir}/temp"/>
   <target name="15630932xhtml">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC2/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}xhtml"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/xhtml"/>
       <property name="transtype" value="xhtml"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}xhtml${file.separator}temp"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/xhtml/temp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC2/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}wordrtf"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/wordrtf"/>
       <property name="transtype" value="wordrtf"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}wordrtf${file.separator}temp"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/wordrtf/temp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC2/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}pdf"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/pdf"/>
       <property name="transtype" value="pdf"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}pdf${file.separator}temp"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/pdf/temp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC2/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}javahelp"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/javahelp"/>
       <property name="transtype" value="javahelp"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}javahelp${file.separator}temp"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/javahelp/temp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC2/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}htmlhelp"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}htmlhelp${file.separator}temp"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/htmlhelp/temp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC2/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}troff"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/troff"/>
       <property name="transtype" value="troff"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}troff${file.separator}temp"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/troff/temp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC2/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}docbook"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/docbook"/>
       <property name="transtype" value="docbook"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}docbook${file.separator}temp"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/docbook/temp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC2/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}eclipsehelp"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/eclipsehelp"/>
       <property name="transtype" value="eclipsehelp"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}eclipsehelp${file.separator}temp"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/eclipsehelp/temp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC2/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}eclipsecontent"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/eclipsecontent"/>
       <property name="transtype" value="eclipsecontent"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Topicref_refer_to_Nested_Topic${file.separator}TC2${file.separator}abc${file.separator}eclipsecontent${file.separator}temp"/>
+                location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC2/abc/eclipsecontent/temp"/>
     </ant>
   </target>
 </project>

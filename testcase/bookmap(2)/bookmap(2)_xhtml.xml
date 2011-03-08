@@ -1,69 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="bookmap(2)_xhtml" default="bookmap(2)2xhtml" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <property name="dita.dir" location="${basedir}/../.."/>
   <target name="bookmap(2)2xhtml">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}bookmap(2)${file.separator}bookmap(2)_testdata1.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}1${file.separator}xhtml"/>
+                location="${dita.dir}/testdata/bookmap(2)/bookmap(2)_testdata1.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/1/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}1${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/1/xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}bookmap(2)${file.separator}bookmap(2)_testdata2.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}2${file.separator}xhtml"/>
+                location="${dita.dir}/testdata/bookmap(2)/bookmap(2)_testdata2.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/2/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}2${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/2/xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}bookmap(2)${file.separator}bookmap(2)_testdata3.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}3${file.separator}xhtml"/>
+                location="${dita.dir}/testdata/bookmap(2)/bookmap(2)_testdata3.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/3/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}3${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/3/xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}bookmap(2)${file.separator}bookmap(2)_testdata4.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}4${file.separator}xhtml"/>
+                location="${dita.dir}/testdata/bookmap(2)/bookmap(2)_testdata4.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/4/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}4${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/4/xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}bookmap(2)${file.separator}bookmap(2)_testdata5.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}5${file.separator}xhtml"/>
+                location="${dita.dir}/testdata/bookmap(2)/bookmap(2)_testdata5.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/5/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}5${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/5/xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}bookmap(2)${file.separator}bookmap(2)_testdata6.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}6${file.separator}xhtml"/>
+                location="${dita.dir}/testdata/bookmap(2)/bookmap(2)_testdata6.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/6/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}6${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/6/xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}bookmap(2)${file.separator}bookmap(2)_testdata7.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}7${file.separator}xhtml"/>
+                location="${dita.dir}/testdata/bookmap(2)/bookmap(2)_testdata7.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/7/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}7${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/7/xhtml"/>
     </ant>
   </target>
 </project>

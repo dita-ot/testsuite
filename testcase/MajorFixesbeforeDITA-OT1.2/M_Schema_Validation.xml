@@ -1,88 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="1806081_xhtml" default="18060812xhtml" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="dita.temp.dir" location="${dita.dir}${file.separator}temp"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.temp.dir" location="${dita.dir}/temp"/>
   <target name="18060812xhtml">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}xhtml"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/Schema_Validation/abc.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/Schema_Validation/abc/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/Schema_Validation/abc/xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/Schema_Validation/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}wordrtf"/>
+                location="${dita.dir}/testresult/Schema_Validation/abc/wordrtf"/>
       <property name="transtype" value="wordrtf"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}wordrtf"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/Schema_Validation/abc/wordrtf"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}pdf"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/Schema_Validation/abc.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/Schema_Validation/abc/pdf"/>
       <property name="transtype" value="pdf"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}pdf"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/Schema_Validation/abc/pdf"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/Schema_Validation/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}javahelp"/>
+                location="${dita.dir}/testresult/Schema_Validation/abc/javahelp"/>
       <property name="transtype" value="javahelp"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}javahelp"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/Schema_Validation/abc/javahelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/Schema_Validation/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}htmlhelp"/>
+                location="${dita.dir}/testresult/Schema_Validation/abc/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}htmlhelp"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/Schema_Validation/abc/htmlhelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}troff"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/Schema_Validation/abc.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/Schema_Validation/abc/troff"/>
       <property name="transtype" value="troff"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}troff"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/Schema_Validation/abc/troff"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/Schema_Validation/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}docbook"/>
+                location="${dita.dir}/testresult/Schema_Validation/abc/docbook"/>
       <property name="transtype" value="docbook"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}docbook"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/Schema_Validation/abc/docbook"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/Schema_Validation/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}eclipsehelp"/>
+                location="${dita.dir}/testresult/Schema_Validation/abc/eclipsehelp"/>
       <property name="transtype" value="eclipsehelp"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}eclipsehelp"/>
+                location="${dita.dir}/temp/Schema_Validation/abc/eclipsehelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Schema_Validation${file.separator}abc.ditamap"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/Schema_Validation/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Schema_Validation${file.separator}abc${file.separator}eclipsecontent"/>
+                location="${dita.dir}/testresult/Schema_Validation/abc/eclipsecontent"/>
       <property name="transtype" value="eclipsecontent"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}Schema_Validation${file.separator}abc${file.separator}eclipsecontent"/>
+                location="${dita.dir}/temp/Schema_Validation/abc/eclipsecontent"/>
     </ant>
   </target>
 </project>

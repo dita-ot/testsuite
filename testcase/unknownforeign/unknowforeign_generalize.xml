@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="unknowforeign_generalize" default="generalize" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="dita.temp.dir" location="${dita.dir}${file.separator}temp"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.temp.dir" location="${dita.dir}/temp"/>
   <target name="generalize">
-    <xslt basedir="${dita.dir}${file.separator}testdata${file.separator}unknownforeign${file.separator}generalize"
-          destdir="${dita.dir}${file.separator}testresult${file.separator}unknownforeign${file.separator}generalize"
-          style="${dita.dir}${file.separator}xsl${file.separator}generalize.xsl"
+    <xslt basedir="${dita.dir}/testdata/unknownforeign/generalize"
+          destdir="${dita.dir}/testresult/unknownforeign/generalize"
+          style="${dita.dir}/xsl/generalize.xsl"
           extension=".xml"/>
   </target>
 </project>

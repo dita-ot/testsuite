@@ -1,35 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="SFBug1398867" default="SFBug1398867" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="dita.temp.dir" location="${dita.dir}${file.separator}temp"/>
-  <import file="${dita.dir}${file.separator}build.xml"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.temp.dir" location="${dita.dir}/temp"/>
+  <import file="${dita.dir}/build.xml"/>
   <target name="SFBug1398867">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}ampersands_href.dita"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}ampersands${file.separator}xhtml"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/ampersands_href.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/ampersands/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}ampersands${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/ampersands/xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}ampersands_href.dita"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}ampersands_href${file.separator}pdf"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/ampersands_href.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/ampersands_href/pdf"/>
       <property name="transtype" value="pdf"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}ampersands_href${file.separator}pdf"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/ampersands_href/pdf"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}ampersands_href.dita"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}ampersands${file.separator}wordrtf"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/ampersands_href.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/ampersands/wordrtf"/>
       <property name="transtype" value="wordrtf"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}ampersands${file.separator}wordrtf"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/ampersands/wordrtf"/>
     </ant>
   </target>
 </project>

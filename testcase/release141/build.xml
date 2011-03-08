@@ -1,171 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="release141" default="release141" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <property name="dita.dir" location="${basedir}/../.."/>
   <target name="release141">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}abc.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}abc${file.separator}xhtml"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/release141/abc.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/release141/abc/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}abc${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/release141/abc/xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}booktest.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}booktest${file.separator}xhtml"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/release141/booktest.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/release141/booktest/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}booktest${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/release141/booktest/xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}plugintest.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}plugintest${file.separator}xhtml"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/release141/plugintest.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/release141/plugintest/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}plugintest${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/release141/plugintest/xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}plugintest.ditamap"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/release141/plugintest.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}plugintest${file.separator}eclipsehelp"/>
+                location="${dita.dir}/testresult/release141/plugintest/eclipsehelp"/>
       <property name="transtype" value="eclipsehelp"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}plugintest${file.separator}eclipsehelp"/>
+                location="${dita.dir}/temp/release141/plugintest/eclipsehelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/release141/test.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/release141/test/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/release141/test/xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}test.ditamap"/>
+                location="${dita.dir}/testdata/release141/chunk/chunking.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/release141/chunk/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/release141/chunk/xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input"
+                location="${dita.dir}/testdata/release141/emptytopicref/a.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}test${file.separator}xhtml"/>
+                location="${dita.dir}/testresult/release141/emptytopicref/a/xhtml"/>
       <property name="transtype" value="xhtml"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}test${file.separator}xhtml"/>
+                location="${dita.dir}/temp/release141/emptytopicref/a/xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}chunk${file.separator}chunking.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}chunk${file.separator}xhtml"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/release141/flag/flag.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/release141/flag/flag/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}chunk${file.separator}xhtml"/>
-    </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}emptytopicref${file.separator}a.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}emptytopicref${file.separator}a${file.separator}xhtml"/>
-      <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}emptytopicref${file.separator}a${file.separator}xhtml"/>
-    </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}flag${file.separator}flag.dita"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}flag${file.separator}flag${file.separator}xhtml"/>
-      <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}flag${file.separator}flag${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/release141/flag/flag/xhtml"/>
       <property name="dita.input.valfile"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}flag${file.separator}flag.ditaval"/>
+                location="${dita.dir}/testdata/release141/flag/flag.ditaval"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}flag${file.separator}test2.xml"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}flag${file.separator}test2${file.separator}xhtml"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/release141/flag/test2.xml"/>
+      <property name="output.dir" location="${dita.dir}/testresult/release141/flag/test2/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}flag${file.separator}test2${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/release141/flag/test2/xhtml"/>
       <property name="dita.input.valfile"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}flag${file.separator}revision.ditaval"/>
+                location="${dita.dir}/testdata/release141/flag/revision.ditaval"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}hangs-in-move-meta${file.separator}hangs-in-move-meta-1.ditamap"/>
+                location="${dita.dir}/testdata/release141/hangs-in-move-meta/hangs-in-move-meta-1.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}hangs-in-move-meta${file.separator}hangs-in-move-meta-1${file.separator}xhtml"/>
+                location="${dita.dir}/testresult/release141/hangs-in-move-meta/hangs-in-move-meta-1/xhtml"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}hangs-in-move-meta${file.separator}hangs-in-move-meta-1${file.separator}xhtml"/>
+                location="${dita.dir}/temp/release141/hangs-in-move-meta/hangs-in-move-meta-1/xhtml"/>
       <property name="transtype" value="xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}hangs-in-move-meta${file.separator}hangs-in-move-meta-2.ditamap"/>
+                location="${dita.dir}/testdata/release141/hangs-in-move-meta/hangs-in-move-meta-2.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}hangs-in-move-meta${file.separator}hangs-in-move-meta-2${file.separator}xhtml"/>
+                location="${dita.dir}/testresult/release141/hangs-in-move-meta/hangs-in-move-meta-2/xhtml"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}hangs-in-move-meta${file.separator}hangs-in-move-meta-2${file.separator}xhtml"/>
+                location="${dita.dir}/temp/release141/hangs-in-move-meta/hangs-in-move-meta-2/xhtml"/>
       <property name="transtype" value="xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}hangs-in-move-meta${file.separator}does-not-hang-in-move-meta-3.ditamap"/>
+                location="${dita.dir}/testdata/release141/hangs-in-move-meta/does-not-hang-in-move-meta-3.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}hangs-in-move-meta${file.separator}does-not-hang-in-move-meta-3${file.separator}xhtml"/>
+                location="${dita.dir}/testresult/release141/hangs-in-move-meta/does-not-hang-in-move-meta-3/xhtml"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}hangs-in-move-meta${file.separator}does-not-hang-in-move-meta-3${file.separator}xhtml"/>
+                location="${dita.dir}/temp/release141/hangs-in-move-meta/does-not-hang-in-move-meta-3/xhtml"/>
       <property name="transtype" value="xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}hangs-in-move-meta${file.separator}hangs-in-move-meta-4.ditamap"/>
+                location="${dita.dir}/testdata/release141/hangs-in-move-meta/hangs-in-move-meta-4.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}hangs-in-move-meta${file.separator}hangs-in-move-meta-4${file.separator}xhtml"/>
+                location="${dita.dir}/testresult/release141/hangs-in-move-meta/hangs-in-move-meta-4/xhtml"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}hangs-in-move-meta${file.separator}hangs-in-move-meta-4${file.separator}xhtml"/>
+                location="${dita.dir}/temp/release141/hangs-in-move-meta/hangs-in-move-meta-4/xhtml"/>
       <property name="transtype" value="xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}index${file.separator}indexsort.ditamap"/>
+                location="${dita.dir}/testdata/release141/index/indexsort.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}index${file.separator}indexsort${file.separator}htmlhelp"/>
+                location="${dita.dir}/testresult/release141/index/indexsort/htmlhelp"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}index${file.separator}indexsort${file.separator}htmlhelp"/>
+                location="${dita.dir}/temp/release141/index/indexsort/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}index${file.separator}DITA-OT1.4.1${file.separator}indexdir.ditamap"/>
+                location="${dita.dir}/testdata/release141/index/DITA-OT1.4.1/indexdir.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}index${file.separator}DITA-OT1.4.1${file.separator}indexdir${file.separator}htmlhelp"/>
+                location="${dita.dir}/testresult/release141/index/DITA-OT1.4.1/indexdir/htmlhelp"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}index${file.separator}DITA-OT1.4.1${file.separator}indexdir${file.separator}htmlhelp"/>
+                location="${dita.dir}/temp/release141/index/DITA-OT1.4.1/indexdir/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}index${file.separator}DITA-OT1.4.1-a${file.separator}indexdir.ditamap"/>
+                location="${dita.dir}/testdata/release141/index/DITA-OT1.4.1-a/indexdir.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}index${file.separator}DITA-OT1.4.1-a${file.separator}indexdir${file.separator}htmlhelp"/>
+                location="${dita.dir}/testresult/release141/index/DITA-OT1.4.1-a/indexdir/htmlhelp"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}index${file.separator}DITA-OT1.4.1-a${file.separator}indexdir${file.separator}htmlhelp"/>
+                location="${dita.dir}/temp/release141/index/DITA-OT1.4.1-a/indexdir/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}htmlhelp${file.separator}infotypes.ditamap"/>
+                location="${dita.dir}/testdata/release141/htmlhelp/infotypes.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}htmlhelp${file.separator}infotypes${file.separator}htmlhelp"/>
+                location="${dita.dir}/testresult/release141/htmlhelp/infotypes/htmlhelp"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}htmlhelp${file.separator}infotypes${file.separator}htmlhelp"/>
+                location="${dita.dir}/temp/release141/htmlhelp/infotypes/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}release141${file.separator}move-meta-invalid-output${file.separator}move-meta-invalid-out.ditamap"/>
+                location="${dita.dir}/testdata/release141/move-meta-invalid-output/move-meta-invalid-out.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}release141${file.separator}move-meta-invalid-output${file.separator}move-meta-invalid-out${file.separator}xhtml"/>
+                location="${dita.dir}/testresult/release141/move-meta-invalid-output/move-meta-invalid-out/xhtml"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}release141${file.separator}move-meta-invalid-output${file.separator}move-meta-invalid-out${file.separator}xhtml"/>
+                location="${dita.dir}/temp/release141/move-meta-invalid-output/move-meta-invalid-out/xhtml"/>
       <property name="transtype" value="xhtml"/>
     </ant>
   </target>

@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="24_xhtml" default="242xhtml" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="testdata.dir" location="${dita.dir}/testdata"/>
   <target name="242xhtml">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${testdata.dir}${file.separator}24${file.separator}24.xml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}24${file.separator}xhtml"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}24${file.separator}xhtml"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${testdata.dir}/24/24.xml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/24/xhtml"/>
+      <property name="output.dir" location="${dita.dir}/testresult/24/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="args.xsl"
-                value="${testdata.dir}${file.separator}24${file.separator}24.xsl"/>
+      <property name="args.xsl" value="${testdata.dir}/24/24.xsl"/>
     </ant>
   </target>
 </project>

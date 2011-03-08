@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="1764910_2_warn_xhtml" default="17649102_2_warn2xhtml" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <property name="dita.dir" location="${basedir}/../.."/>
   <property name="generate.copy.outer" value="2"/>
   <property name="outer.control" value="warn"/>
   <target name="17649102_2_warn2xhtml">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}1764910${file.separator}map${file.separator}1764910_map.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}1764910${file.separator}xhtml"/>
+                location="${dita.dir}/testdata/1764910/map/1764910_map.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/1764910/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}1764910${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/1764910/xhtml"/>
     </ant>
   </target>
 </project>

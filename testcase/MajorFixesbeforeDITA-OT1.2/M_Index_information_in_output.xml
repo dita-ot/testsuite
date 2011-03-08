@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Index_information_in_output" default="Index_information_in_output"
          basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <property name="dita.dir" location="${basedir}/../.."/>
   <target name="Index_information_in_output">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy.ditamap"/>
+                location="${dita.dir}/testdata/Index_information_in_output/TC1/hierarchy.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy${file.separator}javahelp"/>
+                location="${dita.dir}/testresult/Index_information_in_output/TC1/hierarchy/javahelp"/>
       <property name="transtype" value="javahelp"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy${file.separator}javahelp"/>
+                location="${dita.dir}/temp/Index_information_in_output/TC1/hierarchy/javahelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy.ditamap"/>
+                location="${dita.dir}/testdata/Index_information_in_output/TC1/hierarchy.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy${file.separator}htmlhelp"/>
+                location="${dita.dir}/testresult/Index_information_in_output/TC1/hierarchy/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}Index_information_in_output${file.separator}TC1${file.separator}hierarchy${file.separator}htmlhelp"/>
+                location="${dita.dir}/temp/Index_information_in_output/TC1/hierarchy/htmlhelp"/>
     </ant>
   </target>
 </project>

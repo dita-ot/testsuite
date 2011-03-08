@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="installguide_troff" default="installguide2troff" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="testdata.dir" location="${dita.dir}/testdata"/>
   <target name="installguide2troff">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${testdata.dir}${file.separator}installguide${file.separator}installing-ditaot.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}installguide${file.separator}troff"/>
+                location="${testdata.dir}/installguide/installing-ditaot.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/installguide/troff"/>
       <property name="transtype" value="troff"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}installguide${file.separator}troff"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/installguide/troff"/>
     </ant>
   </target>
 </project>

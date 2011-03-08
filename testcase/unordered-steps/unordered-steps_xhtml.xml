@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="unordered-steps_xhtml" default="unordered-steps2xhtml" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="testdata.dir" location="${dita.dir}/testdata"/>
   <target name="unordered-steps2xhtml">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${testdata.dir}${file.separator}OldcasesTest${file.separator}unordered-steps.dita"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${testdata.dir}/OldcasesTest/unordered-steps.dita"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}OldcasesTest${file.separator}unordered-steps${file.separator}xhtml"/>
+                location="${dita.dir}/temp/OldcasesTest/unordered-steps/xhtml"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}OldcasesTest${file.separator}unordered-steps${file.separator}xhtml"/>
+                location="${dita.dir}/testresult/OldcasesTest/unordered-steps/xhtml"/>
       <property name="transtype" value="xhtml"/>
     </ant>
   </target>

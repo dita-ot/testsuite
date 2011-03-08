@@ -1,51 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="maptitle_htmlhelp" default="maptitle2htmlhelp" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <property name="dita.dir" location="${basedir}/../.."/>
   <target name="maptitle2htmlhelp">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}MapTitle${file.separator}maptitle_testdata1.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}maptitle_1${file.separator}htmlhelp"/>
+                location="${dita.dir}/testdata/MapTitle/maptitle_testdata1.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/maptitle_1/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}maptitle_1${file.separator}htmlhelp"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/maptitle_1/htmlhelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}MapTitle${file.separator}maptitle_testdata2.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}maptitle_2${file.separator}htmlhelp"/>
+                location="${dita.dir}/testdata/MapTitle/maptitle_testdata2.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/maptitle_2/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}maptitle_2${file.separator}htmlhelp"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/maptitle_2/htmlhelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}MapTitle${file.separator}maptitle_testdata3.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}maptitle_3${file.separator}htmlhelp"/>
+                location="${dita.dir}/testdata/MapTitle/maptitle_testdata3.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/maptitle_3/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}maptitle_3${file.separator}htmlhelp"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/maptitle_3/htmlhelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}MapTitle${file.separator}maptitle_testdata4.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}maptitle_4${file.separator}htmlhelp"/>
+                location="${dita.dir}/testdata/MapTitle/maptitle_testdata4.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/maptitle_4/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}maptitle_4${file.separator}htmlhelp"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/maptitle_4/htmlhelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}MapTitle${file.separator}Simplemap${file.separator}simplemap.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}maptitle_5${file.separator}htmlhelp"/>
+                location="${dita.dir}/testdata/MapTitle/Simplemap/simplemap.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/maptitle_5/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}maptitle_5${file.separator}htmlhelp"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/maptitle_5/htmlhelp"/>
     </ant>
   </target>
 </project>

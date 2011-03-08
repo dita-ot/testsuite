@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="CQdita0000121" default="cq00001212wordrtf" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="dita.temp.dir" location="${dita.dir}${file.separator}temp"/>
-  <import file="${dita.dir}${file.separator}build.xml"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.temp.dir" location="${dita.dir}/temp"/>
+  <import file="${dita.dir}/build.xml"/>
   <target name="cq00001212wordrtf">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}Table${file.separator}property.dita"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}Table${file.separator}property${file.separator}wordrtf"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/Table/property.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/Table/property/wordrtf"/>
       <property name="transtype" value="wordrtf"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}Table${file.separator}property${file.separator}wordrtf"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/Table/property/wordrtf"/>
     </ant>
   </target>
 </project>

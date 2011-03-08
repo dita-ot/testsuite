@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="xtrfxtrc_xhtml" default="xtrfxtrc2xhtml" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <property name="dita.dir" location="${basedir}/../.."/>
   <target name="xtrfxtrc2xhtml">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}xtrfxtrc${file.separator}xtrfxtrc.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}xtrfxtrc${file.separator}xhtml"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/xtrfxtrc/xtrfxtrc.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/xtrfxtrc/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}xtrfxtrc${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/xtrfxtrc/xhtml"/>
     </ant>
   </target>
 </project>

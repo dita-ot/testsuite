@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="articles_troff" default="articles2troff" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="testdata.dir" location="${dita.dir}/testdata"/>
   <target name="articles2troff">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${testdata.dir}${file.separator}articles${file.separator}DITA-articles.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}articles${file.separator}troff"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${testdata.dir}/articles/DITA-articles.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/articles/troff"/>
       <property name="transtype" value="troff"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}articles${file.separator}troff"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/articles/troff"/>
     </ant>
   </target>
 </project>

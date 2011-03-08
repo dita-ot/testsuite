@@ -1,98 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="XMLCatalogSupport" default="XMLCatalogSupport" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="dita.temp.dir" location="${dita.dir}${file.separator}temp"/>
-  <import file="${dita.dir}${file.separator}build.xml"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.temp.dir" location="${dita.dir}/temp"/>
+  <import file="${dita.dir}/build.xml"/>
   <target name="XMLCatalogSupport">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}xhtml"/>
+                location="${dita.dir}/testresult/XML_Catalog_Support/TC1/abc/xhtml"/>
       <property name="transtype" value="xhtml"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}xhtml"/>
+                location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/xhtml"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}wordrtf"/>
+                location="${dita.dir}/testresult/XML_Catalog_Support/TC1/abc/wordrtf"/>
       <property name="transtype" value="wordrtf"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}wordrtf"/>
+                location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/wordrtf"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}pdf"/>
+                location="${dita.dir}/testresult/XML_Catalog_Support/TC1/abc/pdf"/>
       <property name="transtype" value="pdf"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}pdf"/>
+                location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/pdf"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}javahelp"/>
+                location="${dita.dir}/testresult/XML_Catalog_Support/TC1/abc/javahelp"/>
       <property name="transtype" value="javahelp"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}javahelp"/>
+                location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/javahelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}htmlhelp"/>
+                location="${dita.dir}/testresult/XML_Catalog_Support/TC1/abc/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}htmlhelp"/>
+                location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/htmlhelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}troff"/>
+                location="${dita.dir}/testresult/XML_Catalog_Support/TC1/abc/troff"/>
       <property name="transtype" value="troff"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}troff"/>
+                location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/troff"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}troff"/>
+                location="${dita.dir}/testresult/XML_Catalog_Support/TC1/abc/troff"/>
       <property name="transtype" value="troff"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}troff"/>
+                location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/troff"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}docbook"/>
+                location="${dita.dir}/testresult/XML_Catalog_Support/TC1/abc/docbook"/>
       <property name="transtype" value="docbook"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}docbook"/>
+                location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/docbook"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}eclipsehelp"/>
+                location="${dita.dir}/testresult/XML_Catalog_Support/TC1/abc/eclipsehelp"/>
       <property name="transtype" value="eclipsehelp"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}eclipsehelp"/>
+                location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/eclipsehelp"/>
     </ant>
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc.ditamap"/>
+                location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}eclipsecontent"/>
+                location="${dita.dir}/testresult/XML_Catalog_Support/TC1/abc/eclipsecontent"/>
       <property name="transtype" value="eclipsecontent"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}XML_Catalog_Support${file.separator}TC1${file.separator}abc${file.separator}eclipsecontent"/>
+                location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/eclipsecontent"/>
     </ant>
   </target>
 </project>

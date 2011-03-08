@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="infotypes_troff" default="infotypes2troff" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="testdata.dir" location="${dita.dir}/testdata"/>
   <target name="infotypes2troff">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${testdata.dir}${file.separator}OldcasesTest${file.separator}infotypes${file.separator}infotypes.ditamap"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}OldcasesTest${file.separator}infotypes${file.separator}troff"/>
+                location="${testdata.dir}/OldcasesTest/infotypes/infotypes.ditamap"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/infotypes/troff"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}OldcasesTest${file.separator}infotypes${file.separator}troff"/>
+                location="${dita.dir}/testresult/OldcasesTest/infotypes/troff"/>
       <property name="transtype" value="troff"/>
     </ant>
   </target>

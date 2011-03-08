@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="07_eclipsehelp" default="072eclipsehelp" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="testdata.dir" location="${dita.dir}/testdata"/>
   <target name="072eclipsehelp">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${testdata.dir}${file.separator}07${file.separator}07.ditamap"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}07${file.separator}eclipsehelp"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}07${file.separator}eclipsehelp"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${testdata.dir}/07/07.ditamap"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/07/eclipsehelp"/>
+      <property name="output.dir" location="${dita.dir}/testresult/07/eclipsehelp"/>
       <property name="transtype" value="eclipsehelp"/>
     </ant>
   </target>

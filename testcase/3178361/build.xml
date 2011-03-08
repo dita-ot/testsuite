@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="3178361" default="3178361" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <property name="dita.dir" location="${basedir}/../.."/>
   <target name="3178361">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <target name="build-init"/>
       <target name="preprocess"/>
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}3178361${file.separator}conref-push-test.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}3178361${file.separator}preprocess"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}3178361${file.separator}preprocess"/>
+                location="${dita.dir}/testdata/3178361/conref-push-test.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/3178361/preprocess"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/3178361/preprocess"/>
     </ant>
   </target>
 </project>

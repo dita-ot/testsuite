@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="SFBug1431229" default="SFBug14312292eclipsehelp" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="dita.temp.dir" location="${dita.dir}${file.separator}temp"/>
-  <import file="${dita.dir}${file.separator}build.xml"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.temp.dir" location="${dita.dir}/temp"/>
+  <import file="${dita.dir}/build.xml"/>
   <target name="SFBug14312292eclipsehelp">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}samples${file.separator}hierarchy.ditamap"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/samples/hierarchy.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}samples${file.separator}hierarchy${file.separator}eclipsehelp"/>
+                location="${dita.dir}/testresult/samples/hierarchy/eclipsehelp"/>
       <property name="transtype" value="eclipsehelp"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}samples${file.separator}hierarchy${file.separator}eclipsehelp"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/samples/hierarchy/eclipsehelp"/>
     </ant>
   </target>
 </project>

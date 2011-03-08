@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="1764905_xhtml" default="17649052xhtml" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <property name="dita.dir" location="${basedir}/../.."/>
   <property name="onlytopic.in.map" value="true"/>
   <target name="17649052xhtml">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}1764905${file.separator}1764905_map.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}1764905${file.separator}xhtml"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/1764905/1764905_map.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/1764905/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}1764905${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/1764905/xhtml"/>
     </ant>
   </target>
 </project>

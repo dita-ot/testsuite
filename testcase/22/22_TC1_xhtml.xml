@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="22_TC1_xhtml" default="22_TC12xhtml" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="testdata.dir" location="${dita.dir}/testdata"/>
   <target name="22_TC12xhtml">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${testdata.dir}${file.separator}22${file.separator}TC1.ditamap"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}22${file.separator}TC1${file.separator}xhtml"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}22${file.separator}TC1${file.separator}xhtml"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${testdata.dir}/22/TC1.ditamap"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/22/TC1/xhtml"/>
+      <property name="output.dir" location="${dita.dir}/testresult/22/TC1/xhtml"/>
       <property name="transtype" value="xhtml"/>
       <property name="dita.extname" value=".dita"/>
     </ant>

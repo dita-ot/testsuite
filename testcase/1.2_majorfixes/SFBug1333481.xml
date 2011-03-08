@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="SFBug1333481" default="SFBug13334812xhtml" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="dita.temp.dir" location="${dita.dir}${file.separator}temp"/>
-  <import file="${dita.dir}${file.separator}build.xml"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.temp.dir" location="${dita.dir}/temp"/>
+  <import file="${dita.dir}/build.xml"/>
   <target name="SFBug13334812xhtml">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}SF1333481${file.separator}subdir${file.separator}mapref1.ditamap"/>
+                location="${dita.dir}/testdata/SF1333481/subdir/mapref1.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}SF1333481${file.separator}subdir${file.separator}mapref1${file.separator}xhtml"/>
+                location="${dita.dir}/testresult/SF1333481/subdir/mapref1/xhtml"/>
       <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}SF1333481${file.separator}subdir${file.separator}mapref1${file.separator}xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/SF1333481/subdir/mapref1/xhtml"/>
     </ant>
   </target>
 </project>

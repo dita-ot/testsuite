@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="shortdesc/abstract(1)_htmlhelp" default="shortdesc/abstract(1)2htmlhelp"
          basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  <property name="dita.dir" location="${basedir}/../.."/>
   <target name="shortdesc/abstract(1)2htmlhelp">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${dita.dir}${file.separator}testdata${file.separator}ShortdescAbstract(1)${file.separator}shortdesc-abstract(1)_testdata.ditamap"/>
+                location="${dita.dir}/testdata/ShortdescAbstract(1)/shortdesc-abstract(1)_testdata.ditamap"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}shortdescabstract(1)_2${file.separator}htmlhelp"/>
+                location="${dita.dir}/testresult/shortdescabstract(1)_2/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
       <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}shortdescabstract(1)_2${file.separator}htmlhelp"/>
+                location="${dita.dir}/temp/shortdescabstract(1)_2/htmlhelp"/>
     </ant>
   </target>
 </project>

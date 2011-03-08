@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="thisthat_htmlhelp" default="thisthat2htmlhelp" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="testdata.dir" location="${dita.dir}/testdata"/>
   <target name="thisthat2htmlhelp">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${testdata.dir}${file.separator}OldcasesTest${file.separator}thisthat${file.separator}thisthat.ditamap"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}OldcasesTest${file.separator}thisthat${file.separator}htmlhelp"/>
+                location="${testdata.dir}/OldcasesTest/thisthat/thisthat.ditamap"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/thisthat/htmlhelp"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}OldcasesTest${file.separator}thisthat${file.separator}htmlhelp"/>
+                location="${dita.dir}/testresult/OldcasesTest/thisthat/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
     </ant>
   </target>

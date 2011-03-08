@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="testprint_pdf" default="testprint2pdf" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="testdata.dir" location="${dita.dir}/testdata"/>
   <target name="testprint2pdf">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
+    <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
-                location="${testdata.dir}${file.separator}OldcasesTest${file.separator}testprint${file.separator}testprint.ditamap"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}OldcasesTest${file.separator}testprint${file.separator}pdf"/>
-      <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}OldcasesTest${file.separator}testprint${file.separator}pdf"/>
+                location="${testdata.dir}/OldcasesTest/testprint/testprint.ditamap"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/testprint/pdf"/>
+      <property name="output.dir" location="${dita.dir}/testresult/OldcasesTest/testprint/pdf"/>
       <property name="transtype" value="pdf"/>
     </ant>
   </target>

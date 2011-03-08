@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="lang-kokr_xhtml" default="lang-kokr2xhtml" basedir=".">
-  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
-  <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="testdata.dir" location="${dita.dir}/testdata"/>
   <target name="lang-kokr2xhtml">
-    <ant antfile="${dita.dir}${file.separator}build.xml">
-      <property name="args.input"
-                location="${testdata.dir}${file.separator}OldcasesTest${file.separator}lang${file.separator}lang-kokr.dita"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}${file.separator}temp${file.separator}OldcasesTest${file.separator}lang${file.separator}kokr${file.separator}xhtml"/>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${testdata.dir}/OldcasesTest/lang/lang-kokr.dita"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/lang/kokr/xhtml"/>
       <property name="output.dir"
-                location="${dita.dir}${file.separator}testresult${file.separator}OldcasesTest${file.separator}lang${file.separator}kokr${file.separator}xhtml"/>
+                location="${dita.dir}/testresult/OldcasesTest/lang/kokr/xhtml"/>
       <property name="transtype" value="xhtml"/>
       <property name="dita.input.valfile"
-                location="${testdata.dir}${file.separator}OldcasesTest${file.separator}lang${file.separator}lang-ref.ditaval"/>
+                location="${testdata.dir}/OldcasesTest/lang/lang-ref.ditaval"/>
     </ant>
   </target>
 </project>
