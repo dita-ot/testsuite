@@ -6,7 +6,7 @@
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${dita.dir}/testdata/CSS_issue/table-nocolnum.dita"/>
       <property name="output.dir"
-                location="${dita.dir}/testresult/CSS_issue/table-nocolnum/xhtml"/>
+                location="${dita.dir}/testresult/CSS_issue/table-nocolnum/xhtml_user"/>
       <property name="transtype" value="xhtml"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/CSS_issue/table-nocolnum/xhtml"/>
       <property name="args.css " value="${dita.dir}/testdata/CSS_issue/user.css"/>
@@ -14,7 +14,7 @@
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${dita.dir}/testdata/CSS_issue/table-nocolnum.dita"/>
       <property name="output.dir"
-                location="${dita.dir}/testresult/CSS_issue/table-nocolnum/xhtml"/>
+                location="${dita.dir}/testresult/CSS_issue/table-nocolnum/xhtml_copy"/>
       <property name="transtype" value="xhtml"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/CSS_issue/table-nocolnum/xhtml"/>
       <property name="args.css" value="${dita.dir}/testdata/CSS_issue/user.css"/>
