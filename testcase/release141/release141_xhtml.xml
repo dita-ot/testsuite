@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="release141" default="release1412xhtml" basedir=".">
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <target name="release1412xhtml">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/release141/abc.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/release141/abc/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/release141/abc/xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/release141/booktest.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/release141/booktest/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/release141/booktest/xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/release141/plugintest.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/release141/plugintest/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/release141/plugintest/xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/release141/test.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/release141/test/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/release141/test/xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input"
+                location="${dita.dir}/testdata/release141/chunk/chunking.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/release141/chunk/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/release141/chunk/xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input"
+                location="${dita.dir}/testdata/release141/emptytopicref/a.ditamap"/>
+      <property name="output.dir"
+                location="${dita.dir}/testresult/release141/emptytopicref/a/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}/temp/release141/emptytopicref/a/xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/release141/flag/flag.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/release141/flag/flag/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/release141/flag/flag/xhtml"/>
+      <property name="dita.input.valfile"
+                location="${dita.dir}/testdata/release141/flag/flag.ditaval"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/release141/flag/test2.xml"/>
+      <property name="output.dir" location="${dita.dir}/testresult/release141/flag/test2/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/release141/flag/test2/xhtml"/>
+      <property name="dita.input.valfile"
+                location="${dita.dir}/testdata/release141/flag/revision.ditaval"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input"
+                location="${dita.dir}/testdata/release141/hangs-in-move-meta/hangs-in-move-meta-1.ditamap"/>
+      <property name="output.dir"
+                location="${dita.dir}/testresult/release141/hangs-in-move-meta/hangs-in-move-meta-1/xhtml"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}/temp/release141/hangs-in-move-meta/hangs-in-move-meta-1/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input"
+                location="${dita.dir}/testdata/release141/hangs-in-move-meta/hangs-in-move-meta-2.ditamap"/>
+      <property name="output.dir"
+                location="${dita.dir}/testresult/release141/hangs-in-move-meta/hangs-in-move-meta-2/xhtml"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}/temp/release141/hangs-in-move-meta/hangs-in-move-meta-2/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input"
+                location="${dita.dir}/testdata/release141/hangs-in-move-meta/does-not-hang-in-move-meta-3.ditamap"/>
+      <property name="output.dir"
+                location="${dita.dir}/testresult/release141/hangs-in-move-meta/does-not-hang-in-move-meta-3/xhtml"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}/temp/release141/hangs-in-move-meta/does-not-hang-in-move-meta-3/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input"
+                location="${dita.dir}/testdata/release141/hangs-in-move-meta/hangs-in-move-meta-4.ditamap"/>
+      <property name="output.dir"
+                location="${dita.dir}/testresult/release141/hangs-in-move-meta/hangs-in-move-meta-4/xhtml"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}/temp/release141/hangs-in-move-meta/hangs-in-move-meta-4/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input"
+                location="${dita.dir}/testdata/release141/move-meta-invalid-output/move-meta-invalid-out.ditamap"/>
+      <property name="output.dir"
+                location="${dita.dir}/testresult/release141/move-meta-invalid-output/move-meta-invalid-out/xhtml"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}/temp/release141/move-meta-invalid-output/move-meta-invalid-out/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+  </target>
+</project>

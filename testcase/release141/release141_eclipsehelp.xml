@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="release141" default="release1412eclipsehelp" basedir=".">
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <target name="release1412eclipsehelp">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/release141/plugintest.ditamap"/>
+      <property name="output.dir"
+        location="${dita.dir}/testresult/release141/plugintest/eclipsehelp"/>
+      <property name="transtype" value="eclipsehelp"/>
+      <property name="dita.temp.dir"
+        location="${dita.dir}/temp/release141/plugintest/eclipsehelp"/>
+    </ant>
+  </target>
+</project>

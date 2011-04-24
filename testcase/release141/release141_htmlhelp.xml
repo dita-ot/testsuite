@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="release141" default="release1412htmlhelp" basedir=".">
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <target name="release1412htmlhelp">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input"
+                location="${dita.dir}/testdata/release141/index/indexsort.ditamap"/>
+      <property name="output.dir"
+                location="${dita.dir}/testresult/release141/index/indexsort/htmlhelp"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}/temp/release141/index/indexsort/htmlhelp"/>
+      <property name="transtype" value="htmlhelp"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input"
+                location="${dita.dir}/testdata/release141/index/DITA-OT1.4.1/indexdir.ditamap"/>
+      <property name="output.dir"
+                location="${dita.dir}/testresult/release141/index/DITA-OT1.4.1/indexdir/htmlhelp"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}/temp/release141/index/DITA-OT1.4.1/indexdir/htmlhelp"/>
+      <property name="transtype" value="htmlhelp"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input"
+                location="${dita.dir}/testdata/release141/index/DITA-OT1.4.1-a/indexdir.ditamap"/>
+      <property name="output.dir"
+                location="${dita.dir}/testresult/release141/index/DITA-OT1.4.1-a/indexdir/htmlhelp"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}/temp/release141/index/DITA-OT1.4.1-a/indexdir/htmlhelp"/>
+      <property name="transtype" value="htmlhelp"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input"
+                location="${dita.dir}/testdata/release141/htmlhelp/infotypes.ditamap"/>
+      <property name="output.dir"
+                location="${dita.dir}/testresult/release141/htmlhelp/infotypes/htmlhelp"/>
+      <property name="dita.temp.dir"
+                location="${dita.dir}/temp/release141/htmlhelp/infotypes/htmlhelp"/>
+      <property name="transtype" value="htmlhelp"/>
+    </ant>
+  </target>
+</project>
