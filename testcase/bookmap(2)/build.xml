@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="all" default="all" basedir=".">
-  <property environment="env"/>
-  <property name="args.logdir" value="log"/>
-  <property name="dita.extname" value=".xml"/>
-  <import file="bookmap(2)_xhtml.xml"/>
-  <target name="all" depends="bookmap(2)2xhtml"/>
+<project name="bookmap(2)" default="all" basedir=".">
+   <property environment="env"/>
+   <property name="args.logdir" value="log"/>
+   <property name="dita.extname" value=".xml"/>
+   <import file="bookmap(2)_xhtml.xml"/>
+   <target name="all" depends="bookmap(2)2xhtml"/>
 </project>

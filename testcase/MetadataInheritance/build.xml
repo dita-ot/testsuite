@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="all" default="all" basedir=".">
-  <property environment="env"/>
-  <property name="args.logdir" value="log"/>
-  <property name="dita.extname" value=".xml"/>
-  <import file="MetadataInheritance_xhtml.xml"/>
-  <import file="MetadataInheritance_xhtml2.xml"/>
-  <target name="all" depends="MetadataInheritance2xhtml,MetadataInheritance2xhtml2"/>
+<project name="MetadataInheritance" default="all" basedir=".">
+   <property environment="env"/>
+   <property name="args.logdir" value="log"/>
+   <property name="dita.extname" value=".xml"/>
+   <import file="MetadataInheritance_xhtml.xml"/>
+   <import file="MetadataInheritance_xhtml2.xml"/>
+   <target name="all" depends="MetadataInheritance2xhtml,MetadataInheritance2xhtml2"/>
 </project>

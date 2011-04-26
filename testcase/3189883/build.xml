@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="3189883" default="3189883" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="3189883">
-    <ant antfile="${dita.dir}/build.xml">
-      <target name="build-init"/>
-      <target name="preprocess"/>
-      <property name="args.input" location="${dita.dir}/testdata/3189883/main.ditamap"/>
-      <property name="output.dir" location="${dita.dir}/testresult/3189883/preprocess"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/3189883/preprocess"/>
-      <property name="validate" value="false"/>
-    </ant>
-  </target>
+   <property name="dita.dir" location="${basedir}/../.."/>
+   <target name="3189883">
+      <ant antfile="${dita.dir}/build.xml">
+         <target name="build-init"/>
+         <target name="preprocess"/>
+         <property name="args.input" location="${dita.dir}/testdata/3189883/main.ditamap"/>
+         <property name="output.dir" location="${dita.dir}/testresult/3189883/preprocess"/>
+         <property name="dita.temp.dir" location="${dita.dir}/temp/3189883/preprocess"/>
+         <property name="validate" value="false"/>
+      </ant>
+   </target>
 </project>

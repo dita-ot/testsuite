@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="all" default="all" basedir=".">
-  <property environment="env"/>
-  <property name="args.logdir" value="log"/>
-  <property name="dita.extname" value=".xml"/>
-  <import file="shortdesc-abstract(1)_eclipsehelp.xml"/>
-  <import file="shortdesc-abstract(1)_htmlhelp.xml"/>
-  <import file="shortdesc-abstract(1)_javahelp.xml"/>
-  <import file="shortdesc-abstract(1)_xhtml.xml"/>
-  <target name="all"
-          depends="shortdesc/abstract(1)2eclipsehelp, shortdesc/abstract(1)2htmlhelp, shortdesc/abstract(1)2javahelp, shortdesc/abstract(1)2xhtml"/>
+<project name="shortdesc-abstract(1)" default="all" basedir=".">
+   <property environment="env"/>
+   <property name="args.logdir" value="log"/>
+   <property name="dita.extname" value=".xml"/>
+   <import file="shortdesc-abstract(1)_eclipsehelp.xml"/>
+   <import file="shortdesc-abstract(1)_htmlhelp.xml"/>
+   <import file="shortdesc-abstract(1)_javahelp.xml"/>
+   <import file="shortdesc-abstract(1)_xhtml.xml"/>
+   <target name="all"
+           depends="shortdesc/abstract(1)2eclipsehelp, shortdesc/abstract(1)2htmlhelp, shortdesc/abstract(1)2javahelp, shortdesc/abstract(1)2xhtml"/>
 </project>

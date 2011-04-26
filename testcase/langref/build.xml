@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->
-<project name="sample_all" default="all" basedir=".">
-  <property name="currentdir" location="${basedir}"/>
-  <target name="all">
-    <echo message="${currentdir}"/>
-    <sequential>
-      <subant>
-        <fileset dir="${currentdir}" includes="langref_*.xml"/>
-      </subant>
-    </sequential>
-  </target>
+<project name="langref" default="all" basedir=".">
+   <property name="currentdir" location="${basedir}"/>
+   <target name="all">
+      <echo message="${currentdir}"/>
+      <sequential>
+         <subant>
+            <fileset dir="${currentdir}" includes="${ant.project.name}_*.xml"/>
+         </subant>
+      </sequential>
+   </target>
 </project>

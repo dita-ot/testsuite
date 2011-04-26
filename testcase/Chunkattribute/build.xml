@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="all" default="all" basedir=".">
-  <property environment="env"/>
-  <property name="args.logdir" value="log"/>
-  <property name="dita.extname" value=".xml"/>
-  <import file="Chunkattribute_eclipsehelp.xml"/>
-  <import file="Chunkattribute_xhtml.xml"/>
-  <target name="all" depends="Chunkattribute2eclipsehelp,chunkattribute2xhtml"/>
+<project name="Chunkattribute" default="all" basedir=".">
+   <property environment="env"/>
+   <property name="args.logdir" value="log"/>
+   <property name="dita.extname" value=".xml"/>
+   <import file="Chunkattribute_eclipsehelp.xml"/>
+   <import file="Chunkattribute_xhtml.xml"/>
+   <target name="all" depends="Chunkattribute2eclipsehelp,chunkattribute2xhtml"/>
 </project>

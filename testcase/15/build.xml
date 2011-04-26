@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="15_xhtml" default="152xhtml" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="152xhtml">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${testdata.dir}/15/15.xml"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/15/xhtml"/>
-      <property name="output.dir" location="${dita.dir}/testresult/15/xhtml"/>
-      <property name="validate" value="false"/>
-      <property name="transtype" value="xhtml"/>
-    </ant>
-  </target>
+<project name="15" default="152xhtml" basedir=".">
+   <property name="dita.dir" location="${basedir}/../.."/>
+   <property name="testdata.dir" location="${dita.dir}/testdata"/>
+   <target name="152xhtml">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${testdata.dir}/15/15.xml"/>
+         <property name="dita.temp.dir" location="${dita.dir}/temp/15/xhtml"/>
+         <property name="output.dir" location="${dita.dir}/testresult/15/xhtml"/>
+         <property name="validate" value="false"/>
+         <property name="transtype" value="xhtml"/>
+      </ant>
+   </target>
 </project>

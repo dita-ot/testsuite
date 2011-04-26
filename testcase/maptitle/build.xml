@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="all" default="all" basedir=".">
-  <property environment="env"/>
-  <property name="args.logdir" value="log"/>
-  <property name="dita.extname" value=".xml"/>
-  <import file="maptitle_eclipsehelp.xml"/>
-  <import file="maptitle_htmlhelp.xml"/>
-  <import file="maptitle_javahelp.xml"/>
-  <import file="maptitle_xhtml.xml"/>
-  <target name="all"
-          depends="maptitle2eclipsehelp, maptitle2htmlhelp, maptitle2javahelp, maptitle2xhtml"/>
+<project name="maptitle" default="all" basedir=".">
+   <property environment="env"/>
+   <property name="args.logdir" value="log"/>
+   <property name="dita.extname" value=".xml"/>
+   <import file="maptitle_eclipsehelp.xml"/>
+   <import file="maptitle_htmlhelp.xml"/>
+   <import file="maptitle_javahelp.xml"/>
+   <import file="maptitle_xhtml.xml"/>
+   <target name="all"
+           depends="maptitle2eclipsehelp, maptitle2htmlhelp, maptitle2javahelp, maptitle2xhtml"/>
 </project>

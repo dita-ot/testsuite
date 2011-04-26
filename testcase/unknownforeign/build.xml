@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="all" default="all" basedir=".">
-  <property environment="env"/>
-  <property name="args.logdir" value="log"/>
-  <property name="dita.extname" value=".xml"/>
-  <import file="unknowforeign_generalize.xml"/>
-  <import file="unknownforeign_specialize.xml"/>
-  <target name="all" depends="generalize,specialize"/>
+<project name="unknownforeign" default="all" basedir=".">
+   <property environment="env"/>
+   <property name="args.logdir" value="log"/>
+   <property name="dita.extname" value=".xml"/>
+   <import file="unknowforeign_generalize.xml"/>
+   <import file="unknownforeign_specialize.xml"/>
+   <target name="all" depends="generalize,specialize"/>
 </project>

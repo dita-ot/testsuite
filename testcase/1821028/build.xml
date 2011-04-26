@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="1821028all" default="all" basedir=".">
-  <property environment="env"/>
-  <property name="args.logdir" value="log"/>
-  <property name="dita.extname" value=".xml"/>
-  <import file="1821028.xml"/>
-  <target name="all" depends="18210282eclipsehelp"/>
+<!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->
+<project name="1821028" default="all" basedir=".">
+   <property name="currentdir" location="${basedir}"/>
+   <target name="all">
+      <echo message="${currentdir}"/>
+      <sequential>
+         <subant>
+            <fileset dir="${currentdir}" includes="${ant.project.name}_*.xml"/>
+         </subant>
+      </sequential>
+   </target>
 </project>

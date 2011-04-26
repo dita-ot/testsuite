@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="06_xhtml" default="062xhtml" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="062xhtml">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${testdata.dir}/06/06.ditamap"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/06/xhtml"/>
-      <property name="output.dir" location="${dita.dir}/testresult/06/xhtml"/>
-      <property name="transtype" value="xhtml"/>
-    </ant>
-  </target>
+<project name="06" default="062xhtml" basedir=".">
+   <property name="dita.dir" location="${basedir}/../.."/>
+   <property name="testdata.dir" location="${dita.dir}/testdata"/>
+   <target name="062xhtml">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${testdata.dir}/06/06.ditamap"/>
+         <property name="dita.temp.dir" location="${dita.dir}/temp/06/xhtml"/>
+         <property name="output.dir" location="${dita.dir}/testresult/06/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+      </ant>
+   </target>
 </project>

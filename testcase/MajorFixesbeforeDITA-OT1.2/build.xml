@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->
-<project name="121majorfixes" default="all" basedir=".">
-  <property name="currentdir" location="${basedir}"/>
-  <target name="all">
-    <echo message="${currentdir}"/>
-    <sequential>
-      <subant>
-        <fileset dir="${currentdir}" includes="M_*.xml"/>
-      </subant>
-    </sequential>
-  </target>
+<project name="MajorFixesbeforeDITA-OT1.2" default="all" basedir=".">
+   <property name="currentdir" location="${basedir}"/>
+   <target name="all">
+      <echo message="${currentdir}"/>
+      <sequential>
+         <subant>
+            <fileset dir="${currentdir}" includes="M_*.xml"/>
+         </subant>
+      </sequential>
+   </target>
 </project>

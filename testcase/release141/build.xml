@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="release141" default="all" basedir=".">
-  <property name="currentdir" location="${basedir}"/>
-  <target name="all">
-    <echo message="${currentdir}"/>
-    <sequential>
-      <subant>
-        <fileset dir="${currentdir}" includes="release141_*.xml"/>
-      </subant>
-    </sequential>
-  </target>
+   <property name="currentdir" location="${basedir}"/>
+   <target name="all">
+      <echo message="${currentdir}"/>
+      <sequential>
+         <subant>
+            <fileset dir="${currentdir}" includes="${ant.project.name}_*.xml"/>
+         </subant>
+      </sequential>
+   </target>
 </project>
