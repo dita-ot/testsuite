@@ -6,7 +6,7 @@
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/userguide/DITA-userguide.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/userguide/htmlhelp"/>
-      <property name="output.dir" location="${dita.dir}/temp/userguide/htmlhelp"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/userguide/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
     </ant>
   </target>
