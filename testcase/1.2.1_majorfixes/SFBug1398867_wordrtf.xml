@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SFBug1398867" default="SFBug1398867" basedir=".">
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.temp.dir" location="${dita.dir}/temp"/>
+  <import file="${dita.dir}/build.xml"/>
+  <target name="SFBug1398867">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/ampersands_href.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/ampersands/wordrtf"/>
+      <property name="transtype" value="wordrtf"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/ampersands/wordrtf"/>
+    </ant>
+  </target>
+</project>
