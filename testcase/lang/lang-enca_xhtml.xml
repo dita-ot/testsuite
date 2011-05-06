@@ -2,7 +2,7 @@
 <project name="lang-enca_xhtml" default="lang-enca2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="lang-enca2xhtml">
+  <target name="lang-enca2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/lang/lang-enca.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/lang/enca/xhtml"/>

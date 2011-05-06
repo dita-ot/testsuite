@@ -2,7 +2,7 @@
 <project name="domain_ui_troff" default="domain_ui2troff" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="domain_ui2troff">
+  <target name="domain_ui2troff" if="run.troff">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/ui-d.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/domain_ui/troff"/>

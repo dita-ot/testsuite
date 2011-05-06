@@ -2,7 +2,7 @@
 <project name="generalphrase_troff" default="generalphrase2troff" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="generalphrase2troff">
+  <target name="generalphrase2troff" if="run.troff">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/generalphrase.dita"/>
       <property name="dita.temp.dir"

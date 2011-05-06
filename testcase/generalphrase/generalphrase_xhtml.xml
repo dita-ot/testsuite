@@ -2,7 +2,7 @@
 <project name="generalphrase_xhtml" default="generalphrase2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="generalphrase2xhtml">
+  <target name="generalphrase2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/generalphrase.dita"/>
       <property name="dita.temp.dir"

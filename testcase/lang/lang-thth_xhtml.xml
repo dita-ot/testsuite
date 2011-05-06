@@ -2,7 +2,7 @@
 <project name="lang-thth_xhtml" default="lang-thth2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="lang-thth2xhtml">
+  <target name="lang-thth2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/lang/lang-thth.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/lang/thth/xhtml"/>

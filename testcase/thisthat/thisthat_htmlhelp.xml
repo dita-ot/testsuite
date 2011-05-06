@@ -2,7 +2,7 @@
 <project name="thisthat_htmlhelp" default="thisthat2htmlhelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="thisthat2htmlhelp">
+  <target name="thisthat2htmlhelp" if="run.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${testdata.dir}/OldcasesTest/thisthat/thisthat.ditamap"/>

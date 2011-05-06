@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="1806130_xhtml" default="18061302xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="18061302xhtml">
+  <target name="18061302xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${dita.dir}/testdata/1806130/1806130.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/1806130/xhtml"/>

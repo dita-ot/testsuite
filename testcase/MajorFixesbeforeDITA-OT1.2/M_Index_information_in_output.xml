@@ -2,7 +2,8 @@
 <project name="Index_information_in_output" default="Index_information_in_output"
          basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="Index_information_in_output">
+  <target name="Index_information_in_output" depends="Index_information_in_output2javahelp, Index_information_in_output2htmlhelp"/>
+  <target name="Index_information_in_output2javahelp" if="run.javahelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Index_information_in_output/TC1/hierarchy.ditamap"/>
@@ -12,6 +13,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/temp/Index_information_in_output/TC1/hierarchy/javahelp"/>
     </ant>
+  </target>
+  <target name="Index_information_in_output2htmlhelp" if="run.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Index_information_in_output/TC1/hierarchy.ditamap"/>

@@ -2,7 +2,7 @@
 <project name="unknowforeign_generalize" default="generalize" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="dita.temp.dir" location="${dita.dir}/temp"/>
-  <target name="generalize">
+  <target name="generalize" if="run.generalize">
     <xslt basedir="${dita.dir}/testdata/unknownforeign/generalize"
           destdir="${dita.dir}/testresult/unknownforeign/generalize"
           style="${dita.dir}/xsl/generalize.xsl"

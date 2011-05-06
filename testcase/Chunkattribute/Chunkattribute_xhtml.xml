@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="chunkattribute_xhtml" default="chunkattribute2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="chunkattribute2xhtml">
+  <target name="chunkattribute2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${dita.dir}/testdata/Chunkattribute/map1.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/Chunkattribute/xhtml1"/>

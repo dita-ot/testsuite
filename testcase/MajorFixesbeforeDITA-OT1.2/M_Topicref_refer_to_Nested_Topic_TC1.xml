@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="1563093_xhtml" default="15630932xhtml" basedir=".">
+<project name="1563093" default="1563093" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="dita.temp.dir" location="${dita.dir}/temp"/>
-  <target name="15630932xhtml">
+
+  <target name="1563093" depends="15630932xhtml, 15630932wordrtf, 15630932pdf, 15630932javahelp, 15630932htmlhelp, 15630932troff, 15630932docbook, 15630932eclipsehelp, 15630932eclipsecontent"/>
+
+  <target name="15630932xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>
@@ -12,6 +15,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC1/abc/xhtml/temp"/>
     </ant>
+  </target>
+  <target name="15630932wordrtf" if="run.wordrtf">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>
@@ -21,6 +26,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC1/abc/wordrtf/temp"/>
     </ant>
+  </target>
+  <target name="15630932pdf" if="run.pdf">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>
@@ -30,6 +37,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC1/abc/pdf/temp"/>
     </ant>
+  </target>
+  <target name="15630932javahelp" if="run.javahelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>
@@ -39,6 +48,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC1/abc/javahelp/temp"/>
     </ant>
+  </target>
+  <target name="15630932htmlhelp" if="run.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>
@@ -48,6 +59,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC1/abc/htmlhelp/temp"/>
     </ant>
+  </target>
+  <target name="15630932troff" if="run.troff">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>
@@ -57,6 +70,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC1/abc/troff/temp"/>
     </ant>
+  </target>
+  <target name="15630932docbook" if="run.docbook">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>
@@ -66,6 +81,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC1/abc/docbook/temp"/>
     </ant>
+  </target>
+  <target name="15630932eclipsehelp" if="run.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>
@@ -75,6 +92,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC1/abc/eclipsehelp/temp"/>
     </ant>
+  </target>
+  <target name="15630932eclipsecontent" if="run.eclipsecontent">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>

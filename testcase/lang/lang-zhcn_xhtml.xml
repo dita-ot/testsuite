@@ -2,7 +2,7 @@
 <project name="lang-zhcn_xhtml" default="lang-zhcn2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="lang-zhcn2xhtml">
+  <target name="lang-zhcn2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/lang/lang-zhcn.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/lang/zhcn/xhtml"/>

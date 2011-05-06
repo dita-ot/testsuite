@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="release141" default="release1412htmlhelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="release1412htmlhelp">
+  <target name="release1412htmlhelp" if="run.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/release141/index/indexsort.ditamap"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="translation_xhtml" default="translation2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="translation2xhtml">
+  <target name="translation2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Translation/translation_testdata.ditamap"/>

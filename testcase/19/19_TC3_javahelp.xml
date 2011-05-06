@@ -2,7 +2,7 @@
 <project name="19_TC3_javahelp" default="19_TC32javahelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="19_TC32javahelp">
+  <target name="19_TC32javahelp" if="run.javahelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/19/TC3.ditamap"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/19/TC3/javahelp"/>

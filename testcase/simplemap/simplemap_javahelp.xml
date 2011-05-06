@@ -2,7 +2,7 @@
 <project name="simplemap_javahelp" default="simplemap2javahelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="simplemap2javahelp">
+  <target name="simplemap2javahelp" if="run.javahelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${testdata.dir}/OldcasesTest/simplemap/simplemap.ditamap"/>

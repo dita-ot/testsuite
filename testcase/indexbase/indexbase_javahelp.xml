@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="indexbase_javahelp" default="indexbase2javahelp" basedir=".">
   <property name="dita.dir" location="${basedir}/..}../.."/>
-  <target name="indexbase2javahelp">
+  <target name="indexbase2javahelp" if="run.javahelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/IndexBase/indexbase_testdata1.dita"/>

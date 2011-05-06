@@ -2,7 +2,7 @@
 <project name="infotypes_eclipsehelp" default="infotypes2eclipsehelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="infotypes2eclipsehelp">
+  <target name="infotypes2eclipsehelp" if="run.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${testdata.dir}/OldcasesTest/infotypes/infotypes.ditamap"/>

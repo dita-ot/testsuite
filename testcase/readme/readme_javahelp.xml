@@ -2,7 +2,7 @@
 <project name="readme_javahelp" default="readme2javahelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="readme2javahelp">
+  <target name="readme2javahelp" if="run.javahelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/readme/DITA-readme.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/readme/javahelp"/>

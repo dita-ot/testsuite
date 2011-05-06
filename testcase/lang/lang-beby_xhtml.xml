@@ -2,7 +2,7 @@
 <project name="lang-beby_xhtml" default="lang-beby2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="lang-beby2xhtml">
+  <target name="lang-beby2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/lang/lang-beby.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/lang/beby/xhtml"/>

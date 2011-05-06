@@ -2,7 +2,7 @@
 <project name="readme_docbook" default="readme2docbook" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="readme2docbook">
+  <target name="readme2docbook" if="run.docbook">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/readme/DITA-readme.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/readme/docbook"/>

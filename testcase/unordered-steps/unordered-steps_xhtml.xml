@@ -2,7 +2,7 @@
 <project name="unordered-steps_xhtml" default="unordered-steps2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="unordered-steps2xhtml">
+  <target name="unordered-steps2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/unordered-steps.dita"/>
       <property name="dita.temp.dir"

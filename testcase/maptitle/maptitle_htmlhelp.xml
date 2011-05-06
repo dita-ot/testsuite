@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="maptitle_htmlhelp" default="maptitle2htmlhelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="maptitle2htmlhelp">
+  <target name="maptitle2htmlhelp" if="run.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/MapTitle/maptitle_testdata1.ditamap"/>

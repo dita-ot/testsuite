@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="indexsee_htmlhelp" default="indexsee2htmlhelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="indexsee2htmlhelp">
+  <target name="indexsee2htmlhelp" if="run.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/IndexSee/index-see_testdata1.dita"/>

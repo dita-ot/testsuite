@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="bookmap(2)_xhtml" default="bookmap(2)2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="bookmap(2)2xhtml">
+  <target name="bookmap(2)2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/bookmap(2)/bookmap(2)_testdata1.ditamap"/>

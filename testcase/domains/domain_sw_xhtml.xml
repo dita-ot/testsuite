@@ -2,7 +2,7 @@
 <project name="domain_sw_xhtml" default="domain_sw2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="domain_sw2xhtml">
+  <target name="domain_sw2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/sw-d.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/domain_sw/xhtml"/>

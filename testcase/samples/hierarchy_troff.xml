@@ -2,7 +2,7 @@
 <project name="sample_troff" default="sample2troff" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="sample2troff">
+  <target name="sample2troff" if="run.troff">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/samples/hierarchy.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/samples/hierarchy/troff"/>

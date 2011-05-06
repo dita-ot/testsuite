@@ -2,7 +2,7 @@
 <project name="sample_eclipsecontent" default="sample2eclipsecontent" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="sample2eclipsecontent">
+  <target name="sample2eclipsecontent" if="run.eclipsecontent">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/samples/hierarchy.ditamap"/>
       <property name="output.dir"

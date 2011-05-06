@@ -2,7 +2,7 @@
 <project name="shortdesc/abstract(1)_xhtml" default="shortdesc/abstract(1)2xhtml"
          basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="shortdesc/abstract(1)2xhtml">
+  <target name="shortdesc/abstract(1)2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/ShortdescAbstract(1)/shortdesc-abstract(1)_testdata.ditamap"/>

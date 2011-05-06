@@ -2,7 +2,7 @@
 <project name="24" default="242xhtml" basedir=".">
    <property name="dita.dir" location="${basedir}/../.."/>
    <property name="testdata.dir" location="${dita.dir}/testdata"/>
-   <target name="242xhtml">
+   <target name="242xhtml" if="run.xhtml">
       <ant antfile="${dita.dir}/build.xml">
          <property name="args.input" location="${testdata.dir}/24/24.xml"/>
          <property name="dita.temp.dir" location="${dita.dir}/temp/24/xhtml"/>

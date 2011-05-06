@@ -3,7 +3,10 @@
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="dita.temp.dir" location="${dita.dir}/temp"/>
   <import file="${dita.dir}/build.xml"/>
-  <target name="XMLCatalogSupport">
+  
+  <target name="XMLCatalogSupport" depends="XMLCatalogSupport2xhtml, XMLCatalogSupport2wordrtf, XMLCatalogSupport2pdf, XMLCatalogSupport2javahelp, XMLCatalogSupport2htmlhelp, XMLCatalogSupport2troff, XMLCatalogSupport2docbook, XMLCatalogSupport2eclipsehelp, XMLCatalogSupport2eclipsecontent"/>
+  
+  <target name="XMLCatalogSupport2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
@@ -13,6 +16,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/xhtml"/>
     </ant>
+  </target>
+  <target name="XMLCatalogSupport2wordrtf" if="run.wordrtf">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
@@ -22,6 +27,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/wordrtf"/>
     </ant>
+  </target>
+  <target name="XMLCatalogSupport2pdf" if="run.pdf">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
@@ -31,6 +38,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/pdf"/>
     </ant>
+  </target>
+  <target name="XMLCatalogSupport2javahelp" if="run.javahelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
@@ -40,6 +49,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/javahelp"/>
     </ant>
+  </target>
+  <target name="XMLCatalogSupport2htmlhelp" if="run.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
@@ -49,6 +60,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/htmlhelp"/>
     </ant>
+  </target>
+  <target name="XMLCatalogSupport2troff" if="run.troff">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
@@ -67,6 +80,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/troff"/>
     </ant>
+  </target>
+  <target name="XMLCatalogSupport2docbook" if="run.docbook">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
@@ -76,6 +91,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/docbook"/>
     </ant>
+  </target>
+  <target name="XMLCatalogSupport2eclipsehelp" if="run.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
@@ -85,6 +102,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/eclipsehelp"/>
     </ant>
+  </target>
+  <target name="XMLCatalogSupport2eclipsecontent" if="run.eclipsecontent">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>

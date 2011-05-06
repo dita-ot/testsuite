@@ -2,7 +2,7 @@
 <project name="notetypes_troff" default="notetypes2troff" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="notetypes2troff">
+  <target name="notetypes2troff" if="run.troff">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/notetypes.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/notetypes/troff"/>

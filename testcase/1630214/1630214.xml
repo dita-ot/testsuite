@@ -2,7 +2,7 @@
 <project name="1630214_xhtml" default="16302142xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="dita.temp.dir" location="${dita.dir}/temp"/>
-  <target name="16302142xhtml">
+  <target name="16302142xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${dita.dir}/testdata/1630214/1630214_3.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/1630214_3/xhtml"/>

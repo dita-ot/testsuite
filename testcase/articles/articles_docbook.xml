@@ -2,7 +2,7 @@
 <project name="articles_docbook" default="articles2docbook" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="articles2docbook">
+  <target name="articles2docbook" if="run.docbook">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/articles/DITA-articles.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/articles/docbook"/>

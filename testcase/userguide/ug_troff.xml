@@ -2,7 +2,7 @@
 <project name="userguide_troff" default="userguide2troff" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="userguide2troff">
+  <target name="userguide2troff" if="run.troff">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/userguide/DITA-userguide.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/userguide/troff"/>

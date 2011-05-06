@@ -2,7 +2,7 @@
 <project name="unknowforeign_specialize" default="specialize" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="dita.temp.dir" location="${dita.dir}/temp"/>
-  <target name="specialize">
+  <target name="specialize" if="run.specialize">
     <xslt basedir="${dita.dir}/testdata/unknownforeign/specialize"
           destdir="${dita.dir}/testresult/unknownforeign/specialize"
           style="${dita.dir}/xsl/specialize.xsl"

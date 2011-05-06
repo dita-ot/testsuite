@@ -2,7 +2,7 @@
 <project name="outputclass" default="outputclass2pdf" basedir=".">
    <property name="dita.dir" location="${basedir}/../.."/>
    <property name="testdata.dir" location="${dita.dir}/testdata"/>
-   <target name="outputclass2pdf">
+   <target name="outputclass2pdf" if="run.pdf">
       <ant antfile="${dita.dir}/build.xml">
          <property name="args.input"
                    location="${testdata.dir}/OldcasesTest/outputclass/outputclassspecific.ditamap"/>

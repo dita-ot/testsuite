@@ -2,7 +2,7 @@
 <project name="notetypes_xhtml" default="notetypes2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="notetypes2xhtml">
+  <target name="notetypes2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/notetypes.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/notetypes/xhtml"/>

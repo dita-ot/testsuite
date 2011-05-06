@@ -2,7 +2,7 @@
 <project name="articles_eclipsehelp" default="articles2eclipsehelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="articles2eclipsehelp">
+  <target name="articles2eclipsehelp" if="run.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/articles/DITA-articles.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/articles/eclipsehelp"/>

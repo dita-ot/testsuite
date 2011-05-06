@@ -3,7 +3,7 @@
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="generate.copy.outer" value="2"/>
   <property name="outer.control" value="warn"/>
-  <target name="17649102_2_warn2xhtml">
+  <target name="17649102_2_warn2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/1764910/map/1764910_map.ditamap"/>

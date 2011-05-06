@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="DITAVAL_xhtml" default="DITAVAL2xhtml_5" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="DITAVAL2xhtml_5">
+  <target name="DITAVAL2xhtml_5" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/DITAVAL/DITAVAL_testdata1.ditamap"/>

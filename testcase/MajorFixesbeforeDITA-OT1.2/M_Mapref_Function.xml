@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Mapref_Function" default="Mapref_Function" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="Mapref_Function">
+  
+  <target name="Mapref_Function" depends="Mapref_Function2xhtml, Mapref_Function2wordrtf, Mapref_Function2pdf, Mapref_Function2javahelp, Mapref_Function2htmlhelp, Mapref_Function2troff, Mapref_Function2docbook, Mapref_Function2eclipsehelp, Mapref_Function2eclipsecontent"/>
+  
+  <target name="Mapref_Function2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Mapref_Function/TC1/abc.ditamap"/>
@@ -10,6 +13,8 @@
       <property name="transtype" value="xhtml"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/Mapref_Function/TC1/abc/xhtml"/>
     </ant>
+  </target>
+  <target name="Mapref_Function2wordrtf" if="run.wordrtf">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Mapref_Function/TC1/abc.ditamap"/>
@@ -19,6 +24,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/temp/Mapref_Function/TC1/abc/wordrtf"/>
     </ant>
+  </target>
+  <target name="Mapref_Function2pdf" if="run.pdf">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Mapref_Function/TC1/abc.ditamap"/>
@@ -26,6 +33,8 @@
       <property name="transtype" value="pdf"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/Mapref_Function/TC1/abc/pdf"/>
     </ant>
+  </target>
+  <target name="Mapref_Function2javahelp" if="run.javahelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Mapref_Function/TC1/abc.ditamap"/>
@@ -35,6 +44,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/temp/Mapref_Function/TC1/abc/javahelp"/>
     </ant>
+  </target>
+  <target name="Mapref_Function2htmlhelp" if="run.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Mapref_Function/TC1/abc.ditamap"/>
@@ -44,6 +55,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/temp/Mapref_Function/TC1/abc/htmlhelp"/>
     </ant>
+  </target>
+  <target name="Mapref_Function2troff" if="run.troff">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Mapref_Function/TC1/abc.ditamap"/>
@@ -52,6 +65,8 @@
       <property name="transtype" value="troff"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/Mapref_Function/TC1/abc/troff"/>
     </ant>
+  </target>
+  <target name="Mapref_Function2docbook" if="run.docbook">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Mapref_Function/TC1/abc.ditamap"/>
@@ -61,6 +76,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/temp/Mapref_Function/TC1/abc/docbook"/>
     </ant>
+  </target>
+  <target name="Mapref_Function2eclipsehelp" if="run.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Mapref_Function/TC1/abc.ditamap"/>
@@ -70,6 +87,8 @@
       <property name="dita.temp.dir"
                 location="${dita.dir}/temp/Mapref_Function/TC1/abc/eclipsehelp"/>
     </ant>
+  </target>
+  <target name="Mapref_Function2eclipsecontent" if="run.eclipsecontent">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Mapref_Function/TC1/abc.ditamap"/>

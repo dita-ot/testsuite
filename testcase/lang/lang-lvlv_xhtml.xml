@@ -2,7 +2,7 @@
 <project name="lang-lvlv_xhtml" default="lang-lvlv2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="lang-lvlv2xhtml">
+  <target name="lang-lvlv2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/lang/lang-lvlv.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/lang/lvlv/xhtml"/>

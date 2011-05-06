@@ -2,7 +2,7 @@
 <project name="userguide_eclipsehelp" default="userguide2eclipsehelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="userguide2eclipsehelp">
+  <target name="userguide2eclipsehelp" if="run.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/userguide/DITA-userguide.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/userguide/eclipsehelp"/>

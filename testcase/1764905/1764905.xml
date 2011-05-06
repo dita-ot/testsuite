@@ -2,7 +2,7 @@
 <project name="1764905_xhtml" default="17649052xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="onlytopic.in.map" value="true"/>
-  <target name="17649052xhtml">
+  <target name="17649052xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${dita.dir}/testdata/1764905/1764905_map.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/1764905/xhtml"/>

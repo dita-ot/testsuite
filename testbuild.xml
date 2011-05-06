@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->
-<project name="ditaot_all" default="all" basedir=".">
+<project name="ditaot_all" default="run" basedir=".">
   <property name="currentdir" location="${basedir}${file.separator}testcase"/>
   <target name="all">
     <echo message="${currentdir}"/>
+    <property name="run.preprocess" value="true"/>
+    <property name="run.xhtml" value="true"/>
+    <property name="run.eclipsehelp" value="true"/>
+    <property name="run.eclipsecontent" value="true"/>
+    <property name="run.javahelp" value="true"/>
+    <property name="run.htmlhelp" value="true"/>
+    <property name="run.pdf" value="true"/>
+    <property name="run.pdf2" value="true"/>
+    <property name="run.troff" value="true"/>
+    <property name="run.docbook" value="true"/>
+    <property name="run.wordrtf" value="true"/>
+    <property name="run.odt" value="true"/>
+    <property name="run.generalize" value="true"/>
+    <property name="run.specialize" value="true"/>
+    <antcall target="run"/>
+  </target>
+  <target name="run">
+    <echo message="${currentdir}"/>
     <sequential>
       <subant>
-        <fileset dir="${currentdir}" includes="*/build.xml"/>
+        <fileset dir="${currentdir}" includes="*/build.xml">
+          <exclude name="langref/*"/>
+        </fileset>
       </subant>
     </sequential>
   </target>

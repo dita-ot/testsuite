@@ -2,7 +2,7 @@
 <project name="dldlentry_xhtml" default="dldlentry2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="dldlentry2xhtml">
+  <target name="dldlentry2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/dldlentry.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/dldlentry/xhtml"/>

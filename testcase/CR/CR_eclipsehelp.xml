@@ -2,7 +2,7 @@
 <project name="CR_eclipsehelp" default="CR2eclipsehelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="CR2eclipsehelp">
+  <target name="CR2eclipsehelp" if="run.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/CR.ditamap"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/CR/eclipsehelp"/>

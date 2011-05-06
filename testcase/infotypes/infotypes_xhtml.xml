@@ -2,7 +2,7 @@
 <project name="infotypes_xhtml" default="infotypes2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="infotypes2xhtml">
+  <target name="infotypes2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${testdata.dir}/OldcasesTest/infotypes/infotypes.ditamap"/>

@@ -2,7 +2,7 @@
 <project name="04_TC2_htmlhelp" default="04_TC22htmlhelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="04_TC22htmlhelp">
+  <target name="04_TC22htmlhelp" if="run.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/04/TC2/TC2.ditamap"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/04/TC2/htmlhelp"/>

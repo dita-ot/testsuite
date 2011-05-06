@@ -2,7 +2,7 @@
 <project name="rowsep_eclipsehelp" default="rowsep2eclipsehelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="rowsep2eclipsehelp">
+  <target name="rowsep2eclipsehelp" if="run.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/rowsep/rowsep.ditamap"/>
       <property name="dita.temp.dir"

@@ -3,7 +3,7 @@
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="dita.temp.dir" location="${dita.dir}/temp"/>
   <import file="${dita.dir}/build.xml"/>
-  <target name="cq00001212wordrtf">
+  <target name="cq00001212wordrtf" if="run.wordrtf">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${dita.dir}/testdata/Table/property.dita"/>
       <property name="output.dir" location="${dita.dir}/testresult/Table/property/wordrtf"/>

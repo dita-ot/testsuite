@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="indexseealso_eclipsehelp" default="indexseealso2eclipsehelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="indexseealso2eclipsehelp">
+  <target name="indexseealso2eclipsehelp" if="run.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/IndexSeeAlso/index-see-also_testdata1.dita"/>

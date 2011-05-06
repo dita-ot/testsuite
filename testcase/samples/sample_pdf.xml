@@ -2,7 +2,7 @@
 <project name="sample_pdf" default="sample2pdf" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="sample2pdf">
+  <target name="sample2pdf" if="run.pdf">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/samples/sequence.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/samples/sequence/pdf"/>

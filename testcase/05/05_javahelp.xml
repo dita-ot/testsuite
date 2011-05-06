@@ -2,7 +2,7 @@
 <project name="05_javahelp" default="052javahelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="052javahelp">
+  <target name="052javahelp" if="run.javahelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/05/05.ditamap"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/05/javahelp"/>

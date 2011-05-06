@@ -2,7 +2,7 @@
 <project name="shortdesc/abstract(1)_javahelp" default="shortdesc/abstract(1)2javahelp"
          basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="shortdesc/abstract(1)2javahelp">
+  <target name="shortdesc/abstract(1)2javahelp" if="run.javahelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/ShortdescAbstract(1)/shortdesc-abstract(1)_testdata.ditamap"/>

@@ -2,7 +2,7 @@
 <project name="langref_xhtml" default="langref2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="langref2xhtml">
+  <target name="langref2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/langref/ditaref-book.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/langref/book/xhtml"/>

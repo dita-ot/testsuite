@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="MetadataInheritance_xhtml" default="MetadataInheritance2xhtml2"
+<project name="MetadataInheritance_xhtml2" default="MetadataInheritance2xhtml2"
          basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="MetadataInheritance2xhtml2">
+  <target name="MetadataInheritance2xhtml2" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/MetadataInheritance/MetadataInheritance_audience.ditamap"/>

@@ -2,7 +2,7 @@
 <project name="22_TC6_xhtml" default="22_TC62xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="22_TC62xhtml">
+  <target name="22_TC62xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/22/TC6.ditamap"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/22/TC6/xhtml"/>

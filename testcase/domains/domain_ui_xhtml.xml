@@ -2,7 +2,7 @@
 <project name="domain_ui_xhtml" default="domain_ui2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="domain_ui2xhtml">
+  <target name="domain_ui2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/ui-d.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/domain_ui/xhtml"/>

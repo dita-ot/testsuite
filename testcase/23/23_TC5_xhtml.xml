@@ -2,7 +2,7 @@
 <project name="23_TC5_xhtml" default="23_TC52xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="23_TC52xhtml">
+  <target name="23_TC52xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/23/TC5/TC5.xml"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/23/TC5/xhtml"/>

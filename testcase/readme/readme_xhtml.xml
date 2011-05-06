@@ -2,7 +2,7 @@
 <project name="readme_xhtml" default="readme2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="readme2xhtml">
+  <target name="readme2xhtml" if="run.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/readme/DITA-readme.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/readme/xhtml"/>

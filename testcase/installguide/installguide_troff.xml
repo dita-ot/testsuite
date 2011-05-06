@@ -2,7 +2,7 @@
 <project name="installguide_troff" default="installguide2troff" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="installguide2troff">
+  <target name="installguide2troff" if="run.troff">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${testdata.dir}/installguide/installing-ditaot.ditamap"/>

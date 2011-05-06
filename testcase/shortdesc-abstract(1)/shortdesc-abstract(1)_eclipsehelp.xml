@@ -3,7 +3,7 @@
          default="shortdesc/abstract(1)2eclipsehelp"
          basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="shortdesc/abstract(1)2eclipsehelp">
+  <target name="shortdesc/abstract(1)2eclipsehelp" if="run.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/ShortdescAbstract(1)/shortdesc-abstract(1)_testdata.ditamap"/>
