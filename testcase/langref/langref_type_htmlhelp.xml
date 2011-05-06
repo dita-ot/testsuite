@@ -2,7 +2,7 @@
 <project name="langref_htmlhelp" default="langref2htmlhelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="langref2htmlhelp" if="run.htmlhelp">
+  <target name="langref2htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/langref/ditaref-type.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/langref/type/htmlhelp"/>

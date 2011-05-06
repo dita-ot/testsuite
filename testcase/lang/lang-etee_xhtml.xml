@@ -2,7 +2,7 @@
 <project name="lang-etee_xhtml" default="lang-etee2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="lang-etee2xhtml" if="run.xhtml">
+  <target name="lang-etee2xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/lang/lang-etee.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/lang/etee/xhtml"/>

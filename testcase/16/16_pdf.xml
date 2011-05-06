@@ -2,7 +2,7 @@
 <project name="16_pdf" default="162pdf" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="162pdf" if="run.pdf">
+  <target name="162pdf" if="run.pdf" unless="skip.pdf">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/16/16.ditamap"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/16/pdf"/>

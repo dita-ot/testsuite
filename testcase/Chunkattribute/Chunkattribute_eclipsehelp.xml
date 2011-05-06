@@ -2,7 +2,7 @@
 <project name="Chunkattribute_eclipsehelp" default="Chunkattribute2eclipsehelp"
          basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="Chunkattribute2eclipsehelp" if="run.eclipsehelp">
+  <target name="Chunkattribute2eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${dita.dir}/testdata/Chunkattribute/map7.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/Chunkattribute/eclipsehelp"/>

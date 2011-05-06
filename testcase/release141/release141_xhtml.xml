@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="release141" default="release1412xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="release1412xhtml" if="run.xhtml">
+  <target name="release1412xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${dita.dir}/testdata/release141/abc.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/release141/abc/xhtml"/>

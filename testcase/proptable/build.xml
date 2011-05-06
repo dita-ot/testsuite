@@ -2,7 +2,7 @@
 <project name="proptable" default="proptable2xhtml" basedir=".">
    <property name="dita.dir" location="${basedir}/../.."/>
    <property name="testdata.dir" location="${dita.dir}/testdata"/>
-   <target name="proptable2xhtml" if="run.xhtml">
+   <target name="proptable2xhtml" if="run.xhtml" unless="skip.xhtml">
       <ant antfile="${dita.dir}/build.xml">
          <property name="args.input" location="${testdata.dir}/OldcasesTest/proptable.dita"/>
          <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/proptable/xhtml"/>

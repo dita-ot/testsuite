@@ -2,7 +2,7 @@
 <project name="03_eclipsecontent" default="032eclipsecontent" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="032eclipsecontent" if="run.eclipsecontent">
+  <target name="032eclipsecontent" if="run.eclipsecontent" unless="skip.eclipsecontent">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/03/03.ditamap"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/03/eclipsecontent"/>

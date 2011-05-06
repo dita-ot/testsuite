@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="translation_eclipsehelp" default="translation2eclipsehelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="translation2eclipsehelp" if="run.eclipsehelp">
+  <target name="translation2eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Translation/translation_testdata.ditamap"/>

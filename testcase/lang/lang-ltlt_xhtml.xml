@@ -2,7 +2,7 @@
 <project name="lang-ltlt_xhtml" default="lang-ltlt2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="lang-ltlt2xhtml" if="run.xhtml">
+  <target name="lang-ltlt2xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/lang/lang-ltlt.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/lang/ltlt/xhtml"/>

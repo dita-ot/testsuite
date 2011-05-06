@@ -2,7 +2,7 @@
 <project name="metaconcept_xhtml" default="metaconcept2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="metaconcept2xhtml" if="run.xhtml">
+  <target name="metaconcept2xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/metaconcept.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/metaconcept/xhtml"/>

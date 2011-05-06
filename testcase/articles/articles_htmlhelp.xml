@@ -2,7 +2,7 @@
 <project name="articles_htmlhelp" default="articles2htmlhelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="articles2htmlhelp" if="run.htmlhelp">
+  <target name="articles2htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/articles/DITA-articles.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/articles/htmlhelp"/>

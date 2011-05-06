@@ -2,7 +2,7 @@
 <project name="sample_htmlhelp" default="sample2htmlhelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="sample2htmlhelp" if="run.htmlhelp">
+  <target name="sample2htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/samples/hierarchy.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/samples/hierarchy/htmlhelp"/>

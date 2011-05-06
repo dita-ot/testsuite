@@ -2,7 +2,7 @@
 <project name="SFBug1328689" default="SFBug13286892xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <import file="${dita.dir}/build.xml"/>
-  <target name="SFBug13286892xhtml" if="run.xhtml">
+  <target name="SFBug13286892xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${dita.dir}/testdata/CSS_issue/table-nocolnum.dita"/>
       <property name="output.dir"

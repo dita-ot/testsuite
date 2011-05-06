@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="table-nocolnum_wordrtf" default="table-nocolnum2wordrtf" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="table-nocolnum2wordrtf" if="run.wordrtf">
+  <target name="table-nocolnum2wordrtf" if="run.wordrtf" unless="skip.wordrtf">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/DITA2Wordrtf/Table/property.dita"/>

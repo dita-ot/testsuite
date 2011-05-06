@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="release141" default="release1412eclipsehelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="release1412eclipsehelp" if="run.eclipsehelp">
+  <target name="release1412eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${dita.dir}/testdata/release141/plugintest.ditamap"/>
       <property name="output.dir"

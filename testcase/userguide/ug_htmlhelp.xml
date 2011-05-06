@@ -2,7 +2,7 @@
 <project name="userguide_htmlhelp" default="userguide2htmlhelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="userguide2htmlhelp" if="run.htmlhelp">
+  <target name="userguide2htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/userguide/DITA-userguide.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/userguide/htmlhelp"/>

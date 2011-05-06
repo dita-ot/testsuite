@@ -2,7 +2,7 @@
 <project name="readme_pdf" default="readme2pdf" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="readme2pdf" if="run.pdf">
+  <target name="readme2pdf" if="run.pdf" unless="skip.pdf">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/readme/DITA-readme.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/readme/pdf"/>

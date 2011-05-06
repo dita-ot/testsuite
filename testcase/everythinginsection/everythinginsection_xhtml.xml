@@ -3,7 +3,7 @@
          basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="everythinginsection2xhtml" if="run.xhtml">
+  <target name="everythinginsection2xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${testdata.dir}/OldcasesTest/infotypes/everythinginsection.dita"/>

@@ -2,7 +2,7 @@
 <project name="maptitle_xhtml" default="maptitle2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="dita.temp.dir" location="${dita.dir}/temp"/>
-  <target name="maptitle2xhtml" if="run.xhtml">
+  <target name="maptitle2xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/MapTitle/maptitle_testdata1.ditamap"/>

@@ -2,7 +2,7 @@
 <project name="lang-fifi_xhtml" default="lang-fifi2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="lang-fifi2xhtml" if="run.xhtml">
+  <target name="lang-fifi2xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/lang/lang-fifi.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/lang/fifi/xhtml"/>

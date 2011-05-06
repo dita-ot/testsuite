@@ -2,7 +2,7 @@
 <project name="simplemap_xhtml" default="simplemap2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="simplemap2xhtml" if="run.xhtml">
+  <target name="simplemap2xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${testdata.dir}/OldcasesTest/simplemap/simplemap.ditamap"/>

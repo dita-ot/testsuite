@@ -2,7 +2,7 @@
 <project name="table-nocolnum_xhtml" default="table-nocolnum2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="table-nocolnum2xhtml" if="run.xhtml">
+  <target name="table-nocolnum2xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/table-nocolnum.dita"/>
       <property name="dita.temp.dir"

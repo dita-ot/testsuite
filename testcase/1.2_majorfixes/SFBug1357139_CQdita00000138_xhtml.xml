@@ -3,7 +3,7 @@
          basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <import file="${dita.dir}/build.xml"/>
-  <target name="SFBug1357139_CQdita00000138xhtml" if="run.xhtml">
+  <target name="SFBug1357139_CQdita00000138xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${dita.dir}/testdata/SF1357139/testcondition.dita"/>
       <property name="output.dir"

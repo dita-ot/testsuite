@@ -2,7 +2,7 @@
 <project name="lang-nlnl_xhtml" default="lang-nlnl2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="lang-nlnl2xhtml" if="run.xhtml">
+  <target name="lang-nlnl2xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/lang/lang-nlnl.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/lang/nlnl/xhtml"/>

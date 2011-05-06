@@ -6,7 +6,7 @@
   
   <target name="XMLCatalogSupport" depends="XMLCatalogSupport2xhtml, XMLCatalogSupport2wordrtf, XMLCatalogSupport2pdf, XMLCatalogSupport2javahelp, XMLCatalogSupport2htmlhelp, XMLCatalogSupport2troff, XMLCatalogSupport2docbook, XMLCatalogSupport2eclipsehelp, XMLCatalogSupport2eclipsecontent"/>
   
-  <target name="XMLCatalogSupport2xhtml" if="run.xhtml">
+  <target name="XMLCatalogSupport2xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
@@ -17,7 +17,7 @@
                 location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/xhtml"/>
     </ant>
   </target>
-  <target name="XMLCatalogSupport2wordrtf" if="run.wordrtf">
+  <target name="XMLCatalogSupport2wordrtf" if="run.wordrtf" unless="skip.wordrtf">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
@@ -28,7 +28,7 @@
                 location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/wordrtf"/>
     </ant>
   </target>
-  <target name="XMLCatalogSupport2pdf" if="run.pdf">
+  <target name="XMLCatalogSupport2pdf" if="run.pdf" unless="skip.pdf">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
@@ -39,7 +39,7 @@
                 location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/pdf"/>
     </ant>
   </target>
-  <target name="XMLCatalogSupport2javahelp" if="run.javahelp">
+  <target name="XMLCatalogSupport2javahelp" if="run.javahelp" unless="skip.javahelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
@@ -50,7 +50,7 @@
                 location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/javahelp"/>
     </ant>
   </target>
-  <target name="XMLCatalogSupport2htmlhelp" if="run.htmlhelp">
+  <target name="XMLCatalogSupport2htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
@@ -61,7 +61,7 @@
                 location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/htmlhelp"/>
     </ant>
   </target>
-  <target name="XMLCatalogSupport2troff" if="run.troff">
+  <target name="XMLCatalogSupport2troff" if="run.troff" unless="skip.troff">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
@@ -81,7 +81,7 @@
                 location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/troff"/>
     </ant>
   </target>
-  <target name="XMLCatalogSupport2docbook" if="run.docbook">
+  <target name="XMLCatalogSupport2docbook" if="run.docbook" unless="skip.docbook">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
@@ -92,7 +92,7 @@
                 location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/docbook"/>
     </ant>
   </target>
-  <target name="XMLCatalogSupport2eclipsehelp" if="run.eclipsehelp">
+  <target name="XMLCatalogSupport2eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>
@@ -103,7 +103,7 @@
                 location="${dita.dir}/temp/XML_Catalog_Support/TC1/abc/eclipsehelp"/>
     </ant>
   </target>
-  <target name="XMLCatalogSupport2eclipsecontent" if="run.eclipsecontent">
+  <target name="XMLCatalogSupport2eclipsecontent" if="run.eclipsecontent" unless="skip.eclipsecontent">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/XML_Catalog_Support/TC1/abc.ditamap"/>

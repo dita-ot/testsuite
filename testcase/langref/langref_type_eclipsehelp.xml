@@ -2,7 +2,7 @@
 <project name="langref_eclipsehelp" default="langref2eclipsehelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="langref2eclipsehelp" if="run.eclipsehelp">
+  <target name="langref2eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/langref/ditaref-type.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/langref/type/eclipsehelp"/>

@@ -2,7 +2,7 @@
 <project name="04_TC4_xhtml" default="04_TC42xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="04_TC42xhtml" if="run.xhtml">
+  <target name="04_TC42xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/04/TC4/TC4.ditamap"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/04/TC4/xhtml"/>

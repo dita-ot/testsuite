@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="indexsee_eclipsehelp" default="indexsee2eclipsehelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="indexsee2eclipsehelp" if="run.eclipsehelp">
+  <target name="indexsee2eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/IndexSee/index-see_testdata1.dita"/>

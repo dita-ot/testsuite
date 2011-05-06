@@ -2,7 +2,7 @@
 <project name="testprint" default="testprint2pdf" basedir=".">
    <property name="dita.dir" location="${basedir}/../.."/>
    <property name="testdata.dir" location="${dita.dir}/testdata"/>
-   <target name="testprint2pdf" if="run.pdf">
+   <target name="testprint2pdf" if="run.pdf" unless="skip.pdf">
       <ant antfile="${dita.dir}/build.xml">
          <property name="args.input"
                    location="${testdata.dir}/OldcasesTest/testprint/testprint.ditamap"/>

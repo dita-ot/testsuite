@@ -2,7 +2,7 @@
 <project name="CR_eclipsecontent" default="CR2eclipsecontent" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="CR2eclipsecontent" if="run.eclipsecontent">
+  <target name="CR2eclipsecontent" if="run.eclipsecontent" unless="skip.eclipsecontent">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/CR.ditamap"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/CR/eclipsecontent"/>

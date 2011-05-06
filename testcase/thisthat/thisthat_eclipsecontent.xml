@@ -2,7 +2,7 @@
 <project name="thisthat_eclipsecontent" default="thisthat2eclipsecontent" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="thisthat2eclipsecontent" if="run.eclipsecontent">
+  <target name="thisthat2eclipsecontent" if="run.eclipsecontent" unless="skip.eclipsecontent">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${testdata.dir}/OldcasesTest/thisthat/thisthat.ditamap"/>

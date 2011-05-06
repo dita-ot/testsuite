@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="SF1196409" default="SF11964092htmlhelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="SF11964092htmlhelp" if="run.htmlhelp">
+  <target name="SF11964092htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${dita.dir}/testdata/SF1196409/abc.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/SF1196409/abc/htmlhelp"/>

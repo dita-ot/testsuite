@@ -2,7 +2,7 @@
 <project name="metakeywords_xhtml" default="metakeywords2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="metakeywords2xhtml" if="run.xhtml">
+  <target name="metakeywords2xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/metakeywords.dita"/>
       <property name="dita.temp.dir"

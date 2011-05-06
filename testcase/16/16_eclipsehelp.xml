@@ -2,7 +2,7 @@
 <project name="16_eclipsehelp" default="162eclipsehelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="162eclipsehelp" if="run.eclipsehelp">
+  <target name="162eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/16/16.ditamap"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/16/eclipsehelp"/>

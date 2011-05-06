@@ -2,7 +2,7 @@
 <project name="readme_htmlhelp" default="readme2htmlhelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="readme2htmlhelp" if="run.htmlhelp">
+  <target name="readme2htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/readme/DITA-readme.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/readme/htmlhelp"/>

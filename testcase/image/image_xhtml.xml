@@ -2,7 +2,7 @@
 <project name="image_xhtml" default="image2xhtml" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="image2xhtml" if="run.xhtml">
+  <target name="image2xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/OldcasesTest/image.dita"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/image/xhtml"/>

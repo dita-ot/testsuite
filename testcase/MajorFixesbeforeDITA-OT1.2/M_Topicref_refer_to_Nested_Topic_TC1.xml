@@ -5,7 +5,7 @@
 
   <target name="1563093" depends="15630932xhtml, 15630932wordrtf, 15630932pdf, 15630932javahelp, 15630932htmlhelp, 15630932troff, 15630932docbook, 15630932eclipsehelp, 15630932eclipsecontent"/>
 
-  <target name="15630932xhtml" if="run.xhtml">
+  <target name="15630932xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>
@@ -16,7 +16,7 @@
                 location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC1/abc/xhtml/temp"/>
     </ant>
   </target>
-  <target name="15630932wordrtf" if="run.wordrtf">
+  <target name="15630932wordrtf" if="run.wordrtf" unless="skip.wordrtf">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>
@@ -27,7 +27,7 @@
                 location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC1/abc/wordrtf/temp"/>
     </ant>
   </target>
-  <target name="15630932pdf" if="run.pdf">
+  <target name="15630932pdf" if="run.pdf" unless="skip.pdf">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>
@@ -38,7 +38,7 @@
                 location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC1/abc/pdf/temp"/>
     </ant>
   </target>
-  <target name="15630932javahelp" if="run.javahelp">
+  <target name="15630932javahelp" if="run.javahelp" unless="skip.javahelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>
@@ -49,7 +49,7 @@
                 location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC1/abc/javahelp/temp"/>
     </ant>
   </target>
-  <target name="15630932htmlhelp" if="run.htmlhelp">
+  <target name="15630932htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>
@@ -60,7 +60,7 @@
                 location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC1/abc/htmlhelp/temp"/>
     </ant>
   </target>
-  <target name="15630932troff" if="run.troff">
+  <target name="15630932troff" if="run.troff" unless="skip.troff">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>
@@ -71,7 +71,7 @@
                 location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC1/abc/troff/temp"/>
     </ant>
   </target>
-  <target name="15630932docbook" if="run.docbook">
+  <target name="15630932docbook" if="run.docbook" unless="skip.docbook">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>
@@ -82,7 +82,7 @@
                 location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC1/abc/docbook/temp"/>
     </ant>
   </target>
-  <target name="15630932eclipsehelp" if="run.eclipsehelp">
+  <target name="15630932eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>
@@ -93,7 +93,7 @@
                 location="${dita.dir}/testresult/Topicref_refer_to_Nested_Topic/TC1/abc/eclipsehelp/temp"/>
     </ant>
   </target>
-  <target name="15630932eclipsecontent" if="run.eclipsecontent">
+  <target name="15630932eclipsecontent" if="run.eclipsecontent" unless="skip.eclipsecontent">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/Topicref_refer_to_Nested_Topic/TC1/abc.ditamap"/>

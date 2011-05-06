@@ -2,7 +2,7 @@
 <project name="readme_troff" default="readme2troff" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="readme2troff" if="run.troff">
+  <target name="readme2troff" if="run.troff" unless="skip.troff">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/readme/DITA-readme.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/readme/troff"/>

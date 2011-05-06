@@ -2,7 +2,7 @@
 <project name="MetadataInheritance_xhtml" default="MetadataInheritance2xhtml"
          basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="MetadataInheritance2xhtml" if="run.xhtml">
+  <target name="MetadataInheritance2xhtml" if="run.xhtml" unless="skip.xhtml">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${dita.dir}/testdata/MetadataInheritance/MatadataInheritance_foreign.ditamap"/>

@@ -2,7 +2,7 @@
 <project name="langref_javahelp" default="langref2javahelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="langref2javahelp" if="run.javahelp">
+  <target name="langref2javahelp" if="run.javahelp" unless="skip.javahelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${testdata.dir}/langref/ditaref-book.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/langref/book/javahelp"/>

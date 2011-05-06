@@ -2,7 +2,7 @@
 <project name="simplemap_eclipsehelp" default="simplemap2eclipsehelp" basedir=".">
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="simplemap2eclipsehelp" if="run.eclipsehelp">
+  <target name="simplemap2eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input"
                 location="${testdata.dir}/OldcasesTest/simplemap/simplemap.ditamap"/>
