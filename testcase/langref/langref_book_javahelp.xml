@@ -7,7 +7,7 @@
       <property name="args.input" location="${testdata.dir}/langref/ditaref-book.ditamap"/>
       <property name="output.dir" location="${dita.dir}/testresult/langref/book/javahelp"/>
       <property name="transtype" value="javahelp"/>
-      <property name="args.ftr" value="${testdata.dir}/langref/langref-footer.xml"/>
+      <property name="args.ftr" location="${testdata.dir}/langref/langref-footer.xml"/>
       <property name="dita.temp.dir" location="${dita.dir}/temp/langref/book/javahelp"/>
     </ant>
   </target>

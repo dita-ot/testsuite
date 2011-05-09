@@ -8,7 +8,7 @@
          <property name="dita.temp.dir" location="${dita.dir}/temp/24/xhtml"/>
          <property name="output.dir" location="${dita.dir}/testresult/24/xhtml"/>
          <property name="transtype" value="xhtml"/>
-         <property name="args.xsl" value="${testdata.dir}/24/24.xsl"/>
+         <property name="args.xsl" location="${testdata.dir}/24/24.xsl"/>
       </ant>
    </target>
 </project>
