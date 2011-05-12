@@ -5,7 +5,7 @@
    <target name="all">
       <echo message="${currentdir}"/>
       <sequential>
-         <subant>
+         <subant inheritall="true">
             <fileset dir="${currentdir}" includes="${ant.project.name}_*.xml"/>
          </subant>
       </sequential>
