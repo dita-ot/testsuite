@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="below_keyref">
+  <keydef keys="below_key">
+    <topicmeta>
+      <keywords>
+        <keyword>value</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+</map>
