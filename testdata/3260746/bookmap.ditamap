@@ -1,0 +1,10 @@
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+  <frontmatter>
+    <booklists>
+      <toc/>
+    </booklists>
+  </frontmatter>
+  <chapter href="map.ditamap" format="ditamap"/>
+</bookmap>
+

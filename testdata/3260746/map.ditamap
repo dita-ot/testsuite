@@ -1,0 +1,9 @@
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Title A">
+  <topicref href="topic-A.dita">
+    <topicref href="topic-A1.dita"/>
+  </topicref>
+  <topichead navtitle="Topichead title">
+    <topicref href="topic-B1.dita"/>
+  </topichead>
+</map>
