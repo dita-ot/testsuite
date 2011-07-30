@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2009, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "../dtd/map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<!-- (C) Copyright IBM Corporation 2008. All Rights Reserved.
+ *-->
+<map id="JamesKPolk" xml:lang="en-us"><title>The Man who Transformed
+the Presidency</title>
+<topicref href="parent.dita" navtitle="nanananana">
+<topicref href="child.dita" locktitle="yes" navtitle="locked local title">
+</topicref>
+</topicref>
+<topicref href="child.dita" locktitle="yes"
+navtitle="Reuse the child at the top"></topicref>
+<topicref href="child.dita" locktitle="no" navtitle="Unlocked title">
+</topicref>
+<topicref href="parent.dita" navtitle="nanananana">
+<topicref href="child.dita" locktitle="yes"
+navtitle="locked local title again"></topicref><?Pub Caret -1?>
+</topicref>
+</map>
+<?Pub *0000000873?>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd">
+<topic id="topic-1">
+  <title>Chapter 1 title</title>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>chapter</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <body>
+    <p>A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering. A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering. A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering.</p>
+    <fig>
+      <title>Figure 1</title>
+      <codeblock>public static final</codeblock>
+    </fig>
+    <table>
+      <title>Table 1</title>
+      <tgroup cols="1">
+        <tbody>
+          <row>
+            <entry>entry</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </body>
+  <topic id="topic-1.1">
+    <title>Chapter 1.1 title</title>
+    <prolog>
+      <metadata>
+        <keywords>
+          <indexterm>chapter</indexterm>
+        </keywords>
+      </metadata>
+    </prolog>
+    <body>
+      <p>A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering. A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering. A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering.</p>
+      <fig>
+        <title>Figure 1.1</title>
+        <codeblock>public static final</codeblock>
+      </fig>
+      <table>
+        <title>Table 1.1</title>
+        <tgroup cols="1">
+          <tbody>
+            <row>
+              <entry>entry</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </body>
+  </topic>
+</topic>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="2837095" default="all">  
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/test.ditamap"/>
+  <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/pdf"/>
+  <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/pdf"/>
+  <target name="all" depends="2837095.pdf"/>
+  <target name="2837095.pdf" if="run.pdf" unless="skip.pdf">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/bookmap.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/pdf/bookmap"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/pdf/bookmap"/>
+      <property name="transtype" value="pdf"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/map.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/pdf/map"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/pdf/map"/>
+      <property name="transtype" value="pdf"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/chapter.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/pdf/topic"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/pdf/topic"/>
+      <property name="transtype" value="pdf"/>
+    </ant>    
+    <!--
+    <dirname property="dita.temp.dir.fullpath" file="${dita.temp.dir}${file.separator}dummy.file"/>
+    <pipeline message="topicmerge" module="TopicMerge"
+              inputmap="${dita.temp.dir.fullpath}${file.separator}${user.input.file}"
+              tempdir="${dita.temp.dir.fullpath}">
+      <param name="output" location="${dita.temp.dir.fullpath}${file.separator}${dita.map.filename.root}_MERGED.xml"/>
+      <param name="style" location="${dita.plugin.org.dita.pdf2.dir}/xsl/common/topicmerge.xsl"/>
+    </pipeline>
+    -->
+  </target>
+</project>

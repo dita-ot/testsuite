@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic-1">
+  <title>This is topic 1</title>
+  <body>
+    <section>
+      <title>Single level content reference</title>
+      <p><i>URI-based</i></p>
+      <p><xref format="dita" href="topic-2.dita"><ph conref="wording.dita#wording/topic-1"
+          /></xref></p>
+      <p><xref format="html" href="http://www.oxygenxml.com"><ph
+            conref="wording.dita#wording/website-1"/></xref></p>
+      <p><i>Key-based</i></p>
+      <p><xref format="dita" keyref="topic-2"><ph conkeyref="wording/topic-1"/></xref></p>
+      <p><xref  format="html" keyref="oxygen"><ph conkeyref="wording/website-1"/></xref></p>
+    </section>
+    <section>
+      <title>Dual level content reference</title>
+      <p><i>URI-based</i></p>
+      <p><xref format="dita" href="topic-2.dita"><ph conref="wording.dita#wording/topic-2"
+          /></xref></p>
+      <p><xref format="html" href="http://www.oxygenxml.com"><ph
+            conref="wording.dita#wording/website-2"/></xref></p>
+      <p><i>Key-based</i></p>
+      <p><xref  format="dita" keyref="topic-2"><ph conkeyref="wording/topic-3"/></xref></p>
+      <p><xref format="html" keyref="oxygen"><ph conkeyref="wording/website-3"/></xref></p>
+    </section>
+  </body>
+</topic>

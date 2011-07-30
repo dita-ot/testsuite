@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+  <title>Bookmap Title</title>
+  <frontmatter>
+    <preface href="preface1.dita"/>
+    <notices href="notices1.dita"/>
+    <booklists>
+      <toc/>
+      <figurelist/>
+    </booklists>
+    <preface>
+      <topicmeta>
+        <navtitle>Preface navtitle</navtitle>
+        <linktext>Preface linktext</linktext>
+        <shortdesc>A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering.</shortdesc>
+      </topicmeta>
+      <topicref href="preface2.dita"/>
+    </preface>
+    <notices navtitle="Notices @navtitle">
+      <topicmeta>
+        <linktext>Notices linktext</linktext>
+        <shortdesc>A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering.</shortdesc>
+      </topicmeta>
+      <topicref href="notices2.dita"/>
+    </notices>
+  </frontmatter>
+  <chapter href="map.ditamap" format="ditamap"/>
+  <backmatter>
+    <booklists>
+      <indexlist/>
+    </booklists>
+    <colophon href="colophon.dita"/>
+    <booklists>
+      <tablelist/>      
+    </booklists>
+  </backmatter>
+</bookmap>

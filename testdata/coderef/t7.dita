@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "topic.dtd">
+<topic id="topicID7">
+    <title>topic7 attributes test</title>
+    <body>
+        <codeblock>do someting
+<coderef href="t1.dita" keyref="t3" audience="programmer"/></codeblock>
+    </body>
+</topic>
+

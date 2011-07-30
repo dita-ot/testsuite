@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>This is map for topics 1 and 2</title>
+  <keydef format="html" scope="external" keys="oxygen" href="http://www.oxygenxml.com"/> 
+  <keydef format="dita" keys="wording" href="wording.dita"/>
+  <topicref format="dita" keys="topic-1" href="topic-1.dita"/>
+  <topicref format="dita" keys="topic-2" href="topic-2.dita"/>
+</map>

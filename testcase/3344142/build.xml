@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="3344142" default="all">
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <target name="all" depends="3344142.preprocess"/>
+  <target name="3344142.preprocess" if="run.preprocess" unless="skip.preprocess">
+    <ant antfile="${dita.dir}/build.xml">
+      <target name="build-init"/>
+      <target name="preprocess"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/push.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/preprocess"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/preprocess"/>
+    </ant>
+  </target>
+</project>

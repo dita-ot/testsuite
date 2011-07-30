@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="3354301" default="all">
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <target name="all" depends="3354301.xhtml"/>
+  <target name="3354301.xhtml" if="run.xhtml" unless="skip.xhtml">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="xhtml"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/map.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/xhtml"/>
+    </ant>
+  </target>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="wording">
+  <title>This is wording</title>
+  <body>
+    <ul>
+      <li><ph id="topic-1">Link to Topic 2</ph></li>
+      <li><ph id="topic-2" conref="wording.dita#wording/topic-1"/></li>
+      <li><ph id="topic-3" conkeyref="wording/topic-1"/></li>
+      <li><ph id="website-1">Link to Website</ph></li>
+      <li><ph id="website-2" conref="wording.dita#wording/website-1"/></li>
+      <li><ph id="website-3" conkeyref="wording/website-1"/></li>
+    </ul>
+  </body>
+</topic>

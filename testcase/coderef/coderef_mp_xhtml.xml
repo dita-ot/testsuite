@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="coderef_mp_xhtml" default="coderef_mpxhtml" basedir=".">
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="testdata.dir" location="${dita.dir}/testdata"/>
+  <!--import file="${dita.dir}/integrator.xml"/-->
+  <target name="coderef_mpxhtml" if="run.xhtml" unless="skip.xhtml">
+    <ant antfile="${dita.dir}/build.xml" target="init">
+      <property name="args.input" location="${testdata.dir}/coderef/mp.ditamap"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/coderef/mp/xhtml"/>
+      <property name="args.logdir" location="${dita.dir}/testresult/coderef/mp/log"/>
+      <property name="output.dir" value="${dita.dir}/testresult/coderef/mp/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="clean.temp" value="no"/>
+    </ant>
+  </target>
+</project>

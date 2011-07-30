@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd">
+<topic id="notices2">
+  <title>Notices 2 title</title>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>notices</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <body>
+    <p>A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering. A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering. A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering.</p>
+    <p>A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering. A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering. A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering.</p>
+  </body>
+  <topic id="notices2.1">
+    <title>Notices 2.1 title</title>
+    <prolog>
+      <metadata>
+        <keywords>
+          <indexterm>notices</indexterm>
+        </keywords>
+      </metadata>
+    </prolog>
+    <body>
+      <p>A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering. A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering. A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering.</p>
+      <p>A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering. A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering. A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering.</p>
+    </body>
+  </topic>
+</topic>

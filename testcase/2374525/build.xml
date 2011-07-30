@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="2374525" default="all">
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <target name="all" depends="2374525.pdf, 2374525.xhtml, 2374525.preprocess"/>
+  <target name="2374525.pdf" if="run.pdf" unless="skip.pdf">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="pdf"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/test.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/pdf"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/pdf"/>
+    </ant>
+  </target>
+  <target name="2374525.xhtml" if="run.xhtml" unless="skip.xhtml">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="xhtml"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/test.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/xhtml"/>
+    </ant>
+  </target>
+  <target name="2374525.preprocess" if="run.preprocess" unless="skip.preprocess">
+    <ant antfile="${dita.dir}/build.xml">
+      <target name="build-init"/>
+      <target name="preprocess"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/test.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/preprocess"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/preprocess"/>
+    </ant>
+  </target>
+</project>

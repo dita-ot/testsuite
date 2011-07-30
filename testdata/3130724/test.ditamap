@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+  <chapter navtitle="Chapter 1">
+    <topicref href="topic1.xml"/>
+  </chapter>
+</bookmap>
