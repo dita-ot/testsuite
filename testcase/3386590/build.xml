@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="3386590" default="all">
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <target name="all" depends="3386590.pdf"/>
+  <target name="3386590.pdf" if="run.pdf" unless="skip.pdf">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="pdf"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/map.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/pdf"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/pdf"/>
+    </ant>
+  </target>
+</project>
