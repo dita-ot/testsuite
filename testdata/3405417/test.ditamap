@@ -2,5 +2,16 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
   <title>DITA Topic Map</title>
-  <topicref href="topic.dita"/>
+  <topicref href="shortdesc.dita"/>
+  <topicref href="abstract.dita"/>
+  <topicref href="shortdesc.dita">
+    <topicmeta>
+      <shortdesc>Map shortdesc</shortdesc>
+    </topicmeta>
+  </topicref>
+  <topicref href="abstract.dita">
+    <topicmeta>
+      <shortdesc>Map shortdesc</shortdesc>
+    </topicmeta>
+  </topicref>
 </map>
