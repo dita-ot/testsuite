@@ -1,13 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->
-<project name="notetypes" default="all" basedir=".">
-   <dirname property="currentdir" file="${ant.file.notetypes}"/>
-   <target name="all">
-      <echo message="${currentdir}"/>
-      <sequential>
-         <subant inheritall="true">
-            <fileset dir="${currentdir}" includes="${ant.project.name}_*.xml"/>
-         </subant>
-      </sequential>
-   </target>
+<project name="notetypes" default="all">
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <target name="all" depends="notetypes.xhtml, notetypes.eclipsehelp, notetypes.eclipsecontent, notetypes.javahelp, notetypes.htmlhelp, notetypes.pdf, notetypes.troff, notetypes.docbook, notetypes.wordrtf, notetypes.odt"/>
+  <target name="notetypes.xhtml" if="run.xhtml" unless="skip.xhtml">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="xhtml"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/notetypes.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/xhtml"/>
+    </ant>
+  </target>
+  <target name="notetypes.eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="eclipsehelp"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/notetypes.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/eclipsehelp"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/eclipsehelp"/>
+    </ant>
+  </target>
+  <target name="notetypes.eclipsecontent" if="run.eclipsecontent" unless="skip.eclipsecontent">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="eclipsecontent"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/notetypes.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/eclipsecontent"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/eclipsecontent"/>
+    </ant>
+  </target>
+  <target name="notetypes.javahelp" if="run.javahelp" unless="skip.javahelp">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="javahelp"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/notetypes.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/javahelp"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/javahelp"/>
+    </ant>
+  </target>
+  <target name="notetypes.htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="htmlhelp"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/notetypes.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/htmlhelp"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/htmlhelp"/>
+    </ant>
+  </target>
+  <target name="notetypes.pdf" if="run.pdf" unless="skip.pdf">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="pdf"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/notetypes.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/pdf"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/pdf"/>
+    </ant>
+  </target>
+  <target name="notetypes.troff" if="run.troff" unless="skip.troff">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="troff"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/notetypes.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/troff"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/troff"/>
+    </ant>
+  </target>
+  <target name="notetypes.docbook" if="run.docbook" unless="skip.docbook">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="docbook"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/notetypes.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/docbook"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/docbook"/>
+    </ant>
+  </target>
+  <target name="notetypes.wordrtf" if="run.wordrtf" unless="skip.wordrtf">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="wordrtf"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/notetypes.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/wordrtf"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/wordrtf"/>
+    </ant>
+  </target>
+  <target name="notetypes.odt" if="run.odt" unless="skip.odt">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="odt"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/notetypes.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/odt"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/odt"/>
+    </ant>
+  </target>
 </project>

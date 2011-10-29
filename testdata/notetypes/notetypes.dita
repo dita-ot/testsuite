@@ -28,6 +28,10 @@ that kind of thing is fun.</note>
 it is longer than just a single line and might wrap a little because I'd like
 to see what that looks like in our output as it stands right now because hey
 that kind of thing is fun.</note>
+<note type="warning">Note with @type=warning. Now some text goes here so that
+it is longer than just a single line and might wrap a little because I'd like
+to see what that looks like in our output as it stands right now because hey
+that kind of thing is fun.</note>
 <note type="fastpath">Note with @type=fastpath. Now some text goes here so
 that it is longer than just a single line and might wrap a little because
 I'd like to see what that looks like in our output as it stands right now
@@ -36,7 +40,7 @@ because hey that kind of thing is fun.</note>
 so that it is longer than just a single line and might wrap a little because
 I'd like to see what that looks like in our output as it stands right now
 because hey that kind of thing is fun.</note>
-<note type="note">Note with @type=Note. Now some text goes here so that it
+<note type="note">Note with @type=note. Now some text goes here so that it
 is longer than just a single line and might wrap a little because I'd like
 to see what that looks like in our output as it stands right now because hey
 that kind of thing is fun.</note>
