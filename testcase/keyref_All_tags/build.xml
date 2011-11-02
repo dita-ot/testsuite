@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="keyref_modify" default="all">
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <target name="all" depends="keyref_modify.xhtml"/>
+  <target name="keyref_modify.xhtml" if="run.xhtml" unless="skip.xhtml">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="xhtml"/>
+      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/All_tags_include_keyref_atrribute/mp_author1.ditamap"/>
+      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/All_tags_include_keyref_atrribute/xhtml"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/All_tags_include_keyref_atrribute/xhtml"/>
+    </ant>
+  </target>
+</project>

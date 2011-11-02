@@ -32,7 +32,7 @@
       </data-about>
     </topicmeta>
   </keydef>
-  <keydef keys="image" href="b.xml" scope="peer" navtitle="b">
+  <keydef keys="image" href="delta.gif" format="gif" navtitle="b">
     <topicmeta>
       <linktext>image linktext</linktext>
       <shortdesc>image shortdesc</shortdesc>

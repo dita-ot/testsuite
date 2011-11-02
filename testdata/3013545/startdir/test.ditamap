@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.2 Map//EN" "file:/C:\20100510\DITA-OT1.5.1\dtd\technicalContent\dtd\map.dtd">
+<map xml:lang="en-us"><title>Albatross Guide</title>
+  <!-- Keys defined for bird information used-->
+  <keydef keys="mykey1" href="http://dita-ot.sourceforge.net/" scope="external" format="html"/>
+  
+  <topicref href="../common/mytopicfile.dita"/>
+  <topicref  keys="keyword" href="../common/keyword.dita"/>
+</map>
+

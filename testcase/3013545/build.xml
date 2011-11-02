@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="3013545_xhtml_" default="all" basedir=".">
+  <property name="currentdir" location="${basedir}"/>
+  <target name="all">
+    <echo message="${currentdir}"/>
+    <sequential>
+      <subant>
+        <fileset dir="${currentdir}" includes="3013545*.xml"/>
+      </subant>
+    </sequential>
+  </target>
+</project>

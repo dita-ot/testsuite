@@ -10,9 +10,11 @@
     <data-about keyref="data-about"><data/></data-about>
   </prolog>
   <body>
-    <image keyref="image"/>
+    <image keyref="image" alt="Alt attribute."/>
+    <image keyref="image"><alt>Alt element.</alt></image>
     <p>
       <xref keyref="xref"/>
+      <xref keyref="xref">Default text</xref>
       <cite keyref="cite"/>
       <keyword keyref="keyword"/>
       <ph keyref="ph"/>

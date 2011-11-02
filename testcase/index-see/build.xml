@@ -7,6 +7,7 @@
    <import file="index-see_htmlhelp.xml"/>
    <import file="index-see_javahelp.xml"/>
    <import file="index-see_xhtml.xml"/>
+   <import file="index-see_pdf.xml"/>
    <target name="all"
-           depends="indexsee2eclipsehelp, indexsee2htmlhelp, indexsee2javahelp, indexsee2xhtml"/>
+           depends="indexsee2eclipsehelp, indexsee2htmlhelp, indexsee2javahelp, indexsee2xhtml, indexsee2pdf"/>
 </project>

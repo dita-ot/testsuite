@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="indexsee_pdf" default="indexsee2pdf" basedir=".">
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <target name="indexsee2pdf" if="run.pdf" unless="skip.pdf">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input"
+                location="${dita.dir}/testdata/IndexSee/index-see_testdata1.dita"/>
+      <property name="output.dir" location="${dita.dir}/testresult/indexsee/pdf"/>
+      <property name="transtype" value="pdf"/>
+      <property name="dita.temp.dir" location="${dita.dir}/temp/indexsee/pdf"/>
+    </ant>
+  </target>
+</project>
