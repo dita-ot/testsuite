@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_vtt_xhh_f2">
+  <title>Task title</title>
+  <task id="id1">
+    <title>Task 1</title>
+    <taskbody>
+      <example>
+        <p>Without title, with paragraph.</p>
+      </example>
+    </taskbody>
+  </task>
+  <task id="task_vtt_xhh_f3">
+    <title>Task 2</title>
+    <taskbody>
+      <example>Without title, without paragraph.</example>
+    </taskbody>
+  </task>
+  <task id="task_vtt_xhh_f4">
+    <title>Task 3</title>
+    <taskbody>
+      <example>
+        <title>Example title</title>
+        <p>Without title, without paragraph.</p>
+      </example>
+    </taskbody>
+  </task>
+  <task id="task_vtt_xhh_f5">
+    <title>Task 4</title>
+    <taskbody>
+      <example>
+        <title>Example title</title>
+        Without title, without paragraph.
+      </example>
+    </taskbody>
+  </task>
+</task>
