@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) --><reference id="reference_73CE270E0A04464EBFD5D3148BC6BEE0">
+	<title>Has Frame Index Markup</title>
+	<shortdesc>Some pathologically wierd index markup
+    that contains punctuation that is special to FrameMaker-style index markup.</shortdesc>
+<prolog>
+        <metadata>
+            <keywords>
+                
+            <indexterm>testing: indexterm 1st-level: with colons</indexterm>
+<indexterm>testing; indexterm 1st-level; with semicolons</indexterm>
+<indexterm>testing, indexterm 1st-level, with commas</indexterm>
+
+
+
+
+<indexterm>testing, indexterm 1st-level: with comma and colon</indexterm>
+<indexterm>testing, indexterm 1st-level; with comma and semicolon</indexterm>
+<indexterm>testing: indexterm: 1st-level; with commas, colons, and semicolon</indexterm>
+
+<indexterm>testing: indexterm 1st-level: with colons
+  <indexterm>testing, indexterm 2nd-level: with comma and colon</indexterm>
+  <indexterm>testing, indexterm 2nd-level; with comma and semicolon</indexterm>
+  <indexterm>testing: indexterm: 2nd-level; with commas, colons, and semicolon</indexterm>
+</indexterm>
+<indexterm>testing &lt;angle brackets&gt; in pairs</indexterm>
+<indexterm>testing &lt;angle brackets&gt;
+  <indexterm>in pairs</indexterm>
+</indexterm>
+<indexterm>testing &lt;paired angle brackets&gt;</indexterm>
+<indexterm>&lt;paired angle brackets&gt;</indexterm>
+<indexterm>&lt;angle brackets&gt;<index-sort-as>angle brackets</index-sort-as>
+  <indexterm>paired</indexterm>
+</indexterm>
+<indexterm>testing angle brackets
+  <indexterm>in &lt;second level&gt; term</indexterm>
+  <indexterm>&lt;second level&gt;</indexterm>
+</indexterm>
+<indexterm>testing [square brackets] in pairs</indexterm>
+<indexterm>testing [square brackets]
+  <indexterm>in pairs</indexterm>
+</indexterm>
+<indexterm>testing [paired square brackets]</indexterm>
+<indexterm>[paired square brackets]</indexterm>
+<indexterm>[square brackets]<index-sort-as>square brackets</index-sort-as>
+  <indexterm>paired</indexterm>
+</indexterm>
+<indexterm>testing square brackets
+  <indexterm>in [second level] term</indexterm>
+  <indexterm>[second level]</indexterm>
+</indexterm>
+<indexterm>Frame index markup
+  <indexterm>[square brackets]</indexterm>
+  <indexterm>&lt;angle brackets&gt;</indexterm>
+  <indexterm>&lt;$nopage&gt; entry</indexterm>
+  <indexterm>entries with &lt;$nopage&gt;</indexterm>
+  <indexterm>&lt;$endrange&gt;</indexterm>
+  <indexterm>entry &lt;$endrange&gt;</indexterm>
+  <indexterm>&lt;$endrange&gt; entry</indexterm>
+  <indexterm>&lt;$startrange&gt;</indexterm>
+  <indexterm>entry &lt;$startrange&gt;</indexterm>
+  <indexterm>&lt;$startrange&gt; entry</indexterm>
+  
+  <indexterm>entry &lt;$nopage&gt;</indexterm>
+  <indexterm>&lt;$nopage&gt;</indexterm>
+  <indexterm>&lt;$singlepage&gt; entry</indexterm>
+  <indexterm>entry &lt;$singlepage&gt;</indexterm>
+  <indexterm>&lt;$singlepage&gt;</indexterm>
+  <indexterm>&lt;$so&gt; entry</indexterm>
+  <indexterm>entry &lt;$so&gt;</indexterm>
+  <indexterm>&lt;$so&gt;</indexterm>
+  <indexterm>entry with &lt;$endrange&gt;, &lt;$startrange&gt;, &lt;$nopage&gt;, &lt;$singlepage&gt;, &lt;so&gt;, and random punctuation:;.,?/\|{}()#@%*&amp;%</indexterm>
+</indexterm>
+<indexterm>&lt;$nopage&gt;
+  <indexterm>Frame index markup</indexterm>
+</indexterm>
+<indexterm>&lt;$nopage&gt; Frame index markup</indexterm>
+<indexterm>&lt;$singlepage&gt;
+  <indexterm>Frame index markup</indexterm>
+</indexterm>
+<indexterm>&lt;$singlepage&gt; Frame index markup</indexterm>
+<indexterm>&lt;$endrange&gt;
+  <indexterm>Frame index markup</indexterm>
+</indexterm>
+<indexterm>&lt;$endrange&gt; Frame index markup</indexterm>
+<indexterm>&lt;$startrange&gt;
+  <indexterm>Frame index markup</indexterm>
+</indexterm>
+<indexterm>&lt;$startrange&gt; Frame index markup</indexterm>
+<indexterm>&lt;$so&gt;
+  <indexterm>Frame index markup</indexterm>
+</indexterm>
+<indexterm>&lt;$so&gt; Frame index markup</indexterm>
+</keywords>
+        </metadata>
+    </prolog>
+	<refbody>
+<section id="section_F98A0F622AB64DAEA89A131A3F4CB00A">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </section>
+	</refbody>
+</reference>
