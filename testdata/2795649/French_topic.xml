@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="should-be-fr" xml:lang="fr">
+  <title>Titre</title>
+  <body>
+    <p>L'alinéa</p>
+  </body>
+  <topic id="empty">
+    <title>Otsikko in France</title>
+  </topic>
+</topic>
