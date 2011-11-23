@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>DITA Topic Map</title>
+  <topicref href="topic.dita"/>
+  <reltable>
+    <relrow>
+      <relcell>
+        <topicref href="topic.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="http://www.example.com/printonly" scope="external" print="printonly">
+          <topicmeta>
+            <linktext>printonly</linktext>
+          </topicmeta>
+        </topicref>
+        <topicref href="http://www.example.com/no" scope="external" print="no">
+          <topicmeta>
+            <linktext>no</linktext>
+          </topicmeta>
+        </topicref>
+        <topicref href="http://www.example.com/yes" scope="external" print="yes">
+          <topicmeta>
+            <linktext>yes</linktext>
+          </topicmeta>
+        </topicref>
+      </relcell>
+    </relrow>
+  </reltable>
+</map>
