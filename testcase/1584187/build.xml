@@ -3,7 +3,7 @@
 <project name="1584187" default="all" basedir=".">
    <dirname property="currentdir" file="${ant.file.1584187}"/>
    <target name="all">
-      <echo message="${currentdir}"/>
+      <echo message="${currentdir}" level="info"/>
       <sequential>
          <subant inheritall="true">
             <fileset dir="${currentdir}" includes="15*.xml"/>

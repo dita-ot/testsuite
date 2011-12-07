@@ -3,7 +3,7 @@
 <project name="lang" default="all" basedir=".">
    <dirname property="currentdir" file="${ant.file.lang}"/>
    <target name="all">
-      <echo message="${currentdir}"/>
+      <echo message="${currentdir}" level="info"/>
       <sequential>
          <subant inheritall="true">
             <fileset dir="${currentdir}" includes="${ant.project.name}-*.xml"/>

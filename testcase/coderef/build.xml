@@ -2,7 +2,7 @@
 <project name="sample_all" default="all" basedir=".">
   <property name="currentdir" location="${basedir}"/>
   <target name="all">
-    <echo message="${currentdir}"/>
+    <echo message="${currentdir}" level="info"/>
     <sequential>
       <subant>
         <fileset dir="${currentdir}" includes="coderef_*.xml"/>

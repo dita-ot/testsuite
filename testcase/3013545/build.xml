@@ -2,7 +2,7 @@
 <project name="3013545_xhtml_" default="all" basedir=".">
   <property name="currentdir" location="${basedir}"/>
   <target name="all">
-    <echo message="${currentdir}"/>
+    <echo message="${currentdir}" level="info"/>
     <sequential>
       <subant>
         <fileset dir="${currentdir}" includes="3013545*.xml"/>
