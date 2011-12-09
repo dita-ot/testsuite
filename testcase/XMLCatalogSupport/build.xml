@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="XMLCatalogSupport" default="XMLCatalogSupport" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.XMLCatalogSupport}"/>
+   <property name="test.name" value="XMLCatalogSupport"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <property name="dita.temp.dir" location="${dita.dir}/temp"/>
+   <import file="${dita.dir}/build.xml"/>
+   <target name="XMLCatalogSupport"
+           depends="XMLCatalogSupport2xhtml, XMLCatalogSupport2wordrtf, XMLCatalogSupport2pdf, XMLCatalogSupport2javahelp, XMLCatalogSupport2htmlhelp, XMLCatalogSupport2troff, XMLCatalogSupport2docbook, XMLCatalogSupport2eclipsehelp, XMLCatalogSupport2eclipsecontent"/>
+   <target name="XMLCatalogSupport2xhtml" if="run.xhtml" unless="skip.xhtml">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/TC1/abc.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
+   <target name="XMLCatalogSupport2wordrtf" if="run.wordrtf" unless="skip.wordrtf">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/TC1/abc.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="wordrtf"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
+   <target name="XMLCatalogSupport2pdf" if="run.pdf" unless="skip.pdf">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/TC1/abc.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="pdf"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
+   <target name="XMLCatalogSupport2javahelp" if="run.javahelp" unless="skip.javahelp">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/TC1/abc.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="javahelp"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
+   <target name="XMLCatalogSupport2htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/TC1/abc.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="htmlhelp"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
+   <target name="XMLCatalogSupport2troff" if="run.troff" unless="skip.troff">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/TC1/abc.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="troff"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/TC1/abc.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="troff"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
+   <target name="XMLCatalogSupport2docbook" if="run.docbook" unless="skip.docbook">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/TC1/abc.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="docbook"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
+   <target name="XMLCatalogSupport2eclipsehelp" if="run.eclipsehelp"
+           unless="skip.eclipsehelp">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/TC1/abc.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="eclipsehelp"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
+   <target name="XMLCatalogSupport2eclipsecontent" if="run.eclipsecontent"
+           unless="skip.eclipsecontent">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/TC1/abc.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="eclipsecontent"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
+</project>

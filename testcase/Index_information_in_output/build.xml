@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Index_information_in_output" default="Index_information_in_output"
+         basedir=".">
+   <dirname property="test.basedir" file="${ant.file.Index_information_in_output}"/>
+   <property name="test.name" value="Index_information_in_output"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="Index_information_in_output"
+           depends="Index_information_in_output2javahelp, Index_information_in_output2htmlhelp"/>
+   <target name="Index_information_in_output2javahelp" if="run.javahelp"
+           unless="skip.javahelp">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/TC1/hierarchy.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="javahelp"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
+   <target name="Index_information_in_output2htmlhelp" if="run.htmlhelp"
+           unless="skip.htmlhelp">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/TC1/hierarchy.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="htmlhelp"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
+</project>

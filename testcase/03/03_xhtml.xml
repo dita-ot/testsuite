@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="03_xhtml" default="032xhtml" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="032xhtml" if="run.xhtml" unless="skip.xhtml">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${testdata.dir}/03/03.ditamap"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/03/xhtml"/>
-      <property name="output.dir" location="${dita.dir}/testresult/03/xhtml"/>
-      <property name="transtype" value="xhtml"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.03_xhtml}"/>
+   <property name="test.name" value="03"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="032xhtml" if="run.xhtml" unless="skip.xhtml">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/03.ditamap"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+      </ant>
+   </target>
 </project>

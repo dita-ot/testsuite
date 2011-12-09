@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA 1.2 Reference//EN" "NIreference.dtd">
+<reference id="CECompliance">
+	<title>CE Compliance</title>
+	<refbody id="CEComplianceBody">
+	<section>
+		<p>This product meets the essential requirements of applicable European Directives, as amended for CE marking, as follows:
+			<ul>
+				<li id="2006CE">2006/95/EC; Low-Voltage Directive (safety)</li>
+				<li id="2004CE" audience="&#163;">2004/108/EC; Electromagnetic Compatibility Directive (EMC)(R&#163;TTE)</li>
+			</ul>
+		</p>
+		</section>
+	</refbody>
+</reference>

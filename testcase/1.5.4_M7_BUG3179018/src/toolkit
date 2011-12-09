@@ -1,0 +1,278 @@
+Executing:
+"/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/java" -Xmx1000m -classpath "/Applications/oxygen/tools/ant/lib/ant-launcher.jar" "-Dant.home=/Applications/oxygen/tools/ant" org.apache.tools.ant.launch.Launcher -lib "/Applications/oxygen/classes" -lib "/Applications/oxygen/lib/author.jar" -lib "/Applications/oxygen/lib/oxygen.jar" -lib "/Applications/oxygen/lib/oxygenEclipse.jar" -lib "/Applications/oxygen/lib/authorEclipse.jar" -lib "/Applications/oxygen/lib/resolver.jar" -lib "/Applications/oxygen/frameworks/dita/DITA-OT" -lib "/Applications/oxygen/lib/commons-io-1.3.1.jar" -lib "/Applications/oxygen/lib/commons-logging-1.0.4.jar" -lib "/Applications/oxygen/lib/log4j.jar" -lib "/Applications/oxygen/frameworks/dita/DITA-OT/lib/dost-patches.jar" -lib "/Applications/oxygen/frameworks/dita/DITA-OT/lib/dost.jar" -lib "/Applications/oxygen/lib/xercesImpl.jar" -lib "/Applications/oxygen/lib/saxon9ee.jar" -lib "/Applications/oxygen/lib/saxon.jar" -lib "/Applications/oxygen/lib/xmlgraphics-commons-1.4.jar" -lib "/Applications/oxygen/lib/fop.jar" -lib "/Applications/oxygen/lib/batik-all-1.7.jar" -lib "/Applications/oxygen/lib/xml-apis-xpath.jar" -lib "/Applications/oxygen/lib/xml-apis-ext.jar" -lib "/Applications/oxygen/lib/avalon-framework-4.2.0.jar" -lib "/Applications/oxygen/lib/jcip-annotations.jar" -lib "/Applications/oxygen/lib/jeuclid-core.jar" -lib "/Applications/oxygen/lib/jeuclid-fop.jar" -lib "/Applications/oxygen/lib/jh.jar" -lib "/Applications/oxygen/frameworks/dita/DITA-OT/lib/jsearch.jar" -lib "/Applications/oxygen/frameworks/dita/DITA-OT/plugins/webhelp/lib/lucene-analyzers-3.0.0.jar" -lib "/Applications/oxygen/frameworks/dita/DITA-OT/plugins/webhelp/lib/lucene-core-3.0.0.jar" -lib "/Applications/oxygen/frameworks/dita/DITA-OT/plugins/webhelp/lib/nw-cms.jar" -lib "/Applications/oxygen/frameworks/dita/DITA-OT/lib/dost.jar" -lib "/Applications/oxygen/lib/xercesImpl.jar" -lib "/Applications/oxygen/lib/xmlgraphics-commons-1.3.1.jar" -lib "/Applications/oxygen/lib/fop.jar" -lib "/Applications/oxygen/lib/batik-all-1.7.jar" -lib "/Applications/oxygen/lib/xml-apis-xpath.jar" -lib "/Applications/oxygen/lib/xml-apis-ext.jar" -lib "/Applications/oxygen/lib/avalon-framework-4.2.0.jar" -lib "/Applications/oxygen/lib/saxon9ee.jar" -lib "/Applications/oxygen/lib/saxon.jar" -f "/Applications/oxygen/frameworks/dita/DITA-OT/build.xml" "-Dtranstype=pdf2" "-DJVM_ARGS=-Xmx1000m" "-Daxf.path=/Users/ekimber/apps/AHFormatterV5" "-Dclean.temp=yes" "-Dbasedir=/Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test" "-Doutput.dir=/Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/pdf" "-Ddita.dir=/Applications/oxygen/frameworks/dita/DITA-OT" "-Douter.control=quiet" "-Dcom.oxygenxml.ant.additional.args=" "-Dargs.input=/Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/index-processing-test.ditamap" "-Dpdf.formatter=ah" "-Ddita.temp.dir=/Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp"
+
+Buildfile: /Applications/oxygen/frameworks/dita/DITA-OT/build.xml
+
+init:
+
+pdfswitch-warning:
+
+start-process:
+
+init-logger:
+
+init-URIResolver:
+
+output-version:
+     [echo] Version: DITA Open Toolkit 1.5.3 Milestone 01
+
+use-init.envhhcdir:
+
+use-init.hhcdir:
+
+use-init:
+
+check-arg:
+     [echo] *****************************************************************
+     [echo] * basedir = /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test
+     [echo] * dita.dir = /Applications/oxygen/frameworks/dita/DITA-OT
+     [echo] * input = /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/index-processing-test.ditamap
+     [echo] * transtype = pdf2
+     [echo] * tempdir = /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp
+     [echo] * outputdir = /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/pdf
+     [echo] * extname = .xml
+     [echo] * clean.temp = yes
+     [echo] * xslt.parser = SAXON
+     [echo] *****************************************************************
+     [echo] #Ant properties
+     [echo] #Sat Feb 12 08:15:53 CST 2011
+     [echo] args.css.file.temp=${args.css}
+     [echo] args.css.real=${args.css}
+     [echo] args.grammar.cache=yes
+     [echo] args.input=/Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/index-processing-test.ditamap
+     [echo] args.logdir=/Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/pdf
+     [echo] args.message.file=/Applications/oxygen/frameworks/dita/DITA-OT/resource/messages.xml
+     [echo] args.odt.img.embed=yes
+     [echo] args.odt.include.rellinks=none
+     [echo] args.xml.systemid.set=yes
+     [echo] dita.dir=/Applications/oxygen/frameworks/dita/DITA-OT
+     [echo] dita.empty=
+     [echo] dita.ext=.xml
+     [echo] dita.extname=xml
+     [echo] dita.input.filename=index-processing-test.ditamap
+     [echo] dita.map.filename.root=index-processing-test
+     [echo] dita.preprocess.reloadstylesheet=false
+     [echo] dita.resource.dir=/Applications/oxygen/frameworks/dita/DITA-OT/resource
+     [echo] dita.script.dir=/Applications/oxygen/frameworks/dita/DITA-OT/xsl
+     [echo] dita.temp.dir=/Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp
+     [echo] dita.topic.filename.root=index-processing-test.ditamap
+     [echo] dita.xhtml.reloadstylesheet=false
+     [echo] *****************************************************************
+
+output-deprecated-msg:
+
+output-css-warn-message:
+
+start-preprocess:
+
+gen-list-flag-check:
+
+gen-list-without-flagging:
+ [pipeline] Using XERCES.
+ [pipeline] Using Xerces grammar pool for DTD and schema caching.
+
+gen-list-with-flagging:
+
+gen-list:
+
+debug-filter-flag-check:
+
+debug:
+ [pipeline] Using Xerces grammar pool for DTD and schema caching.
+ [pipeline] Using Xerces grammar pool for DTD and schema caching.
+
+debug-and-filter:
+
+debug-filter:
+
+copy-image-check:
+
+copy-image:
+
+copy-html-check:
+
+copy-html:
+
+copy-flag-check:
+
+copy-flag:
+
+copy-subsidiary-check:
+
+copy-subsidiary:
+
+copy-generated-files:
+     [copy] Copying 2 files to /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/pdf
+
+copy-files:
+
+conrefpush-check:
+
+conrefpush:
+
+conref-check:
+
+conref:
+
+move-meta-entries-check:
+
+move-meta-entries:
+
+keyref-check:
+
+keyref:
+
+coderef-check:
+
+coderef:
+
+mapref-check:
+
+mapref:
+     [xslt] Transforming into /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp
+     [xslt] Processing /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp/index-processing-test.ditamap to /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp/index-processing-test.ditamap.ref
+     [xslt] Loading stylesheet /Applications/oxygen/frameworks/dita/DITA-OT/xsl/preprocess/mapref.xsl
+     [move] Moving 1 file to /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp
+
+mappull-check:
+
+mappull:
+     [xslt] Transforming into /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp
+     [xslt] Processing /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp/index-processing-test.ditamap to /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp/index-processing-test.ditamap.pull
+     [xslt] Loading stylesheet /Applications/oxygen/frameworks/dita/DITA-OT/xsl/preprocess/mappull.xsl
+     [xslt] : Warning! Stylesheet module file:/Applications/oxygen/frameworks/dita/DITA-OT/xsl/common/dita-utilities.xsl is included or imported more than once. This is permitted, but may lead to errors or unexpected behavior
+     [move] Moving 1 file to /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp
+
+chunk-check:
+
+chunk:
+
+maplink-check:
+
+maplink:
+     [xslt] Processing /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp/index-processing-test.ditamap to /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp/maplinks.unordered
+     [xslt] Loading stylesheet /Applications/oxygen/frameworks/dita/DITA-OT/xsl/preprocess/maplink.xsl
+
+move-links-check:
+
+move-links:
+
+topicpull-check:
+
+topicpull:
+     [xslt] Transforming into /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp
+     [xslt] Processing /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp/topic-01.xml to /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp/topic-01.xml.pull
+     [xslt] Loading stylesheet /Applications/oxygen/frameworks/dita/DITA-OT/xsl/preprocess/topicpull.xsl
+     [xslt] : Warning! Stylesheet module file:/Applications/oxygen/frameworks/dita/DITA-OT/xsl/common/dita-utilities.xsl is included or imported more than once. This is permitted, but may lead to errors or unexpected behavior
+     [move] Moving 1 file to /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/temp
+
+preprocess:
+
+dita-preprocess:
+
+map2pdf2:
+
+publish.map.pdf:
+     [echo] current target:publish.map.pdf
+
+transform.topic2pdf:
+
+copyCoreArtwork:
+     [copy] Copying 1 file to /Users/ekimber/workspace/dita-for-practitioners/test/index-processing-test/pdf/Customization/OpenTopic
+
+transform.topic2fo:
+[dita-version] Search finished
+     [echo] Using document.locale=en_US
+     [echo]         
+[index-preprocess] java.lang.NullPointerException
+[index-preprocess] 	at java.util.StringTokenizer.<init>(StringTokenizer.java:182)
+[index-preprocess] 	at java.util.StringTokenizer.<init>(StringTokenizer.java:204)
+[index-preprocess] 	at com.idiominc.ws.opentopic.fo.index2.util.IndexStringProcessor.processIndexString(IndexStringProcessor.java:62)
+[index-preprocess] 	at com.idiominc.ws.opentopic.fo.index2.IndexPreprocessor.processIndexString(IndexPreprocessor.java:327)
+[index-preprocess] 	at com.idiominc.ws.opentopic.fo.index2.IndexPreprocessor.processIndexNode(IndexPreprocessor.java:221)
+[index-preprocess] 	at com.idiominc.ws.opentopic.fo.index2.IndexPreprocessor.processCurrNode(IndexPreprocessor.java:148)
+[index-preprocess] 	at com.idiominc.ws.opentopic.fo.index2.IndexPreprocessor.processCurrNode(IndexPreprocessor.java:163)
+[index-preprocess] 	at com.idiominc.ws.opentopic.fo.index2.IndexPreprocessor.processCurrNode(IndexPreprocessor.java:163)
+[index-preprocess] 	at com.idiominc.ws.opentopic.fo.index2.IndexPreprocessor.processCurrNode(IndexPreprocessor.java:163)
+[index-preprocess] 	at com.idiominc.ws.opentopic.fo.index2.IndexPreprocessor.processCurrNode(IndexPreprocessor.java:163)
+[index-preprocess] 	at com.idiominc.ws.opentopic.fo.index2.IndexPreprocessor.processCurrNode(IndexPreprocessor.java:163)
+[index-preprocess] 	at com.idiominc.ws.opentopic.fo.index2.IndexPreprocessor.process(IndexPreprocessor.java:90)
+[index-preprocess] 	at com.idiominc.ws.opentopic.fo.index2.IndexPreprocessorTask.execute(IndexPreprocessorTask.java:96)
+[index-preprocess] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:288)
+[index-preprocess] 	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+[index-preprocess] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+[index-preprocess] 	at java.lang.reflect.Method.invoke(Method.java:597)
+[index-preprocess] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:105)
+[index-preprocess] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+[index-preprocess] 	at org.apache.tools.ant.Target.execute(Target.java:357)
+[index-preprocess] 	at org.apache.tools.ant.Target.performTasks(Target.java:385)
+[index-preprocess] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1329)
+[index-preprocess] 	at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+[index-preprocess] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1181)
+[index-preprocess] 	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:416)
+[index-preprocess] 	at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105)
+[index-preprocess] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:288)
+[index-preprocess] 	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+[index-preprocess] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+[index-preprocess] 	at java.lang.reflect.Method.invoke(Method.java:597)
+[index-preprocess] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:105)
+[index-preprocess] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+[index-preprocess] 	at org.apache.tools.ant.Target.execute(Target.java:357)
+[index-preprocess] 	at org.apache.tools.ant.Target.performTasks(Target.java:385)
+[index-preprocess] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1329)
+[index-preprocess] 	at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+[index-preprocess] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1181)
+[index-preprocess] 	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:416)
+[index-preprocess] 	at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105)
+[index-preprocess] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:288)
+[index-preprocess] 	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+[index-preprocess] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+[index-preprocess] 	at java.lang.reflect.Method.invoke(Method.java:597)
+[index-preprocess] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:105)
+[index-preprocess] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+[index-preprocess] 	at org.apache.tools.ant.Target.execute(Target.java:357)
+[index-preprocess] 	at org.apache.tools.ant.Target.performTasks(Target.java:385)
+[index-preprocess] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1329)
+[index-preprocess] 	at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+[index-preprocess] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1181)
+[index-preprocess] 	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:416)
+[index-preprocess] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:288)
+[index-preprocess] 	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+[index-preprocess] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+[index-preprocess] 	at java.lang.reflect.Method.invoke(Method.java:597)
+[index-preprocess] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:105)
+[index-preprocess] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+[index-preprocess] 	at org.apache.tools.ant.Target.execute(Target.java:357)
+[index-preprocess] 	at org.apache.tools.ant.Target.performTasks(Target.java:385)
+[index-preprocess] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1329)
+[index-preprocess] 	at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+[index-preprocess] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1181)
+[index-preprocess] 	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:416)
+[index-preprocess] 	at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105)
+[index-preprocess] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:288)
+[index-preprocess] 	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+[index-preprocess] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+[index-preprocess] 	at java.lang.reflect.Method.invoke(Method.java:597)
+[index-preprocess] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:105)
+[index-preprocess] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+[index-preprocess] 	at org.apache.tools.ant.Target.execute(Target.java:357)
+[index-preprocess] 	at org.apache.tools.ant.Target.performTasks(Target.java:385)
+[index-preprocess] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1329)
+[index-preprocess] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1298)
+[index-preprocess] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+[index-preprocess] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1181)
+[index-preprocess] 	at org.apache.tools.ant.Main.runBuild(Main.java:698)
+[index-preprocess] 	at org.apache.tools.ant.Main.startAnt(Main.java:199)
+[index-preprocess] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:257)
+[index-preprocess] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:104)
+
+BUILD FAILED
+/Applications/oxygen/frameworks/dita/DITA-OT/build.xml:63: The following error occurred while executing this line:
+/Applications/oxygen/frameworks/dita/DITA-OT/build.xml:322: The following error occurred while executing this line:
+/Applications/oxygen/frameworks/dita/DITA-OT/demo/fo/build.xml:177: The following error occurred while executing this line:
+/Applications/oxygen/frameworks/dita/DITA-OT/demo/fo/build.xml:363: The following error occurred while executing this line:
+/Applications/oxygen/frameworks/dita/DITA-OT/demo/fo/build.xml:285: java.lang.NullPointerException
+
+Total time: 6 seconds
+
+The process finished with exit code: 1

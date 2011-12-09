@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="lang-jajp_xhtml" default="lang-jajp2xhtml" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="lang-jajp2xhtml" if="run.xhtml" unless="skip.xhtml">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${testdata.dir}/OldcasesTest/lang/lang-jajp.dita"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/lang/jajp/xhtml"/>
-      <property name="output.dir"
-                location="${dita.dir}/testresult/OldcasesTest/lang/jajp/xhtml"/>
-      <property name="transtype" value="xhtml"/>
-      <property name="dita.input.valfile"
-                location="${testdata.dir}/OldcasesTest/lang/lang-ref.ditaval"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.lang-jajp_xhtml}"/>
+   <property name="test.name" value="lang"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="lang-jajp2xhtml" if="run.xhtml" unless="skip.xhtml">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${testdata.dir}/OldcasesTest/lang/lang-jajp.dita"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="dita.input.valfile"
+                   location="${testdata.dir}/OldcasesTest/lang/lang-ref.ditaval"/>
+      </ant>
+   </target>
 </project>

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="04_TC1_xhtml" default="04_TC12xhtml" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="04_TC12xhtml" if="run.xhtml" unless="skip.xhtml">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${testdata.dir}/04/TC1/TC1.ditamap"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/04/TC1/xhtml"/>
-      <property name="output.dir" location="${dita.dir}/testresult/04/TC1/xhtml"/>
-      <property name="transtype" value="xhtml"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.04_TC1_xhtml}"/>
+   <property name="test.name" value="04"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="04_TC12xhtml" if="run.xhtml" unless="skip.xhtml">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/TC1/TC1.ditamap"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+      </ant>
+   </target>
 </project>

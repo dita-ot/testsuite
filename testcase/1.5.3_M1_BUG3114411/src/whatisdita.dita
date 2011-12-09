@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="whitisdita" xml:lang="en-us">
+ <title>Test Bug 3114411</title>
+ <conbody>
+  
+ <!-- Test Scenario 1: In the generated CHM file, check that keyref works-->  
+  <p>Click the included link <term keyref="key_specialize">Click Here</term> to check whether keyref navigates to the expected page  to verify sourceforge bug 3114411.</p>
+  
+ </conbody>
+</concept>

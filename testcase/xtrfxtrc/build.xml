@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="xtrfxtrc" default="all" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.xtrfxtrc}"/>
+   <property name="test.name" value="xtrfxtrc"/>
    <property environment="env"/>
    <property name="args.logdir" value="log"/>
    <property name="dita.extname" value=".xml"/>
    <import file="xtrfxtrc_xhtml_12.xml"/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="all" depends="xtrfxtrc2xhtml"/>
 </project>

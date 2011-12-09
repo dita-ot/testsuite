@@ -1,0 +1,2 @@
+change fo/Customization/build.properties
+transtype=fo;ah

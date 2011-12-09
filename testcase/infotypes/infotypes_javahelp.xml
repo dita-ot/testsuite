@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="infotypes_javahelp" default="infotypes2javahelp" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="infotypes2javahelp" if="run.javahelp" unless="skip.javahelp">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input"
-                location="${testdata.dir}/OldcasesTest/infotypes/infotypes.ditamap"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}/temp/OldcasesTest/infotypes/javahelp"/>
-      <property name="output.dir"
-                location="${dita.dir}/testresult/OldcasesTest/infotypes/javahelp"/>
-      <property name="transtype" value="javahelp"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.infotypes_javahelp}"/>
+   <property name="test.name" value="infotypes"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="infotypes2javahelp" if="run.javahelp" unless="skip.javahelp">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/infotypes.ditamap"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="javahelp"/>
+      </ant>
+   </target>
 </project>

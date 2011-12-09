@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="unknowforeign_specialize" default="specialize" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="dita.temp.dir" location="${dita.dir}/temp"/>
-  <target name="specialize" if="run.specialize" unless="skip.specialize">
-    <xslt basedir="${dita.dir}/testdata/unknownforeign/specialize"
-          destdir="${dita.dir}/testresult/unknownforeign/specialize"
-          style="${dita.dir}/xsl/specialize.xsl"
-          extension=".xml"/>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.unknowforeign_specialize}"/>
+   <property name="test.name" value="unknownforeign"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <property name="dita.temp.dir" location="${dita.dir}/temp"/>
+   <target name="specialize" if="run.specialize" unless="skip.specialize">
+      <xslt basedir="${test.basedir}/src/specialize"
+            destdir="${dita.dir}/testresult/${test.name}/specialize"
+            style="${dita.dir}/xsl/specialize.xsl"
+            extension=".xml"/>
+   </target>
 </project>

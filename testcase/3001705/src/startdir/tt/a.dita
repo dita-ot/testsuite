@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.2 Concept//EN" "file:/C:\20100510\DITA-OT1.5.1\dtd\technicalContent\dtd\concept.dtd">
+<concept id="birdfood" xml:lang="en-us">
+    <title>Bird Food</title>
+    <shortdesc>Bird food is tailor made for every bird.</shortdesc>
+    <conbody>
+        <p conkeyref="birdfoodkey/fooddesc">Bird food is an important element in the well being of
+            birds.</p>
+	  <p>
+            <xref keyref="birdfoodkey2"/>
+        </p>
+    </conbody>
+</concept>
+

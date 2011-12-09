@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE topic PUBLIC "-//IBM//DTD DITA Topic//EN"
+ "../dtd/topic.dtd">
+<topic id="two" xml:lang="en-us">
+<title>second  <ph><indexterm>second div</indexterm></ph> div</title>
+<body><?Pub Caret1?>
+<p>this is the second one.</p>
+</body>
+</topic>
+<?Pub *0000000347?>

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_86210510C9FA44DBAED49371D619C236"> 
+  <title>Context search support</title> 
+  <shortdesc>Context search enables you to search for character strings within
+	 main dialog boxes and Device Navigator. You can also look for sub-folders and
+	 devices within folders in Device Navigator. 
+  </shortdesc> 
+  <refbody> 
+	 <section id="section_53107B4B0EE348B1AD1A22D6A93B08AB"> 
+		<p>You can use context search in the following: 
+		</p> 
+		<ul id="ul_C9E74F3EC1D2433A9749226FC79069D8"> 
+		  <li id="li_924BCA8A6D65489C86D0D0B87015A955">Device Navigato 
+		  </li> 
+		  <li id="li_4E9D5A888CA44A3A9A91DA7A7079F069">Function windows 
+			 <ul id="ul_332D3B65ADBC4109B312CC21C446A6A6"> 
+				<li id="li_ADEFA78E3A7F45DBB6076631B937A695">History window 
+				</li> 
+				<li id="li_379A664B2C424AE1B01CF83A81D2D1DB">Device List window 
+				</li> 
+				<li id="li_6E39A994A0CB4DDEBDB6EAAE540878D6">Inspection Memo window
+				  
+				</li> 
+				<li id="li_8E07C37A296047F3BF3EF178E5CBC974">Parts window 
+				</li> 
+				<li id="li_19D42D42023D45CCBAA83C2CED02BDC5">Inspection Schedule
+				  window 
+				</li> 
+				<li id="li_EA38424A90024B258DA09E1D8697D285">Document Link window 
+				</li> 
+				<li id="li_F339AC6521A6466DA4AA9038970ED234">Parameter List window 
+				</li> 
+				<li id="li_1B4CAC71665449238BC76FC945219B58">PLUG-IN Applications
+				  window 
+				</li> 
+				<li id="li_D1A2212F78CE411FA1FFCE1FB3E560A5">Calibration Data
+				  window 
+				</li> 
+				<li id="li_9FE4E587697C47DD8DD76C8811213338">Dialog boxes 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li id="li_E3C5BD3DFA1B416C8BD0CE81D64F00C6">User Management 
+			 <ul id="ul_1836C6EDB8BF407C90A9EF0B46CD9B15"> 
+				<li id="li_414CB0BCD9444984B6D7A662E721B2BF">Service Code List 
+				</li> 
+				<li id="li_0768C661DA2E49A0B83777FA608696AB">Reference Code List 
+				</li> 
+				<li id="li_A6F4DA50E9DE453A86AC4665734258A7">Register Parts code 
+				</li> 
+				<li id="li_1C689FBD1F924216BF00B360394B9791">Document List 
+				</li> 
+				<li id="li_35729E47E3DE45C095DBCE17AE5F6DEE">PLUG-IN Application
+				  List 
+				</li> 
+				<li id="li_0B379190E2B144F5A52B3F46C6061410">Class List 
+				</li> 
+				<li id="li_69D7D500CA344D5CAAADBA1A2EF5D0D0">Device Icon List 
+				</li> 
+				<li id="li_ECDF4C4B783A4E21AD32DE35E1ADF644">Assignment of Device
+				  Icons 
+				</li> 
+				<li id="li_994DF94524E947CDB5EA41FD462CF176">Approve Inspection
+				  Memo 
+				</li> 
+				<li id="li_70B8188412B24BB3BDBDE58F9F7784E4">Approve Inspection
+				  Schedule 
+				</li> 
+				<li id="li_321617363B63404484484CEDD273EDD3">Approve Calibration
+				  Data 
+				</li> 
+			 </ul> 
+		  </li> 
+		</ul>
+		<p>Context search cannot be used for dialog boxes activated within main
+		  dialog boxes.
+		</p> 
+	 </section> 
+  </refbody>
+</reference>

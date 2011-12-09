@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- (c) Copyright IBM Corp.-->
+	<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.2 Map//EN" "C:/DITA-OT1.5/sunjdk/dtd/subjectScheme/dtd/classifyMap.dtd">
+<map title="test for CRLF" xml:lang="en_US">
+  <topicref href="test1.dita"/>
+</map>

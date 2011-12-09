@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA 1.1 Topic//EN" "topic.dtd">
+<topic id="topic_ja_1">
+ 	<title>Table column test</title>
+    <body>
+            <table>
+                <title>Table align sample</title>
+				<tgroup cols="3">
+                    <colspec colname="col1" colnum="1" colwidth="1*" align="left" />
+                    <colspec colname="col2" colnum="2" colwidth="1*" align="right"/>
+                    <colspec colname="col3" colnum="3" colwidth="1*" align="char" char="." />
+    				<tbody>
+    					<row>
+    						<entry>
+                                a1
+    						</entry>
+    						<entry morerows="3">
+                                b1
+    						</entry>
+    						<entry>
+                                1.0
+    						</entry>
+    					</row>
+    					<row>
+    						<entry>
+                                a2
+    						</entry>
+    						<entry>
+                                0.0001
+    						</entry>
+    					</row>
+    					<row>
+    						<entry morerows="1">
+                                a3
+    						</entry>
+    						<entry>
+                                111.01
+    						</entry>
+    					</row>
+    					<row>
+    						<entry>
+                                12.34
+    						</entry>
+    					</row>
+                    </tbody>
+                </tgroup>
+            </table>
+    </body>
+</topic>

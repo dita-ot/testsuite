@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="1.5.3" default="1.5.3">
-  <property name="dita.dir" location="${basedir}/.."/>
+  <property name="dita.dir" location="${test.basedir}/.."/>
   <target name="1.5.3">
-    <subant>
-      <fileset dir="${dita.dir}${file.separator}testcase">
+    <subant inheritall="true">
+      <fileset dir="${dita.dir}/testcase">
         <!--M2-->
         <include name="3178361/build.xml"/>
         <include name="3189883/build.xml"/>

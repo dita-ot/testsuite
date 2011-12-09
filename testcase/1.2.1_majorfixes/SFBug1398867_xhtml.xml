@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="SFBug1398867" default="SFBug1398867" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="dita.temp.dir" location="${dita.dir}/temp"/>
-  <import file="${dita.dir}/build.xml"/>
-  <target name="SFBug1398867" if="run.xhtml" unless="skip.xhtml">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${dita.dir}/testdata/ampersands_href.dita"/>
-      <property name="output.dir" location="${dita.dir}/testresult/ampersands/xhtml"/>
-      <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/ampersands/xhtml"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.SFBug1398867}"/>
+   <property name="test.name" value="1.2.1_majorfixes"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <property name="dita.temp.dir" location="${dita.dir}/temp"/>
+   <import file="${dita.dir}/build.xml"/>
+   <target name="SFBug1398867" if="run.xhtml" unless="skip.xhtml">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/ampersands_href.dita"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
 </project>

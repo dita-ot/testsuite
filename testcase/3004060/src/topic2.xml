@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "../../dtd/technicalContent/dtd/concept.dtd">
+<concept id="topic2">
+	<title>topic2</title>
+	<conbody>
+	 <section id="s1"><title id="t1">section 1</title><p>this is text is section 1.</p></section>
+	  <section id="s2"><title id="t2">section 2</title><p>this is text is section 1.</p></section>
+	</conbody>
+</concept>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->
+<project name="OdtFlagging_all" default="all" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.OdtFlagging_all}"/>
+   <property name="test.name" value="Feature_Odt_Flagging"/>
+   <property name="currentdir" location="${test.basedir}/Basic_Flow"/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="all">
+      <echo message="${currentdir}" level="info"/>
+      <sequential>
+         <subant inheritall="true">
+            <fileset dir="${currentdir}" casesensitive="no">
+               <include name="**/TC_*.xml"/>
+            </fileset>
+         </subant>
+      </sequential>
+   </target>
+</project>

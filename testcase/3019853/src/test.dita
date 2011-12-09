@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "file:/C:/DITAOT-1.5/DITA-OT1.5.21/dtd/technicalContent/dtd/topic.dtd">
+<topic id="test" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <title>test</title>
+    <body>
+        <image href="1.JPG" alt="111"> </image>
+        <data>I am data under body</data>
+        <data-about>
+            <data>I am data under data-about</data>    
+        </data-about>
+        <draft-comment>
+            I am draft-comment under body
+            <p>I am p under draft-comment</p>
+        </draft-comment>
+        <unknown>test</unknown>
+        
+        <required-cleanup>I am required-cleanup</required-cleanup>
+        <p>
+            <fn>
+                I am fn under p 
+                <b>I am b under fn</b>
+            </fn>
+        </p>
+        <p>
+            <indexterm>
+                I am indexterm under p
+                <option>
+                    I am option under indexterm
+                </option>
+            </indexterm>
+            <foreign>
+                I am foreign under p
+            </foreign>
+            <state name="state" value="I am state"></state>
+            <boolean state="no"></boolean>
+            <uicontrol>I am uicontrol under p</uicontrol>
+            <menucascade>
+                <uicontrol>I am uicontrol under menucascade</uicontrol>
+            </menucascade>
+            
+        </p>
+        <foreign>
+            I am foreign under body
+        </foreign>
+        
+    </body>
+</topic>
+

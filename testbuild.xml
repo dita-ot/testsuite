@@ -2,11 +2,13 @@
 <!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->
 <project name="ditaot_all" default="run" basedir=".">
   
-  <property name="testcase.dir" location="${basedir}/testcase"/>
+  <property name="test.base.dir" location="${basedir}/testcase"/>
+  <property name="act.base.dir" location="${basedir}/testresult"/>
+  <property name="tmp.base.dir" location="${basedir}/temp"/>
   <property name="dita.dir" location="${basedir}"/>
   
   <target name="all">
-    <echo message="${testcase.dir}"/>
+    <echo message="${test.base.dir}"/>
     <property name="run.preprocess" value="true"/>
     <property name="run.xhtml" value="true"/>
     <property name="run.eclipsehelp" value="true"/>
@@ -25,10 +27,10 @@
   </target>
   
   <target name="run">
-    <echo message="${testcase.dir}"/>
+    <echo message="${test.base.dir}"/>
     <sequential>
       <subant inheritall="true">
-        <fileset dir="${testcase.dir}" includes="*/build.xml">
+        <fileset dir="${test.base.dir}" includes="*/build.xml">
           <exclude name="langref/*"/>
         </fileset>
       </subant>

@@ -12,7 +12,11 @@ def main(id, input, types):
     try:
         case.write("""<?xml version="1.0" encoding="UTF-8"?>
 <project name="%(id)s" default="all">
+  <dirname property="test.basedir" file="${ant.file.%(id)s}"/>
+  <property name="test.name" value="ant.project.name"/>
   <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+  <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
   <target name="all" depends="%(default)s"/>\n""" % { "id": id, "default": ", ".join([id + "." + t for t in types]) })
         for t in types:
             __vals = { "id": id, "type": t, "input": input }
@@ -23,15 +27,15 @@ def main(id, input, types):
       <target name="preprocess"/>\n""")
             else:
                 case.write("""      <property name="transtype" value="%(type)s"/>\n""" % __vals)
-            case.write("""      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/%(input)s"/>
-      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/%(type)s"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/%(type)s"/>
+            case.write("""      <property name="args.input" location="${test.basedir}/src/%(input)s"/>
+      <property name="output.dir" location="${result.dir}/%(type)s"/>
+      <property name="dita.temp.dir" location="${temp.dir}/%(type)s"/>
     </ant>
   </target>\n""" % __vals)
         case.write("""</project>""" % __vals)
     finally:
         case.close
-    datadir = os.path.join(os.path.abspath("."), "testdata", id)
+    datadir = os.path.join(os.path.abspath("."), "testcase", id, "src")
     if not os.path.exists(datadir):
         os.makedirs(datadir)
 

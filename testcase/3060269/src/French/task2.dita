@@ -1,0 +1,21 @@
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA 1.2 Task//EN"  "../../dtd/technicalContent/dtd/task.dtd">
+<task id="task" xml:lang="fr-FR">
+    <title>This is a task2 Tâches associées</title>
+    <taskbody>
+      
+        <steps>
+            <step>
+                <cmd>This is a cmd</cmd>
+                <tutorialinfo platform="linux" rev="1.2">This is a tutor
+                    <p>
+                        This is p tag  
+                        <note rev="1.2">This is note.</note>
+                    </p>
+                </tutorialinfo>
+            </step>
+       
+        </steps>
+        
+    </taskbody>
+
+</task>

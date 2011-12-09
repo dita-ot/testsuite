@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "file:/C:/DITAOT-1.5/SAXONIBMJDK/dtd/technicalContent/dtd/topic.dtd">
+<topic id="Topic1" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <title>Topic Title</title>
+    <body>
+        <image href="img/Water lilies.jpg"/>
+    </body>
+</topic>
+

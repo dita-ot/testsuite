@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+
+<task id="TestTask" xml:lang="en-us">
+   <title> Click this link to verify the bug.</title>
+   
+   <taskbody>
+      <context> 
+        
+         <p><i>Test Scenario 1: Incorrect conkeyref value and an error is expected below. Pease check error message in DITA-OT log file.</i></p>
+         <p conkeyref="error-key#resource-task/resource-p"/>
+         <!--The expected error message is as below:
+         [DOTJ046E][ERROR] Conkeyref="error-key#resource-task/resource-p" can not be resolved because it does not contain a key or the key is not defined. Use the conref as fallback if it exist. Please make sure the key name does exist. 
+        --> 
+         
+         <p><i>Test Scenario 2: The conkeyref value accepts values such as "key/id" and NO error is expected.</i></p>
+          <p conkeyref="test-key/resource-p"/>
+         
+         <p><i>Test Scenario 3: Correct conref value and NO error is expected.</i></p>
+          <p conref="resource.xml#resource-task/resource-p"/>
+         
+      </context>
+   </taskbody>
+</task>

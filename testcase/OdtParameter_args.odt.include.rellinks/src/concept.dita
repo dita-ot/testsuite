@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.2 Concept//EN" "../../dtd/technicalContent/dtd/concept.dtd">
+<concept id="concept" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <title>Concept Title</title>
+    <conbody>
+         <conbodydiv >
+             <section >Concept Section.</section>
+        </conbodydiv>
+    </conbody>
+    <related-links>
+        <link href="topic1.dita" format="dita" type="topic"><linktext>Testing</linktext></link>
+    </related-links>
+</concept>
+

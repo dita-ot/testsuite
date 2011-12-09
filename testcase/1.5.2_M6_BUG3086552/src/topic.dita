@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Test Scenario: Set public id to SYSTEM and use relative path of topic.dtd. Check out that no error message like below:
+        [DOTJ012F][FATAL] Failed to parse the input file 'topic.dita' due to below exception. Please correct the input base on the exception message.:C:\TEST\dtd\technicalContent\dtd\topic.dtd (The system cannot find the path specified.)
+-->
+<!DOCTYPE topic SYSTEM "../../../dtd/technicalContent/dtd/topic.dtd">
+
+<topic id="MyTopic" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <title>Verify sourceforge bug 3086552 </title>
+</topic>

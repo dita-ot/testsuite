@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Repro DITA-OT Issue 2815485" xml:lang="en">
+	<topicref href="has_prolog_indexterm.xml"/>
+               <topicref href="781.swf" format="swf" navtitle="swf"/>
+</map>

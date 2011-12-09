@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://reallysi.com/doctypes/dita/concept">
+<concept
+  id="topicid">
+  <title>DTD Markup Guide and Reference</title>
+  <conbody>
+    <p>This document tests a document organization that is typical of DTD guide and reference
+      publications.</p>
+  </conbody>
+</concept>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2009, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<map id="test" chunk="by-topic" collection-type="sequence" xml:lang="en-us"><title>Ditabase Test Chunking</title>
+<topicref href="w2560-topic.dita" collection-type="sequence" 
+navtitle="Test Nested ditabase with chunking"></topicref>
+<topicref href="w2560a.dita"></topicref>
+<topicref href="w2560b.dita"></topicref>
+<topicref href="w2560c.dita"></topicref>
+<topicref href="w2560d.dita"></topicref><?Pub Caret -1?>
+</map>
+<?Pub *0000000556?>

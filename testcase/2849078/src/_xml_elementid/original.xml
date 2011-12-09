@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "file:/C:/DITA-OT1.5_full_easy_install_M19_bin_0902/DITA-OT1.5/dtd/technicalContent/dtd/task.dtd">
+<task id="x">
+    <title>ORIGINAL</title>
+    <taskbody>
+        <steps>
+            <step id="a">
+                <cmd>A<xref keyref="original/c">ORIGINAL C</xref></cmd>
+            </step>
+            <step id="b">
+                <cmd>B</cmd>
+            </step>
+            <step id="c">
+                <cmd>C</cmd>
+            </step>
+        </steps>
+    </taskbody>
+    </task>

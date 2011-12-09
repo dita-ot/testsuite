@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2010, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map chunk="to-content" title="Chunk test" xml:lang="en-us">
+<topicref href="P022178main.dita"></topicref>
+<reltable>
+<relheader>
+<relcolspec linking="targetonly" scope="external" type="reference">
+</relcolspec>
+<relcolspec>
+<!--Information Center topic-->
+</relcolspec>
+</relheader><?Pub Caret -2?>
+<relrow>
+<relcell>
+<topicref format="html" href="http://metadita.org/music/"
+navtitle="metadita!"></topicref>
+</relcell>
+<relcell>
+<topicref href="P022178other.dita"></topicref>
+</relcell>
+</relrow>
+</reltable>
+</map>
+<?Pub *0000000736?>

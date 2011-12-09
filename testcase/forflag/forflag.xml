@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="forflag2xhml" default="forflag2xhtml" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="forflag2xhtml" if="run.xhtml" unless="skip.xhtml">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${dita.dir}/testdata/forflag/outcase/index.ditamap"/>
-      <property name="dita.input.valfile"
-                location="${dita.dir}/testdata/forflag/filter/flag.ditaval"/>
-      <property name="output.dir" location="${dita.dir}/testresult/forflag/outcase/xhtml"/>
-      <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/forflag/outcase/xhtml"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.forflag2xhml}"/>
+   <property name="test.name" value="forflag"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="forflag2xhtml" if="run.xhtml" unless="skip.xhtml">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/outcase/index.ditamap"/>
+         <property name="dita.input.valfile" location="${test.basedir}/src/filter/flag.ditaval"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
 </project>

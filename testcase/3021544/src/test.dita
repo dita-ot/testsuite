@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corporation-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+
+<topic id="topic1" xml:lang="en-us">
+<title>H1</title>
+<body>
+	<section><title>H2</title> This section title is H2.
+	</section>
+	<example><title>H2</title>This example title is H2.
+	<syntaxdiagram frame="none">
+		<title>H3</title>
+		<fragment><title>H3</title>
+ 		<groupchoice><title>H4</title></groupchoice>
+		</fragment>
+	</syntaxdiagram>
+	</example>
+</body>
+<topic id="topic2" xml:lang="en-us">
+<title>H2</title>
+<body>
+	<section><title>H3</title> This section title is H3.
+	</section>
+	<example><title>H3</title>This example title is H3.
+	<syntaxdiagram frame="none">
+		<title>H4</title>
+		<fragment><title>H4</title>
+ 		<groupchoice><title>H5</title></groupchoice>
+		</fragment>
+	</syntaxdiagram>
+	</example>
+</body>
+<topic id="topic3" xml:lang="en-us">
+<title>H3</title>
+<body>
+	<section><title>H4</title> This section title is H4.
+	</section>
+	<example><title>H4</title>This example title is H4.
+	<syntaxdiagram frame="none">
+		<title>H5</title>
+		<fragment><title>H5</title>
+ 		<groupchoice><title>H6</title></groupchoice>
+		</fragment>
+	</syntaxdiagram>
+	</example>
+</body>
+<topic id="topic4" xml:lang="en-us">
+<title>H4</title>
+<body>
+	<section><title>H5</title> This section title is H5.
+	</section>
+	<example><title>H5</title>This example title is H5.
+	</example>
+</body>
+<topic id="topic5" xml:lang="en-us">
+<title>H5</title>
+<body>
+	<section><title>H6</title> This section title is H6.
+	</section>
+	<example><title>H6</title>This example title is H6.
+	<syntaxdiagram frame="none">
+		<title>H6</title>
+		<fragment><title>H6</title>
+ 		<groupchoice><title>H6</title></groupchoice>
+		</fragment>
+	</syntaxdiagram>
+	</example>
+</body>
+<topic id="topic6" xml:lang="en-us">
+<title>H6</title>
+<body>
+	<section><title>H6</title> This section title is H6.
+	</section>
+	<example><title>H6</title>This example title is H6.
+	<syntaxdiagram frame="none">
+		<title>H6</title>
+		<fragment><title>H6</title>
+ 		<groupchoice><title>H6</title></groupchoice>
+		</fragment>
+	</syntaxdiagram>
+	</example>
+</body>
+<topic id="topic7" xml:lang="en-us">
+<title>H6</title>
+<body>
+	<section><title>H6</title> This section title is H6.
+	</section>
+	<example><title>H6</title>This example title is H6.
+	<syntaxdiagram frame="none">
+		<title>H6</title>
+		<fragment><title>H6</title>
+ 		<groupchoice><title>H6</title></groupchoice>
+		</fragment>
+	</syntaxdiagram>
+	</example>
+</body>
+</topic>
+</topic>
+</topic>
+</topic>
+</topic>
+</topic>
+</topic>

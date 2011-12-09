@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Indexterms_filter_issue" default="all" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.Indexterms_filter_issue}"/>
+   <property name="test.name" value="Indexterms_filter_issue"/>
+   <dirname property="currentdir" file="${ant.file.Indexterms_filter_issue}"/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="all">
+      <echo message="${currentdir}" level="info"/>
+      <sequential>
+         <subant inheritall="true">
+            <fileset dir="${currentdir}" includes="SF*.xml"/>
+            <property name="test.name" value="1.2.1_majorfixes"/>
+         </subant>
+      </sequential>
+   </target>
+</project>

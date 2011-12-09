@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="indexbase" default="all" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.indexbase}"/>
+   <property name="test.name" value="indexbase"/>
    <property environment="env"/>
    <property name="args.logdir" value="log"/>
    <property name="dita.extname" value=".xml"/>
@@ -7,6 +9,8 @@
    <import file="indexbase_htmlhelp.xml"/>
    <import file="indexbase_javahelp.xml"/>
    <import file="indexbase_xhtml.xml"/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="all"
            depends="indexbase2eclipsehelp, indexbase2htmlhelp, indexbase2javahelp, indexbase2xhtml"/>
 </project>

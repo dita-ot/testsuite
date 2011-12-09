@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved.
+ -->
+<project name="testcase_build" default="all" basedir=".">
+  <property name="dita.rootdir" location="../.."></property>
+  <!-- revise below here -->
+  <target name="all">
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-areg.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-beby.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-bgbg.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-caes.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-cscz.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-dadk.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-dech.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-dede.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>    
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-elgr.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>    
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-enca.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>    
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-engb.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>    
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-enus.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>    
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-eses.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-etee.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-fifi.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-frbe.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-frca.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-frch.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-frfr.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-heil.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-hrhr.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-huhu.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-isis.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-itch.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-itit.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-jajp.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-kokr.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-ltlt.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-lvlv.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-mkmk.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-next.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-nlbe.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-nlnl.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-nono.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-plpl.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-ptbr.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-ptpt.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-roro.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-ruru.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-sksk.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-slsi.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-srsp.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-svse.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>    
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-thth.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-trtr.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>    
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-ukua.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-zhcn.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+    <ant antfile="${dita.rootdir}${file.separator}conductor.xml" dir="${dita.rootdir}" target="init">
+      <property name="args.input"
+        value="${test.basedir}${file.separator}lang-zhtw.dita"/>
+      <property name="output.dir"
+        value="${dita.rootdir}${file.separator}out${file.separator}lang${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.extname" value=".dita"/>
+      <property name="dita.input.valfile" value="${test.basedir}${file.separator}lang-ref.ditaval"/>
+    </ant>
+  </target>
+</project>

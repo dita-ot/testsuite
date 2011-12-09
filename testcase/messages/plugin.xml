@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="dita.xsl.messages">
+   <feature extension="dita.xsl.messages" value="test_message.xml" type="file"/>
+</plugin>

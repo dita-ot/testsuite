@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/map.dtd">
+<map title="Using keyref to provide context" collection-type="unordered">
+    <topicref href="keys_over.dita"/>
+    <topicref href="keys_usecase.dita">
+        <topicref href="reuse_inhibit.dita">
+            <topicref href="key_generic.dita"/>
+            <topicref href="multi_context.dita"/>
+        </topicref>
+    </topicref>
+    <topicref href="remove_inhibit.dita"/>
+    <topicref href="context_xmp.dita"/>
+    <topicref href="summary.dita"/>
+</map>

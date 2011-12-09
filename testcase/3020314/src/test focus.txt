@@ -1,0 +1,6 @@
+indexterm not show in navtitle.
+
+
+
+
+Transtype:Eclipsehelp/htmlhelp

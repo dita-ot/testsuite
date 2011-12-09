@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="2811980" default="2811980" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.2811980}"/>
+   <property name="test.name" value="2811980"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <dirname property="base.dir" file="${ant.file.2811980}"/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target if="run.pdf" unless="skip.pdf" name="2811980">
+      <ant antfile="${dita.dir}/build.xml" target="init">
+         <property name="args.input" location="${base.dir}/src/map1.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="pdf"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="args.logdir" location="${test.basedir}/tmp/pdf"/>
+         <property name="clean.temp" value="no"/>
+      </ant>
+   </target>
+</project>

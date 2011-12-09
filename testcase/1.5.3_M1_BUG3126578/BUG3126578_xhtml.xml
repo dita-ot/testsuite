@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="BUG3126578_xhtml" default="BUG3126578" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.BUG3126578_xhtml}"/>
+   <property name="test.name" value="1.5.3_M1_BUG3126578"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="BUG3126578">
+      <ant antfile="${dita.dir}/build.xml" target="init"><!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs --><property name="args.input" location="${test.basedir}/src/test.ditamap"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="clean.temp" value="no"/>
+         <property name="args.cssroot" location="${test.basedir}/src/"/>
+         <property name="args.css" value="custom.css"/>
+         <property name="args.copycss" value="yes"/>
+      </ant>
+   </target>
+</project>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2009, v.4002-->
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN"
+ "ditabase.dtd">
+<?Pub Inc?>
+<dita>
+<reference id="w2560-root" xml:lang="en-us">
+<title>Test nested ditabase with chunking</title>
+<shortdesc>This is the root topic for the ditabase thing</shortdesc>
+<refbody>
+<section>content!!!!</section>
+</refbody>
+<reference id="w2560-nest0" xml:lang="en-us">
+<title>Nested ditabase: Test a simple topic</title>
+<shortdesc>This tests simple nested reference, nothing special</shortdesc>
+<refbody>
+<section>content!!!!</section>
+</refbody>
+</reference>
+<reference id="w2560-nest1" xml:lang="en-us">
+<title>Nested ditabase: <ph>Test a phrase</ph> in the title</title>
+<shortdesc>This tests a phrase inside of a title</shortdesc>
+<refbody>
+<section>content!!!!</section>
+</refbody>
+</reference>
+<reference id="w2560-nest2" xml:lang="en-us">
+<title>Nested ditabase: <ph>Test a phrase <indexterm>Test an indexterm</indexterm></ph></title>
+<shortdesc>This tests a phrase and an indexterm inside of a title</shortdesc>
+<refbody>
+<section>content!!!!</section>
+</refbody>
+</reference>
+<reference id="w2560-nest3" xml:lang="en-us">
+<title>Nested ditabase: <ph>Test a phrase <draft-comment>Test draft
+content</draft-comment></ph></title><?Pub Caret 17?>
+<shortdesc>This tests a phrase and a draft-comment inside of a title</shortdesc>
+<refbody>
+<section>content!!!!</section>
+</refbody>
+</reference>
+</reference>
+</dita>
+<?Pub *0000001507?>

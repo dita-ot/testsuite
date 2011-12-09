@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="installguide_htmlhelp" default="installguide2htmlhelp" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="installguide2htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input"
-                location="${testdata.dir}/installguide/installing-ditaot.ditamap"/>
-      <property name="output.dir" location="${dita.dir}/testresult/installguide/htmlhelp"/>
-      <property name="transtype" value="htmlhelp"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/installguide/htmlhelp"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.installguide_htmlhelp}"/>
+   <property name="test.name" value="installguide"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="installguide2htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/installing-ditaot.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="htmlhelp"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
 </project>

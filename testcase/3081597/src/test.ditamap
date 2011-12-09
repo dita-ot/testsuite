@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+
+<map id="TestDoc" title="BUG  3081597">
+   
+   <keydef keys="test-key" href="resource.xml#resource-task" />
+
+   <keydef keys="error-key" href="resource.xml" />
+   
+   <topicref href="task.xml" type="task" />
+
+</map>

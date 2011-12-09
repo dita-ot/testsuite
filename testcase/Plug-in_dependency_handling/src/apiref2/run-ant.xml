@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ | (C) Copyright IBM Corporation 2005 - 2006. All Rights Reserved.
+ *-->
+<project name="apiref2" default="all" basedir="..\..">
+
+  <import file="${test.basedir}${file.separator}conductor.xml"/>
+
+	<target name="all"
+        description="build all Java API Reference output"
+        depends="javarefSample2xhtml"/>
+
+    <!-- sample content targets -->
+	<target name="javarefSample2xhtml"
+        description="build HTML for the Java API Reference samples"
+        depends="use-init">
+      <mkdir dir="${test.basedir}${file.separator}plugins${file.separator}apiref2${file.separator}out" />
+      <mkdir dir="${test.basedir}${file.separator}plugins${file.separator}apiref2${file.separator}out${file.separator}sample" />
+
+      <antcall target="javaref2xhtml">
+		<param name="dita.extname" value=".dita"/>
+		<param name="transtype"    value="xhtml"/>
+		<param name="args.input"
+            value="${test.basedir}${file.separator}plugins${file.separator}apiref2${file.separator}sample${file.separator}javaPackages1.ditamap"/>
+		<param name="output.dir"
+            value="${test.basedir}${file.separator}plugins${file.separator}apiref2${file.separator}out${file.separator}sample"/>
+      </antcall>
+
+      <copy file="${test.basedir}${file.separator}plugins${file.separator}apiref2${file.separator}sample${file.separator}frameset.html"
+          todir="${test.basedir}${file.separator}plugins${file.separator}apiref2${file.separator}out${file.separator}sample"/>
+	</target>
+
+	<target name="apiref2SampleClean"
+        description="Delete the sample output files from the build">
+      <delete dir="${test.basedir}${file.separator}plugins${file.separator}apiref2${file.separator}out${file.separator}sample" />
+	</target>
+
+    <!-- documentation targets -->
+	<target name="apiref2Doc2xhtml"
+        description="build the HTML documentation for the specialization"
+        depends="use-init">
+      <mkdir dir="${test.basedir}${file.separator}plugins${file.separator}apiref2${file.separator}out" />
+      <antcall target="dita2xhtml">
+		<param name="args.input"
+            value="${test.basedir}${file.separator}plugins${file.separator}apiref2${file.separator}doc${file.separator}apiref2Doc.ditamap"/>
+		<param name="output.dir"
+            value="${test.basedir}${file.separator}plugins${file.separator}apiref2${file.separator}out${file.separator}doc"/>
+		<param name="dita.extname"
+            value=".dita"/>
+      </antcall>
+	</target>
+
+	<target name="apiref2DocClean"
+        description="Delete the documentation output files from the build">
+      <delete dir="${test.basedir}${file.separator}plugins${file.separator}apiref2${file.separator}out${file.separator}doc" />
+	</target>
+</project>

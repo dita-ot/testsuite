@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2009, v.4002-->
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN"
+ "..\..\dita\dtd\bookmap.dtd">
+<?Pub Sty _display FontColor="red"?>
+<bookmap chunk="to-content" xml:lang="en-us">
+<booktitle>
+<mainbooktitle>My little book</mainbooktitle>
+</booktitle>
+<bookmeta>
+<bookrights><copyrfirst><year>1994</year></copyrfirst><copyrlast><year>2006</year>
+</copyrlast><bookowner></bookowner></bookrights>
+</bookmeta>
+<chapter href="P021823topic.dita"></chapter>
+</bookmap><?Pub Caret -3?>
+<?Pub *0000000571?>

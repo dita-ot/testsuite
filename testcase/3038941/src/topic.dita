@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="m1" xml:lang="en-us">
+<title>IFP</title>
+<abstract><shortdesc>shortdesc.</shortdesc><p><xref format="html"
+href="http://www.ibm.com/support/docview.wss?rs=0&amp;uid=swg24027424"
+scope="external">http://www.ibm.com/support/docview.wss?rs=0&amp;uid=swg24027424</xref> -
+corrupted when processed from map</p></abstract>
+<taskbody>
+<context><xref format="html"
+href="http://www.ibm.com/support/docview.wss?rs=0&amp;uid=swg24027424"
+scope="external">http://www.ibm.com/support/docview.wss?rs=0&amp;uid=swg24027424</xref> not
+corrupted</context>
+</taskbody>
+</task>
+

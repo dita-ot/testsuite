@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->
 <project name="CR" default="all" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.CR}"/>
+   <property name="test.name" value="CR"/>
    <dirname property="currentdir" file="${ant.file.CR}"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="all">
       <echo message="${currentdir}" level="info"/>
       <sequential>
          <subant inheritall="true">
             <fileset dir="${currentdir}" includes="${ant.project.name}_*.xml"/>
+            <property name="test.name" value="CR"/>
          </subant>
       </sequential>
    </target>

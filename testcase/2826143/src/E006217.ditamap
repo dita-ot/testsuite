@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2009, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map audience="all" locktitle="yes" otherprops="test"
+title="Test inheritables" xml:lang="en-us">
+<topicref href="E006217mappull03main.dita" linking="none"
+navtitle="make this the first in the map" toc="no"></topicref>
+<topicref audience="me" collection-type="family"
+href="E006217mappull01.dita" platform="parento">
+<topicmeta>
+<linktext>Link: audience=me, platform=parento, otherprops=test</linktext>
+<shortdesc>Shortdesc specified in the map 1</shortdesc>
+</topicmeta>
+<topicref audience="you" href="E006217mappull02.dita"
+navtitle="Link: otherprops=test, platform=parento, audience=you, product=spork-o-matic"
+product="Spork-o-matic">
+<topicmeta>
+<linktext>Link: audience=you, platform=parento, product=spork-o-matic,
+otherprops=test</linktext>
+<shortdesc>Shortdesc specified in the map 2</shortdesc>
+</topicmeta>
+</topicref>
+<topicref audience="us" href="E006217mappull03main.dita"
+navtitle="Link: audience=us, platform=parento, product=fish, otherprops=test"
+product="fish">
+<topicmeta>
+<linktext>Link: audience=us, platform=parento, product=fish, otherprops=test</linktext>
+<shortdesc>Shortdesc specified in the map 3</shortdesc>
+</topicmeta>
+</topicref>
+<topicref audience="them" href="E006217mappull04.dita"
+navtitle="audience=them, platform=parento, otherprops=test">
+<topicmeta>
+<linktext>Link: audience=them, platform=parento, otherprops=test</linktext>
+<shortdesc>Shortdesc specified in the map 4</shortdesc>
+</topicmeta>
+</topicref>
+</topicref>
+<reltable platform="rtplat" product="rtprod">
+<relheader>
+<relcolspec></relcolspec>
+<relcolspec platform="rcolplat"></relcolspec>
+</relheader>
+<relrow audience="rowaudience">
+<relcell>
+<topicref href="E006217mappull03main.dita" navtitle="Reltable version!">
+</topicref>
+</relcell>
+<relcell>
+<topicref href="E006217mappull05.dita"
+navtitle="Rellink: audience=rowaudience, platform=rcolplat, product=rtprod, otherprops=test">
+<topicmeta>
+<linktext>Rellink: audience=rowaudience, platform=rcolplat, product=rtprod,
+otherprops=test</linktext>
+<shortdesc>Shortdesc specified in the map 5</shortdesc>
+</topicmeta>
+</topicref>
+</relcell>
+</relrow>
+<relrow audience="rowaud">
+<relcell>
+<topicref href="E006217mappull03main.dita" navtitle="Reltable version!">
+</topicref>
+</relcell>
+<relcell audience="cellaud">
+<topicref href="E006217mappull06.dita"
+navtitle="Rellink: audience=cellaud, platform=rcolplat, product=rtprod, otherprops=test">
+<topicmeta>
+<linktext>Rellink: audience=cellaud, platform=rcolplat, product=rtprod,
+otherprops=test</linktext>
+<shortdesc>Shortdesc specified in the map 6</shortdesc>
+</topicmeta>
+</topicref>
+</relcell>
+</relrow>
+<relrow audience="rowaudience">
+<relcell>
+<topicref href="E006217mappull03main.dita" navtitle="Reltable version!">
+</topicref>
+</relcell>
+<relcell audience="ignore" platform="cellplat">
+<topicref audience="entaud" href="E006217mappull07.dita"
+navtitle="Rellink: audience=entaud, platform=cellplat, product=rtprod, otherprops=test">
+<topicmeta>
+<linktext>Rellink: audience=entaud, platform=cellplat, product=rtprod,
+otherprops=test</linktext>
+<shortdesc>Shortdesc specified in the map 7</shortdesc><?Pub Caret -1?>
+</topicmeta>
+</topicref>
+</relcell>
+</relrow>
+</reltable>
+</map>
+<?Pub *0000003395?>

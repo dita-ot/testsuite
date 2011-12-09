@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="05_htmlhelp" default="052htmlhelp" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="052htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${testdata.dir}/05/05.ditamap"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/05/htmlhelp"/>
-      <property name="output.dir" location="${dita.dir}/testresult/05/htmlhelp"/>
-      <property name="transtype" value="htmlhelp"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.05_htmlhelp}"/>
+   <property name="test.name" value="05"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="052htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/05.ditamap"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="htmlhelp"/>
+      </ant>
+   </target>
 </project>

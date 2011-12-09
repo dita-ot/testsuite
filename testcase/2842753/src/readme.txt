@@ -1,0 +1,1 @@
+we remove the topicAttr.mod declaration in the catalog.xml file

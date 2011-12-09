@@ -1,0 +1,10 @@
+<val>
+	<prop
+		att="product"
+		val="included"
+		action="include" />
+	<prop
+		att="product"
+		val="excluded"
+		action="exclude" />
+</val>

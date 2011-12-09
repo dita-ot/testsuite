@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "..dtd/topic.dtd">
+<topic id="TBUG">
+    <title>Table Bug</title>
+
+    <shortdesc>
+        Demo DITA topic to show table-within-table span problem.
+    </shortdesc>
+
+    <body>
+
+        <table
+            outputclass="process_parameter_table">
+            <tgroup cols="3">
+                <colspec colname="start" />
+                <colspec colname="middle" />
+                <colspec colname="end" align="right" />
+
+                <tbody>
+
+                    <row>
+                        <entry>Upper left</entry>
+                        <entry>Upper middle</entry>
+                        <entry>Upper right</entry>
+                    </row>
+                    <row>
+                        <entry /><!-- empty cell -->
+                        <entry namest="middle" nameend="end">
+                            <p>
+                                Cell that spans two columns and embeds
+                                another table
+                            </p>
+                            <p>
+                                <table>
+                                    <tgroup cols="2">
+                                        <tbody>
+                                            <row>
+                                                <entry>Item 1</entry>
+                                                <entry>
+                                                    Description of 1
+                                                </entry>
+                                            </row>
+                                            <row>
+                                                <entry>Item 2</entry>
+                                                <entry>
+                                                    Description of 2
+                                                </entry>
+                                            </row>
+                                            <row>
+                                                <entry>Item 3</entry>
+                                                <entry>
+                                                    Description of 3
+                                                </entry>
+                                            </row>
+                                        </tbody>
+                                    </tgroup>
+                                </table>
+                            </p>
+                            <p>Summary paragraph</p>
+                        </entry>
+                    </row>
+
+                    <row>
+                        <entry>Upper left, Round 2</entry>
+                        <entry>Upper middle, Round 2</entry>
+                        <entry>Upper right, Round 2</entry>
+                    </row>
+                    <row>
+                        <entry /><!-- empty cell -->
+                        <entry namest="middle" nameend="end">
+                            <p>
+                                Again spanning, but this time with no
+                                inner table.
+                            </p>
+                        </entry>
+                    </row>
+
+                    <row>
+                        <entry>Upper left, Round 3</entry>
+                        <entry>Upper middle, Round 3</entry>
+                        <entry>Upper right, Round 3</entry>
+                    </row>
+                    <row>
+                        <entry /><!-- empty cell -->
+                        <entry namest="middle" nameend="end">
+                            <p>
+                                Spanning once more, again with no inner
+                                table.
+                            </p>
+                        </entry>
+                    </row>
+
+                </tbody>
+            </tgroup>
+        </table>
+
+    </body>
+</topic>

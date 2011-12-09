@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="BUG3065853_PDF" default="BUG3065853" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.BUG3065853_PDF}"/>
+   <property name="test.name" value="1.5.2_M5_BUG3065853"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="BUG3065853">
+      <ant antfile="${dita.dir}/build.xml" target="init"><!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs --><property name="args.input" location="${test.basedir}/src/test.dita"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="pdf"/>
+         <property name="clean.temp" value="no"/>
+      </ant>
+   </target>
+</project>

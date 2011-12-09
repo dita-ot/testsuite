@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "file:/C:/DitaOT-1.5/DITA-OT1.5.1/dtd/technicalContent/dtd/topic.dtd">
+<topic id="mytopicfile" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <title>This is mytopic file</title>
+    <body>
+        <p>
+        <xref keyref="mykey1">DITA Open Toolkit Project Home</xref>
+        </p>
+    </body>
+</topic>

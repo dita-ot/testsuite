@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Arbortext, Inc., 1988-2006, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="mappull01" xml:lang="en-us">
+<title>Test file for mappull 01</title>
+<abstract><shortdesc>Use this test to discover how well attributes are inherited
+in mappull. 3 shortdescs! (part 1)</shortdesc> Here is information that should
+NOT be part of the short description! <shortdesc>Now the short description
+continues. (part 2)</shortdesc><shortdesc>And, the short desc finishes. (part
+3)<?Pub Caret?></shortdesc></abstract>
+<conbody></conbody>
+</concept>
+<?Pub *0000000640?>

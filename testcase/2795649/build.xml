@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="2795649" default="all">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="all" depends="2795649.pdf"/>
-  <target name="2795649.pdf" if="run.pdf" unless="skip.pdf">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="transtype" value="pdf"/>
-      <property name="args.input" location="${dita.dir}/testdata/${ant.project.name}/test.ditamap"/>
-      <property name="output.dir" location="${dita.dir}/testresult/${ant.project.name}/pdf"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/${ant.project.name}/pdf"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.2795649}"/>
+   <property name="test.name" value="2795649"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="all" depends="2795649.pdf"/>
+   <target name="2795649.pdf" if="run.pdf" unless="skip.pdf">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="transtype" value="pdf"/>
+         <property name="args.input" location="${test.basedir}/src/test.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
 </project>

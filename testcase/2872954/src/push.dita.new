@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA 1.2 Task//EN" "file:/C:/20091010/DITA-OT1.5/dtd/technicalContent/dtd/task.dtd">
+<task id="x">
+    <title>push title</title>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>B.1</cmd>
+            </step>
+            <step>
+                <cmd/>
+            </step>
+        </steps>
+    </taskbody>
+    <task id="y"  conref="default.dita#x" conaction="pushreplace">
+        <title>push title</title>
+        <taskbody>
+            <steps>
+                <step>
+                    <cmd>B.1</cmd>
+                </step>
+                <!--step conref="default.dita#x/b" conaction="mark">
+                    <cmd/>
+                </step-->
+            </steps>
+        </taskbody>
+    </task>
+</task>

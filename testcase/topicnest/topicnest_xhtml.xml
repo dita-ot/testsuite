@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="topicnest_xhtml" default="topicnest2xhtml" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="topicnest2xhtml" if="run.xhtml" unless="skip.xhtml">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${testdata.dir}/OldcasesTest/topicnest.dita"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/OldcasesTest/topicnest/xhtml"/>
-      <property name="output.dir"
-                location="${dita.dir}/testresult/OldcasesTest/topicnest/xhtml"/>
-      <property name="transtype" value="xhtml"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.topicnest_xhtml}"/>
+   <property name="test.name" value="topicnest"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="topicnest2xhtml" if="run.xhtml" unless="skip.xhtml">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${testdata.dir}/OldcasesTest/topicnest.dita"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+      </ant>
+   </target>
 </project>

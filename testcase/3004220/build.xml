@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="3004220" default="3004220" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.3004220}"/>
+   <property name="test.name" value="3004220"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="3004220" depends="30042202pdf, 30042202xhtml"/>
+   <target name="30042202pdf" if="run.pdf" unless="skip.pdf">
+      <ant antfile="${dita.dir}/build.xml" target="init">
+         <property name="args.input" location="${test.basedir}/src/keyreftm.ditamap"/>
+         <property name="output.dir" location="${result.dir}/pdf"/>
+         <property name="transtype" value="pdf"/>
+         <property name="dita.temp.dir" location="${temp.dir}/pdf"/>
+         <property name="clean.temp" value="no"/>
+      </ant>
+   </target>
+   <target name="30042202xhtml" if="run.xhtml" unless="skip.xhtml">
+      <ant antfile="${dita.dir}/build.xml" target="init">
+         <property name="args.input" location="${test.basedir}/src/keyreftm.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="clean.temp" value="no"/>
+      </ant>
+   </target>
+</project>

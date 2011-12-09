@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Chunkattribute_eclipsehelp" default="Chunkattribute2eclipsehelp"
          basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="Chunkattribute2eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${dita.dir}/testdata/Chunkattribute/map7.ditamap"/>
-      <property name="output.dir" location="${dita.dir}/testresult/Chunkattribute/eclipsehelp"/>
-      <property name="transtype" value="eclipsehelp"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/Chunkattribute/eclipsehelp"/>
-    </ant>
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${dita.dir}/testdata/Chunkattribute/map10.ditamap"/>
-      <property name="output.dir" location="${dita.dir}/testresult/Chunkattribute/eclipsehelp"/>
-      <property name="transtype" value="eclipsehelp"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/Chunkattribute/eclipsehelp"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.Chunkattribute_eclipsehelp}"/>
+   <property name="test.name" value="Chunkattribute"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="Chunkattribute2eclipsehelp" if="run.eclipsehelp"
+           unless="skip.eclipsehelp">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/map7.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="eclipsehelp"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/map10.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="eclipsehelp"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
 </project>

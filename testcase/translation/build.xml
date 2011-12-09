@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="translation" default="all" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.translation}"/>
+   <property name="test.name" value="translation"/>
    <property environment="env"/>
    <property name="args.logdir" value="log"/>
    <property name="dita.extname" value=".xml"/>
@@ -7,6 +9,8 @@
    <import file="translation_htmlhelp.xml"/>
    <import file="translation_javahelp.xml"/>
    <import file="translation_xhtml.xml"/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="all"
            depends="translation2eclipsehelp, maptitle2htmlhelp, maptitle2javahelp, translation2xhtml"/>
 </project>

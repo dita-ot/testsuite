@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/glossary.dtd">
+<glossentry id="gloss_specialize" xml:lang="en-us">
+    <glossterm>Click Here</glossterm>
+    <glossdef>If the generated CHM file can open this page, it means BUG 3114411 has been fixed.</glossdef>
+</glossentry>

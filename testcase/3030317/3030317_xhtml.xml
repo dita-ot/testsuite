@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="3030317_xhtml" default="30303172xhtml" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.3030317_xhtml}"/>
+   <property name="test.name" value="3030317"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target if="run.xhtml" unless="skip.xhtml" name="30303172xhtml">
+      <ant antfile="${dita.dir}/build.xml" target="init">
+         <property name="args.input" value="${test.basedir}/src/3030317.dita"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="dita.input.valfile" value="${test.basedir}/src/3030317.ditaval"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="clean.temp" value="no"/>
+      </ant>
+   </target>
+</project>

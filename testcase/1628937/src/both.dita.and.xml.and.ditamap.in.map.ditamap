@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map collection-type="sequence" xml:lang="en-us"><title>both.dita.and.xml.and.ditamap.in.map.ditamap</title>
+<topicref format="dita"
+href="both.dita.and.xml.and.ditamap.in.topic.dita"
+navtitle="both.dita.and.xml.and.ditamap.in.topic.dita" scope="local"
+type="topic"></topicref>
+<topicref format="dita" href="normaltopic.dita" navtitle="normal topic"
+scope="local" type="topic"></topicref>
+</map><?Pub Caret?>
+<?Pub *0000000621?>

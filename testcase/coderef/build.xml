@@ -1,12 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<project name="sample_all" default="all" basedir=".">
-  <property name="currentdir" location="${basedir}"/>
-  <target name="all">
-    <echo message="${currentdir}" level="info"/>
-    <sequential>
-      <subant>
-        <fileset dir="${currentdir}" includes="coderef_*.xml"/>
-      </subant>
-    </sequential>
-  </target>
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="coderef" default="all" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.coderef}"/>
+   <property name="test.name" value="coderef"/>
+   <property name="currentdir" location="${test.basedir}"/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="all">
+      <echo message="${currentdir}" level="info"/>
+      <sequential>
+         <subant inheritall="true">
+            <fileset dir="${currentdir}" includes="coderef_*.xml"/>
+            <property name="test.name" value="coderef"/>
+         </subant>
+      </sequential>
+   </target>
 </project>

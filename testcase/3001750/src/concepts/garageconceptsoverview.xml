@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2009, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "../../dtd/technicalContent/dtd/concept.dtd">
+<concept id="conceptconcept" xml:lang="en-us">
+<title>Garage Concepts</title>
+<abstract><p>this is a paragraph!</p><shortdesc>A well-stocked garage
+can be the envy of the neighborhood.</shortdesc><?Pub Caret -2?><p>this
+is a paragraph!</p></abstract>
+<conbody></conbody>
+</concept>
+<?Pub *0000000488?>

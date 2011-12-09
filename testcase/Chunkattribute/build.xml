@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Chunkattribute" default="all" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.Chunkattribute}"/>
+   <property name="test.name" value="Chunkattribute"/>
    <property environment="env"/>
    <property name="args.logdir" value="log"/>
    <property name="dita.extname" value=".xml"/>
    <import file="Chunkattribute_eclipsehelp.xml"/>
    <import file="Chunkattribute_xhtml.xml"/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="all" depends="Chunkattribute2eclipsehelp,chunkattribute2xhtml"/>
 </project>

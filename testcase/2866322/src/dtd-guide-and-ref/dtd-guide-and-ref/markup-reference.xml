@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "http://reallysi.com/doctypes/dita/concept" "concept.dtd">
+<concept
+  id="topicid">
+  <title>XML Reference</title>
+  <conbody>
+    <p>This section provides reference entries for each  element in the XXX DITA vocabulary
+      modules.</p>
+  </conbody>
+</concept>

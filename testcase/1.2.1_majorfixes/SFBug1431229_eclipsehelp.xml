@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="SFBug1431229" default="SFBug14312292eclipsehelp" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="dita.temp.dir" location="${dita.dir}/temp"/>
-  <import file="${dita.dir}/build.xml"/>
-  <target name="SFBug14312292eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${dita.dir}/samples/hierarchy.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}/testresult/samples/hierarchy/eclipsehelp"/>
-      <property name="transtype" value="eclipsehelp"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/samples/hierarchy/eclipsehelp"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.SFBug1431229}"/>
+   <property name="test.name" value="1.2.1_majorfixes"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <property name="dita.temp.dir" location="${dita.dir}/temp"/>
+   <import file="${dita.dir}/build.xml"/>
+   <target name="SFBug14312292eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp"><!--FIXME: check what should be tested --><!--
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${dita.dir}/samples/hierarchy.ditamap"/>
+         <property name="output.dir" location="${dita.dir}/testresult/samples/hierarchy/eclipsehelp"/>
+         <property name="transtype" value="eclipsehelp"/>
+         <property name="dita.temp.dir" location="${dita.dir}/temp/samples/hierarchy/eclipsehelp"/>
+      </ant>
+      --></target>
 </project>

@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_7FCFF8FD66F44819A8F4F03810EB6840"> 
+  <title>Safety Precautions</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <conbody> 
+	 <ul id="ul_B771764F004245B799D5E425D9D85C76">
+		<li id="li_B7B89E2F80574D109428E52091F4B9BA">In order to protect the
+		  system controlled by the product and the product itself and ensure safe
+		  operation, observe the safety precautions described in this user’s manual. We
+		  assume no liability for safety if users fail to observe these instructions when
+		  operating the product.
+		</li>
+		<li id="li_F2438D0076EB4ECEB4B78B3A0053083C">If this instrument is used
+		  in a manner not specified in this user’s manual, the protection provided by
+		  this instrument may be impaired.
+		</li>
+		<li id="li_AA1E63AECFAE468B97643187C0DFE8BB">If any protection or safety
+		  circuit is required for the system controlled by the product or for the product
+		  itself, prepare it separately.
+		</li>
+		<li id="li_C632D7477E6B4754BCD83A745CCA8716">Be sure to use the spare
+		  parts approved by Cyber Electric Corporation (hereafter simply referred to
+		  as CEC) when replacing parts or consumables.
+		</li>
+		<li id="li_021F5431643446DE808F576CCBA26803">Modification of the product
+		  is strictly prohibited.
+		</li>
+		<li id="li_66613002F8B24CD2B5A72493D959CF8B">The following symbols are
+		  used in the product and user’s manual to indicate that there are precautions
+		  for safety:
+		  <table id="table_B6D83F11BEB24F9C9007008CDB06F7C3">
+			 <tgroup cols="2"><colspec colnum="1" colname="col1"
+				colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="5.08*"/><thead>
+						<row>
+						  <entry colname="col1">Symbol
+						  </entry>
+						  <entry colname="col2">Description
+						  </entry>
+						</row></thead>
+					 <tbody>
+						<row>
+						  <entry colname="col1">
+						  </entry>
+						  <entry colname="col2">Indicates that caution is required
+							 for operation. This symbol is placed on the product to refer the user to the
+							 user’s manual in order to protect the operator and the equipment. In the user’s
+							 manuals you will find precautions to avoid physical injury or death of the
+							 operator, including electrical shocks.
+						  </entry>
+						</row>
+						<row>
+						  <entry colname="col1">
+						  </entry>
+						  <entry colname="col2">Identifies a protective grounding
+							 terminal. Before using the product, ground the terminal.
+						  </entry>
+						</row>
+						<row>
+						  <entry colname="col1">
+						  </entry>
+						  <entry colname="col2">Identifies a functional grounding
+							 terminal. Before using the product, ground the terminal.
+						  </entry>
+						</row>
+						<row>
+						  <entry colname="col1">
+						  </entry>
+						  <entry colname="col2">Indicates an AC supply.<!-- 2008/08/21 t.makita --><fn id="fn001">Footnote test number 1. This is a footnote. tested by DITA Open Toolkit 1.5 M18.</fn>
+						  </entry>
+						</row>
+						<row>
+						  <entry colname="col1">
+						  </entry>
+                          <!-- 2008/08/21 t.makita -->
+						  <entry colname="col2">Indicates a DC supply.<xref href="#concept_7FCFF8FD66F44819A8F4F03810EB6840/fn001"/>
+						  </entry>
+						</row>
+						<row>
+						  <entry colname="col1">
+						  </entry>
+						  <entry colname="col2">Indicates that the main switch is ON.
+                          
+						  </entry>
+						</row>
+						<row>
+						  <entry colname="col1">
+						  </entry>
+						  <entry colname="col2">Indicates that the main switch is
+							 OFF.
+                          <!-- 2008/08/21 t.makita --><fn>Footnote test number 2. This is a footnote. tested by DITA Open Toolkit 1.5 M18.</fn>
+						  </entry>
+						</row>
+					 </tbody>
+			 </tgroup>
+		  </table>
+		</li>
+	 </ul> 
+  </conbody>
+</concept>

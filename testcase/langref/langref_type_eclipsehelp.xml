@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="langref_eclipsehelp" default="langref2eclipsehelp" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="langref2eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${testdata.dir}/langref/ditaref-type.ditamap"/>
-      <property name="output.dir" location="${dita.dir}/testresult/langref/type/eclipsehelp"/>
-      <property name="transtype" value="eclipsehelp"/>
-      <property name="args.ftr" location="${testdata.dir}/langref/langref-footer.xml"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/langref/type/eclipsehelp"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.langref_eclipsehelp}"/>
+   <property name="test.name" value="langref"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="langref2eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/ditaref-type.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="eclipsehelp"/>
+         <property name="args.ftr" location="${test.basedir}/src/langref-footer.xml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
 </project>

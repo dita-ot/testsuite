@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "file:/C:/DITA-OT1.5/SAXONIBMJDK/dtd/technicalContent/dtd/topic.dtd">
+<topic id="b" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <title>b title</title>
+    <body>
+        <p id="linka">Here's b's topic.</p>
+        <p><xref keyref="k1">bbb</xref>fdafd</p>
+        <ul>
+            <li>Some b item</li>
+            <li>Another b item</li>
+        </ul>
+    </body>
+</topic>
+

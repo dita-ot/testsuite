@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="coderef_mp1_xhtml" default="coderef_mp1xhtml" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <!--import file="${dita.dir}/integrator.xml"/-->
-  <target name="coderef_mp1xhtml" if="run.xhtml" unless="skip.xhtml">
-    <ant antfile="${dita.dir}/build.xml" target="init">
-      <property name="args.input" location="${testdata.dir}/coderef/mp1.ditamap"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/coderef/mp1/xhtml"/>
-      <property name="args.logdir" location="${dita.dir}/testresult/coderef/mp1/log"/>
-      <property name="output.dir" location="${dita.dir}/testresult/coderef/mp1/xhtml"/>
-      <property name="transtype" value="xhtml"/>
-      <property name="clean.temp" value="no"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.coderef_mp1_xhtml}"/>
+   <property name="test.name" value="coderef"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="coderef_mp1xhtml" if="run.xhtml" unless="skip.xhtml">
+      <ant antfile="${dita.dir}/build.xml" target="init">
+         <property name="args.input" location="${test.basedir}/src/mp1.ditamap"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="args.logdir" location="${result.dir}/mp1/log"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="clean.temp" value="no"/>
+      </ant>
+   </target>
 </project>

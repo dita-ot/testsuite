@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="index-see-also" default="all" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.index-see-also}"/>
+   <property name="test.name" value="index-see-also"/>
    <property environment="env"/>
    <property name="args.logdir" value="log"/>
    <property name="dita.extname" value=".xml"/>
@@ -7,6 +9,8 @@
    <import file="index-see-also_htmlhelp.xml"/>
    <import file="index-see-also_javahelp.xml"/>
    <import file="index-see-also_xhtml.xml"/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="all"
            depends="indexseealso2eclipsehelp, indexseealso2htmlhelp, indexseealso2javahelp, indexseealso2xhtml"/>
 </project>

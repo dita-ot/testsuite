@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="03_pdf" default="032pdf" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="032pdf" if="run.pdf" unless="skip.pdf">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${testdata.dir}/03/03.ditamap"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/03/pdf"/>
-      <property name="output.dir" location="${dita.dir}/testresult/03/pdf"/>
-      <property name="transtype" value="pdf"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.03_pdf}"/>
+   <property name="test.name" value="03"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="032pdf" if="run.pdf" unless="skip.pdf">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/03.ditamap"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="pdf"/>
+      </ant>
+   </target>
 </project>

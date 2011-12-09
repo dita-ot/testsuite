@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/OS/dtd/concept.dtd">
+<concept id="conceptId">
+ <title>A use case for keys</title>
+ <shortdesc>While the new keyref facility in DITA 1.2 has increased the flexibility of reused
+  content, understanding the right circumstances in which to use the facility is relatively obscure. </shortdesc>
+ <conbody>
+  <p>Before going into the use case, it makes sense to look at some of the factors that inhibit full
+   reuse of content. Those inhibitors are an indication of the situations in which using the keyref
+   makes sense.</p>
+ </conbody>
+</concept>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2010, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "../../dtd/technicalContent/dtd/concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="workbenchconcept" xml:lang="en-us">
+<title>Workbench</title>
+<shortdesc>Use the workbench for storing tools and hardware, and for
+doing small  projects.</shortdesc>
+<conbody></conbody>
+<related-links>
+<link format="dita" href="../tasks/organizing.xml" type="task"></link>
+<link href="lawnmower.xml"></link>
+<link href="oil.xml"><linktext>TOPIC LINKTEXT FOR OIL</linktext></link>
+<link href="paint.xml"><linktext>TOPIC LINKTEXT FOR PAINT</linktext>
+<desc>TOPIC DESC FOR PAINT</desc>
+</link>
+<link href="shelving.xml">
+<desc>TOPIC DESC FOR SHELVING</desc><?Pub Caret 23?>
+</link>
+</related-links>
+</concept>
+<?Pub *0000000862?>

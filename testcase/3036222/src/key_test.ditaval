@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<val>
+    <prop action="exclude" att="product" val="productA" />
+    <prop action="exclude" att="product" val="productB" />
+    <prop action="include" att="product" val="productC" />
+    <prop action="exclude" att="product" val="productD" />
+</val>

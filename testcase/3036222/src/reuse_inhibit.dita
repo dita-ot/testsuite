@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="conceptId">
+ <title>Inhibitors to content reuse</title>
+ <conbody>
+  <p>While the benefits of reusing content can be obvious, there are considerations when reusing
+            content that can actually inhibit full use of content reuse. I divide the major reasons
+            that inhibit content reuse into two basic groups.</p>
+ </conbody>
+</concept>

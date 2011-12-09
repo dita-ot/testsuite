@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap id = "bookmap_26F29B320CC448C6BDEE032B001C3627" xml:lang="en-US">
+    <booktitle>
+            <booklibrary>DITA-OT<!--tm tmtype="reg"/--> Testcase Series</booklibrary>
+            <mainbooktitle>DITA to XSL-FO Transformation</mainbooktitle>
+            <booktitlealt>Bug Reports</booktitlealt>
+    </booktitle>
+    <bookmeta>
+            <authorinformation>
+                <personinfo>
+                    <namedetails>
+                        <personname>
+                            <firstname>Makita</firstname>
+                            <middlename></middlename>
+                            <lastname>Toshihiko</lastname>
+                            <generationidentifier></generationidentifier>
+                        </personname>
+                    </namedetails>
+                </personinfo>
+            </authorinformation>
+    </bookmeta>
+
+    <!--frontmatter>
+        <notices href="c_xsl.xml" type="concept">
+            <topicref href="c_x_window.xml"   type="concept"  toc="no"/>
+            <topicref href="r_properties.xml" type="reference"  toc="no"/>
+        </notices>
+
+        <booklists>
+            <toc/>
+            <figurelist/>
+            <tablelist/>
+        </booklists>
+    </frontmatter-->
+
+    <!--chapter navtitle="Title testing">
+        <topicref href="p_weirdtitle2.xml" type="topic" />
+    </chapter-->
+
+    <chapter navtitle="Title testing">
+        <topicref href="p_weirdtitle1.xml" type="topic">
+            <topicmeta>
+                <keywords>
+                    <indexterm>Title testing</indexterm>
+                    <indexterm>Title<indexterm start="Title testing">testing</indexterm></indexterm>
+                </keywords>
+            </topicmeta>
+        </topicref>
+        <topicref href="p_weirdtitle2.xml" type="topic">
+            <topicmeta>
+                <keywords>
+                    <indexterm>Title testing(2)</indexterm>
+                    <indexterm end="Title testing"/>
+                </keywords>
+            </topicmeta>
+        </topicref>
+    </chapter>
+
+    <backmatter>
+        <booklists>
+            <indexlist/>
+        </booklists>
+    </backmatter>
+</bookmap>

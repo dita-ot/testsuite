@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2009, v.4002-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<topic id="p021823topic" xml:lang="en-us">
+<title>Sample topic with links</title>
+<shortdesc>This has some sample content</shortdesc>
+<body>
+<p>First, link to something normal – example.com: <xref
+href="http://www.example.com" scope="external">example.com</xref></p>
+<p>Now, add some &amp; characters: example.com/this&amp;that=var&amp;theOther=14532234&amp;endwith=something
+: <xref
+href="http://www.example.com/this&amp;that=var&amp;theOther=14532234&amp;endwith=something" scope="external">example.com/this&amp;that=var&amp;theOther=14532234&amp;endwith=something</xref></p>
+</body>
+</topic><?Pub Caret -3?>
+<?Pub *0000000795?>

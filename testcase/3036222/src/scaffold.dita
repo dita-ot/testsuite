@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/1.1/OS/dtd/concept.dtd">
+<concept id="scaffold">
+    <title>Features of the <keyword keyref="model"/>
+    </title>
+    <conbody>
+        <p>Your phone comes with many new features that allow you to do more than just make calls. You can surf the web, read books, or do many things that you can do on a computer.
+        </p>
+        <ul conkeyref="model/features">
+            <li>Bad key</li>
+        </ul>
+        <p>For a modest price, you can also purchase accessories that improve your capabilities. These accessories are available
+            at the website.</p>
+        <ul conkeyref="model/accessories">
+            <li>Bad key</li>
+        </ul>
+    </conbody>
+</concept>

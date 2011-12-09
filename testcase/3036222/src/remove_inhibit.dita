@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="conceptId">
+ <title>Using keys to remove the inhibitors</title>
+    <shortdesc>Addressing the inhibitors to content reuse takes planning. Looking at each inhibitor
+        gives clues on how to deal best use keys to provide the flexibility needed to reuse content
+        across a product family.</shortdesc>
+ <conbody>
+  <p>The reason writing generically is difficult is because it may be difficult, at times, to
+            mentally separate the context from the content. This mindset can be difficult to break,
+            but you can analyze the writing and determine the elements that appear <q>unique</q>,
+            isolate them, and then use the keyref facility to swap the contexts when you build the
+            information. This gives the writer the ability to write comfortably and later indicate
+            the areas where the context changes. The writer can then isolate those areas to be
+            replaced with the correct structures, identify the needed keys, and implement the keys
+            correctly.</p>
+        <p>When the writer is aware the content will appear in multiple contexts, it becomes easier
+   to plan the writing so there are blocks that are specifically context heavy. Those areas can then
+   be <q>lifted</q> from the text, identified, and then replaced by a placeholder pointing to the
+   identifier. Because the content starts life as a candidate for reuse in multiple contexts,
+   implementing keyref use is easier than when content reuse is an afterthought or when there is a
+   nebulous sense of reuse like there could be in the generic writing case.</p>
+  <p>It is beyond the scope of this paper to go into a step-by-step methodology for using keys to
+   provide context, but I will present some examples of how to use keys and keyref to supply context
+   for content that is devoid of context.</p>
+ </conbody>
+</concept>

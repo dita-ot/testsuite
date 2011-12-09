@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="sample_eclipsecontent" default="sample2eclipsecontent" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="sample2eclipsecontent" if="run.eclipsecontent" unless="skip.eclipsecontent">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${testdata.dir}/samples/hierarchy.ditamap"/>
-      <property name="output.dir"
-                location="${dita.dir}/testresult/samples/hierarchy/eclipsecontent"/>
-      <property name="transtype" value="eclipsecontent"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}/temp/samples/hierarchy/eclipsecontent"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.sample_eclipsecontent}"/>
+   <property name="test.name" value="samples"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="sample2eclipsecontent" if="run.eclipsecontent"
+           unless="skip.eclipsecontent">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/hierarchy.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="eclipsecontent"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
 </project>

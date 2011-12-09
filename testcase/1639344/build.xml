@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="1639344" default="all" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.1639344}"/>
+   <property name="test.name" value="1639344"/>
    <property environment="env"/>
    <property name="args.logdir" value="log"/>
    <property name="dita.extname" value=".xml"/>
    <import file="1639344.xml"/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="all" depends="16393442xhtml"/>
 </project>

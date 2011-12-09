@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/map.dtd">
+<map>
+  <title>DTD Markup Guide and Reference</title>
+  <topicref
+    href="dtd-guide-and-ref/dtd-guide-and-ref.xml">
+    <topicref
+      href="dtd-guide-and-ref/markup-reference.xml"
+      collection-type="sequence">
+      <topicref
+        href="dtd-guide-and-ref/reference/map-specializations.xml">
+        <mapref
+          href="dtd-guide-and-ref/reference/map_elements/mapElementRefs.ditamap"
+          format="ditamap"/>
+      </topicref>
+    </topicref>
+  </topicref>
+</map>

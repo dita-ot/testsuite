@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="indexbase_htmlhelp" default="indexbase2htmlhelp" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="indexbase2htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input"
-                location="${dita.dir}/testdata/IndexBase/indexbase_testdata1.dita"/>
-      <property name="output.dir" location="${dita.dir}/testresult/indexbase_2/htmlhelp"/>
-      <property name="transtype" value="htmlhelp"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/indexbase_2/htmlhelp"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.indexbase_htmlhelp}"/>
+   <property name="test.name" value="indexbase"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="indexbase2htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/indexbase_testdata1.dita"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="htmlhelp"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
 </project>

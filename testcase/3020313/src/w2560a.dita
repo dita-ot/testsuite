@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2009, v.4002-->
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "reference.dtd">
+<?Pub Inc?>
+<reference id="w2560a" xml:lang="en-us">
+<title>Standalone topic: Test a simple topic</title><?Pub Caret 3?>
+<shortdesc>This tests simple reference, nothing special</shortdesc>
+<refbody>
+<section>content!!!!</section>
+</refbody>
+</reference>
+<?Pub *0000000435?>

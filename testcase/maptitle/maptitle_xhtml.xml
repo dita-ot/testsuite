@@ -1,42 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="maptitle_xhtml" default="maptitle2xhtml" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="dita.temp.dir" location="${dita.dir}/temp"/>
-  <target name="maptitle2xhtml" if="run.xhtml" unless="skip.xhtml">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input"
-                location="${dita.dir}/testdata/MapTitle/maptitle_testdata1.ditamap"/>
-      <property name="output.dir" location="${dita.dir}/testresult/maptitle_1/xhtml"/>
-      <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/maptitle_1/xhtml"/>
-    </ant>
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input"
-                location="${dita.dir}/testdata/MapTitle/maptitle_testdata2.ditamap"/>
-      <property name="output.dir" location="${dita.dir}/testresult/maptitle_2/xhtml"/>
-      <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/maptitle_2/xhtml"/>
-    </ant>
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input"
-                location="${dita.dir}/testdata/MapTitle/maptitle_testdata3.ditamap"/>
-      <property name="output.dir" location="${dita.dir}/testresult/maptitle_3/xhtml"/>
-      <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/maptitle_3/xhtml"/>
-    </ant>
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input"
-                location="${dita.dir}/testdata/MapTitle/maptitle_testdata4.ditamap"/>
-      <property name="output.dir" location="${dita.dir}/testresult/maptitle_4/xhtml"/>
-      <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/maptitle_4/xhtml"/>
-    </ant>
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input"
-                location="${dita.dir}/testdata/MapTitle/Simplemap/simplemap.ditamap"/>
-      <property name="output.dir" location="${dita.dir}/testresult/maptitle_5/xhtml"/>
-      <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/maptitle_5/xhtml"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.maptitle_xhtml}"/>
+   <property name="test.name" value="maptitle"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <property name="dita.temp.dir" location="${dita.dir}/temp"/>
+   <target name="maptitle2xhtml" if="run.xhtml" unless="skip.xhtml">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/maptitle_testdata1.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/maptitle_testdata2.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/maptitle_testdata3.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/maptitle_testdata4.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/Simplemap/simplemap.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
 </project>

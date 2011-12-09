@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="1803190_xhtml" default="18031902xhtml" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <target name="18031902xhtml" if="run.xhtml" unless="skip.xhtml">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${dita.dir}/testdata/1803190/1803190_1.dita"/>
-      <property name="output.dir" location="${dita.dir}/testresult/1803190_1/xhtml"/>
-      <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/1803190/xhtml"/>
-    </ant>
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${dita.dir}/testdata/1803190/1803190_2.dita"/>
-      <property name="output.dir" location="${dita.dir}/testresult/1803190_2/xhtml"/>
-      <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/1803190_2/xhtml"/>
-    </ant>
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${dita.dir}/testdata/1803190/1803190_3.dita"/>
-      <property name="output.dir" location="${dita.dir}/testresult/1803190_3/xhtml"/>
-      <property name="transtype" value="xhtml"/>
-      <property name="dita.temp.dir" location="${dita.dir}/temp/1803190_3/xhtml"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.1803190_xhtml}"/>
+   <property name="test.name" value="1803190"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="18031902xhtml" if="run.xhtml" unless="skip.xhtml">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/1803190_1.dita"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/1803190_2.dita"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/1803190_3.dita"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      </ant>
+   </target>
 </project>

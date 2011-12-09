@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="conceptId">
+ <title>Writing for multiple contexts is hard to maintain</title>
+ <conbody>
+  <p>In prior releases of DITA, there were two ways to supply context to topics: filtering within
+            the topic or a content reference to elements that contained all the content with markup
+            to filter for context. This is not a bad approach when it comes to two or three contexts
+            but when a product line exists that has more similarities than differences, the amount
+            of content that varies creates a management problem, regardless of where the variations
+            exist.</p>
+        <p>If the variations are within the topic (as shown in <xref href="#conceptId/topic_context"
+                format="dita">Context supplied within a topic</xref>), the writer (or tool in use)
+            has the challenge of adding the new context with the right attributes so that the
+            content in question if filtered in and out at the correct time. If the variations are
+            hidden in a central reuse file referenced by a topic (as shown in <xref
+                href="#conceptId/context_central" format="dita">Context supplied within a central
+                reuse file</xref>), then it becomes necessary for the writer to remember (or have
+            access to) the central file to update that file correctly.</p>
+        <p>The following figures are examples of the two methods. The content focuses only on the
+            areas of interest.</p>
+        <fig id="topic_context">
+            <title> Context supplied within a topic</title>
+            <codeblock>...
+&lt;conbody>
+&lt;p>&lt;ph product="producta">Product A allows you to control 4
+different devices from a single controller.&lt;/ph>&lt;ph product="productb">
+Product B allows you to control 6 different devices from a single
+controller&lt;/ph>&lt;ph product="productc">Product C allows you to control 
+10 different devices from a single controller.&lt;/ph> ...&lt;/p>
+&lt;/conbody>
+...
+&lt;/concept></codeblock>
+        </fig>
+        <p/>
+        <fig id="context_central">
+            <title> Context supplied within a central reuse file</title>
+            <p>The following is the content in the topic.</p>
+            <codeblock>...
+&lt;conbody>
+&lt;p>&lt;ph conref="cent_reuse.dita#con_reuse_id/prod_ph"/> ... &lt;/p>
+...
+&lt;/conbody>
+...
+&lt;/concept></codeblock>
+            <p>The following is content in the central reuse file,
+                    <filepath>cent_reuse.dita</filepath>.</p>
+            <codeblock>&lt;dita>
+&lt;concept id="con_reuse_id">
+&lt;conbody>
+&lt;sl>
+&lt;sli>&lt;ph id="prod_ph">&lt;ph product="producta">Product A allows 
+you to control 4 different devices from a single controller.&lt;/ph>
+&lt;ph product="productb">Product B allows you to control 6 different
+devices from a single controller&lt;/ph>&lt;ph product="productc">Product
+C allows you to control 10 different devices from a single 
+controller.&lt;/ph>&lt;/ph>&lt;/sli>
+...
+&lt;/sl>
+&lt;/conbody>
+...
+&lt;/dita></codeblock>
+        </fig>
+        <p/>
+        <p>Things start to get extremely messy, as you can tell from the examples. Add the fact
+            that, in either case, the new attribute value has to be reflected correctly in the
+            ditaval file and the "switch" thrown during the build process. There are far too many
+            moving parts, in my opinion.</p>
+ </conbody>
+</concept>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2009, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map xml:lang="en-us"><title>This map does very little</title>
+<topicmeta>
+<publisher>IBM</publisher>
+<prodinfo>
+<prodname>My Information</prodname>
+<vrmlist><vrm version="1"/></vrmlist>
+</prodinfo>
+</topicmeta>
+
+
+<topicref format="png"  href="a.png" navtitle="png format">
+</topicref>
+<topicref href="topic1.dita"></topicref>
+</map>
+<?Pub *0000000739?>

@@ -1,0 +1,7 @@
+#Sat Oct 10 13:45:26 CST 2009
+dita.temp.dir=conrefpushbug/map/temp
+args.input=conrefpushbug/map/test.ditamap
+output.dir=conrefpushbug/map/out
+clean.temp=no
+dita.dir=C\:\\20091010\\DITA-OT1.5
+basedir=C\:\\20091010\\DITA-OT1.5

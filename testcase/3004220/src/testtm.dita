@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is part of the DITA Open Toolkit project hosted on 
+     Sourceforge.net. See the accompanying license.txt file for 
+     applicable licenses.-->
+<!-- (C) Copyright IBM Corporation 2001, 2005. All Rights Reserved.
+ *-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "../../dtd/technicalContent/dtd/concept.dtd">
+<concept id="test" xml:lang="en-us">
+<title>Test TM in keydef</title>
+<shortdesc>The tm should resolve.</shortdesc>
+<conbody><p>The <keyword keyref="prodnameLTM"/> is an application delivery controller for traffic on local area networks.</p></conbody></concept>
+

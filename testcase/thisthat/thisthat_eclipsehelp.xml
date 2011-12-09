@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="thisthat_eclipsehelp" default="thisthat2eclipsehelp" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="thisthat2eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input"
-                location="${testdata.dir}/OldcasesTest/thisthat/thisthat.ditamap"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}/temp/OldcasesTest/thisthat/eclipsehelp"/>
-      <property name="output.dir"
-                location="${dita.dir}/testresult/OldcasesTest/thisthat/eclipsehelp"/>
-      <property name="transtype" value="eclipsehelp"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.thisthat_eclipsehelp}"/>
+   <property name="test.name" value="thisthat"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="thisthat2eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input" location="${test.basedir}/src/thisthat.ditamap"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="eclipsehelp"/>
+      </ant>
+   </target>
 </project>

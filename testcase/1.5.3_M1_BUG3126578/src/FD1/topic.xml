@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "../dtd/ditabase.dtd">
+
+<!--This file contains NO testing-purpose content-->
+
+<dita>
+    <concept id="topic1">
+        <title>Topic 1</title>
+        <shortdesc>The body of topic 1.</shortdesc>        
+        <conbody/>
+    </concept>
+</dita>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="conceptId">
+ <title>Summary</title>
+ <conbody>
+  <p>The brief example in this paper illustrates how you can use keys and the keyref facility to
+            increase your reuse possibilities without increasing inter-topic dependencies. Using the
+            technique described, you can externalize the context-related content. By separating the
+            context from the context in this way, you increase flexibility, minimize the effort
+            spent managing that content, and facilitate the production of multiple different outputs
+            from a single DITA map.</p>
+ </conbody>
+</concept>

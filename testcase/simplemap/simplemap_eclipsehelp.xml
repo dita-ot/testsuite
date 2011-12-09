@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="simplemap_eclipsehelp" default="simplemap2eclipsehelp" basedir=".">
-  <property name="dita.dir" location="${basedir}/../.."/>
-  <property name="testdata.dir" location="${dita.dir}/testdata"/>
-  <target name="simplemap2eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
-    <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input"
-                location="${testdata.dir}/OldcasesTest/simplemap/simplemap.ditamap"/>
-      <property name="dita.temp.dir"
-                location="${dita.dir}/temp/OldcasesTest/simplemap/eclipsehelp"/>
-      <property name="output.dir"
-                location="${dita.dir}/testresult/OldcasesTest/simplemap/eclipsehelp"/>
-      <property name="transtype" value="eclipsehelp"/>
-    </ant>
-  </target>
+   <dirname property="test.basedir" file="${ant.file.simplemap_eclipsehelp}"/>
+   <property name="test.name" value="simplemap"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="simplemap2eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
+      <ant antfile="${dita.dir}/build.xml">
+         <property name="args.input"
+                   location="${testdata.dir}/OldcasesTest/simplemap/simplemap.ditamap"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="eclipsehelp"/>
+      </ant>
+   </target>
 </project>

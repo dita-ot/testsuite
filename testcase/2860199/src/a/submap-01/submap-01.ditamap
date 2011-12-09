@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<map>
+  <title>Submap 1: Chunk to-content</title>
+  <topicref
+    navtitle="Topics from Subordinate Map With Chunk to-content">
+    <topicref chunk="to-content"
+      href="topics/topic-03.xml"
+      navtitle="Topic 03">
+      <topicref
+        href="../topics/topic-02.xml"/>
+    </topicref>
+  </topicref>
+</map>

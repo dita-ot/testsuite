@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="testmap" title="Test Ditamap"> 
+
+   <!-- Test Scenario 1: Use chunk to combine two different topics-->
+  <topicref href="FD1/topic.xml" chunk="to-content" copy-to="FD1/topic.html" format="dita" navtitle="xxx" toc="no">
+      <topicref href="FD2/topic.xml" toc="no" format="dita" navtitle="xxx"/>
+  </topicref>
+
+</map>
+
+
+
+
+
+  
+ 

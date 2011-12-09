@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="forflag" default="all" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.forflag}"/>
+   <property name="test.name" value="forflag"/>
    <property environment="env"/>
    <property name="args.logdir" value="log"/>
    <property name="dita.extname" value=".xml"/>
    <import file="forflag.xml"/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="all" depends="forflag2xhtml"/>
 </project>

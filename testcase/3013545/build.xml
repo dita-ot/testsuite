@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="3013545_xhtml_" default="all" basedir=".">
-  <property name="currentdir" location="${basedir}"/>
-  <target name="all">
-    <echo message="${currentdir}" level="info"/>
-    <sequential>
-      <subant>
-        <fileset dir="${currentdir}" includes="3013545*.xml"/>
-      </subant>
-    </sequential>
-  </target>
+<project name="3013545" default="all" basedir=".">
+   <dirname property="test.basedir" file="${ant.file.3013545}"/>
+   <property name="test.name" value="3013545"/>
+   <property name="currentdir" location="${test.basedir}"/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="all">
+      <echo message="${currentdir}" level="info"/>
+      <sequential>
+         <subant inheritall="true">
+            <fileset dir="${currentdir}" includes="3013545*.xml"/>
+            <property name="test.name" value="3013545"/>
+         </subant>
+      </sequential>
+   </target>
 </project>

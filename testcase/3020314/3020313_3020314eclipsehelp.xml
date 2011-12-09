@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="3020313_3020314eclipsehelp" default="3020313_3020314eclipsehelp"
+         basedir=".">
+   <dirname property="test.basedir" file="${ant.file.3020313_3020314eclipsehelp}"/>
+   <property name="test.name" value="3020314"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target if="run.eclipsehelp" unless="skip.eclipsehelp"
+           name="3020313_3020314eclipsehelp">
+      <ant antfile="${dita.dir}/build.xml" target="init">
+         <property name="args.input" location="${test.basedir}/src/3020313_3020314/test.ditamap"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="eclipsehelp"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="clean.temp" value="no"/>
+      </ant>
+   </target>
+</project>
