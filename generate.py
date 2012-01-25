@@ -13,7 +13,7 @@ def main(id, input, types):
         case.write("""<?xml version="1.0" encoding="UTF-8"?>
 <project name="%(id)s" default="all">
   <dirname property="test.basedir" file="${ant.file.%(id)s}"/>
-  <property name="test.name" value="ant.project.name"/>
+  <property name="test.name" value="${ant.project.name}"/>
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
@@ -46,6 +46,9 @@ valid_types.extend(default_types)
 if __name__ == "__main__":
     if len(sys.argv) < 3:
         print "Usage: generate.py ID INPUT [TYPES]"
+        print "  ID     test identfier"
+        print "  INPUT  input document"
+        print "  TYPES  transformation types"
         sys.exit(1)
     __id = sys.argv[1]
     __input = sys.argv[2]

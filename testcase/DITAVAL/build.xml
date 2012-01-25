@@ -4,6 +4,7 @@
    <dirname property="test.basedir" file="${ant.file.DITAVAL}"/>
    <property name="test.name" value="DITAVAL"/>
    <dirname property="currentdir" file="${ant.file.DITAVAL}"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
    <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
    <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="all">

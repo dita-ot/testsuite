@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="3455512" default="all">
+  <dirname property="test.basedir" file="${ant.file.3455512}"/>
+  <property name="test.name" value="${ant.project.name}"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+  <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+  <target name="all">
+    <antcall target="sub" inheritall="yes" inheritrefs="yes">
+      <param name="dir" value="none"/>
+      <param name="args.rellinks" value="none"/>
+    </antcall>
+    <antcall target="sub" inheritall="yes" inheritrefs="yes">
+      <param name="dir" value="nofamily"/>
+      <param name="args.rellinks" value="nofamily"/>
+    </antcall>
+    <antcall target="sub" inheritall="yes" inheritrefs="yes">
+      <param name="dir" value="all"/>
+      <param name="args.rellinks" value="all"/>
+    </antcall>
+    <antcall target="sub" inheritall="yes" inheritrefs="yes">
+      <param name="dir" value="default"/>
+    </antcall>
+  </target>
+  <target name="sub" depends="3455512.xhtml, 3455512.eclipsehelp, 3455512.eclipsecontent, 3455512.javahelp, 3455512.htmlhelp, 3455512.pdf, 3455512.troff, 3455512.docbook, 3455512.wordrtf, 3455512.odt"/>
+  <target name="3455512.xhtml" if="run.xhtml" unless="skip.xhtml">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="xhtml"/>
+      <property name="args.input" location="${test.basedir}/src/map.ditamap"/>
+      <property name="output.dir" location="${result.dir}/xhtml/${dir}"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/${dir}"/>
+    </ant>
+  </target>
+  <target name="3455512.eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="eclipsehelp"/>
+      <property name="args.input" location="${test.basedir}/src/map.ditamap"/>
+      <property name="output.dir" location="${result.dir}/eclipsehelp/${dir}"/>
+      <property name="dita.temp.dir" location="${temp.dir}/eclipsehelp/${dir}"/>
+    </ant>
+  </target>
+  <target name="3455512.eclipsecontent" if="run.eclipsecontent" unless="skip.eclipsecontent">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="eclipsecontent"/>
+      <property name="args.input" location="${test.basedir}/src/map.ditamap"/>
+      <property name="output.dir" location="${result.dir}/eclipsecontent/${dir}"/>
+      <property name="dita.temp.dir" location="${temp.dir}/eclipsecontent/${dir}"/>
+    </ant>
+  </target>
+  <target name="3455512.javahelp" if="run.javahelp" unless="skip.javahelp">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="javahelp"/>
+      <property name="args.input" location="${test.basedir}/src/map.ditamap"/>
+      <property name="output.dir" location="${result.dir}/javahelp/${dir}"/>
+      <property name="dita.temp.dir" location="${temp.dir}/javahelp/${dir}"/>
+    </ant>
+  </target>
+  <target name="3455512.htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="htmlhelp"/>
+      <property name="args.input" location="${test.basedir}/src/map.ditamap"/>
+      <property name="output.dir" location="${result.dir}/htmlhelp/${dir}"/>
+      <property name="dita.temp.dir" location="${temp.dir}/htmlhelp/${dir}"/>
+    </ant>
+  </target>
+  <target name="3455512.pdf" if="run.pdf" unless="skip.pdf">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="pdf"/>
+      <property name="args.input" location="${test.basedir}/src/map.ditamap"/>
+      <property name="output.dir" location="${result.dir}/pdf/${dir}"/>
+      <property name="dita.temp.dir" location="${temp.dir}/pdf/${dir}"/>
+    </ant>
+  </target>
+  <target name="3455512.troff" if="run.troff" unless="skip.troff">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="troff"/>
+      <property name="args.input" location="${test.basedir}/src/map.ditamap"/>
+      <property name="output.dir" location="${result.dir}/troff/${dir}"/>
+      <property name="dita.temp.dir" location="${temp.dir}/troff/${dir}"/>
+    </ant>
+  </target>
+  <target name="3455512.docbook" if="run.docbook" unless="skip.docbook">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="docbook"/>
+      <property name="args.input" location="${test.basedir}/src/map.ditamap"/>
+      <property name="output.dir" location="${result.dir}/docbook/${dir}"/>
+      <property name="dita.temp.dir" location="${temp.dir}/docbook/${dir}"/>
+    </ant>
+  </target>
+  <target name="3455512.wordrtf" if="run.wordrtf" unless="skip.wordrtf">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="wordrtf"/>
+      <property name="args.input" location="${test.basedir}/src/map.ditamap"/>
+      <property name="output.dir" location="${result.dir}/wordrtf/${dir}"/>
+      <property name="dita.temp.dir" location="${temp.dir}/wordrtf/${dir}"/>
+    </ant>
+  </target>
+  <target name="3455512.odt" if="run.odt" unless="skip.odt">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="transtype" value="odt"/>
+      <property name="args.input" location="${test.basedir}/src/map.ditamap"/>
+      <property name="output.dir" location="${result.dir}/odt/${dir}"/>
+      <property name="dita.temp.dir" location="${temp.dir}/odt/${dir}"/>
+    </ant>
+  </target>
+</project>

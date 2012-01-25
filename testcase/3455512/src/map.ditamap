@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <topicref href="ancestor.dita">
+    <topicref href="parent.dita" collection-type="sequence">
+      <topicref href="sibling.dita"/>
+      <topicref href="previous.dita"/>
+      <topicref href="self.dita">
+        <topicref href="child.dita">
+          <topicref href="descendant.dita"/>
+        </topicref>
+      </topicref>
+      <topicref href="next.dita"/>
+    </topicref>
+  </topicref>
+  <topicref href="friend.dita"/>
+  <topicref href="other.dita"/>
+</map>

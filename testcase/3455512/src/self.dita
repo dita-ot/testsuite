@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_jsg_5zk_z2">
+  <title>Self</title>
+  <body>
+    <p>Center topic.</p>
+  </body>
+  <related-links>
+    <link href="friend.dita" role="friend"/>
+    <link href="other.dita" role="other" otherrole="otherrole"/>
+    <link href="http://www.example.com/" role="external" scope="external"/>
+    <link href="none.dita"/>
+  </related-links>
+</topic>
