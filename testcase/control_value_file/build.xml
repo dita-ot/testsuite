@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="control_value_file" default="all">
+  <dirname property="test.basedir" file="${ant.file.control_value_file}"/>
+  <property name="test.name" value="${ant.project.name}"/>
+  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+  <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+  <target name="all" depends="control_value_file.xhtml, control_value_file_filter.xhtml, control_value_file_incorrect.xhtml"/>
+  <target name="control_value_file.xhtml" if="run.xhtml" unless="skip.xhtml">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map1.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map1"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map1"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map4.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map4"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map4"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map7.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map7"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map7"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map10.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map10"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map10"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map13.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map13"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map13"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map15.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map15"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map15"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map16.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map16"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map16"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map152.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map152"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map152"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map162.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map162"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map162"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map17.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map17"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map17"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map18.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map18"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map18"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map18"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map22.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map22"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map22"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map23.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map23"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map23"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map25.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map25"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map25"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map27.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map27"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map27"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map28.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map28"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map28"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+  </target>
+  <target name="control_value_file_filter.xhtml" if="run.xhtml" unless="skip.xhtml">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map13.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map13_filter1"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map13_filter1"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="args.filter" location="${test.basedir}/src/filter1.ditaval"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map13.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map13_filter2"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map13_filter2"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="args.filter" location="${test.basedir}/src/filter2.ditaval"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map13.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map13_filter3"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map13_filter3"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="args.filter" location="${test.basedir}/src/filter3.ditaval"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map13.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map13_flag"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map13_flag"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="args.filter" location="${test.basedir}/src/flag.ditaval"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map13.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map13_flag2"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map13_flag2"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="args.filter" location="${test.basedir}/src/flag2.ditaval"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map31.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map31_filter_multi"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map31_filter_multi"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="args.filter" location="${test.basedir}/src/filter_multi.ditaval"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map32.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map32_filter_multi"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map32_filter_multi"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="args.filter" location="${test.basedir}/src/filter_multi.ditaval"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map33.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map33_filter2"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map33_filter2"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="args.filter" location="${test.basedir}/src/filter2.ditaval"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map33.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map33_filter3"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map33_filter3"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="args.filter" location="${test.basedir}/src/filter3.ditaval"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map33.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map33_flag"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map33_flag"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="args.filter" location="${test.basedir}/src/flag.ditaval"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map33.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map33_flag2"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map33_flag2"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="args.filter" location="${test.basedir}/src/flag2.ditaval"/>
+    </ant>    
+  </target>
+  <target name="control_value_file_incorrect.xhtml" if="run.xhtml" unless="skip.xhtml">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map2.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map2"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map2"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map3.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map3"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map3"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map5.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map5"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map5"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map6.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map6"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map6"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map8.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map8"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map8"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map9.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map9"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map9"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map11.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map11"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map11"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map12.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map12"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map12"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map14.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map14"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map14"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map161.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map161"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map161"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map19.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map19"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map19"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map20.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map20"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map20"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map24.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map24"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map24"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map26.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map26"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map26"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map29.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map29"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map29"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/map30.ditamap"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml/map30"/>
+      <property name="output.dir" location="${result.dir}/xhtml/map30"/>
+      <property name="transtype" value="xhtml"/>
+    </ant>
+  </target>
+</project>
