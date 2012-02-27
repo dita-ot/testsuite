@@ -9,7 +9,7 @@
    <target if="run.eclipsehelp" unless="skip.eclipsehelp"
            name="3020313_3020314eclipsehelp">
       <ant antfile="${dita.dir}/build.xml" target="init">
-         <property name="args.input" location="${test.basedir}/src/3020313_3020314/test.ditamap"/>
+         <property name="args.input" location="${test.basedir}/src/test.ditamap"/>
          <property name="output.dir" location="${result.dir}/xhtml"/>
          <property name="transtype" value="eclipsehelp"/>
          <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
