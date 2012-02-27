@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Arbortext, Inc., 1988-2004, v.4002-->
 
-<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema/map.xsd"
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:map.xsd"
     collection-type="family" title="Put your title here (Required for Eclipse)">
     <topicref href="a.dita#task" navtitle="a" type="task"></topicref>
     <topicref href="b.dita" navtitle="b"></topicref>

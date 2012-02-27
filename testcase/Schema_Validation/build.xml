@@ -1,65 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="1806081_xhtml" default="18060812xhtml" basedir=".">
-   <dirname property="test.basedir" file="${ant.file.1806081_xhtml}"/>
-   <property name="test.name" value="1806081"/>
-   <property name="dita.dir" location="${test.basedir}/../.."/>
-   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
-   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
-   <property name="dita.temp.dir" location="${dita.dir}/temp"/>
-   <target name="18060812xhtml" if="run.xhtml" unless="skip.xhtml">
-      <ant antfile="${dita.dir}/build.xml">
-         <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
-         <property name="transtype" value="xhtml"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
-      </ant>
-      <ant antfile="${dita.dir}/build.xml">
-         <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
-         <property name="transtype" value="wordrtf"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
-      </ant>
-      <ant antfile="${dita.dir}/build.xml">
-         <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
-         <property name="transtype" value="pdf"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
-      </ant>
-      <ant antfile="${dita.dir}/build.xml">
-         <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
-         <property name="transtype" value="javahelp"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
-      </ant>
-      <ant antfile="${dita.dir}/build.xml">
-         <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
-         <property name="transtype" value="htmlhelp"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
-      </ant>
-      <ant antfile="${dita.dir}/build.xml">
-         <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
-         <property name="transtype" value="troff"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
-      </ant>
-      <ant antfile="${dita.dir}/build.xml">
-         <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
-         <property name="transtype" value="docbook"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
-      </ant>
-      <ant antfile="${dita.dir}/build.xml">
-         <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
-         <property name="transtype" value="eclipsehelp"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
-      </ant>
-      <ant antfile="${dita.dir}/build.xml">
-         <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
-         <property name="transtype" value="eclipsecontent"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
-      </ant>
-   </target>
+<project name="Schema_Validation_xhtml" default="Schema_Validation" basedir=".">
+  <dirname property="test.basedir" file="${ant.file.Schema_Validation_xhtml}"/>
+  <property name="test.name" value="Schema_Validation"/>
+  <property name="dita.dir" location="${test.basedir}/../.."/>
+  <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+  <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+  <property name="dita.temp.dir" location="${dita.dir}/temp"/>
+  <target name="Schema_Validation" depends="Schema_Validation2xhtml, Schema_Validation2wordrtf, Schema_Validation2pdf, Schema_Validation2javahelp, Schema_Validation2htmlhelp, Schema_Validation2troff, Schema_Validation2docbook, Schema_Validation2eclipsehelp, Schema_Validation2eclipsecontent"/>
+  <target name="Schema_Validation2xhtml" if="run.xhtml" unless="skip.xhtml">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
+      <property name="output.dir" location="${result.dir}/xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+    </ant>
+  </target>
+  <target name="Schema_Validation2wordrtf" if="run.wordrtf" unless="skip.wordrtf">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
+      <property name="output.dir" location="${result.dir}/wordrtf"/>
+      <property name="transtype" value="wordrtf"/>
+      <property name="dita.temp.dir" location="${temp.dir}/wordrtf"/>
+    </ant>
+  </target>
+  <target name="Schema_Validation2pdf" if="run.pdf" unless="skip.pdf">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
+      <property name="output.dir" location="${result.dir}/pdf"/>
+      <property name="transtype" value="pdf"/>
+      <property name="dita.temp.dir" location="${temp.dir}/pdf"/>
+    </ant>
+  </target>
+  <target name="Schema_Validation2javahelp" if="run.javahelp" unless="skip.javahelp">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
+      <property name="output.dir" location="${result.dir}/javahelp"/>
+      <property name="transtype" value="javahelp"/>
+      <property name="dita.temp.dir" location="${temp.dir}/javahelp"/>
+    </ant>
+  </target>
+  <target name="Schema_Validation2htmlhelp" if="run.htmlhelp" unless="skip.htmlhelp">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
+      <property name="output.dir" location="${result.dir}/htmlhelp"/>
+      <property name="transtype" value="htmlhelp"/>
+      <property name="dita.temp.dir" location="${temp.dir}/htmlhelp"/>
+    </ant>
+  </target>
+  <target name="Schema_Validation2troff" if="run.troff" unless="skip.troff">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
+      <property name="output.dir" location="${result.dir}/troff"/>
+      <property name="transtype" value="troff"/>
+      <property name="dita.temp.dir" location="${temp.dir}/troff"/>
+    </ant>
+  </target>
+  <target name="Schema_Validation2docbook" if="run.docbook" unless="skip.docbook">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
+      <property name="output.dir" location="${result.dir}/docbook"/>
+      <property name="transtype" value="docbook"/>
+      <property name="dita.temp.dir" location="${temp.dir}/docbook"/>
+    </ant>
+  </target>
+  <target name="Schema_Validation2eclipsehelp" if="run.eclipsehelp" unless="skip.eclipsehelp">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
+      <property name="output.dir" location="${result.dir}/eclipsehelp"/>
+      <property name="transtype" value="eclipsehelp"/>
+      <property name="dita.temp.dir" location="${temp.dir}/eclipsehelp"/>
+    </ant>
+  </target>
+  <target name="Schema_Validation2eclipsecontent" if="run.eclipsecontent" unless="skip.eclipsecontent">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" location="${test.basedir}/src/abc.ditamap"/>
+      <property name="output.dir" location="${result.dir}/eclipsecontent"/>
+      <property name="transtype" value="eclipsecontent"/>
+      <property name="dita.temp.dir" location="${temp.dir}/eclipsecontent"/>
+    </ant>
+  </target>
 </project>

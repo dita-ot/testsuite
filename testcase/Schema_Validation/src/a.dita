@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Arbortext, Inc., 1988-2004, v.4002-->
 <?Pub Inc?>
-<dita xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema/ditabase.xsd"><?Pub Caret?>
+<dita xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:ditabase.xsd"><?Pub Caret?>
 <concept id="abc" xml:lang="en-us">
 <title>abc</title>
 <shortdesc>Put your short description here; used for first paragraph and abstract.</shortdesc>
