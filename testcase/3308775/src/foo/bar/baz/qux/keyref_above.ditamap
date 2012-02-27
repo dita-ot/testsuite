@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map id="same_keyref">
-  <keydef keys="same_key">
+<map id="above_keyref">
+  <keydef keys="above_key">
     <topicmeta>
       <keywords>
         <keyword>value</keyword>
       </keywords>
     </topicmeta>
   </keydef>
-  <keydef keys="same_key_local" href="a.xml">
+  <keydef keys="above_key_local" href="../../a.xml">
     <topicmeta>
       <keywords>
         <keyword>value</keyword>
       </keywords>
     </topicmeta>
   </keydef>
-  <keydef keys="same_key_external" href="http://www.example.com/same" scope="external">
+  <keydef keys="above_key_external" href="http://www.example.com/above" scope="external">
     <topicmeta>
       <keywords>
         <keyword>value</keyword>
