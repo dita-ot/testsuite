@@ -4,8 +4,6 @@
    <dirname property="test.basedir" file="${ant.file.conrefbreaksxref}"/>
    <property name="test.name" value="conrefbreaksxref"/>
    <dirname property="currentdir" file="${ant.file.conrefbreaksxref}"/>
-   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
-   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="all">
       <echo message="${currentdir}" level="info"/>
       <sequential>

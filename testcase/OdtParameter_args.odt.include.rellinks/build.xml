@@ -5,8 +5,6 @@
             file="${ant.file.OdtParameter_args.odt.include.rellinks}"/>
    <property name="test.name" value="OdtParameter_args.odt.include.rellinks"/>
    <property name="currentdir" location="${test.basedir}"/>
-   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
-   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="all">
       <echo message="${currentdir}" level="info"/>
       <sequential>

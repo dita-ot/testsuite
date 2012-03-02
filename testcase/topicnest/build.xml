@@ -4,8 +4,6 @@
    <dirname property="test.basedir" file="${ant.file.topicnest}"/>
    <property name="test.name" value="topicnest"/>
    <dirname property="currentdir" file="${ant.file.topicnest}"/>
-   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
-   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="all">
       <echo message="${currentdir}" level="info"/>
       <sequential>
