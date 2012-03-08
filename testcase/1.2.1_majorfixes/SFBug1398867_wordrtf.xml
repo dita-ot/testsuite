@@ -10,9 +10,9 @@
    <target name="SFBug1398867" if="run.wordrtf" unless="skip.wordrtf">
       <ant antfile="${dita.dir}/build.xml">
          <property name="args.input" location="${test.basedir}/src/ampersands_href.dita"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/wordrtf"/>
          <property name="transtype" value="wordrtf"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/wordrtf"/>
       </ant>
    </target>
 </project>

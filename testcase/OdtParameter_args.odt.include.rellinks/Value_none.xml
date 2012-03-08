@@ -5,10 +5,10 @@
    <property name="dita.dir" location="${test.basedir}/../.."/>
    <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
    <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
-   <target name="none">
-      <ant antfile="${dita.dir}/build.xml" target="init"><!-- please refer to the toolkit's document for supported parameters, and specify them base on your needs --><property name="args.input" location="${test.basedir}/src/test.ditamap"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
+   <target name="none" if="run.odt" unless="skip.odt">
+      <ant antfile="${dita.dir}/build.xml" target="init"><property name="args.input" location="${test.basedir}/src/test.ditamap"/>
+         <property name="dita.temp.dir" location="${temp.dir}/odt"/>
+         <property name="output.dir" location="${result.dir}/odt"/>
          <property name="clean.temp" value="yes"/>
          <property name="transtype" value="odt"/>
          <property name="args.odt.include.rellinks" value="none"/>

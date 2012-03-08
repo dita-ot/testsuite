@@ -5,11 +5,11 @@
    <property name="dita.dir" location="${test.basedir}/../.."/>
    <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
    <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
-   <target name="BUG3174906">
-      <ant antfile="${dita.dir}/build.xml" target="init"><!-- please refer to the toolkit's document for supported parameters, and 
-           specify them base on your needs --><property name="args.input" location="${test.basedir}/src/test.ditamap"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
+  <target name="BUG3174906" if="run.javahelp" unless="skip.javahelp">
+      <ant antfile="${dita.dir}/build.xml" target="init"> 
+         <property name="args.input" location="${test.basedir}/src/test.ditamap"/>
+         <property name="dita.temp.dir" location="${temp.dir}/javahelp"/>
+         <property name="output.dir" location="${result.dir}/javahelp"/>
          <property name="transtype" value="javahelp"/>
          <property name="clean.temp" value="no"/>
       </ant>

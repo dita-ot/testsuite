@@ -5,7 +5,7 @@
    <property name="dita.dir" location="${test.basedir}/../.."/>
    <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
    <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
-   <target name="BUG3429824">
+  <target name="BUG3429824" if="run.xhtml" unless="skip.xhtml">
       <ant antfile="${dita.dir}/build.xml" target="init">
          <property name="args.input" location="${test.basedir}/src/test.ditamap"/>
          <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>

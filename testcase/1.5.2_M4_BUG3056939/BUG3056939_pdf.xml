@@ -5,9 +5,9 @@
    <property name="dita.dir" location="${test.basedir}/../.."/>
    <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
    <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
-   <target name="BUG3056939">
-      <ant antfile="${dita.dir}/build.xml" target="init"><!-- please refer to the toolkit's document for supported parameters, and 
-           specify them base on your needs --><property name="args.input" location="${test.basedir}/src/test-conref-xref-keyref-bug.ditamap"/>
+  <target name="BUG3056939" if="run.xhtml" unless="skip.xhtml">
+      <ant antfile="${dita.dir}/build.xml" target="init"> 
+         <property name="args.input" location="${test.basedir}/src/test-conref-xref-keyref-bug.ditamap"/>
          <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
          <property name="output.dir" location="${result.dir}/xhtml"/>
          <property name="transtype" value="pdf"/>

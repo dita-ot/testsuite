@@ -8,8 +8,8 @@
    <target if="run.wordrtf" unless="skip.wordrtf" name="30362222wordrtf">
       <ant antfile="${dita.dir}/build.xml" target="init">
          <property name="args.input" value="${test.basedir}/src/key_whitepaper.ditamap"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/wordrtf"/>
+         <property name="output.dir" location="${result.dir}/wordrtf"/>
          <property name="transtype" value="wordrtf"/>
          <property name="clean.temp" value="no"/>
       </ant>
