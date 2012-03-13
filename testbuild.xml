@@ -7,8 +7,14 @@
   <property name="tmp.base.dir" location="${basedir}/temp"/>
   <property name="dita.dir" location="${basedir}"/>
   
+  <patternset id="preprocess.copy">
+    <exclude name="export.xml"/>
+    <exclude name="keydef.xml"/>
+    <exclude name="schemekeydef.xml"/>
+    <include name="*.xml"/>
+  </patternset>
+  
   <target name="all">
-    <echo message="${test.base.dir}"/>
     <property name="run.preprocess" value="true"/>
     <property name="run.xhtml" value="true"/>
     <property name="run.eclipsehelp" value="true"/>
@@ -27,10 +33,11 @@
   </target>
   
   <target name="run">
-    <echo message="${test.base.dir}"/>
     <sequential>
-      <subant inheritall="true">
-        <fileset dir="${test.base.dir}" includes="*/build.xml">
+      <subant inheritall="true" inheritrefs="true">
+        <fileset dir="${test.base.dir}">
+          <include name="*/build.xml" unless="test"/>
+          <include name="${test}/build.xml" if="test"/>
           <exclude name="langref/*"/>
         </fileset>
       </subant>

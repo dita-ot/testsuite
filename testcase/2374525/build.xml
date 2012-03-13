@@ -32,5 +32,10 @@
          <property name="output.dir" location="${result.dir}/xhtml"/>
          <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
       </ant>
+     <copy todir="${result.dir}/preprocess">
+       <fileset dir="${temp.dir}/preprocess">
+         <patternset refid="preprocess.copy"/>
+       </fileset>
+     </copy>
    </target>
 </project>

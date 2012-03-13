@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/SF/dita-ot/temp/conref/preprocess?><?path2project?><?Pub Inc?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="prerequisite" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                            (topic task strictTaskbody-c)    " class="- topic/topic task/task " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-prerequisite.dita" xtrc="task:1">
+<title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-prerequisite.dita" xtrc="title:1">Prerequisite task</title>
+<shortdesc class="- topic/shortdesc " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-prerequisite.dita" xtrc="shortdesc:1">This should create a prerequisite link in the language test</shortdesc>
+<taskbody class="- topic/body task/taskbody " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-prerequisite.dita" xtrc="taskbody:1">
+<prereq class="- topic/section task/prereq " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-prerequisite.dita" xtrc="prereq:1">You need to do this first.</prereq>
+</taskbody><?Pub Caret1?>
+</task><?Pub *0000000430?>

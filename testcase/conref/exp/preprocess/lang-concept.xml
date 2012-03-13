@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/SF/dita-ot/temp/conref/preprocess?><?path2project?><?Pub Inc?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="lang-concept" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic concept/concept " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-concept.dita" xtrc="concept:1">
+<title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-concept.dita" xtrc="title:1">Concept for language test</title>
+<shortdesc class="- topic/shortdesc " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-concept.dita" xtrc="shortdesc:1">this is the related concept</shortdesc>
+<conbody class="- topic/body  concept/conbody " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-concept.dita" xtrc="conbody:1">
+<p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-concept.dita" xtrc="p:1">stuff<?Pub Caret?></p>
+<fig id="fig" class="- topic/fig " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-concept.dita" xtrc="fig:1"><title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-concept.dita" xtrc="title:2">figure title</title>
+<p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-concept.dita" xtrc="p:2">test <q class="- topic/q " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-concept.dita" xtrc="q:1">quote</q> in a figure</p>
+</fig>
+</conbody>
+</concept><?Pub *0000000387?>
