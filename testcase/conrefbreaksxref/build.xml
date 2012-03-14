@@ -16,9 +16,7 @@
       <property name="dita.temp.dir" location="${temp.dir}/preprocess"/>
     </ant>
     <copy todir="${result.dir}/preprocess">
-      <fileset dir="${temp.dir}/preprocess">
-        <patternset refid="preprocess.copy"/>
-      </fileset>
+      <fileset dir="${temp.dir}/preprocess"/>
     </copy>
   </target>
   <target name="conrefbreaksxref2xhtml" if="run.xhtml" unless="skip.xhtml">

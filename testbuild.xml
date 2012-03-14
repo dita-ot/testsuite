@@ -6,14 +6,7 @@
   <property name="act.base.dir" location="${basedir}/testresult"/>
   <property name="tmp.base.dir" location="${basedir}/temp"/>
   <property name="dita.dir" location="${basedir}"/>
-  
-  <patternset id="preprocess.copy">
-    <exclude name="export.xml"/>
-    <exclude name="keydef.xml"/>
-    <exclude name="schemekeydef.xml"/>
-    <include name="*.xml"/>
-  </patternset>
-  
+    
   <target name="all">
     <property name="run.preprocess" value="true"/>
     <property name="run.xhtml" value="true"/>

@@ -12,10 +12,13 @@
          <target name="build-init"/>
          <target name="preprocess"/>
          <property name="args.input" location="${test.basedir}/src/foo/bar/main.ditamap"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/preprocess"/>
+         <property name="dita.temp.dir" location="${temp.dir}/preprocess"/>
          <property name="generate.copy.outer" value="2"/>
          <property name="outer.control" value="quiet"/>
       </ant>
+     <copy todir="${result.dir}/preprocess">
+       <fileset dir="${temp.dir}/preprocess"/>
+     </copy>
    </target>
 </project>
