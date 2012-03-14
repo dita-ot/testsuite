@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?workdir /Users/jelovirt/Work/SF/dita-ot/temp/3470331/preprocess?><?path2project ?><map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                         " id="rootElementId" xtrc="map:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3470331/src/map.ditamap">
+  <topicref class="- map/topicref " id="tr1" xtrc="topicref:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3470331/src/map.ditamap"></topicref>
+  <topicref class="- map/topicref " id="tr2" xtrc="topicref:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3470331/src/map.ditamap"></topicref>
+</map>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/SF/dita-ot/temp/keyref/preprocess?><?path2project?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="a" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="topic:1">
+  <title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="title:1">a</title>
+  <prolog class="- topic/prolog " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="prolog:1">    
+    <author keyref="author" class="- topic/author " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="author:1" href="b.xml" scope="peer"><keyword class="- topic/keyword " xtrc="keyword:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/test.ditamap">author keyword</keyword></author>
+    <source keyref="source" class="- topic/source " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="source:1" href="b.xml" scope="peer"><keyword class="- topic/keyword " xtrc="keyword:9" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/test.ditamap">source keyword</keyword></source>
+    <publisher keyref="publisher" class="- topic/publisher " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="publisher:1" href="b.xml" scope="peer"><keyword class="- topic/keyword " xtrc="keyword:8" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/test.ditamap">publisher keyword</keyword></publisher>
+    <data keyref="data" class="- topic/data " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="data:1" href="b.xml" scope="peer"><keyword class="- topic/keyword " xtrc="keyword:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/test.ditamap">data keyword</keyword></data>
+    <data-about keyref="data-about" class="- topic/data-about " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="data-about:1" href="b.xml" scope="peer"><data class="- topic/data " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="data:2">data-about data-about</data></data-about>
+  </prolog>
+  <body class="- topic/body " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="body:1">
+    <image keyref="image" alt="Alt attribute." placement="inline" class="- topic/image " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="image:1" href="delta.gif" format="gif"/>
+    <image keyref="image" placement="inline" class="- topic/image " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="image:2" href="delta.gif" format="gif"><alt class="- topic/alt " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="alt:1">Alt element.</alt></image>
+    <p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="p:1">
+      <xref keyref="xref" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="xref:1" href="b.xml" scope="peer"><?ditaot usertext?><keyword class="- topic/keyword " xtrc="keyword:11" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/test.ditamap">xref keyword</keyword></xref>
+      <xref keyref="xref" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="xref:2" href="b.xml" scope="peer"><?ditaot usertext?>Default text</xref>
+      <cite keyref="cite" class="- topic/cite " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="cite:1">cite keyword</cite>
+      <keyword keyref="keyword" class="- topic/keyword " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="keyword:1">keyword keyword</keyword>
+      <ph keyref="ph" class="- topic/ph " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="ph:1">ph keyword</ph>
+      <term keyref="term" class="- topic/term " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="term:1">term keyword</term>
+      <indexterm keyref="indexterm" class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="indexterm:1">indexterm keyword</indexterm>
+      <indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="indexterm:2">
+        <index-base keyref="index-base" class="- topic/index-base " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="index-base:1">index-base keyword</index-base>
+      </indexterm>
+      <indextermref keyref="indextermref" class="- topic/indextermref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="indextermref:1">indextermref keyword</indextermref>
+    </p>
+    <dl class="- topic/dl " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="dl:1">
+      <dlentry class="- topic/dlentry " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="dlentry:1">
+        <dt keyref="dt" class="- topic/dt " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="dt:1">dt keyword</dt>
+        <dd class="- topic/dd " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="dd:1"/>
+      </dlentry>
+    </dl>
+    <lq keyref="lq" class="- topic/lq " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="lq:1" href="b.xml" scope="peer"><keyword class="- topic/keyword " xtrc="keyword:6" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/test.ditamap">lq keyword</keyword></lq>
+  </body>
+  <related-links class="- topic/related-links " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="related-links:1">
+    <link keyref="link" class="- topic/link " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/a.xml" xtrc="link:1" href="b.xml" scope="peer"><?ditaot usertext?><linktext class="- topic/linktext "><keyword class="- topic/keyword " xtrc="keyword:5" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/keyref/src/test.ditamap">link keyword</keyword></linktext></link>
+  </related-links>
+</topic>

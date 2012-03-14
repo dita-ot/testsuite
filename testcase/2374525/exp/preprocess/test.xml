@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/SF/dita-ot/temp/2374525/preprocess?><?path2project?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="id2374525" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="topic:1">
+  <title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="title:1">Topic title</title>
+  <body class="- topic/body " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="body:1">
+    <table class="- topic/table " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="table:1">
+      <tgroup cols="2" class="- topic/tgroup " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="tgroup:1">
+        <tbody class="- topic/tbody " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="tbody:1">
+          <row class="- topic/row " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="row:1">
+            <entry colname="col1" class="- topic/entry " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="entry:1">1</entry>
+            <entry colname="col2" class="- topic/entry " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="entry:2">2</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table class="- topic/table " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="table:2">
+      <tgroup cols="2" class="- topic/tgroup " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="tgroup:2">
+        <colspec colname="col1" colwidth="1*" class="- topic/colspec " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="colspec:1"/>
+        <colspec colname="col2" colwidth="3*" class="- topic/colspec " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="colspec:2"/>
+        <tbody class="- topic/tbody " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="tbody:2">
+          <row class="- topic/row " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="row:2">
+            <entry colname="col1" class="- topic/entry " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="entry:3">1</entry>
+            <entry colname="col2" class="- topic/entry " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="entry:4">2</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table class="- topic/table " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="table:3">
+      <tgroup cols="2" class="- topic/tgroup " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="tgroup:3">
+        <colspec colname="col1" colwidth="1cm" class="- topic/colspec " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="colspec:3"/>
+        <colspec colname="col2" colwidth="3cm" class="- topic/colspec " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="colspec:4"/>
+        <tbody class="- topic/tbody " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="tbody:3">
+          <row class="- topic/row " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="row:3">
+            <entry colname="col1" class="- topic/entry " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="entry:5">1</entry>
+            <entry colname="col2" class="- topic/entry " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/2374525/src/test.dita" xtrc="entry:6">2</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </body>
+</topic>
