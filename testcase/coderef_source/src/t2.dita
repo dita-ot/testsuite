@@ -3,7 +3,7 @@
 <topic id="topic2" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
     <title>coderef  hw.c</title>
     <body>
-        <codeblock><coderef href="hw.c" audience="programmer"/></codeblock>
+        <codeblock><coderef href="hw.c" format="text/x-csrc;charset=GB18030" audience="programmer"/></codeblock>
     </body>
 </topic>
 

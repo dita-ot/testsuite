@@ -5,13 +5,18 @@
    <property name="dita.dir" location="${test.basedir}/../.."/>
    <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
    <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
-   <target name="all" depends="coderef_source.xhtml"/>
-   <target name="coderef_source.xhtml" if="run.xhtml" unless="skip.xhtml">
+   <target name="all" depends="coderef_source.preprocess"/>
+   <target name="coderef_source.preprocess" if="run.preprocess" unless="skip.preprocess">
       <ant antfile="${dita.dir}/build.xml">
-         <property name="transtype" value="xhtml"/>
+         <target name="build-init"/>
+         <target name="preprocess"/>
+         <property name="transtype" value="preprocess"/>
          <property name="args.input" location="${test.basedir}/src/mp.ditamap"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/preprocess"/>
+         <property name="dita.temp.dir" location="${temp.dir}/preprocess"/>
       </ant>
+      <copy todir="${result.dir}/preprocess">
+        <fileset dir="${temp.dir}/preprocess"/>
+      </copy>
    </target>
 </project>
