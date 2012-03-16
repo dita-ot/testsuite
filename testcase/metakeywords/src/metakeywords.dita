@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "../dtd/concept.dtd">
+<concept id="metatest" xml:lang="FR">
+  <title>Metadata test</title>
+  <shortdesc>a little short description</shortdesc>
+  <prolog>
+    <author>one author</author>
+    <author type="creator">one creator author</author>
+    <author type="contributor">some contributing author</author>
+    <source href="some-html-link.htm">use the source, Luke</source>
+    <publisher>Mifflin &amp; co.</publisher>
+    <copyright>
+      <copyryear year="3001"/>
+      <copyryear year="2001"/>
+      <copyrholder>copyright holder</copyrholder>
+    </copyright>
+    <copyright type="primary">
+      <copyryear year="2000"/>
+      <copyrholder>copyright holder</copyrholder>
+    </copyright>
+    <copyright type="secondary">
+      <copyryear year="2003"/>
+      <copyrholder>a secondary copyright holder</copyrholder>
+    </copyright>
+    <critdates>
+      <created date="Somemonth 45th, 2525"/>
+      <revised modified="Anothermonth 53rd, 9510" golive="golive-2020" expiry="expire-123"/>
+      <revised modified="someogthermonth/date/year"/>
+    </critdates>
+    <permissions view="classified"/>
+    <metadata>
+      <audience type="administrator" job="evaluating" experiencelevel="expert"/>
+      <audience type="executive" job="installing" experiencelevel="general"/>
+      <category>a category</category>
+      <keywords>
+        <cmdname>FRED<?Pub Caret?></cmdname>
+        <apiname>an API name</apiname>
+        <cmdname>a Command name</cmdname>
+        <indexterm>an Index term</indexterm>
+        <keyword>some keywords</keyword>
+        <keyword>some more keywords</keyword>
+        <msgnum>a Message number</msgnum>
+        <option>an option</option>
+        <parmname>a parmname</parmname>
+        <varname>a varname</varname>
+        <wintitle>a wintitle</wintitle>
+      </keywords>
+      <keywords>
+        <keyword>another keyword</keyword>
+      </keywords>
+      <prodinfo>
+        <prodname>iSeries</prodname>
+        <vrmlist>
+          <vrm version="5" release="2" modification="1"/>
+          <vrm version="1" release="2" modification="3"/>
+        </vrmlist>
+        <brand>Kleenex brand</brand>
+        <component>TCP/IP component </component>
+        <featnum>FEECHUR feature</featnum>
+        <platform>VeryHigh platform</platform>
+        <prognum>1234-123 prognumber</prognum>
+        <series>eyeSeries</series>
+      </prodinfo>
+      <othermeta name="somenameTBD" content="somecontextTBD"/>
+      <othermeta name="someothernameTBD" content="someothercontextTBD"/>
+    </metadata>
+    <resourceid id="resid321" appname="someapp"/>
+  </prolog>
+  <conbody>
+    <p>stuff</p>
+  </conbody>
+  <related-links>
+    <link href="http://www.xx.com" format="html" scope="external">
+      <linktext>something xx</linktext>
+    </link>
+    <linklist>
+      <link href="http://www.yy.com" format="html" scope="external">
+        <linktext>something yy</linktext>
+      </link>
+    </linklist>
+    <linkpool>
+      <link href="http://www.zz.com" format="html" scope="external">
+        <linktext>something zz</linktext>
+      </link>
+    </linkpool>
+  </related-links>
+  <concept id="moremeta">
+    <title>More metadata</title>
+    <prolog>
+      <metadata>
+        <keywords>
+          <indexterm>More metadata - indexterm</indexterm>
+          <keyword>more keyword metadata</keyword>
+        </keywords>
+        <keywords>
+          <keyword>another keyword</keyword>
+          <indexterm>another indexterm</indexterm>
+        </keywords>
+      </metadata>
+    </prolog>
+    <conbody>
+      <p>More stuff</p>
+    </conbody>
+  </concept>
+</concept>

@@ -7,7 +7,7 @@
    <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="table2troff" if="run.troff" unless="skip.troff">
       <ant antfile="${dita.dir}/build.xml">
-         <property name="args.input" location="${testdata.dir}/OldcasesTest/table.dita"/>
+         <property name="args.input" location="${test.basedir}/src/table.dita"/>
          <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
          <property name="output.dir" location="${result.dir}/xhtml"/>
          <property name="transtype" value="troff"/>

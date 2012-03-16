@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/SF/dita-ot/temp/MetadataInheritance/preprocess/MetadataInheritance_critdates_replace?><?path2project?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="critdates_replace" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/critdates_replace.dita" xtrc="topic:1">
+    <title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/critdates_replace.dita" xtrc="title:1">TestCritdates</title>
+<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/critdates_replace.dita"> path</shortdesc>
+     <prolog class="- topic/prolog " xtrc="prolog:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/critdates_replace.dita">
+    <critdates class="- topic/critdates " xtrc="critdates:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap">
+             <created class="- topic/created " date="2007-07-01" xtrc="created:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap"/>
+             <revised class="- topic/revised " modified="2008-08-08" xtrc="revised:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap"/>
+         </critdates>
+
+</prolog>
+<body class="- topic/body " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/critdates_replace.dita" xtrc="body:1">
+    <p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/critdates_replace.dita" xtrc="p:1">asbsdf</p>
+</body>
+     
+</topic>

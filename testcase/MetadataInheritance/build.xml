@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="MetadataInheritance" default="all" basedir=".">
-   <dirname property="test.basedir" file="${ant.file.MetadataInheritance}"/>
-   <property name="test.name" value="MetadataInheritance"/>
-   <property environment="env"/>
-   <property name="args.logdir" value="log"/>
-   <property name="dita.extname" value=".xml"/>
-   <import file="MetadataInheritance_xhtml.xml"/>
-   <import file="MetadataInheritance_xhtml2.xml"/>
-   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
-   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
-   <target name="all" depends="MetadataInheritance2xhtml,MetadataInheritance2xhtml2"/>
+  <dirname property="currentdir" file="${ant.file.MetadataInheritance}"/>
+  <target name="all">
+    <sequential>
+      <subant inheritall="true">
+        <fileset dir="${currentdir}" includes="${ant.project.name}_*.xml"/>
+      </subant>
+    </sequential>
+  </target>
 </project>

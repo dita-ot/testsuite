@@ -7,7 +7,7 @@
    <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="metakeywords2xhtml" if="run.xhtml" unless="skip.xhtml">
       <ant antfile="${dita.dir}/build.xml">
-         <property name="args.input" location="${testdata.dir}/OldcasesTest/metakeywords.dita"/>
+         <property name="args.input" location="${test.basedir}/src/metakeywords.dita"/>
          <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
          <property name="output.dir" location="${result.dir}/xhtml"/>
          <property name="transtype" value="xhtml"/>

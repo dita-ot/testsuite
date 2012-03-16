@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/SF/dita-ot/temp/MetadataInheritance/preprocess/MatadataInheritance_pemissions_replace?><?path2project?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="critdates_replace" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/Permissions_replace.dita" xtrc="topic:1">
+     <title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/Permissions_replace.dita" xtrc="title:1">TestCritdates</title>
+     <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/Permissions_replace.dita"> path</shortdesc>
+     <prolog class="- topic/prolog " xtrc="prolog:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/Permissions_replace.dita">
+         <permissions class="- topic/permissions " view="entitled" xtrc="permissions:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MatadataInheritance_pemissions_replace.ditamap"/> 
+     </prolog>
+     <body class="- topic/body " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/Permissions_replace.dita" xtrc="body:1">
+         <p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/Permissions_replace.dita" xtrc="p:1">asbsdf</p>
+     </body>
+     
+ </topic>
