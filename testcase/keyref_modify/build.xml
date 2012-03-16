@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="keyref_All_tags" default="all">
-  <dirname property="test.basedir" file="${ant.file.keyref_All_tags}"/>
-  <property name="test.name" value="keyref_All_tags"/>
+<project name="keyref_modify" default="all">
+  <dirname property="test.basedir" file="${ant.file.keyref_modify}"/>
+  <property name="test.name" value="keyref_modify"/>
   <property name="dita.dir" location="${test.basedir}/../.."/>
   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
