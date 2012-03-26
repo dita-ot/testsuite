@@ -37,7 +37,7 @@ import scala.actors.threadpool.Arrays;
 @RunWith(Parameterized.class)
 public final class IntegrationTest {
     
-    private static final Collection<String> canCompare = Arrays.asList(new String[] { "preprocess" });
+    private static final Collection<String> canCompare = Arrays.asList(new String[] { "xhtml", "preprocess" });
     
     private static final File resourceDir = new File("testcase");
     private static final File resultDir = new File("testresult");
