@@ -53,12 +53,10 @@ public final class IntegrationTest {
     @Parameters
     public static Collection<Object[]> getFiles() {
         final File[] cases = resourceDir.listFiles(new FileFilter() {
-            @Override
             public boolean accept(File f) {
                 if (!f.isDirectory() || !new File(f, "build.xml").exists()) {
                     return false;
                 }
-if (!f.getName().startsWith("Metadata")) return false;
                 final File exp = new File(f, "exp");
                 if (exp.exists()) {
                     for (final String t: exp.list()) {
@@ -125,6 +123,8 @@ if (!f.getName().startsWith("Metadata")) return false;
         project.setUserProperty("preprocess.copy-generated-files.skip", "true");
         project.setUserProperty("ant.file", buildFile.getAbsolutePath());
         project.setUserProperty("ant.file.type", "file");
+        final String ditaDirProperty = System.getProperty("dita.dir");
+        project.setUserProperty("dita.dir", ditaDirProperty != null ? new File(ditaDirProperty).getAbsolutePath() : "");
         project.setKeepGoingMode(false);
         ProjectHelper.configureProject(project, buildFile);
         final Vector<String> targets = new Vector<String>();
