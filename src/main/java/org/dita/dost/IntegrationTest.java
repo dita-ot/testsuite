@@ -38,8 +38,9 @@ public final class IntegrationTest {
     
     private static final Collection<String> canCompare = Arrays.asList(new String[] { "xhtml", "preprocess" });
     
-    private static final File resourceDir = new File("testcase");
-    private static final File resultDir = new File("testresult");
+    private static final File baseDir = new File(System.getProperty("basedir"));
+    private static final File resourceDir = new File(baseDir, "testcase");
+    private static final File resultDir = new File(baseDir, "testresult");
     private static DocumentBuilder db;
     private static HtmlDocumentBuilder htmlb;
 
