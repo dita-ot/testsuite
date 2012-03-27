@@ -5,6 +5,7 @@ import static org.custommonkey.xmlunit.XMLAssert.assertXMLEqual;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -32,8 +33,6 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import scala.actors.threadpool.Arrays;
-
 @RunWith(Parameterized.class)
 public final class IntegrationTest {
     
@@ -59,6 +58,7 @@ public final class IntegrationTest {
                 if (!f.isDirectory() || !new File(f, "build.xml").exists()) {
                     return false;
                 }
+if (!f.getName().startsWith("Metadata")) return false;
                 final File exp = new File(f, "exp");
                 if (exp.exists()) {
                     for (final String t: exp.list()) {
@@ -123,8 +123,8 @@ public final class IntegrationTest {
             }
         }
         project.setUserProperty("preprocess.copy-generated-files.skip", "true");
-        project.setUserProperty(MagicNames.ANT_FILE, buildFile.getAbsolutePath());
-        project.setUserProperty(MagicNames.ANT_FILE_TYPE, MagicNames.ANT_FILE_TYPE_FILE);
+        project.setUserProperty("ant.file", buildFile.getAbsolutePath());
+        project.setUserProperty("ant.file.type", "file");
         project.setKeepGoingMode(false);
         ProjectHelper.configureProject(project, buildFile);
         final Vector<String> targets = new Vector<String>();
