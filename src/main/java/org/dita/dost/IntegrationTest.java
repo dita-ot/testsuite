@@ -1,40 +1,31 @@
 package org.dita.dost;
 
-import static org.junit.Assert.assertEquals;
 import static org.custommonkey.xmlunit.XMLAssert.assertXMLEqual;
+import static org.junit.Assert.assertEquals;
 
 import java.io.File;
 import java.io.FileFilter;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.PrintStream;
-import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
-import java.util.Properties;
 import java.util.Vector;
 import java.util.regex.Pattern;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import org.apache.tools.ant.DemuxOutputStream;
-
-import org.apache.tools.ant.DemuxInputStream;
-
 import nu.validator.htmlparser.dom.HtmlDocumentBuilder;
-
 import org.apache.tools.ant.BuildEvent;
 import org.apache.tools.ant.BuildListener;
-import org.apache.tools.ant.MagicNames;
+import org.apache.tools.ant.DemuxOutputStream;
 import org.apache.tools.ant.Project;
 import org.apache.tools.ant.ProjectHelper;
 import org.custommonkey.xmlunit.XMLUnit;
-import org.dita.dost.util.FileUtils;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -45,10 +36,13 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import org.dita.dost.util.FileUtils;
+
 @RunWith(Parameterized.class)
 public final class IntegrationTest {
     
-    private static final Collection<String> canCompare = Arrays.asList(new String[] { "xhtml", "preprocess" });
+    private static final String EXP_DIR = "exp";
+    private static final Collection<String> canCompare = Arrays.asList("xhtml", "preprocess");
     
     private static final File baseDir = new File(System.getProperty("basedir"));
     private static final File resourceDir = new File(baseDir, "testcase");
@@ -65,12 +59,12 @@ public final class IntegrationTest {
      */
     @Parameters
     public static Collection<Object[]> getFiles() {
-        final File[] cases = resourceDir.listFiles(new FileFilter() {
+        final List<File> cases = Arrays.asList(resourceDir.listFiles(new FileFilter() {
             public boolean accept(File f) {
                 if (!f.isDirectory() || !new File(f, "build.xml").exists()) {
                     return false;
                 }
-                final File exp = new File(f, "exp");
+                final File exp = new File(f, EXP_DIR);
                 if (exp.exists()) {
                     for (final String t: exp.list()) {
                         if (canCompare.contains(t)) {
@@ -79,8 +73,13 @@ public final class IntegrationTest {
                     }
                 }
                 return false;
-            }}); 
-        final Collection<Object[]> params = new ArrayList<Object[]>(cases.length);
+            }})); 
+        Collections.sort(cases, new Comparator<File>() {
+                public int compare(File arg0, File arg1) {
+                    return arg0.compareTo(arg1);
+                }
+            });
+        final List<Object[]> params = new ArrayList<Object[]>(cases.size());
         for (final File f : cases) {
                 final Object[] arr = new Object[] { f };
                 params.add(arr);
@@ -99,14 +98,14 @@ public final class IntegrationTest {
     }
     
     @Test
-    public void test() throws Exception {
-        final File expDir = new File(testDir, "exp");
-        System.out.println(testDir.getName());
+    public void test() throws Throwable {
+        final File expDir = new File(testDir, EXP_DIR);
+        System.err.println("Testcase: " + testDir.getName());
         try {
             run(testDir, expDir.list());
             compare(expDir, new File(resultDir, testDir.getName()));
-        } catch (final Exception e) {
-            throw new Exception("Case " + testDir.getName() + " failed: " + e.getMessage(), e);
+        } catch (final Throwable e) {
+            throw new Throwable("Case " + testDir.getName() + " failed: " + e.getMessage(), e);
         }
         
     }
