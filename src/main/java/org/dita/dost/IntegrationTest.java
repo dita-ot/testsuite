@@ -1,18 +1,30 @@
 package org.dita.dost;
 
+import static org.junit.Assert.assertEquals;
 import static org.custommonkey.xmlunit.XMLAssert.assertXMLEqual;
 
 import java.io.File;
 import java.io.FileFilter;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
+import java.util.Properties;
 import java.util.Vector;
+import java.util.regex.Pattern;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.apache.tools.ant.DemuxOutputStream;
+
+import org.apache.tools.ant.DemuxInputStream;
 
 import nu.validator.htmlparser.dom.HtmlDocumentBuilder;
 
@@ -89,7 +101,6 @@ public final class IntegrationTest {
     @Test
     public void test() throws Exception {
         final File expDir = new File(testDir, "exp");
-        
         System.out.println(testDir.getName());
         try {
             run(testDir, expDir.list());
@@ -100,6 +111,16 @@ public final class IntegrationTest {
         
     }
     
+    private int countMessages(final List<TestListener.Message> messages, final int level) {
+        int count = 0;
+        for (final TestListener.Message m: messages) {
+            if (m.level == level) {
+                count++;
+            }
+        }
+        return count;
+    }
+
     /**
      * Run test conversion
      * 
@@ -111,28 +132,45 @@ public final class IntegrationTest {
         if (transtypes.length == 0) {
             return;
         }
-        final File buildFile = new File(d, "build.xml");
-        final Project project = new Project();
-        project.addBuildListener(new TestListener());
-        project.fireBuildStarted();
-        project.init();
-        for (final String transtype: transtypes) {
-            if (canCompare.contains(transtype)) {
-                project.setUserProperty("run." + transtype, "true");
+        final TestListener listener = new TestListener(System.out, System.err);
+        final PrintStream savedErr = System.err;
+        final PrintStream savedOut = System.out;
+        try {
+            final File buildFile = new File(d, "build.xml");
+            final Project project = new Project();
+            project.addBuildListener(listener);
+            System.setOut(new PrintStream(new DemuxOutputStream(project, false)));
+            System.setErr(new PrintStream(new DemuxOutputStream(project, true)));
+            project.fireBuildStarted();
+            project.init();
+            for (final String transtype: transtypes) {
+                if (canCompare.contains(transtype)) {
+                    project.setUserProperty("run." + transtype, "true");
+                }
             }
+            project.setUserProperty("preprocess.copy-generated-files.skip", "true");
+            project.setUserProperty("ant.file", buildFile.getAbsolutePath());
+            project.setUserProperty("ant.file.type", "file");
+            final String ditaDirProperty = System.getProperty("dita.dir");
+            project.setUserProperty("dita.dir", ditaDirProperty != null ? new File(ditaDirProperty).getAbsolutePath() : "");
+            project.setKeepGoingMode(false);
+            ProjectHelper.configureProject(project, buildFile);
+            final Vector<String> targets = new Vector<String>();
+            targets.addElement(project.getDefaultTarget());
+            project.executeTargets(targets);
+            
+            assertEquals("Warn message count does not match expected",
+                         project.getProperty("exp.message-count.warn") != null ? Integer.parseInt(project.getProperty("exp.message-count.warn")) : 0,
+                         countMessages(listener.messages, Project.MSG_WARN));
+            assertEquals("Error message count does not match expected",
+                         project.getProperty("exp.message-count.error") != null ? Integer.parseInt(project.getProperty("exp.message-count.error")) : 0,
+                         countMessages(listener.messages, Project.MSG_ERR ));
+        } finally {
+            System.setOut(savedOut);
+            System.setErr(savedErr);
         }
-        project.setUserProperty("preprocess.copy-generated-files.skip", "true");
-        project.setUserProperty("ant.file", buildFile.getAbsolutePath());
-        project.setUserProperty("ant.file.type", "file");
-        final String ditaDirProperty = System.getProperty("dita.dir");
-        project.setUserProperty("dita.dir", ditaDirProperty != null ? new File(ditaDirProperty).getAbsolutePath() : "");
-        project.setKeepGoingMode(false);
-        ProjectHelper.configureProject(project, buildFile);
-        final Vector<String> targets = new Vector<String>();
-        targets.addElement(project.getDefaultTarget());
-        project.executeTargets(targets);
     }
-
+    
     private void compare(final File exp, final File act) throws Exception {
         for (final File e: exp.listFiles()) {
             final File a = new File(act, e.getName());
@@ -177,7 +215,22 @@ public final class IntegrationTest {
     }
     
     static class TestListener implements BuildListener {
-
+        
+        private final Pattern fatalPattern = Pattern.compile("\\[\\w+F\\]\\[FATAL\\]");
+        private final Pattern errorPattern = Pattern.compile("\\[\\w+E\\]\\[ERROR\\]");
+        private final Pattern warnPattern = Pattern.compile("\\[\\w+W\\]\\[WARN\\]");
+        private final Pattern infoPattern = Pattern.compile("\\[\\w+I\\]\\[INFO\\]");
+        private final Pattern debugPattern = Pattern.compile("\\[\\w+D\\]\\[DEBUG\\]");
+        
+        public final List<Message> messages = new ArrayList<Message>();
+        final PrintStream out;
+        final PrintStream err;
+        
+        public TestListener(final PrintStream out, final PrintStream err) {
+            this.out = out;
+            this.err = err;
+        }
+        
         @Override
         public void buildStarted(BuildEvent event) {
             //System.out.println("build started: " + event.getMessage());
@@ -210,17 +263,48 @@ public final class IntegrationTest {
 
         @Override
         public void messageLogged(BuildEvent event) {
-            switch (event.getPriority()) {
+            final String message = event.getMessage();
+            int level;
+            if (fatalPattern.matcher(message).find()) {
+                level = Project.MSG_ERR;
+            } else if (errorPattern.matcher(message).find()) {
+                level = Project.MSG_ERR;
+            } else if (warnPattern.matcher(message).find()) {
+                level = Project.MSG_WARN;
+            } else if (infoPattern.matcher(message).find()) {
+                level = Project.MSG_INFO;
+            } else if (debugPattern.matcher(message).find()) {
+                level = Project.MSG_DEBUG;
+            } else {
+                level = event.getPriority();
+            }
+
+            switch (level) {
             case Project.MSG_DEBUG:
             case Project.MSG_VERBOSE:
                 break;
             case Project.MSG_INFO:
-                //System.out.println(event.getMessage());
+                // out.println(event.getMessage());
                 break;
             default:
-                System.err.println(event.getMessage());
+                err.println(message);
             }
+            
+            messages.add(new Message(level, message));
         }
+        
+        static class Message {
+            
+            public final int level;
+            public final String message;
+            
+            public Message(final int level, final String message) {
+                this.level = level;
+                this.message = message;
+            }
+            
+        }
+        
     }
     
 }

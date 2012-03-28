@@ -9,4 +9,5 @@
    <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
    <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="all" depends="bookmap(2)2xhtml"/>
+  <property name="exp.message-count.warn" value="3"/>
 </project>

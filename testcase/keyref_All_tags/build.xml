@@ -14,4 +14,5 @@
       <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
     </ant>
   </target>
+  <property name="exp.message-count.warn" value="1"/>
 </project>

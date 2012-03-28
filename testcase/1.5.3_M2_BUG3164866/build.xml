@@ -13,4 +13,6 @@
          </subant>
       </sequential>
    </target>
+  <property name="exp.message-count.warn" value="3"/>
+  <property name="exp.message-count.error" value="2"/>
 </project>
