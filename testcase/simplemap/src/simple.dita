@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "../dtd/topic.dtd">
+<?Pub Inc?>
+<topic id="simple" xml:lang="en-us"><?Pub Caret?>
+<title>Simple parent</title>
+<shortdesc>This is a simple parent.</shortdesc>
+<body>
+<p>This is generic filler text.</p>
+</body>
+</topic>
+<?Pub *0000000373?>

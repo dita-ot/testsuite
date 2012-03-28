@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="relativecolumnwidth" default="relativecolumnwidth" basedir=".">
+  <description>Relative column width test</description>
    <dirname property="test.basedir" file="${ant.file.relativecolumnwidth}"/>
    <property name="test.name" value="relativecolumnwidth"/>
    <property name="dita.dir" location="${test.basedir}/../.."/>

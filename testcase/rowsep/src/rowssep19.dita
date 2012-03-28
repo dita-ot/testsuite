@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../dtd/topic.dtd">
+<topic xml:lang="en-us" id="rowssep-gen18">
+<title>on tgroup</title>
+<prolog>
+</prolog>
+<body>
+<table frame="top">
+<title>frame=top, no colsep/rowsep</title>
+<tgroup cols="3">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<colspec colname="col3"/>
+<tbody>
+<row>
+<entry>one</entry>
+<entry>two</entry>
+<entry>three</entry></row>
+<row>
+<entry>uno</entry>
+<entry>dos</entry>
+<entry>tres</entry></row>
+<row>
+<entry>un</entry>
+<entry>deux</entry>
+<entry>trois</entry></row>
+</tbody>
+</tgroup>
+</table>
+<table frame="top">
+<title>frame=top, rowsep=0, colsep=0</title>
+<tgroup cols="3" colsep="0" rowsep="0">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<colspec colname="col3"/>
+<tbody>
+<row>
+<entry>one</entry>
+<entry>two</entry>
+<entry>three</entry></row>
+<row>
+<entry>uno</entry>
+<entry>dos</entry>
+<entry>tres</entry></row>
+<row>
+<entry>un</entry>
+<entry>deux</entry>
+<entry>trois</entry></row>
+</tbody>
+</tgroup>
+</table>
+<table frame="top">
+<title>frame=top, rowsep=1, colsep=0</title>
+<tgroup cols="3" colsep="0" rowsep="1">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<colspec colname="col3"/>
+<tbody>
+<row>
+<entry>one</entry>
+<entry>two</entry>
+<entry>three</entry></row>
+<row>
+<entry>uno</entry>
+<entry>dos</entry>
+<entry>tres</entry></row>
+<row>
+<entry>un</entry>
+<entry>deux</entry>
+<entry>trois</entry></row>
+</tbody>
+</tgroup>
+</table>
+<table frame="top">
+<title>frame=top, rowsep=1, colsep=unspecified</title>
+<tgroup cols="3" rowsep="1">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<colspec colname="col3"/>
+<tbody>
+<row>
+<entry>one</entry>
+<entry>two</entry>
+<entry>three</entry></row>
+<row>
+<entry>uno</entry>
+<entry>dos</entry>
+<entry>tres</entry></row>
+<row>
+<entry>un</entry>
+<entry>deux</entry>
+<entry>trois</entry></row>
+</tbody>
+</tgroup>
+</table>
+<table frame="top">
+<title>frame=top, rowsep=0, colsep=1</title>
+<tgroup cols="3" colsep="1" rowsep="0">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<colspec colname="col3"/>
+<tbody>
+<row>
+<entry>one</entry>
+<entry>two</entry>
+<entry>three</entry></row>
+<row>
+<entry>uno</entry>
+<entry>dos</entry>
+<entry>tres</entry></row>
+<row>
+<entry>un</entry>
+<entry>deux</entry>
+<entry>trois</entry></row>
+</tbody>
+</tgroup>
+</table>
+<table frame="top">
+<title>frame=top, rowsep=1, colsep=1,</title>
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<colspec colname="col3"/>
+<tbody>
+<row>
+<entry>one</entry>
+<entry>two</entry>
+<entry>three</entry></row>
+<row>
+<entry>uno</entry>
+<entry>dos</entry>
+<entry>tres</entry></row>
+<row>
+<entry>un</entry>
+<entry>deux</entry>
+<entry>trois</entry></row>
+</tbody>
+</tgroup>
+</table>
+</body></topic>

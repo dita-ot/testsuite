@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "../dtd/map.dtd">
+<?Pub Inc?>
+<map title="Simple map">
+<topicref href="simple.dita" collection-type="sequence">
+<topicref href="child1.dita"></topicref>
+<topicref href="child2.dita" collection-type="family">
+<topicref href="child2a.dita"></topicref>
+<topicref href="child2b.dita"></topicref>
+<topicref href="child3.dita"></topicref>
+</topicref>
+<topicref navtitle="Second instance of child3" href="child3.dita" locktitle="yes"><?Pub Caret?>
+<topicmeta>
+<linktext>Link to child3 (second instance)</linktext>
+<shortdesc>A short description of child3 (second instance)</shortdesc>
+</topicmeta>
+</topicref>
+</topicref>
+</map>
+<?Pub *0000000772?>

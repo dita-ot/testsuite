@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->
 <project name="1.2.1_majorfixes" default="all" basedir=".">
+  <description>Test for ampersand in a link URL</description>
    <dirname property="test.basedir" file="${ant.file.1.2.1_majorfixes}"/>
    <property name="test.name" value="1.2.1_majorfixes"/>
    <dirname property="currentdir" file="${ant.file.1.2.1_majorfixes}"/>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="proptable" default="proptable" basedir=".">
+  <description>Property table test</description>
    <dirname property="test.basedir" file="${ant.file.proptable}"/>
    <property name="test.name" value="proptable"/>
    <property name="dita.dir" location="${test.basedir}/../.."/>

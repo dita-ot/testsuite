@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->
 <project name="table" default="all" basedir=".">
+  <description>Table tests</description>
    <dirname property="test.basedir" file="${ant.file.table}"/>
    <property name="test.name" value="table"/>
    <dirname property="currentdir" file="${ant.file.table}"/>
