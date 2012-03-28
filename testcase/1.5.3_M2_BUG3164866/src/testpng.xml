@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="concept-1" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:concept.xsd:1.x">
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept-1">
   <title>Test upper case PNG</title>
   <conbody>
     <p>This is lower case <q>.png</q> <image href="images/lowercase.png"/></p>

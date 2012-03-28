@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<map id="testpngmap" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:map.xsd:1.x">
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="testpngmap">
   <title>BUG 3164866</title>
   <topicref href="testpng.xml"/>
 </map>
