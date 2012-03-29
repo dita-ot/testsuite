@@ -12,12 +12,21 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Vector;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.junit.Before;
+
+import org.w3c.dom.Attr;
 
 import nu.validator.htmlparser.dom.HtmlDocumentBuilder;
 import org.apache.tools.ant.BuildEvent;
@@ -44,7 +53,9 @@ public final class IntegrationTest {
     private static final String EXP_DIR = "exp";
     private static final Collection<String> canCompare = Arrays.asList("xhtml", "preprocess");
     
-    private static final File baseDir = new File(System.getProperty("basedir"));
+    private static final File baseDir = new File(System.getProperty("basedir") != null
+                                                 ? System.getProperty("basedir")
+                                                 : "src" + File.separator + "test" + File.separator + "testsuite");
     private static final File resourceDir = new File(baseDir, "testcase");
     private static final File resultDir = new File(baseDir, "testresult");
     private static DocumentBuilder db;
@@ -96,7 +107,7 @@ public final class IntegrationTest {
         db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
         htmlb = new HtmlDocumentBuilder();
     }
-    
+        
     @Test
     public void test() throws Throwable {
         final File expDir = new File(testDir, EXP_DIR);
@@ -151,7 +162,10 @@ public final class IntegrationTest {
             project.setUserProperty("ant.file", buildFile.getAbsolutePath());
             project.setUserProperty("ant.file.type", "file");
             final String ditaDirProperty = System.getProperty("dita.dir");
-            project.setUserProperty("dita.dir", ditaDirProperty != null ? new File(ditaDirProperty).getAbsolutePath() : "");
+            project.setUserProperty("dita.dir", new File(ditaDirProperty != null
+                                                         ? ditaDirProperty
+                                                         : "src" + File.separator + "main").getAbsolutePath());
+            project.setUserProperty("result.dir", new File(resultDir, d.getName()).getAbsolutePath());
             project.setKeepGoingMode(false);
             ProjectHelper.configureProject(project, buildFile);
             final Vector<String> targets = new Vector<String>();
@@ -170,7 +184,7 @@ public final class IntegrationTest {
         }
     }
     
-    private void compare(final File exp, final File act) throws Exception {
+    private void compare(final File exp, final File act) throws Throwable {
         for (final File e: exp.listFiles()) {
             final File a = new File(act, e.getName());
             if (a.exists()) {
@@ -178,27 +192,37 @@ public final class IntegrationTest {
                     compare(e, a);
                 } else {
                     final String name = e.getName();
-                    if (name.endsWith(".html") || name.endsWith(".htm") || name.endsWith(".xhtml")) {
-                        TestUtils.resetXMLUnit();
-                        XMLUnit.setNormalizeWhitespace(true);
-                        XMLUnit.setIgnoreWhitespace(true);
-                        XMLUnit.setIgnoreDiffBetweenTextAndCDATA(true);
-                        assertXMLEqual(parseHtml(e), parseHtml(a));
-                    } else if (FileUtils.isDITAFile(name)) {
-                        TestUtils.resetXMLUnit();
-                        XMLUnit.setNormalizeWhitespace(true);
-                        XMLUnit.setIgnoreWhitespace(true);
-                        XMLUnit.setIgnoreDiffBetweenTextAndCDATA(true);
-                        assertXMLEqual(parseXml(e), parseXml(a));
+                    try {
+                        if (name.endsWith(".html") || name.endsWith(".htm") || name.endsWith(".xhtml")) {
+                            TestUtils.resetXMLUnit();
+                            XMLUnit.setNormalizeWhitespace(true);
+                            XMLUnit.setIgnoreWhitespace(true);
+                            XMLUnit.setIgnoreDiffBetweenTextAndCDATA(true);
+                            assertXMLEqual(parseHtml(e), parseHtml(a));
+                        } else if (FileUtils.isDITAFile(name)) {
+                            TestUtils.resetXMLUnit();
+                            XMLUnit.setNormalizeWhitespace(true);
+                            XMLUnit.setIgnoreWhitespace(true);
+                            XMLUnit.setIgnoreDiffBetweenTextAndCDATA(true);
+                            assertXMLEqual(parseXml(e), parseXml(a));
+                        }
+                    } catch (final Throwable ex) {
+                        throw new Throwable("Failed comparing " + e.getAbsolutePath() + " and " + a.getAbsolutePath() + ": " + ex.getMessage(), ex);
                     }
                 }
             }
         }
     }
     
+    private static final Map<String, Pattern> htmlIdPattern = new HashMap<String, Pattern>();
+    static {
+        htmlIdPattern.put("id", Pattern.compile("(.*__)d\\d+e\\d+|d\\d+e\\d+(.*)"));
+        htmlIdPattern.put("headers", Pattern.compile("d\\d+e\\d+(.*)"));
+    }
+    
     private Document parseHtml(final File f) throws SAXException, IOException {
         final Document d = htmlb.parse(f);
-        return d;
+        return rewriteIds(d, htmlIdPattern);
     }
     
     private Document parseXml(final File f) throws SAXException, IOException {
@@ -212,6 +236,75 @@ public final class IntegrationTest {
         }
         return d;
     }
+    
+    private Document rewriteIds(final Document doc, final Map<String, Pattern> patterns) {
+        final Map<String, String> idMap = new HashMap<String, String>();
+        AtomicInteger counter = new AtomicInteger();
+        final NodeList ns = doc.getElementsByTagName("*");
+        for (int i = 0; i < ns.getLength(); i++) {
+            final Element e = (Element) ns.item(i);
+            for (Map.Entry<String, Pattern> p: patterns.entrySet()) {
+                final Attr id = e.getAttributeNode(p.getKey());
+                if (id != null) {
+                    //System.out.println(p.getKey() + ": " + id.getValue());
+                    if (p.getKey().equals("headers")) {// split value
+                        final List<String> res = new ArrayList<String>();
+                        for (final String v: id.getValue().trim().split("\\s+")) {
+                            rewriteId(v, idMap, counter, p.getValue());
+                            if (idMap.containsKey(v)) {
+                                res.add(idMap.get(v));
+                            } else {
+                                res.add(v);
+                            }
+                        }
+                        id.setNodeValue(join(res));
+
+                    } else {
+                        final String v = id.getValue(); 
+                        rewriteId(v, idMap, counter, p.getValue());
+                        if (idMap.containsKey(v)) {
+                            id.setNodeValue(idMap.get(v));
+                        }
+                    }
+                    //System.out.println("  -> " + id.getValue());
+                }
+            }
+        }
+        return doc;
+    }
+    
+    private String join(final List<String> vals) {
+        final StringBuilder buf = new StringBuilder();
+        for (final Iterator<String> i = vals.iterator(); i.hasNext();) {
+            buf.append(i.next());
+            if (i.hasNext()) {
+                buf.append(" ");
+            }
+        }
+        return buf.toString();
+    }
+    
+    /**
+     * 
+     * @param id old ID value
+     * @param idMap ID map
+     * @param counter counter
+     * @param pattern pattern to test
+     */
+    private void rewriteId(final String id, final Map<String, String> idMap, final AtomicInteger counter, final Pattern pattern) {
+        final Matcher m = pattern.matcher(id);
+        if (m.matches()) {
+            if (!idMap.containsKey(id)) {
+                final int i = counter.addAndGet(1);
+                final StringBuilder buf = new StringBuilder("gen-id-").append(Integer.toString(i));
+//                if (m.groupCount() > 0) {
+//                    buf.append(m.group(1));
+//                }
+                idMap.put(id, buf.toString());
+            }
+        }
+    }
+    
     
     static class TestListener implements BuildListener {
         
@@ -230,37 +323,37 @@ public final class IntegrationTest {
             this.err = err;
         }
         
-        @Override
+        //@Override
         public void buildStarted(BuildEvent event) {
             //System.out.println("build started: " + event.getMessage());
         }
 
-        @Override
+        //@Override
         public void buildFinished(BuildEvent event) {
             //System.out.println("build finished: " + event.getMessage());
         }
 
-        @Override
+        //@Override
         public void targetStarted(BuildEvent event) {
             //System.out.println(event.getTarget().getName() + ":");
         }
 
-        @Override
+        //@Override
         public void targetFinished(BuildEvent event) {
             //System.out.println("target finished: " + event.getTarget().getName());
         }
 
-        @Override
+        //@Override
         public void taskStarted(BuildEvent event) {
             //System.out.println("task started: " + event.getTask().getTaskName());
         }
 
-        @Override
+        //@Override
         public void taskFinished(BuildEvent event) {
             //System.out.println("task finished: " + event.getTask().getTaskName());
         }
 
-        @Override
+        //@Override
         public void messageLogged(BuildEvent event) {
             final String message = event.getMessage();
             int level;

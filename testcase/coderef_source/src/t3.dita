@@ -3,8 +3,7 @@
 <topic id="topicID3" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
     <title>coderef  dita</title>
     <body>
-        <codeblock><coderef href="t1.dita"/>
-<coderef keyref="t1"/></codeblock>
+        <codeblock><coderef href="t1.dita"/></codeblock>
     </body>
 </topic>
 

@@ -13,21 +13,6 @@ End
 
 &lt;coderef href="hw.java"/&gt;&lt;/codeblock&gt;
     &lt;/body&gt;
-&lt;/topic&gt;
-
-&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;?workdir /Users/jelovirt/Work/SF/dita-ot/temp/coderef_source/preprocess?&gt;
-&lt;?path2project?&gt;
-&lt;topic id="topicID1" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/coderef_source/src/t1.dita" xtrc="topic:1"&gt;
-    &lt;title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/coderef_source/src/t1.dita" xtrc="title:1"&gt;coderef  hw.java&lt;/title&gt;
-    &lt;body class="- topic/body " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/coderef_source/src/t1.dita" xtrc="body:1"&gt;
-        &lt;codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/coderef_source/src/t1.dita" xtrc="codeblock:1"&gt;/* a long sample program */
-Do forever
-Say &amp;quot;Hello, World&amp;quot;
-End
-
-&lt;coderef href="hw.java" class="+ topic/xref pr-d/coderef " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/coderef_source/src/t1.dita" xtrc="coderef:1"&gt;&lt;/coderef&gt;&lt;/codeblock&gt;
-    &lt;/body&gt;
 &lt;/topic&gt;</codeblock>
     </body>
 </topic>

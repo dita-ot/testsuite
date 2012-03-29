@@ -7,12 +7,12 @@
    <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="lang-enus2xhtml" if="run.xhtml" unless="skip.xhtml">
       <ant antfile="${dita.dir}/build.xml">
-         <property name="args.input" location="${testdata.dir}/OldcasesTest/lang/lang-enus.dita"/>
+         <property name="args.input" location="${test.basedir}/src/lang-enus.dita"/>
          <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
          <property name="output.dir" location="${result.dir}/xhtml"/>
          <property name="transtype" value="xhtml"/>
-         <property name="dita.input.valfile"
-                   location="${testdata.dir}/OldcasesTest/lang/lang-ref.ditaval"/>
+
+                   
       </ant>
    </target>
 </project>
