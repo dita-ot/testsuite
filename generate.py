@@ -8,7 +8,11 @@ def main(id, input, types):
     casedir = os.path.join(os.path.abspath("."), "testcase", id)
     if not os.path.exists(casedir):
         os.makedirs(casedir)
-    case = open(os.path.join(casedir, "build.xml"), "w")
+    buildfile = os.path.join(casedir, "build.xml")
+    if os.path.exists(buildfile):
+        sys.stderr.write("Error: Test case " + buildfile + " already exists\n");
+        sys.exit(2)
+    case = open(buildfile, "w")
     try:
         case.write("""<?xml version="1.0" encoding="UTF-8"?>
 <project name="%(id)s" default="all">
@@ -39,7 +43,7 @@ def main(id, input, types):
     if not os.path.exists(datadir):
         os.makedirs(datadir)
 
-default_types = ["xhtml", "eclipsehelp", "eclipsecontent", "javahelp", "htmlhelp", "pdf", "troff", "docbook", "wordrtf", "odt"]
+default_types = ["xhtml", "eclipsehelp", "eclipsecontent", "javahelp", "htmlhelp", "pdf", "troff", "docbook", "wordrtf", "odt", "tocjs"]
 valid_types = ["preprocess"]
 valid_types.extend(default_types)
 
@@ -48,7 +52,9 @@ if __name__ == "__main__":
         print "Usage: generate.py ID INPUT [TYPES]"
         print "  ID     test identfier"
         print "  INPUT  input document"
-        print "  TYPES  transformation types"
+        print "  TYPES  transformation types:"
+        for t in valid_types:
+            print "         * " + t
         sys.exit(1)
     __id = sys.argv[1]
     __input = sys.argv[2]

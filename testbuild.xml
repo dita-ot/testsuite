@@ -20,6 +20,7 @@
     <property name="run.docbook" value="true"/>
     <property name="run.wordrtf" value="true"/>
     <property name="run.odt" value="true"/>
+    <property name="run.tocjs" value="true"/>
     <property name="run.generalize" value="true"/>
     <property name="run.specialize" value="true"/>
     <antcall target="run"/>
