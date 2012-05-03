@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap xml:lang="en" id="bookmap_B79258EF7EDB4B96B2225976D11BE7B1"> 
+  <booktitle> 
+	 <mainbooktitle>Field Control Stations
+Reference</mainbooktitle> 
+  </booktitle> 
+  <bookmeta> 
+	 <publisherinformation> 
+		<organization>TEST TEST TEST</organization> 
+		<published> 
+		  <completed> 
+			 <day>22</day> 
+			 <month>9</month> 
+			 <year>2011</year> 
+		  </completed> 
+		</published> 
+	 </publisherinformation> 
+	 <category>
+User's
+Manual</category> 
+	 <prodinfo> 
+		<prodname> QQQQQ 
+		</prodname> 
+		<vrmlist> 
+		  <vrm version="3" release=".03"/> 
+		</vrmlist> 
+	 </prodinfo> 
+	 <bookid> 
+		<bookpartno> PART 9999999999</bookpartno> 
+		<edition> 1</edition> 
+	 </bookid> 
+	 <bookrights> 
+		<copyrfirst> 
+		  <year>2008</year> 
+		</copyrfirst> 
+		<copyrlast> 
+		  <year> 2011 
+		  </year> 
+		</copyrlast> 
+		<bookowner> 
+		  <organization>  
+		  </organization> 
+		</bookowner> 
+	 </bookrights>
+  </bookmeta>
+  <chapter navtitle="R501_IM33K03E1050_010100_0106_c" href="R501_IM33K03E1050_010100_0106_c.xml" type="concept"/> 
+</bookmap> 

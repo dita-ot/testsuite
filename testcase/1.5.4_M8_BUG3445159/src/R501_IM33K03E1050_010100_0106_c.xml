@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- This topic needs to be cleaned up -->
+<!-- このトピックには、クリーンアップが必要です -->
+  <concept id="R501_IM33K03E1050_010100_0106" xml:lang="en">
+    <title>Redundancy</title>
+    <conbody>
+      <p>A dual redundant FCS is built with a pair of processor modules while a non-redundant FCS is built with a single processor module.</p>
+		<table id="table_12345"><title>FFCS</title><tgroup cols="1"><colspec colnum="1" colname="col52"/>
+        <tbody><row><entry colname="col52">FCS</entry></row></tbody>
+      </tgroup>
+    </table><table id="table_54321">
+      <title>FCS Models and FCS Categories</title>
+      <tgroup cols="13">
+        <colspec colnum="1" colname="col1" colwidth="1.80*"/>
+        <colspec colnum="2" colname="col2" colwidth="1.02*"/>
+        <colspec colnum="3" colname="col3" colwidth="2.02*"/>
+        <colspec colnum="4" colname="col4" colwidth="1.08*"/>
+        <colspec colnum="5" colname="col5" colwidth="1.59*"/>
+        <colspec colnum="6" colname="col6" colwidth="1.54*"/>
+        <colspec colnum="7" colname="col7" colwidth="1.00*"/>
+        <colspec colnum="8" colname="col8" colwidth="1.02*"/>
+        <colspec colnum="9" colname="col9" colwidth="2.16*"/>
+        <colspec colnum="10" colname="col10" colwidth="1.47*"/>
+        <colspec colnum="11" colname="col11" colwidth="1.40*"/>
+        <colspec colnum="12" colname="col12" colwidth="1.51*"/>
+        <colspec colnum="13" colname="col13" colwidth="1.18*"/>
+        <thead>
+          <row>
+            <entry colname="col1" morerows="1">Model</entry>
+            <entry morerows="1" namest="col2" nameend="col3">FCS Category</entry>
+            <entry namest="col4" nameend="col5">Housing and Mounting</entry>
+            <entry colname="col6" morerows="1">High Compact</entry>
+            <entry namest="col7" nameend="col8">I/O Type</entry>
+            <entry colname="col9" morerows="1">Basic Functional Control Type</entry>
+            <entry namest="col10" nameend="col11">Control Bus</entry>
+            <entry namest="col12" nameend="col13">Redundancy</entry>
+          </row>
+          <row>
+            <entry colname="col4">Rack</entry>
+            <entry colname="col5">Cabinet</entry>
+            <entry colname="col7">FIO</entry>
+            <entry colname="col8">RIO</entry>
+            <entry colname="col10">Vnet/IP</entry>
+            <entry colname="col11">V Net</entry>
+            <entry colname="col12">Single</entry>
+            <entry colname="col13">Dual</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">AFV40S</entry>
+            <entry colname="col2" morerows="7">FFCS series</entry>
+            <entry colname="col3" morerows="3">FFCS-V</entry>
+            <entry colname="col4">-</entry>
+            <entry colname="col5">X</entry>
+            <entry colname="col6">X</entry>
+            <entry colname="col7">X</entry>
+            <entry colname="col8">-</entry>
+            <entry colname="col9" morerows="7">Generic</entry>
+            <entry colname="col10">X</entry>
+            <entry colname="col11">-</entry>
+            <entry colname="col12">X</entry>
+            <entry colname="col13">-</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFV40D</entry>
+            <entry colname="col4">-</entry>
+            <entry colname="col5">X</entry>
+            <entry colname="col6">X</entry>
+            <entry colname="col7">X</entry>
+            <entry colname="col8">-</entry>
+            <entry colname="col10">X</entry>
+            <entry colname="col11">-</entry>
+            <entry colname="col12">-</entry>
+            <entry colname="col13">X</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFV30S</entry><entry colname="col4">X</entry><entry colname="col5">-</entry><entry colname="col6">X</entry>
+            <entry colname="col7">X</entry><entry colname="col8">-</entry><entry colname="col10">X</entry>
+            <entry colname="col11">-</entry>
+            <entry colname="col12">X</entry>
+            <entry colname="col13">-</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFV30D</entry><entry colname="col4">X</entry>
+            <entry colname="col5">-</entry><entry colname="col6">X</entry>
+            <entry colname="col7">X</entry><entry colname="col8">-</entry>
+            <entry colname="col10">X</entry><entry colname="col11">-</entry>
+            <entry colname="col12">-</entry><entry colname="col13">X</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFV10S</entry>
+            <entry colname="col3" morerows="1">FFCS-L</entry>
+            <entry colname="col4">X</entry>
+            <entry colname="col5">-</entry><entry colname="col6">X</entry><entry colname="col7">X</entry><entry colname="col8">-</entry>
+            <entry colname="col10">-</entry><entry colname="col11">X</entry><entry colname="col12">X</entry><entry colname="col13">-</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFV10D</entry><entry colname="col4">X</entry><entry colname="col5">-</entry><entry colname="col6">X</entry>
+            <entry colname="col7">X</entry><entry colname="col8">-</entry><entry colname="col10">-</entry><entry colname="col11">X</entry>
+            <entry colname="col12">-</entry><entry colname="col13">X</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFF50S</entry>
+            <entry colname="col3" morerows="1">FFCS</entry>
+            <entry colname="col4">X</entry>
+            <entry colname="col5">-</entry>
+            <entry colname="col6">X</entry>
+            <entry colname="col7">X</entry>
+            <entry colname="col8">-</entry>
+            <entry colname="col10">-</entry>
+            <entry colname="col11">X</entry>
+            <entry colname="col12">X</entry>
+            <entry colname="col13">-</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFF50D</entry>
+            <entry colname="col4">X</entry>
+            <entry colname="col5">-</entry>
+            <entry colname="col6">X</entry>
+            <entry colname="col7">X</entry>
+            <entry colname="col8">-</entry>
+            <entry colname="col10">-</entry>
+            <entry colname="col11">X</entry>
+            <entry colname="col12">-</entry>
+            <entry colname="col13">X</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFG30S</entry><entry colname="col2" morerows="7">KFCS/KFCS2</entry><entry colname="col3" morerows="3">KFCS2</entry>
+            <entry colname="col4">X</entry><entry colname="col5">-</entry><entry colname="col6">-</entry><entry colname="col7">X</entry>
+            <entry colname="col8">-</entry><entry colname="col9" morerows="3">Enhanced</entry><entry colname="col10">-</entry><entry colname="col11">X</entry>
+            <entry colname="col12">X</entry><entry colname="col13">-</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFG30D</entry><entry colname="col4">X</entry><entry colname="col5">-</entry><entry colname="col6">-</entry><entry colname="col7">X</entry>
+            <entry colname="col8">-</entry><entry colname="col10">-</entry><entry colname="col11">X</entry><entry colname="col12">-</entry><entry colname="col13">X</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFG40S</entry><entry colname="col4">-</entry><entry colname="col5">X</entry><entry colname="col6">-</entry>
+            <entry colname="col7">X</entry><entry colname="col8">-</entry><entry colname="col10">-</entry><entry colname="col11">X</entry>
+            <entry colname="col12">X</entry><entry colname="col13">-</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFG40D</entry><entry colname="col4">-</entry><entry colname="col5">X</entry><entry colname="col6">-</entry><entry colname="col7">X</entry>
+            <entry colname="col8">-</entry><entry colname="col10">-</entry><entry colname="col11">X</entry><entry colname="col12">-</entry><entry colname="col13">X</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFS30S</entry><entry colname="col3" morerows="3">KFCS</entry><entry colname="col4">X</entry><entry colname="col5">-</entry>
+            <entry colname="col6">-</entry><entry colname="col7">X</entry><entry colname="col8">-</entry><entry colname="col9" morerows="3">Standard</entry>
+            <entry colname="col10">-</entry><entry colname="col11">X</entry><entry colname="col12">X</entry><entry colname="col13">-</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFS30D</entry><entry colname="col4">X</entry><entry colname="col5">-</entry><entry colname="col6">-</entry>
+            <entry colname="col7">X</entry><entry colname="col8">-</entry><entry colname="col10">-</entry><entry colname="col11">X</entry>
+            <entry colname="col12">-</entry><entry colname="col13">X</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFS40S</entry><entry colname="col4">-</entry><entry colname="col5">X</entry><entry colname="col6">-</entry>
+            <entry colname="col7">X</entry><entry colname="col8">-</entry><entry colname="col10">-</entry><entry colname="col11">X</entry><entry colname="col12">X</entry>
+            <entry colname="col13">-</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFS40D</entry><entry colname="col4">-</entry><entry colname="col5">X</entry><entry colname="col6">-</entry>
+            <entry colname="col7">X</entry><entry colname="col8">-</entry><entry colname="col10">-</entry><entry colname="col11">X</entry>
+            <entry colname="col12">-</entry><entry colname="col13">X</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFG10S</entry><entry colname="col2" morerows="7">LFCS/LFCS2</entry><entry colname="col3" morerows="3">LFCS2</entry>
+            <entry colname="col4">X</entry><entry colname="col5">-</entry><entry colname="col6">-</entry><entry colname="col7">-</entry>
+            <entry colname="col8">X</entry><entry colname="col9" morerows="3">Enhanced</entry><entry colname="col10">-</entry><entry colname="col11">X</entry>
+            <entry colname="col12">X</entry><entry colname="col13">-</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFG10D</entry><entry colname="col4">X</entry><entry colname="col5">-</entry>
+            <entry colname="col6">-</entry><entry colname="col7">-</entry>
+            <entry colname="col8">X</entry><entry colname="col10">-</entry><entry colname="col11">X</entry><entry colname="col12">-</entry><entry colname="col13">X</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFG20S</entry><entry colname="col4">-</entry><entry colname="col5">X</entry>
+            <entry colname="col6">-</entry><entry colname="col7">-</entry><entry colname="col8">X</entry><entry colname="col10">-</entry><entry colname="col11">X</entry>
+            <entry colname="col12">X</entry><entry colname="col13">-</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFG20D</entry><entry colname="col4">-</entry><entry colname="col5">X</entry><entry colname="col6">-</entry><entry colname="col7">-</entry>
+            <entry colname="col8">X</entry><entry colname="col10">-</entry><entry colname="col11">X</entry><entry colname="col12">-</entry><entry colname="col13">X</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFS10S</entry><entry colname="col3" morerows="3">LFCS</entry><entry colname="col4">X</entry><entry colname="col5">-</entry>
+            <entry colname="col6">-</entry><entry colname="col7">-</entry><entry colname="col8">X</entry><entry colname="col9" morerows="3">Standard</entry>
+            <entry colname="col10">-</entry><entry colname="col11">X</entry><entry colname="col12">X</entry><entry colname="col13">-</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFS10D</entry><entry colname="col4">X</entry><entry colname="col5">-</entry><entry colname="col6">-</entry>
+            <entry colname="col7">-</entry>
+            <entry colname="col8">X</entry><entry colname="col10">-</entry><entry colname="col11">X</entry>
+            <entry colname="col12">-</entry><entry colname="col13">X</entry></row><row><entry colname="col1">AFS20S</entry><entry colname="col4">-</entry>
+            <entry colname="col5">X</entry><entry colname="col6">-</entry><entry colname="col7">-</entry><entry colname="col8">X</entry>
+            <entry colname="col10">-</entry><entry colname="col11">X</entry><entry colname="col12">X</entry><entry colname="col13">-</entry>
+          </row>
+          <row>
+            <entry colname="col1">AFS20D</entry><entry colname="col4">-</entry><entry colname="col5">X</entry><entry colname="col6">-</entry><entry colname="col7">-</entry>
+            <entry colname="col8">X</entry><entry colname="col10">-</entry><entry colname="col11">X</entry><entry colname="col12">-</entry>
+            <entry colname="col13">X</entry>
+          </row>
+          <row>
+            <entry colname="col1">PFCS-H</entry><entry colname="col2" morerows="1">SFCS</entry><entry colname="col3" morerows="1">RIO High Compact</entry>
+            <entry colname="col4">-</entry><entry colname="col5">X</entry><entry colname="col6">X</entry><entry colname="col7">-</entry><entry colname="col8">X</entry>
+            <entry colname="col9" morerows="1"></entry><entry colname="col10">-</entry><entry colname="col11">X</entry>
+            <entry colname="col12">X</entry><entry colname="col13">-</entry>
+          </row>
+          <row>
+            <entry colname="col1">PFCD-H</entry><entry colname="col4">-</entry><entry colname="col5">X</entry>
+            <entry colname="col6">X</entry><entry colname="col7">-</entry><entry colname="col8">X</entry>
+            <entry colname="col10">-</entry><entry colname="col11">X</entry>
+            <entry colname="col12">-</entry><entry colname="col13">X</entry>
+          </row>
+          <row>
+            <entry colname="col1">PFCS-S</entry><entry colname="col2" morerows="3">PFCS</entry>
+            <entry colname="col3" morerows="1">Standard PFCS</entry>
+            <entry colname="col4">-</entry><entry colname="col5">X</entry><entry colname="col6">-</entry>
+            <entry colname="col7">-</entry><entry colname="col8">X</entry>
+            <entry colname="col9" morerows="1">Standard</entry><entry colname="col10">-</entry><entry colname="col11">X</entry><entry colname="col12">X</entry>
+            <entry colname="col13">-</entry>
+          </row>
+          <row>
+            <entry colname="col1">PFCD-S</entry><entry colname="col4">-</entry><entry colname="col5">X</entry><entry colname="col6">-</entry>
+            <entry colname="col7">-</entry><entry colname="col8">X</entry><entry colname="col10">-</entry><entry colname="col11">X</entry>
+            <entry colname="col12">-</entry><entry colname="col13">X</entry>
+          </row>
+          <row>
+            <entry colname="col1">PFCS-E</entry><entry colname="col3" morerows="1">Enhanced PFCS</entry>
+            <entry colname="col4">-</entry><entry colname="col5">X</entry><entry colname="col6">-</entry><entry colname="col7">-</entry>
+            <entry colname="col8">X</entry><entry colname="col9" morerows="1">Enhanced</entry><entry colname="col10">-</entry><entry colname="col11">X</entry>
+            <entry colname="col12">X</entry><entry colname="col13">-</entry>
+          </row>
+          <row>
+            <entry colname="col1">PFCD-E</entry>
+            <entry colname="col4">-</entry>
+            <entry colname="col5">X</entry>
+            <entry colname="col6">-</entry>
+            <entry colname="col7">-</entry>
+            <entry colname="col8">X</entry>
+            <entry colname="col10">-</entry>
+            <entry colname="col11">X</entry>
+            <entry colname="col12">-</entry>
+            <entry colname="col13">X</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+      <p><draft-comment>EN only &lt;table&gt;</draft-comment></p><note type="tip">FFCS-V, FFCS-L and FFCS are referred to as FFCS series.</note></conbody>
+  </concept>
+

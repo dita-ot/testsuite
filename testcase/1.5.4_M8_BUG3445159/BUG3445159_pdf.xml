@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="BUG3445159_pdf" default="BUG3445159" basedir=".">
+
+    <!-- Note: Sample is original file submitted by user, created in XMetal -->
+    <description>SF Bug 3445159: colname values removed by Java, breaking PDF</description>
+
+    <dirname property="test.basedir" file="${ant.file.BUG3445159_pdf}"/>
+    <property name="test.name" value="1.5.4_M8_BUG3445159"/>
+    <property name="dita.dir" location="${test.basedir}/../.."/>
+    <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+    <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="BUG3445159" if="run.pdf" unless="skip.pdf">
+       <ant antfile="${dita.dir}/build.xml" target="init">
+          <property name="args.input" location="${test.basedir}/src/diff_20111129.ditamap"/>
+          <property name="dita.temp.dir" location="${temp.dir}/pdf"/>
+          <property name="output.dir" location="${result.dir}/pdf"/>
+          <property name="transtype" value="pdf"/>
+          <property name="clean.temp" value="no"/>
+       </ant>
+    </target>
+  
+</project>
