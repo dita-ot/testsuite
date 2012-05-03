@@ -5,6 +5,7 @@
    <property name="dita.dir" location="${test.basedir}/../.."/>
    <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
    <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <!-- This is a test of filtering; should only go thru start of preprocess, provided we are validating preprocess -->
    <target if="run.xhtml" unless="skip.xhtml" name="30303172xhtml">
       <ant antfile="${dita.dir}/build.xml" target="init">
          <property name="args.input" value="${test.basedir}/src/3030317.dita"/>
