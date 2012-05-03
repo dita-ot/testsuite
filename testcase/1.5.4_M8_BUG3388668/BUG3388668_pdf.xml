@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="BUG3388668_pdf" default="BUG3388668" basedir=".">
+    <description>SF Bug 3388668: data element in figure cap breaks link</description>
+    <dirname property="test.basedir" file="${ant.file.BUG3388668_xhtml}"/>
+    <property name="test.name" value="1.5.4_M8_BUG3388668"/>
+    <property name="dita.dir" location="${test.basedir}/../.."/>
+    <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+    <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+   <target name="BUG3388668" if="run.pdf" unless="skip.pdf">
+       <ant antfile="${dita.dir}/build.xml" target="init">
+          <property name="args.input" location="${test.basedir}/src/fig-cap-test.ditamap"/>
+          <property name="dita.temp.dir" location="${temp.dir}/pdf"/>
+          <property name="output.dir" location="${result.dir}/pdf"/>
+          <property name="transtype" value="pdf"/>
+          <property name="clean.temp" value="no"/>
+       </ant>
+    </target>
+
+</project>
