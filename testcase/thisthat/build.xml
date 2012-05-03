@@ -4,7 +4,7 @@
    <dirname property="test.basedir" file="${ant.file.thisthat}"/>
    <property name="test.name" value="thisthat"/>
    <dirname property="currentdir" file="${ant.file.thisthat}"/>
-   <target name="all">
+   <target name="all" description="Test description">
       <echo message="${currentdir}" level="info"/>
       <sequential>
          <subant inheritall="true">
