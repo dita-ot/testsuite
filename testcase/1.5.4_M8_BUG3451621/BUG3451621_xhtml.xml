@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="BUG3451621_xhtml" default="BUG3451621" basedir=".">
+  <description>SF Bug 3451621: Revision flags wrong on plentry / dlentry</description>
+   <dirname property="test.basedir" file="${ant.file.BUG3451621_xhtml}"/>
+   <property name="test.name" value="1.5.4_M8_BUG3451621"/>
+   <property name="dita.dir" location="${test.basedir}/../.."/>
+   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
+   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
+  <target name="BUG3451621" if="run.xhtml" unless="skip.xhtml">
+      <ant antfile="${dita.dir}/build.xml" target="init">
+         <property name="args.input" location="${test.basedir}/src/testtopic.dita"/>
+         <property name="args.filter" value="${test.basedir}/src/flag.ditaval"/>
+         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="transtype" value="xhtml"/>
+         <property name="clean.temp" value="no"/>
+         <property name="validate" value="false"/>
+      </ant>
+   </target>
+  
+</project>

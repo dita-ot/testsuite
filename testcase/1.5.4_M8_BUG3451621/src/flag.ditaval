@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><val>
+<revprop action="flag" changebar="|" val="default">
+</revprop>
+<revprop action="flag" changebar="|" val="mystart">
+<startflag imageref="TestCheckPoint.JPG">
+	<alt-text>Start of changes for service refresh 1</alt-text>
+</startflag>
+</revprop>
+<revprop action="flag" changebar="|" val="myend">
+<endflag imageref="TestCheckPoint.JPG"><alt-text>End of changes for service refresh 1</alt-text></endflag>
+</revprop>
+<revprop action="flag" changebar="|" val="both">
+<startflag imageref="TestCheckPoint.JPG">
+	<alt-text>Start of changes for service refresh 1</alt-text>
+</startflag>
+<endflag imageref="TestCheckPoint.JPG"><alt-text>End of changes for service refresh 1</alt-text></endflag>
+</revprop>
+</val>
