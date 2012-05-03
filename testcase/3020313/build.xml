@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="3020313" default="all" basedir=".">
+    <description>Covers SF Bugs 3020313 and 3020314 (Chunking bugs)</description>
+    <!-- 3020313: Chunk processor adds <topicref> before <topicmeta> -->
+    <!-- 3020314: Chunk output includes index terms in navtitles -->
    <dirname property="test.basedir" file="${ant.file.3020313}"/>
    <property name="test.name" value="3020313"/>
    <property name="currentdir" location="${test.basedir}"/>
