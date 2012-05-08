@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->
 <project name="lang" default="all" basedir=".">
+    <description>Test generated strings for each supported language (XHTML)</description>
    <dirname property="test.basedir" file="${ant.file.lang}"/>
    <property name="test.name" value="lang"/>
    <dirname property="currentdir" file="${ant.file.lang}"/>

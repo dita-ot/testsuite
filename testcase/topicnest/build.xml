@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->
 <project name="topicnest" default="all" basedir=".">
+    <description>Test that rule matches exist for deeply nested topics and their headings</description>
    <dirname property="test.basedir" file="${ant.file.topicnest}"/>
    <property name="test.name" value="topicnest"/>
    <dirname property="currentdir" file="${ant.file.topicnest}"/>

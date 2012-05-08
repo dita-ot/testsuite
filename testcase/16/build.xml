@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->
 <project name="16" default="all" basedir=".">
+    <description>Conref on choice table entries and row, xref to choice table row</description>
    <dirname property="test.basedir" file="${ant.file.16}"/>
    <property name="test.name" value="16"/>
    <dirname property="currentdir" file="${ant.file.16}"/>

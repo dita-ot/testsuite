@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--ArborText, Inc., 1988-2002, v.4002-->
-<!DOCTYPE dita PUBLIC "-//IBM//DTD DITA Composite//EN"
- "../dtd/ditabase.dtd">
-<?Pub Inc?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE dita PUBLIC "-//IBM//DTD DITA IBM Composite//EN"
+ "ibm-ditabase.dtd">
 <dita>
 <topic id="topic1">
 <title>Top Topic</title>
@@ -163,8 +162,8 @@
 <reference id="reference7">
 <title>Reference, level 7</title>
 <refbody>
-<example>This is a sample reference</example><?Pub Caret?>
-</refbody>
+<example>This is a sample reference</example>
+</refbody><?Pub Caret -1?>
 </reference>
 </reference>
 </reference>
@@ -173,4 +172,4 @@
 </reference>
 </reference>
 </dita>
-<?Pub *0000003518?>
+<?Pub *0000003510?>

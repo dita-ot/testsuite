@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="topicnest_troff" default="topicnest2troff" basedir=".">
+    <description>TROFF test that rule matches exist for deeply nested topics and their headings</description>
    <dirname property="test.basedir" file="${ant.file.topicnest_troff}"/>
    <property name="test.name" value="topicnest"/>
    <property name="dita.dir" location="${test.basedir}/../.."/>
@@ -7,7 +8,7 @@
    <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="topicnest2troff" if="run.troff" unless="skip.troff">
       <ant antfile="${dita.dir}/build.xml">
-         <property name="args.input" location="${testdata.dir}/OldcasesTest/topicnest.dita"/>
+         <property name="args.input" location="${test.basedir}/src/topicnest.ditamap"/>
          <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
          <property name="output.dir" location="${result.dir}/xhtml"/>
          <property name="transtype" value="troff"/>

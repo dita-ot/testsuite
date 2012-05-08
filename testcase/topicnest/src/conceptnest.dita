@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="concept1">
+<title>Concept, top level</title>
+<conbody>
+<p>this is a concept</p>
+</conbody>
+<concept id="concept2">
+<title>Concept, level 2</title>
+<conbody>
+<p>this is a concept</p>
+</conbody>
+<concept id="concept3">
+<title>Concept, level 3</title>
+<conbody>
+<p>this is a concept</p>
+</conbody>
+<concept id="concept4">
+<title>Concept, level 4</title>
+<conbody>
+<p>this is a concept</p>
+</conbody>
+<concept id="concept5">
+<title>Concept, level 5</title>
+<conbody>
+<p>this is a concept</p>
+</conbody>
+<concept id="concept6">
+<title>Concept, level 6</title>
+<conbody>
+<p>this is a concept</p>
+</conbody>
+<concept id="concept7">
+<title>Concept, level 7</title>
+<conbody>
+<p>this is a concept</p>
+</conbody>
+</concept>
+</concept>
+</concept>
+</concept>
+</concept>
+</concept>
+</concept><?Pub Caret -3?>
+<?Pub *0000000984?>

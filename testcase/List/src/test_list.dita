@@ -1,106 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
  "../dtd/task.dtd">
 <task id="two" xml:lang="en-us">
 <title>List Test</title>
 <shortdesc>Test on simple list, nested list, list in table.</shortdesc>
 <taskbody>
-<prereq>You need to do this first.</prereq>
-<context>The stage needs to be set just so.</context>
 <steps>
-<step><cmd>Test Simple list.</cmd></step>
 <step><cmd>Test nested list.</cmd>
 <substeps>
 <substep><cmd>which is done by doing this</cmd></substep>
 <substep><cmd>and then this.</cmd></substep>
 </substeps>
 </step>
-<step>
-<cmd>Test list in table.</cmd>
-
+<step><cmd>Test list in table.</cmd>
 <choicetable>
 <chrow>
-<choption>Set the <varname>Path</varname> environment variable to include
-the directory where you installed the Ant bin directory.</choption>
+<choption>test nested lists</choption>
 <chdesc><ol>
-<li>Find the <varname>Path</varname> environment variable in the list.
-If <varname>Path</varname> is not listed, click on <uicontrol>New</uicontrol> under the System variables section.</li>
-<li>Type <codeph>%ANT_HOME%\bin</codeph><note type="important">If there are other variables
-listed, create a new variable separated by a semicolon. Ensure
-there are no spaces before or after the semicolon.</note></li>
-<li>new designed nested ol list.
-<ol>
+<li>Find the thing</li>
+<li>Type thing</li>
+<li>new designed nested ol list. <ol>
 <li>li1</li>
 <li>li2</li>
-<li>nested<ol><li>sub-li1</li><li>sub-li2</li></ol></li>
-</ol>
-</li>
-</ol>
-</chdesc>
-</chrow>
+<li>nested<ol>
+<li>sub-li1</li>
+<li>sub-li2</li>
+</ol></li>
+</ol> </li>
+</ol> </chdesc></chrow>
 <chrow>
-<choption>Set the <varname>ANT_HOME_test</varname>
- environment variable to
-the directory where you installed Ant.</choption>
+<choption>test list</choption>
 <chdesc><ol>
-<li>Click on <uicontrol>New New</uicontrol>
- under the System variables
-section.</li>
-<li>Type <codeph>ANT_HOME</codeph> in the variable name field.</li>
-<li>Type <codeph>C:\ant</codeph> in the variable value field.</li>
-</ol></chdesc>
-</chrow>
-<chrow>
-<choption>Set the <varname>JAVA_HOME</varname> environment variable to
-the directory where you installed the J2SE SDK application.</choption>
-<chdesc><ol>
-<li>Click on <uicontrol>New</uicontrol> under the System variables
-section.</li>
-<li>Type <codeph>JAVA_HOME</codeph> in the variable name field.</li>
-<li>Type <codeph>C:\j2sdk1.4.2_08</codeph> in the variable value field.</li>
-</ol></chdesc>
-</chrow>
-<chrow>
-<choption>Set the <varname>JHHOME</varname> environment variable to the
-directory where you installed the JavaHelp application.</choption>
-<chdesc><ol>
-<li>Click on <uicontrol>New</uicontrol> under the System variables
-section.</li>
-<li>Type <codeph>JHHOME</codeph> in the variable name field.</li>
-<li>Type <codeph>C:\javahelp\jh2.0\javahelp\bin</codeph> in the variable value
-field.</li>
-</ol></chdesc>
-</chrow>
-<chrow>
-<choption>Set the <varname>CLASSPATH </varname>environment variable to
-include the .jar files from the Apache FOP application.</choption>
-<chdesc><ol>
-<li>Find the <varname>CLASSPATH </varname> environment variable in the
-list. If  <varname>CLASSPATH </varname> is not listed, click on <uicontrol>New</uicontrol>
- under the System variables section.</li>
-<li>Type <codeph>C:\fop-0.20.5\build\fop.jar;C:\fop-0.20.5\lib\batik.jar;C:\fop-0.20.5\lib\avalon-framework-cvs-20020806.jar</codeph><note type="important">If
-there are other variables listed, create new variable separated
-by a semicolon. Ensure
-there are no spaces before or after the semicolon.</note></li>
-</ol></chdesc>
-</chrow>
-<chrow>
-<choption>Set the <varname>CLASSPATH</varname> environment variable to
-include the directory where you installed Saxon.</choption>
-<chdesc><ol>
-<li>Find the <varname>CLASSPATH</varname> environment variable in the
-list. If <varname>CLASSPATH </varname> is not listed, click on <uicontrol>New</uicontrol>
- under the System variables section.</li>
-<li>Type <codeph>C:\saxon\saxon.jar</codeph><note type="important">If there are other variables
-listed, create a new variable separated by a semicolon. Ensure
-there are no spaces before or after the semicolon.</note></li>
-</ol></chdesc>
-</chrow>
+<li>test <uicontrol>test</uicontrol> test </li>
+<li>test <codeph>test</codeph> test</li>
+<li>test <codeph>test</codeph> test.</li>
+</ol></chdesc></chrow>
 </choicetable>
-
 </step>
-</steps>
-<example>Here's an <ph>example</ph>.</example>
-<postreq>Now, you too can do this...</postreq>
+</steps><?Pub Caret -2?>
 </taskbody>
 </task>
+<?Pub *0000001080?>

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Arbortext, Inc., 1988-2011, v.4002-->
-<!DOCTYPE task PUBLIC "-//IBM//DTD DITA IBM Task//EN"
- "ibm-task.dtd">
-<?Pub Sty _display FontColor="red"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE task PUBLIC "-//IBM//DTD DITA Task//EN"
+ "../dtd/task.dtd">
+<?Pub Inc?>
 <task id="task" xml:lang="en-us">
 <title>This is a Simple Task</title>
 <shortdesc>This is a generic task, which is linked to by my link tester.</shortdesc>
@@ -12,19 +12,15 @@
 <steps>
 <step><cmd>Do this</cmd></step>
 <step importance="optional"><cmd>not this</cmd></step>
-<step importance="required"><cmd>Do this</cmd><info>and this</info>
-</step>
+<step importance="required"><cmd>Do this</cmd><info>and this</info></step>
 <step><cmd>Then this</cmd>
 <substeps>
-<substep importance="optional"><cmd>which is done by doing this</cmd>
-</substep>
+<substep importance="optional"><cmd>which is done by doing this</cmd></substep>
 <substep importance="required"><cmd>and then this.</cmd></substep>
 </substeps>
 <choicetable>
-<chrow><choption>Do this</choption><chdesc>and this will happen</chdesc>
-</chrow>
-<chrow><choption>Do that</choption><chdesc>and that will happen</chdesc>
-</chrow>
+<chrow><choption>Do this</choption><chdesc>and this will happen</chdesc></chrow>
+<chrow><choption>Do that</choption><chdesc>and that will happen</chdesc></chrow>
 </choicetable>
 </step>
 <step><cmd>And finally, this.</cmd>
@@ -36,18 +32,15 @@
 <choicetable>
 <chhead><choptionhd>Do something</choptionhd><chdeschd>Or Else this</chdeschd>
 </chhead>
-<chrow><choption>Do this</choption><chdesc>and this will happen</chdesc>
-</chrow>
-<chrow><choption>Do that</choption><chdesc>and that will happen</chdesc>
-</chrow>
+<chrow><choption>Do this</choption><chdesc>and this will happen</chdesc></chrow>
+<chrow><choption>Do that</choption><chdesc>and that will happen</chdesc></chrow>
 </choicetable>
 </step>
 <step importance="optional"><cmd>another</cmd></step>
 <step importance="required"><cmd>one</cmd></step>
 </steps>
 <result>result- this did that</result>
-<example>example- Here's an <ph>example</ph>... Insert slot A into
-tab B.</example>
+<example>example- Here's an <ph>example</ph>... Insert slot A into tab B.</example>
 <postreq>postreq- Now, you too can do this...</postreq>
 </taskbody>
 <task id="task2">
@@ -58,18 +51,15 @@ tab B.</example>
 <context>context - The stage needs to be set just so.</context>
 <steps>
 <step><cmd>Do this</cmd></step>
-<step><cmd>Do this</cmd><info><note>This steps has a note - watch
-it!!!</note></info></step>
+<step><cmd>Do this</cmd><info><note>This steps has a note - watch it!!!</note></info>
+</step>
 <step><cmd>Then this</cmd>
 <choicetable>
-<chrow><choption>Do this</choption><chdesc>and this will happen</chdesc>
-</chrow>
-<chrow><choption>Do that</choption><chdesc>and that will happen</chdesc>
-</chrow>
+<chrow><choption>Do this</choption><chdesc>and this will happen</chdesc></chrow>
+<chrow><choption>Do that</choption><chdesc>and that will happen</chdesc></chrow>
 </choicetable>
 <substeps>
-<substep importance="optional"><cmd>which is done by doing this</cmd>
-</substep>
+<substep importance="optional"><cmd>which is done by doing this</cmd></substep>
 <substep importance="required"><cmd>and then this.</cmd></substep>
 </substeps>
 </step>
@@ -81,18 +71,15 @@ it!!!</note></info></step>
 <choicetable>
 <chhead><choptionhd>Do something</choptionhd><chdeschd>Or Else this</chdeschd>
 </chhead>
-<chrow><choption>Do this</choption><chdesc>and this will happen</chdesc>
-</chrow>
-<chrow><choption>Do that</choption><chdesc>and that will happen</chdesc>
-</chrow>
+<chrow><choption>Do this</choption><chdesc>and this will happen</chdesc></chrow>
+<chrow><choption>Do that</choption><chdesc>and that will happen</chdesc></chrow>
 </choicetable>
 </step>
 <step importance="optional"><cmd>another</cmd></step>
 <step importance="required"><cmd>one</cmd></step>
 </steps>
 <result>result- this did that</result>
-<example>example-Here's an <ph>example</ph>... Insert slot A into
-tab B.</example>
+<example>example-Here's an <ph>example</ph>... Insert slot A into tab B.</example>
 <postreq>postreq-Now, you too can do this...</postreq>
 </taskbody>
 </task>
@@ -131,10 +118,9 @@ tab B.</example>
 <title>Single step</title>
 <taskbody>
 <steps>
-<step><cmd>do this 1 thing - should be a paragraph.</cmd></step><?Pub
-Caret 41?>
+<step><cmd>do this 1 thing - should be a paragraph.<?Pub Caret?></cmd></step>
 </steps>
 </taskbody>
 </task>
 </task>
-<?Pub *0000004410?>
+<?Pub *0000004384?>

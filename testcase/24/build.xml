@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="24" default="242xhtml" basedir=".">
+    <description>Test XSL override of XHTML output, imports using plugin:org.dita.xhtml:xsl/dita2xhtml.xsl</description>
    <dirname property="test.basedir" file="${ant.file.24}"/>
    <property name="test.name" value="24"/>
    <property name="dita.dir" location="${test.basedir}/../.."/>
