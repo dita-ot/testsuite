@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA 1.2 Glossary//EN"
+ "../demo/dita12/glossary.dtd">
+<glossentry id="ibm" xml:lang="en-us">
+<glossterm>International Brotherhood of Magicians</glossterm>
+<glossBody>
+<glossSurfaceForm>International Brotherhood of Magicians (IBM)</glossSurfaceForm>
+<glossAlt><?Pub Caret1?>
+<glossAcronym>IBM</glossAcronym>
+</glossAlt>
+</glossBody>
+</glossentry>
+<?Pub *0000000488?>

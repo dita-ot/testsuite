@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA 1.2 Glossary//EN"
+ "../demo/dita12/glossary.dtd">
+<glossentry id="acronym">
+  <glossterm>FULL TERM HERE</glossterm>
+  <glossBody>
+    <glossSurfaceForm>SURFACE FORM HERE (SFH)</glossSurfaceForm>
+    <glossAlt>
+      <glossAcronym>SFH</glossAcronym>
+    </glossAlt>
+  </glossBody>
+</glossentry>

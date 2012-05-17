@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\SAXONIBMJDK\testresult\12026\All_preferred\xhtml\temp?><?path2project?><glossentry xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="abs" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic concept glossentry)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic concept/concept glossentry/glossentry " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossentry:1">
+    <glossterm class="- topic/title concept/title glossentry/glossterm " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossterm:1">Anti-lock Braking System(term)</glossterm>
+    <glossdef class="- topic/abstract concept/abstract glossentry/glossdef " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossdef:1">A brake technology that minimizes skids.</glossdef>
+    <prolog class="- topic/prolog " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="prolog:1">
+        <author class="- topic/author " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="author:1">jyt</author>
+        <copyright class="- topic/copyright " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="copyright:1">
+            <copyryear year="2008" class="- topic/copyryear " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="copyryear:1"/>
+            <copyrholder class="- topic/copyrholder " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="copyrholder:1"/>
+        </copyright>
+    </prolog>
+    <glossBody class="- topic/body concept/conbody glossentry/glossBody " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossBody:1">
+        <glossPartOfSpeech value="noun" class="- topic/data concept/data glossentry/glossPartOfSpeech " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossPartOfSpeech:1"/>
+        <glossSurfaceForm class="- topic/p concept/p glossentry/glossSurfaceForm " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossSurfaceForm:1">Anti-lock Braking System (ABS)</glossSurfaceForm>
+        <glossAlt id="absAcronym" class="- topic/section concept/section glossentry/glossAlt " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossAlt:1">
+            <glossAcronym class="- topic/title concept/title glossentry/glossAcronym " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossAcronym:1">ABS Acronym</glossAcronym>
+            <glossStatus value="preferred" class="- topic/data concept/data glossentry/glossStatus " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossStatus:1"/>
+        </glossAlt>
+        <glossAlt id="absAbbreviation" class="- topic/section concept/section glossentry/glossAlt " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossAlt:2">
+            <glossAbbreviation class="- topic/title concept/title glossentry/glossAbbreviation " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossAbbreviation:1">ABS Abbreviation</glossAbbreviation>
+            <glossStatus value="preferred" class="- topic/data concept/data glossentry/glossStatus " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossStatus:2"/>
+        </glossAlt>
+        <glossAlt id="absShortForm" class="- topic/section concept/section glossentry/glossAlt " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossAlt:3">
+            <glossShortForm class="- topic/title concept/title glossentry/glossShortForm " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossShortForm:1">ABS ShortForm</glossShortForm>
+            <glossStatus value="preferred" class="- topic/data concept/data glossentry/glossStatus " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossStatus:3"/>
+        </glossAlt>
+        <glossAlt id="absSynonym" class="- topic/section concept/section glossentry/glossAlt " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossAlt:4">
+            <glossSynonym class="- topic/title concept/title glossentry/glossSynonym " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossSynonym:1">ABS Synonym</glossSynonym>
+            <glossStatus value="preferred" class="- topic/data concept/data glossentry/glossStatus " xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\abs.dita" xtrc="glossStatus:4"/>
+        </glossAlt>
+    </glossBody>
+</glossentry>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.2 Map//EN"
+ "map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map xml:lang="en-us"><title>Testing the keys</title>
+<!--<keydef format="dita" href="unavailable.dita" keys="puffin llama"
+linking="targetonly" scope="local"></keydef>-->
+<topicgroup collection-type="sequence">
+<topicref href="keyref-a.dita" keys="puffintopic"></topicref>
+<topicref href="keyref-b.dita" keys="llamatopic"></topicref>
+</topicgroup>
+<reltable>
+<relrow>
+<relcell>
+<topicref keyref="puffintopic"></topicref>
+</relcell>
+<relcell>
+<topicref href="seabirds.dita" keyref="puffin"></topicref>
+</relcell>
+</relrow>
+<relrow>
+<relcell>
+<topicref keyref="llamatopic"></topicref>
+</relcell>
+<relcell>
+<topicref href="camelids.dita" keyref="llama"></topicref>
+</relcell>
+</relrow>
+</reltable>
+<topicref format="ditamap" href="keys-sv.ditamap" toc="no"></topicref><?Pub
+Caret?>
+<!--<topicref format="ditamap" href="keys-ru.ditamap" toc="no"></topicref>-->
+<!--<reltable>
+<relrow>
+<relcell>
+<topicref keyref="puffintopic"></topicref>
+</relcell>
+<relcell>
+<topicref format="html" href="http://en.wikipedia.org/wiki/Puffin"
+keyref="puffin" scope="external"></topicref>
+</relcell>
+</relrow>
+<relrow>
+<relcell>
+<topicref keyref="llamatopic"></topicref>
+</relcell>
+<relcell>
+<topicref format="html" href="http://en.wikipedia.org/wiki/Llama"
+keyref="llama" scope="external"></topicref>
+</relcell>
+</relrow>
+</reltable>-->
+</map>
+<?Pub *0000001540?>

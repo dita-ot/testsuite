@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "file:/C:/SAXONIBMJDK/demo/dita12/dtd12/technicalContent/dtd/topic.dtd">
+<topic id="topic" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <title>indexterm</title>
+    <body>
+        <section>
+            <title>section 1</title>
+            <indexterm>indexterm1</indexterm>
+        </section>
+        <section>
+            <title>section 2</title>
+        <p>An indexterm element allows the author to indicate that
+            a certain word or phrase should produce an index entry in the
+            generated index. You can nest indexterm elements to create
+            multi-level indexes.<indexterm>indexterm</indexterm>
+            <indexterm>Valid in Many Places elements<indexterm>indexterm</indexterm>
+            </indexterm></p>
+        </section>
+        <section>
+            <title>section 3</title>
+            <indexterm>indexterm3</indexterm> indexterm 3
+        </section>
+    </body>
+</topic>
+

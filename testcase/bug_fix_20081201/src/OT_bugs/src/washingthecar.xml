@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is part of the DITA Open Toolkit project hosted on 
+     Sourceforge.net. See the accompanying license.txt file for 
+     applicable licenses.-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "../../dtd/task.dtd">
+<!-- (C) Copyright IBM Corporation 2001, 2005. All Rights Reserved.
+ *-->
+<task id="washcar" xml:lang="en-us"> 
+  <title>Washing the car</title> 
+  <taskbody> 
+	 <context id="context_14C994302F50489AACEAAB5F47F1FFAA">
+		<p>Keep your car looking great by washing it regularly.
+		</p>
+	 </context> 
+	 <steps id="steps_D4A46C986FA74AA48D1B6317BD7DED54"> 
+		<step id="step_EB0CEE3D144948B2B15C0ED35FCC839A">
+		  <cmd>Move the car onto the driveway.
+		  </cmd> 
+		</step> 
+		<step>
+		  <cmd>Attach the water hose to a spout and pull the free end over to the
+			 car.
+		  </cmd>
+		</step> 
+		<step id="step_FE95E5C6794B4FF984ED122E8AE6434A">
+		  <cmd>Fill a bucket with soapy water.
+		  </cmd>
+		</step> 
+		<step id="step_E4B5F012391246A59F16283D76BAB8E9">
+		  <cmd>Use a sponge to apply the soapy water to the car and scrub off the
+			 dirt.
+		  </cmd>
+		</step> 
+		<step id="step_E99A682B7F0F4267B3CB729DC9346168">
+		  <cmd>Rinse the car by spraying clean water from the hose.
+		  </cmd>
+		</step> 
+		<step>
+		  <cmd>Dry the car using a dampened chamois.
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

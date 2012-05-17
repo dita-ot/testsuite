@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "file:/C:/DITA-OT1.4.2/dtd/concept.dtd">
+<concept id="buildconcept">
+    <title>this 
+        is a concept
+    </title>
+    <conbody>
+        <note>&lt;note&gt;this is a note&lt;/note&gt;</note>
+        <codeblock>&lt;codeblock&gt;this is a codeblok&lt;/codeblock&gt;</codeblock>
+        <data>&lt;data&gt;this is a data&lt;/.data&gt;</data>
+    </conbody>
+    <related-links>
+        <link href="task_example.xml" format="dita" type="task"><linktext>&lt;linktext&gt;this is a linktext&lt;/linktext&gt;</linktext></link>
+     
+    </related-links>
+    
+</concept>
+

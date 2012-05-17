@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- (c) Copyright IBM Corp.-->
+	<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.2 Map//EN" "">
+	<map>
+	    <topicref keys="componentAconfig commonconfig" href="componentA/configA.dita#configA">
+	        <topicmeta>
+	            <exportanchors>
+	                <anchorkey keyref="commonconfig"/>
+	                <anchorid id="step1"/>
+	                <anchorid id="step1.5"/>
+	                <anchorid id="step2"/>
+	                <anchorid id="step2.5"/>
+	            </exportanchors>
+	        </topicmeta>
+	        <!--topicref href="a.dita">
+      <topicmeta>
+        <exportanchors>
+          <anchorkey keyref="commonconfig"/>
+          <anchorid id="step1"/>
+          <anchorid id="step2"/>
+        </exportanchors>
+      </topicmeta>
+    </topicref-->
+	    </topicref>
+	    
+	    <topicref href="test1.dita"/>
+	</map>
+	

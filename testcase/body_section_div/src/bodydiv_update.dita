@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN"
+ " ">
+<?Pub Sty _display FontColor="red"?>
+<!-- this is a case for 12021@2008-05-19 -->
+<?Pub Caret -2?>
+<!-- this topic is adding @bodydiv -->
+<topic id="bodydivID" xml:lang="en-us"
+xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+<title>THIS IS A  TOPIC</title>
+<body>
+<p>a</p>
+<p>b</p>
+<!-- new element@bodydiv -->
+<bodydiv id="bdID">             <p>A</p>             <p>B</p>    
+    </bodydiv>
+<!-- reuse itself  here -->
+<bodydiv conref="#bodydivID/bdID"></bodydiv>
+<!-- Define nested bodydiv here-->
+<bodydiv id="bdID1">             <p>C</p>             <p>D</p>   
+         <bodydiv id="bdID11">                 <p>CC</p>         
+       <p>DD</p>                 <bodydiv id="bdID111">          
+          <p>CCC</p>                     <p>DDD</p>              
+      <bodydiv id="bdID1111">                         <p>CCCC</p> 
+                       <p>DDDD</p>                         <bodydiv
+id="bdID11111">                             <p>CCCCC</p>         
+                   <p>DDDDD</p>                         </bodydiv> 
+                   </bodydiv>                 </bodydiv>         
+   </bodydiv>          </bodydiv>
+<!-- Another nested bodydiv here -->
+<bodydiv id="bdID2">             <p>E</p>             <p>F</p>   
+         <bodydiv id="bdID22">                 <p>EE</p>         
+       <p>FF</p>                 <bodydiv id="bdID222">          
+          <p>EEE</p>                     <p>FFF</p>              
+      <bodydiv id="bdID2222">                         <p>EEEE</p> 
+                       <p>FFFF</p>                         <bodydiv
+id="bdID22222">                             <p>EEEEE</p>         
+                   <p>FFFFF</p>                         </bodydiv> 
+                   </bodydiv>                 </bodydiv>         
+   </bodydiv>         </bodydiv>
+<!-- Another nested bodydiv here -->
+<bodydiv id="bdID3">             <p>G</p>             <p>H</p>   
+         <bodydiv id="bdID33">                 <p>GG</p>         
+       <p>HH</p>                 <bodydiv id="bdID333">          
+          <p>GGG</p>                     <p>HHH</p>              
+      <bodydiv id="bdID3333">                         <p>GGGG</p> 
+                       <p>HHHH</p>                         <bodydiv
+id="bdID33333">                             <p>GGGGG</p>         
+                   <p>HHHHH</p>                         </bodydiv> 
+                   </bodydiv>                 </bodydiv>         
+   </bodydiv>         </bodydiv>
+</body>
+</topic>
+<?Pub *0000002669?>

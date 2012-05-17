@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "file:/C:/SAXONIBMJDK/demo/dita12/dtd12/technicalContent/dtd/topic.dtd">
+<topic id="topic3" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <title>wrong type inherite</title>
+    <body>
+        <p><b>type attribute  inherit from their closest ancestors</b></p>
+        <p>
+            data tag
+            <data name="examples" type="topic">
+                <data name="topic2" href="t2.dita"></data>
+                <data name="ditabase_topic" href="ditabase.dita#concept"></data><!-- It must be an error,the actual type of referenced target does not match the "type" attribute specified -->
+            </data>
+        </p>
+        <p>
+            
+        </p>
+    </body>
+    <related-links>
+        <linkpool type="tast">
+            <link href="ditabase.dita#task"></link>
+            <link href="t2.dita"></link><!-- It is an error,the actual type of referenced target does not match the "type" attribute specified -->
+        </linkpool>
+    </related-links>
+</topic>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA 1.2 Composite//EN" "file:/C:/SAXONIBMJDK/demo/dita12/dtd12/technicalContent/dtd/ditabase.dtd">
+<dita xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <topic id="topic">
+        <title>topic title</title>
+        <body>
+            <p id="p1">para 1</p>
+            <p id="p2"></p>
+        </body>
+    </topic>
+    
+    <concept id="concept">
+        <title>concept title</title>
+        <conbody>
+            <p id="c1">concept body</p>
+        </conbody>
+    </concept>
+    
+    <task id="task">
+        <title>task title</title>
+        <taskbody>
+            <context id="t1"><b>task body</b></context>
+        </taskbody>
+    </task>
+    
+    
+    
+</dita>

@@ -1,0 +1,1 @@
+java -jar lib/dost.jar /i:keytest-a/keyreftest.ditamap /transtype:xhtml /outdir:out

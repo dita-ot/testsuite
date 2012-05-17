@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "file:/C:/SAXONIBMJDK/demo/dita12/dtd12/technicalContent/dtd/topic.dtd">
+<topic id="topic2" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <title>Invalid URI</title>
+    <body>
+        <ol>
+            <li>Invalid uri</li>
+            <li><xref href="http://www.ibm.com\\@" format="html"></xref></li>
+            <li><xref href="ftp://192.168:8080" format="html">FTP</xref></li>
+            <li><xref href="mailto    :jiayt    @cn.ibm.com" format="html"></xref></li>
+            <li><xref href="http://www.ibm.com\hello&123" format="html"></xref></li>
+            <li><xref href="http://www.kaixin001.com/app/app.php??#aid=1068" format="html"></xref></li>
+            <li><xref href="ditabase.dita#topic/p1"></xref></li>
+        </ol>
+    </body>
+</topic>
+

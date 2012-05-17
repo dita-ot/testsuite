@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="keyref-a" xml:lang="en-us">
+<title>This is a topic about puffins</title>
+<shortdesc>Puffins are little birds that flit about very quickly.
+It is difficult to catch them in flight, unless you have a digital
+camera or a very big net.</shortdesc>
+<conbody>
+<p>You can refer to the <xref format="html"
+href="http://en.wikipedia.org/wiki/Puffin" keyref="puffin"
+scope="external">overvie<?Pub Caret?>w topic</xref> for additional
+information.</p>
+</conbody>
+</concept>
+<?Pub *0000000688?>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "file:/C:/jyt/SAXONIBMJDK/demo/dita12/dtd12/technicalContent/dtd/topic.dtd">
+<topic id="topic1" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <title>Topic1</title>
+    <body>
+        <p>1 The abs is:<abbreviated-form keyref="abs"/></p>
+        <p><abbreviated-form keyref="abs"/> could help you......</p>
+        <p><b>Prohibited</b></p>
+        <p>2 Acronym:<abbreviated-form keyref="abs#glossentryID1/absAcronym"/> </p>
+        <p>3 Abbreviation:<abbreviated-form keyref="abs#glossentryID1/absAbbreviation"/> </p>
+        <p>4 ShortForm:<abbreviated-form keyref="abs#glossentryID1/absShortForm"/> </p>
+        <p>5 Synonym:<abbreviated-form keyref="abs#glossentryID1/absSynonym"/> </p>
+    </body>
+</topic>
+

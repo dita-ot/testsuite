@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><project name="12014_xhtml_" default="all" basedir=".">
+    <property name="currentdir" location="${basedir}"/>
+    <target name="all">
+        <echo message="${currentdir}" level="info"/>
+        <sequential>
+            <subant inheritall="true">
+                <fileset dir="${currentdir}" includes="12014*.xml"/>
+            </subant>
+        </sequential>
+    </target>
+</project>

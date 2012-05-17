@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "file:/C:/jyt/SAXONIBMJDK/demo/dita12/dtd12/technicalContent/dtd/topic.dtd">
+<topic id="topicID2" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <title>Topic2</title>
+    <body>
+        <p>you could use <abbreviated-form keyref="abs"/> when .........................<abbreviated-form keyref="abs"/></p>
+    </body>
+</topic>
+

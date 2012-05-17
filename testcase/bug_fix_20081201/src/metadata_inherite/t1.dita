@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "file:/C:/SAXONIBMJDK/demo/dita12/dtd12/technicalContent/dtd/topic.dtd">
+<topic id="topic1" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <title>topic 1title</title>
+    <body>
+        <p>topic 1 body</p>
+    </body>
+</topic>
+

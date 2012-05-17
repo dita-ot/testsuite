@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN"
+ " ">
+<?Pub Sty _display FontColor="red"?>
+<!-- this is a case for 12021@2008-05-19 -->
+<?Pub Caret -2?>
+<!-- this topic is adding @bodydiv -->
+<topic id="bodydivID" xml:lang="en-us"
+xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+<title>THIS IS A  TOPIC</title>
+<body>
+<p>a</p>
+<p>b</p>
+<!-- new DTD@bodydiv -->
+<!-- reuse it here -->
+<bodydiv conref="bodydiv_update.dita#bodydivID/bdID"></bodydiv>
+<!--  reuse the nested bodydiv here using conref and conrefend-->
+<bodydiv conref="bodydiv_update.dita#bodydivID/bdID1"
+conrefend="bodydiv_update.dita#bodydivID/bdID3"></bodydiv>
+</body>
+</topic>
+<?Pub *0000000771?>

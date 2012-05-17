@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "file:/C:/jyt/SAXONIBMJDK/demo/dita12/dtd12/technicalContent/dtd/topic.dtd">
+<topic id="topicID1" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <title>DITA Issue #12050 Testcase</title>
+    <body>
+        <p>bug_fix_20081201\12050\href
+            <note>These cases test the href attribute in tag topicref</note>
+            <note><codeph>Case1:</codeph> "href" in topicref element  not reference to internal elements inside a topic</note>
+            <ol>
+                <li>Run map1.ditamap</li>
+                <li>Check whether the compile is correct.</li>
+                <li>Check t1.dita and ditabase.dita, Verify whether index.html has the correct anchor of ditabase.html</li>
+            </ol> 
+            <note><codeph>Case2:</codeph> "href" in topicref element  reference to internal elements inside a topic,it must be an error</note>
+            <ol>
+                <li>Run map2.ditamap</li>
+                <li>Check whether the compile is correct.It must be an error,"href" reference to an internal element</li>
+            </ol> 
+            <note><codeph>Case3:</codeph>No explicit id specified in href attribute of "topicref"  </note>
+            <ol>
+                <li>Run map3.ditamap</li>
+                <li>Check whether the compile is correct.</li>
+                <li>Check index.html, Verify ALL topics from ditabase.dita be used</li>
+            </ol> 
+            <note><codeph>Case4:</codeph>explicit id is specified in href attribute of "topicref"  </note>
+            <ol>
+                <li>Run map3.ditamap</li>
+                <li>Check whether the compile is correct.</li>
+                <li>Check index.html, Verify t2.html has a child topic refercent to ditabase.dita#concept</li>
+            </ol> 
+        </p>
+        
+        <p>bug_fix_20081201\12050\type
+            <note>These cases test the type attribute inherit  from their closest ancestors</note>
+            <note><codeph>Case5:</codeph> the actual type of referenced target match the "type" attribute specified</note>
+            <ol>
+                <li>Run map1.ditamap</li>
+                <li>Check whether the compile is correct.</li>
+                <li>Check t1.dita t2.dita and ditabase.dita, Verify whether the content is correct</li>
+            </ol> 
+            <note><codeph>Case6:</codeph>the actual type of referenced target does NOT match the "type" attribute specified</note>
+            <ol>
+                <li>Run map3.ditamap</li>
+                <li>Check whether the compile is correct.It must be an error,the actual type of referenced target does NOT match the "type" attribute specified in t3.dita</li>
+            </ol> 
+            <note><codeph>Case7:</codeph>"type" attributes of topicref tag should inherit from map</note>
+            <ol>
+                <li>Run map2.ditamap</li>
+                <li>Check whether the compile is correct.</li>
+                <li>Check index.html, Verify there is an anchor to ditabase.html#topic</li>
+            </ol> 
+            <note><codeph>Case8:</codeph>"type" attribute of topicref does NOT match the type specified in map</note>
+            <ol>
+                <li>Run map3.ditamap</li>
+                <li>Check whether the compile is correct.It must be an error,the ditabase.dita#concept NOT match the "topic" type</li>
+            </ol> 
+        </p>
+        
+        <p>bug_fix_20081201\12050\scope
+            <note>These cases test the scope attribute inherit  from their closest ancestors</note>
+            <note><codeph>Case9:</codeph> the correct use of scope attribute, "scope" attributes of link tag should inherit from linkpool type</note>
+            <ol>
+                <li>Run map1.ditamap</li>
+                <li>Check whether the compile is correct.</li>
+                <li>Check t1.dita, Verify whether the "scope" of link tag is local.Verify whether the "scope" of xref is correct</li>
+            </ol> 
+            <note><codeph>Case10:</codeph>the actual scope of referenced target does NOT match the "scope" attribute specified</note>
+            <ol>
+                <li>Run map2.ditamap</li>
+                <li>Check whether the compile is correct.It must be an error,in t3.dita,the actual scope of a link is external does NOT match the "scope" attribute value "local" specified in linkpool</li>
+            </ol> 
+            <note><codeph>Case11:</codeph>"scope" attributes should inherit from a map</note>
+            <ol>
+                <li>Run map3.ditamap</li>
+                <li>Check whether the compile is correct.</li>
+                <li>Check t4.dita, Verify whether the "scope" of xref tag not specified inherited the "scope" value from map3 which scope value is "external"</li>
+            </ol> 
+        </p>
+        
+        <p>bug_fix_20081201\12050\uri
+            <note>These cases test the valid and invalid uri of href attribute</note>
+            <note><codeph>Case12:</codeph> the valid uri follow the RFC3986</note>
+            <ol>
+                <li>Run map1.ditamap</li>
+                <li>Check whether the compile is correct.</li>
+                <li>Check t1.dita, Verify whether the reference is correct</li>
+            </ol> 
+            <note><codeph>Case13:</codeph>the invalid uri</note>
+            <ol>
+                <li>Run map2.ditamap</li>
+                <li>Check whether the compile is correct.It must be an error,in t2.dita,the uri is invalid.</li>
+            </ol> 
+
+        </p>
+        
+    </body>
+</topic>
+

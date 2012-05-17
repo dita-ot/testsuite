@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN"
+ "file:/C:/DITA-OT1.4.2/dtd1.2/technicalContent/dtd/topic.dtd">
+<?Pub Sty _display FontColor="red"?>
+<!-- this is a case for 12021@2008-05-19 -->
+<?Pub Caret -2?>
+<!-- adding new &lt;sectiondiv&gt; element -->
+<topic id="sectiondivID" xml:lang="en-us"
+xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+<title>adding new sectiondiv element </title>
+<body>
+<section>             <!-- @sectiondiv -->                       
+  <sectiondiv id="subsectionID">                 <ol>
+<li>Welcome</li>
+<li>You</li>
+<li>To</li>
+<li>Shanghai</li>
+</ol>               </sectiondiv>                      </section>
+<!--now we use conref attribute to ref this content -->
+<section>             <sectiondiv
+conref="sectiondiv_update.dita#sectiondivID/subsectionID"></sectiondiv> 
+       </section>
+<!--now we use conref and conrefend to ref the nested sectiondiv  -->
+<section>             <sectiondiv
+conref="sectiondiv_update.dita#sectiondivID/sectiondivID1"
+conrefend="sectiondiv_update.dita#sectiondivID/sectiondivID2"></sectiondiv> 
+       </section>
+</body>
+</topic>
+<?Pub *0000001230?>

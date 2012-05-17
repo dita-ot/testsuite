@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is part of the DITA Open Toolkit project hosted on 
+     Sourceforge.net. See the accompanying license.txt file for 
+     applicable licenses.-->
+<!-- (C) Copyright IBM Corporation 2001, 2005. All Rights Reserved.
+ *-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "../../dtd/task.dtd">
+<task id="spraypaint" xml:lang="en-us">
+  <title>Spray painting</title> 
+  <taskbody>
+	 <context id="context_47032AC44B8D4E29B1EC4E20A59AD024">
+		<p>The garage is a good place to spray paint. 
+		</p>
+	 </context>
+	 <steps id="steps_B28F157DF3B6499189F1477BC3DCE205">
+		<step id="step_A7CF174F1DB8426E9232E7671B414C1C">
+		  <cmd>Move the car out of the garage to avoid getting paint on it.
+		  </cmd>
+		</step>
+		<step>
+		  <cmd>Place newspaper, cardboard, or a drop-cloth on the garage floor.
+		  </cmd>
+		</step>
+		<step id="step_0EDF0CE7E4534AA48E42636A89E9372B">
+		  <cmd>Place the object to be painted on the covered area.
+		  </cmd>
+		</step>
+		<step id="step_2C156C50874F43DBA7B8343E8E8F38D8">
+		  <cmd>Follow the directions on the paint can to paint the object.
+		  </cmd>
+		</step>
+		<step id="step_BE4A745F55CE491B956E9EF5C4100BEC">
+		  <cmd>Let the paint dry thoroughly before you move the object.
+		  </cmd>
+		</step>
+	 </steps>
+  </taskbody> 
+</task> 

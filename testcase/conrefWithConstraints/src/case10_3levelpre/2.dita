@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA 1.2 Task//EN" "file:/C:/DITA-OT1.5/DITA-OT1.5_full_easy_install_bin/DITA-OT1.5/dtd/technicalContent/dtd/task.dtd">
+<task id="task" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" domains="(topic simpleSection-c task simpleTaskSection-c) (topic task)">
+    <title id="task_title_id" conref="3.dita#task/task_title_id3">task2's title</title>
+        <taskbody>
+            <context>Once you have set up SQLJ, you need to create a new SQLJ file.
+            </context>
+            <steps>
+                <step id="step"><cmd>Open...</cmd></step>
+            </steps>
+        </taskbody>
+    </task> 
+

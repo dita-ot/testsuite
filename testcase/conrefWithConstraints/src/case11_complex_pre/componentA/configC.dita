@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corporation-->
+ <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "">
+ <task id="configC" domains="(topic simpleSection-c task simpleTaskSection-c)">
+  <title>C</title>
+  
+  <taskbody>
+    <steps>
+      <step id="step1"><cmd>C:Do this</cmd></step>
+      <step id="step1.5"><cmd>C:Do this 1.5</cmd></step>
+      <step id="step2"><cmd>C:Do the other</cmd></step>
+      <step id="step2.5"><cmd>C:Do this 2.5</cmd></step>
+      <step conref="../test1.dita#test1/teststep3"><cmd/></step>
+    </steps>
+  </taskbody>
+</task>

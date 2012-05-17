@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is part of the DITA Open Toolkit project hosted on 
+     Sourceforge.net. See the accompanying license.txt file for 
+     applicable licenses.-->
+     <!--
+      | (C) Copyright IBM Corporation 2005 - 2006. All Rights Reserved.
+      *-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->
+<concept id="appendix" xml:lang="en-us">
+<title>Building DITA output with Java command line</title>
+<shortdesc>The DITA Open Toolkit release 1.0.2 or above provides a command line interface as an alternative for users with little knowledge of Ant
+to  use the toolkit easily.</shortdesc>
+<conbody>
+</conbody>
+</concept>

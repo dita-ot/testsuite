@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><project name="12014xhtml" default="12014xhtml" basedir=".">
+    
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+    
+    <target name="12014xhtml">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}12014${file.separator}map1.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}12014${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}12014${file.separator}xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+    </target>
+</project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map chunk="by-document">
+<topicref chunk="to-content" copy-to="parentchunk.dita" href="parent1.dita">
+<topicref chunk="select-branch" href="child1.dita"></topicref>
+<topicref chunk="to-content select-branch" copy-to="child2chunk.dita"
+href="child2.dita">
+<topicref href="grandchild2.dita"></topicref>
+</topicref>
+<topicref href="child3.dita">
+<topicref chunk="select-branch" href="grandchild3.dita"></topicref>
+</topicref><?Pub Caret?>
+</topicref>
+</map>
+<?Pub *0000000658?>

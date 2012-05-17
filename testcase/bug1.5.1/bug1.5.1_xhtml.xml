@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><project name="bug151_xhtml" default="bug151_xhtml" basedir=".">
+    
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+    
+    <target name="bug151_xhtml">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}bug1.5.1${file.separator}2916469${file.separator}test.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}bug1.5.1${file.separator}2916469${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}bug1.5.1${file.separator}2916469${file.separator}xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}bug1.5.1${file.separator}2930109${file.separator}test.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}bug1.5.1${file.separator}2930109${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}bug1.5.1${file.separator}2930109${file.separator}xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+    </target>
+</project>

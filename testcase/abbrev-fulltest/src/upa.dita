@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA 1.2 Glossary//EN"
+ "../demo/dita12/glossary.dtd">
+<glossentry id="upa"><?Pub Caret?>
+<glossterm>Ultimate Players Association</glossterm>
+<glossBody>
+<glossAlt>
+<glossAcronym>UPA</glossAcronym>
+</glossAlt>
+</glossBody>
+</glossentry>
+<?Pub *0000000381?>

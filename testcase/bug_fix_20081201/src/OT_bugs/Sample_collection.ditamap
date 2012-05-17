@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map title="Sample_collection" xml:lang="en-us" id="map_46CBCDA1D2924B7EADE47549397EA60E"> 
+<topicmeta> 
+<author>Endeca Technologies, Inc.</author> 
+<prodinfo> 
+<prodname>my product</prodname> 
+<vrmlist><vrm version="version, such as 1.0.0"/></vrmlist> </prodinfo> </topicmeta> 
+<topicref format="ditamap" navtitle="ContentUnitOne_unit" href="ContentUnitOne_unit.ditamap"/> 
+<topicref format="ditamap" navtitle="ContentUnitTwo_unit" href="ContentUnitTwo_unit.ditamap"/> </map> 

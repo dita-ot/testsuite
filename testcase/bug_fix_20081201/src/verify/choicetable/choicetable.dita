@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA 1.2 Task//EN" "file:/C:/SAXONIBMJDK/demo/dita12/dtd12/technicalContent/dtd/task.dtd">
+<task id="task" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <title>Task choicetable </title>
+    <taskbody>
+        <steps>
+            <step><cmd>Then this</cmd>
+                <substeps>
+                    <substep importance="optional"><cmd>which is done by doing this</cmd></substep>
+                    <substep importance="required"><cmd>and then this.</cmd></substep>
+                </substeps>
+                <choicetable relcolwidth="2* 2*">
+                    <chhead>
+                        <choptionhd>Do something</choptionhd>
+                        <chdeschd>Or Else this</chdeschd>
+                    </chhead>
+                    <chrow><choption>Do this</choption>
+                        <chdesc>and this will happen</chdesc></chrow>
+                    <chrow><choption>Do that</choption>
+                        <chdesc>and that will happen</chdesc></chrow>
+                </choicetable>
+            </step>
+        </steps>
+        
+        
+    </taskbody>
+</task>
+

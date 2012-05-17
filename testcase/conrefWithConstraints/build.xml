@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="conrefWithConstraints" default="all" basedir=".">
+    <property name="currentdir" location="${basedir}"/>
+    <target name="all">
+        <echo message="${currentdir}" level="info"/>
+        <sequential>
+            <subant inheritall="true">
+                <fileset dir="${currentdir}" includes="conrefWithConstraints*.xml"/>
+            </subant>
+        </sequential>
+    </target>
+</project>
