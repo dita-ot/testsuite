@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topicID1" xml:lang="en-us">
+    <title>This is to test for the spaces in the file names.</title>
+    
+    <!-- Metadata Info -->
+       
+
+     <prolog>
+     <metadata conref="sub folder/dita 2.dita#topicID2/topicmetadataID2"/>
+     </prolog>
+     
+<!-- Body Info -->
+     <body>
+        <p>
+            <ol>
+                <li conref="dita3.dita#topicID3/liID"></li>
+            </ol>
+        </p>
+        
+               
+    </body>
+</topic>
+

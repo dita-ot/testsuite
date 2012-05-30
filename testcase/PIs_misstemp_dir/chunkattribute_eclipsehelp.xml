@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><project name="Chunkattribute_eclipsehelp" default="Chunkattribute2eclipsehelp" basedir=".">
+   
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+   <target name="Chunkattribute2eclipsehelp">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}PIs_misstemp_dir${file.separator}map7.ditamap"/>
+            <property name="transtype" value="eclipsehelp"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}temp7"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}log"/>
+            <property name="clean.temp" value="no"/>
+        
+        </ant>
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}PIs_misstemp_dir${file.separator}map10.ditamap"/>
+            <property name="transtype" value="eclipsehelp"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}temp10"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}log"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+    </target>
+</project>

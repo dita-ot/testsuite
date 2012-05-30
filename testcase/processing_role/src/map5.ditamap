@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Map 4</title>
+        <topicref href="topic4.dita" id="topic" navtitle="topic4(-dita-use-conref-target)"></topicref>
+    
+       <topicref href="topic1.dita" chunk="to-content">
+           <topicref href="topic2.dita" processing-role="normal"></topicref>
+           <topicref href="topic3.dita" processing-role="resource-only"></topicref>
+           <topicref processing-role="-dita-use-conref-target" conref="#topic"></topicref>
+       </topicref>
+    
+        <topicref href="topic5.dita" chunk="to-content" processing-role="resource-only">
+            <topicref href="topic7.dita" processing-role="normal"></topicref>
+        </topicref>
+
+       
+
+    
+
+</map>
+

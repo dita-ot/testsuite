@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="Y">
+    <title>task Y</title>
+    <taskbody>
+        <context>taks Y</context>
+        <steps>
+            <step>
+                <cmd>Y</cmd>
+            </step>
+        </steps>
+        
+    </taskbody>
+    
+    <related-links>
+        <link href="task_related.dita">
+            <linktext>Task Related Links</linktext>
+        </link>
+    </related-links>
+</task>
+

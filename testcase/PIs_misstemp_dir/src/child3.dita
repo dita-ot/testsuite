@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Arbortext, Inc., 1988-2004, v.4002-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "C:\DITA-OT1.4\dtd\topic.dtd">
+<!--             (C) Copyright OASIS Open 2005.                    -->
+<!--             (C) Copyright IBM Corporation 2001, 2004.         -->
+<!--             All Rights Reserved.                              -->
+<topic id="child3" xml:lang="en-us">
+<title>child3</title>
+<body>
+<section> <p>The software domain<?Pub Caret?> elements are used to describe
+the operation of a software program.<indexterm>Domains elements<indexterm>software
+elements</indexterm>  </indexterm><indexterm>software elements</indexterm></p> </section>
+</body>
+</topic>
+

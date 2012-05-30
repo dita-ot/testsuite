@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Map 1</title>
+    
+    <topicref href="topic4.dita" id="topic"></topicref>
+    
+    <topicref href="topic1.dita"></topicref>
+    <topicref href="topic2.dita" processing-role="normal"></topicref>
+    <topicref href="topic3.dita" processing-role="resource-only"></topicref>
+    <topicref processing-role="-dita-use-conref-target" conref="#topic"></topicref>
+    
+    <mapref processing-role="resource-only" href="map3.ditamap">
+        <topicmeta><keywords><indexterm>mapref</indexterm></keywords></topicmeta>
+    </mapref>
+    
+    <reltable processing-role="resource-only">
+        <relheader>
+            <relcolspec type="topic"/>
+        </relheader>
+        <relrow>
+            <relcell>
+                <topicref href="topic7.dita"><topicmeta><keywords><indexterm>topic7</indexterm></keywords></topicmeta></topicref>
+            </relcell>
+        </relrow>
+    </reltable>
+    
+    <topicgroup processing-role="resource-only">
+        <navref mapref="map2.ditamap"/>
+    </topicgroup>
+    
+    <topicset id="sets" processing-role="resource-only" href="topic5.dita">
+        <topicref href="topic6.dita" processing-role="normal"></topicref>
+    </topicset>
+    
+
+</map>
+

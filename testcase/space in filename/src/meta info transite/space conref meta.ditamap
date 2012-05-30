@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ 
+ <!-- Conref another map metadata Outside -->
+ 
+ <topicmeta>
+  <metadata conref="space with meta.ditamap#mapmetadataID">
+  </metadata>
+ </topicmeta>
+ 
+ <topicref href="dita 7.dita">
+  
+  <!-- Conref another map metadata Inside -->
+  
+  <topicmeta>
+   <metadata conref="space with meta.ditamap#mapmetadataID">
+   </metadata>
+  </topicmeta>
+ </topicref>  
+ 
+</map>

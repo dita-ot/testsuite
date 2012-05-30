@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><project name="chunk use" default="chunkuse" basedir=".">
+    
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    <target name="chunkuse">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}PIs_misstemp_dir${file.separator}map1.ditamap"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}temp1"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}PIs_misstemp_dir${file.separator}map2.ditamap"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}temp2"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}log"/>
+            <property name="clean.temp" value="no"/>
+      </ant>
+        
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}PIs_misstemp_dir${file.separator}map3.ditamap"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}temp3"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}log"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}PIs_misstemp_dir${file.separator}map4.ditamap"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}temp4"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}log"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+    
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}PIs_misstemp_dir${file.separator}map5.ditamap"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}temp5"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}log"/>
+            <property name="clean.temp" value="no"/>
+       
+        </ant>
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}PIs_misstemp_dir${file.separator}map6.ditamap"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}temp6"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}log"/>
+            <property name="clean.temp" value="no"/>
+       
+        </ant>
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}PIs_misstemp_dir${file.separator}map8.ditamap"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}temp8"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}log"/>
+            <property name="clean.temp" value="no"/>
+        
+        </ant>
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}PIs_misstemp_dir${file.separator}map9.ditamap"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}temp9"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}log"/>
+            <property name="clean.temp" value="no"/>
+       
+        </ant>
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}PIs_misstemp_dir${file.separator}map11.ditamap"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}temp11"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}PIs_misstemp_dir${file.separator}log"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        
+    </target>
+    
+  
+</project>

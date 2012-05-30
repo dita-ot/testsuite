@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="glossentryID1">
+    <glossterm>USB flash drive</glossterm>
+    <glossdef>A small portable drive.</glossdef>
+    <glossBody>
+        <glossPartOfSpeech value="noun"/>
+        <glossUsage>Do not provide in upper case (as in "USB Flash Drive") because that suggests a trademark.</glossUsage>
+        <glossAlt>
+            <glossAcronym>UFD</glossAcronym>
+            <glossUsage>Explain the acronym on first occurrence.</glossUsage>
+        </glossAlt>
+        <glossAlt id="memoryStick">
+            <glossSynonym>memory stick</glossSynonym>
+            <glossUsage>This is a colloquial term.</glossUsage>
+        </glossAlt>
+        <glossAlt id="stick">
+            <glossAbbreviation>stick</glossAbbreviation>
+            <glossStatus value="prohibited"/>
+            <glossUsage>This is too colloquial.</glossUsage>
+            <glossAlternateFor href="#glossentryID1/memoryStick"/>
+        </glossAlt>
+        <glossAlt>
+            <glossAbbreviation>flash</glossAbbreviation>
+            <glossStatus value="prohibited"/>
+            <glossUsage>This short form is ambiguous.</glossUsage>
+        </glossAlt>
+    </glossBody>
+    
+</glossentry>
+

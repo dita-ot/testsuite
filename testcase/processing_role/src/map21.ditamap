@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>map 21</title>
+    
+   <topicref href="nested1.dita" chunk="by-topic" processing-role="resource-only"></topicref>
+    
+    <topicref href="topic1.dita" chunk="to-content">
+        <topicref href="nested2.dita" chunk="by-document" processing-role="resource-only"></topicref>
+        <topicref href="topic2.dita" chunk="to-content" processing-role="resource-only">
+            <topicref href="nested3.dita" chunk="by-topic" processing-role="normal"></topicref>
+        </topicref>
+    </topicref>
+</map>
+

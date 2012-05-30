@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+<concept id="battytasks" xml:lang="en-us">
+<title>Batty information</title>
+<shortdesc>battask short description, no body</shortdesc>
+</concept>
+<task id="batcaring" xml:lang="en-us">
+<title>Caring bat!</title>
+<shortdesc>Caring description.</shortdesc>
+<taskbody>
+<context>caring context.</context>
+<steps>
+<step><cmd>Be sure to feed your bat.</cmd></step>
+</steps>
+</taskbody>
+</task>
+<task id="batcleaning" xml:lang="en-us">
+<title>Cleaning bat!</title>
+<shortdesc>clean description</shortdesc>
+<taskbody>
+<prereq>clean prereq</prereq>
+<steps>
+<step><cmd>SCRUB.</cmd></step>
+</steps>
+</taskbody>
+<reference id="acmebatshampoo" xml:lang="en-us">
+<title>ACME Bat Shampoo</title>
+<shortdesc>The perfect shampoo.</shortdesc>
+<refbody>
+<properties>
+<property>
+<proptype>Color</proptype>
+<propvalue>Blue</propvalue>
+<propdesc>Lathers to a wonderful set of full, light blue bubbles.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>
+<reference id="acmebatcatcher" xml:lang="en-us">
+<title>ACME Bat Catcher</title>
+<shortdesc>USED TO CATCH</shortdesc>
+<refbody>
+</refbody>
+</reference>
+</task>
+<task id="batfeeding" xml:lang="en-us">
+<title>Feeding!</title>
+<shortdesc>HOW TO FEED!</shortdesc>
+<taskbody>
+</taskbody>
+<concept id="batsonar" xml:lang="en-us">
+<title>sonar</title>
+<shortdesc>PING! PING! PING!</shortdesc>
+<conbody>
+<p>Bats use sonar.</p>
+</conbody>
+</concept>
+</task>
+</dita>

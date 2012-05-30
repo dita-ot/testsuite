@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Map 3</title>
+    
+    <topichead id="heading"
+        navtitle="This is a heading"
+        toc="yes"
+        print="yes">
+        <topicref href="topic4.dita" navtitle="heading/topic4(-dita-use-conref-target)"/>
+    </topichead>
+    
+    <topicref href="topic4.dita" id="topic" navtitle="topic4(-dita-use-conref-targer)"></topicref>
+    <topicref href="topic1.dita" id="topic1" navtitle="topic1(-dita-use-conref-target)"></topicref>
+    <topicref href="topic2.dita" id="topic2" navtitle="topic2(-dita-use-conref-target)"></topicref>
+    
+    <topicref href="topic1.dita" processing-role="resource-only">
+        <topicref href="topic2.dita"></topicref>
+        <topicref href="topic3.dita"></topicref>
+    </topicref>
+    
+    <topicref href="topic2.dita" processing-role="normal">
+        <topicref href="topic3.dita"></topicref>
+        <topicref href="topic4.dita"></topicref>
+    </topicref>
+    
+    <topicref  processing-role="-dita-use-conref-target" conref="#topic">
+        <topicref conref="#topic1"></topicref>
+        <topicref conref="#topic2"></topicref>
+    </topicref>
+    
+    <topicref href="topic1.dita" processing-role="normal">
+        <topicref href="topic2.dita" processing-role="resource-only"></topicref>
+        <topicref processing-role="-dita-use-conref-target" conref="#topic"></topicref>
+        <topicref href="topic4.dita"></topicref>
+    </topicref>
+    
+    <topicref href="topic1.dita" processing-role="resource-only">
+        <topicref href="topic2.dita" processing-role="normal"></topicref>
+        <topicref  processing-role="-dita-use-conref-target" conref="#topic"></topicref>
+        <topicref href="topic4.dita"></topicref>
+    </topicref>
+    
+    <topicref  processing-role="-dita-use-conref-target" conref="#topic">
+        <topicref href="topic2.dita" processing-role="normal"></topicref>
+        <topicref href="topic3.dita" processing-role="resource-only"></topicref>
+        <topicref href="topic4.dita"></topicref>
+    </topicref>
+    
+    <topichead processing-role="resource-only" navtitle="topichead(resource-only)">
+        <topicref href="topic1.dita"></topicref>
+        <topicref href="topic2.dita" processing-role="normal"></topicref>
+        <topicref  processing-role="-dita-use-conref-target" conref="#topic"></topicref>
+    </topichead>
+    
+    <topichead processing-role="normal" navtitle="topichead(noarmal)">
+        <topicref href="topic3.dita"></topicref>
+        <topicref href="topic4.dita" processing-role="resource-only"></topicref>
+        <topicref processing-role="-dita-use-conref-target" conref="#topic"></topicref>
+    </topichead>
+   
+    <topichead processing-role="-dita-use-conref-target" navtitle="topichead(-dita-use-conref-target)" conref="#heading">
+        <topicref href="topic1.dita" processing-role="normal"></topicref>
+        <topicref href="topic2.dita" processing-role="resource-only"></topicref>
+        <topicref href="topic3.dita"></topicref>
+    </topichead>
+    
+
+</map>
+

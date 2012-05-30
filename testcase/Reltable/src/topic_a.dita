@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="X">
+    <title>Topic X</title>
+    <body>
+        <p>
+            <ol>
+                <li>X</li>
+            </ol>
+            
+        </p>
+    </body>
+    
+    <related-links>
+        
+     
+        
+        <linklist>
+            
+            <title>Related Links</title>
+            <link href="topic_related.dita">
+                <linktext>Topic Related Links</linktext>
+            </link>
+            
+            <link href="topic_related.dita">
+                <linktext>Task Related Links</linktext>
+            </link>
+            
+            <link href="topic_related.dita">
+                <linktext>Reference Related Links</linktext>
+            </link>
+            
+        </linklist>
+        
+      
+      
+      
+    </related-links>
+</topic>
+

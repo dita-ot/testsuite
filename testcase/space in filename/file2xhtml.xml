@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright : IBM  2008 -06 -12 --><project name="space in filename" default="spaces" basedir=".">
+  
+  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  
+  <target name="spaces">
+   
+    <!-- Case 1 : space in filenames.ditamap -->
+      <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+        <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}space in filename${file.separator}space in filenames.ditamap"/>
+        <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}space in filename${file.separator}space in filename"/>
+        <property name="transtype" value="xhtml"/>
+        <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}space in filename${file.separator}space in filename${file.separator}temp"/>
+        <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}space in filename${file.separator}log"/>
+        <property name="clean.temp" value="no"/>
+      </ant> 
+    
+    <!-- Case 2 : meta info transite/space conref meta.ditamap -->
+    <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+      <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}space in filename${file.separator}meta info transite${file.separator}space conref meta.ditamap"/>
+      <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}space in filename${file.separator}meta info transite"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}space in filename${file.separator}meta info transite${file.separator}temp"/>
+      <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}space in filename${file.separator}log"/>
+      <property name="clean.temp" value="no"/>
+    </ant> 
+    
+   
+  </target>
+</project>

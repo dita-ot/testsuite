@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossgroup PUBLIC "-//OASIS//DTD DITA Glossary Group//EN" "glossgroup.dtd">
+<glossgroup id="glossaryG">
+    <title>glossary group</title>
+    <glossentry id="usbfd">
+        <glossterm>USB flash drive(term)</glossterm>
+        <glossdef>A small portable drive.</glossdef>
+        <glossBody>
+            
+            <glossPartOfSpeech value="noun"/>
+            <glossUsage>Do not provide in upper case (as in "USB Flash Drive") because that suggests a trademark.</glossUsage>
+            <glossAlt>
+                <glossAcronym>UFD(Acronym)</glossAcronym>
+                <glossUsage>Explain the acronym on first occurrence.</glossUsage>
+            </glossAlt>
+            <glossAlt id="memoryStick">
+                <glossSynonym>memory stick(Synonym)</glossSynonym>
+                <glossUsage>This is a colloquial term.</glossUsage>
+            </glossAlt>
+            <glossAlt>
+                <glossAbbreviation>stick(Abbreviation)</glossAbbreviation>
+                <glossStatus value="prohibited"/>
+                <glossUsage>This is too colloquial.</glossUsage>
+                <glossAlternateFor href="#usbfd/memoryStick"/>
+            </glossAlt>
+            <glossAlt>
+                <glossAbbreviation>flash</glossAbbreviation>
+                <glossStatus value="prohibited"/>
+                <glossUsage>This short form is ambiguous.</glossUsage>
+            </glossAlt>
+        </glossBody> 
+    </glossentry>
+    
+    <glossentry id="absGroup">
+        <glossterm>Anti-lock Braking System(term)</glossterm>
+        <glossdef>A brake technology that minimizes skids.</glossdef>
+        <glossBody>
+            <glossSurfaceForm>Anti-lock Braking System (ABS)</glossSurfaceForm>
+            <glossAlt>
+                <glossAcronym>ABS Acronym</glossAcronym>
+            </glossAlt>
+            <glossAlt>
+                <glossAbbreviation>ABS Abbreviation</glossAbbreviation>
+                <glossUsage></glossUsage>
+            </glossAlt>
+            <glossAlt>
+                <glossShortForm>ABS ShortForm</glossShortForm>
+                <glossUsage></glossUsage>
+            </glossAlt>
+            <glossAlt>
+                <glossSynonym>ABS Synonym</glossSynonym>
+                <glossUsage></glossUsage>
+            </glossAlt>
+        </glossBody>
+    </glossentry>
+    
+    
+</glossgroup>
+

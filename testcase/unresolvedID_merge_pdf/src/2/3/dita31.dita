@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="X31">
+    <title>my topic ID is X</title>
+    <body>
+        <p>
+            <xref href="dita32.dita">DITA32</xref>
+        </p>
+    </body>
+</topic>
+

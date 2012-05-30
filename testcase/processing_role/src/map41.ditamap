@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Map 4</title>
+    
+    <topicref href="topic4.dita" id="topic" navtitle="topic4(-dita-use-conref-target)"></topicref>
+    <topicref href="topic1.dita" id="topic1" navtitle="topic1(-dita-use-conref-target)"></topicref>
+
+       <topicref href="topic1.dita" processing-role="resource-only">
+           <topicref href="topic2.dita">
+               <topicref href="topic3.dita"></topicref>
+           </topicref>
+       </topicref>
+
+    
+
+        <topicref href="topic1.dita" processing-role="normal">
+            <topicref href="topic2.dita">
+                <topicref href="topic3.dita" processing-role="resource-only"></topicref>
+            </topicref>
+        </topicref>
+
+    <topicref href="topic1.dita" processing-role="normal">
+        <topicref href="topic2.dita" processing-role="resource-only">
+            <topicref href="topic3.dita" processing-role="normal"></topicref>
+        </topicref>
+    </topicref>
+    
+    <topicref processing-role="-dita-use-conref-target" conref="#topic">
+        <topicref href="topic2.dita">
+            <topicref conref="#topic1"></topicref>
+        </topicref>
+    </topicref>
+    
+    <topicref href="topic1.dita" processing-role="resource-only">
+        <topicref href="map2.ditamap" format="ditamap"></topicref>
+    </topicref>
+    <topicref href="topic1.dita" processing-role="normal">
+        <topicref href="map2.ditamap" format="ditamap"></topicref>
+    </topicref>
+
+</map>
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+
+<!-- this is a case for 12020@2008-05-19 -->
+<!-- add ph element as the optional child of below DTD -->
+
+<topic id="ph">
+    <title>there are 5 DTD need to add ph element as its optional child</title>
+    
+    <titlealts>
+       
+        <!-- @natitle -->
+        <navtitle>
+            <ph>this is the first element need to update</ph>
+        </navtitle>
+        <!-- @searchtitle -->
+        <searchtitle>
+            <ph>this is the second element need to update</ph>
+        </searchtitle>
+ 
+    </titlealts>
+
+    <prolog>
+       <!-- @source -->
+        <source>
+            <ph>this is the third element need to update</ph>
+        </source>
+    </prolog>
+    <body>
+        
+        <p>here, I prepare some food for you, if you want to eat, they are very attractive, pls pay more attention</p>
+        
+        <image href="image/1.jpg">
+            <!-- @alt -->
+            <alt>
+                <ph>this is biscuit</ph>
+            </alt>
+        </image>
+        
+        <image href="image/2.jpg">
+            <alt>
+                <ph>this is apple</ph>
+            </alt>
+        </image>
+        
+        <image href="image/3.jpg">
+            <alt>
+                <ph>this is hamburgur</ph>
+            </alt>
+        </image>
+        
+    </body>
+    <related-links>
+        <link href="dita1.dita">
+            <!-- @linktext -->
+            <linktext>
+                <ph>this the fiveth element need to update</ph>
+            </linktext>
+        </link>
+    </related-links>
+    
+    </topic>
+    

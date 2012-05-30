@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?><project name="processing_role_wordrtf" default="processing_rolewordrtf" basedir=".">
+    
+    <!-- dita.dir should point to the toolkit's root directory -->
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+    
+    <import file="${dita.dir}${file.separator}integrator.xml"/>
+    
+    <target name="processing_rolewordrtf" depends="integrate">
+        
+        <!--  map1 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map1.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map1${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map1${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map1${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        
+        
+        <!--  map3 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map3.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map3${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map3${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map3${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        
+        <!--  map4-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map4.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map4${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map4${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map4${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map5-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map5.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map5${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map5${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map5${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map6-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map6.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map6${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map6${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map6${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map7-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map7.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map7${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map7${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map7${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map8-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map8.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map8${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map8${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map8${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map9-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map9.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map9${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map9${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map9${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map10-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map10.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map10${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map10${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map10${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map11-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map11.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map11${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map11${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map11${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map12-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map12.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map12${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map12${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map12${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map13-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map13.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map13${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map13${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map13${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        <!--  map14-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map14.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map14${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map14${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map14${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map15-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map15.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map15${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map15${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map15${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map16-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map16.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map16${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map16${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map16${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map17-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map17.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map17${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map17${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map17${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map18-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map18.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map18${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map18${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map18${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map19-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map19.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map19${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map19${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map19${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        <!--  map20 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map20.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map20${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map20${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map20${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map21 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map21.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map21${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map21${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map21${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map22 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map22.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map22${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map22${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map22${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map23 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map23.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map23${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map23${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map23${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map24 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map24.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map24${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map24${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map24${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        
+        <!--  map25 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map25.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map25${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map25${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map25${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map31 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map31.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map31${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map31${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map31${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+        
+        <!--  map41 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}processing_role${file.separator}map41.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map41${file.separator}wordrtf${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map41${file.separator}wordrtf${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}processing_role${file.separator}map41${file.separator}wordrtf"/>
+            <property name="transtype" value="wordrtf"/>
+        <property name="clean.temp" value="no"/></ant>
+    </target>
+</project>

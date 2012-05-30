@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+
+<!-- this is a case for 12020@2008-05-19 -->
+<!-- add ph element as the optional child of below DTD -->
+
+<topic id="ph">
+    <title>there are 5 DTD need to add ph element as its optional child</title>
+    
+    <titlealts>
+       
+        <!-- @natitle -->
+        <navtitle>
+            <ph id="navtitle_01">navtitle_01</ph>
+            <ph>navtitle_02</ph>
+            <ph>navtitle_03</ph>
+            <ph>navtitle_04</ph>
+            <ph id="navtitle_05">navtitle_05</ph>
+        </navtitle>
+        <!-- @searchtitle -->
+        <searchtitle>
+            <ph id="searchtitle_01">searchtitle_01</ph>
+            <ph>searchtitle_02</ph>
+            <ph>searchtitle_03</ph>
+            <ph>searchtitle_04</ph>
+            <ph id="searchtitle_05">searchtitle_05</ph>
+            
+        </searchtitle>
+ 
+    </titlealts>
+
+    <prolog>
+       <!-- @source -->
+        <source>
+            <ph id="source_01">source_01</ph>
+            <ph>source_02</ph>
+            <ph>source_03</ph>
+            <ph>source_04</ph>
+            <ph id="source_05">source_05</ph>
+        </source>
+    </prolog>
+    <body>
+        
+        <p>here, I prepare some food for you, if you want to eat, they are very attractive, pls pay more attention</p>
+        
+        <image href="image/1.jpg">
+            <!-- @alt -->
+            <alt>
+                <ph>this is biscuit</ph>
+            </alt>
+        </image>
+        
+        <image href="image/2.jpg">
+            <alt>
+                <ph>this is apple</ph>
+            </alt>
+        </image>
+        
+        <image href="image/3.jpg">
+            <alt>
+                <ph>this is hamburgur</ph>
+            </alt>
+        </image>
+        
+    </body>
+    <related-links>
+        <link href="dita1.dita">
+            <!-- @linktext -->
+            <linktext>
+                <ph>this the fiveth element need to update</ph>
+            </linktext>
+        </link>
+    </related-links>
+    
+    </topic>
+    

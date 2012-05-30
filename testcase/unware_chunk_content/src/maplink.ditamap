@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- (C) Copyright IBM Corp. -->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+
+<map title="maplink" id="link">
+	<topicref chunk="to-content" href="one.dita">
+		<topicref href="one.dita">
+		    <topicref href ="one.dita">
+		        <topicref href ="one.dita">
+		        </topicref>
+		    </topicref>
+		 </topicref>       
+	    </topicref>
+	    
+</map>

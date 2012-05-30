@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topichead navtitle="glossary">
+        <topicref href="abs.dita" keys="abs"></topicref>
+        <topicref href="wmd.dita" keys="wmd"></topicref>
+    </topichead>
+    <glossref href="aids.dita" keys="aids"></glossref>
+    
+    <topicref href="t1.dita"></topicref>
+    <topicref href="t2.dita"></topicref>
+    <topicref href="t3.dita"></topicref>
+</map>

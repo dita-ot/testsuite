@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+
+<!-- this is a case for 12020@2008-05-19 -->
+<!-- add text element to the as the optional child of the below DTD -->
+
+<topic id="text">
+    <title>conref of small pieces of text</title>
+    <body>
+       
+        <!-- @keyword update -->
+        <p>
+            <keyword>
+                <text id="ProductA">ProductA</text>
+            </keyword>
+            
+            <keyword>
+                <text id="PlatformA">PlatformA</text>
+            </keyword>
+            
+            <keyword id="AforA">
+                <text>
+                    <text conref="#text/ProductA"/>for
+                    <text conref="#text/PlatformA"/>
+                </text>
+            </keyword>
+        </p>
+        
+        <!-- @term update -->
+        <p>
+            <term>
+                <text id="ProductB">ProductB</text>
+            </term>
+            
+            <term>
+                <text id="PlatformB">PlatformB</text>
+            </term>
+            
+            <term id="BforB">
+               <text>
+                 <text conref="#text/ProductB"/>for
+                 <text conref="#text/PlatformB"/>
+               </text>
+            </term>
+        </p>
+        
+        <!-- @tm update -->
+        <p>
+            <tm tmtype="service">
+                <text id="ProductC">ProductC</text>
+            </tm>
+            
+            <tm tmtype="service">
+                <text id="PlatformC">PlatformC</text>
+            </tm>
+            
+            <tm tmtype="service" id="CforC">
+               <text>
+                  <text conref="#text/ProductC"/>for
+                  <text conref="#text/PlatformC"/>
+               </text>
+            </tm>
+        </p>
+        
+        <!-- @ph -->
+        <p>
+            <ph>
+                <text id="ProductD">ProductD</text>
+            </ph>
+            
+            <ph>
+                <text id="PlatformD">PlatformD</text>
+            </ph>
+            
+            <ph id="DforD">
+                <text>
+                    <text conref="#text/ProductD"/>for
+                    <text conref="#text/PlatformD"/>
+                </text>
+            </ph>
+        </p>
+      
+    </body>
+</topic>
+
+
+
+

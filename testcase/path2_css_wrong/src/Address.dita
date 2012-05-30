@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="address">
+    <title>this topic's css path is righe.</title>
+    <body>
+        <p>
+            <ul>
+                <li>&lt;note&gt;this topic's css path pointer is right.</li>
+            </ul>
+            
+        </p>
+    </body>
+</topic>
+

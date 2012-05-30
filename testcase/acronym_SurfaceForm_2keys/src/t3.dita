@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topicID3">
+    <title>Topic3</title>
+    <body>
+        <p>1 The <abbreviated-form keyref="abs"/> will prevent the car from skidding in adverse weather conditions..........</p>
+        <p>2 The <abbreviated-form keyref="abs2"/> will prevent the car from skidding in adverse weather conditions..........</p>
+        <p>3 The <b><abbreviated-form keyref="abs2"/></b> ...................</p>
+    </body>
+</topic>
+

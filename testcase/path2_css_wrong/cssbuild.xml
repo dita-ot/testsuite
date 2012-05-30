@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="path2_css_wrong" default="path2csswrong" basedir=".">
+    <description>Verify that CSS path is correct in each output HTML file</description>
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    
+    <target name="path2csswrong">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}path2_css_wrong${file.separator}Name${file.separator}path2_css_wrong.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}path2_css_wrong"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}path2_css_wrong${file.separator}temp"/>   
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}path2_css_wrong${file.separator}log"/>
+            <property name="args.css" value="${dita.dir}${file.separator}css${file.separator}topic.css"/>
+            <property name="generate.copy.outer" value="1"/>
+            <property name="clean.temp" value="no"/>
+           
+    </ant>
+    </target>
+</project>

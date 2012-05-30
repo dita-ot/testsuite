@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    
+    <title>Hi, I am a map1</title>
+   
+    <reltable>
+       
+        <relheader>
+            
+            <relcolspec type="topic" collection-type="sequence"> 
+            <title>Head for Topic</title>
+                <topicref href="topic.dita" navtitle="@navtitle" locktitle="yes" linking="none"></topicref>
+            </relcolspec>
+                
+            <relcolspec type="task" collection-type="sequence">
+                <title>Head for Task</title>
+                <topicref href="task.dita" navtitle="@navtitle" locktitle="yes" linking="none"></topicref>
+            </relcolspec>
+               
+            <relcolspec type="reference" collection-type="sequence">
+                <title>Head for Reference</title>
+                <topicref href="reference.dita" navtitle="@navtitle" locktitle="yes" linking="none"></topicref>
+            </relcolspec>
+               
+        </relheader>
+       
+        <!-- First row -->
+        <relrow>
+            <relcell>
+                <topicref href="topic_a.dita" navtitle="topic-X" locktitle="yes"></topicref>
+            </relcell>
+            <relcell>
+                <topicref href="task_a.dita" navtitle="task-X" locktitle="yes"></topicref>
+            </relcell>
+            <relcell>
+                <topicref href="reference_a.dita" navtitle="reference-X" locktitle="yes"> </topicref>
+            </relcell>
+        </relrow>
+        
+        <!-- Seconde Row -->
+        <relrow>
+            <relcell>
+                <topicref href="topic_b.dita" navtitle="topic-Y" locktitle="yes"></topicref>
+            </relcell>
+            <relcell>
+                <topicref href="task_b.dita" navtitle="task-Y" locktitle="yes"> </topicref>
+            </relcell>
+            <relcell>
+                <topicref href="reference_b.dita" navtitle="reference-Y" locktitle="yes">    </topicref>
+            </relcell>
+        </relrow>
+        
+        <!-- Third Row -->
+        <relrow>
+            <relcell>
+                <topicref href="topic_c.dita" navtitle="topic-Z" locktitle="yes">     </topicref>
+            </relcell>
+            <relcell>
+                <topicref href="task_c.dita" navtitle="task-Z" locktitle="yes"> </topicref>
+            </relcell>
+            <relcell>
+                <topicref href="reference_c.dita" navtitle="reference-Z" locktitle="yes">  </topicref>
+            </relcell>
+        </relrow>
+        
+    </reltable>
+    
+</map>

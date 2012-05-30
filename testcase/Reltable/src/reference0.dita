@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="A">
+    <title>Hi, I am reference 0</title>
+    <refbody>
+        <section>
+            <lq>
+                A
+            </lq>
+        </section>
+    </refbody>
+    
+    <related-links>
+        <link href="reference_related.dita">
+            <linktext>Reference Related Links</linktext>
+        </link>
+    </related-links>
+</reference>
+
