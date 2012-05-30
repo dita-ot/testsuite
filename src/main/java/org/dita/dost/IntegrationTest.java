@@ -84,7 +84,7 @@ public final class IntegrationTest {
                     }
                 }
                 return false;
-            }})); 
+            }}));
         Collections.sort(cases, new Comparator<File>() {
                 public int compare(File arg0, File arg1) {
                     return arg0.compareTo(arg1);
@@ -215,9 +215,15 @@ public final class IntegrationTest {
     }
     
     private static final Map<String, Pattern> htmlIdPattern = new HashMap<String, Pattern>();
+    private static final Map<String, Pattern> ditaIdPattern = new HashMap<String, Pattern>();
     static {
-        htmlIdPattern.put("id", Pattern.compile("(.*__)d\\d+e\\d+|d\\d+e\\d+(.*)"));
-        htmlIdPattern.put("headers", Pattern.compile("d\\d+e\\d+(.*)"));
+        final String SAXON_ID = "d\\d+e\\d+";
+        htmlIdPattern.put("id", Pattern.compile("(.*__)" + SAXON_ID + "|" + SAXON_ID + "(.*)"));
+        htmlIdPattern.put("href", Pattern.compile("#.+?/" + SAXON_ID + "|#(.+?__)?" + SAXON_ID + "(.*)"));
+        htmlIdPattern.put("headers", Pattern.compile(SAXON_ID + "(.*)"));
+        
+        ditaIdPattern.put("id", htmlIdPattern.get("id"));
+        ditaIdPattern.put("href", Pattern.compile("#.+?/" + SAXON_ID + "|#(.+?__)?" + SAXON_ID + "(.*)"));
     }
     
     private Document parseHtml(final File f) throws SAXException, IOException {
@@ -234,7 +240,7 @@ public final class IntegrationTest {
                 e.removeAttribute(a);
             }
         }
-        return d;
+        return rewriteIds(d, ditaIdPattern);
     }
     
     private Document rewriteIds(final Document doc, final Map<String, Pattern> patterns) {
