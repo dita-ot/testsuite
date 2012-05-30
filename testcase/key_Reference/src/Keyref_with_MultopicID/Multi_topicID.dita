@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="X">
+    <title>First topicID IS X</title>
+    <body>
+        <p id="pID">Hi, this is the first topicID</p>
+    </body>
+
+
+<topic id="Y">
+    <title>Second topicID IS Y</title>
+    <body>
+        <p id="pID">Hi, this is the second topicID</p>
+    </body>
+</topic>
+
+<topic id="Z">
+    <title>Third topicID IS Z</title>
+    <body>
+        <p id="pID">Hi, this is the third topicID</p>
+    </body>
+</topic>
+
+</topic>
+

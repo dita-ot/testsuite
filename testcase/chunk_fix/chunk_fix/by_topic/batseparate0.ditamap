@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map chunk="by-topic" xml:lang="en-us"><title>Separate combined batty
+tasks into separate output topics</title>
+<!--Make a separate chunk for the "introduction"-->
+<topicref chunk="to-content select-topic"
+href="battytasks.dita#battytasks">
+<!--Make a chunk for the caring topic-->
+<topicref chunk="to-content select-topic"
+href="battytasks.dita#batcaring"></topicref>
+<!--Make a chunk for the feeding topic and its child-->
+<topicref chunk="to-content select-topic"
+href="battytasks.dita#batfeeding"></topicref>
+<!--Make a chunk for the cleaning topic and its two children-->
+<topicref chunk="to-content select-topic"
+href="battytasks.dita#batcleaning"></topicref>
+</topicref>
+</map><?Pub Caret?>
+<?Pub *0000000918?>

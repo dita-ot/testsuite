@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    
+    <!-- This is the first author -->
+    
+    <!-- Redirect link or xref  -->
+    
+    <topicref keys="dita1" href="dita1.dita" navtitle="DITA1" locktitle="yes"/>
+    <topicref href="dita2.dita" navtitle="DITA2" locktitle="yes"/>
+        
+</map>

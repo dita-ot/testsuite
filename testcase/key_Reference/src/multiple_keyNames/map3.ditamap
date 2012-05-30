@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    
+    <!-- this is the third author -->
+    
+    <topicref keys="blatview blatexample blatfeference blatintro footbars" href="footbars.dita" navtitle="footbars" locktitle="yes"/>
+    
+    <topicref href="keyRef_blatexample.dita" navtitle="keyRef_blatexample" locktitle="yes"/>
+    
+    <!-- Check keyRef_blatexample.dita -->
+    <!-- It will change its link to footbars.dita -->
+    
+</map>

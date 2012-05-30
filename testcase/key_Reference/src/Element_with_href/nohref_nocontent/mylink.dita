@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topicID">
+    <title>This is a topic about cite element</title>
+    <body>
+             
+    </body>
+    
+    <related-links>
+        <link href="http://www.google.com" scope="external">
+            <linktext>Google</linktext>
+        </link>
+    </related-links>
+</topic>
+

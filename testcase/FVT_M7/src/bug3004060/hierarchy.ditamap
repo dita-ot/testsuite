@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "../dtd/technicalContent/dtd/map.dtd">
+<map title="test">
+	<topicref href="topic1.xml" type="concept"/>
+	<topicref href="topic2.xml" type="concept" keys="object"/>
+</map>

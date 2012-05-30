@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map xml:lang="en-us"><title>case 7</title>
+<topicref chunk="to-content" href="parent.dita">
+<topicref href="child.dita"></topicref>
+<topicref href="child2.dita"></topicref>
+<topicref format="html" href="http://www.metadita.org" scope="external">
+</topicref><?Pub Caret1?>
+</topicref>
+</map>
+<?Pub *0000000498?>

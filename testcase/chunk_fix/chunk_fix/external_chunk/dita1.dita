@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN"
+ "ditabase.dtd">
+<?Pub Inc?>
+<dita>
+<concept id="ditaconcept1" xml:lang="en-us">
+<title>ditaConcept1</title>
+<shortdesc>Put your short description here; used for first paragraph
+and abstract.</shortdesc>
+<prolog><metadata>
+<keywords>
+<!--Insert <indexterm> tags here-->
+</keywords>
+</metadata></prolog>
+<conbody>
+<p>Type <b>your</b> text here.</p>
+<ul>
+<li>an interesting point</li>
+<li>another interesting point</li>
+</ul>
+<section><title>Subheading</title><p>Here's a little section in a
+concept.</p></section>
+<example><title>Example</title><p>Here's a little example section
+in a concept.</p></example>
+</conbody>
+<concept id="ditaconcept11" xml:lang="en-us">
+<title>ditaconcept11</title>
+<conbody>
+<p>ditaconcept11 body</p>
+</conbody>
+<concept id="ditaconcept111" xml:lang="en-us">
+<title>ditaconcept111</title>
+<conbody>
+<p>ditaconcept111 body</p>
+</conbody>
+</concept>
+</concept>
+<concept id="ditaconcept12" xml:lang="en-us">
+<title>ditaconcept12</title>
+<conbody>
+<p>ditaconcept12 body</p>
+</conbody>
+</concept>
+<reference id="ditaconcept1reference1" xml:lang="en-us">
+<title>ditaconcept1reference1</title>
+</reference>
+<task id="ditaconcept1task1" xml:lang="en-us">
+<title>ditaconcept1task1</title>
+</task>
+<topic id="ditaconcept1topic1" xml:lang="en-us">
+<title>ditaconcept1topic1</title>
+</topic>
+</concept>
+<task id="ditatask1" xml:lang="en-us">
+<title>ditatask1</title>
+<shortdesc>Put your short description here; used for first paragraph
+and abstract.</shortdesc>
+<prolog><metadata>
+<keywords>
+<!--Insert <indexterm> tags here-->
+</keywords>
+</metadata></prolog>
+<taskbody>
+<example>Main topic</example>
+</taskbody>
+<task id="ditatask11" xml:lang="en-us">
+<title>ditatask11</title>
+<taskbody>
+<context><p>ditatask11 body</p></context>
+</taskbody>
+<task id="ditatask111" xml:lang="en-us">
+<title>ditatask111</title>
+<taskbody>
+<context><p>ditatask111 body</p></context>
+</taskbody>
+</task>
+</task>
+<task id="ditatask12" xml:lang="en-us">
+<title>ditatask12</title>
+<taskbody>
+<context><p>ditatask12 body</p></context>
+</taskbody>
+</task>
+</task>
+<reference id="ditareference1" xml:lang="en-us">
+<title>ditareference1</title>
+<shortdesc>Put your short description here; used for first paragraph
+and abstract.</shortdesc>
+<prolog><metadata>
+<keywords>
+<!--Insert <indexterm> tags here-->
+</keywords>
+</metadata></prolog>
+<refbody>
+<section><title>Purpose</title>This little command copies things.</section>
+<refsyn><synph><kwd>DITA</kwd></synph></refsyn>
+<example><title>Sample</title>This little sample copies <q>here</q> to <q>there</q>:<pre>copy from here to there</pre></example>
+</refbody>
+<reference id="ditareference11" xml:lang="en-us">
+<title>ditareference11</title>
+<refbody><data><ph>ditareference11 body</ph></data></refbody>
+<reference id="ditareference111" xml:lang="en-us">
+<title>ditareference111</title>
+<refbody><data><ph>ditareferece111 body</ph></data></refbody>
+</reference>
+</reference>
+<reference id="ditareference12" xml:lang="en-us">
+<title>ditareference12</title>
+<refbody><data><ph>ditareference12 body</ph></data></refbody>
+</reference>
+</reference>
+<topic id="ditatopic1" xml:lang="en-us">
+<title>ditatopic1</title>
+<shortdesc>Put your short description here; used for first paragraph
+and abstract.</shortdesc>
+<body>
+<p>Here's a <b>cute</b>, <i>little</i> topic.</p>
+</body>
+<topic id="ditatopic11" xml:lang="en-us">
+<title>ditatopic11</title>
+<body>
+<p>ditatopic11 body</p>
+</body>
+<topic id="ditatopic111" xml:lang="en-us">
+<title>ditatopic111</title>
+<body>
+<p>ditatopic111 body</p>
+</body>
+</topic>
+</topic>
+<topic id="ditatopic12" xml:lang="en-us">
+<title>ditatopic12</title>
+<body>
+<p>ditatopic12 body</p>
+</body>
+</topic>
+</topic>
+</dita><?Pub Caret?>
+<?Pub *0000003857?>

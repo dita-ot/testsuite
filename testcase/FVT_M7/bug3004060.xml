@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><project name="bug3004060" default="bug3004060" basedir=".">
+    
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+    
+    <target if="run.pdf" unless="skip.pdf" name="bug3004060">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}FVT_M7${file.separator}bug3004060${file.separator}hierarchy.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}FVT_M7${file.separator}bug3004060${file.separator}pdf"/>
+            <property name="transtype" value="pdf2"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}FVT_M7${file.separator}bug3004060${file.separator}pdf"/>
+            <property name="clean.temp" value="no"/>
+          
+        </ant>
+    </target>
+</project>

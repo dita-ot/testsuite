@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    
+    <!--this is the second author  -->
+    
+    <topicref keys="reuse_element" href="dita3.dita" navtitle="DITA3" locktitle="yes"/>
+    
+    <!-- dita2.dita resuse the element in dita3 through the reuse_element -->
+    
+    <topicref href="dita2.dita" navtitle="DITA2" locktitle="yes"/>
+    
+</map>

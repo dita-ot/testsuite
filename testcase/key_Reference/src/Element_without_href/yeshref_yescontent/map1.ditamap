@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    
+    <!-- use keys attribute in topicref element -->
+   
+  
+    <topicref keys="mycite" href="mycite.dita"/>
+    <topicref keys="mydt" href="mydt.dita"/>
+    <topicref keys="myph" href="myph.dita">
+      <topicmeta>
+      <linktext>This is the content in keys Definition.</linktext>
+      </topicmeta>
+    </topicref>
+    <topicref keys="myindexterm" href="myindexterm.dita"/>
+    <topicref keys="myindex-base" href="myindex-base.dita"/>
+    <topicref keys="myindextermref" href="myindextermref.dita"/>
+    
+  <topicref href="element_without_href.dita"/>
+    
+    
+</map>

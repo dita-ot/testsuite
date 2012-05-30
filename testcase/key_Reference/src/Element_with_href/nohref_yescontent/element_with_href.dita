@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topicID">
+    <title>This is a topic with @href</title>
+    
+    
+    <prolog>
+        
+        <!-- author element -->
+        <author keyref="myauthor" href="http://www.google.com" scope="external">Google</author>
+        
+        <!-- source element -->
+        <source keyref="mysource" href="http://www.google.com" scope="external">Google</source>
+        
+        <!-- publisher element -->
+        <publisher keyref="mypublisher" href="http://www.google.com" scope="external">Google</publisher>
+        
+       
+       
+        <!-- data element -->
+        <data keyref="mydata" href="http://www.google.com" scope="external">Google</data>
+        
+       
+        <!-- data about element -->
+        <data-about keyref="mydata-about" href="http://www.google.com" scope="external">
+            <data>Google</data>
+        </data-about>
+        
+    </prolog>
+    
+    <body>
+    
+        <!-- image element -->
+        <p>
+            <image href="image/1.jpg" keyref="myimage">
+            
+       
+            </image>
+        </p>
+        
+        <!-- longdescref element -->
+       
+        
+        <!-- lq element -->
+        <lq keyref="mylq" href="http://www.google.com" type="external">Google</lq>
+        
+        <!-- xref element -->
+        <p>
+            <xref keyref="myxref" href="http://www.google.com" scope="external">Google</xref>
+        </p>
+    </body>
+    
+        
+    <!-- link element -->
+    <related-links>
+        <link keyref="mylink" href="http://www.google.com" scope="external">
+            <linktext>Google</linktext>
+        </link>
+    </related-links>
+</topic>
+

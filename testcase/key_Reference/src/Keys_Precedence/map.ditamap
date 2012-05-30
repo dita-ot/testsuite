@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    
+  <title>This is the main map</title>
+  
+  <topicref keys="Mykeys" href="Name.dita" navtitle="Show Full Name" locktitle="yes"/>
+  
+  <topicref href="sub_map/sub_map.ditamap" format="ditamap" navtitle="Referencing Map has higer precedence that Referenced Map" locktitle="yes"></topicref>
+    
+  <topicref href="getName.dita" navtitle="getName" locktitle="yes"></topicref>
+  
+</map>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?><project name="key_Reference" default="keyReference" basedir=".">
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    
+    <target name="keyReference">
+        
+        <!-- Basic Redirect Link  Author1 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}map1.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}author1${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}author1${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+            <property name="clean.temp" value="no"/>
+        </ant> 
+        
+        <!-- Basic Redirect Link  Author2 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}map2.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}author2${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}author2${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+            <property name="clean.temp" value="no"/>
+        </ant> 
+        
+        <!-- Basic Redirect Link  Author3 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}map3.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}author3${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}author3${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+            <property name="clean.temp" value="no"/>
+        </ant> 
+        
+        <!-- Basic Redirect Link  Author4 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}map4.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}author4${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}author4${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+            <property name="clean.temp" value="no"/>
+        </ant> 
+        
+        
+        <!-- Basic Redirect Link  Author5-->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}map5.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}author5${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}author5${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+      
+        <!-- Basic Redirect Link  Author6 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}map6.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}author6${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Basic_Redirect_Link${file.separator}author6${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+        <!-- Conkeyref element  Author1 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Conkeyref_element${file.separator}map1.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Conkeyref_element${file.separator}author1${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Conkeyref_element${file.separator}author1${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+        <!-- Conkeyref element  Author2 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Conkeyref_element${file.separator}map2.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Conkeyref_element${file.separator}author2${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Conkeyref_element${file.separator}author2${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+        <!-- Keys Precedence -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Keys_Precedence${file.separator}map.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Keys_Precedence${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Keys_Precedence${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+        <!-- Mapref_Keyref_Reverse -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Mapref_Keyref_Reverse${file.separator}map.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Mapref_Keyref_Reverse${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Mapref_Keyref_Reverse${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+        <!-- Keydef Element -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Keydef_element${file.separator}map.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Keydef_element${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Keydef_element${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+        <!-- Redirect Content-->
+        <!-- author1 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Redirect_Content${file.separator}map1.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Redirect_Content${file.separator}author1${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Redirect_Content${file.separator}author1${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+        <!-- Redirect Content-->
+        <!-- author2 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Redirect_Content${file.separator}map2.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Redirect_Content${file.separator}author2${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Redirect_Content${file.separator}author2${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+        
+        <!--element with @href-->
+        <!-- nohref nocontent -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Element_with_href${file.separator}nohref_nocontent${file.separator}map1.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Element_with_href${file.separator}nohref_nocontent${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Element_with_href${file.separator}nohref_nocontent${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+        <!--element with @href-->
+        <!-- nohref yescontent -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Element_with_href${file.separator}nohref_yescontent${file.separator}map1.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Element_with_href${file.separator}nohref_yescontent${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Element_with_href${file.separator}nohref_yescontent${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+        <!--element with @href-->
+        <!-- yeshref nocontent -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Element_with_href${file.separator}yeshref_nocontent${file.separator}map1.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Element_with_href${file.separator}yeshref_nocontent${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Element_with_href${file.separator}yeshref_nocontent${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+        <!--element with @href-->
+        <!-- yeshref yescontent -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Element_with_href${file.separator}yeshref_yescontent${file.separator}map1.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Element_with_href${file.separator}yeshref_yescontent${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Element_with_href${file.separator}yeshref_yescontent${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+        <!--element without @href-->
+        <!-- nohref nocontent -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Element_without_href${file.separator}nohref_nocontent${file.separator}map1.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Element_without_href${file.separator}nohref_nocontent${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Element_without_href${file.separator}nohref_nocontent${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+        <!--element without @href-->
+        <!-- nohref yescontent -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Element_without_href${file.separator}nohref_yescontent${file.separator}map1.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Element_without_href${file.separator}nohref_yescontent${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Element_without_href${file.separator}nohref_yescontent${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+        <!--element without @href-->
+        <!-- yeshref nocontent -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Element_without_href${file.separator}yeshref_nocontent${file.separator}map1.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Element_without_href${file.separator}yeshref_nocontent${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Element_without_href${file.separator}yeshref_nocontent${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+        <!--element without @href-->
+        <!-- yeshref yescontent -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}key_Reference${file.separator}Element_without_href${file.separator}yeshref_yescontent${file.separator}map1.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Element_without_href${file.separator}yeshref_yescontent${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}Element_without_href${file.separator}yeshref_yescontent${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}key_Reference${file.separator}log"/>
+        <property name="clean.temp" value="no"/></ant> 
+        
+        
+        
+    </target>
+</project>

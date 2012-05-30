@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topicID">
+    <title>Get Your Address</title>
+    
+    <body>
+        <p>
+            <xref keyref="address" href="http://www.google.com" scope="external">Show Address</xref>
+        </p>
+    </body>
+    
+    
+</topic>
+

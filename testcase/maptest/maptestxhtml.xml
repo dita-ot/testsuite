@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><project name="maptestxhtml" default="maptestxhtml" basedir=".">
+    
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+    
+    <target name="maptestxhtml">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}maptest${file.separator}maptest_1${file.separator}map1.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}maptest${file.separator}xhtml${file.separator}maptest_1"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}maptest${file.separator}xhtml${file.separator}maptest_1"/>
+            <property name="clean.temp" value="no"/>
+            <property name="generate.copy.outer" value="3"/>
+            <property name="onlytopic.in.map" value="true"/>
+        </ant>
+        
+       <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}maptest${file.separator}maptest_2${file.separator}map2.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}maptest${file.separator}xhtml${file.separator}maptest_2"/>
+            <property name="transtype" value="xhtml"/>
+           <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}maptest${file.separator}xhtml${file.separator}maptest_2"/>
+           <property name="clean.temp" value="no"/>
+           <property name="generate.copy.outer" value="3"/>
+           <property name="onlytopic.in.map" value="true"/>
+       </ant>
+        
+        
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}maptest${file.separator}maptest_3${file.separator}map2.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}maptest${file.separator}xhtml${file.separator}maptest_3"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}maptest${file.separator}xhtml${file.separator}maptest_3"/>
+            <property name="clean.temp" value="no"/>
+            <property name="generate.copy.outer" value="3"/>
+            <property name="onlytopic.in.map" value="true"/>
+        </ant>
+        
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}maptest${file.separator}maptest_4${file.separator}map${file.separator}map2.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}maptest${file.separator}xhtml${file.separator}maptest_4"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}maptest${file.separator}xhtml${file.separator}maptest_4"/>
+            <property name="clean.temp" value="no"/>
+            <property name="generate.copy.outer" value="3"/>
+            <property name="onlytopic.in.map" value="true"/>
+        </ant>
+    </target>
+</project>

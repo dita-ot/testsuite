@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossgroup PUBLIC "-//OASIS//DTD DITA Glossary Group//EN" "glossgroup.dtd">
+<glossgroup id="psG">
+    <title>ps</title>
+    <glossentry id="ps1" xml:lang="en-us">
+        <glossterm>ps</glossterm>
+        <glossBody>
+            <glossSurfaceForm>personal statement</glossSurfaceForm>
+            <glossAlt>
+                <glossAbbreviation>ps1</glossAbbreviation>
+            </glossAlt>
+            <glossAlt>
+                <glossAcronym>ps1-preferred</glossAcronym>
+                <glossStatus value="perferred"/>
+            </glossAlt>
+            <glossAlt>
+                <glossAbbreviation>ps1-obselete</glossAbbreviation>
+                <glossStatus value="obselete"/>
+            </glossAlt>
+        </glossBody>
+    </glossentry>
+    <glossentry id="ps2" xml:lang="es-es">
+        <glossterm>ps</glossterm>
+        <glossBody>
+            <glossSurfaceForm>persona</glossSurfaceForm>
+            <glossAlt>
+                <glossAbbreviation>ps2</glossAbbreviation>
+            </glossAlt>
+        </glossBody>
+    </glossentry>
+    
+</glossgroup>
+

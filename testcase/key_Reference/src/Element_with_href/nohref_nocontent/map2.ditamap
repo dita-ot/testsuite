@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="mapID">
+    <title>This is a map with @href</title>
+    
+    <!-- Define @keys here -->
+    <topicref keyref="mykeys"></topicref>
+ 
+</map>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.2 Map//EN" "map.dtd">
+<map>
+    
+    <!-- map withou metadata definition by its-self, it calls for topic metadata -->
+    
+    <title>map without metadata definition by its-self</title>
+  
+    <topicmeta id="topicmetaID1" conref="map_metadata.ditamap#topicmetaID">
+   </topicmeta>
+    
+    <topicref href="topic_metadata3.dita">
+    <topicmeta>
+        <navtitle>this is a map without metadata definition</navtitle>
+        <linktext>metadata</linktext>
+        <searchtitle>metadata</searchtitle>
+        <shortdesc>metadata conref</shortdesc>
+        <author>Kelvin B</author>
+        <source>DITA-OT</source>
+        <publisher>open source </publisher>
+        <copyright>
+            <copyryear year="2008-05-15"/>
+            <copyrholder>Afternoon</copyrholder>
+        </copyright>
+        <critdates>
+            <created date="2008-05-15"/>
+            <revised modified="2008-05-15"/>
+        </critdates>
+        <permissions view="DITA-OT viewer"/>
+        
+        <metadata id="MapMetadataID2" conref="topic_metadata2.dita#topicID1/metadata2">
+        </metadata>
+       
+        <audience/>
+        <category>map1</category>
+        <keywords>
+            <indexterm>map1</indexterm>
+        </keywords>
+        <prodinfo>
+            <prodname>map1</prodname>
+            <vrmlist>
+                <vrm version="1.2 map1"/>
+            </vrmlist>
+            <brand>map1</brand>
+        </prodinfo>
+        <othermeta name="map1" content="map1"/>
+        <resourceid id="map1"/>
+        <data>map1</data>
+    </topicmeta>
+    </topicref>
+    <topicref href="topic_metadata1.dita"></topicref>
+</map>
+

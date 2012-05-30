@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<?Pub Sty _display FontColor="red"?>
+<topic id="topicID1" xml:lang="en-us">
+<title>First title</title><?Pub Caret 4?>
+<shortdesc>         <draft-comment>             <keyword>ABC</keyword> 
+           <lq>HI</lq>             <image href="image/181706.jpg">
+</image>             <cite>                 <ph>HI</ph>          
+      <term>This is the term</term>             </cite>         </draft-comment> 
+   </shortdesc>
+<body>
+<draft-comment>            <keyword>ABC</keyword>             <lq>HI</lq> 
+           <image href="image/181706.jpg"></image>             <cite> 
+               <ph>HI</ph>                 <term>This is the term</term> 
+           </cite>         </draft-comment>
+<p>             <image href="image/181706.jpg"><longdescref
+format="image" href="image/181706.jpg" keyref="reuse"/></image>  
+      </p>
+</body>
+<related-links>
+<link href="dita.dita"></link>
+</related-links>
+</topic>
+<?Pub *0000001133?>

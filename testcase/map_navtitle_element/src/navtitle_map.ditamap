@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="mapID">
+    
+    <!-- this is to test  for new  navtitle element -->
+    
+    <!-- Case1 -->
+    <topicref href="reftitle_topic.dita" navtitle="a" locktitle="no">
+        <topicmeta id="topicmetaID1">
+            <navtitle>A</navtitle>
+        </topicmeta>
+    </topicref>
+    
+    <!-- Case2 -->
+    <topicref href="reftitle_topic.dita" navtitle="a" locktitle="yes">
+        <topicmeta id="topicmetaID2">
+            <navtitle>A</navtitle>
+        </topicmeta>
+    </topicref>
+    
+    <!-- Case3 -->
+    <topicref href="reftitle_topic.dita" locktitle="no">
+        <topicmeta id="topicmetaID3">
+            <navtitle>A</navtitle>
+        </topicmeta>
+    </topicref>
+    
+    <!-- Case4 -->
+    <topicref href="reftitle_topic.dita" locktitle="yes">
+        <topicmeta id="topicmetaID4">
+            <navtitle>A</navtitle>
+        </topicmeta>
+    </topicref>
+    
+    <!-- Case5 -->
+    <topicref href="reftitle_topic.dita" navtitle="a" locktitle="no">
+        <topicmeta id="topicmetaID5">
+        </topicmeta>
+    </topicref>
+    
+    <!-- Case6 -->
+    <topicref href="reftitle_topic.dita" navtitle="a" locktitle="yes">
+        <topicmeta id="topicmetaID6">
+        </topicmeta>
+    </topicref>
+    
+    
+    
+    <!-- now we are test the reltable@title function -->
+    <reltable id="R" title="b">
+        <title id="B">B</title>
+        <relrow>
+            <relcell>
+                <data>hi</data>
+            </relcell>
+        </relrow>
+    </reltable>  
+    
+</map>

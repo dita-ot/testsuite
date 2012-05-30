@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"  "file:/C:/DITA-OT1.5F/demo/dita12/dtd12/technicalContent/dtd/map.dtd">
+<map>
+    
+<title>Here is a map with full metadata infomation.</title>
+       
+    <!--Define Meta Info Here In Map -->
+        <topicmeta id="topicmetaID">
+        <author>Metainfo In Map</author>
+        <source>Metainfo In Map</source>
+        <publisher>Metainfo In Map</publisher>
+        <copyright>
+            <copyryear year="Metainfo In Map"/>
+            <copyrholder>Metainfo In Map</copyrholder>
+        </copyright>
+        <critdates>
+            <created date="Metainfo In Map"/>
+            <revised modified="Metainfo In Map"/>
+        </critdates>
+        <permissions view="all"/>
+
+            <metadata id="metadataID">
+                <audience/>
+                <category>Metainfo In Map</category>
+                <keywords>
+                    <indexterm>Metainfo In Map</indexterm>
+                </keywords>
+                <prodinfo>
+                    <prodname>Metainfo In Map</prodname>
+                    <vrmlist>
+                        <vrm version="Metainfo In Map"/>
+                    </vrmlist>
+                </prodinfo>
+                <othermeta name="Metainfo In Map" content="Metainfo In Map"/>
+                <data>Metainfo In Map</data>
+            </metadata>
+            <resourceid id="Metainfo In Map"/>
+        </topicmeta>
+        
+
+    
+</map>

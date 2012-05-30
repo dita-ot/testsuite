@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="map1" id="map">
+    <topicref href="maintcar.dita" keys="abc"></topicref>
+    <topicref href="absG.dita"></topicref>
+    <topicref href="usb.dita"></topicref>
+
+    <glossref href="antiLockBrake.dita" keys="abs"></glossref>
+    <topichead navtitle="glossarygroup">
+        <topicref keys="absGroup" href="glossaryG.dita#absGroup"></topicref>
+        <topicref keys="usb" href="glossaryG.dita#usbfd"></topicref>
+    </topichead>
+</map>

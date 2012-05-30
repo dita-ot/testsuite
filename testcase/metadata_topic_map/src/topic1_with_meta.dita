@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topicID1">
+    <title>This is a topic with self meta definition.</title>
+    
+    <!-- Metadata Info -->
+    <prolog>
+        
+        <author>Metainfo In topic1</author>
+        <source>Metainfo In topic1</source>
+        <publisher>Metainfo In topic1</publisher>
+        <copyright>
+            <copyryear year="Metainfo In topic1"/>
+            <copyrholder>Metainfo In topic1</copyrholder>
+        </copyright>
+        <critdates>
+            <created date="Metainfo In topic1"/>
+            <revised modified="Metainfo In topic1"/>
+        </critdates>
+        <permissions view="all"/>
+        
+        
+        <metadata id="topicMetaID1">
+            <audience/>
+            <category>Metainfo In topic1</category>
+            <keywords>
+                <indexterm>Metainfo In topic1</indexterm>
+            </keywords>
+            <prodinfo>
+                <prodname>Metainfo In topic1</prodname>
+                <vrmlist>
+                    <vrm version="Metainfo In topic1"/>
+                </vrmlist>
+            </prodinfo>
+            <othermeta name="Metainfo In topic1" content="Metainfo In topic1"/>
+            <data>Metainfo In topic1</data>
+        </metadata>
+       <resourceid id="Metainfo In topic1"/>
+    </prolog>
+   
+    
+    <body>
+        <!-- empty body -->
+    </body>
+    
+</topic>
+

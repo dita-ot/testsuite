@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map chunk="by-document"><?Pub Caret?>
+<topicref chunk="to-content" href="parent1.dita">
+<topicref chunk="select-topic" href="ditabase.dita#Y1"></topicref>
+</topicref>
+</map>
+<?Pub *0000000387?>

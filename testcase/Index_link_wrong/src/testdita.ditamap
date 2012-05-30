@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<map id="index_link">
+ <title>this is about the index link error.</title>
+<topicref href="dita1.dita"></topicref>
+<topicref href="dita2.dita"></topicref>
+<topicref href="dita3.dita"></topicref>
+</map>
+

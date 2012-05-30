@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topicID">
+    <title>This is a topic without @href</title>
+    <body>
+       
+        <!--ph element  -->
+        <p>
+            <ph keyref="myph">This is the ph element.</ph>
+        </p>
+        
+        <!-- dt element -->
+        <dl>
+            <dlentry>
+                <dt keyref="mydt">
+                    
+                    <!-- cite element -->
+                    <cite keyref="mycite">Mycite</cite>
+                </dt>
+                <dd></dd>
+            </dlentry>
+        </dl>
+       
+        <!-- indexterm element-->
+        <p>
+            <indexterm keyref="myindexterm">Myindexterm
+            
+                <!-- index-base element -->
+                <index-base keyref="myindex-base">Myindex-base</index-base>
+            </indexterm>
+        </p>
+        
+        <!-- indextermref  element-->
+        <p>
+            <indextermref keyref="myindextermref"></indextermref>
+        </p>
+        
+       
+        
+    </body>
+</topic>
+

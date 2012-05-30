@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topicID13">
+    
+    <title>This is a topic without meta info definition.</title>
+   
+    <!-- Conref other topic's Meta Info -->
+    <prolog conref="topic12_without_meta.dita#topicID12/prologID12"></prolog>
+    
+    <body>
+        <!-- empty body -->
+    </body>
+    
+</topic>
+

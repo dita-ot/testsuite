@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="a">
+    <title>a</title>
+    <body>
+        <p>
+            <term keyref="ps"/>
+            <abbreviated-form keyref="ps" xml:lang="es-es"/>
+            <abbreviated-form keyref="ps" xml:lang="zh-cn"/>
+            <abbreviated-form keyref="ps" xml:lang="es"/>
+        </p>
+    </body>
+</topic>
+

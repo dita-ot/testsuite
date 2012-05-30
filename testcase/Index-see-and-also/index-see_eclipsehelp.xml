@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><project name="indexsee_eclipsehelp" default="indexsee2eclipsehelp" basedir=".">
+  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+  
+<target name="indexsee2eclipsehelp">
+  <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+    <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}IndexSee${file.separator}index-see_testdata1.dita"/>
+
+    <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}indexsee${file.separator}eclipsehelp"/>
+    <property name="transtype" value="eclipsehelp"/>
+  <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}indexsee${file.separator}eclipsehelp"/>
+    <property name="clean.temp" value="no"/>
+
+ </ant>
+ </target>
+</project>

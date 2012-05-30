@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "topic.dtd">
+<topic id="topicID2">
+    <title>This is a topic without any metadata elements</title>
+    <body>
+        <p>Hi, I am empty.</p>
+    </body>
+    </topic>
+  
+

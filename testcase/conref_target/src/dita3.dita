@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "topic.dtd">
+
+<!-- this is case for 12013@2008-05-19 -->
+
+<topic id="topicID3">
+    
+    <title>this is a topic for conref  target.</title>
+
+    <body>
+        
+        <lq id="lqID1">this is the start target.
+            <keyword id="keywordID1">1111</keyword>
+            <keyword>2222</keyword>
+            <keyword>3333</keyword>
+            <keyword id="keywordID2">4444</keyword>
+            <keyword>5555</keyword>
+            <keyword>6666</keyword>
+        </lq>
+        <lq>A</lq>
+        <lq>B</lq>
+        <lq>C</lq>
+        <lq>D</lq>
+        <lq id="lqID2">this is the end target.</lq>
+        
+        <!-- Conref Here -->
+        <lq conref="dita4.dita#topicID4/lqID3" conrefend="dita4.dita#topicID4/lqID4"></lq>
+               
+        <lq id="lqID5">this is the start target.</lq>
+        <lq>01</lq>
+        <lq>02</lq>
+        <lq>03</lq>
+        <lq>04</lq>
+        <lq id="lqID6">this is the end target.</lq>
+        
+        <!-- conref here -->
+        <lq id="lqID7">this is the start target.</lq>
+        <lq>05</lq>
+        <lq>06</lq>
+        <lq>07</lq>
+        <lq>08</lq>
+        <lq id="lqID8">this is the end target.</lq>
+        
+     
+    </body>
+    
+    
+</topic>
+

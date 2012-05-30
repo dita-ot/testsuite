@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "reference.dtd">
+<reference id="dita3" xml:lang="en-us">
+<title>Reference Test</title>
+<shortdesc>This is a third topic, same primary, different secondary</shortdesc>
+<prolog>
+<metadata>
+<keywords>
+<indexterm>Keyword<indexterm>AnotherSecondary</indexterm></indexterm>
+</keywords>
+</metadata>
+</prolog>
+</reference>

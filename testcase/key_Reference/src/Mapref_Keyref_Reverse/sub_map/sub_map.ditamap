@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    
+  <topicref keys="Mykeys" href="Name.dita" navtitle="Name" locktitle="yes"></topicref>
+  <topicref keyref="Mykeys"></topicref>
+  
+ </map>

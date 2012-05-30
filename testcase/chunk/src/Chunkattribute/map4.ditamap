@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "C:\DITA-OT1.4\dtd\map.dtd">
+<map chunk="by-document" id="mapfour">
+    <title>map title</title>
+    <topicref href="parent1.dita" copy-to="parentchunk.dita" chunk="to-content">
+        <topicref href="nested1.dita" chunk="select-branch"></topicref>
+    </topicref>
+    
+    <topicref href="http://www.baidu.com" scope="external" navtitle="baidu">
+         <topicref href="parent2.dita" chunk="to-content">
+            <topicref href="X.dita" chunk="to-content"></topicref>
+        </topicref>
+    </topicref>
+</map>

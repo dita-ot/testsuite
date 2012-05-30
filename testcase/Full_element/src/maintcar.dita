@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="maintcar">
+    <title>Test abs glossary</title>
+    <taskbody>
+        <context>
+            The <abbreviated-form keyref="abs"/> will prevent the car from skidding
+            
+        </context>   
+        
+    </taskbody>
+</task>
+

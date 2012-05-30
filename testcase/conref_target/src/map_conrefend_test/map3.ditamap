@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.2 Map//EN" "map.dtd">
+
+<!-- when you run this map, you will implement function: dita2.dita reuses the dita1.dita -->
+
+<map>
+   
+    <!-- topicref conref -->
+    <topicref conref="map2.ditamap#mapID1" conrefend="map2.ditamap#mapID2"></topicref>
+    
+    <!-- reltable conref -->
+      <reltable conref="map2.ditamap#reltableID1" conrefend="map2.ditamap#reltableID2">
+          <relrow></relrow>
+      </reltable>
+</map>

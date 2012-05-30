@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"  "file:/C:/DITA-OT1.5F/demo/dita12/dtd12/technicalContent/dtd/map.dtd">
+<map>
+    
+    <!-- Case 5: Conref Meta between topics -->
+    
+    <topicref href="topic3_Conref_otherMeta.dita"/>
+</map>

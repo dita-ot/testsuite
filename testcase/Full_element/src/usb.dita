@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="usbfd">
+    <title>test usbfd</title>
+    <body>
+        <p>The usbfd is: <abbreviated-form keyref="usb"/> </p>
+    </body>
+</topic>
+

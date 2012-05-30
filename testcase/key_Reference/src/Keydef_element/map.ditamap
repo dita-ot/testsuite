@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    
+    <topichead>
+        <keydef keys="name" href="Name.dita" navtitle="Show Name" locktitle="yes"></keydef>
+    </topichead>
+    
+    <topicgroup>
+        <keydef keys="address" href="Address.dita" navtitle="Show Name" locktitle="yes"></keydef>
+    </topicgroup>
+ 
+    <topicref href="getName.dita" navtitle="getName" locktitle="yes"/>
+    <topicref href="getAddress.dita" navtitle="getAddress" locktitle="yes"/>
+    
+</map>

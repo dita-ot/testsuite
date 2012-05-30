@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><project name="metadata_map_topic" default="metadata" basedir=".">
+  
+   <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+ 
+  <target name="metadata">
+    <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+      <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}metadata_map_topic${file.separator}map_metadata1.ditamap"/>
+      <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}metadata_map_topic${file.separator}xhtml"/>
+      <property name="transtype" value="xhtml"/>
+      <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}metadata_map_topic${file.separator}xhtml${file.separator}temp"/>
+      <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}metadata_map_topic${file.separator}log"/>
+      <property name="clean.temp" value="no"/>
+    </ant>
+  </target>
+</project>

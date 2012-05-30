@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2009, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="mytask" xml:lang="en-us">
+<title>mytask</title>
+<shortdesc>This is a short description</shortdesc>
+<taskbody>
+<prereq>This is a prereq</prereq>
+<context>The stage needs to be set just so.<ol>
+<li>Step1: <xref href="#mytask/step1">This is my user-link-text for
+step 1</xref></li><?Pub Caret 44?>
+<li>Sub step 2: <xref href="#mytask/substep2"></xref></li>
+<li>Step 3: <xref href="#mytask/step3"></xref></li>
+<li>OL 1: <xref href="#mytask/ol1"></xref></li>
+<li>OL 1.1: <xref href="#mytask/sub1"></xref></li>
+<li>OL 1.1.1: <xref href="#mytask/subsub1"></xref></li>
+<li>OL 1.2: <xref href="#mytask/sub2"></xref></li>
+<li>OL 2: <xref href="#mytask/ol2"></xref></li>
+<li>UL item: <xref href="#mytask/ul1"></xref></li>
+</ol>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space fill up space fill up space fill up space fill up space fill up space 
+fill up space fill up space fill up space fill up space fill up space fill up space 
+fill up space fill up space fill up space fill up space fill up space fill up space 
+fill up space fill up space fill up space fill up space fill up space fill up space 
+fill up space fill up space fill up space fill up space fill up space fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+<p>fill up space</p>
+</context>
+<steps>
+<stepsection>Test stepsection, which is new for DITA 1.2</stepsection>
+<step id="step1"><cmd>Do this</cmd></step>
+<step><cmd>Then this</cmd>
+<substeps>
+<substep><cmd>which is done by doing this</cmd></substep>
+<substep id="substep2"><cmd>and then this.</cmd></substep>
+</substeps>
+</step>
+<stepsection>Another stepsection, which is new for DITA 1.2, and I want to make a
+long one here that might wrap in the output just to see how it's going to wrap because
+that might matter.</stepsection>
+<step id="step3"><cmd>And finally, this.</cmd></step>
+<!--<step><cmd>And finally, this.</cmd></step>
+<step><cmd>And finally, this.</cmd></step>
+<step><cmd>And finally, this.</cmd></step>
+<step><cmd>And finally, this.</cmd></step>
+<step><cmd>And finally, this.</cmd></step>
+<step><cmd>And finally, this.</cmd></step>
+<step><cmd>And finally, this.</cmd></step>
+<step><cmd>And finally, this.</cmd></step>
+<step><cmd>And finally, this.</cmd></step>
+<step><cmd>And finally, this.</cmd></step>
+<step><cmd>And finally, this.</cmd></step>-->
+</steps>
+<result><ol>
+<li id="ol1">oneoenoenreonre<ol>
+<li id="sub1">subol1<ol>
+<li id="subsub1">subsub1</li>
+<li>subsub2</li>
+</ol></li>
+<li id="sub2">subol2</li>
+</ol></li>
+<li id="ol2">twoowowwowowow</li>
+</ol><ul>
+<li id="ul1">sldkjfalkfjsadlkfjads</li>
+<li>fsdlfkjasdlfjasfdlkj</li>
+</ul></result>
+<example>This is A TASK EXAMPLE</example>
+<postreq>This is a POST requisite</postreq>
+</taskbody>
+</task>
+<?Pub *0000001500?>

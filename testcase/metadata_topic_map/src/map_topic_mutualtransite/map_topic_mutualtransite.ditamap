@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"  "file:/C:/DITA-OT1.5F/demo/dita12/dtd12/technicalContent/dtd/map.dtd">
+<map id="MapID">
+    
+ <title>This map without metadata definition by itself. </title>
+    
+    <!-- Conref prolog ID here  -->
+    <topicmeta conref="map_with_metadata.ditamap#topicmetaID">
+      
+    </topicmeta>
+    
+    <topicref href="topic13_without_meta.dita"></topicref>
+    
+</map>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="DITA Issue #12007 Testcase"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="topicID"/>
+<link rel="stylesheet" type="text/css" href="commonltr.css"/>
+<title>DITA Issue #12007 Testcase</title>
+</head>
+<body id="topicID"><a name="topicID"><!-- --></a>
+
+
+    <h1 class="topictitle1">DITA Issue #12007 Testcase</h1>
+
+    <div>
+        <div class="p">Basic_Redirect_Link
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case1:</samp> Test the basic redirect link</div>
+
+           <br/><ol>
+               <li>Run ditamap1</li>
+
+               <li>Check dita2.dita, Verify whether dita2.dita has changed its link to dita1.dita </li>
+
+           </ol>
+ 
+            
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case2:</samp>  Change the key definition in another map, to check whether dita2.dita has also change its link.</div>
+
+            <br/><ol>
+                <li>Run map2.ditamap</li>
+
+                <li>Check dita2.dita, Verify whether dita2.dita has changed its link to dita3.dita</li>
+
+            </ol>
+
+            
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case3:</samp> Change @href to URI when we define the keys, to check whether dita2.dita has also change its link</div>
+
+            <br/><ol>
+                <li>Run map3.ditamap</li>
+
+                <li>Check dita2.dita, Verify whether dita2.dita has changed its link to external web link</li>
+
+            </ol>
+
+            
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case4:</samp> We redefine keys In another map without @href, to check whether dita2.dita has changed its link or not.</div>
+
+            <br/><ol>
+                <li>Run dita4.ditamap</li>
+
+                <li>Check dita2, Verify does it get rid of its link</li>
+
+            </ol>
+
+            
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case5:</samp>  We define the keys In another map without @href but with topicmeta information, to check whether dita2.dita has changed its link the the plain text</div>
+
+            <br/><ol>
+                <li>Run map5.ditamap</li>
+
+                <li>Check dita2.dita, Verify whether dita2.dita has changed its link to the plain text</li>
+
+            </ol>
+
+            
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case6:</samp> We havn't define any keys In map, to check what dita2.dita will link to</div>
+
+            <br/><ol>
+                <li>Run map6.ditamap</li>
+
+                <li>Check dita2.dita, Verify whether dita2.dita link to dita0.dita as a fallback</li>
+
+            </ol>
+
+        </div>
+
+        
+        <div class="p">Conkeyref_element
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case7:</samp>We use conkeyref to reuse the target content with keys </div>
+
+            <br/><ol>
+                <li>Run map1.ditamap</li>
+
+                <li>Check dita2.dita, Verify whether it resue the content from dita1.dita using conkeyref</li>
+
+            </ol>
+
+     
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case8:</samp>We redefine the keys in another map, to check whether the conkeyref can change also </div>
+
+            <br/><ol>
+                <li>Run map2.ditamap</li>
+
+                <li>Check dita2.dita, Verify whether it resue the content from dita1.dita using conkeyref</li>
+
+            </ol>
+
+            </div>
+
+            
+        <div class="p">Element_without_href
+           
+            <div class="note"><span class="notetitle">Note:</span> These elements includes:&lt;cite&gt;,&lt;dt&gt;,&lt;keyword&gt;,&lt;term&gt;,&lt;ph&gt;,&lt;indexterm&gt;,&lt;index-base&gt;,&lt;indextermref&gt;</div>
+
+           
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case9: yeshref_nocontent </samp> there is @href and no content  in keys definition with the element without @href</div>
+
+            <br/><ol>
+                <li>Run map2.ditamap</li>
+
+                <li>Check element_without_href.dita, Verify whether it will link to certain dita files we set at @href </li>
+
+            </ol>
+
+            
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case10: yeshref_yescontent </samp>there is @href and content set in keys definition with the elements without @href</div>
+
+        <br/><ol>
+            <li>Run map2.ditamap</li>
+
+            <li>Check element_without_href.dita, Verify whether all these element without @href can link to the certain files.</li>
+
+        </ol>
+
+            
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case11: nohref_yescontent </samp>there is no @href and content set in keys definition with the elements without @href</div>
+
+            <br/><ol>
+                <li>Run map2.ditamap</li>
+
+                <li>Check element_without_href.dita, Verify whether all these element without @href can point to the certain content.</li>
+
+            </ol>
+
+            
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case12: nohref_nocontent </samp>there is no @href and no content set in keys definition with the elements without @href</div>
+
+            <br/><ol>
+                <li>Run map2.ditamap</li>
+
+                <li>Check element_without_href.dita, Verify whether all these element without @href can point to null.</li>
+
+            </ol>
+
+            
+      </div>
+
+        
+        
+        <div class="p">Element_with_href
+            <div class="note"><span class="notetitle">Note:</span> These elements includes &lt;author&gt; ,&lt;data&gt;,&lt;data-about&gt;,&lt;publisher&gt;,&lt;source&gt;,&lt;lq&gt;,&lt;longdescref&gt;,&lt;image&gt;,&lt;link&gt;. </div>
+
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case13: yeshref_yescontent</samp>there is @href and content set in keys definition with the elements with @href</div>
+
+            <br/><ol>
+                <li>Run map1.ditamap</li>
+
+                <li>Check element_with_href.dita, Verify whether all these element with @href can link to the certain files.</li>
+
+            </ol>
+
+            
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case13: yeshref_yescontent</samp>there is @href and content set in keys definition with the elements with @href</div>
+
+            <br/><ol>
+                <li>Run map1.ditamap</li>
+
+                <li>Check element_with_href.dita, Verify whether all these element with @href can link to the certain files.</li>
+
+            </ol>
+
+            
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case14: yeshref_nocontent</samp>there is @href and no content set in keys definition with the elements with @href</div>
+
+            <br/><ol>
+                <li>Run map1.ditamap</li>
+
+                <li>Check element_with_href.dita, Verify whether all these element with @href can link to the certain files.</li>
+
+            </ol>
+
+            
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case15: nohref_yescontent</samp>there is no @href and yes content set in keys definition with the elements with @href</div>
+
+            <br/><ol>
+                <li>Run map1.ditamap</li>
+
+                <li>Check element_with_href.dita, Verify whether all these element with @href can point to the certain content.</li>
+
+            </ol>
+
+            
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case16: nohref_nocontent</samp>there is no @href and no content set in keys definition with the elements with @href</div>
+
+            <br/><ol>
+                <li>Run map1.ditamap</li>
+
+                <li>Check element_with_href.dita, Verify whether all these element with @href can point to null.</li>
+
+            </ol>
+
+        </div>
+
+        
+        <div class="p">Multiple_keyNames
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case17:</samp>Test the multiple keynames in keys definition.</div>
+
+            <br/><ol>
+                <li>Run map1.ditamap</li>
+
+                <li>Check keyRef_blatexample.dita, Verify whether it links to the blatview.dita file.</li>
+
+                <li>Run map2.ditamap</li>
+
+                <li>Check keyRef_blatexample.dita, Verify whether it links to the blatexample.dita file.</li>
+
+                <li>Run map3.ditamap</li>
+
+                <li>Check keyRef_blatexample.dita, Verify whether it links to the footbars.dita file</li>
+
+            </ol>
+
+        </div>
+
+        
+        <div class="p">Redirect_Content
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case18:</samp>Test the redirect content</div>
+
+            <br/><ol>
+                <li>Run map1.ditamap</li>
+
+                <li>Check dita1.dita, Verify whether dita1.dita's keywords has changed into "LiNing Shoes"</li>
+
+                <li>Run map2.ditamap</li>
+
+                <li>Check dita1.dita, Verify whether dita1.dita's keywords has changed into "IBM T60 DT64".</li>
+
+            </ol>
+  
+        </div>
+
+        
+        <div class="p">Keydef_element
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case19:</samp>Test the new element which specialized from topciref that used to define keys.</div>
+
+            <br/><ol>
+                <li>Run map.ditamap</li>
+
+                <li>Check getName.dita and getAddress.dita, Verify whether they can link to the the certain files that we defined in the keys.</li>
+
+            </ol>
+ 
+        </div>
+
+        
+        <div class="p">Keyref_with_MultopicID
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case20:</samp>Test conkeyref with a topicID and without topicID, if we use conkeyref without topicID, the first topic was set as the default.</div>
+
+            <br/><ol>
+                <li>Run the map.ditamap</li>
+
+                <li>Check Keyconref_with_topicID.dita and Keyconref_without_topicID.dita, Verify whether it can conref the correct content.</li>
+
+            </ol>
+
+        </div>
+
+        
+        <div class="p">Keys_Precedence
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case21:</samp>Test Referencing Map has higer precedence that Referenced Map</div>
+
+            <br/><ol>
+                <li>Run the map.ditamap</li>
+
+                <li>Check getName.dita, Verify Which name does it link to.</li>
+
+            </ol>
+
+        </div>
+
+        
+        <div class="p">Keyref_without_Kdef
+            <div class="note"><span class="notetitle">Note:</span> <samp class="codeph">Case22:</samp>It would give a warning emitted by reference processor</div>
+
+            <br/><ol>
+                <li>Run the map.ditamap</li>
+
+                
+                
+                
+                
+                
+                
+                <li>Check whether there is warning</li>
+
+            </ol>
+
+        </div>
+
+        
+    </div>
+
+
+</body>
+</html>

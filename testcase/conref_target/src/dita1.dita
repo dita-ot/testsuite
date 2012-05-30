@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "topic.dtd">
+
+<!-- this is case for 12013@2008-05-19 -->
+
+<topic id="topicID1">
+
+    <title>this is a topic for conref  target.</title>
+    
+   <!-- Meta Info -->
+    <prolog id="PrologID">
+        <metadata id="MetadataID1">
+            <keywords id="keywordID1">
+                <keyword>001</keyword>
+                <keyword>002</keyword>
+            </keywords>
+            <data-about keyref="keywordID2">
+                <data>003</data>
+                <data>004</data>
+            </data-about>
+        </metadata>
+        
+        <metadata id="MetadataID2">
+            
+        </metadata>
+        
+    </prolog>
+    
+    <!-- Body Info -->
+    <body>
+        
+            <lq id="lqID1">this is the start target.
+                <keyword conref="dita3.dita#topicID3/keywordID1" conrefend="dita3.dita#topicID3/keywordID2"/>
+            </lq>
+            <lq>A</lq>
+            <lq>B</lq>
+            <lq>C</lq>
+            <lq>D</lq>
+            <lq conref="dita3.dita#topicID3/lqID2" conrefend="dita3.dita#topicID3/lqID8"></lq>
+            <lq id="lqID2">end</lq>    
+           
+          
+    </body>
+
+    
+</topic>
+

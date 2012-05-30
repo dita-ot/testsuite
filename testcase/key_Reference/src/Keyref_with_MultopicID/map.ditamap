@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    
+  <topicref keys="mykeys" href="Multi_topicID.dita" navtitle="MutlitopicID" locktitle="yes"></topicref>
+    
+    <topicref href="keyconref_with_topicID.dita" navtitle="Keyconref with topicID" locktitle="yes"/>
+   <!--<topicref href="keyconref_without_topicID.dita" navtitle="Keyconref without topicID" locktitle="yes"/>-->
+    
+</map>

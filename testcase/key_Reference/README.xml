@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//ELEMENT DITA 1.2 Topic//EN" "file:/C:/SAXONIBMJDK/demo/dita12/dtd12/technicalContent/dtd/topic.dtd">
+<topic id="topicID" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <title>DITA Issue #12007 Testcase</title>
+    <body>
+        <p>Basic_Redirect_Link
+            <note><codeph>Case1:</codeph> Test the basic redirect link</note>
+           <ol>
+               <li>Run ditamap1</li>
+               <li>Check dita2.dita, Verify whether dita2.dita has changed its link to dita1.dita </li>
+           </ol> 
+            
+            <note><codeph>Case2:</codeph>  Change the key definition in another map, to check whether dita2.dita has also change its link.</note>
+            <ol>
+                <li>Run map2.ditamap</li>
+                <li>Check dita2.dita, Verify whether dita2.dita has changed its link to dita3.dita</li>
+            </ol>
+            
+            <note><codeph>Case3:</codeph> Change @href to URI when we define the keys, to check whether dita2.dita has also change its link</note>
+            <ol>
+                <li>Run map3.ditamap</li>
+                <li>Check dita2.dita, Verify whether dita2.dita has changed its link to external web link</li>
+            </ol>
+            
+            <note><codeph>Case4:</codeph> We redefine keys In another map without @href, to check whether dita2.dita has changed its link or not.</note>
+            <ol>
+                <li>Run dita4.ditamap</li>
+                <li>Check dita2, Verify does it get rid of its link</li>
+            </ol>
+            
+            <note><codeph>Case5:</codeph>  We define the keys In another map without @href but with topicmeta information, to check whether dita2.dita has changed its link the the plain text</note>
+            <ol>
+                <li>Run map5.ditamap</li>
+                <li>Check dita2.dita, Verify whether dita2.dita has changed its link to the plain text</li>
+            </ol>
+            
+            <note><codeph>Case6:</codeph> We havn't define any keys In map, to check what dita2.dita will link to</note>
+            <ol>
+                <li>Run map6.ditamap</li>
+                <li>Check dita2.dita, Verify whether dita2.dita link to dita0.dita as a fallback</li>
+            </ol>
+        </p>
+        
+        <p>Conkeyref_element
+            <note><codeph>Case7:</codeph>We use conkeyref to reuse the target content with keys </note>
+            <ol>
+                <li>Run map1.ditamap</li>
+                <li>Check dita2.dita, Verify whether it resue the content from dita1.dita using conkeyref</li>
+            </ol>
+     
+            <note><codeph>Case8:</codeph>We redefine the keys in another map, to check whether the conkeyref can change also </note>
+            <ol>
+                <li>Run map2.ditamap</li>
+                <li>Check dita2.dita, Verify whether it resue the content from dita1.dita using conkeyref</li>
+            </ol>
+            </p>
+            
+        <p>Element_without_href
+           
+            <note>These elements includes:&lt;cite&gt;,&lt;dt&gt;,&lt;keyword&gt;,&lt;term&gt;,&lt;ph&gt;,&lt;indexterm&gt;,&lt;index-base&gt;,&lt;indextermref&gt;</note>
+           
+            <note><codeph>Case9: yeshref_nocontent </codeph> there is @href and no content  in keys definition with the element without @href</note>
+            <ol>
+                <li>Run map2.ditamap</li>
+                <li>Check element_without_href.dita, Verify whether it will link to certain dita files we set at @href </li>
+            </ol>
+            
+            <note><codeph>Case10: yeshref_yescontent </codeph>there is @href and content set in keys definition with the elements without @href</note>
+        <ol>
+            <li>Run map2.ditamap</li>
+            <li>Check element_without_href.dita, Verify whether all these element without @href can link to the certain files.</li>
+        </ol>
+            
+            <note><codeph>Case11: nohref_yescontent </codeph>there is no @href and content set in keys definition with the elements without @href</note>
+            <ol>
+                <li>Run map2.ditamap</li>
+                <li>Check element_without_href.dita, Verify whether all these element without @href can point to the certain content.</li>
+            </ol>
+            
+            <note><codeph>Case12: nohref_nocontent </codeph>there is no @href and no content set in keys definition with the elements without @href</note>
+            <ol>
+                <li>Run map2.ditamap</li>
+                <li>Check element_without_href.dita, Verify whether all these element without @href can point to null.</li>
+            </ol>
+            
+      </p>
+        
+        
+        <p>Element_with_href
+            <note>These elements includes &lt;author&gt; ,&lt;data&gt;,&lt;data-about&gt;,&lt;publisher&gt;,&lt;source&gt;,&lt;lq&gt;,&lt;longdescref&gt;,&lt;image&gt;,&lt;link&gt;. </note>
+            <note><codeph>Case13: yeshref_yescontent</codeph>there is @href and content set in keys definition with the elements with @href</note>
+            <ol>
+                <li>Run map1.ditamap</li>
+                <li>Check element_with_href.dita, Verify whether all these element with @href can link to the certain files.</li>
+            </ol>
+            
+            <note><codeph>Case13: yeshref_yescontent</codeph>there is @href and content set in keys definition with the elements with @href</note>
+            <ol>
+                <li>Run map1.ditamap</li>
+                <li>Check element_with_href.dita, Verify whether all these element with @href can link to the certain files.</li>
+            </ol>
+            
+            <note><codeph>Case14: yeshref_nocontent</codeph>there is @href and no content set in keys definition with the elements with @href</note>
+            <ol>
+                <li>Run map1.ditamap</li>
+                <li>Check element_with_href.dita, Verify whether all these element with @href can link to the certain files.</li>
+            </ol>
+            
+            <note><codeph>Case15: nohref_yescontent</codeph>there is no @href and yes content set in keys definition with the elements with @href</note>
+            <ol>
+                <li>Run map1.ditamap</li>
+                <li>Check element_with_href.dita, Verify whether all these element with @href can point to the certain content.</li>
+            </ol>
+            
+            <note><codeph>Case16: nohref_nocontent</codeph>there is no @href and no content set in keys definition with the elements with @href</note>
+            <ol>
+                <li>Run map1.ditamap</li>
+                <li>Check element_with_href.dita, Verify whether all these element with @href can point to null.</li>
+            </ol>
+        </p>
+        
+        <p>Multiple_keyNames
+            <note><codeph>Case17:</codeph>Test the multiple keynames in keys definition.</note>
+            <ol>
+                <li>Run map1.ditamap</li>
+                <li>Check keyRef_blatexample.dita, Verify whether it links to the blatview.dita file.</li>
+                <li>Run map2.ditamap</li>
+                <li>Check keyRef_blatexample.dita, Verify whether it links to the blatexample.dita file.</li>
+                <li>Run map3.ditamap</li>
+                <li>Check keyRef_blatexample.dita, Verify whether it links to the footbars.dita file</li>
+            </ol>
+        </p>
+        
+        <p>Redirect_Content
+            <note><codeph>Case18:</codeph>Test the redirect content</note>
+            <ol>
+                <li>Run map1.ditamap</li>
+                <li>Check dita1.dita, Verify whether dita1.dita's keywords has changed into "LiNing Shoes"</li>
+                <li>Run map2.ditamap</li>
+                <li>Check dita1.dita, Verify whether dita1.dita's keywords has changed into "IBM T60 DT64".</li>
+            </ol>  
+        </p>
+        
+        <p>Keydef_element
+            <note><codeph>Case19:</codeph>Test the new element which specialized from topciref that used to define keys.</note>
+            <ol>
+                <li>Run map.ditamap</li>
+                <li>Check getName.dita and getAddress.dita, Verify whether they can link to the the certain files that we defined in the keys.</li>
+            </ol> 
+        </p>
+        
+        <p>Keyref_with_MultopicID
+            <note><codeph>Case20:</codeph>Test conkeyref with a topicID and without topicID, if we use conkeyref without topicID, the first topic was set as the default.</note>
+            <ol>
+                <li>Run the map.ditamap</li>
+                <li>Check Keyconref_with_topicID.dita and Keyconref_without_topicID.dita, Verify whether it can conref the correct content.</li>
+            </ol>
+        </p>
+        
+        <p>Keys_Precedence
+            <note><codeph>Case21:</codeph>Test Referencing Map has higer precedence that Referenced Map</note>
+            <ol>
+                <li>Run the map.ditamap</li>
+                <li>Check getName.dita, Verify Which name does it link to.</li>
+            </ol>
+        </p>
+        
+        <p>Keyref_without_Kdef
+            <note><codeph>Case22:</codeph>It would give a warning emitted by reference processor</note>
+            <ol>
+                <li>Run the map.ditamap</li>
+                
+                
+                
+                
+                
+                
+                <li>Check whether there is warning</li>
+            </ol>
+        </p>
+        
+    </body>
+</topic>
+

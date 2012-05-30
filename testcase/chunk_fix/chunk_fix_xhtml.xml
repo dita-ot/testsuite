@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?><project name="chunk_fix_xhtml" default="chunk_fixhtml" basedir=".">
+    
+    <!-- dita.dir should point to the toolkit's root directory -->
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+    
+    <import file="${dita.dir}${file.separator}integrator.xml"/>
+    
+    <target name="chunk_fixhtml" depends="integrate">
+        
+        <!-- anchor map1 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}anchor${file.separator}map1.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}anchor${file.separator}map1${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}anchor${file.separator}map1${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}anchor${file.separator}map1${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        
+        <!-- anchor map2 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}anchor${file.separator}map2.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}anchor${file.separator}map2${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}anchor${file.separator}map2${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}anchor${file.separator}map2${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        
+        <!-- by_topic map1 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}by_topic${file.separator}map1.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map1${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map1${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map1${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- by_topic map2 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}by_topic${file.separator}map2.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map2${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map2${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map2${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- by_topic map3 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}by_topic${file.separator}map3.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map3${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map3${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map3${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- by_topic map4 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}by_topic${file.separator}map4.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map4${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map4${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map4${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- by_topic map5 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}by_topic${file.separator}map5.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map5${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map5${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map5${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- by_topic map6 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}by_topic${file.separator}map6.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map6${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map6${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map6${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- by_topic map7 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}by_topic${file.separator}map7.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map7${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map7${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}map7${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- by_topic batseparate0 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}by_topic${file.separator}batseparate0.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}batseparate0${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}batseparate0${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}by_topic${file.separator}batseparate0${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        
+        <!-- chunk map1 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}chunk${file.separator}map1.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map1${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map1${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map1${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- chunk map2 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}chunk${file.separator}map2.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map2${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map2${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map2${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- chunk map3 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}chunk${file.separator}map3.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map3${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map3${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map3${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- chunk map4 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}chunk${file.separator}map4.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map4${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map4${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map4${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- chunk map5 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}chunk${file.separator}map5.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map5${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map5${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map5${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- chunk map6 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}chunk${file.separator}map6.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map6${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map6${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map6${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- chunk map7 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}chunk${file.separator}map7.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map7${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map7${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map7${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- chunk map8 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}chunk${file.separator}map8.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map8${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map8${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunk${file.separator}map8${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        
+        <!-- conflict\by_topic map1 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}conflict${file.separator}by_topic${file.separator}map1.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}conflict${file.separator}by_topic${file.separator}map1${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}conflict${file.separator}by_topic${file.separator}map1${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}conflict${file.separator}by_topic${file.separator}map1${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- conflict\same_id map1 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}conflict${file.separator}same_id${file.separator}map1.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}conflict${file.separator}same_id${file.separator}map1${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}conflict${file.separator}same_id${file.separator}map1${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}conflict${file.separator}same_id${file.separator}map1${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- conflict\to_content map1 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}conflict${file.separator}to_content${file.separator}map1.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}conflict${file.separator}to_content${file.separator}map1${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}conflict${file.separator}to_content${file.separator}map1${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}conflict${file.separator}to_content${file.separator}map1${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- chunking case1.ditamap -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}chunking${file.separator}case1${file.separator}case1.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case1${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case1${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case1${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- chunking case2.ditamap -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}chunking${file.separator}case2${file.separator}case2.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case2${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case2${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case2${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- chunking case3.ditamap -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}chunking${file.separator}case3${file.separator}case3.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case3${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case3${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case3${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- chunking case4.ditamap -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}chunking${file.separator}case4${file.separator}case4.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case4${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case4${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case4${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- chunking case5.ditamap -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}chunking${file.separator}case5${file.separator}case5.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case5${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case5${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case5${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- chunking case6.ditamap -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}chunking${file.separator}case6${file.separator}case6.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case6${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case6${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case6${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- chunking case7.ditamap -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}chunking${file.separator}case7${file.separator}case7.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case7${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case7${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}chunking${file.separator}case7${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        
+        <!-- external_chunk   test_chunk -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}external_chunk${file.separator}test_chunk.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}external_chunk${file.separator}test_chunk${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}external_chunk${file.separator}test_chunk${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}external_chunk${file.separator}test_chunk${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- external_chunk   test_nochunk -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}external_chunk${file.separator}test_nochunk.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}external_chunk${file.separator}test_nochunk${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}external_chunk${file.separator}test_nochunk${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}external_chunk${file.separator}test_nochunk${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            
+            <property name="clean.temp" value="no"/>
+        </ant>
+   
+        <!-- link map1 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}link${file.separator}map1.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}link${file.separator}map1${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}link${file.separator}map1${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}link${file.separator}map1${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- link map2 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}link${file.separator}map2.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}link${file.separator}map2${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}link${file.separator}map2${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}link${file.separator}map2${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        
+        
+        <!-- copy_to map1 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}copy_to${file.separator}map1.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}copy_to${file.separator}map1${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}copy_to${file.separator}map1${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}copy_to${file.separator}map1${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+        <!-- copy_to map2 -->
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+            <property name="args.input" value="${testdata.dir}${file.separator}chunk_fix${file.separator}copy_to${file.separator}map2.ditamap"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}copy_to${file.separator}map2${file.separator}xhtml${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}copy_to${file.separator}map2${file.separator}xhtml${file.separator}log"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}chunk_fix${file.separator}copy_to${file.separator}map2${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="clean.temp" value="no"/>
+        </ant>
+    </target>
+</project>

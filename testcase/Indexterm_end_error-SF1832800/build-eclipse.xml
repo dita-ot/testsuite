@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><project name="indexterm_end_error" default="indexterm_end_error" basedir=".">
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    
+    <target name="indexterm_end_error">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}Indexterm_end_error${file.separator}indexterm_end.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}Indexterm_end_error"/>
+            <property name="transtype" value="eclipsehelp"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}Indexterm_end_error${file.separator}eclipsehelp${file.separator}temp"/>   
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}Indexterm_end_error${file.separator}log"/>
+            <property name="clean.temp" value="no"/>
+        </ant> 
+    </target>
+</project>

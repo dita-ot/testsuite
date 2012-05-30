@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="mapID">
+    <title>chunk_group</title>
+    <topicgroup>
+        <topicref href="dita1.dita" chunk="to-content">
+            <topicref href="dita2.dita" chunk="to-content">
+                <topicref href="dita3.dita">
+                    <topicref href="dita4.dita">
+                        <topicref href="dita5.dita">
+                            <topicref href="dita6.dita"></topicref>
+                        </topicref>
+                    </topicref>
+                </topicref>
+            </topicref>
+        </topicref>
+    </topicgroup>
+    
+    <topicgroup id="topicgroupID">
+        <topicref href="dita1.dita" chunk="to-content">
+            <topicref href="dita2.dita" chunk="to-content">
+                <topicref href="dita3.dita" chunk="to-content">
+                    <topicref href="dita4.dita" chunk="to-content">
+                        <topicref href="dita5.dita" chunk="to-content"></topicref>
+                    </topicref>
+                </topicref>
+            </topicref>
+        </topicref>
+    </topicgroup>
+    
+    <topicgroup id="topicgroupID2">
+        <topicref href="dita1.dita">
+            <topicref href="dita2.dita">
+                <topicref href="dita3.dita">
+                        <topicref href="dita4.dita">
+                            <topicref href="dita5.dita" chunk="to-content">
+                                <topicref href="dita6.dita"></topicref>
+                            </topicref>
+                        </topicref>
+              
+                </topicref>
+            </topicref>
+        </topicref>
+    </topicgroup>
+</map>

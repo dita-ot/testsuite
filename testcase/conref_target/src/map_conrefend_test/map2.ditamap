@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.2 Map//EN" "map.dtd">
+
+<!-- when you run this map, you will implement function: dita2.dita reuses the dita1.dita -->
+
+<map>
+    
+    <title>hi</title>
+    <!-- topicref element  -->
+    <topicref id="mapID1" href="dita5.dita"/>
+    <topicref id="mapID2" href="dita6.dita">
+        <topicref id="mapID3" href="dita7.dita">
+            <topicref id="mapID4" href="dita8.dita"></topicref>
+        </topicref>
+    </topicref>
+   
+       <!-- other element use in the ditamap -->
+    <reltable id="reltableID1">
+        <relheader>
+            <relcolspec type="topic"></relcolspec>
+            <relcolspec type="topic"></relcolspec>
+            <relcolspec type="topic"></relcolspec>
+            <relcolspec type="topic"></relcolspec>
+        </relheader>
+        <relrow>
+            <relcell><topicref href="dita5.dita"/></relcell>
+            <relcell><topicref href="dita6.dita"/></relcell>
+            <relcell><topicref href="dita7.dita"/></relcell>
+            <relcell><topicref href="dita8.dita"/></relcell>
+        </relrow>
+    </reltable>
+
+<reltable id="reltableID2">
+        <relheader>
+            <relcolspec type="topic"></relcolspec>
+            <relcolspec type="topic"></relcolspec>
+            <relcolspec type="topic"></relcolspec>
+            <relcolspec type="topic"></relcolspec>
+        </relheader>
+        <relrow>
+            <relcell><topicref href="dita5.dita"/></relcell>
+            <relcell><topicref href="dita6.dita"/></relcell>
+            <relcell><topicref href="dita7.dita"/></relcell>
+            <relcell><topicref href="dita8.dita"/></relcell>
+        </relrow>
+    </reltable>
+
+    
+</map>

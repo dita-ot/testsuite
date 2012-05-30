@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="ditabase.dita#X" chunk="by-topic select-topic" copy-to="topicX.dita"></topicref>
+    <topicref href="ditabase.dita#Y" chunk="by-topic select-topic" copy-to="topicY.dita"></topicref>
+    <topicref href="ditabase.dita#Z" chunk="by-topic select-topic"></topicref>
+    <topicref href="ditabase.dita#Z1" chunk="by-topic select-topic"></topicref>
+    <topicref href="ditabase.dita#Y" chunk="by-topic select-branch"></topicref>
+    
+    <topicref href="ditabase.dita#Z" chunk="by-topic select-document"></topicref>
+</map>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    
+    <!-- this is the second author -->
+   
+    <topicref keys="productname">
+        <topicmeta>
+          <keywords>
+              <keyword>IBM T60 D64</keyword>
+          </keywords>
+        </topicmeta>
+    </topicref>
+    
+    <!-- author2 use dita1.dita -->
+    
+    <topicref href="dita1.dita"/>
+    
+</map>

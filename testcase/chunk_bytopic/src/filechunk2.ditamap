@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map xml:lang="en-us"><title>Chunking test</title>
+<topicref href="chunk-ditabase.dita" chunk="by-topic"></topicref>
+<topicref href="chunk-topics.dita"></topicref>
+</map><?Pub Caret1?>
+<?Pub *0000000380?>

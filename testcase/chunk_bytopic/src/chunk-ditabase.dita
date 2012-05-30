@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN"
+ "ditabase.dtd">
+<?Pub Inc?>
+<dita>
+<concept id="chunk-ditabase" xml:lang="en-us">
+<title>First</title>
+<shortdesc>First topic in ditabase</shortdesc>
+<conbody>
+<p>I like cats</p>
+</conbody>
+<topic id="ditabase-nested" xml:lang="en-us">
+<title>Nested topic in ditabase</title>
+<body>
+<p>howdy<?Pub Caret?></p>
+</body>
+ <topic id="ditabase-nested-lev3" xml:lang="en-us">
+  <title>Nested Topic lev3</title>
+  <shortdesc>Third level topic</shortdesc>
+  <body>
+   <p>topic<?Pub Caret?></p>
+  </body>
+ </topic>
+</topic>
+</concept>
+<task id="chunk-ditabase2" xml:lang="en-us">
+<title>Second</title>
+<shortdesc>Second topic in ditabase</shortdesc>
+<taskbody>
+<example>This is an example</example>
+</taskbody>
+</task>
+</dita>
+<?Pub *0000000688?>

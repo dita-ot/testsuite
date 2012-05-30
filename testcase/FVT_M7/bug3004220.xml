@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><project name="bug3004220" default="bug3004220" basedir=".">
+    
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    <property name="testdata.dir" value="${dita.dir}${file.separator}testdata"/>
+    
+    <target if="run.pdf" unless="skip.pdf" name="bug3004220">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}FVT_M7${file.separator}bug3004220${file.separator}keyreftm.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}FVT_M7${file.separator}bug3004220${file.separator}pdf"/>
+            <property name="transtype" value="pdf2"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}FVT_M7${file.separator}bug3004220${file.separator}pdf"/>
+            <property name="clean.temp" value="no"/>         
+        </ant>
+        
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}FVT_M7${file.separator}bug3004220${file.separator}keyreftm.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}FVT_M7${file.separator}bug3004220${file.separator}xhtml"/>
+            <property name="transtype" value="xhtml"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}temp${file.separator}FVT_M7${file.separator}bug3004220${file.separator}xhtml"/>
+            <property name="clean.temp" value="no"/>         
+        </ant>
+    </target>
+</project>

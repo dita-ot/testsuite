@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="mapID">
+    <title>There is no @href but has content</title>
+    
+    <!-- Define @keys here -->
+    <topicmeta>
+        <linktext>This is the content In keys Definition</linktext>
+    </topicmeta>
+    <topicref keys="myauthor"/>
+    <topicref keys="mydata"/>
+    <topicref keys="mydata-about"/>
+    <topicref keys="myimage"/>
+    <topicref keys="mylink" href="mylink.dita"/>
+    
+    <topicref keys="mylq"/>
+    <topicref keys="mysource"/>
+    <topicref keys="mypublisher"/>
+    <topicref keys="myxref" href="myxref.dita"/>
+    <topicref keys="mykeys"/>
+    
+    
+    <topicref href="map2.ditamap" format="ditamap"></topicref>
+   <topicref href="element_with_href.dita"/>
+</map>

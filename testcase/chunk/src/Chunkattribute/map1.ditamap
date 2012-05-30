@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "C:\DITA-OT1.4\dtd\map.dtd">
+<map id="mapid">
+    <topicref href="parent1.dita" chunk="to-content">
+    
+        <!-- chunk="select-topic" -->
+    <topicref href="ditabase.dita#Y1" chunk="select-topic"></topicref>
+        
+    </topicref>
+    
+</map>

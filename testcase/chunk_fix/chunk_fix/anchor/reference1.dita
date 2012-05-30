@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "reference.dtd">
+<?Pub Inc?>
+<reference id="reference1" xml:lang="en-us">
+<title>reference1</title>
+<shortdesc>Put your short description here; used for first paragraph
+and abstract.</shortdesc>
+<refbody><?Pub Caret1?>
+<example><title>Sample</title>sample content</example>
+</refbody>
+</reference>
+<?Pub *0000000462?>

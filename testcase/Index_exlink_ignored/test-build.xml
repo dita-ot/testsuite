@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><project name="Index entry" default="Indexentry" basedir=".">
+    <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/>
+    
+    <target name="Indexentry">
+        <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+            <property name="args.input" value="${dita.dir}${file.separator}testdata${file.separator}Index_exlink_ignored${file.separator}index.ditamap"/>
+            <property name="output.dir" value="${dita.dir}${file.separator}testresult${file.separator}Index_exlink_ignored${file.separator}htmlhelp"/>
+            <property name="transtype" value="htmlhelp"/>
+            <property name="dita.temp.dir" value="${dita.dir}${file.separator}testresult${file.separator}Index_exlink_ignored${file.separator}temp"/>
+            <property name="args.logdir" value="${dita.dir}${file.separator}testresult${file.separator}Index_exlink_ignored${file.separator}log"/>
+            <property name="clean.temp" value="no"/>
+        </ant> 
+    </target>
+</project>

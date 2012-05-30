@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topicID11">
+    
+    <title>This is a topic without meta info definition.</title>
+    
+    <!-- Define meta Info Here -->
+   <prolog id="prologID11">
+    <author>Metainfo In topic11</author>
+       <source>Metainfo In topic11</source>
+       <publisher>Metainfo In topic11</publisher>
+    <copyright>
+        <copyryear year="Metainfo In topic11"/>
+        <copyrholder>Metainfo In topic11</copyrholder>
+    </copyright>
+    <critdates>
+        <created date="Metainfo In topic11"/>
+        <revised modified="Metainfo In topic11"/>
+    </critdates>
+    <permissions view="all"/>
+    
+    <metadata id="metadataID">
+        <audience/>
+        <category>Metainfo In topic11</category>
+        <keywords>
+            <indexterm>Metainfo In topic11</indexterm>
+        </keywords>
+        <prodinfo>
+            <prodname>Metainfo In topic11</prodname>
+            <vrmlist>
+                <vrm version="Metainfo In topic11"/>
+            </vrmlist>
+        </prodinfo>
+        <othermeta name="Metainfo In topic11" content="Metainfo In topic11"/>
+        <data>Metainfo In topic11</data>
+    </metadata>
+       <resourceid id="Metainfo In topic11"/>
+   </prolog>
+   
+    <body>
+        <!-- empty body -->
+    </body>
+    
+</topic>
+
