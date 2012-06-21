@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.2 Map//EN" "D:\work\project\DitaOT\DITA-OT1.5_full_easy_install_bin\DITA-OT1.5\dtd\technicalContent\dtd\map.dtd">
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.2 Map//EN" "map.dtd">
 <map title="DITA Topic Map">
    <topicref href="simplescheme.xml" format="ditamap" type="subjectScheme">
    </topicref>
