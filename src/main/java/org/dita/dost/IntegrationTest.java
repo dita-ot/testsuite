@@ -1,7 +1,8 @@
 package org.dita.dost;
 
-import static org.custommonkey.xmlunit.XMLAssert.assertXMLEqual;
-import static org.junit.Assert.assertEquals;
+import static org.custommonkey.xmlunit.XMLAssert.*;
+import static org.dita.dost.writer.DitaWriter.*;
+import static org.junit.Assert.*;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -24,10 +25,6 @@ import java.util.regex.Pattern;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import org.junit.Before;
-
-import org.w3c.dom.Attr;
-
 import nu.validator.htmlparser.dom.HtmlDocumentBuilder;
 import org.apache.tools.ant.BuildEvent;
 import org.apache.tools.ant.BuildListener;
@@ -40,8 +37,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
+import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
@@ -236,11 +235,27 @@ public final class IntegrationTest {
         final NodeList elems = d.getElementsByTagName("*");
         for (int i = 0; i < elems.getLength(); i++) {
             final Element e = (Element) elems.item(i);
+            // remove debug attributes
             for (final String a: new String[] {"xtrf", "xtrc"}) {
                 e.removeAttribute(a);
             }
+            // remove workdir processing instructions
+            removeWorkdirProcessingInstruction(e);
         }
+        // rewrite IDs
         return rewriteIds(d, ditaIdPattern);
+    }
+    
+    private void removeWorkdirProcessingInstruction(final Element e) {
+        Node n = e.getFirstChild();
+        while (n != null) {
+            final Node next = n.getNextSibling();
+            if (n.getNodeType() == Node.PROCESSING_INSTRUCTION_NODE &&
+                    (n.getNodeName().equals(PI_WORKDIR_TARGET) || n.getNodeName().equals(PI_WORKDIR_TARGET_URI))) {
+                e.removeChild(n);
+            }
+            n = next;
+        }
     }
     
     private Document rewriteIds(final Document doc, final Map<String, Pattern> patterns) {

@@ -34,8 +34,12 @@ def main(id, input, types):
             case.write("""      <property name="args.input" location="${test.basedir}/src/%(input)s"/>
       <property name="output.dir" location="${result.dir}/%(type)s"/>
       <property name="dita.temp.dir" location="${temp.dir}/%(type)s"/>
-    </ant>
-  </target>\n""" % __vals)
+    </ant>\n""" % __vals)
+            if t == "preprocess":
+                case.write("""    <copy todir="${result.dir}/preprocess">
+      <fileset dir="${temp.dir}/preprocess"/>
+    </copy>\n""")
+            case.write("""  </target>\n""")
         case.write("""</project>""" % __vals)
     finally:
         case.close
