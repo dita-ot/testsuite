@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.1 Map//EN" "C:\DITA-OT1.4\dtd\map.dtd">
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map chunk="by-document" id="mapfour">
     <topicref href="parent1.dita" copy-to="parentchunk.dita">
         <topicref href="nested1.dita" chunk="select-branch"></topicref>

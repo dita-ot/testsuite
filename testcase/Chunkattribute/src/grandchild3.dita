@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Arbortext, Inc., 1988-2004, v.4002-->
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
- "C:\DITA-OT1.4\dtd\topic.dtd">
+ "topic.dtd">
 <!--             (C) Copyright OASIS Open 2005.                    -->
 <!--             (C) Copyright IBM Corporation 2001, 2004.         -->
 <!--             All Rights Reserved.                              -->
@@ -20,7 +20,7 @@ it is structurally less sophisticated than the CALS table, and can be used
 as a very simple, regular table for which close control of formatting is not
 as important. However, the main advantage of simpletable is for describing
 lists of data with regular headings, such as telephone directory listings,
-display adapter configuration data, or API properties. <?Pub Caret?></p> 
+display adapter configuration data, or API properties. </p> 
               </section>
 </body>
 </topic>

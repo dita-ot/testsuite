@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/SF/dita-ot/src/main/temp/Chunkattribute/preprocess/map7?><?workdir-uri file:/Users/jelovirt/Work/SF/dita-ot/src/main/temp/Chunkattribute/preprocess/map7/?><?path2project?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="parent2" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+   <title class="- topic/title ">parent2</title>
+   <body class="- topic/body ">
+      <section class="- topic/section ">
+<p class="- topic/p ">The user interface domain elements are used to describe the user interface
+of a software program.<indexterm class="- topic/indexterm ">Domains elements<indexterm class="- topic/indexterm ">user interface
+elements</indexterm>
+ </indexterm><indexterm class="- topic/indexterm ">user interface elements</indexterm></p>
+</section>
+   </body>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="mapseven"><link class="- topic/link " mapclass="- map/topicref " type="topic" href="parent1.xml" role="parent"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>parent1</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">You maintain your solution to ensure that all components are operating at maximum efficiency.</desc></link><linkpool class="- topic/linkpool "><link class="- topic/link " mapclass="- map/topicref " type="topic" href="child2.xml" role="child"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Topic merge</linktext></link></linkpool></linkpool></related-links>
+</topic>
