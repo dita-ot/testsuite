@@ -4,7 +4,6 @@
    <property name="test.name" value="index-see"/>
    <property environment="env"/>
    <property name="args.logdir" value="log"/>
-   <property name="dita.extname" value=".xml"/>
    <import file="index-see_eclipsehelp.xml"/>
    <import file="index-see_htmlhelp.xml"/>
    <import file="index-see_javahelp.xml"/>

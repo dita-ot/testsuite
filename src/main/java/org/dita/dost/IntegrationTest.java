@@ -50,7 +50,7 @@ import org.dita.dost.util.FileUtils;
 public final class IntegrationTest {
     
     private static final String EXP_DIR = "exp";
-    private static final Collection<String> canCompare = Arrays.asList("xhtml", "preprocess");
+    private static final Collection<String> canCompare = Arrays.asList("xhtml", "eclipsehelp", "htmlhelp", "preprocess");
     
     private static final File baseDir = new File(System.getProperty("basedir") != null
                                                  ? System.getProperty("basedir")
@@ -192,7 +192,8 @@ public final class IntegrationTest {
                 } else {
                     final String name = e.getName();
                     try {
-                        if (name.endsWith(".html") || name.endsWith(".htm") || name.endsWith(".xhtml")) {
+                        if (name.endsWith(".html") || name.endsWith(".htm") || name.endsWith(".xhtml")
+                        		|| name.endsWith(".hhk")) {
                             TestUtils.resetXMLUnit();
                             XMLUnit.setNormalizeWhitespace(true);
                             XMLUnit.setIgnoreWhitespace(true);

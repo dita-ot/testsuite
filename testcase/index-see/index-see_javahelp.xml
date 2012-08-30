@@ -8,9 +8,9 @@
    <target name="indexsee2javahelp" if="run.javahelp" unless="skip.javahelp">
       <ant antfile="${dita.dir}/build.xml">
          <property name="args.input" location="${test.basedir}/src/index-see_testdata1.dita"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/javahelp"/>
          <property name="transtype" value="javahelp"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/javahelp"/>
       </ant>
    </target>
 </project>

@@ -8,9 +8,9 @@
    <target name="indexsee2pdf" if="run.pdf" unless="skip.pdf">
       <ant antfile="${dita.dir}/build.xml">
          <property name="args.input" location="${test.basedir}/src/index-see_testdata1.dita"/>
-         <property name="output.dir" location="${result.dir}/xhtml"/>
+         <property name="output.dir" location="${result.dir}/pdf"/>
          <property name="transtype" value="pdf"/>
-         <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+         <property name="dita.temp.dir" location="${temp.dir}/pdf"/>
       </ant>
    </target>
 </project>
