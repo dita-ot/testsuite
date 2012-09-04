@@ -13,6 +13,7 @@
       <property name="args.input" location="${test.basedir}/src/map1.ditamap"/>
       <property name="output.dir" location="${result.dir}/preprocess/map1"/>
       <property name="dita.temp.dir" location="${temp.dir}/preprocess/map1"/>
+      <property name="dita.ext" value=".dita"/>
     </ant>
     <ant antfile="${dita.dir}/build.xml">
       <target name="build-init"/>
@@ -20,6 +21,7 @@
       <property name="args.input" location="${test.basedir}/src/map2.ditamap"/>
       <property name="output.dir" location="${result.dir}/preprocess/map2"/>
       <property name="dita.temp.dir" location="${temp.dir}/preprocess/map2"/>
+      <property name="dita.ext" value=".dita"/>
     </ant>
     <ant antfile="${dita.dir}/build.xml">
       <target name="build-init"/>
@@ -27,6 +29,7 @@
       <property name="args.input" location="${test.basedir}/src/map3.ditamap"/>
       <property name="output.dir" location="${result.dir}/preprocess/map3"/>
       <property name="dita.temp.dir" location="${temp.dir}/preprocess/map3"/>
+      <property name="dita.ext" value=".dita"/>
     </ant>
     <!--
     <ant antfile="${dita.dir}/build.xml">
@@ -57,6 +60,7 @@
       <property name="args.input" location="${test.basedir}/src/map7.ditamap"/>
       <property name="output.dir" location="${result.dir}/preprocess/map7"/>
       <property name="dita.temp.dir" location="${temp.dir}/preprocess/map7"/>
+      <property name="dita.ext" value=".dita"/>
     </ant>
     <ant antfile="${dita.dir}/build.xml">
       <target name="build-init"/>
@@ -64,6 +68,7 @@
       <property name="args.input" location="${test.basedir}/src/map8.ditamap"/>
       <property name="output.dir" location="${result.dir}/preprocess/map8"/>
       <property name="dita.temp.dir" location="${temp.dir}/preprocess/map8"/>
+      <property name="dita.ext" value=".dita"/>
     </ant>
     <ant antfile="${dita.dir}/build.xml">
       <target name="build-init"/>
@@ -71,6 +76,7 @@
       <property name="args.input" location="${test.basedir}/src/map9.ditamap"/>
       <property name="output.dir" location="${result.dir}/preprocess/map9"/>
       <property name="dita.temp.dir" location="${temp.dir}/preprocess/map9"/>
+      <property name="dita.ext" value=".dita"/>
     </ant>
     <!--
     <ant antfile="${dita.dir}/build.xml">
@@ -87,6 +93,7 @@
       <property name="args.input" location="${test.basedir}/src/map11.ditamap"/>
       <property name="output.dir" location="${result.dir}/preprocess/map11"/>
       <property name="dita.temp.dir" location="${temp.dir}/preprocess/map11"/>
+      <property name="dita.ext" value=".dita"/>
     </ant>
     <copy todir="${result.dir}/preprocess">
       <fileset dir="${temp.dir}/preprocess"/>

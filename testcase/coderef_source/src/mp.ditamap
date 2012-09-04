@@ -3,6 +3,5 @@
 <map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
     <topicref href="t1.dita" keys="t1"></topicref>
     <topicref href="t2.dita"></topicref>
-    <topicref href="t3.dita"></topicref>
 
 </map>

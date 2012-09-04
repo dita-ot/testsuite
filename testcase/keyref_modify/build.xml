@@ -12,6 +12,7 @@
       <property name="args.input" location="${test.basedir}/src/mp_author1.ditamap"/>
       <property name="output.dir" location="${result.dir}/xhtml"/>
       <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      <property name="dita.ext" value=".dita"/>
     </ant>
   </target>
   <property name="exp.message-count.warn" value="1"/>

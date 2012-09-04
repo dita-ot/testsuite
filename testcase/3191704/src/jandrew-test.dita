@@ -4,7 +4,7 @@
   <title>Push Source</title>
   <body>
     <p>The next paragraph uses conaction="pushreplace":</p>
-    <p conref="jandrew-test-push-target.xml#topic/p1" 
+    <p conref="jandrew-test-push-target.dita#topic/p1" 
       conaction="pushreplace">This is pushed.</p>
     <p>This is after the pushed paragraph.</p>
   </body>

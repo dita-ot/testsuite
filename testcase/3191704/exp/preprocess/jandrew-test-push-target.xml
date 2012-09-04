@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/SF/dita-ot/temp/3191704/preprocess?><?path2project?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="topic" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3191704/src/jandrew-test-push-target.xml" xtrc="topic:1">
-  <title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3191704/src/jandrew-test-push-target.xml" xtrc="title:1">Push Target</title>
-  <body class="- topic/body " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3191704/src/jandrew-test-push-target.xml" xtrc="body:1">
-    <p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3191704/src/jandrew-test-push-target.xml" xtrc="p:1">The next paragraph is the target of a conref pushreplace:</p>
-    <p class="- topic/p " id="p1" xtrc="p:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3191704/src/jandrew-test.dita">This is pushed.</p>
-    <p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3191704/src/jandrew-test-push-target.xml" xtrc="p:3">After the push target.</p>
-  </body>
-</topic>

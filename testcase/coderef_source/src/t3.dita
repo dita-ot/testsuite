@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "file:/C:/jyt/SAXONIBMJDK/demo/dita12/dtd12/technicalContent/dtd/topic.dtd">
-<topic id="topicID3" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
-    <title>coderef  dita</title>
-    <body>
-        <codeblock><coderef href="t1.dita"/></codeblock>
-    </body>
-</topic>
-
