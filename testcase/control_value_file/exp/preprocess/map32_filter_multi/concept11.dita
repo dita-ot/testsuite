@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/github/dita-ot/src/main/temp/control_value_file/preprocess/map32_filter_multi?><?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/control_value_file/preprocess/map32_filter_multi/?><?path2project?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="concept6" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic concept/concept " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/control_value_file/src/concept11.dita" xtrc="concept:1;3:87">
+    <title class="- topic/title " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/control_value_file/src/concept11.dita" xtrc="title:1;4:12">Test product attribute</title>
+    <conbody class="- topic/body  concept/conbody " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/control_value_file/src/concept11.dita" xtrc="conbody:1;5:14">
+        
+        <p class="- topic/p " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/control_value_file/src/concept11.dita" xtrc="p:2;7:12">
+            <note audience="admin" class="- topic/note " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/control_value_file/src/concept11.dita" xtrc="note:1;8:36">admin (within note tag)</note>
+            <b audience="pm" class="+ topic/ph hi-d/b " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/control_value_file/src/concept11.dita" xtrc="b:1;9:30">pm (within b tag)</b>
+            <data audience="user" class="- topic/data " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/control_value_file/src/concept11.dita" xtrc="data:1;10:35">user (within data tag)</data>
+            <lq audience="audiences" class="- topic/lq " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/control_value_file/src/concept11.dita" xtrc="lq:1;11:39">audiences (within lq tag)</lq>
+            <indexterm audience="admin" class="- topic/indexterm " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/control_value_file/src/concept11.dita" xtrc="indexterm:1;12:41">admin (within indexterm tag)</indexterm>
+        </p>
+        <pre audience="pm" xml:space="preserve" class="- topic/pre " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/control_value_file/src/concept11.dita" xtrc="pre:1;14:28">audience value is pm within pre tag</pre>
+        <codeblock product="user" audience="" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/control_value_file/src/concept11.dita" xtrc="codeblock:1;15:47">audience value is user within codeblock tag</codeblock>
+    </conbody>
+</concept>
