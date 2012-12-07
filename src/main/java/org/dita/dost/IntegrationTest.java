@@ -4,10 +4,14 @@ import static org.custommonkey.xmlunit.XMLAssert.*;
 import static org.dita.dost.writer.DitaWriter.*;
 import static org.junit.Assert.*;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileFilter;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintStream;
+import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -50,7 +54,7 @@ import org.dita.dost.util.FileUtils;
 public final class IntegrationTest {
     
     private static final String EXP_DIR = "exp";
-    private static final Collection<String> canCompare = Arrays.asList("xhtml", "eclipsehelp", "htmlhelp", "preprocess");
+    private static final Collection<String> canCompare = Arrays.asList("xhtml", "eclipsehelp", "htmlhelp", "preprocess", "pdf");
     
     private static final File baseDir = new File(System.getProperty("basedir") != null
                                                  ? System.getProperty("basedir")
@@ -155,6 +159,10 @@ public final class IntegrationTest {
             for (final String transtype: transtypes) {
                 if (canCompare.contains(transtype)) {
                     project.setUserProperty("run." + transtype, "true");
+                    if (transtype.equals("pdf") || transtype.equals("pdf2")) {
+                    	project.setUserProperty("pdf.formatter", "fop");
+                    	project.setUserProperty("fop.formatter.output-format", "text/plain");
+                    }
                 }
             }
             project.setUserProperty("preprocess.copy-generated-files.skip", "true");
@@ -205,6 +213,11 @@ public final class IntegrationTest {
                             XMLUnit.setIgnoreWhitespace(true);
                             XMLUnit.setIgnoreDiffBetweenTextAndCDATA(true);
                             assertXMLEqual(parseXml(e), parseXml(a));
+                        } else if (name.endsWith(".txt")) {
+                        	//assertEquals(readTextFile(e), readTextFile(a));
+                        	assertArrayEquals(readTextFile(e), readTextFile(a));
+                        } else {
+                        	throw new RuntimeException("Unsupported exception " + name);
                         }
                     } catch (final Throwable ex) {
                         throw new Throwable("Failed comparing " + e.getAbsolutePath() + " and " + a.getAbsolutePath() + ": " + ex.getMessage(), ex);
@@ -214,7 +227,51 @@ public final class IntegrationTest {
         }
     }
     
-    private static final Map<String, Pattern> htmlIdPattern = new HashMap<String, Pattern>();
+    /**
+     * Read text file into a string.
+     * 
+     * @param f file to read
+     * @return file contents
+     * @throws IOException if reading file failed
+     */
+//    private String readTextFile(final File f) throws IOException {
+//    	final StringBuilder buf = new StringBuilder();
+//    	BufferedReader r = null;
+//    	try {
+//    		r = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
+//    		String l = null;
+//        	while ((l = r.readLine()) != null) {
+//        		buf.append(l);
+//        	}
+//    	} catch (final IOException e) {
+//    		throw new IOException("Unable to read " + f.getAbsolutePath() + ": " + e.getMessage());
+//    	} finally {
+//    		if (r != null) {
+//    			r.close();
+//    		}
+//    	}
+//    	return buf.toString();
+//    }
+    private String[] readTextFile(final File f) throws IOException {
+    	final List<String> buf = new ArrayList<String>();
+    	BufferedReader r = null;
+    	try {
+    		r = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
+    		String l = null;
+        	while ((l = r.readLine()) != null) {
+        		buf.add(l);
+        	}
+    	} catch (final IOException e) {
+    		throw new IOException("Unable to read " + f.getAbsolutePath() + ": " + e.getMessage());
+    	} finally {
+    		if (r != null) {
+    			r.close();
+    		}
+    	}
+    	return buf.toArray(new String[buf.size()]);
+    }
+
+	private static final Map<String, Pattern> htmlIdPattern = new HashMap<String, Pattern>();
     private static final Map<String, Pattern> ditaIdPattern = new HashMap<String, Pattern>();
     static {
         final String SAXON_ID = "d\\d+e\\d+";
