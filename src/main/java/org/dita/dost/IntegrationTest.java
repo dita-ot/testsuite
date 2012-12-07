@@ -216,8 +216,6 @@ public final class IntegrationTest {
                         } else if (name.endsWith(".txt")) {
                         	//assertEquals(readTextFile(e), readTextFile(a));
                         	assertArrayEquals(readTextFile(e), readTextFile(a));
-                        } else {
-                        	throw new RuntimeException("Unsupported exception " + name);
                         }
                     } catch (final Throwable ex) {
                         throw new Throwable("Failed comparing " + e.getAbsolutePath() + " and " + a.getAbsolutePath() + ": " + ex.getMessage(), ex);
