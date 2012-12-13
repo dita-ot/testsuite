@@ -18,9 +18,11 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.Vector;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Matcher;
@@ -73,8 +75,14 @@ public final class IntegrationTest {
      */
     @Parameters
     public static Collection<Object[]> getFiles() {
+    	final Set<String> testNames = System.getProperty("only-test") != null
+    							  ? new HashSet<String>(Arrays.asList(System.getProperty("only-test").split("[\\s|,]")))
+    							  : null;
         final List<File> cases = Arrays.asList(resourceDir.listFiles(new FileFilter() {
             public boolean accept(File f) {
+            	if (testNames != null && !testNames.contains(f.getName())) {
+            		return false;
+            	}
                 if (!f.isDirectory() || !new File(f, "build.xml").exists()) {
                     return false;
                 }
