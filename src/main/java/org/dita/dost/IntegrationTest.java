@@ -75,7 +75,7 @@ public final class IntegrationTest {
      */
     @Parameters
     public static Collection<Object[]> getFiles() {
-    	final Set<String> testNames = System.getProperty("only-test") != null
+    	final Set<String> testNames = System.getProperty("only-test") != null && !System.getProperty("only-test").isEmpty()
     							  ? new HashSet<String>(Arrays.asList(System.getProperty("only-test").split("[\\s|,]")))
     							  : null;
         final List<File> cases = Arrays.asList(resourceDir.listFiles(new FileFilter() {
