@@ -4,7 +4,7 @@
  <topic id="critdates_replace" xml:lang="en-us">
      <title>TestCritdates</title>
      <prolog>
-         <source href="www.ibm.com">somewhere,someplace</source>
+         <source href="http://www.ibm.com" format="html" scope="external">somewhere,someplace</source>
      </prolog>
      <body>
          <p>asbsdf</p>
