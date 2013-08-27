@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><?path2project?><?path2project-uri ./?><?Pub Inc?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="N2" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+<title class="- topic/title ">Nesting topic 2- parent</title>
+<shortdesc class="- topic/shortdesc ">[llama llama]</shortdesc>
+<body class="- topic/body ">
+<p class="- topic/p ">[and a koala]</p>
+</body>
+<topic id="N2a" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+<title class="- topic/title ">Nesting topic 2<?Pub Caret?> - child</title>
+<shortdesc class="- topic/shortdesc ">[llama llama]</shortdesc>
+<body class="- topic/body ">
+<p class="- topic/p ">[and a koala]</p>
+</body>
+</topic>
+</topic><?Pub *0000000503?>

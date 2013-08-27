@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="N1a" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic "><?Pub Caret?>
+<title class="- topic/title ">Nesting topic 1 - child</title>
+<shortdesc class="- topic/shortdesc ">[llama llama]</shortdesc>
+<body class="- topic/body ">
+<p class="- topic/p ">topic 4 N1a</p>
+</body>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool "><link class="- topic/link " mapclass="- map/topicref " type="topic" href="Chunk0.dita#N1" role="parent"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Nesting topic 4 - parent</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">[llama llama]</desc></link></linkpool></related-links></topic>

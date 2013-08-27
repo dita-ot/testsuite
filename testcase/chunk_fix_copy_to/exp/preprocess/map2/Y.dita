@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><?path2project?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="Y" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic task strictTaskbody-c)    " class="- topic/topic ">
+<title class="- topic/title ">Topic Y</title>
+<body class="- topic/body ">
+<p class="- topic/p ">content</p>
+</body>
+
+
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool "><linkpool class="- topic/linkpool "><link class="- topic/link " mapclass="- map/topicref " href="Y1.dita" role="child" type="topic"><?ditaot gentext?><linktext class="- topic/linktext ">Topic Y1</linktext></link><link class="- topic/link " mapclass="- map/topicref " href="Y2.dita" role="child" type="topic"><?ditaot gentext?><linktext class="- topic/linktext ">Topic Y2</linktext></link></linkpool></linkpool></related-links></topic>

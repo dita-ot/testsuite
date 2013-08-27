@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><?path2project ../../../../../testsuite/testresult/chunk_fix_copy_to/preprocess/map2/?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="X" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic task strictTaskbody-c)    " class="- topic/topic ">
+<title class="- topic/title ">Topic X</title>
+<body class="- topic/body ">
+<p class="- topic/p ">content</p>
+</body>
+</topic>

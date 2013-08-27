@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><?path2project?><?path2project-uri ./?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="topic2" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+    <title class="- topic/title ">topic 2 title</title>
+    <body class="- topic/body ">
+        <p id="p1" class="- topic/p ">topic 2 body</p>
+        <p class="- topic/p "><xref href="topic.dita#topic1" format="dita" class="- topic/xref " type="topic"><?ditaot usertext?>link to t1</xref></p>
+    </body>
+</topic>

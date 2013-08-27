@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><dita xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2"><?path2project?><task id="batcleaning" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic task strictTaskbody-c)    " class="- topic/topic task/task ">
+<title class="- topic/title ">Cleaningtitle</title>
+<shortdesc class="- topic/shortdesc ">cleaning shortdesc</shortdesc>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">Cleaning prereq</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">clean.</cmd></step>
+</steps>
+</taskbody>
+</task></dita>
