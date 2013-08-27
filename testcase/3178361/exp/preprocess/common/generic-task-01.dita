@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/SF/dita-ot/temp/3178361/preprocess/common?><?path2project ../?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="generic-task" ditaarch:DITAArchVersion="1.2" domains="(topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                            (topic task strictTaskbody-c)    " class="- topic/topic task/task " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3178361/src/common/generic-task-01.dita" xtrc="task:1">
-<title id="title" class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3178361/src/common/generic-task-01.dita" xtrc="title:1">Some Generic Task</title>
-<taskbody class="- topic/body task/taskbody " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3178361/src/common/generic-task-01.dita" xtrc="taskbody:1">
-<context class="- topic/section task/context " id="context" xtrc="context:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3178361/src/product-specific/push-to-generic-task-01-via-conkeyref.dita">
-      <p class="- topic/p " xtrc="p:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3178361/src/product-specific/push-to-generic-task-01-via-conkeyref.dita">This is product-specific context.</p>
+<?xml version="1.0" encoding="utf-8"?><?path2project ../?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="generic-task" ditaarch:DITAArchVersion="1.2" domains="(topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                            (topic task strictTaskbody-c)    " class="- topic/topic task/task ">
+<title id="title" class="- topic/title ">Some Generic Task</title>
+<taskbody class="- topic/body task/taskbody ">
+<context class="- topic/section task/context " id="context">
+      <p class="- topic/p ">This is product-specific context.</p>
     </context>
-<steps class="- topic/ol task/steps " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3178361/src/common/generic-task-01.dita" xtrc="steps:1">
-<step class="- topic/li task/step " xtrc="step:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3178361/src/product-specific/push-to-generic-task-01-via-conkeyref.dita">
-        <cmd class="- topic/ph task/cmd " xtrc="cmd:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3178361/src/product-specific/push-to-generic-task-01-via-conkeyref.dita">Do this before you do anything else.</cmd>
-      </step><step id="step-first" class="- topic/li task/step " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3178361/src/common/generic-task-01.dita" xtrc="step:1"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3178361/src/common/generic-task-01.dita" xtrc="cmd:1">The first thing you do.</cmd>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Do this before you do anything else.</cmd>
+      </step><step id="step-first" class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">The first thing you do.</cmd>
 </step>
-<step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3178361/src/common/generic-task-01.dita" xtrc="step:2"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3178361/src/common/generic-task-01.dita" xtrc="cmd:2">Middle step.</cmd>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Middle step.</cmd>
 </step>
-<step id="step-last" class="- topic/li task/step " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3178361/src/common/generic-task-01.dita" xtrc="step:3"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3178361/src/common/generic-task-01.dita" xtrc="cmd:3">The last thing you do.</cmd>
-</step><step class="- topic/li task/step " xtrc="step:4" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3178361/src/product-specific/push-to-generic-task-01-via-conkeyref.dita">
-        <cmd class="- topic/ph task/cmd " xtrc="cmd:4" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3178361/src/product-specific/push-to-generic-task-01-via-conkeyref.dita">Do this after you do everything else.</cmd>
+<step id="step-last" class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">The last thing you do.</cmd>
+</step><step class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Do this after you do everything else.</cmd>
       </step>
 </steps>
 </taskbody>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?workdir /Users/jelovirt/Work/SF/dita-ot/temp/MetadataInheritance/preprocess/MetadataInheritance_critdates_replace?><?path2project ?><map class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(map mapgroup-d) (topic indexing-d)" id="Bats3" title="Bats3" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xtrc="map:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap">
-     <topicmeta class="- map/topicmeta " xtrc="topicmeta:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap">
-         <critdates class="- topic/critdates " xtrc="critdates:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap">
-             <created class="- topic/created " date="2007-07-01" xtrc="created:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap"></created>
-             <revised class="- topic/revised " modified="2008-08-08" xtrc="revised:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap"></revised>
+<?path2project ?><map class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(map mapgroup-d) (topic indexing-d)" id="Bats3" title="Bats3" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+     <topicmeta class="- map/topicmeta ">
+         <critdates class="- topic/critdates ">
+             <created class="- topic/created " date="2007-07-01"></created>
+             <revised class="- topic/revised " modified="2008-08-08"></revised>
          </critdates>
      </topicmeta><?Pub Caret1?>
-     <topicref class="- map/topicref " href="bats.dita" navtitle="Bats" type="topic" xtrc="topicref:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">Programming elements</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Programming elements</linktext><critdates class="- topic/critdates " xtrc="critdates:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap">
-                 <created class="- topic/created " date="2770-03" xtrc="created:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap"></created>
-             </critdates></topicmeta><topicref class="- map/topicref " href="batcaring.dita" navtitle="Caring for your fruit bat" type="topic" xtrc="topicref:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">batcaring</navtitle><?ditaot gentext?><linktext class="- map/linktext ">batcaring</linktext><critdates class="- topic/critdates " xtrc="critdates:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap">
-                 <created class="- topic/created " date="2770-03" xtrc="created:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap"></created>
+     <topicref class="- map/topicref " href="bats.dita" navtitle="Bats" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">Programming elements</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Programming elements</linktext><critdates class="- topic/critdates ">
+                 <created class="- topic/created " date="2770-03"></created>
+             </critdates></topicmeta><topicref class="- map/topicref " href="batcaring.dita" navtitle="Caring for your fruit bat" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">batcaring</navtitle><?ditaot gentext?><linktext class="- map/linktext ">batcaring</linktext><critdates class="- topic/critdates ">
+                 <created class="- topic/created " date="2770-03"></created>
              </critdates></topicmeta></topicref></topicref>
-     <topicref class="- map/topicref " href="critdates_replace.dita" navtitle="replace" type="topic" xtrc="topicref:3" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">TestCritdates</navtitle><?ditaot gentext?><linktext class="- map/linktext ">TestCritdates</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "> path</shortdesc><critdates class="- topic/critdates " xtrc="critdates:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap">
-             <created class="- topic/created " date="2007-07-01" xtrc="created:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap"></created>
-             <revised class="- topic/revised " modified="2008-08-08" xtrc="revised:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_critdates_replace.ditamap"></revised>
+     <topicref class="- map/topicref " href="critdates_replace.dita" navtitle="replace" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">TestCritdates</navtitle><?ditaot gentext?><linktext class="- map/linktext ">TestCritdates</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "> path</shortdesc><critdates class="- topic/critdates ">
+             <created class="- topic/created " date="2007-07-01"></created>
+             <revised class="- topic/revised " modified="2008-08-08"></revised>
          </critdates></topicmeta></topicref>
  </map>

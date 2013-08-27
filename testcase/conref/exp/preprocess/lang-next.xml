@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/SF/dita-ot/temp/conref/preprocess?><?path2project?><?Pub Inc?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="langnext" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-next.dita" xtrc="topic:1">
-<title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-next.dita" xtrc="title:1">Next topic link</title>
-<shortdesc class="- topic/shortdesc " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-next.dita" xtrc="shortdesc:1">This is the next topic in the language tests</shortdesc>
-<body class="- topic/body " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-next.dita" xtrc="body:1">
-<p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-next.dita" xtrc="p:1">stuff<?Pub Caret?></p>
+<?xml version="1.0" encoding="utf-8"?><?path2project?><?Pub Inc?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="langnext" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+<title class="- topic/title ">Next topic link</title>
+<shortdesc class="- topic/shortdesc ">This is the next topic in the language tests</shortdesc>
+<body class="- topic/body ">
+<p class="- topic/p ">stuff<?Pub Caret?></p>
 </body>
 </topic><?Pub *0000000374?>

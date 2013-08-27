@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/SF/dita-ot/temp/3344142/preprocess?><?path2project?><?Pub Inc?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="pushfrom" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                            (topic task strictTaskbody-c)    " class="- topic/topic task/task " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3344142/src/pushfrom.dita" xtrc="task:1">
-<title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3344142/src/pushfrom.dita" xtrc="title:1">Push from</title>
-<shortdesc class="- topic/shortdesc " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3344142/src/pushfrom.dita" xtrc="shortdesc:1">Push from this topic into the other</shortdesc>
-<taskbody class="- topic/body task/taskbody " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3344142/src/pushfrom.dita" xtrc="taskbody:1">
-<steps class="- topic/ol task/steps " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3344142/src/pushfrom.dita" xtrc="steps:1">
+<?xml version="1.0" encoding="utf-8"?><?path2project?><?Pub Inc?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="pushfrom" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                            (topic task strictTaskbody-c)    " class="- topic/topic task/task ">
+<title class="- topic/title ">Push from</title>
+<shortdesc class="- topic/shortdesc ">Push from this topic into the other</shortdesc>
+<taskbody class="- topic/body task/taskbody ">
+<steps class="- topic/ol task/steps ">
 
-<step id="stepid1" class="- topic/li task/step " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3344142/src/pushfrom.dita" xtrc="step:2"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3344142/src/pushfrom.dita" xtrc="cmd:2">Content being pushed: target step. This is valid.</cmd></step>
+<step id="stepid1" class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Content being pushed: target step. This is valid.</cmd></step>
 
-<step id="stepid2" class="- topic/li task/step " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3344142/src/pushfrom.dita" xtrc="step:4"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3344142/src/pushfrom.dita" xtrc="cmd:4">Content being pushed: target cmd. This is invalid.</cmd></step>
-<step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3344142/src/pushfrom.dita" xtrc="step:5"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3344142/src/pushfrom.dita" xtrc="cmd:5">This step should replace one that existed</cmd></step>
-<step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3344142/src/pushfrom.dita" xtrc="step:6"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3344142/src/pushfrom.dita" xtrc="cmd:6">This cmd should NOT APPEAR, THE SYNTAX IS INVALID.</cmd><info class="- topic/itemgroup task/info " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3344142/src/pushfrom.dita" xtrc="info:1">It is trying to replace a cmd with a step.</info></step>
+<step id="stepid2" class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Content being pushed: target cmd. This is invalid.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">This step should replace one that existed</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">This cmd should NOT APPEAR, THE SYNTAX IS INVALID.</cmd><info class="- topic/itemgroup task/info ">It is trying to replace a cmd with a step.</info></step>
 </steps>
 </taskbody><?Pub Caret -1?>
 </task><?Pub *0000000439?>

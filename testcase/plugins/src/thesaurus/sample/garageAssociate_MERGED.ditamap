@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" title="Associating scheme and classification using a map" ditaarch:DITAArchVersion="1.0" domains="(map mapgroup-d)" class="- map/map ">
-  <subjectScheme xtrf="garageScheme.ditamap" id="garageSubjects" title="Subject scheme definition" ditaarch:DITAArchVersion="1.0" domains="(map mapgroup-d)" class="- map/map scheme/subjectScheme ">
+  <subjectScheme id="garageSubjects" title="Subject scheme definition" ditaarch:DITAArchVersion="1.0" domains="(map mapgroup-d)" class="- map/map scheme/subjectScheme ">
 <subjectdef href="equipment.xml" class="- map/topicref scheme/subjectdef ">
   <subjectdef href="lawnmower.xml" class="- map/topicref scheme/subjectdef "/>
   <subjectdef href="snowshovel.xml" class="- map/topicref scheme/subjectdef "/>
@@ -38,7 +38,7 @@
   </subjectRel>
 </subjectRelTable>
 </subjectScheme>
-  <map xtrf="garageClassify.ditamap" title="The classified garage" ditaarch:DITAArchVersion="1.0" domains="(map mapgroup-d) (map classify-d)" class="- map/map ">
+  <map title="The classified garage" ditaarch:DITAArchVersion="1.0" domains="(map mapgroup-d) (map classify-d)" class="- map/map ">
 <topicref href="tasks/garagetaskoverview.xml" class="- map/topicref ">
   <topicref href="tasks/changingtheoil.xml" class="- map/topicref ">
     <topicsubject href="oil.xml" class="+ map/topicref classify-d/topicsubject ">

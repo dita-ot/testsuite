@@ -1,113 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?workdir /Users/jelovirt/Work/SF/dita-ot/temp/conref/preprocess?>
+
 <?path2project?>
-<?Pub Inc?><dita xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="dita:1">
-<topic id="topic" xml:lang="en-us" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic task strictTaskbody-c)    " class="- topic/topic " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="topic:1">
-<title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="title:1">Topic elements with generated text</title>
-<prolog class="- topic/prolog " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="prolog:1"><metadata class="- topic/metadata " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="metadata:1">
-<keywords class="- topic/keywords " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="keywords:1"><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:1">a</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:2">b</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:3">c</indexterm>
-<indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:4">d</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:5">e</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:6">f</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:7">g</indexterm>
-<indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:8">h</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:9">i</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:10">j</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:11">k</indexterm>
-<indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:12">l</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:13">m</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:14">n</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:15">o</indexterm>
-<indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:16">p</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:17">q</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:18">r</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:19">s</indexterm>
-<indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:20">t</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:21">u</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:22">v</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:23">w</indexterm>
-<indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:24">x</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:25">y</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:26">z</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:27">1</indexterm>
-<indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:28">+</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:29">$</indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="indexterm:30">?<?Pub Caret?></indexterm>
+<?Pub Inc?><dita xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2">
+<topic id="topic" xml:lang="en-us" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic task strictTaskbody-c)    " class="- topic/topic ">
+<title class="- topic/title ">Topic elements with generated text</title>
+<prolog class="- topic/prolog "><metadata class="- topic/metadata ">
+<keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">a</indexterm><indexterm class="- topic/indexterm ">b</indexterm><indexterm class="- topic/indexterm ">c</indexterm>
+<indexterm class="- topic/indexterm ">d</indexterm><indexterm class="- topic/indexterm ">e</indexterm><indexterm class="- topic/indexterm ">f</indexterm><indexterm class="- topic/indexterm ">g</indexterm>
+<indexterm class="- topic/indexterm ">h</indexterm><indexterm class="- topic/indexterm ">i</indexterm><indexterm class="- topic/indexterm ">j</indexterm><indexterm class="- topic/indexterm ">k</indexterm>
+<indexterm class="- topic/indexterm ">l</indexterm><indexterm class="- topic/indexterm ">m</indexterm><indexterm class="- topic/indexterm ">n</indexterm><indexterm class="- topic/indexterm ">o</indexterm>
+<indexterm class="- topic/indexterm ">p</indexterm><indexterm class="- topic/indexterm ">q</indexterm><indexterm class="- topic/indexterm ">r</indexterm><indexterm class="- topic/indexterm ">s</indexterm>
+<indexterm class="- topic/indexterm ">t</indexterm><indexterm class="- topic/indexterm ">u</indexterm><indexterm class="- topic/indexterm ">v</indexterm><indexterm class="- topic/indexterm ">w</indexterm>
+<indexterm class="- topic/indexterm ">x</indexterm><indexterm class="- topic/indexterm ">y</indexterm><indexterm class="- topic/indexterm ">z</indexterm><indexterm class="- topic/indexterm ">1</indexterm>
+<indexterm class="- topic/indexterm ">+</indexterm><indexterm class="- topic/indexterm ">$</indexterm><indexterm class="- topic/indexterm ">?<?Pub Caret?></indexterm>
 </keywords>
 </metadata></prolog>
-<body class="- topic/body " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="body:1">
-<p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="p:1">Xref to the another file: <xref href="lang-concept.xml" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:1"></xref>. Now do it again, <xref href="lang-concept.xml" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:2">with link text</xref>.</p>
-<p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="p:2">Xref to fig in another file&apos;s topic: <xref href="lang-concept.xml#lang-concept" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:3"></xref>. Now do it again, <xref href="lang-concept.xml#lang-concept" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:4">with link text</xref>.</p>
-<p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="p:3">Xref to fig in another file: <xref href="lang-concept.xml#lang-concept/fig" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:5"></xref>. Now do it again, <xref href="lang-concept.xml#lang-concept/fig" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:6">with link text</xref>.</p>
-<p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="p:4">Xref to this topic: <xref href="#topic" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:7"></xref>. Now do it again, <xref href="#topic" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:8">with link text</xref>.</p>
-<p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="p:5">Xref to the concept in this file: <xref href="#concept" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:9"></xref>. Now do it again, <xref href="#concept" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:10">with link text</xref>.</p>
-<p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="p:6">Xref to the fig in this topic: <xref href="#topic/fig" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:11"></xref>. Now do it again, <xref href="#topic/fig" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:12">with link text</xref>.</p>
-<p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="p:7">Xref to the table in this topic: <xref href="#topic/table" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:13"></xref>. Now do it again, <xref href="#topic/table" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:14">with link text</xref>.</p>
-<p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="p:8">Xref to an external website: <xref href="http://www.ibm.com" format="html" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:15"></xref>. Now do it again, <xref href="http://www.ibm.com" format="html" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:16">with link text</xref>.</p>
-<p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="p:9">Xref to an external website with an anchor: <xref href="http://www.ibm.com/index.html#anchor" format="html" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:17"></xref>. Now do it again, <xref href="http://www.ibm.com/index.html#anchor" format="html" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="xref:18">with link text</xref>.</p>
-<fig id="fig" class="- topic/fig " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="fig:1"><title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="title:2">figure title</title>
-<p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="p:10">test <q class="- topic/q " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="q:1">quote</q> in a figure</p>
+<body class="- topic/body ">
+<p class="- topic/p ">Xref to the another file: <xref href="lang-concept.xml" class="- topic/xref "></xref>. Now do it again, <xref href="lang-concept.xml" class="- topic/xref ">with link text</xref>.</p>
+<p class="- topic/p ">Xref to fig in another file&apos;s topic: <xref href="lang-concept.xml#lang-concept" class="- topic/xref "></xref>. Now do it again, <xref href="lang-concept.xml#lang-concept" class="- topic/xref ">with link text</xref>.</p>
+<p class="- topic/p ">Xref to fig in another file: <xref href="lang-concept.xml#lang-concept/fig" class="- topic/xref "></xref>. Now do it again, <xref href="lang-concept.xml#lang-concept/fig" class="- topic/xref ">with link text</xref>.</p>
+<p class="- topic/p ">Xref to this topic: <xref href="#topic" class="- topic/xref "></xref>. Now do it again, <xref href="#topic" class="- topic/xref ">with link text</xref>.</p>
+<p class="- topic/p ">Xref to the concept in this file: <xref href="#concept" class="- topic/xref "></xref>. Now do it again, <xref href="#concept" class="- topic/xref ">with link text</xref>.</p>
+<p class="- topic/p ">Xref to the fig in this topic: <xref href="#topic/fig" class="- topic/xref "></xref>. Now do it again, <xref href="#topic/fig" class="- topic/xref ">with link text</xref>.</p>
+<p class="- topic/p ">Xref to the table in this topic: <xref href="#topic/table" class="- topic/xref "></xref>. Now do it again, <xref href="#topic/table" class="- topic/xref ">with link text</xref>.</p>
+<p class="- topic/p ">Xref to an external website: <xref href="http://www.ibm.com" format="html" class="- topic/xref "></xref>. Now do it again, <xref href="http://www.ibm.com" format="html" class="- topic/xref ">with link text</xref>.</p>
+<p class="- topic/p ">Xref to an external website with an anchor: <xref href="http://www.ibm.com/index.html#anchor" format="html" class="- topic/xref "></xref>. Now do it again, <xref href="http://www.ibm.com/index.html#anchor" format="html" class="- topic/xref ">with link text</xref>.</p>
+<fig id="fig" class="- topic/fig "><title class="- topic/title ">figure title</title>
+<p class="- topic/p ">test <q class="- topic/q ">quote</q> in a figure</p>
 </fig>
-<table id="table" class="- topic/table " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="table:1"><title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="title:3">table title</title>
-<tgroup cols="1" class="- topic/tgroup " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="tgroup:1"><colspec colname="col1" class="- topic/colspec " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="colspec:1"></colspec>
-<tbody class="- topic/tbody " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="tbody:1">
-<row class="- topic/row " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="row:1">
-<entry colname="col1" class="- topic/entry " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="entry:1">test table</entry>
+<table id="table" class="- topic/table "><title class="- topic/title ">table title</title>
+<tgroup cols="1" class="- topic/tgroup "><colspec colname="col1" class="- topic/colspec "></colspec>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry colname="col1" class="- topic/entry ">test table</entry>
 </row>
 </tbody>
 </tgroup>
 </table>
-<note class="- topic/note " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="note:1">note</note>
-<note type="attention" class="- topic/note " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="note:2">attention</note>
-<note type="caution" class="- topic/note " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="note:3">CAUTION</note>
-<note type="danger" class="- topic/note " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="note:4">DANGER</note>
-<note type="fastpath" class="- topic/note " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="note:5">fastpath</note>
-<note type="important" class="- topic/note " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="note:6">important</note>
-<note type="remember" class="- topic/note " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="note:7">remember</note>
-<note type="restriction" class="- topic/note " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="note:8">restriction</note>
-<note type="tip" class="- topic/note " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="note:9">tip</note>
-<note class="- topic/note " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="note:10"><ol class="- topic/ol " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="ol:1">
-<li class="- topic/li " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="li:1">This is a list in a note</li>
-<li class="- topic/li " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="li:2">This is still a list in a note</li>
+<note class="- topic/note ">note</note>
+<note type="attention" class="- topic/note ">attention</note>
+<note type="caution" class="- topic/note ">CAUTION</note>
+<note type="danger" class="- topic/note ">DANGER</note>
+<note type="fastpath" class="- topic/note ">fastpath</note>
+<note type="important" class="- topic/note ">important</note>
+<note type="remember" class="- topic/note ">remember</note>
+<note type="restriction" class="- topic/note ">restriction</note>
+<note type="tip" class="- topic/note ">tip</note>
+<note class="- topic/note "><ol class="- topic/ol ">
+<li class="- topic/li ">This is a list in a note</li>
+<li class="- topic/li ">This is still a list in a note</li>
 </ol></note>
-<p rev="rev1" class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="p:11">Revised paragraph</p>
-<required-cleanup translate="no" class="- topic/required-cleanup " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="required-cleanup:1">test required cleanup<draft-comment translate="no" class="- topic/draft-comment " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="draft-comment:1">test draft-comment</draft-comment></required-cleanup>
-<syntaxdiagram class="+ topic/fig pr-d/syntaxdiagram " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="syntaxdiagram:1">
-<groupchoice class="+ topic/figgroup pr-d/groupchoice " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="groupchoice:1">
-<kwd class="+ topic/keyword pr-d/kwd " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="kwd:1">kwd</kwd>
-<synnote class="+ topic/fn pr-d/synnote " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="synnote:1">this is a synnote</synnote>
-<synnote class="+ topic/fn pr-d/synnote " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="synnote:2">this is another synnote</synnote>
+<p rev="rev1" class="- topic/p ">Revised paragraph</p>
+<required-cleanup translate="no" class="- topic/required-cleanup ">test required cleanup<draft-comment translate="no" class="- topic/draft-comment ">test draft-comment</draft-comment></required-cleanup>
+<syntaxdiagram class="+ topic/fig pr-d/syntaxdiagram ">
+<groupchoice class="+ topic/figgroup pr-d/groupchoice ">
+<kwd class="+ topic/keyword pr-d/kwd ">kwd</kwd>
+<synnote class="+ topic/fn pr-d/synnote ">this is a synnote</synnote>
+<synnote class="+ topic/fn pr-d/synnote ">this is another synnote</synnote>
 </groupchoice>
 </syntaxdiagram>
 </body>
-<related-links class="- topic/related-links " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="related-links:1">
-<link href="lang-concept.xml" class="- topic/link " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="link:1"></link>
-<link href="lang-reference.xml" class="- topic/link " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="link:2"></link>
-<link href="lang-task.xml" class="- topic/link " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="link:3"></link>
-<link format="html" href="http://www.ibm.com" scope="external" class="- topic/link " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="link:4">
+<related-links class="- topic/related-links ">
+<link href="lang-concept.xml" class="- topic/link "></link>
+<link href="lang-reference.xml" class="- topic/link "></link>
+<link href="lang-task.xml" class="- topic/link "></link>
+<link format="html" href="http://www.ibm.com" scope="external" class="- topic/link ">
 </link>
-<link href="lang-next.xml" role="next" class="- topic/link " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="link:5"></link>
-<link href="lang-previous.xml" role="previous" class="- topic/link " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="link:6"></link>
-<link href="lang-parent.xml" role="parent" class="- topic/link " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="link:7"></link>
-<link href="lang-prerequisite.xml" importance="required" role="sibling" class="- topic/link " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="link:8">
+<link href="lang-next.xml" role="next" class="- topic/link "></link>
+<link href="lang-previous.xml" role="previous" class="- topic/link "></link>
+<link href="lang-parent.xml" role="parent" class="- topic/link "></link>
+<link href="lang-prerequisite.xml" importance="required" role="sibling" class="- topic/link ">
 </link>
 </related-links>
 </topic>
-<concept id="concept" xml:lang="en-us" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic task strictTaskbody-c)    " class="- topic/topic concept/concept " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="concept:1">
-<title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="title:4">Concept elements with generated text</title>
-<conbody class="- topic/body  concept/conbody " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="conbody:1">
-<p id="p_element" class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="p:12">No concept-specific element with generated text</p>
+<concept id="concept" xml:lang="en-us" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic task strictTaskbody-c)    " class="- topic/topic concept/concept ">
+<title class="- topic/title ">Concept elements with generated text</title>
+<conbody class="- topic/body  concept/conbody ">
+<p id="p_element" class="- topic/p ">No concept-specific element with generated text</p>
 </conbody>
 </concept>
-<task id="task" xml:lang="en-us" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic task strictTaskbody-c)    " class="- topic/topic task/task " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="task:1">
-<title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="title:5">Task elements with generated text</title>
-<taskbody class="- topic/body task/taskbody " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="taskbody:1">
-<prereq class="- topic/section task/prereq " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="prereq:1">prerequisites</prereq>
-<context class="- topic/section task/context " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="context:1">context</context>
-<steps class="- topic/ol task/steps " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="steps:1">
-<step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="step:1"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="cmd:1">step 1</cmd></step>
-<step importance="optional" class="- topic/li task/step " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="step:2"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="cmd:2">step 2 (optional)</cmd></step>
-<step importance="required" class="- topic/li task/step " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="step:3"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="cmd:3">step 3 (required)</cmd></step>
-<step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="step:4"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="cmd:4">step 4</cmd>
-<choicetable keycol="1" class="- topic/simpletable task/choicetable " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="choicetable:1">
-<chrow class="- topic/strow task/chrow " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="chrow:1"><choption class="- topic/stentry task/choption " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="choption:1">option</choption><chdesc class="- topic/stentry task/chdesc " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="chdesc:1">description</chdesc></chrow>
+<task id="task" xml:lang="en-us" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic task strictTaskbody-c)    " class="- topic/topic task/task ">
+<title class="- topic/title ">Task elements with generated text</title>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">prerequisites</prereq>
+<context class="- topic/section task/context ">context</context>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">step 1</cmd></step>
+<step importance="optional" class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">step 2 (optional)</cmd></step>
+<step importance="required" class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">step 3 (required)</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">step 4</cmd>
+<choicetable keycol="1" class="- topic/simpletable task/choicetable ">
+<chrow class="- topic/strow task/chrow "><choption class="- topic/stentry task/choption ">option</choption><chdesc class="- topic/stentry task/chdesc ">description</chdesc></chrow>
 </choicetable>
 </step>
-<step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="step:5"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="cmd:5">step 5</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">step 5</cmd></step>
 </steps>
-<result class="- topic/section task/result " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="result:1">result</result>
-<example class="- topic/example " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="example:1">example</example>
-<postreq class="- topic/section task/postreq " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="postreq:1">postrequisite</postreq>
+<result class="- topic/section task/result ">result</result>
+<example class="- topic/example ">example</example>
+<postreq class="- topic/section task/postreq ">postrequisite</postreq>
 </taskbody>
 </task>
-<reference id="reference" xml:lang="en-us" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic task strictTaskbody-c)    " class="- topic/topic       reference/reference " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="reference:1">
-<title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="title:6">Reference elements with generated text</title>
-<refbody class="- topic/body        reference/refbody " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="refbody:1">
-<properties class="- topic/simpletable reference/properties " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="properties:1">
-<property class="- topic/strow       reference/property " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="property:1">
-<proptype class="- topic/stentry     reference/proptype " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="proptype:1">Type</proptype>
-<propvalue class="- topic/stentry     reference/propvalue " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="propvalue:1">Value</propvalue>
-<propdesc class="- topic/stentry     reference/propdesc " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-common0.dita" xtrc="propdesc:1">Description</propdesc>
+<reference id="reference" xml:lang="en-us" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic task strictTaskbody-c)    " class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Reference elements with generated text</title>
+<refbody class="- topic/body        reference/refbody ">
+<properties class="- topic/simpletable reference/properties ">
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Type</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Value</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Description</propdesc>
 </property>
 </properties>
 </refbody>

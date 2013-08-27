@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/SF/dita-ot/temp/conref/preprocess?><?path2project?><?Pub Inc?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="previous" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-previous.dita" xtrc="topic:1">
-<title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-previous.dita" xtrc="title:1">Previous topic link</title>
-<shortdesc class="- topic/shortdesc " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-previous.dita" xtrc="shortdesc:1">This is the previous topic for language tests</shortdesc>
-<body class="- topic/body " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-previous.dita" xtrc="body:1">
-<p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-previous.dita" xtrc="p:1">previous stuff<?Pub Caret?></p>
+<?xml version="1.0" encoding="utf-8"?><?path2project?><?Pub Inc?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="previous" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+<title class="- topic/title ">Previous topic link</title>
+<shortdesc class="- topic/shortdesc ">This is the previous topic for language tests</shortdesc>
+<body class="- topic/body ">
+<p class="- topic/p ">previous stuff<?Pub Caret?></p>
 </body>
 </topic><?Pub *0000000388?>

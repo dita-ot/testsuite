@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/SF/dita-ot/temp/3191704/preprocess?><?path2project?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="topic" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3191704/src/jandrew-test-one-file.dita" xtrc="topic:1">
-  <title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3191704/src/jandrew-test-one-file.dita" xtrc="title:1">Push and Target in One File</title>
-  <body class="- topic/body " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3191704/src/jandrew-test-one-file.dita" xtrc="body:1">
-    <p class="- topic/p " id="p1" xtrc="p:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3191704/src/jandrew-test-one-file.dita">I should appear in the output twice.</p>
-    <p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3191704/src/jandrew-test-one-file.dita" xtrc="p:2">I should appear in the output twice.</p>
+<?xml version="1.0" encoding="utf-8"?><?path2project?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="topic" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+  <title class="- topic/title ">Push and Target in One File</title>
+  <body class="- topic/body ">
+    <p class="- topic/p " id="p1">I should appear in the output twice.</p>
+    <p class="- topic/p ">I should appear in the output twice.</p>
   </body>
 </topic>

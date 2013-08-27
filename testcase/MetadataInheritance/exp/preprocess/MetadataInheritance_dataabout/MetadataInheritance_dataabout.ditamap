@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?workdir /Users/jelovirt/Work/SF/dita-ot/temp/MetadataInheritance/preprocess/MetadataInheritance_dataabout?><?path2project ?><map class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(map mapgroup-d) (topic indexing-d)" id="Bats3" title="Bats3" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xtrc="map:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_dataabout.ditamap">
-<topicmeta class="- map/topicmeta " xtrc="topicmeta:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_dataabout.ditamap">
- <data-about class="- topic/data-about " xtrc="data-about:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_dataabout.ditamap">
-<data class="- topic/data " name="about" xtrc="data:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_dataabout.ditamap">money,money,money,show me the money</data>
+<?path2project ?><map class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(map mapgroup-d) (topic indexing-d)" id="Bats3" title="Bats3" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+<topicmeta class="- map/topicmeta ">
+ <data-about class="- topic/data-about ">
+<data class="- topic/data " name="about">money,money,money,show me the money</data>
 </data-about>
 </topicmeta><?Pub Caret1?>
-<topicref class="- map/topicref " href="bats.dita" navtitle="Bats" type="topic" xtrc="topicref:1" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_dataabout.ditamap"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">Programming elements</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Programming elements</linktext><data-about class="- topic/data-about " xtrc="data-about:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_dataabout.ditamap">
-<data class="- topic/data " name="haha" xtrc="data:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_dataabout.ditamap">show me the money</data>
-</data-about></topicmeta><topicref class="- map/topicref " href="batcaring.dita" navtitle="Caring for your fruit bat" type="topic" xtrc="topicref:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_dataabout.ditamap"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">batcaring</navtitle><?ditaot gentext?><linktext class="- map/linktext ">batcaring</linktext></topicmeta></topicref></topicref>
-<topicref class="- map/topicref " href="batfeeding.dita" navtitle="Feeding your bat" type="topic" xtrc="topicref:3" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/MetadataInheritance/src/MetadataInheritance_dataabout.ditamap"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">batfeeding</navtitle><?ditaot gentext?><linktext class="- map/linktext ">batfeeding</linktext></topicmeta></topicref>
+<topicref class="- map/topicref " href="bats.dita" navtitle="Bats" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">Programming elements</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Programming elements</linktext><data-about class="- topic/data-about ">
+<data class="- topic/data " name="haha">show me the money</data>
+</data-about></topicmeta><topicref class="- map/topicref " href="batcaring.dita" navtitle="Caring for your fruit bat" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">batcaring</navtitle><?ditaot gentext?><linktext class="- map/linktext ">batcaring</linktext></topicmeta></topicref></topicref>
+<topicref class="- map/topicref " href="batfeeding.dita" navtitle="Feeding your bat" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">batfeeding</navtitle><?ditaot gentext?><linktext class="- map/linktext ">batfeeding</linktext></topicmeta></topicref>
 </map>

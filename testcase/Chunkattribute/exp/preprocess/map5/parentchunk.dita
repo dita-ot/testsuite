@@ -1,45 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/github/dita-ot/src/main/temp/Chunkattribute/preprocess/map5?><?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/Chunkattribute/preprocess/map5/?><dita xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2"><?workdir /Volumes/tmp/temp/Chunkattribute/preprocess/map5?><?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/Chunkattribute/preprocess/map5/?><?path2project?><topic id="parent1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/parent1.dita" xtrc="topic:1;5:38">
- <title class="- topic/title " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/parent1.dita" xtrc="title:1;6:9">parent1</title>
-<shortdesc class="- topic/shortdesc " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/parent1.dita" xtrc="shortdesc:1;7:12">You maintain your solution to ensure that all components
+<?xml version="1.0" encoding="utf-8"?><dita xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2"><?path2project?><topic id="parent1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+ <title class="- topic/title ">parent1</title>
+<shortdesc class="- topic/shortdesc ">You maintain your solution to ensure that all components
 are operating at maximum efficiency.</shortdesc>
-<body class="- topic/body " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/parent1.dita" xtrc="body:1;9:7">
-<lines xml:space="preserve" class="- topic/lines " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/parent1.dita" xtrc="lines:1;10:8">
-<ph id="prodname" class="- topic/ph " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/parent1.dita" xtrc="ph:1;11:19">
-<ph product="ABase_ph" rev="rev1" class="- topic/ph " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/parent1.dita" xtrc="ph:2;12:35">ThisProduct</ph>
-<ph product="AExtra_ph" class="- topic/ph " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/parent1.dita" xtrc="ph:3;13:25">ThisProduct</ph>
-<ph product="Another_ph" class="- topic/ph " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/parent1.dita" xtrc="ph:4;14:26">AnotherProduct</ph>
+<body class="- topic/body ">
+<lines xml:space="preserve" class="- topic/lines ">
+<ph id="prodname" class="- topic/ph ">
+<ph product="ABase_ph" rev="rev1" class="- topic/ph ">ThisProduct</ph>
+<ph product="AExtra_ph" class="- topic/ph ">ThisProduct</ph>
+<ph product="Another_ph" class="- topic/ph ">AnotherProduct</ph>
 </ph>
 </lines>
 </body>
-<?workdir /Volumes/tmp/temp/Chunkattribute/preprocess/map5?><?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/Chunkattribute/preprocess/map5/?><?path2project?><topic id="child1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/child1.dita" xtrc="topic:1;3:37">
-  <title class="- topic/title " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/child1.dita" xtrc="title:1;4:10">child1</title>
-  <body class="- topic/body " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/child1.dita" xtrc="body:1;5:9">
-    <section class="- topic/section " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/child1.dita" xtrc="section:1;6:14">
-      <p class="- topic/p " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/child1.dita" xtrc="p:1;7:10">Use the task topic to describe the steps of a particular task, or to provide an overview of
+<?path2project?><topic id="child1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+  <title class="- topic/title ">child1</title>
+  <body class="- topic/body ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">Use the task topic to describe the steps of a particular task, or to provide an overview of
         a higher-level task. The task topic includes sections for describing the context,
         prerequisites, actual steps, expected results, example, and expected next steps for a
-          task.<indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/child1.dita" xtrc="indexterm:1;10:27">Task elements</indexterm>
+          task.<indexterm class="- topic/indexterm ">Task elements</indexterm>
       </p>
     </section>
   </body>
-</topic><?workdir /Volumes/tmp/temp/Chunkattribute/preprocess/map5?><?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/Chunkattribute/preprocess/map5/?><?path2project?><topic id="child3" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/child3.dita" xtrc="topic:1;8:37">
-<title class="- topic/title " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/child3.dita" xtrc="title:1;9:8">child3</title>
-<body class="- topic/body " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/child3.dita" xtrc="body:1;10:7">
-<section class="- topic/section " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/child3.dita" xtrc="section:1;11:10"> <p class="- topic/p " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/child3.dita" xtrc="p:1;11:14">The software domain elements are used to describe
-the operation of a software program.<indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/child3.dita" xtrc="indexterm:1;12:48">Domains elements<indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/child3.dita" xtrc="indexterm:2;12:75">software
-elements</indexterm>  </indexterm><indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/child3.dita" xtrc="indexterm:3;13:46">software elements</indexterm></p> </section>
+</topic><?path2project?><topic id="child3" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+<title class="- topic/title ">child3</title>
+<body class="- topic/body ">
+<section class="- topic/section "> <p class="- topic/p ">The software domain elements are used to describe
+the operation of a software program.<indexterm class="- topic/indexterm ">Domains elements<indexterm class="- topic/indexterm ">software
+elements</indexterm>  </indexterm><indexterm class="- topic/indexterm ">software elements</indexterm></p> </section>
 </body>
-<?workdir /Volumes/tmp/temp/Chunkattribute/preprocess/map5?><?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/Chunkattribute/preprocess/map5/?><?path2project?><topic id="grandchild3" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/grandchild3.dita" xtrc="topic:1;8:42">
-<title class="- topic/title " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/grandchild3.dita" xtrc="title:1;9:8">grandchild3</title>
-<body class="- topic/body " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/grandchild3.dita" xtrc="body:1;10:7">
-<section class="- topic/section " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/grandchild3.dita" xtrc="section:1;11:10">          <p class="- topic/p " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/grandchild3.dita" xtrc="p:1;11:23">DITA topics support two types of tables. One is the
-most common table format used in industry, the &lt;<apiname class="+ topic/keyword pr-d/apiname " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/grandchild3.dita" xtrc="apiname:1;12:61">CALS table</apiname>&gt;
+<?path2project?><topic id="grandchild3" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+<title class="- topic/title ">grandchild3</title>
+<body class="- topic/body ">
+<section class="- topic/section ">          <p class="- topic/p ">DITA topics support two types of tables. One is the
+most common table format used in industry, the &lt;<apiname class="+ topic/keyword pr-d/apiname ">CALS table</apiname>&gt;
 (or more recently known also as the Oasis Table Exchange Model). The CALS
 table supports the spanning of multiple rows or columns for special layout
 or organizational needs, and provides a wide variety of controls over the
-display properties of the data and even the table structure itself.<indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/grandchild3.dita" xtrc="indexterm:1;16:79">Table
-elements</indexterm>          </p>          <p class="- topic/p " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/grandchild3.dita" xtrc="p:2;17:48">The other table structure in
-DITA is called &lt;<apiname class="+ topic/keyword pr-d/apiname " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/grandchild3.dita" xtrc="apiname:2;18:29">simpletable</apiname>&gt;. As the name implies,
+display properties of the data and even the table structure itself.<indexterm class="- topic/indexterm ">Table
+elements</indexterm>          </p>          <p class="- topic/p ">The other table structure in
+DITA is called &lt;<apiname class="+ topic/keyword pr-d/apiname ">simpletable</apiname>&gt;. As the name implies,
 it is structurally less sophisticated than the CALS table, and can be used
 as a very simple, regular table for which close control of formatting is not
 as important. However, the main advantage of simpletable is for describing

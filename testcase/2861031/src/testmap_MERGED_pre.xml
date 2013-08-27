@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><dita-merge><?workdir /usr/u/sandvik/DITA_dev_test/DITA-OT1.4.2.1/temp?><?path2project ?><map class="- map/map " ditaarch:DITAArchVersion="1.1" domains="(map mapgroup-d) (topic indexing-d)" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xtrc="map:1" xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testmap.ditamap"><title class="- topic/title " xtrc="title:1" xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testmap.ditamap">Test map for topicmerge issue</title>
-<topicref class="- map/topicref " format="dita" ohref="testtask.xml" href="#unique_1" navtitle="[Test] Tasting a Map" scope="local" type="task" xtrc="topicref:1" xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testmap.ditamap"><topicmeta class="- map/topicmeta "><linktext class="- map/linktext ">[Test] Tasting a Map</linktext><shortdesc class="- map/shortdesc ">Build maps and taste the output. </shortdesc></topicmeta></topicref>
-</map><?workdir /usr/u/sandvik/DITA_dev_test/DITA-OT1.4.2.1/temp?><?path2project ?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" oid="testtask_id" id="unique_1" xml:lang="en" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task " xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testtask.xml" xtrc="task:1">
-    <title class="- topic/title " xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testtask.xml" xtrc="title:1">[Test] Tasting a Map</title>
-    <shortdesc class="- topic/shortdesc " xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testtask.xml" xtrc="shortdesc:1">Build maps and taste the output. </shortdesc>
-    <taskbody class="- topic/body task/taskbody " xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testtask.xml" xtrc="taskbody:1">
-        <steps class="- topic/ol task/steps " xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testtask.xml" xtrc="steps:1">
-            <step id="tasty_step_2" class="- topic/li task/step " xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testtask.xml" xtrc="step:1">
-                <cmd class="- topic/ph task/cmd " xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testtask.xml" xtrc="cmd:1">Build the map.</cmd>
+<?xml version="1.0" encoding="utf-8"?><dita-merge><?path2project ?><map class="- map/map " ditaarch:DITAArchVersion="1.1" domains="(map mapgroup-d) (topic indexing-d)" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"><title class="- topic/title ">Test map for topicmerge issue</title>
+<topicref class="- map/topicref " format="dita" ohref="testtask.xml" href="#unique_1" navtitle="[Test] Tasting a Map" scope="local" type="task"><topicmeta class="- map/topicmeta "><linktext class="- map/linktext ">[Test] Tasting a Map</linktext><shortdesc class="- map/shortdesc ">Build maps and taste the output. </shortdesc></topicmeta></topicref>
+</map><?path2project ?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" oid="testtask_id" id="unique_1" xml:lang="en" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+    <title class="- topic/title ">[Test] Tasting a Map</title>
+    <shortdesc class="- topic/shortdesc ">Build maps and taste the output. </shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <steps class="- topic/ol task/steps ">
+            <step id="tasty_step_2" class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Build the map.</cmd>
             </step>
-            <step id="tasty_step_3" class="- topic/li task/step " xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testtask.xml" xtrc="step:2">
-                <cmd class="- topic/ph task/cmd " xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testtask.xml" xtrc="cmd:2">Taste output.</cmd>
+            <step id="tasty_step_3" class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Taste output.</cmd>
             </step>
-            <step class="- topic/li task/step " xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testtask.xml" xtrc="step:3">
+            <step class="- topic/li task/step ">
                 <!-- Bug: xref @href in <cmd> below are wrong. There is no unique_2 topic. -->
-                <cmd class="- topic/ph task/cmd " xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testtask.xml" xtrc="cmd:3">Repeat steps <xref ohref="#testtask_id/tasty_step_2" href="#unique_2/tasty_step_2" class="- topic/xref " xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testtask.xml" xtrc="xref:1" type="step">1</xref> and  <xref ohref="#testtask_id/tasty_step_3" href="#unique_2/tasty_step_3" class="- topic/xref " xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testtask.xml" xtrc="xref:2" type="step">2</xref> as needed.  </cmd>
+                <cmd class="- topic/ph task/cmd ">Repeat steps <xref ohref="#testtask_id/tasty_step_2" href="#unique_2/tasty_step_2" class="- topic/xref " type="step">1</xref> and  <xref ohref="#testtask_id/tasty_step_3" href="#unique_2/tasty_step_3" class="- topic/xref " type="step">2</xref> as needed.  </cmd>
             </step>
         </steps>
-        <postreq class="- topic/section task/postreq " xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testtask.xml" xtrc="postreq:1">
-            <p class="- topic/p " xtrf="/usr/u/sandvik/docsource/topicmerge-bug-on-same-topic-xref/testtask.xml" xtrc="p:1">Wipe down and test the map again after tasting. Saliva may affect map integrity.</p>
+        <postreq class="- topic/section task/postreq ">
+            <p class="- topic/p ">Wipe down and test the map again after tasting. Saliva may affect map integrity.</p>
         </postreq>
     </taskbody>
 </task></dita-merge>

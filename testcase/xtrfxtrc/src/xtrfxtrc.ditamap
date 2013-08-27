@@ -3,16 +3,16 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.1 Map//EN"
  "file:/C:/DITA-OT1.4/dtd/map.dtd">
  <?Pub Inc?>
- <map id="Bats3" title="Bats3" xtrf="E:\iteration2\testdata\bookmap(2)\bookmap(2)_testdata8.ditamap" xtrc="map:1">
-     <topicmeta xtrf="E:\iteration2\testdata\bookmap(2)\bookmap(2)_testdata8.ditamap" xtrc="topicmeta:1">
-         <permissions view="entitled" xtrf="E:\iteration2\testdata\bookmap(2)\bookmap(2)_testdata8.ditamap" xtrc="permissions:1"/>
+ <map id="Bats3" title="Bats3">
+     <topicmeta>
+         <permissions view="entitled"/>
          
      </topicmeta>
-     <topicref href="bats.dita" navtitle="Bats" xtrf="E:\iteration2\testdata\bookmap(2)\bookmap(2)_testdata8.ditamap" xtrc="topicref:1">
+     <topicref href="bats.dita" navtitle="Bats">
          <topicmeta>
              <permissions view="internal"/>
          </topicmeta>
-         <topicref href="batcaring.dita" navtitle="Caring for your fruit bat" xtrf="E:\iteration2\testdata\bookmap(2)\bookmap(2)_testdata8.ditamap" xtrc="topicref:2"></topicref>
+         <topicref href="batcaring.dita" navtitle="Caring for your fruit bat"></topicref>
      </topicref>
      <topicref href="Permissions_replace.dita" navtitle="Feeding your bat"></topicref>
  </map>

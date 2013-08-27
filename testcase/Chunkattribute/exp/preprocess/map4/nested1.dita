@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><?workdir /Volumes/tmp/temp/Chunkattribute/preprocess/map4?><?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/Chunkattribute/preprocess/map4/?><?path2project?><?path2project-uri ./?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="N1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/nested1.dita" xtrc="topic:1;7:33">
-   <title class="- topic/title " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/nested1.dita" xtrc="title:1;8:11">nested1</title>
-   <body class="- topic/body " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/nested1.dita" xtrc="body:1;9:10">
-      <section class="- topic/section " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/nested1.dita" xtrc="section:1;10:16">
-         <p class="- topic/p " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/nested1.dita" xtrc="p:1;11:13">Most DITA elements represent discourse, or information that is placed exactly
+<?xml version="1.0" encoding="utf-8"?><?path2project?><?path2project-uri ./?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="N1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+   <title class="- topic/title ">nested1</title>
+   <body class="- topic/body ">
+      <section class="- topic/section ">
+         <p class="- topic/p ">Most DITA elements represent discourse, or information that is placed exactly
 as entered. However, there are also types of information that are usually
 authored in context with a thought or issue, but upon output, the content
 might be relocated, suppressed, or used only for purposes such as inline annotations
 for drafts. These elements include footnotes, index entries, draft comments,
 and special cleanup containers that can hold migrated data that still needs
-a writer's intervention to get into the right place.<indexterm class="- topic/indexterm " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/nested1.dita" xtrc="indexterm:1;17:64">Miscellaneous
+a writer's intervention to get into the right place.<indexterm class="- topic/indexterm ">Miscellaneous
 elements</indexterm>
          </p>
       </section>
    </body>
-<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:2;5:61" xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/map4.ditamap" mapkeyref="mapfour"><link class="- topic/link " mapclass="- map/topicref " type="topic" xtrc="topicref:1;4:62" xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/Chunkattribute/src/map4.ditamap" href="parentchunk.dita" role="parent"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>parent1</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">You maintain your solution to ensure that all components are operating at maximum efficiency.</desc></link></linkpool></related-links></topic>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="mapfour"><link class="- topic/link " mapclass="- map/topicref " type="topic" href="parentchunk.dita" role="parent"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>parent1</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">You maintain your solution to ensure that all components are operating at maximum efficiency.</desc></link></linkpool></related-links></topic>

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?workdir /Users/jelovirt/Work/SF/dita-ot/temp/conrefbreaksxref/preprocess?>
+
 <?path2project?>
-<?Pub Inc?><topic id="this-target" xml:lang="en-us" DTDVersion="V1.1.3" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d) (topic ut-d)" class="- topic/topic " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="topic:1">
-<title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="title:1">conrefbreaksxref target</title>
-<shortdesc class="- topic/shortdesc " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="shortdesc:1">This topic is referenced by another, and has some internal linking.</shortdesc>
-<body class="- topic/body " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="body:1">
-<section id="section" class="- topic/section " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="section:1"><title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="title:2">Section that is pulled to another topic.</title><p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="p:1">Look
-as the figure in this section: <xref href="#this-target/fig" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="xref:1"></xref>.</p><p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="p:2">Look
-at a figure in this topic, outside of this section: <xref href="#this-target/out" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="xref:2"></xref></p><p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="p:3">Now
-look at this topic: <xref href="#this-target" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="xref:3"><?Pub Caret?></xref></p><p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="p:4">Now
-look at the topic below: <xref href="#sub" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="xref:4"></xref>.</p><p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="p:5">Now look at a figure
-in the topic below: <xref href="#sub/fig" class="- topic/xref " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="xref:5"></xref></p><fig id="fig" class="- topic/fig " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="fig:1"><title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="title:3">Figure
+<?Pub Inc?><topic id="this-target" xml:lang="en-us" DTDVersion="V1.1.3" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d) (topic ut-d)" class="- topic/topic ">
+<title class="- topic/title ">conrefbreaksxref target</title>
+<shortdesc class="- topic/shortdesc ">This topic is referenced by another, and has some internal linking.</shortdesc>
+<body class="- topic/body ">
+<section id="section" class="- topic/section "><title class="- topic/title ">Section that is pulled to another topic.</title><p class="- topic/p ">Look
+as the figure in this section: <xref href="#this-target/fig" class="- topic/xref "></xref>.</p><p class="- topic/p ">Look
+at a figure in this topic, outside of this section: <xref href="#this-target/out" class="- topic/xref "></xref></p><p class="- topic/p ">Now
+look at this topic: <xref href="#this-target" class="- topic/xref "><?Pub Caret?></xref></p><p class="- topic/p ">Now
+look at the topic below: <xref href="#sub" class="- topic/xref "></xref>.</p><p class="- topic/p ">Now look at a figure
+in the topic below: <xref href="#sub/fig" class="- topic/xref "></xref></p><fig id="fig" class="- topic/fig "><title class="- topic/title ">Figure
 In My Section</title>
-<p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="p:6">This is a figure here.</p>
+<p class="- topic/p ">This is a figure here.</p>
 </fig></section>
-<fig id="out" class="- topic/fig " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="fig:2"><title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="title:4">Figure outside the section</title>
-<p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="p:7">this figure is outside the seciton</p>
+<fig id="out" class="- topic/fig "><title class="- topic/title ">Figure outside the section</title>
+<p class="- topic/p ">this figure is outside the seciton</p>
 </fig>
 </body>
-<topic id="sub" xml:lang="en-us" DTDVersion="V1.1.3" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d) (topic ut-d)" class="- topic/topic " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="topic:2">
-<title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="title:5">Sub-topic in the reusable file</title>
-<body class="- topic/body " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="body:2">
-<fig id="fig" class="- topic/fig " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="fig:3"><title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conrefbreaksxref/src/conrefbreaksxreftarget.dita" xtrc="title:6">Figure in the sub-topic</title></fig>
+<topic id="sub" xml:lang="en-us" DTDVersion="V1.1.3" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d) (topic ut-d)" class="- topic/topic ">
+<title class="- topic/title ">Sub-topic in the reusable file</title>
+<body class="- topic/body ">
+<fig id="fig" class="- topic/fig "><title class="- topic/title ">Figure in the sub-topic</title></fig>
 </body>
 </topic>
 </topic><?Pub *0000001213?>

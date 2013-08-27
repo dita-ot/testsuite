@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/SF/dita-ot/temp/conref/preprocess?><?path2project?><?Pub Inc?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="lang-reference" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic reference)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic       reference/reference " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-reference.dita" xtrc="reference:1">
-<title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-reference.dita" xtrc="title:1">Reference link for language test</title>
-<shortdesc class="- topic/shortdesc " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-reference.dita" xtrc="shortdesc:1">Reference for the related link</shortdesc>
-<refbody class="- topic/body        reference/refbody " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-reference.dita" xtrc="refbody:1">
-<section class="- topic/section " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/conref/src/lang-reference.dita" xtrc="section:1">test things</section>
+<?xml version="1.0" encoding="utf-8"?><?path2project?><?Pub Inc?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="lang-reference" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic reference)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Reference link for language test</title>
+<shortdesc class="- topic/shortdesc ">Reference for the related link</shortdesc>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section ">test things</section>
 </refbody><?Pub Caret1?>
 </reference><?Pub *0000000428?>

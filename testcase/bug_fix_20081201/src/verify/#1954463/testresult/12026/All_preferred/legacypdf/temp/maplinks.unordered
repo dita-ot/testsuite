@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><mapcollection>
      
-    <maplinks href="t1.xml"><linklist class="- topic/linklist " xtrc="topicref:1" xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\mp.ditamap"/><linkpool class="- topic/linkpool " xtrc="topicref:1" xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\mp.ditamap"/></maplinks>
-    <maplinks href="t2.xml"><linklist class="- topic/linklist " xtrc="topicref:2" xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\mp.ditamap"/><linkpool class="- topic/linkpool " xtrc="topicref:2" xtrf="C:\SAXONIBMJDK\testcase\All_preferred\..\..\testdata\All_preferred\mp.ditamap"/></maplinks>
+    <maplinks href="t1.xml"><linklist class="- topic/linklist "/><linkpool class="- topic/linkpool "/></maplinks>
+    <maplinks href="t2.xml"><linklist class="- topic/linklist "/><linkpool class="- topic/linkpool "/></maplinks>
 </mapcollection>

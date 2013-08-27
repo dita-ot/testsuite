@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><?workdir /Users/jelovirt/Work/SF/dita-ot/temp/3308775/preprocess/foo/bar?><?path2project?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="a" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3308775/src/foo/bar/a.xml" xtrc="topic:1">
-  <title class="- topic/title " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3308775/src/foo/bar/a.xml" xtrc="title:1">a</title>
-  <prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords " xtrc="keywords:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3308775/src/foo/bar/keyref.ditamap">
-        <keyword class="- topic/keyword " xtrc="keyword:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3308775/src/foo/bar/keyref.ditamap">value</keyword>
-      </keywords><keywords class="- topic/keywords " xtrc="keywords:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3308775/src/keyref_below.ditamap">
-        <keyword class="- topic/keyword " xtrc="keyword:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3308775/src/keyref_below.ditamap">value</keyword>
-      </keywords><keywords class="- topic/keywords " xtrc="keywords:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3308775/src/foo/bar/baz/qux/keyref_above.ditamap">
-        <keyword class="- topic/keyword " xtrc="keyword:2" xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3308775/src/foo/bar/baz/qux/keyref_above.ditamap">value</keyword>
-      </keywords></metadata></prolog><body class="- topic/body " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3308775/src/foo/bar/a.xml" xtrc="body:1">
-    <p class="- topic/p " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3308775/src/foo/bar/a.xml" xtrc="p:1">
-      <keyword keyref="below_key" class="- topic/keyword " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3308775/src/foo/bar/a.xml" xtrc="keyword:1">value</keyword>
-      <keyword keyref="same_key" class="- topic/keyword " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3308775/src/foo/bar/a.xml" xtrc="keyword:2">value</keyword>
-      <keyword keyref="above_key" class="- topic/keyword " xtrf="/Users/jelovirt/Work/SF/testsuite/testcase/3308775/src/foo/bar/a.xml" xtrc="keyword:3">value</keyword>
+<?xml version="1.0" encoding="utf-8"?><?path2project?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="a" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+  <title class="- topic/title ">a</title>
+  <prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords ">
+        <keyword class="- topic/keyword ">value</keyword>
+      </keywords><keywords class="- topic/keywords ">
+        <keyword class="- topic/keyword ">value</keyword>
+      </keywords><keywords class="- topic/keywords ">
+        <keyword class="- topic/keyword ">value</keyword>
+      </keywords></metadata></prolog><body class="- topic/body ">
+    <p class="- topic/p ">
+      <keyword keyref="below_key" class="- topic/keyword ">value</keyword>
+      <keyword keyref="same_key" class="- topic/keyword ">value</keyword>
+      <keyword keyref="above_key" class="- topic/keyword ">value</keyword>
     </p>
   </body>
 </topic>
