@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?path2project?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="parent1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+<?xml version="1.0" encoding="utf-8"?><?path2project?><?path2project-uri ./?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="parent1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
  <title class="- topic/title ">parent1</title>
 <shortdesc class="- topic/shortdesc ">You maintain your solution to ensure that all components
 are operating at maximum efficiency.</shortdesc>
@@ -11,5 +11,4 @@ are operating at maximum efficiency.</shortdesc>
 </ph>
 </lines>
 </body>
-<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="mapseven"><linkpool class="- topic/linkpool "><link class="- topic/link " mapclass="- map/topicref " type="topic" href="child1.dita" role="child"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>child1</linktext></link><link class="- topic/link " mapclass="- map/topicref " type="topic" href="parent2.dita" role="child"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>parent2</linktext></link></linkpool></linkpool></related-links>
-</topic>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="mapseven"><linkpool class="- topic/linkpool "><link class="- topic/link " mapclass="- map/topicref " type="topic" href="child1.dita" role="child"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>child1</linktext></link><link class="- topic/link " mapclass="- map/topicref " type="topic" href="parent2.dita" role="child"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>parent2</linktext></link></linkpool></linkpool></related-links></topic>

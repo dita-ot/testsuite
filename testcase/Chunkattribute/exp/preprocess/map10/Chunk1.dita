@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><?path2project?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="Y" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+<title class="- topic/title "><keyword class="- topic/keyword ">dita</keyword></title>
+<shortdesc class="- topic/shortdesc ">The &lt;<keyword class="- topic/keyword ">dita</keyword>&gt; element provides a top-level container
+for multiple topics when you create documents using the ditabase document
+type. The &lt;<keyword class="- topic/keyword ">dita</keyword>&gt; element lets you create any sequence
+of concept, task, and reference topics, and the ditabase document type lets
+you further nest these topic types inside each other. The &lt;<keyword class="- topic/keyword ">dita</keyword>&gt;
+element has no particular output implications; it simply allows you to create
+multiple topics of different types at the same level in a single document.</shortdesc>
+<prolog class="- topic/prolog "><metadata class="- topic/metadata ">
+<keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">dita</indexterm><indexterm class="- topic/indexterm ">Compound topics</indexterm>
+</keywords>
+</metadata></prolog>
+<body class="- topic/body ">
+
+<section class="- topic/section "><title class="- topic/title ">Contained by</title>Not contained by any other element. The
+root element for the compound DITA document type.</section>
+<section class="- topic/section "><title class="- topic/title ">Inheritance</title>Not a specializable DITA element.</section>
+
+<example class="- topic/example ">     <title class="- topic/title ">Example</title>     <pre xml:space="preserve" class="- topic/pre ">&lt;dita&gt;
+  &lt;concept id="batintro"&gt;...&lt;/concept&gt;
+  &lt;reference id="batparts"&gt;...&lt;/reference&gt;
+  &lt;task id="batfeeding"&gt;...&lt;/task&gt;
+  &lt;task id="battraining"&gt;...&lt;/task&gt;
+  &lt;task id="batcleanup"&gt;...&lt;/task&gt;
+&lt;/dita&gt;</pre>       </example>
+</body>
+ 
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="mapten"><linkpool class="- topic/linkpool "><link class="- topic/link " mapclass="- map/topicref " href="Y1.dita" role="child" type="topic"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Y1</linktext><?ditaot genshortdesc?><?ditaot genshortdesc?><desc class="- topic/desc "/></link><link class="- topic/link " mapclass="- map/topicref " type="topic" href="Chunk2.dita#Z" role="child"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Z</linktext></link></linkpool></linkpool></related-links></topic><?Pub *0000002263?>
