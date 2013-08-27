@@ -31,7 +31,6 @@
       <property name="dita.temp.dir" location="${temp.dir}/preprocess/map3"/>
       <property name="dita.ext" value=".dita"/>
     </ant>
-    <!--
     <ant antfile="${dita.dir}/build.xml">
       <target name="build-init"/>
       <target name="preprocess"/>
@@ -53,7 +52,6 @@
       <property name="output.dir" location="${result.dir}/preprocess/map6"/>
       <property name="dita.temp.dir" location="${temp.dir}/preprocess/map6"/>
     </ant>
-    -->
     <ant antfile="${dita.dir}/build.xml">
       <target name="build-init"/>
       <target name="preprocess"/>
@@ -78,7 +76,6 @@
       <property name="dita.temp.dir" location="${temp.dir}/preprocess/map9"/>
       <property name="dita.ext" value=".dita"/>
     </ant>
-    <!--
     <ant antfile="${dita.dir}/build.xml">
       <target name="build-init"/>
       <target name="preprocess"/>
@@ -86,7 +83,6 @@
       <property name="output.dir" location="${result.dir}/preprocess/map10"/>
       <property name="dita.temp.dir" location="${temp.dir}/preprocess/map10"/>
     </ant>
-    -->
     <ant antfile="${dita.dir}/build.xml">
       <target name="build-init"/>
       <target name="preprocess"/>
