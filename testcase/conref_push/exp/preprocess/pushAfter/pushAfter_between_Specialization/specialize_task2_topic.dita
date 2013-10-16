@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Volumes/tmp/temp/conref_push/preprocess/pushAfter/pushAfter_between_Specialization?><?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/conref_push/preprocess/pushAfter/pushAfter_between_Specialization/?><?path2project?><?path2project-uri ./?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="X" ditaarch:DITAArchVersion="1.2" domains="(topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                            (topic task strictTaskbody-c)    " class="- topic/topic task/task " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_between_Specialization/specialize_task2_topic.dita" xtrc="task:1;6:14">
+    <title class="- topic/title " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_between_Specialization/specialize_task2_topic.dita" xtrc="title:1;7:12">this is a task</title>
+    <shortdesc class="- topic/shortdesc " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_between_Specialization/specialize_task2_topic.dita" xtrc="shortdesc:1;8:16">this is also a reuse function</shortdesc>
+   
+    <taskbody class="- topic/body task/taskbody " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_between_Specialization/specialize_task2_topic.dita" xtrc="taskbody:1;10:15">
+        <steps class="- topic/ol task/steps " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_between_Specialization/specialize_task2_topic.dita" xtrc="steps:1;11:16">
+            
+            <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_between_Specialization/specialize_task2_topic.dita" xtrc="step:2;13:41">
+                <cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_between_Specialization/specialize_task2_topic.dita" xtrc="cmd:2;14:22">AA</cmd>
+            </step>
+            
+            
+            <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_between_Specialization/specialize_task2_topic.dita" xtrc="step:4;18:41">
+                <cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_between_Specialization/specialize_task2_topic.dita" xtrc="cmd:4;19:22">BB</cmd>
+            </step>
+     
+            
+            <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_between_Specialization/specialize_task2_topic.dita" xtrc="step:6;23:41">
+                <cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_between_Specialization/specialize_task2_topic.dita" xtrc="cmd:6;24:22">CC</cmd>
+            </step>
+            
+            
+            <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_between_Specialization/specialize_task2_topic.dita" xtrc="step:8;28:41">
+                <cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_between_Specialization/specialize_task2_topic.dita" xtrc="cmd:8;29:22">
+                    <xref href="http://www.google.com" scope="external" class="- topic/xref " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_between_Specialization/specialize_task2_topic.dita" xtrc="xref:1;30:73"><?ditaot usertext?>Google</xref>
+                </cmd>
+            </step>
+            
+        </steps>
+    </taskbody>
+    
+  </task>

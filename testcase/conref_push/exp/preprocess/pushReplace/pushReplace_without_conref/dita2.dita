@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Volumes/tmp/temp/conref_push/preprocess/pushReplace/pushReplace_without_conref?><?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/conref_push/preprocess/pushReplace/pushReplace_without_conref/?><?path2project?><?path2project-uri ./?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="Z" ditaarch:DITAArchVersion="1.2" domains="(topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                            (topic task strictTaskbody-c)    " class="- topic/topic task/task " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushReplace/pushReplace_without_conref/dita2.dita" xtrc="task:1;6:14">
+    <title class="- topic/title " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushReplace/pushReplace_without_conref/dita2.dita" xtrc="title:1;7:12">This is a case for pushReplace</title>
+    
+    <taskbody class="- topic/body task/taskbody " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushReplace/pushReplace_without_conref/dita2.dita" xtrc="taskbody:1;9:15">
+        <steps class="- topic/ol task/steps " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushReplace/pushReplace_without_conref/dita2.dita" xtrc="steps:1;10:16">    
+                      
+            
+           
+                <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushReplace/pushReplace_without_conref/dita2.dita" xtrc="step:1;14:71"> <cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushReplace/pushReplace_without_conref/dita3.dita" xtrc="cmd:2;13:44">BB</cmd> </step>   
+           
+            
+            
+      
+            <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushReplace/pushReplace_without_conref/dita2.dita" xtrc="step:2;19:67"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushReplace/pushReplace_without_conref/dita2.dita" xtrc="cmd:2;19:72"/></step>
+          
+            
+            
+            <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushReplace/pushReplace_without_conref/dita2.dita" xtrc="step:3;23:67">
+            <cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushReplace/pushReplace_without_conref/dita2.dita" xtrc="cmd:3;24:18">
+                    <cite class="- topic/cite " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushReplace/pushReplace_without_conref/dita3.dita" xtrc="cite:1;16:34">Mycite Conref</cite>
+            </cmd>
+            </step>
+            
+        </steps>
+    </taskbody>
+</task>

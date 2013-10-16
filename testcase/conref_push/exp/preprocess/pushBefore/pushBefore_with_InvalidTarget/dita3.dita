@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Volumes/tmp/temp/conref_push/preprocess/pushBefore/pushBefore_with_InvalidTarget?><?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/conref_push/preprocess/pushBefore/pushBefore_with_InvalidTarget/?><?path2project?><?path2project-uri ./?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="Z" ditaarch:DITAArchVersion="1.2" domains="(topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                            (topic task strictTaskbody-c)    " class="- topic/topic task/task " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushBefore/pushBefore_with_InvalidTarget/dita3.dita" xtrc="task:1;6:14">
+    <title class="- topic/title " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushBefore/pushBefore_with_InvalidTarget/dita3.dita" xtrc="title:1;7:12">This is a case for pushBefore</title>
+    
+    <taskbody class="- topic/body task/taskbody " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushBefore/pushBefore_with_InvalidTarget/dita3.dita" xtrc="taskbody:1;9:15">
+        <steps class="- topic/ol task/steps " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushBefore/pushBefore_with_InvalidTarget/dita3.dita" xtrc="steps:1;10:16">
+            
+            
+            
+            
+            <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushBefore/pushBefore_with_InvalidTarget/dita3.dita" xtrc="step:1;15:42"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushBefore/pushBefore_with_InvalidTarget/dita3.dita" xtrc="cmd:1;15:47">BB</cmd></step>
+            
+            
+            
+            <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushBefore/pushBefore_with_InvalidTarget/dita3.dita" xtrc="step:3;19:42"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushBefore/pushBefore_with_InvalidTarget/dita3.dita" xtrc="cmd:3;19:47">BBB</cmd></step>
+            
+            
+            
+            <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushBefore/pushBefore_with_InvalidTarget/dita3.dita" xtrc="step:5;23:42"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushBefore/pushBefore_with_InvalidTarget/dita3.dita" xtrc="cmd:5;23:47">BBBB</cmd></step>
+            
+            
+            
+            <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushBefore/pushBefore_with_InvalidTarget/dita3.dita" xtrc="step:7;27:42"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushBefore/pushBefore_with_InvalidTarget/dita3.dita" xtrc="cmd:7;27:47">BBBBB</cmd></step>
+            
+            
+            
+            <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushBefore/pushBefore_with_InvalidTarget/dita3.dita" xtrc="step:9;31:42"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushBefore/pushBefore_with_InvalidTarget/dita3.dita" xtrc="cmd:9;31:47">BBBBBB</cmd></step>
+            
+            
+           
+        </steps>
+    </taskbody>
+</task>
