@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?path2project ?><map class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(map mapgroup-d) (topic indexing-d)" id="Bats3" title="Bats3" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+<?path2project ?><map cascade="nomerge" class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(map mapgroup-d) (topic indexing-d)" id="Bats3" title="Bats3" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
 <topicmeta class="- map/topicmeta ">
  <audience class="- topic/audience " experiencelevel="expert" job="administering" type="administrator"></audience>
 </topicmeta><?Pub Caret1?>
