@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>DITA Topic Map</title>
+  <topicref href="lang-areg.dita"/>
+  <topicref href="lang-beby.dita"/>
+  <topicref href="lang-bgbg.dita"/>
+  <topicref href="lang-caes.dita"/>
+  <topicref href="lang-cscz.dita"/>
+  <topicref href="lang-dadk.dita"/>
+  <topicref href="lang-dech.dita"/>
+  <topicref href="lang-dede.dita"/>
+  <topicref href="lang-elgr.dita"/>
+  <topicref href="lang-enca.dita"/>
+  <topicref href="lang-engb.dita"/>
+  <topicref href="lang-enus.dita"/>
+  <topicref href="lang-eses.dita"/>
+  <topicref href="lang-etee.dita"/>
+  <topicref href="lang-fifi.dita"/>
+  <topicref href="lang-frbe.dita"/>
+  <topicref href="lang-frca.dita"/>
+  <topicref href="lang-frch.dita"/>
+  <topicref href="lang-frfr.dita"/>
+  <topicref href="lang-heil.dita"/>
+  <topicref href="lang-hiin.dita"/>
+  <topicref href="lang-hrhr.dita"/>
+  <topicref href="lang-huhu.dita"/>
+  <topicref href="lang-isis.dita"/>
+  <topicref href="lang-itch.dita"/>
+  <topicref href="lang-itit.dita"/>
+  <topicref href="lang-jajp.dita"/>
+  <topicref href="lang-kokr.dita"/>
+  <topicref href="lang-ltlt.dita"/>
+  <topicref href="lang-lvlv.dita"/>
+  <topicref href="lang-mkmk.dita"/>
+  <topicref href="lang-next.dita"/>
+  <topicref href="lang-nlbe.dita"/>
+  <topicref href="lang-nlnl.dita"/>
+  <topicref href="lang-nono.dita"/>
+  <topicref href="lang-plpl.dita"/>
+  <topicref href="lang-ptbr.dita"/>
+  <topicref href="lang-ptpt.dita"/>
+  <topicref href="lang-roro.dita"/>
+  <topicref href="lang-ruru.dita"/>
+  <topicref href="lang-sksk.dita"/>
+  <topicref href="lang-slsi.dita"/>
+  <topicref href="lang-srsp.dita"/>
+  <topicref href="lang-svse.dita"/>
+  <topicref href="lang-task.dita"/>
+  <topicref href="lang-thth.dita"/>
+  <topicref href="lang-trtr.dita"/>
+  <topicref href="lang-ukua.dita"/>
+  <topicref href="lang-urpk.dita"/>
+  <topicref href="lang-zhcn.dita"/>
+  <topicref href="lang-zhtw.dita"/>
+</map>
