@@ -1,31 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?path2project ?><map cascade="nomerge" class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                         " id="main" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
-  <topicref class="- map/topicref " href="a.xml" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">a</navtitle><?ditaot gentext?><linktext class="- map/linktext ">a</linktext></topicmeta></topicref>
-  <keydef class="+ map/topicref mapgroup-d/keydef " keys="below_key" processing-role="resource-only"><topicmeta class="- map/topicmeta "><keywords class="- topic/keywords ">
+<?path2project ?>
+<map cascade="nomerge" class="- map/map " ditaarch:DITAArchVersion="1.2"
+  domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                         "
+  id="main" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <topicref class="- map/topicref " href="a.xml" type="topic">
+    <topicmeta class="- map/topicmeta ">
+      <navtitle class="- topic/navtitle ">a</navtitle>
+      <?ditaot gentext?>
+      <linktext class="- map/linktext ">a</linktext>
+    </topicmeta>
+  </topicref>
+  <keydef class="+ map/topicref mapgroup-d/keydef " keys="below_key" processing-role="resource-only">
+    <topicmeta class="- map/topicmeta ">
+      <keywords class="- topic/keywords ">
         <keyword class="- topic/keyword ">value</keyword>
-      </keywords></topicmeta></keydef><keydef class="+ map/topicref mapgroup-d/keydef " href="../../foo/bar/a.xml" keys="below_key_local" processing-role="resource-only" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">a</navtitle><?ditaot gentext?><linktext class="- map/linktext ">a</linktext><keywords class="- topic/keywords ">
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef class="+ map/topicref mapgroup-d/keydef " href="../../foo/bar/a.xml" keys="below_key_local" processing-role="resource-only" type="topic">
+    <topicmeta class="- map/topicmeta ">
+      <navtitle class="- topic/navtitle ">a</navtitle>
+      <?ditaot gentext?>
+      <linktext class="- map/linktext ">a</linktext>
+      <keywords class="- topic/keywords ">
         <keyword class="- topic/keyword ">value</keyword>
-      </keywords><keywords class="- topic/keywords ">
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef class="+ map/topicref mapgroup-d/keydef " href="http://www.example.com/belows" keys="below_key_external" processing-role="resource-only" scope="external">
+    <topicmeta class="- map/topicmeta ">
+      <navtitle class="- topic/navtitle ">http://www.example.com/belows</navtitle>
+      <?ditaot gentext?>
+      <linktext class="- map/linktext ">http://www.example.com/belows</linktext>
+      <keywords class="- topic/keywords ">
         <keyword class="- topic/keyword ">value</keyword>
-      </keywords><keywords class="- topic/keywords ">
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef class="+ map/topicref mapgroup-d/keydef " keys="same_key" processing-role="resource-only">
+    <topicmeta class="- map/topicmeta ">
+      <keywords class="- topic/keywords ">
         <keyword class="- topic/keyword ">value</keyword>
-      </keywords></topicmeta></keydef><keydef class="+ map/topicref mapgroup-d/keydef " href="http://www.example.com/belows" keys="below_key_external" processing-role="resource-only" scope="external"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">http://www.example.com/belows</navtitle><?ditaot gentext?><linktext class="- map/linktext ">http://www.example.com/belows</linktext><keywords class="- topic/keywords ">
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef class="+ map/topicref mapgroup-d/keydef " href="a.xml" keys="same_key_local" processing-role="resource-only" type="topic">
+    <topicmeta class="- map/topicmeta ">
+      <navtitle class="- topic/navtitle ">a</navtitle>
+      <?ditaot gentext?>
+      <linktext class="- map/linktext ">a</linktext>
+      <keywords class="- topic/keywords ">
         <keyword class="- topic/keyword ">value</keyword>
-      </keywords></topicmeta></keydef>
-  <keydef class="+ map/topicref mapgroup-d/keydef " keys="same_key" processing-role="resource-only"><topicmeta class="- map/topicmeta "><keywords class="- topic/keywords ">
+      </keywords>
+      <keywords class="- topic/keywords ">
         <keyword class="- topic/keyword ">value</keyword>
-      </keywords></topicmeta></keydef><keydef class="+ map/topicref mapgroup-d/keydef " href="a.xml" keys="same_key_local" processing-role="resource-only" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">a</navtitle><?ditaot gentext?><linktext class="- map/linktext ">a</linktext><keywords class="- topic/keywords ">
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef class="+ map/topicref mapgroup-d/keydef " href="http://www.example.com/same" keys="same_key_external" processing-role="resource-only" scope="external">
+    <topicmeta class="- map/topicmeta ">
+      <navtitle class="- topic/navtitle ">http://www.example.com/same</navtitle>
+      <?ditaot gentext?>
+      <linktext class="- map/linktext ">http://www.example.com/same</linktext>
+      <keywords class="- topic/keywords ">
         <keyword class="- topic/keyword ">value</keyword>
-      </keywords><keywords class="- topic/keywords ">
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef class="+ map/topicref mapgroup-d/keydef " keys="above_key" processing-role="resource-only">
+    <topicmeta class="- map/topicmeta ">
+      <keywords class="- topic/keywords ">
         <keyword class="- topic/keyword ">value</keyword>
-      </keywords></topicmeta></keydef><keydef class="+ map/topicref mapgroup-d/keydef " href="http://www.example.com/same" keys="same_key_external" processing-role="resource-only" scope="external"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">http://www.example.com/same</navtitle><?ditaot gentext?><linktext class="- map/linktext ">http://www.example.com/same</linktext><keywords class="- topic/keywords ">
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef class="+ map/topicref mapgroup-d/keydef " href="baz/qux/../../a.xml" keys="above_key_local" processing-role="resource-only" type="topic">
+    <topicmeta class="- map/topicmeta ">
+      <navtitle class="- topic/navtitle ">a</navtitle>
+      <?ditaot gentext?>
+      <linktext class="- map/linktext ">a</linktext>
+      <keywords class="- topic/keywords ">
         <keyword class="- topic/keyword ">value</keyword>
-      </keywords></topicmeta></keydef>
-  <keydef class="+ map/topicref mapgroup-d/keydef " keys="above_key" processing-role="resource-only"><topicmeta class="- map/topicmeta "><keywords class="- topic/keywords ">
+      </keywords>
+      <keywords class="- topic/keywords ">
         <keyword class="- topic/keyword ">value</keyword>
-      </keywords></topicmeta></keydef><keydef class="+ map/topicref mapgroup-d/keydef " href="baz/qux/../../a.xml" keys="above_key_local" processing-role="resource-only" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">a</navtitle><?ditaot gentext?><linktext class="- map/linktext ">a</linktext><keywords class="- topic/keywords ">
+      </keywords>
+      <keywords class="- topic/keywords ">
         <keyword class="- topic/keyword ">value</keyword>
-      </keywords></topicmeta></keydef><keydef class="+ map/topicref mapgroup-d/keydef " href="http://www.example.com/above" keys="above_key_external" processing-role="resource-only" scope="external"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">http://www.example.com/above</navtitle><?ditaot gentext?><linktext class="- map/linktext ">http://www.example.com/above</linktext><keywords class="- topic/keywords ">
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef class="+ map/topicref mapgroup-d/keydef " href="http://www.example.com/above" keys="above_key_external" processing-role="resource-only" scope="external">
+    <topicmeta class="- map/topicmeta ">
+      <navtitle class="- topic/navtitle ">http://www.example.com/above</navtitle>
+      <?ditaot gentext?>
+      <linktext class="- map/linktext ">http://www.example.com/above</linktext>
+      <keywords class="- topic/keywords ">
         <keyword class="- topic/keyword ">value</keyword>
-      </keywords></topicmeta></keydef>
+      </keywords>
+    </topicmeta>
+  </keydef>
 </map>
