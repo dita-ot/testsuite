@@ -17,7 +17,7 @@
       </keywords>
     </topicmeta>
   </keydef>
-  <keydef class="+ map/topicref mapgroup-d/keydef " href="../../foo/bar/a.xml" keys="below_key_local" processing-role="resource-only" type="topic">
+  <keydef class="+ map/topicref mapgroup-d/keydef " href="a.xml" keys="below_key_local" processing-role="resource-only" type="topic">
     <topicmeta class="- map/topicmeta ">
       <navtitle class="- topic/navtitle ">a</navtitle>
       <?ditaot gentext?>
@@ -74,7 +74,7 @@
       </keywords>
     </topicmeta>
   </keydef>
-  <keydef class="+ map/topicref mapgroup-d/keydef " href="baz/qux/../../a.xml" keys="above_key_local" processing-role="resource-only" type="topic">
+  <keydef class="+ map/topicref mapgroup-d/keydef " href="a.xml" keys="above_key_local" processing-role="resource-only" type="topic">
     <topicmeta class="- map/topicmeta ">
       <navtitle class="- topic/navtitle ">a</navtitle>
       <?ditaot gentext?>
