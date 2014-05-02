@@ -214,12 +214,14 @@ public final class IntegrationTest {
                             XMLUnit.setNormalizeWhitespace(true);
                             XMLUnit.setIgnoreWhitespace(true);
                             XMLUnit.setIgnoreDiffBetweenTextAndCDATA(true);
+                            XMLUnit.setIgnoreComments(true);
                             assertXMLEqual(parseHtml(e), parseHtml(a));
                         } else if (FileUtils.isDITAFile(name)) {
                             TestUtils.resetXMLUnit();
                             XMLUnit.setNormalizeWhitespace(true);
                             XMLUnit.setIgnoreWhitespace(true);
                             XMLUnit.setIgnoreDiffBetweenTextAndCDATA(true);
+                            XMLUnit.setIgnoreComments(true);
                             assertXMLEqual(parseXml(e), parseXml(a));
                         } else if (name.endsWith(".txt")) {
                         	//assertEquals(readTextFile(e), readTextFile(a));
