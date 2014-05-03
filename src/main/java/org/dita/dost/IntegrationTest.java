@@ -292,7 +292,8 @@ public final class IntegrationTest {
     }
     
     private Document parseHtml(final File f) throws SAXException, IOException {
-        final Document d = htmlb.parse(f);
+        Document d = htmlb.parse(f);
+        d = removeCopyright(d);
         return rewriteIds(d, htmlIdPattern);
     }
     
@@ -322,6 +323,18 @@ public final class IntegrationTest {
             }
             n = next;
         }
+    }
+
+    private Document removeCopyright(final Document doc) {
+        final NodeList ns = doc.getElementsByTagName("meta");
+        for (int i = 0; i < ns.getLength(); i++) {
+            final Element e = (Element) ns.item(i);
+            final String name = e.getAttribute("name");
+            if (name.equals("copyright") || name.equals("DC.rights.owner")) {
+                e.removeAttribute("content");
+            }
+        }
+        return doc;
     }
     
     private Document rewriteIds(final Document doc, final Map<String, Pattern> patterns) {
