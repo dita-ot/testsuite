@@ -216,7 +216,7 @@ public final class IntegrationTest {
                             XMLUnit.setIgnoreDiffBetweenTextAndCDATA(true);
                             XMLUnit.setIgnoreComments(true);
                             assertXMLEqual(parseHtml(e), parseHtml(a));
-                        } else if (FileUtils.isDITAFile(name)) {
+                        } else if (name.endsWith(".xml") || name.endsWith(".dita")) {
                             TestUtils.resetXMLUnit();
                             XMLUnit.setNormalizeWhitespace(true);
                             XMLUnit.setIgnoreWhitespace(true);
