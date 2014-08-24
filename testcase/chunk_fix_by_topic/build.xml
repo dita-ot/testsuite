@@ -67,4 +67,5 @@
       <fileset dir="${temp.dir}/preprocess"/>
     </copy>
   </target>
+  <property name="exp.message-count.warn" value="1"/>
 </project>
