@@ -8,4 +8,4 @@
       </indexterm><indexterm class="- topic/indexterm ">programming elements</indexterm></p>
     </section>
    </body>
-  <related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="mapten"><link class="- topic/link " mapclass="- map/topicref " href="Y1.dita" role="parent" type="topic"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Y1</linktext><?ditaot genshortdesc?><?ditaot genshortdesc?><desc class="- topic/desc "/></link></linkpool></related-links></topic>
+  <related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="mapten"><link class="- topic/link " mapclass="- map/topicref " href="Y1.dita" role="parent" type="topic" format="dita" scope="local"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Y1</linktext><?ditaot genshortdesc?><desc class="- topic/desc "/></link></linkpool></related-links></topic>

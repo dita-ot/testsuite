@@ -20,5 +20,5 @@ The original demo ant script "<codeph class="+ topic/ph pr-d/codeph ">build.xml<
 "<codeph class="+ topic/ph pr-d/codeph ">build_demo.xml</codeph>" should be used to verify the functions of
 the toolkit after this release.</p>
 </body>
-<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="Bats3"><link class="- topic/link " mapclass="- map/topicref " type="topic" href="bats.dita" role="parent"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Programming elements</linktext></link></linkpool></related-links>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="Bats3"><link format="dita" scope="local" class="- topic/link " mapclass="- map/topicref " type="topic" href="bats.dita" role="parent"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Programming elements</linktext></link></linkpool></related-links>
 </topic>

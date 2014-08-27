@@ -4,4 +4,4 @@
 <body class="- topic/body ">
 <p class="- topic/p ">[and a koala]</p>
 </body>
-<related-links class="- topic/related-links "><linkpool class="- topic/linkpool "><link class="- topic/link " mapclass="- map/topicref " type="topic" href="N1.dita#N1" role="parent"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Nesting topic 1 - parent</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">[llama llama]</desc></link></linkpool></related-links></topic>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool "><link format="dita" scope="local" class="- topic/link " mapclass="- map/topicref " type="topic" href="N1.dita#N1" role="parent"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Nesting topic 1 - parent</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">[llama llama]</desc></link></linkpool></related-links></topic>

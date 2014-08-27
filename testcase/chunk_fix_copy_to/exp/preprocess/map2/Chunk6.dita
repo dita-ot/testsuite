@@ -4,4 +4,4 @@
 <p class="- topic/p ">content</p>
 </body>
 
-<related-links class="- topic/related-links "><linkpool class="- topic/linkpool "><linkpool class="- topic/linkpool "><link class="- topic/link " mapclass="- map/topicref " href="Chunk7.dita" role="child" type="topic"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Topic Z1</linktext><?ditaot genshortdesc?><?ditaot genshortdesc?><desc class="- topic/desc "/></link></linkpool></linkpool></related-links></topic>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool "><linkpool class="- topic/linkpool "><link format="dita" scope="local" class="- topic/link " mapclass="- map/topicref " href="Chunk7.dita" role="child" type="topic"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Topic Z1</linktext><?ditaot genshortdesc?><?ditaot genshortdesc?><desc class="- topic/desc "/></link></linkpool></linkpool></related-links></topic>

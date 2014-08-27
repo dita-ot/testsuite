@@ -11,4 +11,4 @@ are operating at maximum efficiency.</shortdesc>
 </ph>
 </lines>
 </body>
-<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="mapfour"><linkpool class="- topic/linkpool "><link class="- topic/link " mapclass="- map/topicref " type="topic" href="nested1.dita" role="child"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>nested1</linktext></link></linkpool></linkpool></related-links></topic>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="mapfour"><linkpool class="- topic/linkpool "><link class="- topic/link " mapclass="- map/topicref " type="topic" href="nested1.dita" role="child" format="dita" scope="local"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>nested1</linktext></link></linkpool></linkpool></related-links></topic>

@@ -4,4 +4,4 @@
 <body class="- topic/body ">
 <p class="- topic/p ">[and a koala]</p>
 </body>
-<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="map7"><link class="- topic/link " mapclass="- map/topicref " type="topic" href="parent2.dita" role="parent"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>parent2</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">[llama llama]</desc></link></linkpool></related-links></topic><?Pub *0000000331?>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="map7"><link format="dita" scope="local" class="- topic/link " mapclass="- map/topicref " type="topic" href="parent2.dita" role="parent"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>parent2</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">[llama llama]</desc></link></linkpool></related-links></topic><?Pub *0000000331?>

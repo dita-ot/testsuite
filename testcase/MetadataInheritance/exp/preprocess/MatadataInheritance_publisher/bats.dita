@@ -10,5 +10,5 @@ elements</indexterm>
  </indexterm><indexterm class="- topic/indexterm ">programming elements</indexterm></p>
 </section>
    </body>
-<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="Bats3"><linkpool class="- topic/linkpool "><link class="- topic/link " mapclass="- map/topicref " type="topic" href="batcaring.dita" role="child"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>batcaring</linktext></link></linkpool></linkpool></related-links>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="Bats3"><linkpool class="- topic/linkpool "><link format="dita" scope="local" class="- topic/link " mapclass="- map/topicref " type="topic" href="batcaring.dita" role="child"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>batcaring</linktext></link></linkpool></linkpool></related-links>
 </topic>

@@ -5,4 +5,4 @@
 </body>
 
 
-<related-links class="- topic/related-links "><linkpool class="- topic/linkpool "><linkpool class="- topic/linkpool "><link class="- topic/link " mapclass="- map/topicref " href="Y1.dita" role="child" type="topic"><?ditaot gentext?><linktext class="- topic/linktext ">Topic Y1</linktext></link><link class="- topic/link " mapclass="- map/topicref " href="Y2.dita" role="child" type="topic"><?ditaot gentext?><linktext class="- topic/linktext ">Topic Y2</linktext></link></linkpool></linkpool></related-links></topic>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool "><linkpool class="- topic/linkpool "><link format="dita" scope="local" class="- topic/link " mapclass="- map/topicref " href="Y1.dita" role="child" type="topic"><?ditaot gentext?><linktext class="- topic/linktext ">Topic Y1</linktext></link><link format="dita" scope="local" class="- topic/link " mapclass="- map/topicref " href="Y2.dita" role="child" type="topic"><?ditaot gentext?><linktext class="- topic/linktext ">Topic Y2</linktext></link></linkpool></linkpool></related-links></topic>
