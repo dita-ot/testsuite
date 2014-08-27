@@ -3,7 +3,7 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
  "topic.dtd">
 <?Pub Inc?>
-<?path2project?>
+<?path2project?><?path2project-uri ./?>
 <?Pub Caret?>
 <topic id="indxdir-main" xml:lang="en-us">
 <title>Topic in the subdir</title>

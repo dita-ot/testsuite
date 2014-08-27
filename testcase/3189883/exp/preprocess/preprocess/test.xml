@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?path2project?><topic id="topic" class="- topic/topic ">
+<?xml version="1.0" encoding="utf-8"?><?path2project?><?path2project-uri ./?><topic id="topic" class="- topic/topic ">
  <title class="- topic/title ">Topic title</title>
  <shortdesc class="- topic/shortdesc ">testAn equation: <equation class="+ topic/fig math-d/equation ">
   <math type="presentation">

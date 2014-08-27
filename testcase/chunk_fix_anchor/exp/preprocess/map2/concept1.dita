@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?path2project?><dita xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2"><?path2project?><concept id="concept1r" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic concept/concept ">
+<?xml version="1.0" encoding="utf-8"?><?path2project?><?path2project-uri ./?><dita xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2"><?path2project?><?path2project-uri ./?><concept id="concept1r" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic concept/concept ">
 <title class="- topic/title ">Concept1</title>
 <shortdesc class="- topic/shortdesc ">Put your short description here; used for first paragraph
 and abstract.</shortdesc>
@@ -13,7 +13,7 @@ concept.</p></section>
 <example class="- topic/example "><title class="- topic/title ">Example</title><p class="- topic/p ">Here's a little example section
 in a concept.</p></example>
 </conbody>
-<?path2project?><reference id="reference1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic reference)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic       reference/reference ">
+<?path2project?><?path2project-uri ./?><reference id="reference1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic reference)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic       reference/reference ">
 <title class="- topic/title ">reference1</title>
 <shortdesc class="- topic/shortdesc ">Put your short description here; used for first paragraph
 and abstract.</shortdesc>
