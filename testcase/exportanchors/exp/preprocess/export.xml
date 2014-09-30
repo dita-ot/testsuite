@@ -2,9 +2,9 @@
 <stub>
   <file name="componentA/configA.dita">
     <topicid name="configA"/>
-    <id name="step3"/>
-    <id name="step2"/>
     <id name="step1"/>
+    <id name="step2"/>
+    <id name="step3"/>
   </file>
   <file name="componentA/this.dita">
     <topicid name="this"/>
@@ -13,8 +13,8 @@
   </file>
   <file name="componentA/configA.dita">
     <topicid name="configA"/>
-    <id name="step2"/>
     <id name="step1"/>
+    <id name="step2"/>
     <keyref name="commonconfig"/>
   </file>
 </stub>
