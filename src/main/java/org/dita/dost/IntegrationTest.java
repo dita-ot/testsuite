@@ -1,8 +1,8 @@
 package org.dita.dost;
 
 import static org.custommonkey.xmlunit.XMLAssert.*;
-import static org.dita.dost.writer.DitaWriter.*;
 import static org.junit.Assert.*;
+import static org.dita.dost.util.Constants.*;
 
 import java.io.BufferedReader;
 import java.io.File;
