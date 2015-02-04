@@ -3,5 +3,5 @@
 <body class="- topic/body ">
 	<p id="content2" class="- topic/p "> content of test2 </p>
 </body>
-<related-links class="- topic/related-links "><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="newtest2.dita" mapclass="- map/topicref " role="sibling" scope="local" type="topic"><linktext class="- topic/linktext "><?ditaot gentext?>test 2</linktext></link></linkpool><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="newtest2.dita" mapclass="- map/topicref " role="sibling" scope="local" type="topic"><linktext class="- topic/linktext "><?ditaot gentext?>test 2</linktext></link></linkpool></related-links>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="newtest2.dita" mapclass="- map/topicref " role="sibling" scope="local" type="topic"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>test 2</linktext></link></linkpool><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="newtest2.dita" mapclass="- map/topicref " role="sibling" scope="local" type="topic"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>test 2</linktext></link></linkpool></related-links>
 </topic>
