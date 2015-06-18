@@ -13,4 +13,5 @@
          <property name="dita.temp.dir" location="${temp.dir}/htmlhelp"/>
       </ant>
    </target>
+  <property name="exp.message-count.error.windows" value="1"/>
 </project>

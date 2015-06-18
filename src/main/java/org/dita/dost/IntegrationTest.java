@@ -186,17 +186,30 @@ public final class IntegrationTest {
             final Vector<String> targets = new Vector<String>();
             targets.addElement(project.getDefaultTarget());
             project.executeTargets(targets);
-            
-            assertEquals("Warn message count does not match expected",
-                         project.getProperty("exp.message-count.warn") != null ? Integer.parseInt(project.getProperty("exp.message-count.warn")) : 0,
-                         countMessages(listener.messages, Project.MSG_WARN));
-            assertEquals("Error message count does not match expected",
-                         project.getProperty("exp.message-count.error") != null ? Integer.parseInt(project.getProperty("exp.message-count.error")) : 0,
-                         countMessages(listener.messages, Project.MSG_ERR ));
+
+            int warnCount = 0;
+            if (isWindows() && project.getProperty("exp.message-count.warn.windows") != null) {
+                warnCount = Integer.parseInt(project.getProperty("exp.message-count.warn.windows"));
+            } else if (project.getProperty("exp.message-count.warn") != null) {
+                warnCount = Integer.parseInt(project.getProperty("exp.message-count.warn"));
+            }
+            assertEquals("Warn message count does not match expected", warnCount, countMessages(listener.messages, Project.MSG_WARN));
+            int errorCount = 0;
+            if (isWindows() && project.getProperty("exp.message-count.error.windows") != null) {
+                errorCount = Integer.parseInt(project.getProperty("exp.message-count.error.windows"));
+            } else if (project.getProperty("exp.message-count.error") != null) {
+                errorCount = Integer.parseInt(project.getProperty("exp.message-count.error"));
+            }
+            assertEquals("Error message count does not match expected", errorCount, countMessages(listener.messages, Project.MSG_ERR));
         } finally {
             System.setOut(savedOut);
             System.setErr(savedErr);
         }
+    }
+
+    private static boolean isWindows() {
+        final String osName = System.getProperty("os.name");
+        return osName.startsWith("Windows");
     }
     
     private void compare(final File exp, final File act) throws Throwable {
