@@ -32,4 +32,5 @@
       <property name="outer.control" value="quiet"/>
     </ant>
   </target>
+  <property name="exp.message-count.error" value="12"/>
 </project>
