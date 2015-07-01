@@ -16,4 +16,5 @@
     </ant>
   </target>
   <property name="exp.message-count.warn" value="1"/>
+  <property name="exp.message-count.error" value="2"/>
 </project>

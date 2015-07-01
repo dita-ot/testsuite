@@ -9,5 +9,5 @@
    <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
    <target name="all" depends="bookmap(2)2xhtml"/>
   <property name="exp.message-count.warn" value="3"/>
-  <property name="exp.message-count.error" value="3"/>
+  <property name="exp.message-count.error" value="6"/>
 </project>
