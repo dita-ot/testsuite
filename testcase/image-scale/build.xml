@@ -12,6 +12,12 @@
       <property name="args.input" location="${test.basedir}/src/test.dita"/>
       <property name="output.dir" location="${result.dir}/xhtml"/>
       <property name="dita.temp.dir" location="${temp.dir}/xhtml"/>
+      <property name="clean.temp" value="no"/>
     </ant>
+    <copy todir="${result.dir}/xhtml">
+      <fileset dir="${temp.dir}/xhtml">
+        <include name="*.dita"/>
+      </fileset>
+    </copy>
   </target>
 </project>
