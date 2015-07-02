@@ -65,6 +65,7 @@ public final class IntegrationTest {
     private static final File resultDir = new File(baseDir, "testresult");
     private static DocumentBuilder db;
     private static HtmlDocumentBuilder htmlb;
+    private static int level;
 
     private final File testDir;
     
@@ -117,16 +118,47 @@ public final class IntegrationTest {
     public static void setUpBeforeClass() throws Exception {
         db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
         htmlb = new HtmlDocumentBuilder();
+        final String l = System.getProperty("log-level");
+        level = l != null ? Integer.parseInt(l) : -2;
     }
         
     @Test
     public void test() throws Throwable {
         final File expDir = new File(testDir, EXP_DIR);
         System.err.println("Testcase: " + testDir.getName());
+        List<TestListener.Message> log = null;
         try {
-            run(testDir, expDir.list());
+            log = run(testDir, expDir.list());
             compare(expDir, new File(resultDir, testDir.getName()));
         } catch (final Throwable e) {
+            if (level >= 0) {
+                System.err.println("Log start: " + testDir.getName());
+                for (final TestListener.Message m : log) {
+                    if (m.level <= level) {
+                        switch (m.level) {
+                            case -1:
+                                break;
+                            case Project.MSG_ERR:
+                                System.err.print("ERROR: ");
+                                break;
+                            case Project.MSG_WARN:
+                                System.err.print("WARN:  ");
+                                break;
+                            case Project.MSG_INFO:
+                                System.err.print("INFO:  ");
+                                break;
+                            case Project.MSG_VERBOSE:
+                                System.err.print("VERBO: ");
+                                break;
+                            case Project.MSG_DEBUG:
+                                System.err.print("DEBUG: ");
+                                break;
+                        }
+                        System.err.println(m.message);
+                    }
+                }
+                System.err.println("Log start: " + testDir.getName());
+            }
             throw new Throwable("Case " + testDir.getName() + " failed: " + e.getMessage(), e);
         }
         
@@ -147,11 +179,12 @@ public final class IntegrationTest {
      * 
      * @param d test source directory
      * @param transtypes list of transtypes to test
+     * @return list of log messages
      * @throws Exception if conversion failed
      */
-    private void run(final File d, final String[] transtypes) throws Exception {
+    private List<TestListener.Message> run(final File d, final String[] transtypes) throws Exception {
         if (transtypes.length == 0) {
-            return;
+            return null;
         }
         final TestListener listener = new TestListener(System.out, System.err);
         final PrintStream savedErr = System.err;
@@ -205,6 +238,7 @@ public final class IntegrationTest {
             System.setOut(savedOut);
             System.setErr(savedErr);
         }
+        return listener.messages;
     }
 
     private static boolean isWindows() {
@@ -438,32 +472,32 @@ public final class IntegrationTest {
         
         //@Override
         public void buildStarted(BuildEvent event) {
-            //System.out.println("build started: " + event.getMessage());
+            messages.add(new Message(-1, "build started: " + event.getMessage()));
         }
 
         //@Override
         public void buildFinished(BuildEvent event) {
-            //System.out.println("build finished: " + event.getMessage());
+            messages.add(new Message(-1, "build finished: " + event.getMessage()));
         }
 
         //@Override
         public void targetStarted(BuildEvent event) {
-            //System.out.println(event.getTarget().getName() + ":");
+            messages.add(new Message(-1, event.getTarget().getName() + ":"));
         }
 
         //@Override
         public void targetFinished(BuildEvent event) {
-            //System.out.println("target finished: " + event.getTarget().getName());
+            messages.add(new Message(-1, "target finished: " + event.getTarget().getName()));
         }
 
         //@Override
         public void taskStarted(BuildEvent event) {
-            //System.out.println("task started: " + event.getTask().getTaskName());
+            messages.add(new Message(Project.MSG_DEBUG, "task started: " + event.getTask().getTaskName()));
         }
 
         //@Override
         public void taskFinished(BuildEvent event) {
-            //System.out.println("task finished: " + event.getTask().getTaskName());
+            messages.add(new Message(Project.MSG_DEBUG, "task finished: " + event.getTask().getTaskName()));
         }
 
         //@Override
