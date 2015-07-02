@@ -131,7 +131,7 @@ public final class IntegrationTest {
             log = run(testDir, expDir.list());
             compare(expDir, new File(resultDir, testDir.getName()));
         } catch (final Throwable e) {
-            if (level >= 0) {
+            if (log != null && level >= 0) {
                 System.err.println("Log start: " + testDir.getName());
                 for (final TestListener.Message m : log) {
                     if (m.level <= level) {
@@ -184,7 +184,7 @@ public final class IntegrationTest {
      */
     private List<TestListener.Message> run(final File d, final String[] transtypes) throws Exception {
         if (transtypes.length == 0) {
-            return null;
+            return Collections.emptyList();
         }
         final TestListener listener = new TestListener(System.out, System.err);
         final PrintStream savedErr = System.err;
@@ -237,8 +237,8 @@ public final class IntegrationTest {
         } finally {
             System.setOut(savedOut);
             System.setErr(savedErr);
+            return listener.messages;
         }
-        return listener.messages;
     }
 
     private static boolean isWindows() {
