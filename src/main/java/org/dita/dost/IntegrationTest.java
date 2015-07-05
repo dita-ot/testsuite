@@ -263,7 +263,7 @@ public final class IntegrationTest {
                             XMLUnit.setIgnoreDiffBetweenTextAndCDATA(true);
                             XMLUnit.setIgnoreComments(true);
                             assertXMLEqual(parseHtml(e), parseHtml(a));
-                        } else if (name.endsWith(".xml") || name.endsWith(".dita")) {
+                        } else if (name.endsWith(".xml") || name.endsWith(".dita") || name.endsWith(".ditamap")) {
                             TestUtils.resetXMLUnit();
                             XMLUnit.setNormalizeWhitespace(true);
                             XMLUnit.setIgnoreWhitespace(true);
