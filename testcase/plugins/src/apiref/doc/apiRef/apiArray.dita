@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?><!--Arbortext, Inc., 1988-2005, v.4002-->
 <!DOCTYPE reference
-  PUBLIC "-//IBM//DTD DITA Reference//EN" "..\dtd\reference.dtd">
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "..\dtd\reference.dtd">
 <reference id="apiArray" outputclass="element" xml:lang="en-us">
 <title>apiArray</title>
 <shortdesc>The &lt;apiArray&gt; element specifies any type parts, classifier

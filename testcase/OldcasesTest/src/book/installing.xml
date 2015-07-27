@@ -3,7 +3,7 @@
  | This file is part of the DITA package on IBM's developerWorks site.
  | See license.txt for disclaimers and permissions.
  *-->
-<!DOCTYPE topic PUBLIC "-//IBM//DTD DITA Topic//EN"
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
  "../../dtd/topic.dtd">
 <topic id="installing" xml:lang="en-us">
 <title>Installing</title>

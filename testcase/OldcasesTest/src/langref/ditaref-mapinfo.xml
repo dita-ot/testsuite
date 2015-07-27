@@ -4,7 +4,7 @@
  | See license.txt for disclaimers and permissions.
  *-->
 <?xml-stylesheet href="../../xsl/dita2html_shell.xsl" type="text/xsl"?>
-<!DOCTYPE topic PUBLIC "-//IBM//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
 <topic id="ditaref-bkinfo">
   <title>DITA Language Reference</title>
   <titlealts>

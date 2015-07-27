@@ -4,7 +4,7 @@
  | See license.txt for disclaimers and permissions.
  *-->
 <?xml-stylesheet href="../../xsl/ditaview_shell.xsl" type="text/xsl"?>
-<!DOCTYPE task PUBLIC "-//IBM//DTD DITA Task//EN" "../../dtd/task.dtd">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "../../dtd/task.dtd">
 <task id="shovellingsnow" xml:lang="en-us"><title>Shovelling snow</title>
 <taskbody><context><p>Keep your driveway and sidewalks clear of snow and ice by shovelling after 
 any snowfall.</p></context><steps><step><cmd>Get the shovel out of the garage</cmd></step><step><cmd>Shovel the driveway, starting at the garage door and working out to the 

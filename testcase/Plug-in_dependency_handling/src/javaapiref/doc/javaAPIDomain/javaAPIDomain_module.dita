@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Arbortext, Inc., 1988-2004, v.4002-->
-<!DOCTYPE reference PUBLIC "-//IBM//DTD DITA Reference//EN"
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
  "..\dtd\reference.dtd">
 <reference id="javaapi-domain_module" outputclass="module" xml:lang="en-us">
 <title>javaapi-domain module</title>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE reference
-  PUBLIC "-//IBM//DTD DITA Reference//EN" "..\..\dtd\reference.dtd">
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "..\..\dtd\reference.dtd">
 <reference id="apiref" xml:lang="en-us"><title>Thesaurus Content Model Definitions</title><refbody/>
 <reference id="altLabel-reference" xml:lang="en-us"><title>Element: altLabel</title><refbody><section id="altLabel-containedBy-section" outputclass="elementContainedBy"><title>Contained by</title><p id="altLabel-containedBy-p"><xref href="subjectDomain/subjectLabels.xml">subjectLabels</xref></p></section><section id="altLabel-contains-section" outputclass="elementContains"><title>Contains</title><p id="altLabel-contains-p"><xref href="../../../doc/langref/tm.xml">tm</xref></p></section><section id="altLabel-contentModel-section" outputclass="elementContentModel"><title>Content model</title><p id="altLabel-contentModel-p">
   (text data or <xref href="../../../doc/langref/tm.xml">tm</xref>)

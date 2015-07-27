@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE reference
-  PUBLIC "-//IBM//DTD DITA Reference//EN" "..\..\dtd\reference.dtd">
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "..\..\dtd\reference.dtd">
 <reference id="javaapiref" xml:lang="en-us"><title>Java API Reference Content Model Definitions</title><refbody/>
 <reference id="javaAPIMap-reference" xml:lang="en-us"><title>Element: javaAPIMap</title><refbody><section id="javaAPIMap-containedBy-section" outputclass="hideSection"/><section id="javaAPIMap-contains-section" outputclass="elementContains"><title>Contains</title><p id="javaAPIMap-contains-p"><xref href="javaAPIMap/javaPackageRef.dita">javaPackageRef</xref>, <keyword>reltable</keyword>, <keyword>topicmeta</keyword></p></section><section id="javaAPIMap-contentModel-section" outputclass="elementContentModel"><title>Content model</title><p id="javaAPIMap-contentModel-p">
   (

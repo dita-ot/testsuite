@@ -3,7 +3,7 @@
  | This file is part of the DITA package on IBM's developerWorks site.
  | See license.txt for disclaimers and permissions.
  *-->
-<!DOCTYPE task PUBLIC "-//IBM//DTD DITA Task//EN"
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
  "../../dtd/task.dtd">
 <task id="installdb" xml:lang="en-us">
 <title>Installing your own Database</title>
