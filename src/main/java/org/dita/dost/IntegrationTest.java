@@ -76,8 +76,8 @@ public final class IntegrationTest {
      */
     @Parameters
     public static Collection<Object[]> getFiles() {
-    	final Set<String> testNames = System.getProperty("only-test") != null && !System.getProperty("only-test").isEmpty()
-    							  ? new HashSet<String>(Arrays.asList(System.getProperty("only-test").split("[\\s|,]")))
+    	final Set<String> testNames = System.getProperty("only_test") != null && !System.getProperty("only_test").isEmpty()
+    							  ? new HashSet<String>(Arrays.asList(System.getProperty("only_test").split("[\\s|,]")))
     							  : null;
         final List<File> cases = Arrays.asList(resourceDir.listFiles(new FileFilter() {
             public boolean accept(File f) {
@@ -118,7 +118,7 @@ public final class IntegrationTest {
     public static void setUpBeforeClass() throws Exception {
         db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
         htmlb = new HtmlDocumentBuilder();
-        final String l = System.getProperty("log-level");
+        final String l = System.getProperty("log_level");
         level = l != null ? Integer.parseInt(l) : -2;
     }
         
@@ -209,7 +209,7 @@ public final class IntegrationTest {
             project.setUserProperty("preprocess.copy-generated-files.skip", "true");
             project.setUserProperty("ant.file", buildFile.getAbsolutePath());
             project.setUserProperty("ant.file.type", "file");
-            final String ditaDirProperty = System.getProperty("dita.dir");
+            final String ditaDirProperty = System.getProperty("dita_dir");
             project.setUserProperty("dita.dir", new File(ditaDirProperty != null
                                                          ? ditaDirProperty
                                                          : "src" + File.separator + "main").getAbsolutePath());
