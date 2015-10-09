@@ -350,9 +350,11 @@ public final class IntegrationTest {
         for (int i = 0; i < elems.getLength(); i++) {
             final Element e = (Element) elems.item(i);
             // remove debug attributes
-            for (final String a: new String[] {"xtrf", "xtrc"}) {
+            for (final String a: new String[] {ATTRIBUTE_NAME_XTRF, ATTRIBUTE_NAME_XTRC}) {
                 e.removeAttribute(a);
             }
+            // remove DITA version attributes
+            e.removeAttributeNS(DITA_NAMESPACE, ATTRIBUTE_NAME_DITAARCHVERSION);
             // remove workdir processing instructions
             removeWorkdirProcessingInstruction(e);
         }
