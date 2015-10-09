@@ -116,7 +116,9 @@ public final class IntegrationTest {
     
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
-        db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+        final DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        dbf.setNamespaceAware(true);
+        db = dbf.newDocumentBuilder();
         htmlb = new HtmlDocumentBuilder();
         final String l = System.getProperty("log_level");
         level = l != null ? Integer.parseInt(l) : -2;
@@ -350,11 +352,11 @@ public final class IntegrationTest {
         for (int i = 0; i < elems.getLength(); i++) {
             final Element e = (Element) elems.item(i);
             // remove debug attributes
-            for (final String a: new String[] {ATTRIBUTE_NAME_XTRF, ATTRIBUTE_NAME_XTRC}) {
-                e.removeAttribute(a);
-            }
-            // remove DITA version attributes
+            e.removeAttribute(ATTRIBUTE_NAME_XTRF);
+            e.removeAttribute(ATTRIBUTE_NAME_XTRC);
+            // remove DITA version and domains attributes
             e.removeAttributeNS(DITA_NAMESPACE, ATTRIBUTE_NAME_DITAARCHVERSION);
+            e.removeAttribute(ATTRIBUTE_NAME_DOMAINS);
             // remove workdir processing instructions
             removeWorkdirProcessingInstruction(e);
         }
