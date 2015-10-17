@@ -27,7 +27,8 @@
 <topicref href="main-6.dita"></topicref>
 </relcell>
 <relcell format="html" scope="external">
-<topicref href="http://www.ibm.com" navtitle="ibm: From the main map">
+<!-- FIXME: Should be enough to inherit format and scope -->
+<topicref href="http://www.ibm.com" navtitle="ibm: From the main map" format="html" scope="external">
 </topicref>
 </relcell>
 </relrow>
