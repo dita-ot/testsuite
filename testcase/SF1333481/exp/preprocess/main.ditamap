@@ -147,10 +147,10 @@
     </topicmeta>
   </topicref>
 
-  <reltable class="- map/reltable " processing-role="resource-only" toc="no">
+  <reltable class="- map/reltable " toc="no">
     <relrow class="- map/relrow ">
-      <relcell class="- map/relcell " processing-role="resource-only" toc="no">
-        <topicref class="- map/topicref " href="main-1.dita" processing-role="resource-only" toc="no" type="concept">
+      <relcell class="- map/relcell " toc="no">
+        <topicref class="- map/topicref " href="main-1.dita" toc="no" type="concept">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">First topic referenced from the main map</navtitle>
             <?ditaot gentext?>
@@ -159,7 +159,7 @@
             <shortdesc class="- map/shortdesc ">This is referenced from the main map. That's it.<?Pub Caret?></shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="main-2.dita" processing-role="resource-only" toc="no" type="concept">
+        <topicref class="- map/topicref " href="main-2.dita" toc="no" type="concept">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">Second topic in the main map</navtitle>
             <?ditaot gentext?>
@@ -168,7 +168,7 @@
             <shortdesc class="- map/shortdesc ">This is a peer of the first topic. It has children.<?Pub Caret?></shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="main-3.dita" processing-role="resource-only" toc="no" type="concept">
+        <topicref class="- map/topicref " href="main-3.dita" toc="no" type="concept">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">Third topic in the main map</navtitle>
             <?ditaot gentext?>
@@ -177,7 +177,7 @@
             <shortdesc class="- map/shortdesc ">This is a child of the second map. It has children, and a mapref child.<?Pub Caret?></shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="main-4.dita" processing-role="resource-only" toc="no" type="concept">
+        <topicref class="- map/topicref " href="main-4.dita" toc="no" type="concept">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">Fourth in the main map. Deepest level of nesting. Peer of mapref.</navtitle>
             <?ditaot gentext?>
@@ -186,7 +186,7 @@
             <shortdesc class="- map/shortdesc ">This is a child of the third item in the main map. It comes before a mapref.<?Pub Caret?></shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="main-5.dita" processing-role="resource-only" toc="no" type="concept">
+        <topicref class="- map/topicref " href="main-5.dita" toc="no" type="concept">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">Fifth item in main map - after mapref</navtitle>
             <?ditaot gentext?>
@@ -195,7 +195,7 @@
             <shortdesc class="- map/shortdesc ">This item comes after the mapref. It is a child of the third item. It is a peer of the fourth item.<?Pub Caret?></shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="main-6.dita" processing-role="resource-only" toc="no" type="concept">
+        <topicref class="- map/topicref " href="main-6.dita" toc="no" type="concept">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">End of the main map</navtitle>
             <?ditaot gentext?>
@@ -205,8 +205,8 @@
           </topicmeta>
         </topicref>
       </relcell>
-      <relcell class="- map/relcell " format="html" processing-role="resource-only" scope="external" toc="no">
-        <topicref class="- map/topicref " format="html" href="http://www.ibm.com" navtitle="ibm: From the main map" processing-role="resource-only" scope="external" toc="no">
+      <relcell class="- map/relcell " format="html" scope="external" toc="no">
+        <topicref class="- map/topicref " format="html" href="http://www.ibm.com" navtitle="ibm: From the main map" scope="external" toc="no">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">ibm: From the main map</navtitle>
             <?ditaot gentext?>
@@ -216,10 +216,10 @@
       </relcell>
     </relrow>
   </reltable>
-  <reltable class="- map/reltable " processing-role="resource-only" toc="no">
+  <reltable class="- map/reltable " toc="no">
     <relrow class="- map/relrow ">
-      <relcell class="- map/relcell " processing-role="resource-only" toc="no" type="concept">
-        <topicref class="- map/topicref " href="main-1.dita" processing-role="resource-only" toc="no" type="concept">
+      <relcell class="- map/relcell " toc="no" type="concept">
+        <topicref class="- map/topicref " href="main-1.dita" toc="no" type="concept">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">First topic referenced from the main map</navtitle>
             <?ditaot gentext?>
@@ -228,7 +228,7 @@
             <shortdesc class="- map/shortdesc ">This is referenced from the main map. That's it.<?Pub Caret?></shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="main-2.dita" processing-role="resource-only" toc="no" type="concept">
+        <topicref class="- map/topicref " href="main-2.dita" toc="no" type="concept">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">Second topic in the main map</navtitle>
             <?ditaot gentext?>
@@ -237,7 +237,7 @@
             <shortdesc class="- map/shortdesc ">This is a peer of the first topic. It has children.<?Pub Caret?></shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="main-3.dita" processing-role="resource-only" toc="no" type="concept">
+        <topicref class="- map/topicref " href="main-3.dita" toc="no" type="concept">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">Third topic in the main map</navtitle>
             <?ditaot gentext?>
@@ -246,7 +246,7 @@
             <shortdesc class="- map/shortdesc ">This is a child of the second map. It has children, and a mapref child.<?Pub Caret?></shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="main-4.dita" processing-role="resource-only" toc="no" type="concept">
+        <topicref class="- map/topicref " href="main-4.dita" toc="no" type="concept">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">Fourth in the main map. Deepest level of nesting. Peer of mapref.</navtitle>
             <?ditaot gentext?>
@@ -255,7 +255,7 @@
             <shortdesc class="- map/shortdesc ">This is a child of the third item in the main map. It comes before a mapref.<?Pub Caret?></shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="main-5.dita" processing-role="resource-only" toc="no" type="concept">
+        <topicref class="- map/topicref " href="main-5.dita" toc="no" type="concept">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">Fifth item in main map - after mapref</navtitle>
             <?ditaot gentext?>
@@ -264,7 +264,7 @@
             <shortdesc class="- map/shortdesc ">This item comes after the mapref. It is a child of the third item. It is a peer of the fourth item.<?Pub Caret?></shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="main-6.dita" processing-role="resource-only" toc="no" type="concept">
+        <topicref class="- map/topicref " href="main-6.dita" toc="no" type="concept">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">End of the main map</navtitle>
             <?ditaot gentext?>
@@ -274,8 +274,8 @@
           </topicmeta>
         </topicref>
       </relcell>
-      <relcell class="- map/relcell " processing-role="resource-only" toc="no" type="task">
-        <topicref class="- map/topicref " href="mapref2-1.dita" processing-role="resource-only" toc="no" type="task">
+      <relcell class="- map/relcell " toc="no" type="task">
+        <topicref class="- map/topicref " href="mapref2-1.dita" toc="no" type="task">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">Pull a task up deep in the hierarchy (1)</navtitle>
             <?ditaot gentext?>
@@ -284,7 +284,7 @@
             <shortdesc class="- map/shortdesc ">First of the task map, pulled up down in the hierarchy</shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="mapref2-2.dita" processing-role="resource-only" toc="no" type="task">
+        <topicref class="- map/topicref " href="mapref2-2.dita" toc="no" type="task">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">Second in the task map</navtitle>
             <?ditaot gentext?>
@@ -293,7 +293,7 @@
             <shortdesc class="- map/shortdesc ">second task in the task mapref thing</shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="mapref2-3.dita" processing-role="resource-only" toc="no" type="task">
+        <topicref class="- map/topicref " href="mapref2-3.dita" toc="no" type="task">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">Nested item in the referenced taskmap</navtitle>
             <?ditaot gentext?>
@@ -302,7 +302,7 @@
             <shortdesc class="- map/shortdesc ">This is nested in the taskmap, which is the second referenced map</shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="mapref2-4.dita" processing-role="resource-only" toc="no" type="task">
+        <topicref class="- map/topicref " href="mapref2-4.dita" toc="no" type="task">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">Deep down in the task hierarchy</navtitle>
             <?ditaot gentext?>
@@ -311,7 +311,7 @@
             <shortdesc class="- map/shortdesc ">nested down inside the task map</shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="mapref2-5.dita" processing-role="resource-only" toc="no" type="task">
+        <topicref class="- map/topicref " href="mapref2-5.dita" toc="no" type="task">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">End of the task map</navtitle>
             <?ditaot gentext?>
@@ -321,8 +321,8 @@
           </topicmeta>
         </topicref>
       </relcell>
-      <relcell class="- map/relcell " processing-role="resource-only" toc="no" type="reference">
-        <topicref class="- map/topicref " href="subdir/mapref1-1.dita" processing-role="resource-only" toc="no" type="reference">
+      <relcell class="- map/relcell " toc="no" type="reference">
+        <topicref class="- map/topicref " href="subdir/mapref1-1.dita" toc="no" type="reference">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">First in mapref1</navtitle>
             <?ditaot gentext?>
@@ -331,7 +331,7 @@
             <shortdesc class="- map/shortdesc ">first topic in the first map that gets pulled in</shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="subdir/mapref1-2.dita" processing-role="resource-only" toc="no" type="reference">
+        <topicref class="- map/topicref " href="subdir/mapref1-2.dita" toc="no" type="reference">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">Second topic in first mapref</navtitle>
             <?ditaot gentext?>
@@ -340,7 +340,7 @@
             <shortdesc class="- map/shortdesc ">second topic in the first mapref that gets pulled in. Top-level in this map.</shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="subdir/mapref1-3.dita" processing-role="resource-only" toc="no" type="reference">
+        <topicref class="- map/topicref " href="subdir/mapref1-3.dita" toc="no" type="reference">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">Nested topic from first mapref</navtitle>
             <?ditaot gentext?>
@@ -349,7 +349,7 @@
             <shortdesc class="- map/shortdesc ">third topic in the first mapref, nested under second</shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="subdir/mapref1-4.dita" processing-role="resource-only" toc="no" type="reference">
+        <topicref class="- map/topicref " href="subdir/mapref1-4.dita" toc="no" type="reference">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">Fourth in first mapref! Really deep!</navtitle>
             <?ditaot gentext?>
@@ -358,7 +358,7 @@
             <shortdesc class="- map/shortdesc ">nested inside 3, which is inside 2, inside the first referenced map</shortdesc>
           </topicmeta>
         </topicref>
-        <topicref class="- map/topicref " href="subdir/mapref1-5.dita" processing-role="resource-only" toc="no" type="reference">
+        <topicref class="- map/topicref " href="subdir/mapref1-5.dita" toc="no" type="reference">
           <topicmeta class="- map/topicmeta ">
             <navtitle class="- topic/navtitle ">End of first mapref, 3rd top-level</navtitle>
             <?ditaot gentext?>
