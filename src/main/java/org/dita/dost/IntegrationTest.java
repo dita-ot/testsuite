@@ -208,6 +208,7 @@ public final class IntegrationTest {
                     }
                 }
             }
+            project.setUserProperty("generate-debug-attributes", "false");
             project.setUserProperty("preprocess.copy-generated-files.skip", "true");
             project.setUserProperty("ant.file", buildFile.getAbsolutePath());
             project.setUserProperty("ant.file.type", "file");

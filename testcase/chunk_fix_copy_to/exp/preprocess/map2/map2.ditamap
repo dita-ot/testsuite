@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?path2project ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?workdir /Users/jelovirt/Work/github/dita-ot/src/main/temp/chunk_fix_copy_to/preprocess/map2?>
+<?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/chunk_fix_copy_to/preprocess/map2/?>
+<?path2project?>
 <?path2project-uri ./?>
-<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" cascade="nomerge" class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                         ">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" cascade="nomerge" class="- map/map " ditaarch:DITAArchVersion="1.3" domains="(map mapgroup-d)                            (topic abbrev-d)                            (topic delay-d)                            a(props deliveryTarget)                            (map ditavalref-d)                            (map glossref-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   ">
   <topicref chunk="by-topic select-topic" class="- map/topicref " copy-to="topicX.dita" href="topicX.dita#X" type="topic">
     <topicmeta class="- map/topicmeta ">
       <navtitle class="- topic/navtitle ">Topic X</navtitle>
@@ -36,73 +38,85 @@
       <?ditaot gentext?>
       <linktext class="- map/linktext ">Topic Y</linktext>
     </topicmeta>
-    <topicref class="- map/topicref " href="Y1.dita">
-      <topicmeta class="- map/topicmeta "/>
-      <topicref class="- map/topicref " href="Y1a.dita">
-        <topicmeta class="- map/topicmeta "/>
-      </topicref>
-    </topicref>
-    <topicref class="- map/topicref " href="Y2.dita">
-      <topicmeta class="- map/topicmeta "/>
-    </topicref>
-  </topicref>
-  <topicref chunk="by-topic select-document" class="- map/topicref " href="X.dita#X" type="topic">
-    <topicmeta class="- map/topicmeta ">
-      <navtitle class="- topic/navtitle ">Topic Z</navtitle>
-      <?ditaot gentext?>
-      <linktext class="- map/linktext ">Topic Z</linktext>
-    </topicmeta>
-  </topicref>
-  <topicref class="- map/topicref " href="Chunk2.dita">
-    <topicmeta class="- map/topicmeta ">
-      <navtitle class="- topic/navtitle ">Topic Y</navtitle>
-      <?ditaot gentext?>
-      <linktext class="- map/linktext ">Topic Y</linktext>
-      <?ditaot genshortdesc?>
-      <shortdesc class="- map/shortdesc "/>
-    </topicmeta>
-    <topicref class="- map/topicref " href="Chunk3.dita">
+    <topicref class="- map/topicref " xtrf="generated_by_chunk" href="Y1.dita" type="topic">
       <topicmeta class="- map/topicmeta ">
         <navtitle class="- topic/navtitle ">Topic Y1</navtitle>
         <?ditaot gentext?>
         <linktext class="- map/linktext ">Topic Y1</linktext>
-        <?ditaot genshortdesc?>
-        <shortdesc class="- map/shortdesc "/>
       </topicmeta>
-      <topicref class="- map/topicref " href="Chunk4.dita">
+      <topicref class="- map/topicref " xtrf="generated_by_chunk" href="Y1a.dita" type="topic">
         <topicmeta class="- map/topicmeta ">
           <navtitle class="- topic/navtitle ">Topic Y1a</navtitle>
           <?ditaot gentext?>
           <linktext class="- map/linktext ">Topic Y1a</linktext>
-          <?ditaot genshortdesc?>
-          <shortdesc class="- map/shortdesc "/>
         </topicmeta>
       </topicref>
     </topicref>
-    <topicref class="- map/topicref " href="Chunk5.dita">
+    <topicref class="- map/topicref " xtrf="generated_by_chunk" href="Y2.dita" type="topic">
       <topicmeta class="- map/topicmeta ">
         <navtitle class="- topic/navtitle ">Topic Y2</navtitle>
         <?ditaot gentext?>
         <linktext class="- map/linktext ">Topic Y2</linktext>
-        <?ditaot genshortdesc?>
+      </topicmeta>
+    </topicref>
+  </topicref>
+  <topicref chunk="by-topic select-document" class="- map/topicref " href="X.dita#X" type="topic">
+    <topicmeta class="- map/topicmeta ">
+      <navtitle class="- topic/navtitle ">Topic X</navtitle>
+      <?ditaot gentext?>
+      <linktext class="- map/linktext ">Topic X</linktext>
+    </topicmeta>
+  </topicref>
+  <topicref class="- map/topicref " xtrf="generated_by_chunk" href="Chunk2.dita" type="topic">
+    <topicmeta class="- map/topicmeta ">
+      <navtitle class="- topic/navtitle ">Topic Y</navtitle>
+      <?ditaot usertext?>
+      <linktext class="- map/linktext ">Topic Y</linktext>
+      <?ditaot usershortdesc?>
+      <shortdesc class="- map/shortdesc "/>
+    </topicmeta>
+    <topicref class="- map/topicref " xtrf="generated_by_chunk" href="Chunk3.dita" type="topic">
+      <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Topic Y1</navtitle>
+        <?ditaot usertext?>
+        <linktext class="- map/linktext ">Topic Y1</linktext>
+        <?ditaot usershortdesc?>
+        <shortdesc class="- map/shortdesc "/>
+      </topicmeta>
+      <topicref class="- map/topicref " xtrf="generated_by_chunk" href="Chunk4.dita" type="topic">
+        <topicmeta class="- map/topicmeta ">
+          <navtitle class="- topic/navtitle ">Topic Y1a</navtitle>
+          <?ditaot usertext?>
+          <linktext class="- map/linktext ">Topic Y1a</linktext>
+          <?ditaot usershortdesc?>
+          <shortdesc class="- map/shortdesc "/>
+        </topicmeta>
+      </topicref>
+    </topicref>
+    <topicref class="- map/topicref " xtrf="generated_by_chunk" href="Chunk5.dita" type="topic">
+      <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Topic Y2</navtitle>
+        <?ditaot usertext?>
+        <linktext class="- map/linktext ">Topic Y2</linktext>
+        <?ditaot usershortdesc?>
         <shortdesc class="- map/shortdesc "/>
       </topicmeta>
     </topicref>
   </topicref>
-  <topicref class="- map/topicref " href="Chunk6.dita">
+  <topicref class="- map/topicref " xtrf="generated_by_chunk" href="Chunk6.dita" type="topic">
     <topicmeta class="- map/topicmeta ">
       <navtitle class="- topic/navtitle ">Topic Z</navtitle>
-      <?ditaot gentext?>
+      <?ditaot usertext?>
       <linktext class="- map/linktext ">Topic Z</linktext>
-      <?ditaot genshortdesc?>
+      <?ditaot usershortdesc?>
       <shortdesc class="- map/shortdesc "/>
     </topicmeta>
-    <topicref class="- map/topicref " href="Chunk7.dita">
+    <topicref class="- map/topicref " xtrf="generated_by_chunk" href="Chunk7.dita" type="topic">
       <topicmeta class="- map/topicmeta ">
         <navtitle class="- topic/navtitle ">Topic Z1</navtitle>
-        <?ditaot gentext?>
+        <?ditaot usertext?>
         <linktext class="- map/linktext ">Topic Z1</linktext>
-        <?ditaot genshortdesc?>
+        <?ditaot usershortdesc?>
         <shortdesc class="- map/shortdesc "/>
       </topicmeta>
     </topicref>

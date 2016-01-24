@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?path2project ../../../../../testsuite/testresult/chunk_fix_copy_to/preprocess/map1/?>
-<topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="Y" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic task strictTaskbody-c)    " class="- topic/topic ">
+<?workdir /Volumes/tmp/temp/chunk_fix_copy_to/preprocess/map1?>
+<?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/chunk_fix_copy_to/preprocess/map1/?>
+<?path2project?>
+<?path2project-uri ./?>
+<topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="Y" xml:lang="en-us" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic troubleshooting++task) (topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic ">
   <title class="- topic/title ">Topic Y</title>
   <body class="- topic/body ">
     <p class="- topic/p ">content</p>
@@ -8,13 +11,13 @@
   <related-links class="- topic/related-links ">
     <linkpool class="- topic/linkpool ">
       <linkpool class="- topic/linkpool ">
-        <link format="dita" scope="local" class="- topic/link " mapclass="- map/topicref " href="Y1.dita" role="child" type="topic">
-          <?ditaot gentext?>
-          <linktext class="- topic/linktext ">Topic Y1</linktext>
+        <link class="- topic/link " format="dita" href="Y1.dita" mapclass="- map/topicref " role="child" scope="local" type="topic" xtrf="generated_by_chunk">
+          <?ditaot usertext?>
+          <linktext class="- topic/linktext "><?ditaot gentext?>Topic Y1</linktext>
         </link>
-        <link format="dita" scope="local" class="- topic/link " mapclass="- map/topicref " href="Y2.dita" role="child" type="topic">
-          <?ditaot gentext?>
-          <linktext class="- topic/linktext ">Topic Y2</linktext>
+        <link class="- topic/link " format="dita" href="Y2.dita" mapclass="- map/topicref " role="child" scope="local" type="topic" xtrf="generated_by_chunk">
+          <?ditaot usertext?>
+          <linktext class="- topic/linktext "><?ditaot gentext?>Topic Y2</linktext>
         </link>
       </linkpool>
     </linkpool>

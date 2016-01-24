@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?workdir /Users/jelovirt/Work/github/dita-ot/src/main/temp/chunk_fix_conflict_by_topic/preprocess?>
+<?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/chunk_fix_conflict_by_topic/preprocess/?>
 <?path2project?>
 <?path2project-uri ./?>
-<topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="N1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+<topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="N1" xml:lang="en-us" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic ">
   <title class="- topic/title ">Nesting topic 4 - parent</title>
   <shortdesc class="- topic/shortdesc ">[llama llama]</shortdesc>
   <body class="- topic/body ">
@@ -10,10 +12,10 @@
   <related-links class="- topic/related-links ">
     <linkpool class="- topic/linkpool ">
       <linkpool class="- topic/linkpool ">
-        <link format="dita" scope="local" class="- topic/link " mapclass="- map/topicref " href="Chunk1.dita" role="child" type="topic">
+        <link class="- topic/link " format="dita" href="Chunk1.dita" mapclass="- map/topicref " role="child" scope="local" type="topic" xtrf="generated_by_chunk">
           <?ditaot usertext?>
-          <linktext class="- topic/linktext "><?ditaot gentext?>Nesting topic 1 - child</linktext>
-          <?ditaot genshortdesc?>
+          <linktext class="- topic/linktext "><?ditaot usertext?>Nesting topic 1 - child</linktext>
+          <?ditaot usershortdesc?>
           <desc class="- topic/desc ">[llama llama]</desc>
         </link>
       </linkpool>
