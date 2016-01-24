@@ -1,13 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><?workdir /Volumes/tmp/temp/conref_push/preprocess/pushAfter/simple_pushAfter?><?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/conref_push/preprocess/pushAfter/simple_pushAfter/?><?path2project?><?path2project-uri ./?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="X" ditaarch:DITAArchVersion="1.2" domains="(topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                            (topic task strictTaskbody-c)    " class="- topic/topic task/task " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita1.dita" xtrc="task:1;6:14">
-    <title class="- topic/title " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita1.dita" xtrc="title:1;7:12">this is a task</title>
-    <shortdesc class="- topic/shortdesc " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita1.dita" xtrc="shortdesc:1;8:16">this is also a reuse function</shortdesc>
-    
-    <taskbody class="- topic/body task/taskbody " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita1.dita" xtrc="taskbody:1;10:15">
-        <steps class="- topic/ol task/steps " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita1.dita" xtrc="steps:1;11:16">
-            <step id="A" class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita1.dita" xtrc="step:1;12:26"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita1.dita" xtrc="cmd:1;12:31">A</cmd></step>
-            <step id="B" class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita1.dita" xtrc="step:2;13:26"> <cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita1.dita" xtrc="cmd:2;13:32">B</cmd></step><step class="- topic/li task/step " xtrc="step:2;14:41" xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita2.dita"> <cmd class="- topic/ph task/cmd " xtrc="cmd:2;14:47" xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita2.dita">BB</cmd> </step><step class="- topic/li task/step " xtrc="step:4;18:41" xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita2.dita"> <cmd class="- topic/ph task/cmd " xtrc="cmd:4;18:47" xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita2.dita">BBB</cmd> </step><step class="- topic/li task/step " xtrc="step:6;22:41" xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita2.dita"> <cmd class="- topic/ph task/cmd " xtrc="cmd:6;22:47" xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita2.dita">BBBB</cmd> </step><step class="- topic/li task/step " xtrc="step:8;26:41" xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita2.dita"> <cmd class="- topic/ph task/cmd " xtrc="cmd:8;26:47" xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita2.dita">BBBBB</cmd> </step><step class="- topic/li task/step " xtrc="step:10;30:41" xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita2.dita"> <cmd class="- topic/ph task/cmd " xtrc="cmd:10;30:47" xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita2.dita">BBBBBB</cmd> </step>
-            <step id="C" class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita1.dita" xtrc="step:3;14:26"><cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/simple_pushAfter/dita1.dita" xtrc="cmd:3;14:31">C</cmd></step>
-        </steps>
-    </taskbody>
-    
-  </task>
+<?xml version="1.0" encoding="utf-8"?>
+<?workdir /Volumes/tmp/temp/conref_push/preprocess/pushAfter/simple_pushAfter?>
+<?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/conref_push/preprocess/pushAfter/simple_pushAfter/?>
+<?path2project?>
+<?path2project-uri ./?>
+<task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="X" ditaarch:DITAArchVersion="1.2" domains="(topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                            (topic task strictTaskbody-c)    " class="- topic/topic task/task ">
+  <title class="- topic/title ">this is a task</title>
+  <shortdesc class="- topic/shortdesc ">this is also a reuse function</shortdesc>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps class="- topic/ol task/steps ">
+      <step id="A" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">A</cmd>
+      </step>
+      <step id="B" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">B</cmd>
+      </step>
+      <step class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">BB</cmd>
+      </step>
+      <step class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">BBB</cmd>
+      </step>
+      <step class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">BBBB</cmd>
+      </step>
+      <step class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">BBBBB</cmd>
+      </step>
+      <step class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">BBBBBB</cmd>
+      </step>
+      <step id="C" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">C</cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

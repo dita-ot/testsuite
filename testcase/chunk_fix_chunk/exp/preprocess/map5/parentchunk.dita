@@ -1,30 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><dita xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2"><?path2project?><?path2project-uri ./?><topic id="P1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
-<title class="- topic/title ">parent1<?Pub Caret?></title>
-<shortdesc class="- topic/shortdesc ">Put your short description here; used for first paragraph
+<?xml version="1.0" encoding="utf-8"?>
+<dita xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2">
+  <?path2project?>
+  <?path2project-uri ./?>
+  <topic id="P1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+    <title class="- topic/title ">parent1<?Pub Caret?></title>
+    <shortdesc class="- topic/shortdesc ">Put your short description here; used for first paragraph
 and abstract.</shortdesc>
-<body class="- topic/body ">
-<p class="- topic/p ">Here's a <b class="+ topic/ph hi-d/b ">cute</b>, <i class="+ topic/ph hi-d/i ">little</i> topic.</p>
-<ul class="- topic/ul ">
-<li class="- topic/li ">Some item</li>
-<li class="- topic/li ">another item</li>
-</ul>
-</body>
-<?path2project?><?path2project-uri ./?><topic id="C1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
-<title class="- topic/title ">child1<?Pub Caret?></title>
-<shortdesc class="- topic/shortdesc ">[llama llama]</shortdesc>
-<body class="- topic/body ">
-<p class="- topic/p ">[and a koala]</p>
-</body>
-</topic><?Pub *0000000331?><?path2project?><?path2project-uri ./?><topic id="C3" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
-<title class="- topic/title ">child3<?Pub Caret?></title>
-<shortdesc class="- topic/shortdesc ">[llama llama]</shortdesc>
-<body class="- topic/body ">
-<p class="- topic/p ">[and a koala]</p>
-</body>
-<?path2project?><?path2project-uri ./?><topic id="GC3" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic "><?Pub Caret?>
-<title class="- topic/title ">grandchild3</title>
-<shortdesc class="- topic/shortdesc ">[llama llama]</shortdesc>
-<body class="- topic/body ">
-<p class="- topic/p ">[and a koala]</p>
-</body>
-</topic><?Pub *0000000337?></topic><?Pub *0000000331?></topic><?Pub *0000000471?></dita>
+    <body class="- topic/body ">
+      <p class="- topic/p ">Here's a <b class="+ topic/ph hi-d/b ">cute</b>, <i class="+ topic/ph hi-d/i ">little</i> topic.</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">Some item</li>
+        <li class="- topic/li ">another item</li>
+      </ul>
+    </body>
+    <?path2project?>
+    <?path2project-uri ./?>
+    <topic id="C1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+      <title class="- topic/title ">child1<?Pub Caret?></title>
+      <shortdesc class="- topic/shortdesc ">[llama llama]</shortdesc>
+      <body class="- topic/body ">
+        <p class="- topic/p ">[and a koala]</p>
+      </body>
+    </topic>
+    <?Pub *0000000331?>
+    <?path2project?>
+    <?path2project-uri ./?>
+    <topic id="C3" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+      <title class="- topic/title ">child3<?Pub Caret?></title>
+      <shortdesc class="- topic/shortdesc ">[llama llama]</shortdesc>
+      <body class="- topic/body ">
+        <p class="- topic/p ">[and a koala]</p>
+      </body>
+      <?path2project?>
+      <?path2project-uri ./?>
+      <topic id="GC3" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+        <?Pub Caret?>
+        <title class="- topic/title ">grandchild3</title>
+        <shortdesc class="- topic/shortdesc ">[llama llama]</shortdesc>
+        <body class="- topic/body ">
+          <p class="- topic/p ">[and a koala]</p>
+        </body>
+      </topic>
+      <?Pub *0000000337?>
+    </topic>
+    <?Pub *0000000331?>
+  </topic>
+  <?Pub *0000000471?>
+</dita>

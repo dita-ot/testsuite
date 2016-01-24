@@ -1,30 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><?workdir /Volumes/tmp/temp/conref_push/preprocess/pushAfter/pushAfter_with_InvalidTarget?><?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/conref_push/preprocess/pushAfter/pushAfter_with_InvalidTarget/?><?path2project?><?path2project-uri ./?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="Z" ditaarch:DITAArchVersion="1.2" domains="(topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                            (topic task strictTaskbody-c)    " class="- topic/topic task/task " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_with_InvalidTarget/dita2.dita" xtrc="task:1;6:14">
-    <title class="- topic/title " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_with_InvalidTarget/dita2.dita" xtrc="title:1;7:12">This is a case for pushAfter with the invalid target, It will give warnings.</title>
-    
-    <taskbody class="- topic/body task/taskbody " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_with_InvalidTarget/dita2.dita" xtrc="taskbody:1;9:15">
-        <steps class="- topic/ol task/steps " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_with_InvalidTarget/dita2.dita" xtrc="steps:1;10:16">    
-            
-            
-            <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_with_InvalidTarget/dita2.dita" xtrc="step:2;13:41"> <cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_with_InvalidTarget/dita2.dita" xtrc="cmd:2;13:47">BB</cmd> </step>   
-            
-            
-            
-            <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_with_InvalidTarget/dita2.dita" xtrc="step:4;17:41"> <cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_with_InvalidTarget/dita2.dita" xtrc="cmd:4;17:47">BBB</cmd> </step>   
-            
-            
-            
-            <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_with_InvalidTarget/dita2.dita" xtrc="step:6;21:41"> <cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_with_InvalidTarget/dita2.dita" xtrc="cmd:6;21:47">BBBB</cmd> </step>   
-            
-            
-            
-            <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_with_InvalidTarget/dita2.dita" xtrc="step:8;25:41"> <cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_with_InvalidTarget/dita2.dita" xtrc="cmd:8;25:47">BBBBB</cmd> </step>   
-            
-            
-            
-            <step class="- topic/li task/step " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_with_InvalidTarget/dita2.dita" xtrc="step:10;29:41"> <cmd class="- topic/ph task/cmd " xtrf="/Users/jelovirt/Work/github/dita-ot/src/test/testsuite/testcase/conref_push/src/pushAfter/pushAfter_with_InvalidTarget/dita2.dita" xtrc="cmd:10;29:47">BBBBBB</cmd> </step>   
-            
-            
-            
-        </steps>
-    </taskbody>
+<?xml version="1.0" encoding="utf-8"?>
+<?workdir /Volumes/tmp/temp/conref_push/preprocess/pushAfter/pushAfter_with_InvalidTarget?>
+<?workdir-uri file:/Users/jelovirt/Work/github/dita-ot/src/main/temp/conref_push/preprocess/pushAfter/pushAfter_with_InvalidTarget/?>
+<?path2project?>
+<?path2project-uri ./?>
+<task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="Z" ditaarch:DITAArchVersion="1.2" domains="(topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                            (topic task strictTaskbody-c)    " class="- topic/topic task/task ">
+  <title class="- topic/title ">This is a case for pushAfter with the invalid target, It will give warnings.</title>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps class="- topic/ol task/steps ">
+      <step class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">BB</cmd>
+      </step>
+      <step class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">BBB</cmd>
+      </step>
+      <step class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">BBBB</cmd>
+      </step>
+      <step class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">BBBBB</cmd>
+      </step>
+      <step class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">BBBBBB</cmd>
+      </step>
+    </steps>
+  </taskbody>
 </task>

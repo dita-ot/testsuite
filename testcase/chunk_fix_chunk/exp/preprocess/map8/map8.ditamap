@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?path2project ?><?path2project-uri ./?><map cascade="nomerge" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                         ">
-<topichead class="+ map/topicref mapgroup-d/topichead " navtitle="How to do lots of things"><topicref class="- map/topicref " href="nested1.dita" navtitle="How to set up a web server" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">Nesting topic 1 - parent</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Nesting topic 1 - parent</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">[llama llama]</shortdesc></topicmeta><topicref class="- map/topicref " href="nested2.dita" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">Nesting topic 2- parent</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Nesting topic 2- parent</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">[llama llama]</shortdesc></topicmeta></topicref></topicref></topichead>
+<?path2project ?>
+<?path2project-uri ./?>
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" cascade="nomerge" class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                         ">
+  <topichead class="+ map/topicref mapgroup-d/topichead " navtitle="How to do lots of things">
+    <topicref class="- map/topicref " href="nested1.dita" navtitle="How to set up a web server" type="topic">
+      <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Nesting topic 1 - parent</navtitle>
+        <?ditaot gentext?>
+        <linktext class="- map/linktext ">Nesting topic 1 - parent</linktext>
+        <?ditaot genshortdesc?>
+        <shortdesc class="- map/shortdesc ">[llama llama]</shortdesc>
+      </topicmeta>
+      <topicref class="- map/topicref " href="nested2.dita" type="topic">
+        <topicmeta class="- map/topicmeta ">
+          <navtitle class="- topic/navtitle ">Nesting topic 2- parent</navtitle>
+          <?ditaot gentext?>
+          <linktext class="- map/linktext ">Nesting topic 2- parent</linktext>
+          <?ditaot genshortdesc?>
+          <shortdesc class="- map/shortdesc ">[llama llama]</shortdesc>
+        </topicmeta>
+      </topicref>
+    </topicref>
+  </topichead>
 </map>

@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?path2project ?><?path2project-uri ./?><map cascade="nomerge" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                         ">
-    <topicref chunk="to-content" class="- map/topicref " copy-to="topic.dita" href="topic.dita#topic1" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">topic 1 title</navtitle><?ditaot gentext?><linktext class="- map/linktext ">topic 1 title</linktext></topicmeta><topicref chunk="select-topic" class="- map/topicref " href="topic.dita#topic" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">topic title</navtitle><?ditaot gentext?><linktext class="- map/linktext ">topic title</linktext></topicmeta></topicref></topicref>
-    <topicref class="- map/topicref " href="sub/t3.dita" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">topic 3 title</navtitle><?ditaot gentext?><linktext class="- map/linktext ">topic 3 title</linktext></topicmeta></topicref>
+<?path2project ?>
+<?path2project-uri ./?>
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" cascade="nomerge" class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                         ">
+  <topicref chunk="to-content" class="- map/topicref " copy-to="topic.dita" href="topic.dita#topic1" type="topic">
+    <topicmeta class="- map/topicmeta ">
+      <navtitle class="- topic/navtitle ">topic 1 title</navtitle>
+      <?ditaot gentext?>
+      <linktext class="- map/linktext ">topic 1 title</linktext>
+    </topicmeta>
+    <topicref chunk="select-topic" class="- map/topicref " href="topic.dita#topic" type="topic">
+      <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">topic title</navtitle>
+        <?ditaot gentext?>
+        <linktext class="- map/linktext ">topic title</linktext>
+      </topicmeta>
+    </topicref>
+  </topicref>
+  <topicref class="- map/topicref " href="sub/t3.dita" type="topic">
+    <topicmeta class="- map/topicmeta ">
+      <navtitle class="- topic/navtitle ">topic 3 title</navtitle>
+      <?ditaot gentext?>
+      <linktext class="- map/linktext ">topic 3 title</linktext>
+    </topicmeta>
+  </topicref>
 </map>

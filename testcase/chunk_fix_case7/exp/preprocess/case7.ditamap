@@ -1,4 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?path2project ?><?path2project-uri ./?><map cascade="nomerge" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                         " xml:lang="en-us"><title class="- topic/title ">case 7</title>
-<topicref chunk="to-content" class="- map/topicref " href="parent.dita#parent" type="concept"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">Parent topic</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Parent topic</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">this is the parent</shortdesc></topicmeta><topicref class="- map/topicref " href="parent.dita#child" type="concept"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">Nested concept</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Nested concept</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">shortdesc</shortdesc></topicmeta></topicref><topicref class="- map/topicref " href="parent.dita#child2" type="concept"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">Another n<?Pub Caret?>ested concept</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Another nested concept</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">shortdesc</shortdesc></topicmeta></topicref><topicref class="- map/topicref " format="html" href="http://www.metadita.org" scope="external"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">http://www.metadita.org</navtitle><?ditaot gentext?><linktext class="- map/linktext ">http://www.metadita.org</linktext></topicmeta></topicref><?Pub Caret1?></topicref>
+<?path2project ?>
+<?path2project-uri ./?>
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" cascade="nomerge" class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                         " xml:lang="en-us">
+  <title class="- topic/title ">case 7</title>
+  <topicref chunk="to-content" class="- map/topicref " href="parent.dita#parent" type="concept">
+    <topicmeta class="- map/topicmeta ">
+      <navtitle class="- topic/navtitle ">Parent topic</navtitle>
+      <?ditaot gentext?>
+      <linktext class="- map/linktext ">Parent topic</linktext>
+      <?ditaot genshortdesc?>
+      <shortdesc class="- map/shortdesc ">this is the parent</shortdesc>
+    </topicmeta>
+    <topicref class="- map/topicref " href="parent.dita#child" type="concept">
+      <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Nested concept</navtitle>
+        <?ditaot gentext?>
+        <linktext class="- map/linktext ">Nested concept</linktext>
+        <?ditaot genshortdesc?>
+        <shortdesc class="- map/shortdesc ">shortdesc</shortdesc>
+      </topicmeta>
+    </topicref>
+    <topicref class="- map/topicref " href="parent.dita#child2" type="concept">
+      <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Another n<?Pub Caret?>ested concept</navtitle>
+        <?ditaot gentext?>
+        <linktext class="- map/linktext ">Another nested concept</linktext>
+        <?ditaot genshortdesc?>
+        <shortdesc class="- map/shortdesc ">shortdesc</shortdesc>
+      </topicmeta>
+    </topicref>
+    <topicref class="- map/topicref " format="html" href="http://www.metadita.org" scope="external">
+      <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">http://www.metadita.org</navtitle>
+        <?ditaot gentext?>
+        <linktext class="- map/linktext ">http://www.metadita.org</linktext>
+      </topicmeta>
+    </topicref>
+    <?Pub Caret1?>
+  </topicref>
 </map>

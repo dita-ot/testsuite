@@ -1,12 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><?path2project?><?path2project-uri ./?><?Pub Inc?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="P1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
-<title class="- topic/title ">parent1<?Pub Caret?></title>
-<shortdesc class="- topic/shortdesc ">Put your short description here; used for first paragraph
+<?xml version="1.0" encoding="utf-8"?>
+<?path2project?>
+<?path2project-uri ./?>
+<?Pub Inc?>
+<topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="P1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+  <title class="- topic/title ">parent1<?Pub Caret?></title>
+  <shortdesc class="- topic/shortdesc ">Put your short description here; used for first paragraph
 and abstract.</shortdesc>
-<body class="- topic/body ">
-<p class="- topic/p ">Here's a <b class="+ topic/ph hi-d/b ">cute</b>, <i class="+ topic/ph hi-d/i ">little</i> topic.</p>
-<ul class="- topic/ul ">
-<li class="- topic/li ">Some item</li>
-<li class="- topic/li ">another item</li>
-</ul>
-</body>
-<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="map7"><linkpool class="- topic/linkpool "><link format="dita" scope="local" class="- topic/link " mapclass="- map/topicref " type="topic" href="child1.dita" role="child"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>child1</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">[llama llama]</desc></link></linkpool></linkpool></related-links></topic><?Pub *0000000471?>
+  <body class="- topic/body ">
+    <p class="- topic/p ">Here's a <b class="+ topic/ph hi-d/b ">cute</b>, <i class="+ topic/ph hi-d/i ">little</i> topic.</p>
+    <ul class="- topic/ul ">
+      <li class="- topic/li ">Some item</li>
+      <li class="- topic/li ">another item</li>
+    </ul>
+  </body>
+  <related-links class="- topic/related-links ">
+    <linkpool class="- topic/linkpool " mapkeyref="map7">
+      <linkpool class="- topic/linkpool ">
+        <link format="dita" scope="local" class="- topic/link " mapclass="- map/topicref " type="topic" href="child1.dita" role="child">
+          <?ditaot usertext?>
+          <linktext class="- topic/linktext "><?ditaot gentext?>child1</linktext>
+          <?ditaot genshortdesc?>
+          <desc class="- topic/desc ">[llama llama]</desc>
+        </link>
+      </linkpool>
+    </linkpool>
+  </related-links>
+</topic>
+<?Pub *0000000471?>
