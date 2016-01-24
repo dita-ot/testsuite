@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><?path2project?><?path2project-uri ./?><dita xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2"><?path2project?><?path2project-uri ./?><topic id="topic1" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+<?xml version="1.0" encoding="utf-8"?>
+<?path2project?>
+<?path2project-uri ./?>
+<dita xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2">
+  <?path2project?>
+  <?path2project-uri ./?>
+  <topic id="topic1" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
     <title class="- topic/title ">topic 1 title</title>
     <body class="- topic/body ">
-        <p id="p1" class="- topic/p ">topic 1 body</p>
+      <p id="p1" class="- topic/p ">topic 1 body</p>
     </body>
-<?path2project?><?path2project-uri ./?><topic id="N1a" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic "><?Pub Caret?>
-<title class="- topic/title ">Nesting topic 1 - child</title>
-<shortdesc class="- topic/shortdesc ">[llama llama]</shortdesc>
-<body class="- topic/body ">
-<p class="- topic/p ">[and a koala]</p>
-</body>
-</topic></topic></dita>
+    <?path2project?>
+    <?path2project-uri ./?>
+    <topic id="N1a" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+      <?Pub Caret?>
+      <title class="- topic/title ">Nesting topic 1 - child</title>
+      <shortdesc class="- topic/shortdesc ">[llama llama]</shortdesc>
+      <body class="- topic/body ">
+        <p class="- topic/p ">[and a koala]</p>
+      </body>
+    </topic>
+  </topic>
+</dita>

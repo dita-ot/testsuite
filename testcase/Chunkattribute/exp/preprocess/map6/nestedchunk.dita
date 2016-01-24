@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><dita xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2"><?path2project?><?path2project-uri ./?><topic id="N1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
-   <title class="- topic/title ">nested1</title>
-   <body class="- topic/body ">
+<?xml version="1.0" encoding="utf-8"?>
+<dita xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2">
+  <?path2project?>
+  <?path2project-uri ./?>
+  <topic id="N1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+    <title class="- topic/title ">nested1</title>
+    <body class="- topic/body ">
       <section class="- topic/section ">
-         <p class="- topic/p ">Most DITA elements represent discourse, or information that is placed exactly
+        <p class="- topic/p ">Most DITA elements represent discourse, or information that is placed exactly
 as entered. However, there are also types of information that are usually
 authored in context with a thought or issue, but upon output, the content
 might be relocated, suppressed, or used only for purposes such as inline annotations
@@ -12,5 +16,6 @@ a writer's intervention to get into the right place.<indexterm class="- topic/in
 elements</indexterm>
          </p>
       </section>
-   </body>
-</topic></dita>
+    </body>
+  </topic>
+</dita>

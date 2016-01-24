@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?path2project ?><?path2project-uri ./?><map cascade="nomerge" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                         ">
-    <topichead class="+ map/topicref mapgroup-d/topichead " navtitle="navtitle test"><topicref class="- map/topicref " href="t1.dita" navtitle="topic 1 navtitle" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">topic 1 title</navtitle><?ditaot gentext?><linktext class="- map/linktext ">topic 1 title</linktext></topicmeta></topicref><topicref class="- map/topicref " href="nested1.dita" navtitle="nested1 navtitle" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">Nesting topic 1 - parent</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Nesting topic 1 - parent</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">[llama llama]</shortdesc></topicmeta></topicref></topichead>
+<?path2project ?>
+<?path2project-uri ./?>
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" cascade="nomerge" class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                         ">
+  <topichead class="+ map/topicref mapgroup-d/topichead " navtitle="navtitle test">
+    <topicref class="- map/topicref " href="t1.dita" navtitle="topic 1 navtitle" type="topic">
+      <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">topic 1 title</navtitle>
+        <?ditaot gentext?>
+        <linktext class="- map/linktext ">topic 1 title</linktext>
+      </topicmeta>
+    </topicref>
+    <topicref class="- map/topicref " href="nested1.dita" navtitle="nested1 navtitle" type="topic">
+      <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Nesting topic 1 - parent</navtitle>
+        <?ditaot gentext?>
+        <linktext class="- map/linktext ">Nesting topic 1 - parent</linktext>
+        <?ditaot genshortdesc?>
+        <shortdesc class="- map/shortdesc ">[llama llama]</shortdesc>
+      </topicmeta>
+    </topicref>
+  </topichead>
 </map>

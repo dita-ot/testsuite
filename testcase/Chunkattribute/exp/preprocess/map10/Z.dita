@@ -1,36 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><?path2project?><?path2project-uri ./?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="Z" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
-<title class="- topic/title ">Z</title>
-<body class="- topic/body ">
-<section class="- topic/section "> <p class="- topic/p ">The utilities domain elements represent common features of a
+<?xml version="1.0" encoding="utf-8"?>
+<?path2project?>
+<?path2project-uri ./?>
+<topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="Z" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+  <title class="- topic/title ">Z</title>
+  <body class="- topic/body ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">The utilities domain elements represent common features of a
 language that may not necessarily be semantic, such as image maps. <indexterm class="- topic/indexterm ">Domains
 elements<indexterm class="- topic/indexterm ">utilities elements</indexterm></indexterm><indexterm class="- topic/indexterm ">utilities
-elements</indexterm></p> </section>
-</body>
- <topic id="Z1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
-  <title class="- topic/title "><keyword class="- topic/keyword ">%univ-atts;</keyword></title>
-  <shortdesc class="- topic/shortdesc ">Universal attributes is a parameter entity declaration in the topic
+elements</indexterm></p>
+    </section>
+  </body>
+  <topic id="Z1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+    <title class="- topic/title ">
+      <keyword class="- topic/keyword ">%univ-atts;</keyword>
+    </title>
+    <shortdesc class="- topic/shortdesc ">Universal attributes is a parameter entity declaration in the topic
    DTD that includes:</shortdesc>
-  <prolog class="- topic/prolog "><metadata class="- topic/metadata ">
-   <keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">%univ-atts</indexterm><indexterm class="- topic/indexterm ">Commonly Referenced
+    <prolog class="- topic/prolog ">
+      <metadata class="- topic/metadata ">
+        <keywords class="- topic/keywords ">
+          <indexterm class="- topic/indexterm ">%univ-atts</indexterm>
+          <indexterm class="- topic/indexterm ">Commonly Referenced
     Objects elements<indexterm class="- topic/indexterm ">%univ-atts</indexterm>  </indexterm>
-    <indexterm class="- topic/indexterm ">%univ-atts</indexterm></keywords>
-  </metadata></prolog>
-  <body class="- topic/body ">
-   <section class="- topic/section "><ul class="- topic/ul ">
-    <li class="- topic/li ">the attributes in the parameter
+          <indexterm class="- topic/indexterm ">%univ-atts</indexterm>
+        </keywords>
+      </metadata>
+    </prolog>
+    <body class="- topic/body ">
+      <section class="- topic/section ">
+        <ul class="- topic/ul ">
+          <li class="- topic/li ">the attributes in the parameter
      entity (<i class="+ topic/ph hi-d/i "><keyword class="- topic/keyword ">platform</keyword></i>, <i class="+ topic/ph hi-d/i "><keyword class="- topic/keyword ">product</keyword></i>, <i class="+ topic/ph hi-d/i "><keyword class="- topic/keyword ">audience</keyword></i>,
      <i class="+ topic/ph hi-d/i "><keyword class="- topic/keyword ">otherprops</keyword></i>, <i class="+ topic/ph hi-d/i "><keyword class="- topic/keyword ">importance</keyword></i>,
      <i class="+ topic/ph hi-d/i "><keyword class="- topic/keyword ">rev</keyword></i>, <i class="+ topic/ph hi-d/i "><keyword class="- topic/keyword ">status</keyword></i>)</li>
-    <li class="- topic/li ">the attributes in the  parameter
+          <li class="- topic/li ">the attributes in the  parameter
      entity (<i class="+ topic/ph hi-d/i "><keyword class="- topic/keyword ">id</keyword></i>, <i class="+ topic/ph hi-d/i "><keyword class="- topic/keyword ">conref</keyword></i>)</li>
-    <li class="- topic/li ">two additional attributes: <i class="+ topic/ph hi-d/i "><keyword class="- topic/keyword ">translate</keyword></i> and <i class="+ topic/ph hi-d/i "><keyword class="- topic/keyword ">xml:lang</keyword></i>.</li>
-   </ul></section>
-   <example class="- topic/example ">See examples for the and parameter entries. The translate and xml:lang
+          <li class="- topic/li ">two additional attributes: <i class="+ topic/ph hi-d/i "><keyword class="- topic/keyword ">translate</keyword></i> and <i class="+ topic/ph hi-d/i "><keyword class="- topic/keyword ">xml:lang</keyword></i>.</li>
+        </ul>
+      </section>
+      <example class="- topic/example ">See examples for the and parameter entries. The translate and xml:lang
     attributes identify language-specific words or phrases for specific processing
     (or non-processing, in the case of translate="no").<codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock ">&lt;p&gt;The cordial response to the question is 
      &lt;q translate="no" xml:lang="de-de"&gt;nein.&lt;/q&gt;&lt;/p&gt;</codeblock>    
    </example>
-  </body>
- </topic>
- 
-</topic><?Pub *0000000805?>
+    </body>
+  </topic>
+</topic>
+<?Pub *0000000805?>

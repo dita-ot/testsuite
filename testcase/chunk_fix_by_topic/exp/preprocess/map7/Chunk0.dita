@@ -1,8 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><?path2project?><?path2project-uri ./?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="N1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
-<title class="- topic/title ">Nesting topic 4 - parent</title>
-<shortdesc class="- topic/shortdesc ">[llama llama]</shortdesc>
-<body class="- topic/body ">
-<p class="- topic/p ">topic 4 N1</p>
-</body>
-
-<related-links class="- topic/related-links "><linkpool class="- topic/linkpool "><linkpool class="- topic/linkpool "><link format="dita" scope="local" class="- topic/link " mapclass="- map/topicref " href="Chunk1.dita" role="child" type="topic"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Nesting topic 1 - child</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">[llama llama]</desc></link></linkpool></linkpool></related-links></topic><?Pub *0000000504?>
+<?xml version="1.0" encoding="utf-8"?>
+<?path2project?>
+<?path2project-uri ./?>
+<topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="N1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+  <title class="- topic/title ">Nesting topic 4 - parent</title>
+  <shortdesc class="- topic/shortdesc ">[llama llama]</shortdesc>
+  <body class="- topic/body ">
+    <p class="- topic/p ">topic 4 N1</p>
+  </body>
+  <related-links class="- topic/related-links ">
+    <linkpool class="- topic/linkpool ">
+      <linkpool class="- topic/linkpool ">
+        <link format="dita" scope="local" class="- topic/link " mapclass="- map/topicref " href="Chunk1.dita" role="child" type="topic">
+          <?ditaot usertext?>
+          <linktext class="- topic/linktext "><?ditaot gentext?>Nesting topic 1 - child</linktext>
+          <?ditaot genshortdesc?>
+          <desc class="- topic/desc ">[llama llama]</desc>
+        </link>
+      </linkpool>
+    </linkpool>
+  </related-links>
+</topic>
+<?Pub *0000000504?>

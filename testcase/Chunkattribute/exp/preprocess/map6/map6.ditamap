@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?path2project ?><?path2project-uri ./?><map cascade="nomerge" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                         " id="mapsix">
-    <topicref chunk="to-content select-topic" class="- map/topicref " copy-to="nestedchunk.dita" href="nestedchunk.dita#N1" type="topic"><topicmeta class="- map/topicmeta "><navtitle class="- topic/navtitle ">nested1</navtitle><?ditaot gentext?><linktext class="- map/linktext ">nested1</linktext></topicmeta></topicref>
+<?path2project ?>
+<?path2project-uri ./?>
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" cascade="nomerge" class="- map/map " ditaarch:DITAArchVersion="1.2" domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                         " id="mapsix">
+  <topicref chunk="to-content select-topic" class="- map/topicref " copy-to="nestedchunk.dita" href="nestedchunk.dita#N1" type="topic">
+    <topicmeta class="- map/topicmeta ">
+      <navtitle class="- topic/navtitle ">nested1</navtitle>
+      <?ditaot gentext?>
+      <linktext class="- map/linktext ">nested1</linktext>
+    </topicmeta>
+  </topicref>
 </map>

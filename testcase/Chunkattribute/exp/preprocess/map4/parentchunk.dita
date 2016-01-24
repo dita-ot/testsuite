@@ -1,14 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><?path2project ../../../../../testsuite/testresult/Chunkattribute/preprocess/map4/?><?path2project-uri ../../../../../testsuite/testresult/Chunkattribute/preprocess/map4/?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="parent1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
- <title class="- topic/title ">parent1</title>
-<shortdesc class="- topic/shortdesc ">You maintain your solution to ensure that all components
+<?xml version="1.0" encoding="utf-8"?>
+<?path2project ../../../../../testsuite/testresult/Chunkattribute/preprocess/map4/?>
+<?path2project-uri ../../../../../testsuite/testresult/Chunkattribute/preprocess/map4/?>
+<topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="parent1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+  <title class="- topic/title ">parent1</title>
+  <shortdesc class="- topic/shortdesc ">You maintain your solution to ensure that all components
 are operating at maximum efficiency.</shortdesc>
-<body class="- topic/body ">
-<lines xml:space="preserve" class="- topic/lines ">
+  <body class="- topic/body ">
+    <lines xml:space="preserve" class="- topic/lines ">
 <ph id="prodname" class="- topic/ph ">
 <ph product="ABase_ph" rev="rev1" class="- topic/ph ">ThisProduct</ph>
 <ph product="AExtra_ph" class="- topic/ph ">ThisProduct</ph>
 <ph product="Another_ph" class="- topic/ph ">AnotherProduct</ph>
 </ph>
 </lines>
-</body>
-<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="mapfour"><linkpool class="- topic/linkpool "><link class="- topic/link " mapclass="- map/topicref " type="topic" href="nested1.dita" role="child" format="dita" scope="local"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>nested1</linktext></link></linkpool></linkpool></related-links></topic>
+  </body>
+  <related-links class="- topic/related-links ">
+    <linkpool class="- topic/linkpool " mapkeyref="mapfour">
+      <linkpool class="- topic/linkpool ">
+        <link class="- topic/link " mapclass="- map/topicref " type="topic" href="nested1.dita" role="child" format="dita" scope="local">
+          <?ditaot usertext?>
+          <linktext class="- topic/linktext "><?ditaot gentext?>nested1</linktext>
+        </link>
+      </linkpool>
+    </linkpool>
+  </related-links>
+</topic>

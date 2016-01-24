@@ -1,8 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="Y1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
+<?xml version="1.0" encoding="utf-8"?>
+<topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="Y1" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic ">
   <title class="- topic/title ">Y1</title>
   <body class="- topic/body ">
-   <section class="- topic/section ">          <p class="- topic/p ">Use the generic topic structure for untyped topics. <indexterm class="- topic/indexterm ">Topic
-    elements</indexterm>          </p>       </section>
+    <section class="- topic/section ">
+      <p class="- topic/p ">Use the generic topic structure for untyped topics. <indexterm class="- topic/indexterm ">Topic
+    elements</indexterm>          </p>
+    </section>
   </body>
-  
- <related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="mapten"><link class="- topic/link " mapclass="- map/topicref " type="topic" href="Chunk1.dita#Y" role="parent" format="dita" scope="local"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>dita</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">The &lt;<keyword class="- topic/keyword ">dita</keyword>&gt; element provides a top-level container for multiple topics when you create documents using the ditabase document type. The &lt;<keyword class="- topic/keyword ">dita</keyword>&gt; element lets you create any sequence of concept, task, and reference topics, and the ditabase document type lets you further nest these topic types inside each other. The &lt;<keyword class="- topic/keyword ">dita</keyword>&gt; element has no particular output implications; it simply allows you to create multiple topics of different types at the same level in a single document.</desc></link><linkpool class="- topic/linkpool "><link class="- topic/link " mapclass="- map/topicref " href="Y1a.dita" role="child" type="topic" format="dita" scope="local"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Y1a</linktext><?ditaot genshortdesc?><desc class="- topic/desc "/></link></linkpool></linkpool></related-links></topic>
+  <related-links class="- topic/related-links ">
+    <linkpool class="- topic/linkpool " mapkeyref="mapten">
+      <link class="- topic/link " mapclass="- map/topicref " type="topic" href="Chunk1.dita#Y" role="parent" format="dita" scope="local">
+        <?ditaot usertext?>
+        <linktext class="- topic/linktext "><?ditaot gentext?>dita</linktext>
+        <?ditaot genshortdesc?>
+        <desc class="- topic/desc ">The &lt;<keyword class="- topic/keyword ">dita</keyword>&gt; element provides a top-level container for multiple topics when you create documents using the ditabase document type. The &lt;<keyword class="- topic/keyword ">dita</keyword>&gt; element lets you create any sequence of concept, task, and reference topics, and the ditabase document type lets you further nest these topic types inside each other. The &lt;<keyword class="- topic/keyword ">dita</keyword>&gt; element has no particular output implications; it simply allows you to create multiple topics of different types at the same level in a single document.</desc>
+      </link>
+      <linkpool class="- topic/linkpool ">
+        <link class="- topic/link " mapclass="- map/topicref " href="Y1a.dita" role="child" type="topic" format="dita" scope="local">
+          <?ditaot usertext?>
+          <linktext class="- topic/linktext "><?ditaot gentext?>Y1a</linktext>
+          <?ditaot genshortdesc?>
+          <desc class="- topic/desc "/>
+        </link>
+      </linkpool>
+    </linkpool>
+  </related-links>
+</topic>
