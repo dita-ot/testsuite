@@ -32,6 +32,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 import nu.validator.htmlparser.dom.HtmlDocumentBuilder;
+import org.apache.commons.io.FileUtils;
 import org.apache.tools.ant.BuildEvent;
 import org.apache.tools.ant.BuildListener;
 import org.apache.tools.ant.DemuxOutputStream;
@@ -50,13 +51,11 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import org.dita.dost.util.FileUtils;
-
 @RunWith(Parameterized.class)
 public final class IntegrationTest {
     
     private static final String EXP_DIR = "exp";
-    private static final Collection<String> canCompare = Arrays.asList("xhtml", "eclipsehelp", "htmlhelp", "preprocess", "pdf");
+    private static final Collection<String> canCompare = Arrays.asList("html5", "xhtml", "eclipsehelp", "htmlhelp", "preprocess", "pdf");
     
     private static final File baseDir = new File(System.getProperty("basedir") != null
                                                  ? System.getProperty("basedir")
@@ -74,7 +73,7 @@ public final class IntegrationTest {
      * 
      * @return test cases which have comparable expected results
      */
-    @Parameters
+    @Parameters(name="{1}")
     public static Collection<Object[]> getFiles() {
     	final Set<String> testNames = System.getProperty("test") != null && !System.getProperty("test").isEmpty()
     							  ? new HashSet<String>(Arrays.asList(System.getProperty("test").split("[\\s|,]")))
@@ -104,13 +103,13 @@ public final class IntegrationTest {
             });
         final List<Object[]> params = new ArrayList<Object[]>(cases.size());
         for (final File f : cases) {
-                final Object[] arr = new Object[] { f };
+                final Object[] arr = new Object[] { f, f.getName() };
                 params.add(arr);
         }
         return params;
     }
     
-    public IntegrationTest(final File testDir) {
+    public IntegrationTest(final File testDir, final String name) {
         this.testDir = testDir;
     }
     
@@ -127,7 +126,7 @@ public final class IntegrationTest {
     @Test
     public void test() throws Throwable {
         final File expDir = new File(testDir, EXP_DIR);
-        System.err.println("Testcase: " + testDir.getName());
+//        System.err.println("Testcase: " + testDir.getName());
         List<TestListener.Message> log = null;
         try {
             log = run(testDir, expDir.list());
@@ -188,6 +187,15 @@ public final class IntegrationTest {
         if (transtypes.length == 0) {
             return Collections.emptyList();
         }
+
+        final String ditaDirProperty = System.getProperty("dita_dir");
+        final File ditaDir = new File(ditaDirProperty != null ? ditaDirProperty : "src" + File.separator + "main");
+        final File resDir = new File(resultDir, d.getName());
+        final File tempDir = new File(ditaDir, "temp" + File.separator + d.getName());
+
+        FileUtils.deleteDirectory(resDir);
+        FileUtils.deleteDirectory(tempDir);
+
         final TestListener listener = new TestListener(System.out, System.err);
         final PrintStream savedErr = System.err;
         final PrintStream savedOut = System.out;
@@ -212,11 +220,9 @@ public final class IntegrationTest {
             project.setUserProperty("preprocess.copy-generated-files.skip", "true");
             project.setUserProperty("ant.file", buildFile.getAbsolutePath());
             project.setUserProperty("ant.file.type", "file");
-            final String ditaDirProperty = System.getProperty("dita_dir");
-            project.setUserProperty("dita.dir", new File(ditaDirProperty != null
-                                                         ? ditaDirProperty
-                                                         : "src" + File.separator + "main").getAbsolutePath());
-            project.setUserProperty("result.dir", new File(resultDir, d.getName()).getAbsolutePath());
+            project.setUserProperty("dita.dir", ditaDir.getAbsolutePath());
+            project.setUserProperty("result.dir", resDir.getAbsolutePath());
+            project.setUserProperty("temp.dir", tempDir.getAbsolutePath());
             project.setKeepGoingMode(false);
             ProjectHelper.configureProject(project, buildFile);
             final Vector<String> targets = new Vector<String>();
