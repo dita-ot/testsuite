@@ -53,11 +53,16 @@ import org.xml.sax.SAXException;
 @RunWith(Parameterized.class)
 public final class IntegrationTest {
 
-    private static final String EXP_DIR = "exp";
-    private static final Collection<String> canCompare = Arrays.asList("html5", "xhtml", "eclipsehelp", "htmlhelp", "preprocess", "pdf");
+    public static final String BASEDIR = "basedir";
+    public static final String DITA_DIR = "dita_dir";
+    public static final String LOG_LEVEL = "log_level";
+    public static final String TEST = "test";
 
-    private static final File baseDir = new File(System.getProperty("basedir") != null
-            ? System.getProperty("basedir")
+    private static final String EXP_DIR = "exp";
+
+    private static final Collection<String> canCompare = Arrays.asList("html5", "xhtml", "eclipsehelp", "htmlhelp", "preprocess", "pdf");
+    private static final File baseDir = new File(System.getProperty(BASEDIR) != null
+            ? System.getProperty(BASEDIR)
             : "src" + File.separator + "test" + File.separator + "testsuite");
     private static final File resourceDir = new File(baseDir, "testcase");
     private static final File resultDir = new File(baseDir, "testresult");
@@ -74,8 +79,8 @@ public final class IntegrationTest {
      */
     @Parameters(name = "{1}")
     public static Collection<Object[]> getFiles() {
-        final Set<String> testNames = System.getProperty("test") != null && !System.getProperty("test").isEmpty()
-                ? new HashSet<String>(Arrays.asList(System.getProperty("test").split("[\\s|,]")))
+        final Set<String> testNames = System.getProperty(TEST) != null && !System.getProperty(TEST).isEmpty()
+                ? new HashSet<String>(Arrays.asList(System.getProperty(TEST).split("[\\s|,]")))
                 : null;
         final List<File> cases = Arrays.asList(resourceDir.listFiles(new FileFilter() {
             public boolean accept(File f) {
@@ -119,7 +124,7 @@ public final class IntegrationTest {
         dbf.setNamespaceAware(true);
         db = dbf.newDocumentBuilder();
         htmlb = new HtmlDocumentBuilder();
-        final String l = System.getProperty("log_level");
+        final String l = System.getProperty(LOG_LEVEL);
         level = l != null ? Integer.parseInt(l) : -2;
     }
 
@@ -130,38 +135,44 @@ public final class IntegrationTest {
         try {
             log = run(testDir, expDir.list());
             compare(expDir, new File(resultDir, testDir.getName()));
+        } catch (final RuntimeException e) {
+            throw e;
         } catch (final Throwable e) {
             if (log != null && level >= 0) {
-                System.err.println("Log start: " + testDir.getName());
-                for (final TestListener.Message m : log) {
-                    if (m.level <= level) {
-                        switch (m.level) {
-                            case -1:
-                                break;
-                            case Project.MSG_ERR:
-                                System.err.print("ERROR: ");
-                                break;
-                            case Project.MSG_WARN:
-                                System.err.print("WARN:  ");
-                                break;
-                            case Project.MSG_INFO:
-                                System.err.print("INFO:  ");
-                                break;
-                            case Project.MSG_VERBOSE:
-                                System.err.print("VERBO: ");
-                                break;
-                            case Project.MSG_DEBUG:
-                                System.err.print("DEBUG: ");
-                                break;
-                        }
-                        System.err.println(m.message);
-                    }
-                }
-                System.err.println("Log start: " + testDir.getName());
+                outputLog(log);
             }
             throw new Throwable("Case " + testDir.getName() + " failed: " + e.getMessage(), e);
         }
 
+    }
+
+    private void outputLog(List<TestListener.Message> log) {
+        System.err.println("Log start: " + testDir.getName());
+        for (final TestListener.Message m : log) {
+            if (m.level <= level) {
+                switch (m.level) {
+                    case -1:
+                        break;
+                    case Project.MSG_ERR:
+                        System.err.print("ERROR: ");
+                        break;
+                    case Project.MSG_WARN:
+                        System.err.print("WARN:  ");
+                        break;
+                    case Project.MSG_INFO:
+                        System.err.print("INFO:  ");
+                        break;
+                    case Project.MSG_VERBOSE:
+                        System.err.print("VERBO: ");
+                        break;
+                    case Project.MSG_DEBUG:
+                        System.err.print("DEBUG: ");
+                        break;
+                }
+                System.err.println(m.message);
+            }
+        }
+        System.err.println("Log end: " + testDir.getName());
     }
 
     private int countMessages(final List<TestListener.Message> messages, final int level) {
@@ -187,7 +198,7 @@ public final class IntegrationTest {
             return Collections.emptyList();
         }
 
-        final String ditaDirProperty = System.getProperty("dita_dir");
+        final String ditaDirProperty = System.getProperty(DITA_DIR);
         final File ditaDir = new File(ditaDirProperty != null ? ditaDirProperty : "src" + File.separator + "main");
         final File resDir = new File(resultDir, d.getName());
         final File tempDir = new File(ditaDir, "temp" + File.separator + d.getName());
@@ -228,25 +239,27 @@ public final class IntegrationTest {
             targets.addElement(project.getDefaultTarget());
             project.executeTargets(targets);
 
-            int warnCount = 0;
-            if (isWindows() && project.getProperty("exp.message-count.warn.windows") != null) {
-                warnCount = Integer.parseInt(project.getProperty("exp.message-count.warn.windows"));
-            } else if (project.getProperty("exp.message-count.warn") != null) {
-                warnCount = Integer.parseInt(project.getProperty("exp.message-count.warn"));
-            }
-            assertEquals("Warn message count does not match expected", warnCount, countMessages(listener.messages, Project.MSG_WARN));
-            int errorCount = 0;
-            if (isWindows() && project.getProperty("exp.message-count.error.windows") != null) {
-                errorCount = Integer.parseInt(project.getProperty("exp.message-count.error.windows"));
-            } else if (project.getProperty("exp.message-count.error") != null) {
-                errorCount = Integer.parseInt(project.getProperty("exp.message-count.error"));
-            }
-            assertEquals("Error message count does not match expected", errorCount, countMessages(listener.messages, Project.MSG_ERR));
+            assertEquals("Warn message count does not match expected",
+                    getMessageCount(project, "warn"),
+                    countMessages(listener.messages, Project.MSG_WARN));
+            assertEquals("Error message count does not match expected",
+                    getMessageCount(project, "error"),
+                    countMessages(listener.messages, Project.MSG_ERR));
         } finally {
             System.setOut(savedOut);
             System.setErr(savedErr);
             return listener.messages;
         }
+    }
+
+    private int getMessageCount(final Project project, final String type) {
+        int errorCount = 0;
+        if (isWindows() && project.getProperty("exp.message-count." + type + ".windows") != null) {
+            errorCount = Integer.parseInt(project.getProperty("exp.message-count." + type + ".windows"));
+        } else if (project.getProperty("exp.message-count." + type) != null) {
+            errorCount = Integer.parseInt(project.getProperty("exp.message-count." + type));
+        }
+        return errorCount;
     }
 
     private static boolean isWindows() {
@@ -282,6 +295,8 @@ public final class IntegrationTest {
                             //assertEquals(readTextFile(e), readTextFile(a));
                             assertArrayEquals(readTextFile(e), readTextFile(a));
                         }
+                    } catch (final RuntimeException ex) {
+                        throw ex;
                     } catch (final Throwable ex) {
                         throw new Throwable("Failed comparing " + e.getAbsolutePath() + " and " + a.getAbsolutePath() + ": " + ex.getMessage(), ex);
                     }
@@ -299,19 +314,13 @@ public final class IntegrationTest {
      */
     private String[] readTextFile(final File f) throws IOException {
         final List<String> buf = new ArrayList<String>();
-        BufferedReader r = null;
-        try {
-            r = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
+        try (final BufferedReader r = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"))) {
             String l = null;
             while ((l = r.readLine()) != null) {
                 buf.add(l);
             }
         } catch (final IOException e) {
             throw new IOException("Unable to read " + f.getAbsolutePath() + ": " + e.getMessage());
-        } finally {
-            if (r != null) {
-                r.close();
-            }
         }
         return buf.toArray(new String[buf.size()]);
     }
