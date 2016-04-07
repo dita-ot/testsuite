@@ -47,7 +47,7 @@ def main(id, input, types):
     if not os.path.exists(datadir):
         os.makedirs(datadir)
 
-default_types = ["xhtml", "eclipsehelp", "eclipsecontent", "javahelp", "htmlhelp", "pdf", "troff", "docbook", "wordrtf", "odt", "tocjs"]
+default_types = ["html5", "xhtml", "eclipsehelp", "eclipsecontent", "javahelp", "htmlhelp", "pdf", "troff", "docbook", "wordrtf", "odt", "tocjs"]
 valid_types = ["preprocess"]
 valid_types.extend(default_types)
 
