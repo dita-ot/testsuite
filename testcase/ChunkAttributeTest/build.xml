@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Chunkattribute" default="all">
-  <dirname property="test.basedir" file="${ant.file.Chunkattribute}"/>
+<project name="ChunkAttributeTest" default="all">
+  <dirname property="test.basedir" file="${ant.file.ChunkAttributeTest}"/>
   <property name="test.name" value="${ant.project.name}"/>
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
-  <target name="all" depends="Chunkattribute.preprocess"/>
-  <target name="Chunkattribute.preprocess" if="run.preprocess" unless="skip.preprocess">
+  <target name="all" depends="ChunkAttributeTest.preprocess"/>
+  <target name="ChunkAttributeTest.preprocess" if="run.preprocess" unless="skip.preprocess">
     <ant antfile="${dita.dir}/build.xml">
       <target name="build-init"/>
       <target name="preprocess"/>

@@ -97,7 +97,7 @@ public abstract class AbstractIntegrationTest {
         db = dbf.newDocumentBuilder();
         htmlb = new HtmlDocumentBuilder();
         final String l = System.getProperty(LOG_LEVEL);
-        level = l != null ? Integer.parseInt(l) : -1;
+        level = l != null ? Integer.parseInt(l) : -2;
     }
 
     public void test(final TestCase testCase) {
@@ -123,7 +123,7 @@ public abstract class AbstractIntegrationTest {
             if (log != null && level >= 0) {
                 outputLog(log);
             }
-            e.printStackTrace();
+            throw new AssertionError(e);
 //            throw new Throwable("Case " + testDir.getName() + " failed: " + e.getMessage(), e);
         }
     }
