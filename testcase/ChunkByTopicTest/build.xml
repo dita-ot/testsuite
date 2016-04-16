@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="chunk_fix_by_topic" default="all">
-  <dirname property="test.basedir" file="${ant.file.chunk_fix_by_topic}"/>
+<project name="ChunkByTopicTest" default="all">
+  <dirname property="test.basedir" file="${ant.file.ChunkByTopicTest}"/>
   <property name="test.name" value="${ant.project.name}"/>
   <property name="dita.dir" location="${basedir}/../.."/>
   <property name="temp.dir" location="${dita.dir}/temp/${test.name}"/>
   <property name="result.dir" location="${dita.dir}/testresult/${test.name}"/>
-  <target name="all" depends="chunk_fix_by_topic.preprocess"/>
-  <target name="chunk_fix_by_topic.preprocess" if="run.preprocess" unless="skip.preprocess">
+  <target name="all" depends="ChunkByTopicTest.preprocess"/>
+  <target name="ChunkByTopicTest.preprocess" if="run.preprocess" unless="skip.preprocess">
     <ant antfile="${dita.dir}/build.xml">
       <target name="build-init"/>
       <target name="preprocess"/>

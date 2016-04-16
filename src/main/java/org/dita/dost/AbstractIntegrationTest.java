@@ -1,6 +1,5 @@
 package org.dita.dost;
 
-import com.google.common.collect.ImmutableMap;
 import nu.validator.htmlparser.dom.HtmlDocumentBuilder;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
@@ -13,6 +12,8 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.*;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Matcher;
@@ -81,7 +82,8 @@ public abstract class AbstractIntegrationTest {
     private static final File baseDir = new File(System.getProperty(BASEDIR) != null
             ? System.getProperty(BASEDIR)
             : "src" + File.separator + "test" + File.separator + "testsuite").getAbsoluteFile();
-    private static final File resourceDir = new File(baseDir, "testcase").getAbsoluteFile();
+//    private static final File resourceDir = new File(baseDir, "testcase").getAbsoluteFile();
+
     private static final File resultDir = new File(baseDir, "testresult").getAbsoluteFile();
     private static DocumentBuilder db;
     private static HtmlDocumentBuilder htmlb;
@@ -106,7 +108,7 @@ public abstract class AbstractIntegrationTest {
         baseResultDir = new File(resultDir, testName);
         baseTempDir = new File(ditaDir, "temp" + File.separator + testName);
 
-        final File testDir = new File(resourceDir, testName);
+        final File testDir = getTestDir(testCase, testName);//new File(resourceDir, testName);
         final File expDir = new File(testDir, EXP_DIR);
         List<TestListener.Message> log = null;
         try {
@@ -125,6 +127,16 @@ public abstract class AbstractIntegrationTest {
             }
             throw new AssertionError(e);
 //            throw new Throwable("Case " + testDir.getName() + " failed: " + e.getMessage(), e);
+        }
+    }
+
+    private File getTestDir(TestCase testCase, String testName) {
+        try {
+            final String res = "/" + testName + "/" + "src" + "/" + testCase.input;
+            final String uri = this.getClass().getResource(res).toURI().toString();
+            return new File(new URI(uri.substring(0, uri.length() - testCase.input.length()))).getParentFile();
+        } catch (URISyntaxException e) {
+            throw new RuntimeException(e);
         }
     }
 
