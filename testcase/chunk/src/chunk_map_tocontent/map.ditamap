@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map id="mapID">
-   <title>chunk map to content</title>
-    <topicref href="map_chunk_source.ditamap"  navtitle="hi" format="ditamap"></topicref>
-    
-</map>
