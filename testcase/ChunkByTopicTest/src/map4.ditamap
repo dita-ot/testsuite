@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map>
-    <topicref href="nested1.dita" chunk="by-topic to-content" copy-to="nest_split.dita">
-        <topicref href="nested2.dita"></topicref>
-    </topicref>
-</map>
