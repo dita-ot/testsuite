@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task  id="id-same-as-step">
+  <title >Task With Same ID as Step</title>
+  <taskbody >
+    <steps >
+      <step id="id-same-as-step">
+        <cmd>This is the first step. It has the same ID as as the topic
+          (id-same-as-step).</cmd>
+      </step>
+      <step id="step-2">
+        <cmd >Second step. It's ID is "step-2"</cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

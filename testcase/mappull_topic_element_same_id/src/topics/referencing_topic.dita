@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/ekimber/workspace-ditaot/dita-ot-2.x/src/test/testsuite/testcase/topicpull_topic_element_same_id/src/temp/xhtml/topics?><?workdir-uri file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/test/testsuite/testcase/topicpull_topic_element_same_id/src/temp/xhtml/topics/?><?path2project ../?><?path2project-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="referencing_topic"
+>
+  <title class="- topic/title ">Referencing Topic</title>
+  <body>
+    <p>Reference to a step in task: <xref
+        href="task_with_same_id_as_step.dita#id-same-as-step/id-same-as-step"/></p>
+  </body>
+</topic>
