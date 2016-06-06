@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "../../dtd/technicalContent/dtd/topic.dtd">
-<topic id="topic1" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
-    <title>Topic Title</title>
-    <body>
-        <p>Topic Body.</p>
-</body>
-  </topic>

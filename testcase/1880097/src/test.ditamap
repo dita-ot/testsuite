@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "file:/C:/download/DITA-OT(data)/Regression/20090930-20090931/SAXONIBMJDK/dtd/technicalContent/dtd/map.dtd">
-<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
-    <title>map</title>
-   <topicref href="test.dita"></topicref>
-    <topicref href="foo.xml"></topicref>
-</map>
-

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map chunk="by-topic" id="mapten">
-    <title>titleofmap10chunck</title>
-    <topicref href="X.dita"></topicref>
-    <topicref href="Y.dita" chunk="to-navigation">
-        <topicref href="Z.dita" chunk="select-document"></topicref>
-    </topicref>
-</map>

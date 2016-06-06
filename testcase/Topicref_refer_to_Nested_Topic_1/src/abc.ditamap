@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
- "..\dtd\map.dtd">
-<map collection-type="family" title="Put your title here (Required for Eclipse)">
-<topicref href="a.dita#task" navtitle="a" type="task"></topicref>
-<topicref href="b.dita" navtitle="b"></topicref>
-</map>

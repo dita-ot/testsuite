@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="topicID3">
-    
-    <title>Dita3's title</title>
-    <shortdesc>When the author2 build, the &quot;dita2.dita&quot; will resolve to this dita. Dita3.dita</shortdesc>
-</topic>
-

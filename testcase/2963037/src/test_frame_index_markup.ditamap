@@ -1,4 +1,0 @@
-<?xml version="1.0"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<!-- Created with XMetaL (http://www.xmetal.com) -->
-<map id="map_62E3B94D2E5446D0ACF0F600719A821B"><title>Test Frame Index Markup</title><topicref format="dita" href="topics/c_Foo_Topic.xml" navtitle="Foo Topic" scope="local"></topicref><topicref format="dita" href="topics/t_Barring_Foo.xml" navtitle="Barring Foo" scope="local"/><topicref format="dita" href="topics/r_Has_Frame_Index_Markup.xml" navtitle="Has Frame Index Markup" scope="local"/></map>

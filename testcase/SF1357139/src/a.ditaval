@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<val>
-  <revprop val="rev8" style="Blue" action="flag" char="rev8" />
-  <prop att="audience" val="a" action="exclude" /> 
-</val>
-
-

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
- "map.dtd">
-<map xml:lang="en-us"><title>Put your title here (Required for Eclipse)</title>
- <topicref format="ditamap" href="../common/common.ditamap#branch1"></topicref>
-</map>

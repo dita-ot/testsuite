@@ -1,7 +1,0 @@
-pls input the these two commands line when run this case, then check the map1_merged.xml, map2_merged.xml and  merged.xml in out directory.
-
-ant -f build_demo.xml javamerge -Dargs.input=src\map1.ditamap
-
-ant -f build_demo.xml javamerge -Dargs.input=src\map.ditamap
-
-ant -f build_demo.xml javamerge -Dargs.input=src\map2.ditamap

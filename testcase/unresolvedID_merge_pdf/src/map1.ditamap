@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map>
-    
-    <title>Hi, I am a map</title>
-   
-   <topicref href="topic.dita"></topicref>
-   
-</map>

@@ -1,6 +1,0 @@
-The process of metainfo transite
-
-From :space_in_filenames_0.ditamap ?metainfo?  ==> space_infilenames_1.ditamap?metainfo? ==>dita6.dita.
-
-
-You just need to run space_in_filenames_0.ditamap.
