@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map>
-    <title>Map of outies and innies</title>
-    <topicref href="lorem-ipsum.xml#inner-1"/>
-    <topicref href="lorem-ipsum.xml#inner-2"/>
-</map>

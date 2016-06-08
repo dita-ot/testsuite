@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.2 Map//EN" "file:/C:/20091010/DITA-OT1.5/dtd/technicalContent/dtd/map.dtd">
-<map title="Keydef/Keyref Bug Sample">
-    <topicref href="A.dita" />
-    <topicref href="http://www.ibm.com/support/docview.wss?rs=71&amp;uid=swg21045033" keys="topicB" scope="external"/>
-</map>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "file:/C:/DITA-OT1.4.2/dtd/map.dtd">
-<map title="creat the htmlhelp">
-
-        <topicref href="original.xml" keys="original"></topicref>
-
-</map>

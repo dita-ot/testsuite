@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.2 Map//EN" "file:/C:/DitaOT-1.5/DITA-OT1.5.1/dtd/technicalContent/dtd/map.dtd">
-<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
-    <mapref href="mykeymap.ditamap"></mapref>
-    <topicref href="../common/mytopicfile.dita"></topicref>
-</map>

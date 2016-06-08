@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "file:/C:/DITAOT-1.5/SAXONIBMJDK/dtd/technicalContent/dtd/map.dtd">
-<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
-    <topicref href="topic1.dita"/>
-    <topicref href="topic2.dita"/>
-    <topicref href="topic3.dita"/>
-</map>

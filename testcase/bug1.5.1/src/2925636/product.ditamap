@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Test included and excluded <info> in task -->
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "../dtd/map.dtd">
-<map title="Test">
-    <topicref navtitle="Test" href="task.dita">
-	</topicref>
-</map>

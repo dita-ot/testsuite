@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<val>
-  <prop att="audience" val="all" action="flag" img="all.jpg" alt="All in one directory"/>
-  <prop att="audience" val="some" action="flag" img="subdir/some.jpg" alt="Some in sub directories"/>
-  <prop att="audience" val="few" action="flag" img="subdir\few.jpg" alt="Use a backslash to sub directory"/>
-   <prop att="audience" val="nothing" action="flag" img="../nothingout\go.jpg" alt="Use a backslash to sub directory"/>
-</val>

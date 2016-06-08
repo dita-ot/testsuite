@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.2 Topic//EN" "topic.dtd">
-<topic id="topicID4">
-    <title>reference to topic2</title>
-    <body>
-        <codeblock><coderef href="t2.dita"/></codeblock>
-    </body>
-</topic>
-

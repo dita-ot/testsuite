@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.2 Map//EN" "">
-<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
-    <topicref format="dita" href="lala/Title_Chapter_Common_Information_Blocks.xml">
-        <topicref format="ditamap" href="ID_InfoCenter/Map_Chapter_Common_Information_Blocks.xml" />
-    </topicref>
-</map>

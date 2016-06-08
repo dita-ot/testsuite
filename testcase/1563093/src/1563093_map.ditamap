@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map  PUBLIC "-//OASIS//DTD DITA Map//EN" "C:\DITA-OT1.4\dtd\map.dtd">
-<map title="15630932xhtml" id="map">
-    <topicref href="parent1.dita" type="concept"></topicref>
-    <topicref href="toolbox_1.dita" type="topic"></topicref>
-    <topicref href="parent1.dita" type="task"></topicref>
-    <topicref href="taking.dita" type="reference"></topicref>
-</map>

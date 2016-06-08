@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.2 Map//EN" "file:/C:/jyt/SAXONIBMJDK/demo/dita12/dtd12/technicalContent/dtd/map.dtd">
-<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
-    <glossref href="abs.dita" keys="abs"></glossref> 
-    <topicref href="t1.dita"></topicref>
-    <topicref href="t2.dita"></topicref>
-</map>

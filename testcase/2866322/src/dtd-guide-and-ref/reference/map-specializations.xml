@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://reallysi.com/doctypes/dita/concept">
-<concept
-  id="topicid">
-  <title>Map Specializations</title>
-  <conbody>
-    <p>This section lists the ASTD-specific map specializations and map vocabulary domains.</p>
-  </conbody>
-</concept>

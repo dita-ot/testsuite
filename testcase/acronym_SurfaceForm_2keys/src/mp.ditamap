@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map>
-    <glossref href="abs.dita" keys="abs"></glossref>
-    <glossref href="abs.dita" keys="abs2"></glossref>
-    <topicref href="t1.dita"></topicref>
-    <topicref href="t2.dita"></topicref>
-    <topicref href="t3.dita"></topicref>
-</map>

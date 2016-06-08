@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Arbortext, Inc., 1988-2007, v.4002-->
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
- "map.dtd">
-<map xml:lang="en-us"><title>Put your title here (Required for Eclipse)</title>
-<topicref href="indexdir-main.dita"></topicref>
-<topicref href="subdir/indxdir-main.dita"></topicref>
-<topicref href="../indexdir-upone.dita"><?Pub Caret?></topicref>
-</map>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
-<topic id="worker2">
-    <title>This topic works: #2</title>
-    <body>
-        <p>See Jane run.  Run, Dick, run.</p>
-    </body>
-</topic>
