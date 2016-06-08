@@ -1,23 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN"
- "../dtd/ditabase.dtd">
 <!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved.
  -->
-<dita>
-<topic id="topic" conref="lang-common.dita#topic" xml:lang="cs-cz">
-<title>conref</title>
-<body></body>
+<dita xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" domains="(topic task)                            (topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic troubleshooting++task) (topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " ditaarch:DITAArchVersion="1.3">
+<topic class="- topic/topic " conref="lang-common.dita#topic" domains="(topic task)                            (topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic troubleshooting++task) (topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " id="topic" ditaarch:DITAArchVersion="1.3" xml:lang="cs-cz">
+<title class="- topic/title ">conref</title>
+<body class="- topic/body "></body>
 </topic>
-<concept id="concept" conref="lang-common.dita#concept" xml:lang="cs-cz">
-<title>conref</title>
-<conbody></conbody>
+<concept class="- topic/topic concept/concept " conref="lang-common.dita#concept" domains="(topic task)                            (topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic troubleshooting++task) (topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " id="concept" ditaarch:DITAArchVersion="1.3" xml:lang="cs-cz">
+<title class="- topic/title ">conref</title>
+<conbody class="- topic/body  concept/conbody "></conbody>
 </concept>
-<task id="task" conref="lang-common.dita#task" xml:lang="cs-cz">
-<title>conref</title>
-<taskbody></taskbody>
+<task class="- topic/topic task/task " conref="lang-common.dita#task" domains="(topic task)                            (topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic troubleshooting++task) (topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " id="task" ditaarch:DITAArchVersion="1.3" xml:lang="cs-cz">
+<title class="- topic/title ">conref</title>
+<taskbody class="- topic/body task/taskbody "></taskbody>
 </task>
-<reference id="reference" conref="lang-common.dita#reference" xml:lang="cs-cz">
-<title>conref</title>
-<refbody></refbody>
+<reference class="- topic/topic       reference/reference " conref="lang-common.dita#reference" domains="(topic task)                            (topic concept)                            (topic concept glossentry)                            (topic concept glossgroup)                            (topic reference)                            (topic troubleshooting++task) (topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " id="reference" ditaarch:DITAArchVersion="1.3" xml:lang="cs-cz">
+<title class="- topic/title ">conref</title>
+<refbody class="- topic/body        reference/refbody "></refbody>
 </reference>
 </dita>
