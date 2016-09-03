@@ -1,12 +1,13 @@
 package org.dita.dost;
 
+import static java.util.Collections.emptyList;
+import static org.apache.commons.io.FileUtils.deleteDirectory;
 import static org.custommonkey.xmlunit.XMLAssert.*;
 import static org.junit.Assert.*;
 import static org.dita.dost.util.Constants.*;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileFilter;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -15,7 +16,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -31,7 +31,6 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 import nu.validator.htmlparser.dom.HtmlDocumentBuilder;
-import org.apache.commons.io.FileUtils;
 import org.apache.tools.ant.BuildEvent;
 import org.apache.tools.ant.BuildListener;
 import org.apache.tools.ant.DemuxOutputStream;
@@ -53,17 +52,24 @@ import org.xml.sax.SAXException;
 @RunWith(Parameterized.class)
 public final class IntegrationTest {
 
-    public static final String BASEDIR = "basedir";
-    public static final String DITA_DIR = "dita_dir";
-    public static final String LOG_LEVEL = "log_level";
-    public static final String TEST = "test";
+    private static final String TEMP_DIR = "temp_dir";
+    private static final String BASEDIR = "basedir";
+    private static final String DITA_DIR = "dita_dir";
+    private static final String LOG_LEVEL = "log_level";
+    private static final String TEST = "test";
 
     private static final String EXP_DIR = "exp";
 
     private static final Collection<String> canCompare = Arrays.asList("html5", "xhtml", "eclipsehelp", "htmlhelp", "preprocess", "pdf");
+    private static final File ditaDir = new File(System.getProperty(DITA_DIR) != null
+            ? System.getProperty(DITA_DIR)
+            : "src" + File.separator + "main");
     private static final File baseDir = new File(System.getProperty(BASEDIR) != null
             ? System.getProperty(BASEDIR)
             : "src" + File.separator + "test" + File.separator + "testsuite");
+    private static final File baseTempDir = new File(System.getProperty(TEMP_DIR) != null
+            ? System.getProperty(TEMP_DIR)
+            : "build" + File.separator + "tmp" + File.separator + "integrationTest");
     private static final File resourceDir = new File(baseDir, "testcase");
     private static final File resultDir = new File(baseDir, "testresult");
     private static DocumentBuilder db;
@@ -80,33 +86,27 @@ public final class IntegrationTest {
     @Parameters(name = "{1}")
     public static Collection<Object[]> getFiles() {
         final Set<String> testNames = System.getProperty(TEST) != null && !System.getProperty(TEST).isEmpty()
-                ? new HashSet<String>(Arrays.asList(System.getProperty(TEST).split("[\\s|,]")))
+                ? new HashSet<>(Arrays.asList(System.getProperty(TEST).split("[\\s|,]")))
                 : null;
-        final List<File> cases = Arrays.asList(resourceDir.listFiles(new FileFilter() {
-            public boolean accept(File f) {
-                if (testNames != null && !testNames.contains(f.getName())) {
-                    return false;
-                }
-                if (!f.isDirectory() || !new File(f, "build.xml").exists()) {
-                    return false;
-                }
-                final File exp = new File(f, EXP_DIR);
-                if (exp.exists()) {
-                    for (final String t : exp.list()) {
-                        if (canCompare.contains(t)) {
-                            return true;
-                        }
-                    }
-                }
+        final List<File> cases = Arrays.asList(resourceDir.listFiles(f -> {
+            if (testNames != null && !testNames.contains(f.getName())) {
                 return false;
             }
-        }));
-        Collections.sort(cases, new Comparator<File>() {
-            public int compare(File arg0, File arg1) {
-                return arg0.compareTo(arg1);
+            if (!f.isDirectory() || !new File(f, "build.xml").exists()) {
+                return false;
             }
-        });
-        final List<Object[]> params = new ArrayList<Object[]>(cases.size());
+            final File exp = new File(f, EXP_DIR);
+            if (exp.exists()) {
+                for (final String t : exp.list()) {
+                    if (canCompare.contains(t)) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }));
+        Collections.sort(cases, (arg0, arg1) -> arg0.compareTo(arg1));
+        final List<Object[]> params = new ArrayList<>(cases.size());
         for (final File f : cases) {
             final Object[] arr = new Object[]{f, f.getName()};
             params.add(arr);
@@ -195,16 +195,15 @@ public final class IntegrationTest {
      */
     private List<TestListener.Message> run(final File d, final String[] transtypes) throws Exception {
         if (transtypes.length == 0) {
-            return Collections.emptyList();
+            return emptyList();
         }
 
-        final String ditaDirProperty = System.getProperty(DITA_DIR);
-        final File ditaDir = new File(ditaDirProperty != null ? ditaDirProperty : "src" + File.separator + "main");
-        final File resDir = new File(resultDir, d.getName());
-        final File tempDir = new File(ditaDir, "temp" + File.separator + d.getName());
-
-        FileUtils.deleteDirectory(resDir);
-        FileUtils.deleteDirectory(tempDir);
+        final File resDir = new File(baseTempDir, d.getName() + File.separator + "testresult" );
+        final File tempDir = new File(baseTempDir, d.getName() + File.separator + "temp");
+        System.out.println(resDir.getAbsolutePath());
+        System.out.println(tempDir.getAbsolutePath());
+        deleteDirectory(resDir);
+        deleteDirectory(tempDir);
 
         final TestListener listener = new TestListener(System.out, System.err);
         final PrintStream savedErr = System.err;
@@ -235,7 +234,7 @@ public final class IntegrationTest {
             project.setUserProperty("temp.dir", tempDir.getAbsolutePath());
             project.setKeepGoingMode(false);
             ProjectHelper.configureProject(project, buildFile);
-            final Vector<String> targets = new Vector<String>();
+            final Vector<String> targets = new Vector<>();
             targets.addElement(project.getDefaultTarget());
             project.executeTargets(targets);
 
@@ -313,7 +312,7 @@ public final class IntegrationTest {
      * @throws IOException if reading file failed
      */
     private String[] readTextFile(final File f) throws IOException {
-        final List<String> buf = new ArrayList<String>();
+        final List<String> buf = new ArrayList<>();
         try (final BufferedReader r = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"))) {
             String l = null;
             while ((l = r.readLine()) != null) {
@@ -325,8 +324,8 @@ public final class IntegrationTest {
         return buf.toArray(new String[buf.size()]);
     }
 
-    private static final Map<String, Pattern> htmlIdPattern = new HashMap<String, Pattern>();
-    private static final Map<String, Pattern> ditaIdPattern = new HashMap<String, Pattern>();
+    private static final Map<String, Pattern> htmlIdPattern = new HashMap<>();
+    private static final Map<String, Pattern> ditaIdPattern = new HashMap<>();
 
     static {
         final String SAXON_ID = "d\\d+e\\d+";
@@ -387,7 +386,7 @@ public final class IntegrationTest {
     }
 
     private Document rewriteIds(final Document doc, final Map<String, Pattern> patterns) {
-        final Map<String, String> idMap = new HashMap<String, String>();
+        final Map<String, String> idMap = new HashMap<>();
         AtomicInteger counter = new AtomicInteger();
         final NodeList ns = doc.getElementsByTagName("*");
         for (int i = 0; i < ns.getLength(); i++) {
@@ -396,7 +395,7 @@ public final class IntegrationTest {
                 final Attr id = e.getAttributeNode(p.getKey());
                 if (id != null) {
                     if (p.getKey().equals("headers")) {// split value
-                        final List<String> res = new ArrayList<String>();
+                        final List<String> res = new ArrayList<>();
                         for (final String v : id.getValue().trim().split("\\s+")) {
                             rewriteId(v, idMap, counter, p.getValue());
                             if (idMap.containsKey(v)) {
@@ -442,8 +441,7 @@ public final class IntegrationTest {
         if (m.matches()) {
             if (!idMap.containsKey(id)) {
                 final int i = counter.addAndGet(1);
-                final StringBuilder buf = new StringBuilder("gen-id-").append(Integer.toString(i));
-                idMap.put(id, buf.toString());
+                idMap.put(id, "gen-id-" + Integer.toString(i));
             }
         }
     }
@@ -457,7 +455,7 @@ public final class IntegrationTest {
         private final Pattern infoPattern = Pattern.compile("\\[\\w+I\\]\\[INFO\\]");
         private final Pattern debugPattern = Pattern.compile("\\[\\w+D\\]\\[DEBUG\\]");
 
-        public final List<Message> messages = new ArrayList<Message>();
+        public final List<Message> messages = new ArrayList<>();
         final PrintStream out;
         final PrintStream err;
 
