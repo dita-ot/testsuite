@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>Test of Topic With ID Same as Subelement</title>
+  <topicref href="topics/referencing_topic.dita" />
+  <topicref href="topics/task_with_same_id_as_step.dita"/>
+  <topicref chunk="select-branch to-content" 
+    href="topics/composite-01.dita#topic-02" keys="composite-01-topic-02"/>
+  <topicref chunk="select-branch to-content" 
+    href="topics/composite-01.dita#topic-01" keys="composite-01-topic-01"/>
+  
+</map>
